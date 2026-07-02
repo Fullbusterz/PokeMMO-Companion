@@ -1,0 +1,3240 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "Bulbasaur",
+      "es": "Bulbasaur"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 49,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Ivysaur",
+      "es": "Ivysaur"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 63,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 60
+    },
+    "evolvesFrom": "bulbasaur",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Venusaur",
+      "es": "Venusaur"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 83,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 80
+    },
+    "evolvesFrom": "ivysaur",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Charmander",
+      "es": "Charmander"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "spAttack": 60,
+      "spDefense": 50,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Charmeleon",
+      "es": "Charmeleon"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "spAttack": 80,
+      "spDefense": 65,
+      "speed": 80
+    },
+    "evolvesFrom": "charmander",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Charizard",
+      "es": "Charizard"
+    },
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "spAttack": 109,
+      "spDefense": 85,
+      "speed": 100
+    },
+    "evolvesFrom": "charmeleon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Squirtle",
+      "es": "Squirtle"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 44,
+      "attack": 48,
+      "defense": 65,
+      "spAttack": 50,
+      "spDefense": 64,
+      "speed": 43
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 8,
+    "name": {
+      "en": "Wartortle",
+      "es": "Wartortle"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "spAttack": 65,
+      "spDefense": 80,
+      "speed": 58
+    },
+    "evolvesFrom": "squirtle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 9,
+    "name": {
+      "en": "Blastoise",
+      "es": "Blastoise"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "spAttack": 85,
+      "spDefense": 105,
+      "speed": 78
+    },
+    "evolvesFrom": "wartortle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 10,
+    "name": {
+      "en": "Caterpie",
+      "es": "Caterpie"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "spAttack": 20,
+      "spDefense": 20,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 11,
+    "name": {
+      "en": "Metapod",
+      "es": "Metapod"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 20,
+      "defense": 55,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 30
+    },
+    "evolvesFrom": "caterpie",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 12,
+    "name": {
+      "en": "Butterfree",
+      "es": "Butterfree"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 50,
+      "spAttack": 90,
+      "spDefense": 80,
+      "speed": 70
+    },
+    "evolvesFrom": "metapod",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 13,
+    "name": {
+      "en": "Weedle",
+      "es": "Weedle"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "spAttack": 20,
+      "spDefense": 20,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 14,
+    "name": {
+      "en": "Kakuna",
+      "es": "Kakuna"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 25,
+      "defense": 50,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 35
+    },
+    "evolvesFrom": "weedle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 15,
+    "name": {
+      "en": "Beedrill",
+      "es": "Beedrill"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 40,
+      "spAttack": 45,
+      "spDefense": 80,
+      "speed": 75
+    },
+    "evolvesFrom": "kakuna",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 16,
+    "name": {
+      "en": "Pidgey",
+      "es": "Pidgey"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 40,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 56
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 17,
+    "name": {
+      "en": "Pidgeotto",
+      "es": "Pidgeotto"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 63,
+      "attack": 60,
+      "defense": 55,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 71
+    },
+    "evolvesFrom": "pidgey",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 18,
+    "name": {
+      "en": "Pidgeot",
+      "es": "Pidgeot"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 83,
+      "attack": 80,
+      "defense": 75,
+      "spAttack": 70,
+      "spDefense": 70,
+      "speed": 101
+    },
+    "evolvesFrom": "pidgeotto",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 19,
+    "name": {
+      "en": "Rattata",
+      "es": "Rattata"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "spAttack": 25,
+      "spDefense": 35,
+      "speed": 72
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 20,
+    "name": {
+      "en": "Raticate",
+      "es": "Raticate"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 97
+    },
+    "evolvesFrom": "rattata",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 21,
+    "name": {
+      "en": "Spearow",
+      "es": "Spearow"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 60,
+      "defense": 30,
+      "spAttack": 31,
+      "spDefense": 31,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 22,
+    "name": {
+      "en": "Fearow",
+      "es": "Fearow"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 65,
+      "spAttack": 61,
+      "spDefense": 61,
+      "speed": 100
+    },
+    "evolvesFrom": "spearow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 23,
+    "name": {
+      "en": "Ekans",
+      "es": "Ekans"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 60,
+      "defense": 44,
+      "spAttack": 40,
+      "spDefense": 54,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 24,
+    "name": {
+      "en": "Arbok",
+      "es": "Arbok"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 69,
+      "spAttack": 65,
+      "spDefense": 79,
+      "speed": 80
+    },
+    "evolvesFrom": "ekans",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 25,
+    "name": {
+      "en": "Pikachu",
+      "es": "Pikachu"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 90
+    },
+    "evolvesFrom": "pichu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 26,
+    "name": {
+      "en": "Raichu",
+      "es": "Raichu"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "spAttack": 90,
+      "spDefense": 80,
+      "speed": 110
+    },
+    "evolvesFrom": "pikachu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 27,
+    "name": {
+      "en": "Sandshrew",
+      "es": "Sandshrew"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 85,
+      "spAttack": 20,
+      "spDefense": 30,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 28,
+    "name": {
+      "en": "Sandslash",
+      "es": "Sandslash"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 110,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 65
+    },
+    "evolvesFrom": "sandshrew",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 29,
+    "name": {
+      "en": "Nidoran♀",
+      "es": "Nidoran♀"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 47,
+      "defense": 52,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 41
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 30,
+    "name": {
+      "en": "Nidorina",
+      "es": "Nidorina"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 62,
+      "defense": 67,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 56
+    },
+    "evolvesFrom": "nidoran-f",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 31,
+    "name": {
+      "en": "Nidoqueen",
+      "es": "Nidoqueen"
+    },
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 92,
+      "defense": 87,
+      "spAttack": 75,
+      "spDefense": 85,
+      "speed": 76
+    },
+    "evolvesFrom": "nidorina",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 32,
+    "name": {
+      "en": "Nidoran♂",
+      "es": "Nidoran♂"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 46,
+      "attack": 57,
+      "defense": 40,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 33,
+    "name": {
+      "en": "Nidorino",
+      "es": "Nidorino"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 61,
+      "attack": 72,
+      "defense": 57,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 65
+    },
+    "evolvesFrom": "nidoran-m",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 34,
+    "name": {
+      "en": "Nidoking",
+      "es": "Nidoking"
+    },
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 81,
+      "attack": 102,
+      "defense": 77,
+      "spAttack": 85,
+      "spDefense": 75,
+      "speed": 85
+    },
+    "evolvesFrom": "nidorino",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 35,
+    "name": {
+      "en": "Clefairy",
+      "es": "Clefairy"
+    },
+    "types": [
+      "fairy"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 45,
+      "defense": 48,
+      "spAttack": 60,
+      "spDefense": 65,
+      "speed": 35
+    },
+    "evolvesFrom": "cleffa",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 36,
+    "name": {
+      "en": "Clefable",
+      "es": "Clefable"
+    },
+    "types": [
+      "fairy"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 70,
+      "defense": 73,
+      "spAttack": 95,
+      "spDefense": 90,
+      "speed": 60
+    },
+    "evolvesFrom": "clefairy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 37,
+    "name": {
+      "en": "Vulpix",
+      "es": "Vulpix"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "spAttack": 50,
+      "spDefense": 65,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 38,
+    "name": {
+      "en": "Ninetales",
+      "es": "Ninetales"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "spAttack": 81,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "evolvesFrom": "vulpix",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 39,
+    "name": {
+      "en": "Jigglypuff",
+      "es": "Jigglypuff"
+    },
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "baseStats": {
+      "hp": 115,
+      "attack": 45,
+      "defense": 20,
+      "spAttack": 45,
+      "spDefense": 25,
+      "speed": 20
+    },
+    "evolvesFrom": "igglybuff",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 40,
+    "name": {
+      "en": "Wigglytuff",
+      "es": "Wigglytuff"
+    },
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "attack": 70,
+      "defense": 45,
+      "spAttack": 85,
+      "spDefense": 50,
+      "speed": 45
+    },
+    "evolvesFrom": "jigglypuff",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 41,
+    "name": {
+      "en": "Zubat",
+      "es": "Zubat"
+    },
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "spAttack": 30,
+      "spDefense": 40,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 42,
+    "name": {
+      "en": "Golbat",
+      "es": "Golbat"
+    },
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 70,
+      "spAttack": 65,
+      "spDefense": 75,
+      "speed": 90
+    },
+    "evolvesFrom": "zubat",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 43,
+    "name": {
+      "en": "Oddish",
+      "es": "Oddish"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 55,
+      "spAttack": 75,
+      "spDefense": 65,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 44,
+    "name": {
+      "en": "Gloom",
+      "es": "Gloom"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 70,
+      "spAttack": 85,
+      "spDefense": 75,
+      "speed": 40
+    },
+    "evolvesFrom": "oddish",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 45,
+    "name": {
+      "en": "Vileplume",
+      "es": "Vileplume"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 85,
+      "spAttack": 110,
+      "spDefense": 90,
+      "speed": 50
+    },
+    "evolvesFrom": "gloom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 46,
+    "name": {
+      "en": "Paras",
+      "es": "Paras"
+    },
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 70,
+      "defense": 55,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 25
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 47,
+    "name": {
+      "en": "Parasect",
+      "es": "Parasect"
+    },
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "spAttack": 60,
+      "spDefense": 80,
+      "speed": 30
+    },
+    "evolvesFrom": "paras",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 48,
+    "name": {
+      "en": "Venonat",
+      "es": "Venonat"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 55,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 55,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 49,
+    "name": {
+      "en": "Venomoth",
+      "es": "Venomoth"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 90,
+      "spDefense": 75,
+      "speed": 90
+    },
+    "evolvesFrom": "venonat",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 50,
+    "name": {
+      "en": "Diglett",
+      "es": "Diglett"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 10,
+      "attack": 55,
+      "defense": 25,
+      "spAttack": 35,
+      "spDefense": 45,
+      "speed": 95
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 51,
+    "name": {
+      "en": "Dugtrio",
+      "es": "Dugtrio"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 120
+    },
+    "evolvesFrom": "diglett",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 52,
+    "name": {
+      "en": "Meowth",
+      "es": "Meowth"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 53,
+    "name": {
+      "en": "Persian",
+      "es": "Persian"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 70,
+      "defense": 60,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 115
+    },
+    "evolvesFrom": "meowth",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 54,
+    "name": {
+      "en": "Psyduck",
+      "es": "Psyduck"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "spAttack": 65,
+      "spDefense": 50,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 55,
+    "name": {
+      "en": "Golduck",
+      "es": "Golduck"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 78,
+      "spAttack": 95,
+      "spDefense": 80,
+      "speed": 85
+    },
+    "evolvesFrom": "psyduck",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 56,
+    "name": {
+      "en": "Mankey",
+      "es": "Mankey"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 35,
+      "spAttack": 35,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 57,
+    "name": {
+      "en": "Primeape",
+      "es": "Primeape"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 105,
+      "defense": 60,
+      "spAttack": 60,
+      "spDefense": 70,
+      "speed": 95
+    },
+    "evolvesFrom": "mankey",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 58,
+    "name": {
+      "en": "Growlithe",
+      "es": "Growlithe"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 45,
+      "spAttack": 70,
+      "spDefense": 50,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 59,
+    "name": {
+      "en": "Arcanine",
+      "es": "Arcanine"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 110,
+      "defense": 80,
+      "spAttack": 100,
+      "spDefense": 80,
+      "speed": 95
+    },
+    "evolvesFrom": "growlithe",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 60,
+    "name": {
+      "en": "Poliwag",
+      "es": "Poliwag"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 40,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 61,
+    "name": {
+      "en": "Poliwhirl",
+      "es": "Poliwhirl"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 90
+    },
+    "evolvesFrom": "poliwag",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 62,
+    "name": {
+      "en": "Poliwrath",
+      "es": "Poliwrath"
+    },
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 95,
+      "defense": 95,
+      "spAttack": 70,
+      "spDefense": 90,
+      "speed": 70
+    },
+    "evolvesFrom": "poliwhirl",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 63,
+    "name": {
+      "en": "Abra",
+      "es": "Abra"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "spAttack": 105,
+      "spDefense": 55,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 64,
+    "name": {
+      "en": "Kadabra",
+      "es": "Kadabra"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "spAttack": 120,
+      "spDefense": 70,
+      "speed": 105
+    },
+    "evolvesFrom": "abra",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 65,
+    "name": {
+      "en": "Alakazam",
+      "es": "Alakazam"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 50,
+      "defense": 45,
+      "spAttack": 135,
+      "spDefense": 95,
+      "speed": 120
+    },
+    "evolvesFrom": "kadabra",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 66,
+    "name": {
+      "en": "Machop",
+      "es": "Machop"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 67,
+    "name": {
+      "en": "Machoke",
+      "es": "Machoke"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "spAttack": 50,
+      "spDefense": 60,
+      "speed": 45
+    },
+    "evolvesFrom": "machop",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 68,
+    "name": {
+      "en": "Machamp",
+      "es": "Machamp"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 80,
+      "spAttack": 65,
+      "spDefense": 85,
+      "speed": 55
+    },
+    "evolvesFrom": "machoke",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 69,
+    "name": {
+      "en": "Bellsprout",
+      "es": "Bellsprout"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 35,
+      "spAttack": 70,
+      "spDefense": 30,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 70,
+    "name": {
+      "en": "Weepinbell",
+      "es": "Weepinbell"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 50,
+      "spAttack": 85,
+      "spDefense": 45,
+      "speed": 55
+    },
+    "evolvesFrom": "bellsprout",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 71,
+    "name": {
+      "en": "Victreebel",
+      "es": "Victreebel"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "spAttack": 100,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "evolvesFrom": "weepinbell",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 72,
+    "name": {
+      "en": "Tentacool",
+      "es": "Tentacool"
+    },
+    "types": [
+      "water",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 40,
+      "defense": 35,
+      "spAttack": 50,
+      "spDefense": 100,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 73,
+    "name": {
+      "en": "Tentacruel",
+      "es": "Tentacruel"
+    },
+    "types": [
+      "water",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "spAttack": 80,
+      "spDefense": 120,
+      "speed": 100
+    },
+    "evolvesFrom": "tentacool",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 74,
+    "name": {
+      "en": "Geodude",
+      "es": "Geodude"
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 20
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 75,
+    "name": {
+      "en": "Graveler",
+      "es": "Graveler"
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 35
+    },
+    "evolvesFrom": "geodude",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 76,
+    "name": {
+      "en": "Golem",
+      "es": "Golem"
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "evolvesFrom": "graveler",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 77,
+    "name": {
+      "en": "Ponyta",
+      "es": "Ponyta"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 78,
+    "name": {
+      "en": "Rapidash",
+      "es": "Rapidash"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 105
+    },
+    "evolvesFrom": "ponyta",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 79,
+    "name": {
+      "en": "Slowpoke",
+      "es": "Slowpoke"
+    },
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 15
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 80,
+    "name": {
+      "en": "Slowbro",
+      "es": "Slowbro"
+    },
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 75,
+      "defense": 110,
+      "spAttack": 100,
+      "spDefense": 80,
+      "speed": 30
+    },
+    "evolvesFrom": "slowpoke",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 81,
+    "name": {
+      "en": "Magnemite",
+      "es": "Magnemite"
+    },
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 25,
+      "attack": 35,
+      "defense": 70,
+      "spAttack": 95,
+      "spDefense": 55,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 82,
+    "name": {
+      "en": "Magneton",
+      "es": "Magneton"
+    },
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 60,
+      "defense": 95,
+      "spAttack": 120,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "evolvesFrom": "magnemite",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 83,
+    "name": {
+      "en": "Farfetch’d",
+      "es": "Farfetch’d"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 52,
+      "attack": 90,
+      "defense": 55,
+      "spAttack": 58,
+      "spDefense": 62,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 84,
+    "name": {
+      "en": "Doduo",
+      "es": "Doduo"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 85,
+      "defense": 45,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 75
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 85,
+    "name": {
+      "en": "Dodrio",
+      "es": "Dodrio"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 110,
+      "defense": 70,
+      "spAttack": 60,
+      "spDefense": 60,
+      "speed": 110
+    },
+    "evolvesFrom": "doduo",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 86,
+    "name": {
+      "en": "Seel",
+      "es": "Seel"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 45,
+      "defense": 55,
+      "spAttack": 45,
+      "spDefense": 70,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 87,
+    "name": {
+      "en": "Dewgong",
+      "es": "Dewgong"
+    },
+    "types": [
+      "water",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 70,
+      "defense": 80,
+      "spAttack": 70,
+      "spDefense": 95,
+      "speed": 70
+    },
+    "evolvesFrom": "seel",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 88,
+    "name": {
+      "en": "Grimer",
+      "es": "Grimer"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 25
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 89,
+    "name": {
+      "en": "Muk",
+      "es": "Muk"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "spAttack": 65,
+      "spDefense": 100,
+      "speed": 50
+    },
+    "evolvesFrom": "grimer",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 90,
+    "name": {
+      "en": "Shellder",
+      "es": "Shellder"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 65,
+      "defense": 100,
+      "spAttack": 45,
+      "spDefense": 25,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 91,
+    "name": {
+      "en": "Cloyster",
+      "es": "Cloyster"
+    },
+    "types": [
+      "water",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 95,
+      "defense": 180,
+      "spAttack": 85,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "evolvesFrom": "shellder",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 92,
+    "name": {
+      "en": "Gastly",
+      "es": "Gastly"
+    },
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "spAttack": 100,
+      "spDefense": 35,
+      "speed": 80
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 93,
+    "name": {
+      "en": "Haunter",
+      "es": "Haunter"
+    },
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 45,
+      "spAttack": 115,
+      "spDefense": 55,
+      "speed": 95
+    },
+    "evolvesFrom": "gastly",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 94,
+    "name": {
+      "en": "Gengar",
+      "es": "Gengar"
+    },
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 130,
+      "spDefense": 75,
+      "speed": 110
+    },
+    "evolvesFrom": "haunter",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 95,
+    "name": {
+      "en": "Onix",
+      "es": "Onix"
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "spAttack": 30,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 96,
+    "name": {
+      "en": "Drowzee",
+      "es": "Drowzee"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 48,
+      "defense": 45,
+      "spAttack": 43,
+      "spDefense": 90,
+      "speed": 42
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 97,
+    "name": {
+      "en": "Hypno",
+      "es": "Hypno"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 73,
+      "defense": 70,
+      "spAttack": 73,
+      "spDefense": 115,
+      "speed": 67
+    },
+    "evolvesFrom": "drowzee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 98,
+    "name": {
+      "en": "Krabby",
+      "es": "Krabby"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 105,
+      "defense": 90,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 99,
+    "name": {
+      "en": "Kingler",
+      "es": "Kingler"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 130,
+      "defense": 115,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 75
+    },
+    "evolvesFrom": "krabby",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 100,
+    "name": {
+      "en": "Voltorb",
+      "es": "Voltorb"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 50,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 101,
+    "name": {
+      "en": "Electrode",
+      "es": "Electrode"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 150
+    },
+    "evolvesFrom": "voltorb",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 102,
+    "name": {
+      "en": "Exeggcute",
+      "es": "Exeggcute"
+    },
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 40,
+      "defense": 80,
+      "spAttack": 60,
+      "spDefense": 45,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 103,
+    "name": {
+      "en": "Exeggutor",
+      "es": "Exeggutor"
+    },
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 95,
+      "defense": 85,
+      "spAttack": 125,
+      "spDefense": 75,
+      "speed": 55
+    },
+    "evolvesFrom": "exeggcute",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 104,
+    "name": {
+      "en": "Cubone",
+      "es": "Cubone"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 95,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 105,
+    "name": {
+      "en": "Marowak",
+      "es": "Marowak"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "spAttack": 50,
+      "spDefense": 80,
+      "speed": 45
+    },
+    "evolvesFrom": "cubone",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 106,
+    "name": {
+      "en": "Hitmonlee",
+      "es": "Hitmonlee"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 120,
+      "defense": 53,
+      "spAttack": 35,
+      "spDefense": 110,
+      "speed": 87
+    },
+    "evolvesFrom": "tyrogue",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 107,
+    "name": {
+      "en": "Hitmonchan",
+      "es": "Hitmonchan"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 105,
+      "defense": 79,
+      "spAttack": 35,
+      "spDefense": 110,
+      "speed": 76
+    },
+    "evolvesFrom": "tyrogue",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 108,
+    "name": {
+      "en": "Lickitung",
+      "es": "Lickitung"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 55,
+      "defense": 75,
+      "spAttack": 60,
+      "spDefense": 75,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 109,
+    "name": {
+      "en": "Koffing",
+      "es": "Koffing"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 65,
+      "defense": 95,
+      "spAttack": 60,
+      "spDefense": 45,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 110,
+    "name": {
+      "en": "Weezing",
+      "es": "Weezing"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "spAttack": 85,
+      "spDefense": 70,
+      "speed": 60
+    },
+    "evolvesFrom": "koffing",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 111,
+    "name": {
+      "en": "Rhyhorn",
+      "es": "Rhyhorn"
+    },
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 85,
+      "defense": 95,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 25
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 112,
+    "name": {
+      "en": "Rhydon",
+      "es": "Rhydon"
+    },
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 105,
+      "attack": 130,
+      "defense": 120,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 40
+    },
+    "evolvesFrom": "rhyhorn",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 113,
+    "name": {
+      "en": "Chansey",
+      "es": "Chansey"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "spAttack": 35,
+      "spDefense": 105,
+      "speed": 50
+    },
+    "evolvesFrom": "happiny",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 114,
+    "name": {
+      "en": "Tangela",
+      "es": "Tangela"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 55,
+      "defense": 115,
+      "spAttack": 100,
+      "spDefense": 40,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 115,
+    "name": {
+      "en": "Kangaskhan",
+      "es": "Kangaskhan"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 105,
+      "attack": 95,
+      "defense": 80,
+      "spAttack": 40,
+      "spDefense": 80,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 116,
+    "name": {
+      "en": "Horsea",
+      "es": "Horsea"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 40,
+      "defense": 70,
+      "spAttack": 70,
+      "spDefense": 25,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 117,
+    "name": {
+      "en": "Seadra",
+      "es": "Seadra"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 65,
+      "defense": 95,
+      "spAttack": 95,
+      "spDefense": 45,
+      "speed": 85
+    },
+    "evolvesFrom": "horsea",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 118,
+    "name": {
+      "en": "Goldeen",
+      "es": "Goldeen"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 67,
+      "defense": 60,
+      "spAttack": 35,
+      "spDefense": 50,
+      "speed": 63
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 119,
+    "name": {
+      "en": "Seaking",
+      "es": "Seaking"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 92,
+      "defense": 65,
+      "spAttack": 65,
+      "spDefense": 80,
+      "speed": 68
+    },
+    "evolvesFrom": "goldeen",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 120,
+    "name": {
+      "en": "Staryu",
+      "es": "Staryu"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 45,
+      "defense": 55,
+      "spAttack": 70,
+      "spDefense": 55,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 121,
+    "name": {
+      "en": "Starmie",
+      "es": "Starmie"
+    },
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 75,
+      "defense": 85,
+      "spAttack": 100,
+      "spDefense": 85,
+      "speed": 115
+    },
+    "evolvesFrom": "staryu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 122,
+    "name": {
+      "en": "Mr. Mime",
+      "es": "Mr. Mime"
+    },
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "spAttack": 100,
+      "spDefense": 120,
+      "speed": 90
+    },
+    "evolvesFrom": "mime-jr",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 123,
+    "name": {
+      "en": "Scyther",
+      "es": "Scyther"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "spAttack": 55,
+      "spDefense": 80,
+      "speed": 105
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 124,
+    "name": {
+      "en": "Jynx",
+      "es": "Jynx"
+    },
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 50,
+      "defense": 35,
+      "spAttack": 115,
+      "spDefense": 95,
+      "speed": 95
+    },
+    "evolvesFrom": "smoochum",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 125,
+    "name": {
+      "en": "Electabuzz",
+      "es": "Electabuzz"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 83,
+      "defense": 57,
+      "spAttack": 95,
+      "spDefense": 85,
+      "speed": 105
+    },
+    "evolvesFrom": "elekid",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 126,
+    "name": {
+      "en": "Magmar",
+      "es": "Magmar"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 95,
+      "defense": 57,
+      "spAttack": 100,
+      "spDefense": 85,
+      "speed": 93
+    },
+    "evolvesFrom": "magby",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 127,
+    "name": {
+      "en": "Pinsir",
+      "es": "Pinsir"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 125,
+      "defense": 100,
+      "spAttack": 55,
+      "spDefense": 70,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 128,
+    "name": {
+      "en": "Tauros",
+      "es": "Tauros"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 95,
+      "spAttack": 40,
+      "spDefense": 70,
+      "speed": 110
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 129,
+    "name": {
+      "en": "Magikarp",
+      "es": "Magikarp"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "spAttack": 15,
+      "spDefense": 20,
+      "speed": 80
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 130,
+    "name": {
+      "en": "Gyarados",
+      "es": "Gyarados"
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "spAttack": 60,
+      "spDefense": 100,
+      "speed": 81
+    },
+    "evolvesFrom": "magikarp",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 131,
+    "name": {
+      "en": "Lapras",
+      "es": "Lapras"
+    },
+    "types": [
+      "water",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 85,
+      "defense": 80,
+      "spAttack": 85,
+      "spDefense": 95,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 132,
+    "name": {
+      "en": "Ditto",
+      "es": "Ditto"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 48,
+      "attack": 48,
+      "defense": 48,
+      "spAttack": 48,
+      "spDefense": 48,
+      "speed": 48
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 133,
+    "name": {
+      "en": "Eevee",
+      "es": "Eevee"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 50,
+      "spAttack": 45,
+      "spDefense": 65,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 134,
+    "name": {
+      "en": "Vaporeon",
+      "es": "Vaporeon"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 110,
+      "spDefense": 95,
+      "speed": 65
+    },
+    "evolvesFrom": "eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 135,
+    "name": {
+      "en": "Jolteon",
+      "es": "Jolteon"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 110,
+      "spDefense": 95,
+      "speed": 130
+    },
+    "evolvesFrom": "eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 136,
+    "name": {
+      "en": "Flareon",
+      "es": "Flareon"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 130,
+      "defense": 60,
+      "spAttack": 95,
+      "spDefense": 110,
+      "speed": 65
+    },
+    "evolvesFrom": "eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 137,
+    "name": {
+      "en": "Porygon",
+      "es": "Porygon"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 60,
+      "defense": 70,
+      "spAttack": 85,
+      "spDefense": 75,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 138,
+    "name": {
+      "en": "Omanyte",
+      "es": "Omanyte"
+    },
+    "types": [
+      "rock",
+      "water"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 40,
+      "defense": 100,
+      "spAttack": 90,
+      "spDefense": 55,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 139,
+    "name": {
+      "en": "Omastar",
+      "es": "Omastar"
+    },
+    "types": [
+      "rock",
+      "water"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 125,
+      "spAttack": 115,
+      "spDefense": 70,
+      "speed": 55
+    },
+    "evolvesFrom": "omanyte",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 140,
+    "name": {
+      "en": "Kabuto",
+      "es": "Kabuto"
+    },
+    "types": [
+      "rock",
+      "water"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 80,
+      "defense": 90,
+      "spAttack": 55,
+      "spDefense": 45,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 141,
+    "name": {
+      "en": "Kabutops",
+      "es": "Kabutops"
+    },
+    "types": [
+      "rock",
+      "water"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 115,
+      "defense": 105,
+      "spAttack": 65,
+      "spDefense": 70,
+      "speed": 80
+    },
+    "evolvesFrom": "kabuto",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 142,
+    "name": {
+      "en": "Aerodactyl",
+      "es": "Aerodactyl"
+    },
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "spAttack": 60,
+      "spDefense": 75,
+      "speed": 130
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 143,
+    "name": {
+      "en": "Snorlax",
+      "es": "Snorlax"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "spAttack": 65,
+      "spDefense": 110,
+      "speed": 30
+    },
+    "evolvesFrom": "munchlax",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 144,
+    "name": {
+      "en": "Articuno",
+      "es": "Articuno"
+    },
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 85,
+      "defense": 100,
+      "spAttack": 95,
+      "spDefense": 125,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 145,
+    "name": {
+      "en": "Zapdos",
+      "es": "Zapdos"
+    },
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 90,
+      "defense": 85,
+      "spAttack": 125,
+      "spDefense": 90,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 146,
+    "name": {
+      "en": "Moltres",
+      "es": "Moltres"
+    },
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 100,
+      "defense": 90,
+      "spAttack": 125,
+      "spDefense": 85,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 147,
+    "name": {
+      "en": "Dratini",
+      "es": "Dratini"
+    },
+    "types": [
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 148,
+    "name": {
+      "en": "Dragonair",
+      "es": "Dragonair"
+    },
+    "types": [
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 61,
+      "attack": 84,
+      "defense": 65,
+      "spAttack": 70,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "evolvesFrom": "dratini",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 149,
+    "name": {
+      "en": "Dragonite",
+      "es": "Dragonite"
+    },
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 134,
+      "defense": 95,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 80
+    },
+    "evolvesFrom": "dragonair",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 150,
+    "name": {
+      "en": "Mewtwo",
+      "es": "Mewtwo"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 106,
+      "attack": 110,
+      "defense": 90,
+      "spAttack": 154,
+      "spDefense": 90,
+      "speed": 130
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  },
+  {
+    "id": 151,
+    "name": {
+      "en": "Mew",
+      "es": "Mew"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+  }
+]
