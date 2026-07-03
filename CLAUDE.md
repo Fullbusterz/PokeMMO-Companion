@@ -26,8 +26,8 @@ Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fu
 - **Pendiente de diseño (2026-07-04, ver "Ideas pendientes de desarrollar" más abajo):** extender de "solo brackets de torneo" a también soportar **liguillas** (formato liga/round-robin, con duración y filtros) — no implementado todavía, solo documentado el diseño.
 
 **Fase 2 (en progreso) — Pokédex multi-región:**
-- **Kanto (151), Johto (100) y Hoenn (135) hechos — 386 Pokémon en total.** Sinnoh y Teselia pendientes.
-- `data/<region>/pokemon.json` por región: stats base **verificadas contra la tabla histórica "Generation II-V" de Bulbapedia**, NUNCA contra el endpoint por defecto de PokéAPI. **Lección crítica aprendida el 2026-07-04:** PokéAPI devuelve las stats y el tipo del juego más reciente, no de Gen 1-5 — encontramos y corregimos 20 Pokémon de Kanto con stats post-Gen6 y 13 Pokémon (Kanto+Johto+Hoenn) con tipo Hada indebido. Ver regla de oro más abajo, ahora corregida para reflejar esto.
+- **Kanto (151), Johto (100), Hoenn (135) y Sinnoh (107) hechos — 493 Pokémon en total.** Solo Teselia pendiente para completar las 5 regiones.
+- `data/<region>/pokemon.json` por región: stats base **verificadas contra la tabla histórica "Generation II-V" de Bulbapedia** (o cruzadas contra las listas de subidas de stats de Gen 6/7/8 si esa tabla no es accesible — le pasó a Sinnoh, ver nota de memoria del proyecto), NUNCA contra el endpoint por defecto de PokéAPI ni contra páginas de "stats de generación X" sin verificar que reflejen el juego de esa época y no el actual. **Lección crítica aprendida el 2026-07-04:** PokéAPI (y muchas páginas de stats "por generación") devuelven las stats y el tipo del juego más reciente, no de Gen 1-5 — encontramos y corregimos 22 Pokémon con stats post-Gen6 y 15 Pokémon con tipo Hada indebido en las 4 regiones hechas. Ver regla de oro más abajo, ahora corregida para reflejar esto. **Vigilar también:** el campo `evolvesFrom` de PokéAPI a veces usa el slug interno en vez del nombre real cuando el nombre tiene un carácter especial (pasó con Nidoran♀/♂ y con Mime Jr.) — revisar cualquier especie nueva con símbolos raros en el nombre.
 - `src/lib/pokedex.ts` combina todas las regiones en `ALL_POKEMON` — necesario porque muchas cadenas evolutivas cruzan la frontera de región (Crobat/Johto evoluciona de Golbat/Kanto, Pikachu/Kanto de Pichu/Johto, etc.).
 - `data/type-chart.json`: tabla de efectividad de tipos **de Gen 5 específicamente** (17 tipos, SIN Hada, Acero resiste Fantasma/Siniestro — cambiado en Gen 6+). Verificada programáticamente.
 - Pantallas: lista+buscador, detalle (stats con barras animadas, familia evolutiva con navegación), comparador de tipos interactivo.
@@ -47,7 +47,7 @@ Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fu
 
 - **Nunca se ha probado en un dispositivo/simulador nativo real** — todo el testing ha sido vía `expo start --web`. Cosas concretas sin verificar en iOS/Android: los modificadores de opacidad de Tailwind contra colores custom (`bg-pokeRed/10` etc.), el patrón `group-active` de nativewind, y las animaciones de Reanimated (que en teoría funcionan bien en nativo pero nunca se han visto correr ahí).
 - **Icono de la app:** sigue siendo el placeholder genérico de Expo, no hay identidad visual real. Necesita trabajo de diseño real, no algo para improvisar.
-- Para arrancar la Fase 3 hace falta el dataset completo de 5 regiones (van 3 de 5: Kanto/Johto/Hoenn) — ver "Estructura de datos" más abajo.
+- Para arrancar la Fase 3 hace falta el dataset completo de 5 regiones (van 4 de 5: Kanto/Johto/Hoenn/Sinnoh) — ver "Estructura de datos" más abajo.
 
 ### 💡 Ideas pendientes de desarrollar (2026-07-04, aún sin implementar)
 
@@ -148,8 +148,8 @@ Se asumió originalmente (ver Fase 2 inicial) que tipo y stats base eran datos "
 - **Decisión de sincronización (confirmada con Ferran, 2026-07-02):** sin backend, sin login ni sesiones. El organizador exporta el estado del bracket como código de texto; los demás lo importan para ver el estado actualizado. Sincronización manual (el organizador re-exporta tras cada ronda).
 - **Pendiente (2026-07-04):** formato de liga/round-robin además de brackets — ver "Ideas pendientes de desarrollar" en Estado Actual arriba para el diseño propuesto.
 
-### Fase 2 — 🟡 EN PROGRESO (3 de 5 regiones, comparador de tipos hecho, resto pendiente)
-- **Kanto, Johto y Hoenn hechos (386 Pokémon)**, verificados contra la tabla histórica de Bulbapedia (no PokéAPI por defecto — ver corrección crítica de la regla de oro arriba). Sinnoh y Teselia pendientes, mismo método a repetir.
+### Fase 2 — 🟡 EN PROGRESO (4 de 5 regiones, comparador de tipos hecho, resto pendiente)
+- **Kanto, Johto, Hoenn y Sinnoh hechos (493 Pokémon)**, verificados contra la tabla histórica de Bulbapedia (no PokéAPI por defecto — ver corrección crítica de la regla de oro arriba). Solo Teselia pendiente, mismo método a repetir.
 - **Pokédex de consulta** (bilingüe): buscar Pokémon, ver ubicación por región/ruta, stats, movimientos válidos en PokeMMO. **Hecho excepto ubicación/movimientos (esperan a que se rellenen los stubs `locations.json`/`movesets.json` — ver idea de las guías de seviichamp.blogspot.com para `locations.json`).**
 - **Comparador de tipos interactivo:** tap-to-check de efectividad, incluyendo combinaciones de doble tipo. **Hecho para tipo simple; combinaciones de doble tipo pendientes.**
 
