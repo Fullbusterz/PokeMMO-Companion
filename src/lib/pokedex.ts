@@ -1,3 +1,4 @@
+import hoennPokemon from '../../data/hoenn/pokemon.json';
 import johtoPokemon from '../../data/johto/pokemon.json';
 import kantoPokemon from '../../data/kanto/pokemon.json';
 import type { PokemonEntry } from '@/types/pokemon';
@@ -6,7 +7,11 @@ import type { PokemonEntry } from '@/types/pokemon';
 // the full combined list since plenty of chains cross region boundaries
 // (e.g. Crobat/Johto evolves from Golbat/Kanto, Raichu/Kanto's pre-evolution
 // Pichu/Johto only resolves once both are loaded).
-export const ALL_POKEMON = [...(kantoPokemon as PokemonEntry[]), ...(johtoPokemon as PokemonEntry[])];
+export const ALL_POKEMON = [
+  ...(kantoPokemon as PokemonEntry[]),
+  ...(johtoPokemon as PokemonEntry[]),
+  ...(hoennPokemon as PokemonEntry[]),
+];
 
 export function getPokemonById(id: number): PokemonEntry | undefined {
   return ALL_POKEMON.find((p) => p.id === id);
