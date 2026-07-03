@@ -1,0 +1,3350 @@
+[
+  {
+    "id": 494,
+    "name": {
+      "en": "Victini",
+      "es": "Victini"
+    },
+    "types": [
+      "psychic",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/494.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 495,
+    "name": {
+      "en": "Snivy",
+      "es": "Snivy"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 45,
+      "defense": 55,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 63
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 496,
+    "name": {
+      "en": "Servine",
+      "es": "Servine"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 75,
+      "spAttack": 60,
+      "spDefense": 75,
+      "speed": 83
+    },
+    "evolvesFrom": "snivy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 497,
+    "name": {
+      "en": "Serperior",
+      "es": "Serperior"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 75,
+      "defense": 95,
+      "spAttack": 75,
+      "spDefense": 95,
+      "speed": 113
+    },
+    "evolvesFrom": "servine",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 498,
+    "name": {
+      "en": "Tepig",
+      "es": "Tepig"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 63,
+      "defense": 45,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 499,
+    "name": {
+      "en": "Pignite",
+      "es": "Pignite"
+    },
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 93,
+      "defense": 55,
+      "spAttack": 70,
+      "spDefense": 55,
+      "speed": 55
+    },
+    "evolvesFrom": "tepig",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/499.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 500,
+    "name": {
+      "en": "Emboar",
+      "es": "Emboar"
+    },
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 123,
+      "defense": 65,
+      "spAttack": 100,
+      "spDefense": 65,
+      "speed": 65
+    },
+    "evolvesFrom": "pignite",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 501,
+    "name": {
+      "en": "Oshawott",
+      "es": "Oshawott"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 45,
+      "spAttack": 63,
+      "spDefense": 45,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 502,
+    "name": {
+      "en": "Dewott",
+      "es": "Dewott"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 75,
+      "defense": 60,
+      "spAttack": 83,
+      "spDefense": 60,
+      "speed": 60
+    },
+    "evolvesFrom": "oshawott",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/502.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 503,
+    "name": {
+      "en": "Samurott",
+      "es": "Samurott"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 100,
+      "defense": 85,
+      "spAttack": 108,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "evolvesFrom": "dewott",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 504,
+    "name": {
+      "en": "Patrat",
+      "es": "Patrat"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 55,
+      "defense": 39,
+      "spAttack": 35,
+      "spDefense": 39,
+      "speed": 42
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/504.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 505,
+    "name": {
+      "en": "Watchog",
+      "es": "Watchog"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 85,
+      "defense": 69,
+      "spAttack": 60,
+      "spDefense": 69,
+      "speed": 77
+    },
+    "evolvesFrom": "patrat",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/505.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 506,
+    "name": {
+      "en": "Lillipup",
+      "es": "Lillipup"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 60,
+      "defense": 45,
+      "spAttack": 25,
+      "spDefense": 45,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 507,
+    "name": {
+      "en": "Herdier",
+      "es": "Herdier"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 80,
+      "defense": 65,
+      "spAttack": 35,
+      "spDefense": 65,
+      "speed": 60
+    },
+    "evolvesFrom": "lillipup",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/507.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 508,
+    "name": {
+      "en": "Stoutland",
+      "es": "Stoutland"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 100,
+      "defense": 90,
+      "spAttack": 45,
+      "spDefense": 90,
+      "speed": 80
+    },
+    "evolvesFrom": "herdier",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/508.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 509,
+    "name": {
+      "en": "Purrloin",
+      "es": "Purrloin"
+    },
+    "types": [
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 41,
+      "attack": 50,
+      "defense": 37,
+      "spAttack": 50,
+      "spDefense": 37,
+      "speed": 66
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 510,
+    "name": {
+      "en": "Liepard",
+      "es": "Liepard"
+    },
+    "types": [
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 64,
+      "attack": 88,
+      "defense": 50,
+      "spAttack": 88,
+      "spDefense": 50,
+      "speed": 106
+    },
+    "evolvesFrom": "purrloin",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 511,
+    "name": {
+      "en": "Pansage",
+      "es": "Pansage"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 53,
+      "defense": 48,
+      "spAttack": 53,
+      "spDefense": 48,
+      "speed": 64
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/511.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 512,
+    "name": {
+      "en": "Simisage",
+      "es": "Simisage"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 98,
+      "defense": 63,
+      "spAttack": 98,
+      "spDefense": 63,
+      "speed": 101
+    },
+    "evolvesFrom": "pansage",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 513,
+    "name": {
+      "en": "Pansear",
+      "es": "Pansear"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 53,
+      "defense": 48,
+      "spAttack": 53,
+      "spDefense": 48,
+      "speed": 64
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/513.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 514,
+    "name": {
+      "en": "Simisear",
+      "es": "Simisear"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 98,
+      "defense": 63,
+      "spAttack": 98,
+      "spDefense": 63,
+      "speed": 101
+    },
+    "evolvesFrom": "pansear",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/514.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 515,
+    "name": {
+      "en": "Panpour",
+      "es": "Panpour"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 53,
+      "defense": 48,
+      "spAttack": 53,
+      "spDefense": 48,
+      "speed": 64
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/515.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 516,
+    "name": {
+      "en": "Simipour",
+      "es": "Simipour"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 98,
+      "defense": 63,
+      "spAttack": 98,
+      "spDefense": 63,
+      "speed": 101
+    },
+    "evolvesFrom": "panpour",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 517,
+    "name": {
+      "en": "Munna",
+      "es": "Munna"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 76,
+      "attack": 25,
+      "defense": 45,
+      "spAttack": 67,
+      "spDefense": 55,
+      "speed": 24
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/517.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 518,
+    "name": {
+      "en": "Musharna",
+      "es": "Musharna"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 116,
+      "attack": 55,
+      "defense": 85,
+      "spAttack": 107,
+      "spDefense": 95,
+      "speed": 29
+    },
+    "evolvesFrom": "munna",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/518.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 519,
+    "name": {
+      "en": "Pidove",
+      "es": "Pidove"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 55,
+      "defense": 50,
+      "spAttack": 36,
+      "spDefense": 30,
+      "speed": 43
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 520,
+    "name": {
+      "en": "Tranquill",
+      "es": "Tranquill"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 62,
+      "attack": 77,
+      "defense": 62,
+      "spAttack": 50,
+      "spDefense": 42,
+      "speed": 65
+    },
+    "evolvesFrom": "pidove",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/520.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 521,
+    "name": {
+      "en": "Unfezant",
+      "es": "Unfezant"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 80,
+      "spAttack": 65,
+      "spDefense": 55,
+      "speed": 93
+    },
+    "evolvesFrom": "tranquill",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 522,
+    "name": {
+      "en": "Blitzle",
+      "es": "Blitzle"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 60,
+      "defense": 32,
+      "spAttack": 50,
+      "spDefense": 32,
+      "speed": 76
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 523,
+    "name": {
+      "en": "Zebstrika",
+      "es": "Zebstrika"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 63,
+      "spAttack": 80,
+      "spDefense": 63,
+      "speed": 116
+    },
+    "evolvesFrom": "blitzle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 524,
+    "name": {
+      "en": "Roggenrola",
+      "es": "Roggenrola"
+    },
+    "types": [
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 75,
+      "defense": 85,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 15
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/524.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 525,
+    "name": {
+      "en": "Boldore",
+      "es": "Boldore"
+    },
+    "types": [
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 105,
+      "defense": 105,
+      "spAttack": 50,
+      "spDefense": 40,
+      "speed": 20
+    },
+    "evolvesFrom": "roggenrola",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 526,
+    "name": {
+      "en": "Gigalith",
+      "es": "Gigalith"
+    },
+    "types": [
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 135,
+      "defense": 130,
+      "spAttack": 60,
+      "spDefense": 70,
+      "speed": 25
+    },
+    "evolvesFrom": "boldore",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/526.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 527,
+    "name": {
+      "en": "Woobat",
+      "es": "Woobat"
+    },
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 45,
+      "defense": 43,
+      "spAttack": 55,
+      "spDefense": 43,
+      "speed": 72
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/527.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 528,
+    "name": {
+      "en": "Swoobat",
+      "es": "Swoobat"
+    },
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 67,
+      "attack": 57,
+      "defense": 55,
+      "spAttack": 77,
+      "spDefense": 55,
+      "speed": 114
+    },
+    "evolvesFrom": "woobat",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 529,
+    "name": {
+      "en": "Drilbur",
+      "es": "Drilbur"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 85,
+      "defense": 40,
+      "spAttack": 30,
+      "spDefense": 45,
+      "speed": 68
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/529.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 530,
+    "name": {
+      "en": "Excadrill",
+      "es": "Excadrill"
+    },
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 135,
+      "defense": 60,
+      "spAttack": 50,
+      "spDefense": 65,
+      "speed": 88
+    },
+    "evolvesFrom": "drilbur",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 531,
+    "name": {
+      "en": "Audino",
+      "es": "Audino"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 103,
+      "attack": 60,
+      "defense": 86,
+      "spAttack": 60,
+      "spDefense": 86,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 532,
+    "name": {
+      "en": "Timburr",
+      "es": "Timburr"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 55,
+      "spAttack": 25,
+      "spDefense": 35,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/532.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 533,
+    "name": {
+      "en": "Gurdurr",
+      "es": "Gurdurr"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 105,
+      "defense": 85,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 40
+    },
+    "evolvesFrom": "timburr",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 534,
+    "name": {
+      "en": "Conkeldurr",
+      "es": "Conkeldurr"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 105,
+      "attack": 140,
+      "defense": 95,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "evolvesFrom": "gurdurr",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 535,
+    "name": {
+      "en": "Tympole",
+      "es": "Tympole"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 40,
+      "spAttack": 50,
+      "spDefense": 40,
+      "speed": 64
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 536,
+    "name": {
+      "en": "Palpitoad",
+      "es": "Palpitoad"
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 65,
+      "defense": 55,
+      "spAttack": 65,
+      "spDefense": 55,
+      "speed": 69
+    },
+    "evolvesFrom": "tympole",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/536.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 537,
+    "name": {
+      "en": "Seismitoad",
+      "es": "Seismitoad"
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 105,
+      "attack": 85,
+      "defense": 75,
+      "spAttack": 85,
+      "spDefense": 75,
+      "speed": 74
+    },
+    "evolvesFrom": "palpitoad",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 538,
+    "name": {
+      "en": "Throh",
+      "es": "Throh"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 120,
+      "attack": 100,
+      "defense": 85,
+      "spAttack": 30,
+      "spDefense": 85,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/538.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 539,
+    "name": {
+      "en": "Sawk",
+      "es": "Sawk"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 125,
+      "defense": 75,
+      "spAttack": 30,
+      "spDefense": 75,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/539.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 540,
+    "name": {
+      "en": "Sewaddle",
+      "es": "Sewaddle"
+    },
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 53,
+      "defense": 70,
+      "spAttack": 40,
+      "spDefense": 60,
+      "speed": 42
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/540.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 541,
+    "name": {
+      "en": "Swadloon",
+      "es": "Swadloon"
+    },
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 63,
+      "defense": 90,
+      "spAttack": 50,
+      "spDefense": 80,
+      "speed": 42
+    },
+    "evolvesFrom": "sewaddle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/541.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 542,
+    "name": {
+      "en": "Leavanny",
+      "es": "Leavanny"
+    },
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 103,
+      "defense": 80,
+      "spAttack": 70,
+      "spDefense": 70,
+      "speed": 92
+    },
+    "evolvesFrom": "swadloon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 543,
+    "name": {
+      "en": "Venipede",
+      "es": "Venipede"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 45,
+      "defense": 59,
+      "spAttack": 30,
+      "spDefense": 39,
+      "speed": 57
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/543.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 544,
+    "name": {
+      "en": "Whirlipede",
+      "es": "Whirlipede"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 55,
+      "defense": 99,
+      "spAttack": 40,
+      "spDefense": 79,
+      "speed": 47
+    },
+    "evolvesFrom": "venipede",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/544.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 545,
+    "name": {
+      "en": "Scolipede",
+      "es": "Scolipede"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 89,
+      "spAttack": 55,
+      "spDefense": 69,
+      "speed": 112
+    },
+    "evolvesFrom": "whirlipede",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 546,
+    "name": {
+      "en": "Cottonee",
+      "es": "Cottonee"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 27,
+      "defense": 60,
+      "spAttack": 37,
+      "spDefense": 50,
+      "speed": 66
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a grass (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO)."
+  },
+  {
+    "id": 547,
+    "name": {
+      "en": "Whimsicott",
+      "es": "Whimsicott"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 67,
+      "defense": 85,
+      "spAttack": 77,
+      "spDefense": 75,
+      "speed": 116
+    },
+    "evolvesFrom": "cottonee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/547.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a grass (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO)."
+  },
+  {
+    "id": 548,
+    "name": {
+      "en": "Petilil",
+      "es": "Petilil"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 35,
+      "defense": 50,
+      "spAttack": 70,
+      "spDefense": 50,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 549,
+    "name": {
+      "en": "Lilligant",
+      "es": "Lilligant"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 75,
+      "spAttack": 110,
+      "spDefense": 75,
+      "speed": 90
+    },
+    "evolvesFrom": "petilil",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 550,
+    "name": {
+      "en": "Basculin",
+      "es": "Basculin"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 92,
+      "defense": 65,
+      "spAttack": 80,
+      "spDefense": 55,
+      "speed": 98
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 551,
+    "name": {
+      "en": "Sandile",
+      "es": "Sandile"
+    },
+    "types": [
+      "ground",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 72,
+      "defense": 35,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 552,
+    "name": {
+      "en": "Krokorok",
+      "es": "Krokorok"
+    },
+    "types": [
+      "ground",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 82,
+      "defense": 45,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 74
+    },
+    "evolvesFrom": "sandile",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 553,
+    "name": {
+      "en": "Krookodile",
+      "es": "Krookodile"
+    },
+    "types": [
+      "ground",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 117,
+      "defense": 70,
+      "spAttack": 65,
+      "spDefense": 70,
+      "speed": 92
+    },
+    "evolvesFrom": "krokorok",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 554,
+    "name": {
+      "en": "Darumaka",
+      "es": "Darumaka"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 90,
+      "defense": 45,
+      "spAttack": 15,
+      "spDefense": 45,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/554.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 555,
+    "name": {
+      "en": "Darmanitan",
+      "es": "Darmanitan"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 105,
+      "attack": 140,
+      "defense": 55,
+      "spAttack": 30,
+      "spDefense": 55,
+      "speed": 95
+    },
+    "evolvesFrom": "darumaka",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 556,
+    "name": {
+      "en": "Maractus",
+      "es": "Maractus"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 86,
+      "defense": 67,
+      "spAttack": 106,
+      "spDefense": 67,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 557,
+    "name": {
+      "en": "Dwebble",
+      "es": "Dwebble"
+    },
+    "types": [
+      "bug",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 65,
+      "defense": 85,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/557.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 558,
+    "name": {
+      "en": "Crustle",
+      "es": "Crustle"
+    },
+    "types": [
+      "bug",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 95,
+      "defense": 125,
+      "spAttack": 65,
+      "spDefense": 75,
+      "speed": 45
+    },
+    "evolvesFrom": "dwebble",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/558.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 559,
+    "name": {
+      "en": "Scraggy",
+      "es": "Scraggy"
+    },
+    "types": [
+      "dark",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 70,
+      "spAttack": 35,
+      "spDefense": 70,
+      "speed": 48
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 560,
+    "name": {
+      "en": "Scrafty",
+      "es": "Scrafty"
+    },
+    "types": [
+      "dark",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 115,
+      "spAttack": 45,
+      "spDefense": 115,
+      "speed": 58
+    },
+    "evolvesFrom": "scraggy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 561,
+    "name": {
+      "en": "Sigilyph",
+      "es": "Sigilyph"
+    },
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 72,
+      "attack": 58,
+      "defense": 80,
+      "spAttack": 103,
+      "spDefense": 80,
+      "speed": 97
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 562,
+    "name": {
+      "en": "Yamask",
+      "es": "Yamask"
+    },
+    "types": [
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 38,
+      "attack": 30,
+      "defense": 85,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/562.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 563,
+    "name": {
+      "en": "Cofagrigus",
+      "es": "Cofagrigus"
+    },
+    "types": [
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 58,
+      "attack": 50,
+      "defense": 145,
+      "spAttack": 95,
+      "spDefense": 105,
+      "speed": 30
+    },
+    "evolvesFrom": "yamask",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/563.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 564,
+    "name": {
+      "en": "Tirtouga",
+      "es": "Tirtouga"
+    },
+    "types": [
+      "water",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 54,
+      "attack": 78,
+      "defense": 103,
+      "spAttack": 53,
+      "spDefense": 45,
+      "speed": 22
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/564.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 565,
+    "name": {
+      "en": "Carracosta",
+      "es": "Carracosta"
+    },
+    "types": [
+      "water",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 74,
+      "attack": 108,
+      "defense": 133,
+      "spAttack": 83,
+      "spDefense": 65,
+      "speed": 32
+    },
+    "evolvesFrom": "tirtouga",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/565.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 566,
+    "name": {
+      "en": "Archen",
+      "es": "Archen"
+    },
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 112,
+      "defense": 45,
+      "spAttack": 74,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/566.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 567,
+    "name": {
+      "en": "Archeops",
+      "es": "Archeops"
+    },
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 140,
+      "defense": 65,
+      "spAttack": 112,
+      "spDefense": 65,
+      "speed": 110
+    },
+    "evolvesFrom": "archen",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 568,
+    "name": {
+      "en": "Trubbish",
+      "es": "Trubbish"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 62,
+      "spAttack": 40,
+      "spDefense": 62,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/568.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 569,
+    "name": {
+      "en": "Garbodor",
+      "es": "Garbodor"
+    },
+    "types": [
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 95,
+      "defense": 82,
+      "spAttack": 60,
+      "spDefense": 82,
+      "speed": 75
+    },
+    "evolvesFrom": "trubbish",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/569.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 570,
+    "name": {
+      "en": "Zorua",
+      "es": "Zorua"
+    },
+    "types": [
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 65,
+      "defense": 40,
+      "spAttack": 80,
+      "spDefense": 40,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 571,
+    "name": {
+      "en": "Zoroark",
+      "es": "Zoroark"
+    },
+    "types": [
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 105,
+      "defense": 60,
+      "spAttack": 120,
+      "spDefense": 60,
+      "speed": 105
+    },
+    "evolvesFrom": "zorua",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 572,
+    "name": {
+      "en": "Minccino",
+      "es": "Minccino"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 50,
+      "defense": 40,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 75
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 573,
+    "name": {
+      "en": "Cinccino",
+      "es": "Cinccino"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 95,
+      "defense": 60,
+      "spAttack": 65,
+      "spDefense": 60,
+      "speed": 115
+    },
+    "evolvesFrom": "minccino",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 574,
+    "name": {
+      "en": "Gothita",
+      "es": "Gothita"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 50,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 575,
+    "name": {
+      "en": "Gothorita",
+      "es": "Gothorita"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 70,
+      "spAttack": 75,
+      "spDefense": 85,
+      "speed": 55
+    },
+    "evolvesFrom": "gothita",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 576,
+    "name": {
+      "en": "Gothitelle",
+      "es": "Gothitelle"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 55,
+      "defense": 95,
+      "spAttack": 95,
+      "spDefense": 110,
+      "speed": 65
+    },
+    "evolvesFrom": "gothorita",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 577,
+    "name": {
+      "en": "Solosis",
+      "es": "Solosis"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 40,
+      "spAttack": 105,
+      "spDefense": 50,
+      "speed": 20
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 578,
+    "name": {
+      "en": "Duosion",
+      "es": "Duosion"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 40,
+      "defense": 50,
+      "spAttack": 125,
+      "spDefense": 60,
+      "speed": 30
+    },
+    "evolvesFrom": "solosis",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 579,
+    "name": {
+      "en": "Reuniclus",
+      "es": "Reuniclus"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 65,
+      "defense": 75,
+      "spAttack": 125,
+      "spDefense": 85,
+      "speed": 30
+    },
+    "evolvesFrom": "duosion",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 580,
+    "name": {
+      "en": "Ducklett",
+      "es": "Ducklett"
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 62,
+      "attack": 44,
+      "defense": 50,
+      "spAttack": 44,
+      "spDefense": 50,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 581,
+    "name": {
+      "en": "Swanna",
+      "es": "Swanna"
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 87,
+      "defense": 63,
+      "spAttack": 87,
+      "spDefense": 63,
+      "speed": 98
+    },
+    "evolvesFrom": "ducklett",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/581.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 582,
+    "name": {
+      "en": "Vanillite",
+      "es": "Vanillite"
+    },
+    "types": [
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 36,
+      "attack": 50,
+      "defense": 50,
+      "spAttack": 65,
+      "spDefense": 60,
+      "speed": 44
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/582.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 583,
+    "name": {
+      "en": "Vanillish",
+      "es": "Vanillish"
+    },
+    "types": [
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 51,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 80,
+      "spDefense": 75,
+      "speed": 59
+    },
+    "evolvesFrom": "vanillite",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/583.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 584,
+    "name": {
+      "en": "Vanilluxe",
+      "es": "Vanilluxe"
+    },
+    "types": [
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 71,
+      "attack": 95,
+      "defense": 85,
+      "spAttack": 110,
+      "spDefense": 95,
+      "speed": 79
+    },
+    "evolvesFrom": "vanillish",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 585,
+    "name": {
+      "en": "Deerling",
+      "es": "Deerling"
+    },
+    "types": [
+      "normal",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 75
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 586,
+    "name": {
+      "en": "Sawsbuck",
+      "es": "Sawsbuck"
+    },
+    "types": [
+      "normal",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "spAttack": 60,
+      "spDefense": 70,
+      "speed": 95
+    },
+    "evolvesFrom": "deerling",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 587,
+    "name": {
+      "en": "Emolga",
+      "es": "Emolga"
+    },
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 75,
+      "defense": 60,
+      "spAttack": 75,
+      "spDefense": 60,
+      "speed": 103
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/587.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 588,
+    "name": {
+      "en": "Karrablast",
+      "es": "Karrablast"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 45,
+      "spAttack": 40,
+      "spDefense": 45,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/588.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 589,
+    "name": {
+      "en": "Escavalier",
+      "es": "Escavalier"
+    },
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 135,
+      "defense": 105,
+      "spAttack": 60,
+      "spDefense": 105,
+      "speed": 20
+    },
+    "evolvesFrom": "karrablast",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 590,
+    "name": {
+      "en": "Foongus",
+      "es": "Foongus"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 69,
+      "attack": 55,
+      "defense": 45,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 15
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 591,
+    "name": {
+      "en": "Amoonguss",
+      "es": "Amoonguss"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 114,
+      "attack": 85,
+      "defense": 70,
+      "spAttack": 85,
+      "spDefense": 80,
+      "speed": 30
+    },
+    "evolvesFrom": "foongus",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 592,
+    "name": {
+      "en": "Frillish",
+      "es": "Frillish"
+    },
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 40,
+      "defense": 50,
+      "spAttack": 65,
+      "spDefense": 85,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 593,
+    "name": {
+      "en": "Jellicent",
+      "es": "Jellicent"
+    },
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 60,
+      "defense": 70,
+      "spAttack": 85,
+      "spDefense": 105,
+      "speed": 60
+    },
+    "evolvesFrom": "frillish",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 594,
+    "name": {
+      "en": "Alomomola",
+      "es": "Alomomola"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "attack": 75,
+      "defense": 80,
+      "spAttack": 40,
+      "spDefense": 45,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 595,
+    "name": {
+      "en": "Joltik",
+      "es": "Joltik"
+    },
+    "types": [
+      "bug",
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 47,
+      "defense": 50,
+      "spAttack": 57,
+      "spDefense": 50,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 596,
+    "name": {
+      "en": "Galvantula",
+      "es": "Galvantula"
+    },
+    "types": [
+      "bug",
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 77,
+      "defense": 60,
+      "spAttack": 97,
+      "spDefense": 60,
+      "speed": 108
+    },
+    "evolvesFrom": "joltik",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 597,
+    "name": {
+      "en": "Ferroseed",
+      "es": "Ferroseed"
+    },
+    "types": [
+      "grass",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 44,
+      "attack": 50,
+      "defense": 91,
+      "spAttack": 24,
+      "spDefense": 86,
+      "speed": 10
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 598,
+    "name": {
+      "en": "Ferrothorn",
+      "es": "Ferrothorn"
+    },
+    "types": [
+      "grass",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 74,
+      "attack": 94,
+      "defense": 131,
+      "spAttack": 54,
+      "spDefense": 116,
+      "speed": 20
+    },
+    "evolvesFrom": "ferroseed",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 599,
+    "name": {
+      "en": "Klink",
+      "es": "Klink"
+    },
+    "types": [
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 55,
+      "defense": 70,
+      "spAttack": 45,
+      "spDefense": 60,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/599.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 600,
+    "name": {
+      "en": "Klang",
+      "es": "Klang"
+    },
+    "types": [
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 95,
+      "spAttack": 70,
+      "spDefense": 85,
+      "speed": 50
+    },
+    "evolvesFrom": "klink",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 601,
+    "name": {
+      "en": "Klinklang",
+      "es": "Klinklang"
+    },
+    "types": [
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 100,
+      "defense": 115,
+      "spAttack": 70,
+      "spDefense": 85,
+      "speed": 90
+    },
+    "evolvesFrom": "klang",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/601.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 602,
+    "name": {
+      "en": "Tynamo",
+      "es": "Tynamo"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "spAttack": 45,
+      "spDefense": 40,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 603,
+    "name": {
+      "en": "Eelektrik",
+      "es": "Eelektrik"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 85,
+      "defense": 70,
+      "spAttack": 75,
+      "spDefense": 70,
+      "speed": 40
+    },
+    "evolvesFrom": "tynamo",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 604,
+    "name": {
+      "en": "Eelektross",
+      "es": "Eelektross"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 115,
+      "defense": 80,
+      "spAttack": 105,
+      "spDefense": 80,
+      "speed": 50
+    },
+    "evolvesFrom": "eelektrik",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 605,
+    "name": {
+      "en": "Elgyem",
+      "es": "Elgyem"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 55,
+      "spAttack": 85,
+      "spDefense": 55,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 606,
+    "name": {
+      "en": "Beheeyem",
+      "es": "Beheeyem"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 75,
+      "defense": 75,
+      "spAttack": 125,
+      "spDefense": 95,
+      "speed": 40
+    },
+    "evolvesFrom": "elgyem",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 607,
+    "name": {
+      "en": "Litwick",
+      "es": "Litwick"
+    },
+    "types": [
+      "ghost",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 30,
+      "defense": 55,
+      "spAttack": 65,
+      "spDefense": 55,
+      "speed": 20
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 608,
+    "name": {
+      "en": "Lampent",
+      "es": "Lampent"
+    },
+    "types": [
+      "ghost",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 40,
+      "defense": 60,
+      "spAttack": 95,
+      "spDefense": 60,
+      "speed": 55
+    },
+    "evolvesFrom": "litwick",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 609,
+    "name": {
+      "en": "Chandelure",
+      "es": "Chandelure"
+    },
+    "types": [
+      "ghost",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 55,
+      "defense": 90,
+      "spAttack": 145,
+      "spDefense": 90,
+      "speed": 80
+    },
+    "evolvesFrom": "lampent",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 610,
+    "name": {
+      "en": "Axew",
+      "es": "Axew"
+    },
+    "types": [
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 46,
+      "attack": 87,
+      "defense": 60,
+      "spAttack": 30,
+      "spDefense": 40,
+      "speed": 57
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 611,
+    "name": {
+      "en": "Fraxure",
+      "es": "Fraxure"
+    },
+    "types": [
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 66,
+      "attack": 117,
+      "defense": 70,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 67
+    },
+    "evolvesFrom": "axew",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 612,
+    "name": {
+      "en": "Haxorus",
+      "es": "Haxorus"
+    },
+    "types": [
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 76,
+      "attack": 147,
+      "defense": 90,
+      "spAttack": 60,
+      "spDefense": 70,
+      "speed": 97
+    },
+    "evolvesFrom": "fraxure",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 613,
+    "name": {
+      "en": "Cubchoo",
+      "es": "Cubchoo"
+    },
+    "types": [
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 40,
+      "spAttack": 60,
+      "spDefense": 40,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 614,
+    "name": {
+      "en": "Beartic",
+      "es": "Beartic"
+    },
+    "types": [
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 110,
+      "defense": 80,
+      "spAttack": 70,
+      "spDefense": 80,
+      "speed": 50
+    },
+    "evolvesFrom": "cubchoo",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/614.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 615,
+    "name": {
+      "en": "Cryogonal",
+      "es": "Cryogonal"
+    },
+    "types": [
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 50,
+      "defense": 50,
+      "spAttack": 95,
+      "spDefense": 135,
+      "speed": 105
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 616,
+    "name": {
+      "en": "Shelmet",
+      "es": "Shelmet"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 40,
+      "defense": 85,
+      "spAttack": 40,
+      "spDefense": 65,
+      "speed": 25
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/616.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 617,
+    "name": {
+      "en": "Accelgor",
+      "es": "Accelgor"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 40,
+      "spAttack": 100,
+      "spDefense": 60,
+      "speed": 145
+    },
+    "evolvesFrom": "shelmet",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 618,
+    "name": {
+      "en": "Stunfisk",
+      "es": "Stunfisk"
+    },
+    "types": [
+      "ground",
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 109,
+      "attack": 66,
+      "defense": 84,
+      "spAttack": 81,
+      "spDefense": 99,
+      "speed": 32
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/618.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 619,
+    "name": {
+      "en": "Mienfoo",
+      "es": "Mienfoo"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 85,
+      "defense": 50,
+      "spAttack": 55,
+      "spDefense": 50,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 620,
+    "name": {
+      "en": "Mienshao",
+      "es": "Mienshao"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 125,
+      "defense": 60,
+      "spAttack": 95,
+      "spDefense": 60,
+      "speed": 105
+    },
+    "evolvesFrom": "mienfoo",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 621,
+    "name": {
+      "en": "Druddigon",
+      "es": "Druddigon"
+    },
+    "types": [
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 77,
+      "attack": 120,
+      "defense": 90,
+      "spAttack": 60,
+      "spDefense": 90,
+      "speed": 48
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 622,
+    "name": {
+      "en": "Golett",
+      "es": "Golett"
+    },
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 59,
+      "attack": 74,
+      "defense": 50,
+      "spAttack": 35,
+      "spDefense": 50,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 623,
+    "name": {
+      "en": "Golurk",
+      "es": "Golurk"
+    },
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 89,
+      "attack": 124,
+      "defense": 80,
+      "spAttack": 55,
+      "spDefense": 80,
+      "speed": 55
+    },
+    "evolvesFrom": "golett",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 624,
+    "name": {
+      "en": "Pawniard",
+      "es": "Pawniard"
+    },
+    "types": [
+      "dark",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 85,
+      "defense": 70,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 625,
+    "name": {
+      "en": "Bisharp",
+      "es": "Bisharp"
+    },
+    "types": [
+      "dark",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 125,
+      "defense": 100,
+      "spAttack": 60,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "evolvesFrom": "pawniard",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 626,
+    "name": {
+      "en": "Bouffalant",
+      "es": "Bouffalant"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 110,
+      "defense": 95,
+      "spAttack": 40,
+      "spDefense": 95,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/626.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 627,
+    "name": {
+      "en": "Rufflet",
+      "es": "Rufflet"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 83,
+      "defense": 50,
+      "spAttack": 37,
+      "spDefense": 50,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 628,
+    "name": {
+      "en": "Braviary",
+      "es": "Braviary"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 123,
+      "defense": 75,
+      "spAttack": 57,
+      "spDefense": 75,
+      "speed": 80
+    },
+    "evolvesFrom": "rufflet",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 629,
+    "name": {
+      "en": "Vullaby",
+      "es": "Vullaby"
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 55,
+      "defense": 75,
+      "spAttack": 45,
+      "spDefense": 65,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 630,
+    "name": {
+      "en": "Mandibuzz",
+      "es": "Mandibuzz"
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 65,
+      "defense": 105,
+      "spAttack": 55,
+      "spDefense": 95,
+      "speed": 80
+    },
+    "evolvesFrom": "vullaby",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 631,
+    "name": {
+      "en": "Heatmor",
+      "es": "Heatmor"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 97,
+      "defense": 66,
+      "spAttack": 105,
+      "spDefense": 66,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 632,
+    "name": {
+      "en": "Durant",
+      "es": "Durant"
+    },
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 58,
+      "attack": 109,
+      "defense": 112,
+      "spAttack": 48,
+      "spDefense": 48,
+      "speed": 109
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/632.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 633,
+    "name": {
+      "en": "Deino",
+      "es": "Deino"
+    },
+    "types": [
+      "dark",
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 52,
+      "attack": 65,
+      "defense": 50,
+      "spAttack": 45,
+      "spDefense": 50,
+      "speed": 38
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/633.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 634,
+    "name": {
+      "en": "Zweilous",
+      "es": "Zweilous"
+    },
+    "types": [
+      "dark",
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 72,
+      "attack": 85,
+      "defense": 70,
+      "spAttack": 65,
+      "spDefense": 70,
+      "speed": 58
+    },
+    "evolvesFrom": "deino",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/634.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 635,
+    "name": {
+      "en": "Hydreigon",
+      "es": "Hydreigon"
+    },
+    "types": [
+      "dark",
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 92,
+      "attack": 105,
+      "defense": 90,
+      "spAttack": 125,
+      "spDefense": 90,
+      "speed": 98
+    },
+    "evolvesFrom": "zweilous",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 636,
+    "name": {
+      "en": "Larvesta",
+      "es": "Larvesta"
+    },
+    "types": [
+      "bug",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 85,
+      "defense": 55,
+      "spAttack": 50,
+      "spDefense": 55,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/636.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 637,
+    "name": {
+      "en": "Volcarona",
+      "es": "Volcarona"
+    },
+    "types": [
+      "bug",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 60,
+      "defense": 65,
+      "spAttack": 135,
+      "spDefense": 105,
+      "speed": 100
+    },
+    "evolvesFrom": "larvesta",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 638,
+    "name": {
+      "en": "Cobalion",
+      "es": "Cobalion"
+    },
+    "types": [
+      "steel",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 90,
+      "defense": 129,
+      "spAttack": 90,
+      "spDefense": 72,
+      "speed": 108
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 639,
+    "name": {
+      "en": "Terrakion",
+      "es": "Terrakion"
+    },
+    "types": [
+      "rock",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 129,
+      "defense": 90,
+      "spAttack": 72,
+      "spDefense": 90,
+      "speed": 108
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 640,
+    "name": {
+      "en": "Virizion",
+      "es": "Virizion"
+    },
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 90,
+      "defense": 72,
+      "spAttack": 90,
+      "spDefense": 129,
+      "speed": 108
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 641,
+    "name": {
+      "en": "Tornadus",
+      "es": "Tornadus"
+    },
+    "types": [
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 79,
+      "attack": 115,
+      "defense": 70,
+      "spAttack": 125,
+      "spDefense": 80,
+      "speed": 111
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 642,
+    "name": {
+      "en": "Thundurus",
+      "es": "Thundurus"
+    },
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 79,
+      "attack": 115,
+      "defense": 70,
+      "spAttack": 125,
+      "spDefense": 80,
+      "speed": 111
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 643,
+    "name": {
+      "en": "Reshiram",
+      "es": "Reshiram"
+    },
+    "types": [
+      "dragon",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 120,
+      "defense": 100,
+      "spAttack": 150,
+      "spDefense": 120,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 644,
+    "name": {
+      "en": "Zekrom",
+      "es": "Zekrom"
+    },
+    "types": [
+      "dragon",
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 150,
+      "defense": 120,
+      "spAttack": 120,
+      "spDefense": 100,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 645,
+    "name": {
+      "en": "Landorus",
+      "es": "Landorus"
+    },
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 89,
+      "attack": 125,
+      "defense": 90,
+      "spAttack": 115,
+      "spDefense": 80,
+      "speed": 101
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 646,
+    "name": {
+      "en": "Kyurem",
+      "es": "Kyurem"
+    },
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "attack": 130,
+      "defense": 90,
+      "spAttack": 130,
+      "spDefense": 90,
+      "speed": 95
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 647,
+    "name": {
+      "en": "Keldeo",
+      "es": "Keldeo"
+    },
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 72,
+      "defense": 90,
+      "spAttack": 129,
+      "spDefense": 90,
+      "speed": 108
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 648,
+    "name": {
+      "en": "Meloetta",
+      "es": "Meloetta"
+    },
+    "types": [
+      "normal",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 77,
+      "defense": 77,
+      "spAttack": 128,
+      "spDefense": 128,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 649,
+    "name": {
+      "en": "Genesect",
+      "es": "Genesect"
+    },
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 71,
+      "attack": 120,
+      "defense": 95,
+      "spAttack": 120,
+      "spDefense": 95,
+      "speed": 99
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png",
+    "source": "Stats: PokemonDB cruzado contra las listas de subidas de stats de Gen 6/7 (pre-buff, verificado 2026-07-05; Stoutland, Unfezant, Gigalith, Seismitoad, Leavanny, Scolipede, Krookodile, Woobat, Crustle, Beartic y Cryogonal corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  }
+]
