@@ -248,13 +248,13 @@
       "hp": 60,
       "attack": 45,
       "defense": 50,
-      "spAttack": 90,
+      "spAttack": 80,
       "spDefense": 80,
       "speed": 70
     },
     "evolvesFrom": "metapod",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 13,
@@ -312,7 +312,7 @@
     ],
     "baseStats": {
       "hp": 65,
-      "attack": 90,
+      "attack": 80,
       "defense": 40,
       "spAttack": 45,
       "spDefense": 80,
@@ -320,7 +320,7 @@
     },
     "evolvesFrom": "kakuna",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 16,
@@ -382,11 +382,11 @@
       "defense": 75,
       "spAttack": 70,
       "spDefense": 70,
-      "speed": 101
+      "speed": 91
     },
     "evolvesFrom": "pidgeotto",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 19,
@@ -506,7 +506,7 @@
     ],
     "baseStats": {
       "hp": 60,
-      "attack": 95,
+      "attack": 85,
       "defense": 69,
       "spAttack": 65,
       "spDefense": 79,
@@ -514,7 +514,7 @@
     },
     "evolvesFrom": "ekans",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 25,
@@ -528,14 +528,14 @@
     "baseStats": {
       "hp": 35,
       "attack": 55,
-      "defense": 40,
+      "defense": 30,
       "spAttack": 50,
-      "spDefense": 50,
+      "spDefense": 40,
       "speed": 90
     },
     "evolvesFrom": "pichu",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Defensa/Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 26,
@@ -552,11 +552,11 @@
       "defense": 55,
       "spAttack": 90,
       "spDefense": 80,
-      "speed": 110
+      "speed": 100
     },
     "evolvesFrom": "pikachu",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 27,
@@ -654,7 +654,7 @@
     ],
     "baseStats": {
       "hp": 90,
-      "attack": 92,
+      "attack": 82,
       "defense": 87,
       "spAttack": 75,
       "spDefense": 85,
@@ -662,7 +662,7 @@
     },
     "evolvesFrom": "nidorina",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 32,
@@ -718,7 +718,7 @@
     ],
     "baseStats": {
       "hp": 81,
-      "attack": 102,
+      "attack": 92,
       "defense": 77,
       "spAttack": 85,
       "spDefense": 75,
@@ -726,7 +726,7 @@
     },
     "evolvesFrom": "nidorino",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 35,
@@ -762,13 +762,13 @@
       "hp": 95,
       "attack": 70,
       "defense": 73,
-      "spAttack": 95,
+      "spAttack": 85,
       "spDefense": 90,
       "speed": 60
     },
     "evolvesFrom": "clefairy",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Clefable es Normal en Gen 1-5."
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 37,
@@ -846,13 +846,13 @@
       "hp": 140,
       "attack": 70,
       "defense": 45,
-      "spAttack": 85,
+      "spAttack": 75,
       "spDefense": 50,
       "speed": 45
     },
     "evolvesFrom": "jigglypuff",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Normal/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Wigglytuff es Normal puro en Gen 1-5."
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 41,
@@ -956,13 +956,13 @@
       "hp": 75,
       "attack": 80,
       "defense": 85,
-      "spAttack": 110,
+      "spAttack": 100,
       "spDefense": 90,
       "speed": 50
     },
     "evolvesFrom": "gloom",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 46,
@@ -1084,7 +1084,7 @@
     ],
     "baseStats": {
       "hp": 35,
-      "attack": 100,
+      "attack": 80,
       "defense": 50,
       "spAttack": 50,
       "spDefense": 70,
@@ -1092,7 +1092,7 @@
     },
     "evolvesFrom": "diglett",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 52,
@@ -1316,7 +1316,7 @@
     ],
     "baseStats": {
       "hp": 90,
-      "attack": 95,
+      "attack": 85,
       "defense": 95,
       "spAttack": 70,
       "spDefense": 90,
@@ -1324,7 +1324,7 @@
     },
     "evolvesFrom": "poliwhirl",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 63,
@@ -1382,12 +1382,12 @@
       "attack": 50,
       "defense": 45,
       "spAttack": 135,
-      "spDefense": 95,
+      "spDefense": 85,
       "speed": 120
     },
     "evolvesFrom": "kadabra",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 66,
@@ -1511,12 +1511,12 @@
       "attack": 105,
       "defense": 65,
       "spAttack": 100,
-      "spDefense": 70,
+      "spDefense": 60,
       "speed": 70
     },
     "evolvesFrom": "weepinbell",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 72,
@@ -1618,7 +1618,7 @@
     ],
     "baseStats": {
       "hp": 80,
-      "attack": 120,
+      "attack": 110,
       "defense": 130,
       "spAttack": 55,
       "spDefense": 65,
@@ -1626,7 +1626,7 @@
     },
     "evolvesFrom": "graveler",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 77,
@@ -1770,7 +1770,7 @@
     ],
     "baseStats": {
       "hp": 52,
-      "attack": 90,
+      "attack": 65,
       "defense": 55,
       "spAttack": 58,
       "spDefense": 62,
@@ -1778,7 +1778,7 @@
     },
     "evolvesFrom": null,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 84,
@@ -1818,11 +1818,11 @@
       "defense": 70,
       "spAttack": 60,
       "spDefense": 60,
-      "speed": 110
+      "speed": 100
     },
     "evolvesFrom": "doduo",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 86,
@@ -2160,11 +2160,11 @@
       "defense": 70,
       "spAttack": 80,
       "spDefense": 80,
-      "speed": 150
+      "speed": 140
     },
     "evolvesFrom": "voltorb",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 102,
@@ -2203,12 +2203,12 @@
       "attack": 95,
       "defense": 85,
       "spAttack": 125,
-      "spDefense": 75,
+      "spDefense": 65,
       "speed": 55
     },
     "evolvesFrom": "exeggcute",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 104,
