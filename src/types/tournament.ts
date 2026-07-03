@@ -3,6 +3,11 @@ export type Participant = {
   name: string;
 };
 
+// Only present on double-elimination matches, to tell winners-bracket,
+// losers-bracket, and the single grand-final match apart. Single-elimination
+// matches omit it entirely — there's only one implicit bracket.
+export type BracketSection = 'winners' | 'losers' | 'final';
+
 export type Match = {
   id: string;
   round: number;
@@ -14,9 +19,11 @@ export type Match = {
   // structurally empty (bracket padding). Lets status/history logic tell
   // "decided by a bye" apart from "decided by an actual match".
   isBye: boolean;
+  bracket?: BracketSection;
 };
 
 export type TournamentStatus = 'setup' | 'in_progress' | 'finished';
+export type TournamentFormat = 'single' | 'double';
 
 export type Tournament = {
   id: string;
@@ -29,4 +36,5 @@ export type Tournament = {
   // the last entry — strictly LIFO order guarantees it's always safe: no
   // later round can already depend on a decision that hasn't happened yet.
   history: string[];
+  format: TournamentFormat;
 };

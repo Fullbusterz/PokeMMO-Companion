@@ -40,7 +40,11 @@ const MatchCard = memo(function MatchCard({
 }) {
   function renderPlayer(playerId: string | null) {
     const name = playerId ? nameById.get(playerId) ?? '?' : null;
-    const position = match.round === 1 && playerId ? positionById.get(playerId) : undefined;
+    // Only the introductory round (winners bracket round 1, or single-elim's
+    // only round 1) shows the draw position — everywhere else the same
+    // lookup would just re-show it on every later match, which is noise.
+    const isIntroRound = match.round === 1 && match.bracket !== 'losers' && match.bracket !== 'final';
+    const position = playerId && isIntroRound ? positionById.get(playerId) : undefined;
     const isWinner = match.winnerId === playerId && playerId !== null;
     const isLoser = Boolean(match.winnerId) && match.winnerId !== playerId && playerId !== null;
     const canPick = !match.winnerId && Boolean(match.player1Id) && Boolean(match.player2Id) && Boolean(playerId);
@@ -76,6 +80,49 @@ const MatchCard = memo(function MatchCard({
   );
 });
 
+function RoundSection({
+  title,
+  matches,
+  nameById,
+  positionById,
+  tournamentId,
+  setMatchWinner,
+}: {
+  title: string;
+  matches: Match[];
+  nameById: Map<string, string>;
+  positionById: Map<string, number>;
+  tournamentId: string;
+  setMatchWinner: SetMatchWinner;
+}) {
+  return (
+    <View className="mb-6">
+      <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">{title}</Text>
+      {matches.map((match) => (
+        <MatchCard
+          key={match.id}
+          match={match}
+          nameById={nameById}
+          positionById={positionById}
+          tournamentId={tournamentId}
+          setMatchWinner={setMatchWinner}
+        />
+      ))}
+    </View>
+  );
+}
+
+function groupByRound(matches: Match[]): Map<number, Match[]> {
+  const map = new Map<number, Match[]>();
+  matches.forEach((m) => {
+    const list = map.get(m.round);
+    if (list) list.push(m);
+    else map.set(m.round, [m]);
+  });
+  for (const list of map.values()) list.sort((a, b) => a.slot - b.slot);
+  return map;
+}
+
 export default function TournamentDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const tournament = useTournamentStore((s) => s.tournaments.find((tt) => tt.id === id));
@@ -86,43 +133,54 @@ export default function TournamentDetail() {
   const [isEditingName, setIsEditingName] = useState(false);
   const [nameDraft, setNameDraft] = useState('');
 
+  const format = tournament?.format ?? 'single';
+  const isDouble = format === 'double';
+
   const nameById = useMemo(() => {
     const map = new Map<string, string>();
     tournament?.participants.forEach((p) => map.set(p.id, p.name));
     return map;
   }, [tournament?.participants]);
 
-  const totalRounds = useMemo(() => getTotalRounds(tournament?.matches ?? []), [tournament?.matches]);
+  // Everything below is grouped by bracket section: for a single-elim
+  // tournament, matches have no `bracket` tag, so "winners" here just means
+  // "all of them" — the whole flat rounds list. For double-elim, it's the
+  // actual winners-bracket subset (losers/final render separately below).
+  const winnersMatches = useMemo(
+    () => (isDouble ? (tournament?.matches ?? []).filter((m) => m.bracket === 'winners') : (tournament?.matches ?? [])),
+    [tournament?.matches, isDouble]
+  );
+  const losersMatches = useMemo(
+    () => (isDouble ? (tournament?.matches ?? []).filter((m) => m.bracket === 'losers') : []),
+    [tournament?.matches, isDouble]
+  );
+  const finalMatch = useMemo(
+    () => (isDouble ? (tournament?.matches ?? []).find((m) => m.bracket === 'final') : undefined),
+    [tournament?.matches, isDouble]
+  );
 
-  // Not tournament.matches.find(...) via getChampion() here: that helper
-  // recomputes totalRounds internally, and we already have it above.
+  const winnersByRound = useMemo(() => groupByRound(winnersMatches), [winnersMatches]);
+  const losersByRound = useMemo(() => groupByRound(losersMatches), [losersMatches]);
+  const winnersTotalRounds = useMemo(() => getTotalRounds(winnersMatches), [winnersMatches]);
+  const losersTotalRounds = useMemo(() => getTotalRounds(losersMatches), [losersMatches]);
+
   const championId = useMemo(() => {
-    const final = tournament?.matches.find((m) => m.round === totalRounds);
+    if (isDouble) return finalMatch?.winnerId ?? null;
+    const final = winnersMatches.find((m) => m.round === winnersTotalRounds);
     return final?.winnerId ?? null;
-  }, [tournament?.matches, totalRounds]);
+  }, [isDouble, finalMatch, winnersMatches, winnersTotalRounds]);
 
-  const matchesByRound = useMemo(() => {
-    const map = new Map<number, Match[]>();
-    tournament?.matches.forEach((m) => {
-      const list = map.get(m.round);
-      if (list) list.push(m);
-      else map.set(m.round, [m]);
-    });
-    for (const list of map.values()) list.sort((a, b) => a.slot - b.slot);
-    return map;
-  }, [tournament?.matches]);
-
-  // Draw position (not a skill ranking — the draw is random). Only round 1
-  // matches structurally hold every participant exactly once, so position =
-  // their slot in that round, 1-indexed.
+  // Draw position (not a skill ranking — the draw is random). Only the
+  // winners bracket's round 1 structurally holds every participant exactly
+  // once, so position = their slot there, 1-indexed.
   const positionById = useMemo(() => {
     const map = new Map<string, number>();
-    (matchesByRound.get(1) ?? []).forEach((m) => {
+    (winnersByRound.get(1) ?? []).forEach((m) => {
       if (m.player1Id) map.set(m.player1Id, m.slot * 2 + 1);
       if (m.player2Id) map.set(m.player2Id, m.slot * 2 + 2);
     });
     return map;
-  }, [matchesByRound]);
+  }, [winnersByRound]);
 
   const bracketRef = useRef<View>(null);
   const [isSharingImage, setIsSharingImage] = useState(false);
@@ -136,7 +194,8 @@ export default function TournamentDetail() {
     );
   }
 
-  const rounds = Array.from({ length: totalRounds }, (_, i) => i + 1);
+  const winnersRounds = Array.from({ length: winnersTotalRounds }, (_, i) => i + 1);
+  const losersRounds = Array.from({ length: losersTotalRounds }, (_, i) => i + 1);
   const tournamentId = tournament.id;
   const tournamentName = tournament.name;
 
@@ -224,23 +283,48 @@ export default function TournamentDetail() {
           </View>
         )}
 
-        {rounds.map((round) => (
-          <View key={round} className="mb-6">
-            <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">
-              {roundLabel(round, totalRounds)}
-            </Text>
-            {(matchesByRound.get(round) ?? []).map((match) => (
-              <MatchCard
-                key={match.id}
-                match={match}
+        {isDouble && (
+          <Text className="mb-3 text-base font-bold text-ink-100">{t('bracket.winnersBracket')}</Text>
+        )}
+        {winnersRounds.map((round) => (
+          <RoundSection
+            key={`w-${round}`}
+            title={isDouble ? t('bracket.round', { number: round }) : roundLabel(round, winnersTotalRounds)}
+            matches={winnersByRound.get(round) ?? []}
+            nameById={nameById}
+            positionById={positionById}
+            tournamentId={tournamentId}
+            setMatchWinner={setMatchWinner}
+          />
+        ))}
+
+        {isDouble && (
+          <>
+            <Text className="mb-3 text-base font-bold text-ink-100">{t('bracket.losersBracket')}</Text>
+            {losersRounds.map((round) => (
+              <RoundSection
+                key={`l-${round}`}
+                title={t('bracket.losersRound', { number: round })}
+                matches={losersByRound.get(round) ?? []}
                 nameById={nameById}
                 positionById={positionById}
                 tournamentId={tournamentId}
                 setMatchWinner={setMatchWinner}
               />
             ))}
-          </View>
-        ))}
+
+            {finalMatch && (
+              <RoundSection
+                title={t('bracket.grandFinal')}
+                matches={[finalMatch]}
+                nameById={nameById}
+                positionById={positionById}
+                tournamentId={tournamentId}
+                setMatchWinner={setMatchWinner}
+              />
+            )}
+          </>
+        )}
       </View>
     </Screen>
   );

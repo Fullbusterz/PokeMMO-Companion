@@ -80,6 +80,11 @@
     "minParticipantsError": "Necesitas al menos 2 participantes",
     "nameRequiredError": "Ponle un nombre al torneo",
     "duplicateNameError": "Hay dos participantes con el mismo nombre: \"{{name}}\"",
+    "formatLabel": "Formato",
+    "formatSingle": "Eliminación simple",
+    "formatDouble": "Doble eliminación",
+    "formatDoubleHint": "Necesita un número de participantes potencia de 2 (4, 8, 16, 32...) porque un bye no genera un perdedor para el bracket de perdedores.",
+    "doubleElimSizeError": "Doble eliminación necesita 4, 8, 16 o 32 participantes exactos. Añade o quita hasta llegar a {{size}}.",
     "create": "Crear bracket"
   },
   "bracket": {
@@ -94,7 +99,11 @@
     "shareImageButton": "Compartir como imagen",
     "sharingImage": "Generando imagen…",
     "shareImageUnavailable": "Compartir no está disponible en este dispositivo",
-    "shareImageError": "No se pudo generar la imagen del bracket"
+    "shareImageError": "No se pudo generar la imagen del bracket",
+    "winnersBracket": "Bracket de ganadores",
+    "losersBracket": "Bracket de perdedores",
+    "grandFinal": "Gran Final",
+    "losersRound": "Perdedores · Ronda {{number}}"
   },
   "exportImport": {
     "exportTitle": "Compartir estado del torneo",

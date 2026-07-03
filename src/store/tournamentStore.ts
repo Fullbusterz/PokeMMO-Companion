@@ -2,14 +2,20 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 
-import { generateBracket, isFinished, setWinner as setMatchWinner, undoWinner } from '@/lib/bracket';
+import { generateBracket, isFinished, setWinner as setSingleElimWinner, undoWinner as undoSingleElimWinner } from '@/lib/bracket';
+import {
+  generateDoubleElimBracket,
+  isDoubleElimFinished,
+  setDoubleElimWinner,
+  undoDoubleElimWinner,
+} from '@/lib/doubleElimBracket';
 import { decodeFromCode, encodeToCode } from '@/lib/exportCode';
 import { generateId } from '@/lib/id';
-import type { Match, Participant, Tournament } from '@/types/tournament';
+import type { BracketSection, Match, Participant, Tournament, TournamentFormat } from '@/types/tournament';
 
 type TournamentStore = {
   tournaments: Tournament[];
-  createTournament: (name: string, participantNames: string[]) => Tournament;
+  createTournament: (name: string, participantNames: string[], format?: TournamentFormat) => Tournament;
   renameTournament: (tournamentId: string, name: string) => void;
   setMatchWinner: (tournamentId: string, matchId: string, winnerId: string) => void;
   undoLastMatch: (tournamentId: string) => void;
@@ -18,13 +24,16 @@ type TournamentStore = {
   importTournament: (code: string) => Tournament | null;
 };
 
-function statusFor(matches: Tournament['matches']): Tournament['status'] {
-  if (isFinished(matches)) return 'finished';
+function statusFor(matches: Tournament['matches'], format: TournamentFormat): Tournament['status'] {
+  const finished = format === 'double' ? isDoubleElimFinished(matches) : isFinished(matches);
+  if (finished) return 'finished';
   // Bye wins are auto-resolved at creation time, before any human plays
   // anything, so they must not count as "the organizer started playing".
   const anyPlayed = matches.some((m) => m.winnerId && !m.isBye);
   return anyPlayed ? 'in_progress' : 'setup';
 }
+
+const VALID_BRACKET_SECTIONS: BracketSection[] = ['winners', 'losers', 'final'];
 
 // Validates arbitrary decoded JSON from an import code before it's trusted as
 // app state. Import is the one path that ingests data typed/copy-pasted by
@@ -39,6 +48,7 @@ function parseImportedTournament(data: unknown): Tournament | null {
   if (typeof raw.name !== 'string') return null;
   if (typeof raw.createdAt !== 'string') return null;
   if (!Array.isArray(raw.participants) || !Array.isArray(raw.matches)) return null;
+  const format: TournamentFormat = raw.format === 'double' ? 'double' : 'single';
 
   const participants: Participant[] = [];
   const participantIds = new Set<string>();
@@ -66,6 +76,7 @@ function parseImportedTournament(data: unknown): Tournament | null {
   for (const m of raw.matches) {
     if (typeof m !== 'object' || m === null) return null;
     const match = m as Record<string, unknown>;
+    const isValidBracket = match.bracket === undefined || VALID_BRACKET_SECTIONS.includes(match.bracket as BracketSection);
     if (
       typeof match.id !== 'string' ||
       matchIds.has(match.id) ||
@@ -74,7 +85,8 @@ function parseImportedTournament(data: unknown): Tournament | null {
       !isValidPlayerRef(match.player1Id) ||
       !isValidPlayerRef(match.player2Id) ||
       !isValidPlayerRef(match.winnerId) ||
-      (match.winnerId !== null && match.winnerId !== match.player1Id && match.winnerId !== match.player2Id)
+      (match.winnerId !== null && match.winnerId !== match.player1Id && match.winnerId !== match.player2Id) ||
+      !isValidBracket
     ) {
       return null;
     }
@@ -87,6 +99,7 @@ function parseImportedTournament(data: unknown): Tournament | null {
       player2Id: match.player2Id as string | null,
       winnerId: match.winnerId as string | null,
       isBye: match.isBye === true,
+      bracket: match.bracket as BracketSection | undefined,
     });
   }
   if (matches.length === 0) return null;
@@ -99,10 +112,11 @@ function parseImportedTournament(data: unknown): Tournament | null {
     matches,
     // Never trust the imported status verbatim — always recompute so a
     // hand-edited or stale code can't show a misleading state.
-    status: statusFor(matches),
+    status: statusFor(matches, format),
     // Undo history doesn't travel across devices — the importing device can
     // only undo decisions it makes itself after this point.
     history: [],
+    format,
   };
 }
 
@@ -111,12 +125,12 @@ export const useTournamentStore = create<TournamentStore>()(
     (set, get) => ({
       tournaments: [],
 
-      createTournament: (name, participantNames) => {
+      createTournament: (name, participantNames, format = 'single') => {
         const participants = participantNames
           .map((n) => n.trim())
           .filter(Boolean)
           .map((n) => ({ id: generateId(), name: n }));
-        const matches = generateBracket(participants);
+        const matches = format === 'double' ? generateDoubleElimBracket(participants) : generateBracket(participants);
 
         const tournament: Tournament = {
           id: generateId(),
@@ -124,8 +138,9 @@ export const useTournamentStore = create<TournamentStore>()(
           createdAt: new Date().toISOString(),
           participants,
           matches,
-          status: statusFor(matches),
+          status: statusFor(matches, format),
           history: [],
+          format,
         };
 
         set((state) => ({ tournaments: [tournament, ...state.tournaments] }));
@@ -144,8 +159,11 @@ export const useTournamentStore = create<TournamentStore>()(
         set((state) => ({
           tournaments: state.tournaments.map((t) => {
             if (t.id !== tournamentId) return t;
-            const matches = setMatchWinner(t.matches, matchId, winnerId);
-            return { ...t, matches, status: statusFor(matches), history: [...t.history, matchId] };
+            const matches =
+              t.format === 'double'
+                ? setDoubleElimWinner(t.matches, matchId, winnerId)
+                : setSingleElimWinner(t.matches, matchId, winnerId);
+            return { ...t, matches, status: statusFor(matches, t.format), history: [...t.history, matchId] };
           }),
         }));
       },
@@ -155,8 +173,9 @@ export const useTournamentStore = create<TournamentStore>()(
           tournaments: state.tournaments.map((t) => {
             if (t.id !== tournamentId || t.history.length === 0) return t;
             const lastMatchId = t.history[t.history.length - 1];
-            const matches = undoWinner(t.matches, lastMatchId);
-            return { ...t, matches, status: statusFor(matches), history: t.history.slice(0, -1) };
+            const matches =
+              t.format === 'double' ? undoDoubleElimWinner(t.matches, lastMatchId) : undoSingleElimWinner(t.matches, lastMatchId);
+            return { ...t, matches, status: statusFor(matches, t.format), history: t.history.slice(0, -1) };
           }),
         }));
       },
@@ -194,13 +213,18 @@ export const useTournamentStore = create<TournamentStore>()(
       name: 'pokemmo-tournaments',
       storage: createJSONStorage(() => AsyncStorage),
       // Backfills fields added after tournaments were already persisted on a
-      // device (e.g. `history`, introduced for the undo feature) so old local
-      // data doesn't crash on load instead of just missing the new capability.
+      // device (e.g. `history`/`format`, introduced for undo/double-elim) so
+      // old local data doesn't crash on load instead of just missing the new
+      // capability.
       merge: (persistedState, currentState) => {
         const persisted = persistedState as Partial<TournamentStore> | undefined;
         return {
           ...currentState,
-          tournaments: (persisted?.tournaments ?? []).map((t) => ({ ...t, history: t.history ?? [] })),
+          tournaments: (persisted?.tournaments ?? []).map((t) => ({
+            ...t,
+            history: t.history ?? [],
+            format: t.format ?? 'single',
+          })),
         };
       },
     }
