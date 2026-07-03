@@ -19,7 +19,7 @@ import { Screen } from '@/components/Screen';
 import { TypeBadge } from '@/components/TypeBadge';
 import { t } from '@/i18n';
 import { isNative, nativeOnly } from '@/lib/animation';
-import { getEvolvesFrom, getEvolvesInto, getPokemonById } from '@/lib/pokedex';
+import { getAbilities, getEvolvesFrom, getEvolvesInto, getPokemonById } from '@/lib/pokedex';
 import type { PokeType } from '@/lib/typeChart';
 import colors from '@/theme/colors';
 import type { PokemonEntry, PokemonStats } from '@/types/pokemon';
@@ -91,6 +91,8 @@ export default function PokemonDetail() {
   const evolvesInto = getEvolvesInto(pokemon);
   const hasEvolutionFamily = Boolean(evolvesFrom) || evolvesInto.length > 0;
   const primaryType = (pokemon.types as PokeType[])[0];
+  const abilityInfo = getAbilities(pokemon);
+  const hasAbilities = Boolean(abilityInfo?.verified && (abilityInfo.abilities.length > 0 || abilityInfo.hiddenAbility));
 
   return (
     <Screen>
@@ -137,6 +139,33 @@ export default function PokemonDetail() {
             </View>
           );
         })}
+      </View>
+
+      <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">
+        {t('pokedex.abilitiesTitle')}
+      </Text>
+      <View className="mb-5 rounded-xl border border-ink-600 bg-ink-800 p-4">
+        {hasAbilities ? (
+          <View className="flex-row flex-wrap gap-2">
+            {abilityInfo!.abilities.map((ability) => (
+              <View key={ability} className="rounded-full border border-ink-600 bg-ink-700 px-3 py-1.5">
+                <Text className="text-sm font-semibold text-ink-100">{ability}</Text>
+              </View>
+            ))}
+            {abilityInfo!.hiddenAbility && (
+              <View className="flex-row items-center gap-1 rounded-full border border-pokeRed/40 bg-pokeRed/10 px-3 py-1.5">
+                <Text className="text-[10px] font-bold uppercase tracking-wide text-pokeRed">
+                  {t('pokedex.hiddenAbility')}
+                </Text>
+                <Text className="text-sm font-semibold text-pokeRed">{abilityInfo!.hiddenAbility}</Text>
+              </View>
+            )}
+          </View>
+        ) : (
+          <Text className="text-ink-400">
+            {abilityInfo && !abilityInfo.verified ? t('pokedex.abilitiesUnverified') : t('pokedex.abilitiesEmpty')}
+          </Text>
+        )}
       </View>
 
       <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">

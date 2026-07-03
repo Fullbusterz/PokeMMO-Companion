@@ -1,9 +1,14 @@
+import hoennAbilities from '../../data/hoenn/abilities.json';
 import hoennPokemon from '../../data/hoenn/pokemon.json';
+import johtoAbilities from '../../data/johto/abilities.json';
 import johtoPokemon from '../../data/johto/pokemon.json';
+import kantoAbilities from '../../data/kanto/abilities.json';
 import kantoPokemon from '../../data/kanto/pokemon.json';
+import sinnohAbilities from '../../data/sinnoh/abilities.json';
 import sinnohPokemon from '../../data/sinnoh/pokemon.json';
+import teseliaAbilities from '../../data/teselia/abilities.json';
 import teseliaPokemon from '../../data/teselia/pokemon.json';
-import type { PokemonEntry } from '@/types/pokemon';
+import type { AbilityEntry, PokemonEntry } from '@/types/pokemon';
 
 // All 5 PokeMMO regions — evolution lookups need the full combined list
 // since plenty of chains cross region boundaries (e.g. Crobat/Johto evolves
@@ -44,4 +49,19 @@ export function searchPokemon(query: string): PokemonEntry[] {
   return ALL_POKEMON.filter(
     (p) => p.name.es.toLowerCase().includes(q) || p.name.en.toLowerCase().includes(q) || String(p.id).includes(q)
   );
+}
+
+// Placeholder stub entries (pokemon: "_example_do_not_use") from regions
+// that haven't been scraped yet fall out here automatically since no real
+// Pokemon name ever matches that key.
+const ALL_ABILITIES = [
+  ...(kantoAbilities as AbilityEntry[]),
+  ...(johtoAbilities as AbilityEntry[]),
+  ...(hoennAbilities as AbilityEntry[]),
+  ...(sinnohAbilities as AbilityEntry[]),
+  ...(teseliaAbilities as AbilityEntry[]),
+];
+
+export function getAbilities(pokemon: PokemonEntry): AbilityEntry | undefined {
+  return ALL_ABILITIES.find((a) => a.pokemon === pokemon.name.en.toLowerCase());
 }

@@ -1,8 +1,1457 @@
 [
   {
-    "pokemon": "_example_do_not_use",
-    "value": "_example_do_not_use",
-    "source": "_placeholder_ — reemplazar por PokeMMO Wiki verificado antes de usar cualquier entrada real",
+    "pokemon": "bulbasaur",
+    "abilities": [
+      "Overgrow"
+    ],
+    "hiddenAbility": "Chlorophyll",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Bulbasaur), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "ivysaur",
+    "abilities": [
+      "Overgrow"
+    ],
+    "hiddenAbility": "Chlorophyll",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Ivysaur), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "venusaur",
+    "abilities": [
+      "Overgrow"
+    ],
+    "hiddenAbility": "Chlorophyll",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Venusaur), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "charmander",
+    "abilities": [
+      "Blaze"
+    ],
+    "hiddenAbility": "Solar Power",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Charmander), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "charmeleon",
+    "abilities": [
+      "Blaze"
+    ],
+    "hiddenAbility": "Solar Power",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Charmeleon), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "charizard",
+    "abilities": [
+      "Blaze"
+    ],
+    "hiddenAbility": "Solar Power",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Charizard), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "squirtle",
+    "abilities": [
+      "Torrent"
+    ],
+    "hiddenAbility": "Rain Dish",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Squirtle), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "wartortle",
+    "abilities": [
+      "Torrent"
+    ],
+    "hiddenAbility": "Rain Dish",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Wartortle), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "blastoise",
+    "abilities": [
+      "Torrent"
+    ],
+    "hiddenAbility": "Rain Dish",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Blastoise), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "caterpie",
+    "abilities": [
+      "Shield Dust"
+    ],
+    "hiddenAbility": "Run Away",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Caterpie), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "metapod",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "hiddenAbility": "Shed Skin",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Metapod), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "butterfree",
+    "abilities": [
+      "Compoundeyes"
+    ],
+    "hiddenAbility": "Tinted Lens",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Butterfree), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "weedle",
+    "abilities": [
+      "Shield Dust"
+    ],
+    "hiddenAbility": "Run Away",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Weedle), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "kakuna",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "hiddenAbility": "Shed Skin",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Kakuna), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "beedrill",
+    "abilities": [
+      "Swarm"
+    ],
+    "hiddenAbility": "Sniper",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Beedrill), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "pidgey",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet"
+    ],
+    "hiddenAbility": "Big Pecks",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pidgey), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "pidgeotto",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet"
+    ],
+    "hiddenAbility": "Big Pecks",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pidgeotto), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "pidgeot",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet"
+    ],
+    "hiddenAbility": "Big Pecks",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pidgeot), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "rattata",
+    "abilities": [
+      "Run Away",
+      "Guts"
+    ],
+    "hiddenAbility": "Hustle",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rattata), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "raticate",
+    "abilities": [
+      "Run Away",
+      "Guts"
+    ],
+    "hiddenAbility": "Hustle",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Raticate), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "spearow",
+    "abilities": [
+      "Keen Eye"
+    ],
+    "hiddenAbility": "Sniper",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Spearow), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "fearow",
+    "abilities": [
+      "Keen Eye"
+    ],
+    "hiddenAbility": "Sniper",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Fearow), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "ekans",
+    "abilities": [
+      "Intimidate",
+      "Shed Skin"
+    ],
+    "hiddenAbility": "Unnerve",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Ekans), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "arbok",
+    "abilities": [
+      "Intimidate",
+      "Shed Skin"
+    ],
+    "hiddenAbility": "Unnerve",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Arbok), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "pikachu",
+    "abilities": [
+      "Static"
+    ],
+    "hiddenAbility": "Lightningrod",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pikachu), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "raichu",
+    "abilities": [
+      "Static"
+    ],
+    "hiddenAbility": "Lightningrod",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Raichu), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "sandshrew",
+    "abilities": [
+      "Sand Veil"
+    ],
+    "hiddenAbility": "Sand Rush",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sandshrew), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "sandslash",
+    "abilities": [
+      "Sand Veil"
+    ],
+    "hiddenAbility": "Sand Rush",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sandslash), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "nidoran♀",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "hiddenAbility": "Hustle",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Nidoran%E2%99%80), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "nidorina",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "hiddenAbility": "Hustle",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Nidorina), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "nidoqueen",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "hiddenAbility": "Sheer Force",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Nidoqueen), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "nidoran♂",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "hiddenAbility": "Hustle",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Nidoran%E2%99%82), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "nidorino",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "hiddenAbility": "Hustle",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Nidorino), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "nidoking",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "hiddenAbility": "Sheer Force",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Nidoking), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "clefairy",
+    "abilities": [
+      "Cute Charm",
+      "Magic Guard"
+    ],
+    "hiddenAbility": "Friend Guard",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Clefairy), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "clefable",
+    "abilities": [
+      "Cute Charm",
+      "Magic Guard"
+    ],
+    "hiddenAbility": "Unaware",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Clefable), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "vulpix",
+    "abilities": [
+      "Flash Fire"
+    ],
+    "hiddenAbility": "Drought",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Vulpix), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "ninetales",
+    "abilities": [
+      "Flash Fire"
+    ],
+    "hiddenAbility": "Drought",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Ninetales), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "jigglypuff",
+    "abilities": [
+      "Cute Charm",
+      "Competitive"
+    ],
+    "hiddenAbility": "Friend Guard",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Jigglypuff), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "wigglytuff",
+    "abilities": [
+      "Cute Charm",
+      "Competitive"
+    ],
+    "hiddenAbility": "Frisk",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Wigglytuff), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "zubat",
+    "abilities": [
+      "Inner Focus"
+    ],
+    "hiddenAbility": "Infiltrator",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Zubat), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "golbat",
+    "abilities": [
+      "Inner Focus"
+    ],
+    "hiddenAbility": "Infiltrator",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Golbat), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "oddish",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Run Away",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Oddish), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "gloom",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Stench",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Gloom), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "vileplume",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Effect Spore",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Vileplume), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "paras",
+    "abilities": [
+      "Effect Spore",
+      "Dry Skin"
+    ],
+    "hiddenAbility": "Damp",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Paras), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "parasect",
+    "abilities": [
+      "Effect Spore",
+      "Dry Skin"
+    ],
+    "hiddenAbility": "Damp",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Parasect), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "venonat",
+    "abilities": [
+      "Compoundeyes",
+      "Tinted Lens"
+    ],
+    "hiddenAbility": "Run Away",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Venonat), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "venomoth",
+    "abilities": [
+      "Shield Dust",
+      "Tinted Lens"
+    ],
+    "hiddenAbility": "Wonder Skin",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Venomoth), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "diglett",
+    "abilities": [
+      "Sand Veil",
+      "Arena Trap"
+    ],
+    "hiddenAbility": "Sand Force",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Diglett), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "dugtrio",
+    "abilities": [
+      "Sand Veil",
+      "Arena Trap"
+    ],
+    "hiddenAbility": "Sand Force",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Dugtrio), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "meowth",
+    "abilities": [
+      "Pickup",
+      "Technician"
+    ],
+    "hiddenAbility": "Unnerve",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Meowth), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "persian",
+    "abilities": [
+      "Limber",
+      "Technician"
+    ],
+    "hiddenAbility": "Unnerve",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Persian), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "psyduck",
+    "abilities": [
+      "Damp",
+      "Cloud Nine"
+    ],
+    "hiddenAbility": "Swift Swim",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Psyduck), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "golduck",
+    "abilities": [
+      "Damp",
+      "Cloud Nine"
+    ],
+    "hiddenAbility": "Swift Swim",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Golduck), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "mankey",
+    "abilities": [
+      "Vital Spirit",
+      "Anger Point"
+    ],
+    "hiddenAbility": "Defiant",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Mankey), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "primeape",
+    "abilities": [
+      "Vital Spirit",
+      "Anger Point"
+    ],
+    "hiddenAbility": "Defiant",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Primeape), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "growlithe",
+    "abilities": [
+      "Intimidate",
+      "Flash Fire"
+    ],
+    "hiddenAbility": "Justified",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Growlithe), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "arcanine",
+    "abilities": [
+      "Intimidate",
+      "Flash Fire"
+    ],
+    "hiddenAbility": "Justified",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Arcanine), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "poliwag",
+    "abilities": [
+      "Water Absorb",
+      "Damp"
+    ],
+    "hiddenAbility": "Swift Swim",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Poliwag), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "poliwhirl",
+    "abilities": [
+      "Water Absorb",
+      "Damp"
+    ],
+    "hiddenAbility": "Swift Swim",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Poliwhirl), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "poliwrath",
+    "abilities": [
+      "Water Absorb",
+      "Damp"
+    ],
+    "hiddenAbility": "Swift Swim",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Poliwrath), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "abra",
+    "abilities": [
+      "Synchronize",
+      "Inner Focus"
+    ],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Abra), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "kadabra",
+    "abilities": [
+      "Synchronize",
+      "Inner Focus"
+    ],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Kadabra), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "alakazam",
+    "abilities": [
+      "Synchronize",
+      "Inner Focus"
+    ],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Alakazam), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "machop",
+    "abilities": [
+      "Guts",
+      "No Guard"
+    ],
+    "hiddenAbility": "Steadfast",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Machop), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "machoke",
+    "abilities": [
+      "Guts",
+      "No Guard"
+    ],
+    "hiddenAbility": "Steadfast",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Machoke), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "machamp",
+    "abilities": [
+      "Guts",
+      "No Guard"
+    ],
+    "hiddenAbility": "Steadfast",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Machamp), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "bellsprout",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Gluttony",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Bellsprout), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "weepinbell",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Gluttony",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Weepinbell), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "victreebel",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Gluttony",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Victreebel), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "tentacool",
+    "abilities": [
+      "Clear Body",
+      "Liquid Ooze"
+    ],
+    "hiddenAbility": "Rain Dish",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Tentacool), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "tentacruel",
+    "abilities": [
+      "Clear Body",
+      "Liquid Ooze"
+    ],
+    "hiddenAbility": "Rain Dish",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Tentacruel), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "geodude",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "hiddenAbility": "Sand Veil",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Geodude), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "graveler",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "hiddenAbility": "Sand Veil",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Graveler), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "golem",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "hiddenAbility": "Sand Veil",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Golem), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "ponyta",
+    "abilities": [
+      "Run Away",
+      "Flash Fire"
+    ],
+    "hiddenAbility": "Flame Body",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Ponyta), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "rapidash",
+    "abilities": [
+      "Run Away",
+      "Flash Fire"
+    ],
+    "hiddenAbility": "Flame Body",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rapidash), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "slowpoke",
+    "abilities": [
+      "Oblivious",
+      "Own Tempo"
+    ],
+    "hiddenAbility": "Regenerator",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Slowpoke), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "slowbro",
+    "abilities": [
+      "Oblivious",
+      "Own Tempo"
+    ],
+    "hiddenAbility": "Regenerator",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Slowbro), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "magnemite",
+    "abilities": [
+      "Magnet Pull",
+      "Sturdy"
+    ],
+    "hiddenAbility": "Analytic",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Magnemite), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "magneton",
+    "abilities": [
+      "Magnet Pull",
+      "Sturdy"
+    ],
+    "hiddenAbility": "Analytic",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Magneton), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "farfetch’d",
+    "abilities": [],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Farfetch'd) marca esta ficha como rota en su propio modulo de datos (\"not found in Pokemon data table... a fix is being worked on\") — sin datos fiables por ahora, revisar de nuevo mas adelante.",
     "verified": false
+  },
+  {
+    "pokemon": "doduo",
+    "abilities": [
+      "Run Away",
+      "Early Bird"
+    ],
+    "hiddenAbility": "Tangled Feet",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Doduo), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "dodrio",
+    "abilities": [
+      "Run Away",
+      "Early Bird"
+    ],
+    "hiddenAbility": "Tangled Feet",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Dodrio), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "seel",
+    "abilities": [
+      "Thick Fat",
+      "Hydration"
+    ],
+    "hiddenAbility": "Ice Body",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Seel), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "dewgong",
+    "abilities": [
+      "Thick Fat",
+      "Hydration"
+    ],
+    "hiddenAbility": "Ice Body",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Dewgong), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "grimer",
+    "abilities": [
+      "Stench",
+      "Sticky Hold"
+    ],
+    "hiddenAbility": "Poison Touch",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Grimer), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "muk",
+    "abilities": [
+      "Stench",
+      "Sticky Hold"
+    ],
+    "hiddenAbility": "Poison Touch",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Muk), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "shellder",
+    "abilities": [
+      "Shell Armor",
+      "Skill Link"
+    ],
+    "hiddenAbility": "Overcoat",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Shellder), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "cloyster",
+    "abilities": [
+      "Shell Armor",
+      "Skill Link"
+    ],
+    "hiddenAbility": "Overcoat",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Cloyster), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "gastly",
+    "abilities": [
+      "Levitate"
+    ],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Gastly), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "haunter",
+    "abilities": [
+      "Levitate"
+    ],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Haunter), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "gengar",
+    "abilities": [
+      "Cursed Body"
+    ],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Gengar), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "onix",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "hiddenAbility": "Weak Armor",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Onix), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "drowzee",
+    "abilities": [
+      "Insomnia",
+      "Forewarn"
+    ],
+    "hiddenAbility": "Inner Focus",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Drowzee), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "hypno",
+    "abilities": [
+      "Insomnia",
+      "Forewarn"
+    ],
+    "hiddenAbility": "Inner Focus",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Hypno), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "krabby",
+    "abilities": [
+      "Hyper Cutter",
+      "Shell Armor"
+    ],
+    "hiddenAbility": "Sheer Force",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Krabby), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "kingler",
+    "abilities": [
+      "Hyper Cutter",
+      "Shell Armor"
+    ],
+    "hiddenAbility": "Sheer Force",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Kingler), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "voltorb",
+    "abilities": [
+      "Soundproof",
+      "Static"
+    ],
+    "hiddenAbility": "Aftermath",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Voltorb), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "electrode",
+    "abilities": [
+      "Soundproof",
+      "Static"
+    ],
+    "hiddenAbility": "Aftermath",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Electrode), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "exeggcute",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Harvest",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Exeggcute), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "exeggutor",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "hiddenAbility": "Harvest",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Exeggutor), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "cubone",
+    "abilities": [
+      "Rock Head",
+      "Lightningrod"
+    ],
+    "hiddenAbility": "Battle Armor",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Cubone), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "marowak",
+    "abilities": [
+      "Rock Head",
+      "Lightningrod"
+    ],
+    "hiddenAbility": "Battle Armor",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Marowak), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "hitmonlee",
+    "abilities": [
+      "Limber",
+      "Reckless"
+    ],
+    "hiddenAbility": "Unburden",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Hitmonlee), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "hitmonchan",
+    "abilities": [
+      "Keen Eye",
+      "Iron Fist"
+    ],
+    "hiddenAbility": "Inner Focus",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Hitmonchan), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "lickitung",
+    "abilities": [
+      "Own Tempo",
+      "Oblivious"
+    ],
+    "hiddenAbility": "Cloud Nine",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Lickitung), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "koffing",
+    "abilities": [
+      "Levitate",
+      "Reactive Gas"
+    ],
+    "hiddenAbility": "Stench",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Koffing), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "weezing",
+    "abilities": [
+      "Levitate",
+      "Reactive Gas"
+    ],
+    "hiddenAbility": "Stench",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Weezing), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "rhyhorn",
+    "abilities": [
+      "Lightningrod",
+      "Rock Head"
+    ],
+    "hiddenAbility": "Reckless",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rhyhorn), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "rhydon",
+    "abilities": [
+      "Lightningrod",
+      "Rock Head"
+    ],
+    "hiddenAbility": "Reckless",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rhydon), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "chansey",
+    "abilities": [
+      "Natural Cure",
+      "Serene Grace"
+    ],
+    "hiddenAbility": "Healer",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Chansey), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "tangela",
+    "abilities": [
+      "Chlorophyll",
+      "Leaf Guard"
+    ],
+    "hiddenAbility": "Regenerator",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Tangela), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "kangaskhan",
+    "abilities": [
+      "Early Bird",
+      "Scrappy"
+    ],
+    "hiddenAbility": "Inner Focus",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Kangaskhan), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "horsea",
+    "abilities": [
+      "Swift Swim",
+      "Sniper"
+    ],
+    "hiddenAbility": "Damp",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Horsea), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "seadra",
+    "abilities": [
+      "Poison Point",
+      "Sniper"
+    ],
+    "hiddenAbility": "Damp",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Seadra), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "goldeen",
+    "abilities": [
+      "Swift Swim",
+      "Water Veil"
+    ],
+    "hiddenAbility": "Lightningrod",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Goldeen), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "seaking",
+    "abilities": [
+      "Swift Swim",
+      "Water Veil"
+    ],
+    "hiddenAbility": "Lightningrod",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Seaking), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "staryu",
+    "abilities": [
+      "Illuminate",
+      "Natural Cure"
+    ],
+    "hiddenAbility": "Analytic",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Staryu), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "starmie",
+    "abilities": [
+      "Illuminate",
+      "Natural Cure"
+    ],
+    "hiddenAbility": "Analytic",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Starmie), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "mr. mime",
+    "abilities": [
+      "Soundproof",
+      "Filter"
+    ],
+    "hiddenAbility": "Technician",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Mr._Mime), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "scyther",
+    "abilities": [
+      "Swarm",
+      "Technician"
+    ],
+    "hiddenAbility": "Steadfast",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Scyther), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "jynx",
+    "abilities": [
+      "Oblivious",
+      "Forewarn"
+    ],
+    "hiddenAbility": "Dry Skin",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Jynx), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "electabuzz",
+    "abilities": [
+      "Static"
+    ],
+    "hiddenAbility": "Vital Spirit",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Electabuzz), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "magmar",
+    "abilities": [
+      "Flame Body"
+    ],
+    "hiddenAbility": "Vital Spirit",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Magmar), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "pinsir",
+    "abilities": [
+      "Hyper Cutter",
+      "Mold Breaker"
+    ],
+    "hiddenAbility": "Moxie",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pinsir), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "tauros",
+    "abilities": [
+      "Intimidate",
+      "Anger Point"
+    ],
+    "hiddenAbility": "Sheer Force",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Tauros), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "magikarp",
+    "abilities": [
+      "Swift Swim"
+    ],
+    "hiddenAbility": "Rattled",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Magikarp), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "gyarados",
+    "abilities": [
+      "Intimidate"
+    ],
+    "hiddenAbility": "Moxie",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Gyarados), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "lapras",
+    "abilities": [
+      "Water Absorb",
+      "Shell Armor"
+    ],
+    "hiddenAbility": "Hydration",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Lapras), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "ditto",
+    "abilities": [
+      "Limber"
+    ],
+    "hiddenAbility": "Imposter",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Ditto), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "eevee",
+    "abilities": [
+      "Run Away",
+      "Adaptability"
+    ],
+    "hiddenAbility": "Anticipation",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Eevee), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "vaporeon",
+    "abilities": [
+      "Water Absorb"
+    ],
+    "hiddenAbility": "Hydration",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Vaporeon), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "jolteon",
+    "abilities": [
+      "Volt Absorb"
+    ],
+    "hiddenAbility": "Quick Feet",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Jolteon), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "flareon",
+    "abilities": [
+      "Flash Fire"
+    ],
+    "hiddenAbility": "Guts",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Flareon), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "porygon",
+    "abilities": [
+      "Trace",
+      "Download"
+    ],
+    "hiddenAbility": "Analytic",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Porygon), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "omanyte",
+    "abilities": [
+      "Swift Swim",
+      "Shell Armor"
+    ],
+    "hiddenAbility": "Weak Armor",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Omanyte), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "omastar",
+    "abilities": [
+      "Swift Swim",
+      "Shell Armor"
+    ],
+    "hiddenAbility": "Weak Armor",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Omastar), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "kabuto",
+    "abilities": [
+      "Swift Swim",
+      "Battle Armor"
+    ],
+    "hiddenAbility": "Weak Armor",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Kabuto), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "kabutops",
+    "abilities": [
+      "Swift Swim",
+      "Battle Armor"
+    ],
+    "hiddenAbility": "Weak Armor",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Kabutops), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "aerodactyl",
+    "abilities": [
+      "Rock Head",
+      "Pressure"
+    ],
+    "hiddenAbility": "Unnerve",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Aerodactyl), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "snorlax",
+    "abilities": [
+      "Immunity",
+      "Thick Fat"
+    ],
+    "hiddenAbility": "Gluttony",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Snorlax), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "articuno",
+    "abilities": [
+      "Pressure"
+    ],
+    "hiddenAbility": "Snow Cloak",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Articuno), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "zapdos",
+    "abilities": [
+      "Pressure"
+    ],
+    "hiddenAbility": "Static",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Zapdos), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "moltres",
+    "abilities": [
+      "Pressure"
+    ],
+    "hiddenAbility": "Flame Body",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Moltres), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "dratini",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "hiddenAbility": "Marvel Scale",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Dratini), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "dragonair",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "hiddenAbility": "Marvel Scale",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Dragonair), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "dragonite",
+    "abilities": [
+      "Inner Focus"
+    ],
+    "hiddenAbility": "Multiscale",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Dragonite), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "mewtwo",
+    "abilities": [
+      "Pressure"
+    ],
+    "hiddenAbility": "Unnerve",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Mewtwo), extraido 2026-07-05",
+    "verified": true
+  },
+  {
+    "pokemon": "mew",
+    "abilities": [
+      "Synchronize"
+    ],
+    "hiddenAbility": null,
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Mew), extraido 2026-07-05",
+    "verified": true
   }
 ]

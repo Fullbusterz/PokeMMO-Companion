@@ -16,3 +16,11 @@ export type PokemonEntry = {
   sprite: string;
   source: string;
 };
+
+export type AbilityEntry = {
+  pokemon: string;
+  abilities: string[];
+  hiddenAbility: string | null;
+  source: string;
+  verified: boolean;
+};
