@@ -1,16 +1,25 @@
-import { useMemo, useState } from 'react';
-import { Pressable, Text, View } from 'react-native';
+import { useEffect, useMemo, useState } from 'react';
+import { Text, View } from 'react-native';
+import Animated, {
+  FadeInDown,
+  interpolateColor,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 
 import { Header } from '@/components/Header';
+import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { TypeBadge } from '@/components/TypeBadge';
 import { t } from '@/i18n';
+import { isNative, nativeOnly } from '@/lib/animation';
 import { ALL_TYPES, getEffectivenessFor, type PokeType } from '@/lib/typeChart';
 import colors from '@/theme/colors';
 
-function EffectivenessSection({ title, types }: { title: string; types: PokeType[] }) {
+function EffectivenessSection({ title, types, index }: { title: string; types: PokeType[]; index: number }) {
   return (
-    <View className="mb-4">
+    <Animated.View entering={nativeOnly(FadeInDown.delay(index * 60).duration(240))} className="mb-4">
       <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">{title}</Text>
       {types.length > 0 ? (
         <View className="flex-row flex-wrap gap-2">
@@ -21,7 +30,45 @@ function EffectivenessSection({ title, types }: { title: string; types: PokeType
       ) : (
         <Text className="text-ink-400">{t('pokedex.typesEmptyCategory')}</Text>
       )}
-    </View>
+    </Animated.View>
+  );
+}
+
+function TypeToggle({ type, isSelected, onPress }: { type: PokeType; isSelected: boolean; onPress: () => void }) {
+  const color = colors.type[type];
+  const progress = useSharedValue(isSelected ? 1 : 0);
+
+  useEffect(() => {
+    // On web, post-mount shared-value updates never reach the DOM (see
+    // src/lib/animation.ts) — the plain `style` fallback below covers
+    // correctness there, so there's nothing useful for this effect to do.
+    if (!isNative) return;
+    progress.value = withTiming(isSelected ? 1 : 0, { duration: 200 });
+  }, [isSelected, progress]);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    backgroundColor: interpolateColor(progress.value, [0, 1], [`${color}26`, color]),
+    borderWidth: progress.value > 0.5 ? 0 : 1,
+    borderColor: `${color}55`,
+  }));
+  const webStyle = {
+    backgroundColor: isSelected ? color : `${color}26`,
+    borderWidth: isSelected ? 0 : 1,
+    borderColor: `${color}55`,
+  };
+
+  return (
+    <PressScale
+      haptic="select"
+      scaleTo={0.94}
+      onPress={onPress}
+      className="rounded-full px-3 py-1.5"
+      style={isNative ? animatedStyle : webStyle}
+    >
+      <Text className="text-xs font-semibold uppercase tracking-wide" style={{ color: isSelected ? colors.ink[900] : color }}>
+        {t(`types.${type}`)}
+      </Text>
+    </PressScale>
   );
 }
 
@@ -35,37 +82,17 @@ export default function TypeComparator() {
       <Text className="mb-4 text-ink-300">{t('pokedex.typesSubtitle')}</Text>
 
       <View className="mb-5 flex-row flex-wrap gap-2">
-        {ALL_TYPES.map((tp) => {
-          const isSelected = selected === tp;
-          const color = colors.type[tp];
-          return (
-            <Pressable
-              key={tp}
-              onPress={() => setSelected(tp)}
-              className="rounded-full px-3 py-1.5"
-              style={{
-                backgroundColor: isSelected ? color : `${color}26`,
-                borderWidth: isSelected ? 0 : 1,
-                borderColor: `${color}55`,
-              }}
-            >
-              <Text
-                className="text-xs font-semibold uppercase tracking-wide"
-                style={{ color: isSelected ? colors.ink[900] : color }}
-              >
-                {t(`types.${tp}`)}
-              </Text>
-            </Pressable>
-          );
-        })}
+        {ALL_TYPES.map((tp) => (
+          <TypeToggle key={tp} type={tp} isSelected={selected === tp} onPress={() => setSelected(tp)} />
+        ))}
       </View>
 
       {effectiveness && (
-        <>
-          <EffectivenessSection title={t('pokedex.superEffective')} types={effectiveness.superEffective} />
-          <EffectivenessSection title={t('pokedex.notVeryEffective')} types={effectiveness.notVeryEffective} />
-          <EffectivenessSection title={t('pokedex.noEffect')} types={effectiveness.noEffect} />
-        </>
+        <View key={selected}>
+          <EffectivenessSection title={t('pokedex.superEffective')} types={effectiveness.superEffective} index={0} />
+          <EffectivenessSection title={t('pokedex.notVeryEffective')} types={effectiveness.notVeryEffective} index={1} />
+          <EffectivenessSection title={t('pokedex.noEffect')} types={effectiveness.noEffect} index={2} />
+        </View>
       )}
     </Screen>
   );

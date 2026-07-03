@@ -1,12 +1,14 @@
 import type { ReactNode } from 'react';
-import { Pressable, Text, type PressableProps } from 'react-native';
+import { Text, type PressableProps } from 'react-native';
+
+import { PressScale } from '@/components/PressScale';
 
 type DeleteTextProps = PressableProps & { children: ReactNode };
 
 export function DeleteText({ children, ...pressableProps }: DeleteTextProps) {
   return (
-    <Pressable hitSlop={8} {...pressableProps}>
+    <PressScale hitSlop={8} scaleTo={0.9} {...pressableProps}>
       <Text className="font-semibold text-pokeRed">{children}</Text>
-    </Pressable>
+    </PressScale>
   );
 }

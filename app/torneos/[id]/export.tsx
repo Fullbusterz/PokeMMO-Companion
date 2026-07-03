@@ -2,12 +2,15 @@ import * as Clipboard from 'expo-clipboard';
 import { useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ScrollView, Share, Text, View } from 'react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Header } from '@/components/Header';
 import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
+import { nativeOnly } from '@/lib/animation';
+import { successHaptic } from '@/lib/haptics';
 import { useTournamentStore } from '@/store/tournamentStore';
 
 export default function ExportTournament() {
@@ -37,6 +40,7 @@ export default function ExportTournament() {
     if (!code) return;
     await Clipboard.setStringAsync(code);
     setCopied(true);
+    successHaptic();
   }
 
   return (
@@ -47,7 +51,7 @@ export default function ExportTournament() {
       {!code && <Button onPress={handleGenerate}>{t('exportImport.exportButton')}</Button>}
 
       {code && (
-        <View className="flex-1">
+        <Animated.View entering={nativeOnly(FadeInDown.duration(280).springify().damping(18))} className="flex-1">
           <Text className="mb-1 text-sm font-semibold text-ink-400">{t('exportImport.codeGenerated')}</Text>
           <Card className="mb-4 max-h-48">
             <ScrollView contentContainerClassName="p-3">
@@ -65,7 +69,7 @@ export default function ExportTournament() {
               {t('common.share')}
             </Button>
           </View>
-        </View>
+        </Animated.View>
       )}
     </Screen>
   );

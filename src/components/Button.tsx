@@ -1,5 +1,9 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import type { ReactNode } from 'react';
-import { Pressable, Text, type PressableProps } from 'react-native';
+import { StyleSheet, Text, type PressableProps } from 'react-native';
+
+import { PressScale } from '@/components/PressScale';
+import colors from '@/theme/colors';
 
 type ButtonVariant = 'primary' | 'secondary' | 'danger';
 
@@ -11,7 +15,7 @@ type ButtonVariant = 'primary' | 'secondary' | 'danger';
 const VARIANT_CONFIG: Record<ButtonVariant, { container: string; text: string }> = {
   primary: {
     container:
-      'min-h-[46px] rounded-xl bg-pokeRed p-4 shadow-md shadow-pokeRed/40 active:bg-pokeRed-600 disabled:opacity-40 disabled:shadow-none',
+      'min-h-[46px] rounded-xl overflow-hidden p-4 shadow-md shadow-pokeRed/40 disabled:opacity-40 disabled:shadow-none',
     text: 'text-center text-base font-bold text-white',
   },
   secondary: {
@@ -33,8 +37,16 @@ type ButtonProps = Omit<PressableProps, 'children'> & {
 export function Button({ children, variant = 'primary', className, ...pressableProps }: ButtonProps) {
   const config = VARIANT_CONFIG[variant];
   return (
-    <Pressable {...pressableProps} className={`${config.container} ${className ?? ''}`}>
+    <PressScale {...pressableProps} scaleTo={0.96} className={`${config.container} ${className ?? ''}`}>
+      {variant === 'primary' && (
+        <LinearGradient
+          colors={[colors.pokeRed[400], colors.pokeRed.DEFAULT, colors.pokeRed[600]]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={StyleSheet.absoluteFill}
+        />
+      )}
       <Text className={config.text}>{children}</Text>
-    </Pressable>
+    </PressScale>
   );
 }

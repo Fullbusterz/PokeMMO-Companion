@@ -638,7 +638,7 @@
       "spDefense": 55,
       "speed": 56
     },
-    "evolvesFrom": "nidoran-f",
+    "evolvesFrom": "nidoran♀",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
     "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
   },
@@ -702,7 +702,7 @@
       "spDefense": 55,
       "speed": 65
     },
-    "evolvesFrom": "nidoran-m",
+    "evolvesFrom": "nidoran♂",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
     "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
   },
@@ -735,7 +735,7 @@
       "es": "Clefairy"
     },
     "types": [
-      "fairy"
+      "normal"
     ],
     "baseStats": {
       "hp": 70,
@@ -747,7 +747,7 @@
     },
     "evolvesFrom": "cleffa",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Clefairy es Normal en Gen 1-5."
   },
   {
     "id": 36,
@@ -756,7 +756,7 @@
       "es": "Clefable"
     },
     "types": [
-      "fairy"
+      "normal"
     ],
     "baseStats": {
       "hp": 95,
@@ -768,7 +768,7 @@
     },
     "evolvesFrom": "clefairy",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Clefable es Normal en Gen 1-5."
   },
   {
     "id": 37,
@@ -819,8 +819,7 @@
       "es": "Jigglypuff"
     },
     "types": [
-      "normal",
-      "fairy"
+      "normal"
     ],
     "baseStats": {
       "hp": 115,
@@ -832,7 +831,7 @@
     },
     "evolvesFrom": "igglybuff",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Normal/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Jigglypuff es Normal puro en Gen 1-5."
   },
   {
     "id": 40,
@@ -841,8 +840,7 @@
       "es": "Wigglytuff"
     },
     "types": [
-      "normal",
-      "fairy"
+      "normal"
     ],
     "baseStats": {
       "hp": 140,
@@ -854,7 +852,7 @@
     },
     "evolvesFrom": "jigglypuff",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Normal/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Wigglytuff es Normal puro en Gen 1-5."
   },
   {
     "id": 41,
@@ -2600,8 +2598,7 @@
       "es": "Mr. Mime"
     },
     "types": [
-      "psychic",
-      "fairy"
+      "psychic"
     ],
     "baseStats": {
       "hp": 40,
@@ -2613,7 +2610,7 @@
     },
     "evolvesFrom": "mime-jr",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Psiquico puro (2026-07-03): PokeAPI devuelve Psiquico/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Mr. Mime es Psiquico puro en Gen 1-5."
   },
   {
     "id": 123,

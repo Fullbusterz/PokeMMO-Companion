@@ -1,15 +1,18 @@
 import * as Sharing from 'expo-sharing';
 import { Link, useLocalSearchParams } from 'expo-router';
 import { memo, useMemo, useRef, useState } from 'react';
-import { Alert, Pressable, Text, TextInput, View } from 'react-native';
+import { Alert, Text, TextInput, View } from 'react-native';
 import { captureRef } from 'react-native-view-shot';
+import Animated, { ZoomIn } from 'react-native-reanimated';
 
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Header } from '@/components/Header';
+import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { VsDivider } from '@/components/VsDivider';
 import { t } from '@/i18n';
+import { nativeOnly } from '@/lib/animation';
 import { getTotalRounds } from '@/lib/bracket';
 import { useTournamentStore } from '@/store/tournamentStore';
 import type { Match } from '@/types/tournament';
@@ -27,12 +30,14 @@ type SetMatchWinner = (tournamentId: string, matchId: string, winnerId: string) 
 // re-renders the 1-2 affected cards instead of the whole bracket tree.
 const MatchCard = memo(function MatchCard({
   match,
+  index,
   nameById,
   positionById,
   tournamentId,
   setMatchWinner,
 }: {
   match: Match;
+  index: number;
   nameById: Map<string, string>;
   positionById: Map<string, number>;
   tournamentId: string;
@@ -58,8 +63,10 @@ const MatchCard = memo(function MatchCard({
       .join(' ');
 
     return (
-      <Pressable
+      <PressScale
         disabled={!canPick}
+        haptic="select"
+        scaleTo={0.98}
         onPress={() => playerId && setMatchWinner(tournamentId, match.id, playerId)}
         className={`px-3 py-2.5 ${isWinner ? 'bg-pokeRed/10' : ''}`}
       >
@@ -67,12 +74,15 @@ const MatchCard = memo(function MatchCard({
         {position !== undefined && (
           <Text className="text-xs text-ink-400">{t('bracket.position', { number: position })}</Text>
         )}
-      </Pressable>
+      </PressScale>
     );
   }
 
   return (
-    <Card className="mb-2 overflow-hidden">
+    // This card lives inside bracketRef, which shareAsImage() captures —
+    // skipEntrance so a share right after a re-render never grabs a
+    // mid-fade-in frame.
+    <Card index={index} skipEntrance className="mb-2 overflow-hidden">
       {renderPlayer(match.player1Id)}
       <VsDivider />
       {renderPlayer(match.player2Id)}
@@ -98,10 +108,11 @@ function RoundSection({
   return (
     <View className="mb-6">
       <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">{title}</Text>
-      {matches.map((match) => (
+      {matches.map((match, index) => (
         <MatchCard
           key={match.id}
           match={match}
+          index={index}
           nameById={nameById}
           positionById={positionById}
           tournamentId={tournamentId}
@@ -276,11 +287,14 @@ export default function TournamentDetail() {
 
       <View ref={bracketRef} collapsable={false} className="bg-ink-900">
         {championId && (
-          <View className="mb-5 rounded-xl border border-type-electric/30 bg-type-electric/10 p-4">
+          <Animated.View
+            entering={nativeOnly(ZoomIn.duration(380).springify().damping(12))}
+            className="mb-5 rounded-xl border border-type-electric/30 bg-type-electric/10 p-4 shadow-md shadow-type-electric/30"
+          >
             <Text className="text-center text-base font-bold text-type-electric">
               {t('bracket.champion', { name: nameById.get(championId) ?? '?' })}
             </Text>
-          </View>
+          </Animated.View>
         )}
 
         {isDouble && (

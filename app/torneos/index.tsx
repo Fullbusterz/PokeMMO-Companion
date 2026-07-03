@@ -1,14 +1,19 @@
+import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 import { memo } from 'react';
-import { Alert, FlatList, Pressable, Text, View } from 'react-native';
+import { Alert, FlatList, Text, View } from 'react-native';
+import Animated, { FadeInDown, Layout } from 'react-native-reanimated';
 
 import { StatusBadge } from '@/components/Badge';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { DeleteText } from '@/components/DeleteText';
 import { Header } from '@/components/Header';
+import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
+import { nativeOnly } from '@/lib/animation';
+import colors from '@/theme/colors';
 import { useTournamentStore } from '@/store/tournamentStore';
 import type { Tournament } from '@/types/tournament';
 
@@ -20,9 +25,11 @@ function statusLabel(status: Tournament['status']): string {
 
 const TournamentRow = memo(function TournamentRow({
   tournament,
+  index,
   onDelete,
 }: {
   tournament: Tournament;
+  index: number;
   onDelete: (id: string) => void;
 }) {
   function confirmDelete() {
@@ -37,9 +44,9 @@ const TournamentRow = memo(function TournamentRow({
   }
 
   return (
-    <Card className="mb-3 flex-row items-center">
+    <Card index={index} layout={nativeOnly(Layout.springify().damping(18))} className="mb-3 flex-row items-center">
       <Link href={`/torneos/${tournament.id}`} asChild>
-        <Pressable className="flex-1 p-4 active:bg-ink-700">
+        <PressScale haptic="select" scaleTo={0.985} className="flex-1 p-4 active:bg-ink-700">
           <View className="flex-row items-start justify-between">
             <Text className="flex-1 text-base font-semibold text-ink-100">{tournament.name}</Text>
             <StatusBadge status={tournament.status} label={statusLabel(tournament.status)} />
@@ -47,7 +54,7 @@ const TournamentRow = memo(function TournamentRow({
           <Text className="mt-1 text-sm text-ink-400">
             {t('tournaments.participantsCount', { count: tournament.participants.length })}
           </Text>
-        </Pressable>
+        </PressScale>
       </Link>
       <DeleteText onPress={confirmDelete} className="px-4 py-4">
         {t('common.delete')}
@@ -80,8 +87,17 @@ export default function TournamentsList() {
       <FlatList
         data={tournaments}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <TournamentRow tournament={item} onDelete={deleteTournament} />}
-        ListEmptyComponent={<Text className="mt-8 text-center text-ink-400">{t('tournaments.empty')}</Text>}
+        renderItem={({ item, index }) => (
+          <TournamentRow tournament={item} index={index} onDelete={deleteTournament} />
+        )}
+        ListEmptyComponent={
+          <Animated.View entering={nativeOnly(FadeInDown.duration(280))} className="mt-12 items-center">
+            <View className="mb-3 rounded-full bg-ink-800 p-4">
+              <Ionicons name="trophy-outline" size={28} color={colors.ink[400]} />
+            </View>
+            <Text className="text-center text-ink-400">{t('tournaments.empty')}</Text>
+          </Animated.View>
+        }
       />
     </Screen>
   );

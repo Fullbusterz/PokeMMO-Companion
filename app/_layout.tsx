@@ -1,4 +1,5 @@
 import '../global.css';
+import '@/lib/animatedNativewind';
 import { Stack } from 'expo-router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -16,7 +17,7 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
         <StatusBar style="light" />
-        <Stack screenOptions={{ headerShown: false }} />
+        <Stack screenOptions={{ headerShown: false, animation: 'slide_from_right' }} />
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );
