@@ -8,7 +8,7 @@ import sinnohAbilities from '../../data/sinnoh/abilities.json';
 import sinnohPokemon from '../../data/sinnoh/pokemon.json';
 import teseliaAbilities from '../../data/teselia/abilities.json';
 import teseliaPokemon from '../../data/teselia/pokemon.json';
-import type { AbilityEntry, PokemonEntry } from '@/types/pokemon';
+import type { AbilityEntry, MovesetEntry, PokemonEntry } from '@/types/pokemon';
 
 // All 5 PokeMMO regions — evolution lookups need the full combined list
 // since plenty of chains cross region boundaries (e.g. Crobat/Johto evolves
@@ -64,4 +64,41 @@ const ALL_ABILITIES = [
 
 export function getAbilities(pokemon: PokemonEntry): AbilityEntry | undefined {
   return ALL_ABILITIES.find((a) => a.pokemon === pokemon.name.en.toLowerCase());
+}
+
+// movesets.json is ~1-1.3MB PER region (~5MB combined) — big enough that
+// eagerly combining all 5 like ALL_POKEMON/ALL_ABILITIES do would parse all
+// of it on every app start, even though a session only ever looks at one
+// Pokemon (one region) at a time. Each require() below has a static literal
+// path (required for Metro to bundle it), but the actual JSON.parse only
+// runs the first time that specific region is requested, and is cached
+// after that by Metro's module system.
+function loadRegionMovesets(region: string): MovesetEntry[] {
+  switch (region) {
+    case 'kanto':
+      return require('../../data/kanto/movesets.json');
+    case 'johto':
+      return require('../../data/johto/movesets.json');
+    case 'hoenn':
+      return require('../../data/hoenn/movesets.json');
+    case 'sinnoh':
+      return require('../../data/sinnoh/movesets.json');
+    case 'teselia':
+      return require('../../data/teselia/movesets.json');
+    default:
+      return [];
+  }
+}
+
+function regionForId(id: number): string {
+  if (id <= 151) return 'kanto';
+  if (id <= 251) return 'johto';
+  if (id <= 386) return 'hoenn';
+  if (id <= 493) return 'sinnoh';
+  return 'teselia';
+}
+
+export function getMoveset(pokemon: PokemonEntry): MovesetEntry | undefined {
+  const moves = loadRegionMovesets(regionForId(pokemon.id));
+  return moves.find((m) => m.pokemon === pokemon.name.en.toLowerCase());
 }

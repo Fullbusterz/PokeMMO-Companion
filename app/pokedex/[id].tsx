@@ -19,10 +19,41 @@ import { Screen } from '@/components/Screen';
 import { TypeBadge } from '@/components/TypeBadge';
 import { t } from '@/i18n';
 import { isNative, nativeOnly } from '@/lib/animation';
-import { getAbilities, getEvolvesFrom, getEvolvesInto, getPokemonById } from '@/lib/pokedex';
+import { getAbilities, getEvolvesFrom, getEvolvesInto, getMoveset, getPokemonById } from '@/lib/pokedex';
 import type { PokeType } from '@/lib/typeChart';
 import colors from '@/theme/colors';
-import type { PokemonEntry, PokemonStats } from '@/types/pokemon';
+import type { PokemonEntry, PokemonMove, PokemonStats } from '@/types/pokemon';
+
+function groupMovesByMethod(moves: PokemonMove[]) {
+  const byLevel: { name: string; level: number }[] = [];
+  const tm = new Set<string>();
+  const egg = new Set<string>();
+  const tutor = new Set<string>();
+
+  for (const move of moves) {
+    for (const method of move.methods) {
+      const levelMatch = method.match(/^level (\d+)$/);
+      if (levelMatch) byLevel.push({ name: move.name, level: Number(levelMatch[1]) });
+      else if (method === 'tm') tm.add(move.name);
+      else if (method === 'egg') egg.add(move.name);
+      else if (method === 'tutor') tutor.add(move.name);
+    }
+  }
+  byLevel.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
+  return { byLevel, tm: [...tm].sort(), egg: [...egg].sort(), tutor: [...tutor].sort() };
+}
+
+function MoveChipRow({ moves }: { moves: string[] }) {
+  return (
+    <View className="flex-row flex-wrap gap-2">
+      {moves.map((name) => (
+        <View key={name} className="rounded-full border border-ink-600 bg-ink-700 px-3 py-1.5">
+          <Text className="text-sm font-semibold text-ink-100">{name}</Text>
+        </View>
+      ))}
+    </View>
+  );
+}
 
 const STAT_ROWS: { key: keyof PokemonStats; label: string; icon: keyof typeof Ionicons.glyphMap }[] = [
   { key: 'hp', label: 'pokedex.hp', icon: 'heart' },
@@ -93,6 +124,9 @@ export default function PokemonDetail() {
   const primaryType = (pokemon.types as PokeType[])[0];
   const abilityInfo = getAbilities(pokemon);
   const hasAbilities = Boolean(abilityInfo?.verified && (abilityInfo.abilities.length > 0 || abilityInfo.hiddenAbility));
+  const movesetInfo = getMoveset(pokemon);
+  const hasMoves = Boolean(movesetInfo?.verified && movesetInfo.moves.length > 0);
+  const moveGroups = hasMoves ? groupMovesByMethod(movesetInfo!.moves) : null;
 
   return (
     <Screen>
@@ -195,6 +229,61 @@ export default function PokemonDetail() {
           <Text className="text-ink-400">{t('pokedex.noEvolutionFamily')}</Text>
         </View>
       )}
+
+      <Text className="mb-2 mt-5 text-sm font-semibold uppercase tracking-wide text-ink-400">
+        {t('pokedex.movesTitle')}
+      </Text>
+      <View className="rounded-xl border border-ink-600 bg-ink-800 p-4">
+        {hasMoves ? (
+          <View className="gap-4">
+            {moveGroups!.byLevel.length > 0 && (
+              <View>
+                <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
+                  {t('pokedex.movesByLevel')}
+                </Text>
+                <View className="gap-1.5">
+                  {moveGroups!.byLevel.map(({ name, level }, index) => (
+                    <View key={`${name}-${level}-${index}`} className="flex-row items-center gap-2">
+                      <View className="w-10 rounded bg-ink-700 px-1.5 py-0.5">
+                        <Text className="text-center text-xs font-bold text-ink-300">{level}</Text>
+                      </View>
+                      <Text className="text-sm text-ink-100">{name}</Text>
+                    </View>
+                  ))}
+                </View>
+              </View>
+            )}
+            {moveGroups!.tm.length > 0 && (
+              <View>
+                <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
+                  {t('pokedex.movesTm')}
+                </Text>
+                <MoveChipRow moves={moveGroups!.tm} />
+              </View>
+            )}
+            {moveGroups!.egg.length > 0 && (
+              <View>
+                <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
+                  {t('pokedex.movesEgg')}
+                </Text>
+                <MoveChipRow moves={moveGroups!.egg} />
+              </View>
+            )}
+            {moveGroups!.tutor.length > 0 && (
+              <View>
+                <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
+                  {t('pokedex.movesTutor')}
+                </Text>
+                <MoveChipRow moves={moveGroups!.tutor} />
+              </View>
+            )}
+          </View>
+        ) : (
+          <Text className="text-ink-400">
+            {movesetInfo && !movesetInfo.verified ? t('pokedex.movesUnverified') : t('pokedex.movesEmpty')}
+          </Text>
+        )}
+      </View>
     </Screen>
   );
 }

@@ -24,3 +24,16 @@ export type AbilityEntry = {
   source: string;
   verified: boolean;
 };
+
+export type PokemonMove = {
+  name: string;
+  /** e.g. "level 1", "tm", "egg", "tutor" */
+  methods: string[];
+};
+
+export type MovesetEntry = {
+  pokemon: string;
+  moves: PokemonMove[];
+  source: string;
+  verified: boolean;
+};
