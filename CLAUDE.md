@@ -16,6 +16,10 @@ App móvil companion para PokeMMO (no para Pokémon oficial — son cosas distin
 
 Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fullbusterz/PokeMMO-Companion), remoto `origin`, rama `master`. Todo el trabajo hasta la fecha está commiteado y pusheado.
 
+### 🔜 PRÓXIMA SESIÓN — seguimos donde lo dejamos, empezar aquí directamente
+
+**Tarea:** construir un apartado de **Guía** dentro de la app, uno por cada una de las 5 regiones, bien organizado (pantallas propias, navegación, no texto narrativo pegado tal cual). Inspirado en las guías de farmeo de [seviichamp.blogspot.com](https://seviichamp.blogspot.com/p/guide-index-pokemmo-indice-de-guias-de.html) que Ferran usó jugando, pero reestructurado a algo navegable en la app. Ver todo el detalle (fuentes, enlaces por región, cómo extraer los datos, atribución) en "💡 Ideas pendientes de desarrollar" más abajo — esa idea ya estaba documentada, ahora se confirma como la siguiente pieza de trabajo. No hace falta volver a preguntar contexto ni alcance: seguir directo con el diseño (¿pantalla nueva `app/guia/` o integrado en la Pokédex por región? ¿estructura de datos tipo `data/<region>/guide.json`?) y luego la implementación, región por región, con el mismo rigor de verificación de fuentes que el resto del proyecto.
+
 ### Qué está hecho y funcionando
 
 **Fase 1 (gestor de torneos) — completa, con extras más allá del scope original:**
@@ -51,7 +55,7 @@ Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fu
 
 ### 💡 Ideas pendientes de desarrollar (2026-07-04, aún sin implementar)
 
-**1. Importar guías de farmeo de seviichamp.blogspot.com como fuente de datos.** Ferran ha jugado siguiendo estas guías y quiere convertir su contenido en datos estructurados de la app (probablemente para `locations.json` por región). Índice completo de guías: [seviichamp.blogspot.com/p/guide-index...](https://seviichamp.blogspot.com/p/guide-index-pokemmo-indice-de-guias-de.html).
+**1. [PRÓXIMA SESIÓN] Apartado de Guía en la app, por región, a partir de seviichamp.blogspot.com.** Ferran ha jugado siguiendo estas guías y quiere un apartado de **Guía bien organizado dentro de la app** (no solo datos de trasfondo para la Pokédex) — una guía navegable de las 5 regiones, reestructurada a partir del contenido narrativo original. Índice completo de guías: [seviichamp.blogspot.com/p/guide-index...](https://seviichamp.blogspot.com/p/guide-index-pokemmo-indice-de-guias-de.html).
    - **Guías de farmeo por región (las 5 regiones del proyecto, en inglés)** — item por ruta, walkthrough paso a paso:
      - [Kanto](https://seviichamp.blogspot.com/2022/12/pokemmo-farm-guide-walkthrough-kanto.html) (la que Ferran usó originalmente)
      - [Johto](https://seviichamp.blogspot.com/2022/12/pokemmo-farm-guide-walkthrough-johto.html)
