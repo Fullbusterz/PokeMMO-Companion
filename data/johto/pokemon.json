@@ -1,0 +1,2148 @@
+[
+  {
+    "id": 152,
+    "name": {
+      "en": "Chikorita",
+      "es": "Chikorita"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 65,
+      "spAttack": 49,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 153,
+    "name": {
+      "en": "Bayleef",
+      "es": "Bayleef"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 80,
+      "spAttack": 63,
+      "spDefense": 80,
+      "speed": 60
+    },
+    "evolvesFrom": "chikorita",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 154,
+    "name": {
+      "en": "Meganium",
+      "es": "Meganium"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 100,
+      "spAttack": 83,
+      "spDefense": 100,
+      "speed": 80
+    },
+    "evolvesFrom": "bayleef",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 155,
+    "name": {
+      "en": "Cyndaquil",
+      "es": "Cyndaquil"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "spAttack": 60,
+      "spDefense": 50,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 156,
+    "name": {
+      "en": "Quilava",
+      "es": "Quilava"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "spAttack": 80,
+      "spDefense": 65,
+      "speed": 80
+    },
+    "evolvesFrom": "cyndaquil",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 157,
+    "name": {
+      "en": "Typhlosion",
+      "es": "Typhlosion"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "spAttack": 109,
+      "spDefense": 85,
+      "speed": 100
+    },
+    "evolvesFrom": "quilava",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 158,
+    "name": {
+      "en": "Totodile",
+      "es": "Totodile"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 65,
+      "defense": 64,
+      "spAttack": 44,
+      "spDefense": 48,
+      "speed": 43
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 159,
+    "name": {
+      "en": "Croconaw",
+      "es": "Croconaw"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 80,
+      "defense": 80,
+      "spAttack": 59,
+      "spDefense": 63,
+      "speed": 58
+    },
+    "evolvesFrom": "totodile",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 160,
+    "name": {
+      "en": "Feraligatr",
+      "es": "Feraligatr"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 105,
+      "defense": 100,
+      "spAttack": 79,
+      "spDefense": 83,
+      "speed": 78
+    },
+    "evolvesFrom": "croconaw",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 161,
+    "name": {
+      "en": "Sentret",
+      "es": "Sentret"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 46,
+      "defense": 34,
+      "spAttack": 35,
+      "spDefense": 45,
+      "speed": 20
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 162,
+    "name": {
+      "en": "Furret",
+      "es": "Furret"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 76,
+      "defense": 64,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 90
+    },
+    "evolvesFrom": "sentret",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 163,
+    "name": {
+      "en": "Hoothoot",
+      "es": "Hoothoot"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 30,
+      "defense": 30,
+      "spAttack": 36,
+      "spDefense": 56,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 164,
+    "name": {
+      "en": "Noctowl",
+      "es": "Noctowl"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 50,
+      "defense": 50,
+      "spAttack": 76,
+      "spDefense": 96,
+      "speed": 70
+    },
+    "evolvesFrom": "hoothoot",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 165,
+    "name": {
+      "en": "Ledyba",
+      "es": "Ledyba"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 20,
+      "defense": 30,
+      "spAttack": 40,
+      "spDefense": 80,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 166,
+    "name": {
+      "en": "Ledian",
+      "es": "Ledian"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 35,
+      "defense": 50,
+      "spAttack": 55,
+      "spDefense": 110,
+      "speed": 85
+    },
+    "evolvesFrom": "ledyba",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 167,
+    "name": {
+      "en": "Spinarak",
+      "es": "Spinarak"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 60,
+      "defense": 40,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 168,
+    "name": {
+      "en": "Ariados",
+      "es": "Ariados"
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 90,
+      "defense": 70,
+      "spAttack": 60,
+      "spDefense": 60,
+      "speed": 40
+    },
+    "evolvesFrom": "spinarak",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 169,
+    "name": {
+      "en": "Crobat",
+      "es": "Crobat"
+    },
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 90,
+      "defense": 80,
+      "spAttack": 70,
+      "spDefense": 80,
+      "speed": 130
+    },
+    "evolvesFrom": "golbat",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 170,
+    "name": {
+      "en": "Chinchou",
+      "es": "Chinchou"
+    },
+    "types": [
+      "water",
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 38,
+      "defense": 38,
+      "spAttack": 56,
+      "spDefense": 56,
+      "speed": 67
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 171,
+    "name": {
+      "en": "Lanturn",
+      "es": "Lanturn"
+    },
+    "types": [
+      "water",
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "attack": 58,
+      "defense": 58,
+      "spAttack": 76,
+      "spDefense": 76,
+      "speed": 67
+    },
+    "evolvesFrom": "chinchou",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 172,
+    "name": {
+      "en": "Pichu",
+      "es": "Pichu"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 40,
+      "defense": 15,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 173,
+    "name": {
+      "en": "Cleffa",
+      "es": "Cleffa"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 25,
+      "defense": 28,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 15
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 174,
+    "name": {
+      "en": "Igglybuff",
+      "es": "Igglybuff"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 30,
+      "defense": 15,
+      "spAttack": 40,
+      "spDefense": 20,
+      "speed": 15
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 175,
+    "name": {
+      "en": "Togepi",
+      "es": "Togepi"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 20,
+      "defense": 65,
+      "spAttack": 40,
+      "spDefense": 65,
+      "speed": 20
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 176,
+    "name": {
+      "en": "Togetic",
+      "es": "Togetic"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 40,
+      "defense": 85,
+      "spAttack": 80,
+      "spDefense": 105,
+      "speed": 40
+    },
+    "evolvesFrom": "togepi",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal/flying (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 177,
+    "name": {
+      "en": "Natu",
+      "es": "Natu"
+    },
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 45,
+      "spAttack": 70,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 178,
+    "name": {
+      "en": "Xatu",
+      "es": "Xatu"
+    },
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 75,
+      "defense": 70,
+      "spAttack": 95,
+      "spDefense": 70,
+      "speed": 95
+    },
+    "evolvesFrom": "natu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 179,
+    "name": {
+      "en": "Mareep",
+      "es": "Mareep"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 40,
+      "defense": 40,
+      "spAttack": 65,
+      "spDefense": 45,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 180,
+    "name": {
+      "en": "Flaaffy",
+      "es": "Flaaffy"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 55,
+      "defense": 55,
+      "spAttack": 80,
+      "spDefense": 60,
+      "speed": 45
+    },
+    "evolvesFrom": "mareep",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 181,
+    "name": {
+      "en": "Ampharos",
+      "es": "Ampharos"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 75,
+      "defense": 75,
+      "spAttack": 115,
+      "spDefense": 90,
+      "speed": 55
+    },
+    "evolvesFrom": "flaaffy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 182,
+    "name": {
+      "en": "Bellossom",
+      "es": "Bellossom"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 85,
+      "spAttack": 90,
+      "spDefense": 100,
+      "speed": 50
+    },
+    "evolvesFrom": "gloom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 183,
+    "name": {
+      "en": "Marill",
+      "es": "Marill"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 20,
+      "defense": 50,
+      "spAttack": 20,
+      "spDefense": 50,
+      "speed": 40
+    },
+    "evolvesFrom": "azurill",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a water (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 184,
+    "name": {
+      "en": "Azumarill",
+      "es": "Azumarill"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 50,
+      "defense": 80,
+      "spAttack": 50,
+      "spDefense": 80,
+      "speed": 50
+    },
+    "evolvesFrom": "marill",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a water (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 185,
+    "name": {
+      "en": "Sudowoodo",
+      "es": "Sudowoodo"
+    },
+    "types": [
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 100,
+      "defense": 115,
+      "spAttack": 30,
+      "spDefense": 65,
+      "speed": 30
+    },
+    "evolvesFrom": "bonsly",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 186,
+    "name": {
+      "en": "Politoed",
+      "es": "Politoed"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 75,
+      "defense": 75,
+      "spAttack": 90,
+      "spDefense": 100,
+      "speed": 70
+    },
+    "evolvesFrom": "poliwhirl",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 187,
+    "name": {
+      "en": "Hoppip",
+      "es": "Hoppip"
+    },
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 35,
+      "defense": 40,
+      "spAttack": 35,
+      "spDefense": 55,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 188,
+    "name": {
+      "en": "Skiploom",
+      "es": "Skiploom"
+    },
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 45,
+      "defense": 50,
+      "spAttack": 45,
+      "spDefense": 65,
+      "speed": 80
+    },
+    "evolvesFrom": "hoppip",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 189,
+    "name": {
+      "en": "Jumpluff",
+      "es": "Jumpluff"
+    },
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 55,
+      "defense": 70,
+      "spAttack": 55,
+      "spDefense": 85,
+      "speed": 110
+    },
+    "evolvesFrom": "skiploom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 190,
+    "name": {
+      "en": "Aipom",
+      "es": "Aipom"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 55,
+      "spAttack": 40,
+      "spDefense": 55,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 191,
+    "name": {
+      "en": "Sunkern",
+      "es": "Sunkern"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 30,
+      "defense": 30,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 192,
+    "name": {
+      "en": "Sunflora",
+      "es": "Sunflora"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 75,
+      "defense": 55,
+      "spAttack": 105,
+      "spDefense": 85,
+      "speed": 30
+    },
+    "evolvesFrom": "sunkern",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 193,
+    "name": {
+      "en": "Yanma",
+      "es": "Yanma"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 45,
+      "spAttack": 75,
+      "spDefense": 45,
+      "speed": 95
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 194,
+    "name": {
+      "en": "Wooper",
+      "es": "Wooper"
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 45,
+      "defense": 45,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 15
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 195,
+    "name": {
+      "en": "Quagsire",
+      "es": "Quagsire"
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 85,
+      "defense": 85,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 35
+    },
+    "evolvesFrom": "wooper",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 196,
+    "name": {
+      "en": "Espeon",
+      "es": "Espeon"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 130,
+      "spDefense": 95,
+      "speed": 110
+    },
+    "evolvesFrom": "eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 197,
+    "name": {
+      "en": "Umbreon",
+      "es": "Umbreon"
+    },
+    "types": [
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 65,
+      "defense": 110,
+      "spAttack": 60,
+      "spDefense": 130,
+      "speed": 65
+    },
+    "evolvesFrom": "eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 198,
+    "name": {
+      "en": "Murkrow",
+      "es": "Murkrow"
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 85,
+      "defense": 42,
+      "spAttack": 85,
+      "spDefense": 42,
+      "speed": 91
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 199,
+    "name": {
+      "en": "Slowking",
+      "es": "Slowking"
+    },
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 75,
+      "defense": 80,
+      "spAttack": 100,
+      "spDefense": 110,
+      "speed": 30
+    },
+    "evolvesFrom": "slowpoke",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 200,
+    "name": {
+      "en": "Misdreavus",
+      "es": "Misdreavus"
+    },
+    "types": [
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 60,
+      "spAttack": 85,
+      "spDefense": 85,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 201,
+    "name": {
+      "en": "Unown",
+      "es": "Unown"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 48,
+      "attack": 72,
+      "defense": 48,
+      "spAttack": 72,
+      "spDefense": 48,
+      "speed": 48
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 202,
+    "name": {
+      "en": "Wobbuffet",
+      "es": "Wobbuffet"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 190,
+      "attack": 33,
+      "defense": 58,
+      "spAttack": 33,
+      "spDefense": 58,
+      "speed": 33
+    },
+    "evolvesFrom": "wynaut",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 203,
+    "name": {
+      "en": "Girafarig",
+      "es": "Girafarig"
+    },
+    "types": [
+      "normal",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 65,
+      "spAttack": 90,
+      "spDefense": 65,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 204,
+    "name": {
+      "en": "Pineco",
+      "es": "Pineco"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 65,
+      "defense": 90,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 15
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 205,
+    "name": {
+      "en": "Forretress",
+      "es": "Forretress"
+    },
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 90,
+      "defense": 140,
+      "spAttack": 60,
+      "spDefense": 60,
+      "speed": 40
+    },
+    "evolvesFrom": "pineco",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 206,
+    "name": {
+      "en": "Dunsparce",
+      "es": "Dunsparce"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 70,
+      "defense": 70,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 207,
+    "name": {
+      "en": "Gligar",
+      "es": "Gligar"
+    },
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 75,
+      "defense": 105,
+      "spAttack": 35,
+      "spDefense": 65,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 208,
+    "name": {
+      "en": "Steelix",
+      "es": "Steelix"
+    },
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 85,
+      "defense": 200,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 30
+    },
+    "evolvesFrom": "onix",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 209,
+    "name": {
+      "en": "Snubbull",
+      "es": "Snubbull"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 210,
+    "name": {
+      "en": "Granbull",
+      "es": "Granbull"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 120,
+      "defense": 75,
+      "spAttack": 60,
+      "spDefense": 60,
+      "speed": 45
+    },
+    "evolvesFrom": "snubbull",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+  },
+  {
+    "id": 211,
+    "name": {
+      "en": "Qwilfish",
+      "es": "Qwilfish"
+    },
+    "types": [
+      "water",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 95,
+      "defense": 75,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 212,
+    "name": {
+      "en": "Scizor",
+      "es": "Scizor"
+    },
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 130,
+      "defense": 100,
+      "spAttack": 55,
+      "spDefense": 80,
+      "speed": 65
+    },
+    "evolvesFrom": "scyther",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 213,
+    "name": {
+      "en": "Shuckle",
+      "es": "Shuckle"
+    },
+    "types": [
+      "bug",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 230,
+      "spAttack": 10,
+      "spDefense": 230,
+      "speed": 5
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 214,
+    "name": {
+      "en": "Heracross",
+      "es": "Heracross"
+    },
+    "types": [
+      "bug",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 125,
+      "defense": 75,
+      "spAttack": 40,
+      "spDefense": 95,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 215,
+    "name": {
+      "en": "Sneasel",
+      "es": "Sneasel"
+    },
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 55,
+      "spAttack": 35,
+      "spDefense": 75,
+      "speed": 115
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 216,
+    "name": {
+      "en": "Teddiursa",
+      "es": "Teddiursa"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 217,
+    "name": {
+      "en": "Ursaring",
+      "es": "Ursaring"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 75,
+      "spAttack": 75,
+      "spDefense": 75,
+      "speed": 55
+    },
+    "evolvesFrom": "teddiursa",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 218,
+    "name": {
+      "en": "Slugma",
+      "es": "Slugma"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 40,
+      "defense": 40,
+      "spAttack": 70,
+      "spDefense": 40,
+      "speed": 20
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 219,
+    "name": {
+      "en": "Magcargo",
+      "es": "Magcargo"
+    },
+    "types": [
+      "fire",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 120,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 30
+    },
+    "evolvesFrom": "slugma",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 220,
+    "name": {
+      "en": "Swinub",
+      "es": "Swinub"
+    },
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 40,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 221,
+    "name": {
+      "en": "Piloswine",
+      "es": "Piloswine"
+    },
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 80,
+      "spAttack": 60,
+      "spDefense": 60,
+      "speed": 50
+    },
+    "evolvesFrom": "swinub",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 222,
+    "name": {
+      "en": "Corsola",
+      "es": "Corsola"
+    },
+    "types": [
+      "water",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 85,
+      "spAttack": 65,
+      "spDefense": 85,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 223,
+    "name": {
+      "en": "Remoraid",
+      "es": "Remoraid"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 65,
+      "defense": 35,
+      "spAttack": 65,
+      "spDefense": 35,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 224,
+    "name": {
+      "en": "Octillery",
+      "es": "Octillery"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 105,
+      "defense": 75,
+      "spAttack": 105,
+      "spDefense": 75,
+      "speed": 45
+    },
+    "evolvesFrom": "remoraid",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 225,
+    "name": {
+      "en": "Delibird",
+      "es": "Delibird"
+    },
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 55,
+      "defense": 45,
+      "spAttack": 65,
+      "spDefense": 45,
+      "speed": 75
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 226,
+    "name": {
+      "en": "Mantine",
+      "es": "Mantine"
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 40,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 140,
+      "speed": 70
+    },
+    "evolvesFrom": "mantyke",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 227,
+    "name": {
+      "en": "Skarmory",
+      "es": "Skarmory"
+    },
+    "types": [
+      "steel",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 80,
+      "defense": 140,
+      "spAttack": 40,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 228,
+    "name": {
+      "en": "Houndour",
+      "es": "Houndour"
+    },
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 60,
+      "defense": 30,
+      "spAttack": 80,
+      "spDefense": 50,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 229,
+    "name": {
+      "en": "Houndoom",
+      "es": "Houndoom"
+    },
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 90,
+      "defense": 50,
+      "spAttack": 110,
+      "spDefense": 80,
+      "speed": 95
+    },
+    "evolvesFrom": "houndour",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 230,
+    "name": {
+      "en": "Kingdra",
+      "es": "Kingdra"
+    },
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 95,
+      "defense": 95,
+      "spAttack": 95,
+      "spDefense": 95,
+      "speed": 85
+    },
+    "evolvesFrom": "seadra",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 231,
+    "name": {
+      "en": "Phanpy",
+      "es": "Phanpy"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 60,
+      "defense": 60,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 232,
+    "name": {
+      "en": "Donphan",
+      "es": "Donphan"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 120,
+      "defense": 120,
+      "spAttack": 60,
+      "spDefense": 60,
+      "speed": 50
+    },
+    "evolvesFrom": "phanpy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 233,
+    "name": {
+      "en": "Porygon2",
+      "es": "Porygon2"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 80,
+      "defense": 90,
+      "spAttack": 105,
+      "spDefense": 95,
+      "speed": 60
+    },
+    "evolvesFrom": "porygon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 234,
+    "name": {
+      "en": "Stantler",
+      "es": "Stantler"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 73,
+      "attack": 95,
+      "defense": 62,
+      "spAttack": 85,
+      "spDefense": 65,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 235,
+    "name": {
+      "en": "Smeargle",
+      "es": "Smeargle"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 20,
+      "defense": 35,
+      "spAttack": 20,
+      "spDefense": 45,
+      "speed": 75
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 236,
+    "name": {
+      "en": "Tyrogue",
+      "es": "Tyrogue"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 35,
+      "attack": 35,
+      "defense": 35,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 237,
+    "name": {
+      "en": "Hitmontop",
+      "es": "Hitmontop"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 95,
+      "defense": 95,
+      "spAttack": 35,
+      "spDefense": 110,
+      "speed": 70
+    },
+    "evolvesFrom": "tyrogue",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 238,
+    "name": {
+      "en": "Smoochum",
+      "es": "Smoochum"
+    },
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 15,
+      "spAttack": 85,
+      "spDefense": 65,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 239,
+    "name": {
+      "en": "Elekid",
+      "es": "Elekid"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 63,
+      "defense": 37,
+      "spAttack": 65,
+      "spDefense": 55,
+      "speed": 95
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 240,
+    "name": {
+      "en": "Magby",
+      "es": "Magby"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 75,
+      "defense": 37,
+      "spAttack": 70,
+      "spDefense": 55,
+      "speed": 83
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 241,
+    "name": {
+      "en": "Miltank",
+      "es": "Miltank"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 80,
+      "defense": 105,
+      "spAttack": 40,
+      "spDefense": 70,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 242,
+    "name": {
+      "en": "Blissey",
+      "es": "Blissey"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 255,
+      "attack": 10,
+      "defense": 10,
+      "spAttack": 75,
+      "spDefense": 135,
+      "speed": 55
+    },
+    "evolvesFrom": "chansey",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 243,
+    "name": {
+      "en": "Raikou",
+      "es": "Raikou"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 85,
+      "defense": 75,
+      "spAttack": 115,
+      "spDefense": 100,
+      "speed": 115
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 244,
+    "name": {
+      "en": "Entei",
+      "es": "Entei"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 115,
+      "attack": 115,
+      "defense": 85,
+      "spAttack": 90,
+      "spDefense": 75,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 245,
+    "name": {
+      "en": "Suicune",
+      "es": "Suicune"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 75,
+      "defense": 115,
+      "spAttack": 90,
+      "spDefense": 115,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 246,
+    "name": {
+      "en": "Larvitar",
+      "es": "Larvitar"
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 64,
+      "defense": 50,
+      "spAttack": 45,
+      "spDefense": 50,
+      "speed": 41
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 247,
+    "name": {
+      "en": "Pupitar",
+      "es": "Pupitar"
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 84,
+      "defense": 70,
+      "spAttack": 65,
+      "spDefense": 70,
+      "speed": 51
+    },
+    "evolvesFrom": "larvitar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 248,
+    "name": {
+      "en": "Tyranitar",
+      "es": "Tyranitar"
+    },
+    "types": [
+      "rock",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 134,
+      "defense": 110,
+      "spAttack": 95,
+      "spDefense": 100,
+      "speed": 61
+    },
+    "evolvesFrom": "pupitar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 249,
+    "name": {
+      "en": "Lugia",
+      "es": "Lugia"
+    },
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 106,
+      "attack": 90,
+      "defense": 130,
+      "spAttack": 90,
+      "spDefense": 154,
+      "speed": 110
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 250,
+    "name": {
+      "en": "Ho-Oh",
+      "es": "Ho-Oh"
+    },
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 106,
+      "attack": 130,
+      "defense": 90,
+      "spAttack": 110,
+      "spDefense": 154,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 251,
+    "name": {
+      "en": "Celebi",
+      "es": "Celebi"
+    },
+    "types": [
+      "psychic",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+  }
+]

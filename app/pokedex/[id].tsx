@@ -33,9 +33,10 @@ const STAT_ROWS: { key: keyof PokemonStats; label: string; icon: keyof typeof Io
   { key: 'speed', label: 'pokedex.speed', icon: 'speedometer' },
 ];
 
-// Loose ceiling for bar scaling — no Kanto base stat exceeds this, so bars
-// stay comparable to each other without any one stat maxing out the track.
-const STAT_BAR_MAX = 180;
+// The real max any base stat can reach across every game (Blissey/Chansey's
+// HP, Shuckle's Def/SpDef) — using the true ceiling instead of a per-region
+// guess keeps outlier stats from all looking like an identical "full" bar.
+const STAT_BAR_MAX = 255;
 
 function EvolutionRow({ pokemon }: { pokemon: PokemonEntry }) {
   return (
