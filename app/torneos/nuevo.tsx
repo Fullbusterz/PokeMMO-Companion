@@ -129,18 +129,29 @@ export default function NewTournament() {
 
       <Text className="mb-1 font-medium text-ink-300">{t('newTournament.formatLabel')}</Text>
       <View className="mb-5 flex-row gap-2">
-        {(['single', 'double'] as const).map((option) => (
+        {(['single', 'double', 'league'] as const).map((option) => (
           <FormatOption
             key={option}
             isSelected={format === option}
             onPress={() => setFormat(option)}
-            label={option === 'single' ? t('newTournament.formatSingle') : t('newTournament.formatDouble')}
+            label={
+              option === 'single'
+                ? t('newTournament.formatSingle')
+                : option === 'double'
+                  ? t('newTournament.formatDouble')
+                  : t('newTournament.formatLeague')
+            }
           />
         ))}
       </View>
       {format === 'double' && (
         <Animated.Text entering={nativeOnly(FadeInDown.duration(200))} className="mb-5 text-xs text-ink-400">
           {t('newTournament.formatDoubleHint')}
+        </Animated.Text>
+      )}
+      {format === 'league' && (
+        <Animated.Text entering={nativeOnly(FadeInDown.duration(200))} className="mb-5 text-xs text-ink-400">
+          {t('newTournament.formatLeagueHint')}
         </Animated.Text>
       )}
 

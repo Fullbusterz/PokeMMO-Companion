@@ -72,6 +72,7 @@
   "tournaments": {
     "title": "Torneos",
     "empty": "Todavía no tienes ningún torneo.",
+    "emptyFiltered": "Ningún torneo coincide con estos filtros.",
     "newTournament": "Nuevo torneo",
     "importCode": "Importar por código",
     "participantsCount": "{{count}} participantes",
@@ -79,7 +80,9 @@
     "statusInProgress": "En curso",
     "statusFinished": "Finalizado",
     "deleteConfirmTitle": "Eliminar torneo",
-    "deleteConfirmMessage": "¿Seguro que quieres eliminar \"{{name}}\"? Esta acción no se puede deshacer."
+    "deleteConfirmMessage": "¿Seguro que quieres eliminar \"{{name}}\"? Esta acción no se puede deshacer.",
+    "filterFormatAll": "Todos los formatos",
+    "filterStatusAll": "Todos los estados"
   },
   "newTournament": {
     "title": "Nuevo torneo",
@@ -94,9 +97,11 @@
     "formatLabel": "Formato",
     "formatSingle": "Eliminación simple",
     "formatDouble": "Doble eliminación",
+    "formatLeague": "Liguilla",
     "formatDoubleHint": "Necesita un número de participantes potencia de 2 (4, 8, 16, 32...) porque un bye no genera un perdedor para el bracket de perdedores.",
+    "formatLeagueHint": "Todos contra todos a una vuelta. Con número impar de participantes, cada uno descansa una jornada.",
     "doubleElimSizeError": "Doble eliminación necesita 4, 8, 16 o 32 participantes exactos. Añade o quita hasta llegar a {{size}}.",
-    "create": "Crear bracket"
+    "create": "Crear torneo"
   },
   "bracket": {
     "round": "Ronda {{number}}",
@@ -115,6 +120,17 @@
     "losersBracket": "Bracket de perdedores",
     "grandFinal": "Gran Final",
     "losersRound": "Perdedores · Ronda {{number}}"
+  },
+  "league": {
+    "matchday": "Jornada {{number}}",
+    "restsThisMatchday": "{{name}} descansa esta jornada",
+    "datePlaceholder": "Fecha (opcional)",
+    "standingsTitle": "Clasificación",
+    "played": "PJ",
+    "wins": "V",
+    "losses": "D",
+    "points": "Pts",
+    "finished": "🏆 Liguilla finalizada"
   },
   "exportImport": {
     "exportTitle": "Compartir estado del torneo",

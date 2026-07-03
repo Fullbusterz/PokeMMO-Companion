@@ -9,6 +9,12 @@ import {
   setDoubleElimWinner,
   undoDoubleElimWinner,
 } from '@/lib/doubleElimBracket';
+import {
+  generateLeagueMatches,
+  isLeagueFinished,
+  setLeagueWinner,
+  undoLeagueWinner,
+} from '@/lib/leagueFormat';
 import { decodeFromCode, encodeToCode } from '@/lib/exportCode';
 import { generateId } from '@/lib/id';
 import type { BracketSection, Match, Participant, Tournament, TournamentFormat } from '@/types/tournament';
@@ -19,13 +25,15 @@ type TournamentStore = {
   renameTournament: (tournamentId: string, name: string) => void;
   setMatchWinner: (tournamentId: string, matchId: string, winnerId: string) => void;
   undoLastMatch: (tournamentId: string) => void;
+  setMatchdayDate: (tournamentId: string, round: number, date: string) => void;
   deleteTournament: (tournamentId: string) => void;
   exportTournament: (tournamentId: string) => string | null;
   importTournament: (code: string) => Tournament | null;
 };
 
 function statusFor(matches: Tournament['matches'], format: TournamentFormat): Tournament['status'] {
-  const finished = format === 'double' ? isDoubleElimFinished(matches) : isFinished(matches);
+  const finished =
+    format === 'double' ? isDoubleElimFinished(matches) : format === 'league' ? isLeagueFinished(matches) : isFinished(matches);
   if (finished) return 'finished';
   // Bye wins are auto-resolved at creation time, before any human plays
   // anything, so they must not count as "the organizer started playing".
@@ -48,7 +56,7 @@ function parseImportedTournament(data: unknown): Tournament | null {
   if (typeof raw.name !== 'string') return null;
   if (typeof raw.createdAt !== 'string') return null;
   if (!Array.isArray(raw.participants) || !Array.isArray(raw.matches)) return null;
-  const format: TournamentFormat = raw.format === 'double' ? 'double' : 'single';
+  const format: TournamentFormat = raw.format === 'double' ? 'double' : raw.format === 'league' ? 'league' : 'single';
 
   const participants: Participant[] = [];
   const participantIds = new Set<string>();
@@ -104,6 +112,16 @@ function parseImportedTournament(data: unknown): Tournament | null {
   }
   if (matches.length === 0) return null;
 
+  // Purely cosmetic (organizer-entered matchday labels), so a malformed
+  // entry is just dropped rather than failing the whole import over it.
+  let matchdayDates: Record<string, string> | undefined;
+  if (raw.matchdayDates && typeof raw.matchdayDates === 'object') {
+    matchdayDates = {};
+    for (const [round, date] of Object.entries(raw.matchdayDates as Record<string, unknown>)) {
+      if (typeof date === 'string') matchdayDates[round] = date;
+    }
+  }
+
   return {
     id: raw.id,
     name: raw.name,
@@ -117,6 +135,7 @@ function parseImportedTournament(data: unknown): Tournament | null {
     // only undo decisions it makes itself after this point.
     history: [],
     format,
+    matchdayDates,
   };
 }
 
@@ -130,7 +149,12 @@ export const useTournamentStore = create<TournamentStore>()(
           .map((n) => n.trim())
           .filter(Boolean)
           .map((n) => ({ id: generateId(), name: n }));
-        const matches = format === 'double' ? generateDoubleElimBracket(participants) : generateBracket(participants);
+        const matches =
+          format === 'double'
+            ? generateDoubleElimBracket(participants)
+            : format === 'league'
+              ? generateLeagueMatches(participants)
+              : generateBracket(participants);
 
         const tournament: Tournament = {
           id: generateId(),
@@ -162,7 +186,9 @@ export const useTournamentStore = create<TournamentStore>()(
             const matches =
               t.format === 'double'
                 ? setDoubleElimWinner(t.matches, matchId, winnerId)
-                : setSingleElimWinner(t.matches, matchId, winnerId);
+                : t.format === 'league'
+                  ? setLeagueWinner(t.matches, matchId, winnerId)
+                  : setSingleElimWinner(t.matches, matchId, winnerId);
             return { ...t, matches, status: statusFor(matches, t.format), history: [...t.history, matchId] };
           }),
         }));
@@ -174,8 +200,25 @@ export const useTournamentStore = create<TournamentStore>()(
             if (t.id !== tournamentId || t.history.length === 0) return t;
             const lastMatchId = t.history[t.history.length - 1];
             const matches =
-              t.format === 'double' ? undoDoubleElimWinner(t.matches, lastMatchId) : undoSingleElimWinner(t.matches, lastMatchId);
+              t.format === 'double'
+                ? undoDoubleElimWinner(t.matches, lastMatchId)
+                : t.format === 'league'
+                  ? undoLeagueWinner(t.matches, lastMatchId)
+                  : undoSingleElimWinner(t.matches, lastMatchId);
             return { ...t, matches, status: statusFor(matches, t.format), history: t.history.slice(0, -1) };
+          }),
+        }));
+      },
+
+      setMatchdayDate: (tournamentId, round, date) => {
+        const trimmed = date.trim();
+        set((state) => ({
+          tournaments: state.tournaments.map((t) => {
+            if (t.id !== tournamentId) return t;
+            const matchdayDates = { ...(t.matchdayDates ?? {}) };
+            if (trimmed) matchdayDates[String(round)] = trimmed;
+            else delete matchdayDates[String(round)];
+            return { ...t, matchdayDates };
           }),
         }));
       },
@@ -224,6 +267,7 @@ export const useTournamentStore = create<TournamentStore>()(
             ...t,
             history: t.history ?? [],
             format: t.format ?? 'single',
+            matchdayDates: t.matchdayDates ?? {},
           })),
         };
       },

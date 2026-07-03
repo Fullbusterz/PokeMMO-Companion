@@ -23,7 +23,7 @@ export type Match = {
 };
 
 export type TournamentStatus = 'setup' | 'in_progress' | 'finished';
-export type TournamentFormat = 'single' | 'double';
+export type TournamentFormat = 'single' | 'double' | 'league';
 
 export type Tournament = {
   id: string;
@@ -37,4 +37,8 @@ export type Tournament = {
   // later round can already depend on a decision that hasn't happened yet.
   history: string[];
   format: TournamentFormat;
+  // League only: free-text, organizer-entered date per matchday (round
+  // number as string key). Purely informational — the app has no
+  // notifications/reminders, so this is never read for scheduling logic.
+  matchdayDates?: Record<string, string>;
 };

@@ -72,6 +72,7 @@
   "tournaments": {
     "title": "Tournaments",
     "empty": "You don't have any tournaments yet.",
+    "emptyFiltered": "No tournaments match these filters.",
     "newTournament": "New tournament",
     "importCode": "Import from code",
     "participantsCount": "{{count}} participants",
@@ -79,7 +80,9 @@
     "statusInProgress": "In progress",
     "statusFinished": "Finished",
     "deleteConfirmTitle": "Delete tournament",
-    "deleteConfirmMessage": "Are you sure you want to delete \"{{name}}\"? This can't be undone."
+    "deleteConfirmMessage": "Are you sure you want to delete \"{{name}}\"? This can't be undone.",
+    "filterFormatAll": "All formats",
+    "filterStatusAll": "All statuses"
   },
   "newTournament": {
     "title": "New tournament",
@@ -94,9 +97,11 @@
     "formatLabel": "Format",
     "formatSingle": "Single elimination",
     "formatDouble": "Double elimination",
+    "formatLeague": "League",
     "formatDoubleHint": "Needs a power-of-two participant count (4, 8, 16, 32...) because a bye doesn't produce a loser for the losers bracket.",
+    "formatLeagueHint": "Round-robin, single round. With an odd participant count, each player rests one matchday.",
     "doubleElimSizeError": "Double elimination needs exactly 4, 8, 16, or 32 participants. Add or remove until you reach {{size}}.",
-    "create": "Create bracket"
+    "create": "Create tournament"
   },
   "bracket": {
     "round": "Round {{number}}",
@@ -115,6 +120,17 @@
     "losersBracket": "Losers bracket",
     "grandFinal": "Grand Final",
     "losersRound": "Losers · Round {{number}}"
+  },
+  "league": {
+    "matchday": "Matchday {{number}}",
+    "restsThisMatchday": "{{name}} rests this matchday",
+    "datePlaceholder": "Date (optional)",
+    "standingsTitle": "Standings",
+    "played": "P",
+    "wins": "W",
+    "losses": "L",
+    "points": "Pts",
+    "finished": "🏆 League finished"
   },
   "exportImport": {
     "exportTitle": "Share tournament state",
