@@ -2608,7 +2608,7 @@
       "spDefense": 120,
       "speed": 90
     },
-    "evolvesFrom": "mime-jr",
+    "evolvesFrom": "Mime Jr.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
     "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Psiquico puro (2026-07-03): PokeAPI devuelve Psiquico/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Mr. Mime es Psiquico puro en Gen 1-5."
   },

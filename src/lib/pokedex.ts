@@ -1,16 +1,20 @@
 import hoennPokemon from '../../data/hoenn/pokemon.json';
 import johtoPokemon from '../../data/johto/pokemon.json';
 import kantoPokemon from '../../data/kanto/pokemon.json';
+import sinnohPokemon from '../../data/sinnoh/pokemon.json';
 import type { PokemonEntry } from '@/types/pokemon';
 
 // Regions are appended here as they're built out — evolution lookups need
 // the full combined list since plenty of chains cross region boundaries
 // (e.g. Crobat/Johto evolves from Golbat/Kanto, Raichu/Kanto's pre-evolution
-// Pichu/Johto only resolves once both are loaded).
+// Pichu/Johto only resolves once both are loaded). Sinnoh in particular adds
+// a lot of these (Magnezone from Magneton/Kanto, Togekiss from Togetic/Johto,
+// Gallade from Kirlia/Hoenn, etc.).
 export const ALL_POKEMON = [
   ...(kantoPokemon as PokemonEntry[]),
   ...(johtoPokemon as PokemonEntry[]),
   ...(hoennPokemon as PokemonEntry[]),
+  ...(sinnohPokemon as PokemonEntry[]),
 ];
 
 export function getPokemonById(id: number): PokemonEntry | undefined {

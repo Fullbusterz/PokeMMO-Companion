@@ -1,0 +1,2301 @@
+[
+  {
+    "id": 387,
+    "name": {
+      "en": "Turtwig",
+      "es": "Turtwig"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 68,
+      "defense": 64,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 31
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 388,
+    "name": {
+      "en": "Grotle",
+      "es": "Grotle"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 89,
+      "defense": 85,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 36
+    },
+    "evolvesFrom": "turtwig",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 389,
+    "name": {
+      "en": "Torterra",
+      "es": "Torterra"
+    },
+    "types": [
+      "grass",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 95,
+      "attack": 109,
+      "defense": 105,
+      "spAttack": 75,
+      "spDefense": 85,
+      "speed": 56
+    },
+    "evolvesFrom": "grotle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 390,
+    "name": {
+      "en": "Chimchar",
+      "es": "Chimchar"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 44,
+      "attack": 58,
+      "defense": 44,
+      "spAttack": 58,
+      "spDefense": 44,
+      "speed": 61
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 391,
+    "name": {
+      "en": "Monferno",
+      "es": "Monferno"
+    },
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 64,
+      "attack": 78,
+      "defense": 52,
+      "spAttack": 78,
+      "spDefense": 52,
+      "speed": 81
+    },
+    "evolvesFrom": "chimchar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 392,
+    "name": {
+      "en": "Infernape",
+      "es": "Infernape"
+    },
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 76,
+      "attack": 104,
+      "defense": 71,
+      "spAttack": 104,
+      "spDefense": 71,
+      "speed": 108
+    },
+    "evolvesFrom": "monferno",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 393,
+    "name": {
+      "en": "Piplup",
+      "es": "Piplup"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 53,
+      "attack": 51,
+      "defense": 53,
+      "spAttack": 61,
+      "spDefense": 56,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 394,
+    "name": {
+      "en": "Prinplup",
+      "es": "Prinplup"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 64,
+      "attack": 66,
+      "defense": 68,
+      "spAttack": 81,
+      "spDefense": 76,
+      "speed": 50
+    },
+    "evolvesFrom": "piplup",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 395,
+    "name": {
+      "en": "Empoleon",
+      "es": "Empoleon"
+    },
+    "types": [
+      "water",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 84,
+      "attack": 86,
+      "defense": 88,
+      "spAttack": 111,
+      "spDefense": 101,
+      "speed": 60
+    },
+    "evolvesFrom": "prinplup",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 396,
+    "name": {
+      "en": "Starly",
+      "es": "Starly"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 55,
+      "defense": 30,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 397,
+    "name": {
+      "en": "Staravia",
+      "es": "Staravia"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 75,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 80
+    },
+    "evolvesFrom": "starly",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 398,
+    "name": {
+      "en": "Staraptor",
+      "es": "Staraptor"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 120,
+      "defense": 70,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 100
+    },
+    "evolvesFrom": "staravia",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 399,
+    "name": {
+      "en": "Bidoof",
+      "es": "Bidoof"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 59,
+      "attack": 45,
+      "defense": 40,
+      "spAttack": 35,
+      "spDefense": 40,
+      "speed": 31
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 400,
+    "name": {
+      "en": "Bibarel",
+      "es": "Bibarel"
+    },
+    "types": [
+      "normal",
+      "water"
+    ],
+    "baseStats": {
+      "hp": 79,
+      "attack": 85,
+      "defense": 60,
+      "spAttack": 55,
+      "spDefense": 60,
+      "speed": 71
+    },
+    "evolvesFrom": "bidoof",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 401,
+    "name": {
+      "en": "Kricketot",
+      "es": "Kricketot"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 37,
+      "attack": 25,
+      "defense": 41,
+      "spAttack": 25,
+      "spDefense": 41,
+      "speed": 25
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 402,
+    "name": {
+      "en": "Kricketune",
+      "es": "Kricketune"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 77,
+      "attack": 85,
+      "defense": 51,
+      "spAttack": 55,
+      "spDefense": 51,
+      "speed": 65
+    },
+    "evolvesFrom": "kricketot",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 403,
+    "name": {
+      "en": "Shinx",
+      "es": "Shinx"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 65,
+      "defense": 34,
+      "spAttack": 40,
+      "spDefense": 34,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 404,
+    "name": {
+      "en": "Luxio",
+      "es": "Luxio"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 85,
+      "defense": 49,
+      "spAttack": 60,
+      "spDefense": 49,
+      "speed": 60
+    },
+    "evolvesFrom": "shinx",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 405,
+    "name": {
+      "en": "Luxray",
+      "es": "Luxray"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 79,
+      "spAttack": 95,
+      "spDefense": 79,
+      "speed": 70
+    },
+    "evolvesFrom": "luxio",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 406,
+    "name": {
+      "en": "Budew",
+      "es": "Budew"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 35,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 55
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 407,
+    "name": {
+      "en": "Roserade",
+      "es": "Roserade"
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 70,
+      "defense": 55,
+      "spAttack": 125,
+      "spDefense": 105,
+      "speed": 90
+    },
+    "evolvesFrom": "roselia",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 408,
+    "name": {
+      "en": "Cranidos",
+      "es": "Cranidos"
+    },
+    "types": [
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 67,
+      "attack": 125,
+      "defense": 40,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 58
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 409,
+    "name": {
+      "en": "Rampardos",
+      "es": "Rampardos"
+    },
+    "types": [
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 97,
+      "attack": 165,
+      "defense": 60,
+      "spAttack": 65,
+      "spDefense": 50,
+      "speed": 58
+    },
+    "evolvesFrom": "cranidos",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 410,
+    "name": {
+      "en": "Shieldon",
+      "es": "Shieldon"
+    },
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 42,
+      "defense": 118,
+      "spAttack": 42,
+      "spDefense": 88,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 411,
+    "name": {
+      "en": "Bastiodon",
+      "es": "Bastiodon"
+    },
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 52,
+      "defense": 168,
+      "spAttack": 47,
+      "spDefense": 138,
+      "speed": 30
+    },
+    "evolvesFrom": "shieldon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 412,
+    "name": {
+      "en": "Burmy",
+      "es": "Burmy"
+    },
+    "types": [
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 29,
+      "defense": 45,
+      "spAttack": 29,
+      "spDefense": 45,
+      "speed": 36
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 413,
+    "name": {
+      "en": "Wormadam",
+      "es": "Wormadam"
+    },
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 59,
+      "defense": 85,
+      "spAttack": 79,
+      "spDefense": 105,
+      "speed": 36
+    },
+    "evolvesFrom": "burmy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 414,
+    "name": {
+      "en": "Mothim",
+      "es": "Mothim"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 94,
+      "defense": 50,
+      "spAttack": 94,
+      "spDefense": 50,
+      "speed": 66
+    },
+    "evolvesFrom": "burmy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 415,
+    "name": {
+      "en": "Combee",
+      "es": "Combee"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 30,
+      "attack": 30,
+      "defense": 42,
+      "spAttack": 30,
+      "spDefense": 42,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 416,
+    "name": {
+      "en": "Vespiquen",
+      "es": "Vespiquen"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 102,
+      "spAttack": 80,
+      "spDefense": 102,
+      "speed": 40
+    },
+    "evolvesFrom": "combee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 417,
+    "name": {
+      "en": "Pachirisu",
+      "es": "Pachirisu"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 70,
+      "spAttack": 45,
+      "spDefense": 90,
+      "speed": 95
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 418,
+    "name": {
+      "en": "Buizel",
+      "es": "Buizel"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 65,
+      "defense": 35,
+      "spAttack": 60,
+      "spDefense": 30,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 419,
+    "name": {
+      "en": "Floatzel",
+      "es": "Floatzel"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 105,
+      "defense": 55,
+      "spAttack": 85,
+      "spDefense": 50,
+      "speed": 115
+    },
+    "evolvesFrom": "buizel",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 420,
+    "name": {
+      "en": "Cherubi",
+      "es": "Cherubi"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 35,
+      "defense": 45,
+      "spAttack": 62,
+      "spDefense": 53,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 421,
+    "name": {
+      "en": "Cherrim",
+      "es": "Cherrim"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 70,
+      "spAttack": 87,
+      "spDefense": 78,
+      "speed": 85
+    },
+    "evolvesFrom": "cherubi",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 422,
+    "name": {
+      "en": "Shellos",
+      "es": "Shellos"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 76,
+      "attack": 48,
+      "defense": 48,
+      "spAttack": 57,
+      "spDefense": 62,
+      "speed": 34
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 423,
+    "name": {
+      "en": "Gastrodon",
+      "es": "Gastrodon"
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 111,
+      "attack": 83,
+      "defense": 68,
+      "spAttack": 92,
+      "spDefense": 82,
+      "speed": 39
+    },
+    "evolvesFrom": "shellos",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 424,
+    "name": {
+      "en": "Ambipom",
+      "es": "Ambipom"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 66,
+      "spAttack": 60,
+      "spDefense": 66,
+      "speed": 115
+    },
+    "evolvesFrom": "aipom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 425,
+    "name": {
+      "en": "Drifloon",
+      "es": "Drifloon"
+    },
+    "types": [
+      "ghost",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 50,
+      "defense": 34,
+      "spAttack": 60,
+      "spDefense": 44,
+      "speed": 70
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 426,
+    "name": {
+      "en": "Drifblim",
+      "es": "Drifblim"
+    },
+    "types": [
+      "ghost",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "attack": 80,
+      "defense": 44,
+      "spAttack": 90,
+      "spDefense": 54,
+      "speed": 80
+    },
+    "evolvesFrom": "drifloon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 427,
+    "name": {
+      "en": "Buneary",
+      "es": "Buneary"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 55,
+      "attack": 66,
+      "defense": 44,
+      "spAttack": 44,
+      "spDefense": 56,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 428,
+    "name": {
+      "en": "Lopunny",
+      "es": "Lopunny"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 76,
+      "defense": 84,
+      "spAttack": 54,
+      "spDefense": 96,
+      "speed": 105
+    },
+    "evolvesFrom": "buneary",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 429,
+    "name": {
+      "en": "Mismagius",
+      "es": "Mismagius"
+    },
+    "types": [
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 60,
+      "spAttack": 105,
+      "spDefense": 105,
+      "speed": 105
+    },
+    "evolvesFrom": "misdreavus",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 430,
+    "name": {
+      "en": "Honchkrow",
+      "es": "Honchkrow"
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 125,
+      "defense": 52,
+      "spAttack": 105,
+      "spDefense": 52,
+      "speed": 71
+    },
+    "evolvesFrom": "murkrow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 431,
+    "name": {
+      "en": "Glameow",
+      "es": "Glameow"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 49,
+      "attack": 55,
+      "defense": 42,
+      "spAttack": 42,
+      "spDefense": 37,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 432,
+    "name": {
+      "en": "Purugly",
+      "es": "Purugly"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 71,
+      "attack": 82,
+      "defense": 64,
+      "spAttack": 64,
+      "spDefense": 59,
+      "speed": 112
+    },
+    "evolvesFrom": "glameow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 433,
+    "name": {
+      "en": "Chingling",
+      "es": "Chingling"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 50,
+      "spAttack": 65,
+      "spDefense": 50,
+      "speed": 45
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 434,
+    "name": {
+      "en": "Stunky",
+      "es": "Stunky"
+    },
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 63,
+      "attack": 63,
+      "defense": 47,
+      "spAttack": 41,
+      "spDefense": 41,
+      "speed": 74
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 435,
+    "name": {
+      "en": "Skuntank",
+      "es": "Skuntank"
+    },
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 103,
+      "attack": 93,
+      "defense": 67,
+      "spAttack": 71,
+      "spDefense": 61,
+      "speed": 84
+    },
+    "evolvesFrom": "stunky",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 436,
+    "name": {
+      "en": "Bronzor",
+      "es": "Bronzor"
+    },
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 57,
+      "attack": 24,
+      "defense": 86,
+      "spAttack": 24,
+      "spDefense": 86,
+      "speed": 23
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 437,
+    "name": {
+      "en": "Bronzong",
+      "es": "Bronzong"
+    },
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 67,
+      "attack": 89,
+      "defense": 116,
+      "spAttack": 79,
+      "spDefense": 116,
+      "speed": 33
+    },
+    "evolvesFrom": "bronzor",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 438,
+    "name": {
+      "en": "Bonsly",
+      "es": "Bonsly"
+    },
+    "types": [
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 80,
+      "defense": 95,
+      "spAttack": 10,
+      "spDefense": 45,
+      "speed": 10
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 439,
+    "name": {
+      "en": "Mime Jr.",
+      "es": "Mime Jr."
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 20,
+      "attack": 25,
+      "defense": 45,
+      "spAttack": 70,
+      "spDefense": 90,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a psychic (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO)."
+  },
+  {
+    "id": 440,
+    "name": {
+      "en": "Happiny",
+      "es": "Happiny"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 5,
+      "defense": 5,
+      "spAttack": 15,
+      "spDefense": 65,
+      "speed": 30
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 441,
+    "name": {
+      "en": "Chatot",
+      "es": "Chatot"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 76,
+      "attack": 65,
+      "defense": 45,
+      "spAttack": 92,
+      "spDefense": 42,
+      "speed": 91
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 442,
+    "name": {
+      "en": "Spiritomb",
+      "es": "Spiritomb"
+    },
+    "types": [
+      "ghost",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 92,
+      "defense": 108,
+      "spAttack": 92,
+      "spDefense": 108,
+      "speed": 35
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 443,
+    "name": {
+      "en": "Gible",
+      "es": "Gible"
+    },
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 58,
+      "attack": 70,
+      "defense": 45,
+      "spAttack": 40,
+      "spDefense": 45,
+      "speed": 42
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 444,
+    "name": {
+      "en": "Gabite",
+      "es": "Gabite"
+    },
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 68,
+      "attack": 90,
+      "defense": 65,
+      "spAttack": 50,
+      "spDefense": 55,
+      "speed": 82
+    },
+    "evolvesFrom": "gible",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 445,
+    "name": {
+      "en": "Garchomp",
+      "es": "Garchomp"
+    },
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 108,
+      "attack": 130,
+      "defense": 95,
+      "spAttack": 80,
+      "spDefense": 85,
+      "speed": 102
+    },
+    "evolvesFrom": "gabite",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 446,
+    "name": {
+      "en": "Munchlax",
+      "es": "Munchlax"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "attack": 85,
+      "defense": 40,
+      "spAttack": 40,
+      "spDefense": 85,
+      "speed": 5
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 447,
+    "name": {
+      "en": "Riolu",
+      "es": "Riolu"
+    },
+    "types": [
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 70,
+      "defense": 40,
+      "spAttack": 35,
+      "spDefense": 40,
+      "speed": 60
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 448,
+    "name": {
+      "en": "Lucario",
+      "es": "Lucario"
+    },
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 70,
+      "spAttack": 115,
+      "spDefense": 70,
+      "speed": 90
+    },
+    "evolvesFrom": "riolu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 449,
+    "name": {
+      "en": "Hippopotas",
+      "es": "Hippopotas"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 68,
+      "attack": 72,
+      "defense": 78,
+      "spAttack": 38,
+      "spDefense": 42,
+      "speed": 32
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 450,
+    "name": {
+      "en": "Hippowdon",
+      "es": "Hippowdon"
+    },
+    "types": [
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 108,
+      "attack": 112,
+      "defense": 118,
+      "spAttack": 68,
+      "spDefense": 72,
+      "speed": 47
+    },
+    "evolvesFrom": "hippopotas",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 451,
+    "name": {
+      "en": "Skorupi",
+      "es": "Skorupi"
+    },
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "baseStats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 90,
+      "spAttack": 30,
+      "spDefense": 55,
+      "speed": 65
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 452,
+    "name": {
+      "en": "Drapion",
+      "es": "Drapion"
+    },
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 90,
+      "defense": 110,
+      "spAttack": 60,
+      "spDefense": 75,
+      "speed": 95
+    },
+    "evolvesFrom": "skorupi",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 453,
+    "name": {
+      "en": "Croagunk",
+      "es": "Croagunk"
+    },
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 48,
+      "attack": 61,
+      "defense": 40,
+      "spAttack": 61,
+      "spDefense": 40,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 454,
+    "name": {
+      "en": "Toxicroak",
+      "es": "Toxicroak"
+    },
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 83,
+      "attack": 106,
+      "defense": 65,
+      "spAttack": 86,
+      "spDefense": 65,
+      "speed": 85
+    },
+    "evolvesFrom": "croagunk",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 455,
+    "name": {
+      "en": "Carnivine",
+      "es": "Carnivine"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 74,
+      "attack": 100,
+      "defense": 72,
+      "spAttack": 90,
+      "spDefense": 72,
+      "speed": 46
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 456,
+    "name": {
+      "en": "Finneon",
+      "es": "Finneon"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 49,
+      "attack": 49,
+      "defense": 56,
+      "spAttack": 49,
+      "spDefense": 61,
+      "speed": 66
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 457,
+    "name": {
+      "en": "Lumineon",
+      "es": "Lumineon"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 69,
+      "attack": 69,
+      "defense": 76,
+      "spAttack": 69,
+      "spDefense": 86,
+      "speed": 91
+    },
+    "evolvesFrom": "finneon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 458,
+    "name": {
+      "en": "Mantyke",
+      "es": "Mantyke"
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 20,
+      "defense": 50,
+      "spAttack": 60,
+      "spDefense": 120,
+      "speed": 50
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 459,
+    "name": {
+      "en": "Snover",
+      "es": "Snover"
+    },
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 50,
+      "spAttack": 62,
+      "spDefense": 60,
+      "speed": 40
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 460,
+    "name": {
+      "en": "Abomasnow",
+      "es": "Abomasnow"
+    },
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 92,
+      "defense": 75,
+      "spAttack": 92,
+      "spDefense": 85,
+      "speed": 60
+    },
+    "evolvesFrom": "snover",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 461,
+    "name": {
+      "en": "Weavile",
+      "es": "Weavile"
+    },
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 120,
+      "defense": 65,
+      "spAttack": 45,
+      "spDefense": 85,
+      "speed": 125
+    },
+    "evolvesFrom": "sneasel",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 462,
+    "name": {
+      "en": "Magnezone",
+      "es": "Magnezone"
+    },
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 70,
+      "defense": 115,
+      "spAttack": 130,
+      "spDefense": 90,
+      "speed": 60
+    },
+    "evolvesFrom": "magneton",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 463,
+    "name": {
+      "en": "Lickilicky",
+      "es": "Lickilicky"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 85,
+      "defense": 95,
+      "spAttack": 80,
+      "spDefense": 95,
+      "speed": 50
+    },
+    "evolvesFrom": "lickitung",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 464,
+    "name": {
+      "en": "Rhyperior",
+      "es": "Rhyperior"
+    },
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "baseStats": {
+      "hp": 115,
+      "attack": 140,
+      "defense": 130,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 40
+    },
+    "evolvesFrom": "rhydon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 465,
+    "name": {
+      "en": "Tangrowth",
+      "es": "Tangrowth"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 125,
+      "spAttack": 110,
+      "spDefense": 50,
+      "speed": 50
+    },
+    "evolvesFrom": "tangela",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 466,
+    "name": {
+      "en": "Electivire",
+      "es": "Electivire"
+    },
+    "types": [
+      "electric"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 123,
+      "defense": 67,
+      "spAttack": 95,
+      "spDefense": 85,
+      "speed": 95
+    },
+    "evolvesFrom": "electabuzz",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 467,
+    "name": {
+      "en": "Magmortar",
+      "es": "Magmortar"
+    },
+    "types": [
+      "fire"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 95,
+      "defense": 67,
+      "spAttack": 125,
+      "spDefense": 95,
+      "speed": 83
+    },
+    "evolvesFrom": "magmar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 468,
+    "name": {
+      "en": "Togekiss",
+      "es": "Togekiss"
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 50,
+      "defense": 95,
+      "spAttack": 120,
+      "spDefense": 115,
+      "speed": 80
+    },
+    "evolvesFrom": "togetic",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal/flying (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO)."
+  },
+  {
+    "id": 469,
+    "name": {
+      "en": "Yanmega",
+      "es": "Yanmega"
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 86,
+      "attack": 76,
+      "defense": 86,
+      "spAttack": 116,
+      "spDefense": 56,
+      "speed": 95
+    },
+    "evolvesFrom": "yanma",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 470,
+    "name": {
+      "en": "Leafeon",
+      "es": "Leafeon"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 110,
+      "defense": 130,
+      "spAttack": 60,
+      "spDefense": 65,
+      "speed": 95
+    },
+    "evolvesFrom": "eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 471,
+    "name": {
+      "en": "Glaceon",
+      "es": "Glaceon"
+    },
+    "types": [
+      "ice"
+    ],
+    "baseStats": {
+      "hp": 65,
+      "attack": 60,
+      "defense": 110,
+      "spAttack": 130,
+      "spDefense": 95,
+      "speed": 65
+    },
+    "evolvesFrom": "eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 472,
+    "name": {
+      "en": "Gliscor",
+      "es": "Gliscor"
+    },
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 95,
+      "defense": 125,
+      "spAttack": 45,
+      "spDefense": 75,
+      "speed": 95
+    },
+    "evolvesFrom": "gligar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 473,
+    "name": {
+      "en": "Mamoswine",
+      "es": "Mamoswine"
+    },
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 130,
+      "defense": 80,
+      "spAttack": 70,
+      "spDefense": 60,
+      "speed": 80
+    },
+    "evolvesFrom": "piloswine",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 474,
+    "name": {
+      "en": "Porygon-Z",
+      "es": "Porygon-Z"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 85,
+      "attack": 80,
+      "defense": 70,
+      "spAttack": 135,
+      "spDefense": 75,
+      "speed": 90
+    },
+    "evolvesFrom": "porygon2",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 475,
+    "name": {
+      "en": "Gallade",
+      "es": "Gallade"
+    },
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "baseStats": {
+      "hp": 68,
+      "attack": 125,
+      "defense": 65,
+      "spAttack": 65,
+      "spDefense": 115,
+      "speed": 80
+    },
+    "evolvesFrom": "kirlia",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 476,
+    "name": {
+      "en": "Probopass",
+      "es": "Probopass"
+    },
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 60,
+      "attack": 55,
+      "defense": 145,
+      "spAttack": 75,
+      "spDefense": 150,
+      "speed": 40
+    },
+    "evolvesFrom": "nosepass",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 477,
+    "name": {
+      "en": "Dusknoir",
+      "es": "Dusknoir"
+    },
+    "types": [
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 45,
+      "attack": 100,
+      "defense": 135,
+      "spAttack": 65,
+      "spDefense": 135,
+      "speed": 45
+    },
+    "evolvesFrom": "dusclops",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 478,
+    "name": {
+      "en": "Froslass",
+      "es": "Froslass"
+    },
+    "types": [
+      "ice",
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 70,
+      "speed": 110
+    },
+    "evolvesFrom": "snorunt",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 479,
+    "name": {
+      "en": "Rotom",
+      "es": "Rotom"
+    },
+    "types": [
+      "electric",
+      "ghost"
+    ],
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 77,
+      "spAttack": 95,
+      "spDefense": 77,
+      "speed": 91
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 480,
+    "name": {
+      "en": "Uxie",
+      "es": "Uxie"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 75,
+      "defense": 130,
+      "spAttack": 75,
+      "spDefense": 130,
+      "speed": 95
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 481,
+    "name": {
+      "en": "Mesprit",
+      "es": "Mesprit"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 105,
+      "spAttack": 105,
+      "spDefense": 105,
+      "speed": 80
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 482,
+    "name": {
+      "en": "Azelf",
+      "es": "Azelf"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 75,
+      "attack": 125,
+      "defense": 70,
+      "spAttack": 125,
+      "spDefense": 70,
+      "speed": 115
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 483,
+    "name": {
+      "en": "Dialga",
+      "es": "Dialga"
+    },
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 120,
+      "defense": 120,
+      "spAttack": 150,
+      "spDefense": 100,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 484,
+    "name": {
+      "en": "Palkia",
+      "es": "Palkia"
+    },
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 90,
+      "attack": 120,
+      "defense": 100,
+      "spAttack": 150,
+      "spDefense": 120,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 485,
+    "name": {
+      "en": "Heatran",
+      "es": "Heatran"
+    },
+    "types": [
+      "fire",
+      "steel"
+    ],
+    "baseStats": {
+      "hp": 91,
+      "attack": 90,
+      "defense": 106,
+      "spAttack": 130,
+      "spDefense": 106,
+      "speed": 77
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 486,
+    "name": {
+      "en": "Regigigas",
+      "es": "Regigigas"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "attack": 160,
+      "defense": 110,
+      "spAttack": 80,
+      "spDefense": 110,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 487,
+    "name": {
+      "en": "Giratina",
+      "es": "Giratina"
+    },
+    "types": [
+      "ghost",
+      "dragon"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "attack": 100,
+      "defense": 120,
+      "spAttack": 100,
+      "spDefense": 120,
+      "speed": 90
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 488,
+    "name": {
+      "en": "Cresselia",
+      "es": "Cresselia"
+    },
+    "types": [
+      "psychic"
+    ],
+    "baseStats": {
+      "hp": 120,
+      "attack": 70,
+      "defense": 110,
+      "spAttack": 75,
+      "spDefense": 120,
+      "speed": 85
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 489,
+    "name": {
+      "en": "Phione",
+      "es": "Phione"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 80,
+      "attack": 80,
+      "defense": 80,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 80
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 490,
+    "name": {
+      "en": "Manaphy",
+      "es": "Manaphy"
+    },
+    "types": [
+      "water"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 491,
+    "name": {
+      "en": "Darkrai",
+      "es": "Darkrai"
+    },
+    "types": [
+      "dark"
+    ],
+    "baseStats": {
+      "hp": 70,
+      "attack": 90,
+      "defense": 90,
+      "spAttack": 135,
+      "spDefense": 90,
+      "speed": 125
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 492,
+    "name": {
+      "en": "Shaymin",
+      "es": "Shaymin"
+    },
+    "types": [
+      "grass"
+    ],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  },
+  {
+    "id": 493,
+    "name": {
+      "en": "Arceus",
+      "es": "Arceus"
+    },
+    "types": [
+      "normal"
+    ],
+    "baseStats": {
+      "hp": 120,
+      "attack": 120,
+      "defense": 120,
+      "spAttack": 120,
+      "spDefense": 120,
+      "speed": 120
+    },
+    "evolvesFrom": null,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png",
+    "source": "Stats: Bulbapedia/PokemonDB cruzados contra la lista de subidas de stats de Gen 6+ (pre-buff, verificado 2026-07-05; Staraptor y Roserade corregidos tras detectar contaminacion en la fuente inicial). Tipo/familia evolutiva/sprite: PokeAPI."
+  }
+]
