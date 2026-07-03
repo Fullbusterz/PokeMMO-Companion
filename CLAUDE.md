@@ -26,14 +26,14 @@ Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fu
 - **Pendiente de diseño (2026-07-04, ver "Ideas pendientes de desarrollar" más abajo):** extender de "solo brackets de torneo" a también soportar **liguillas** (formato liga/round-robin, con duración y filtros) — no implementado todavía, solo documentado el diseño.
 
 **Fase 2 (en progreso) — Pokédex multi-región:**
-- **Kanto (151), Johto (100), Hoenn (135) y Sinnoh (107) hechos — 493 Pokémon en total.** Solo Teselia pendiente para completar las 5 regiones.
-- `data/<region>/pokemon.json` por región: stats base **verificadas contra la tabla histórica "Generation II-V" de Bulbapedia** (o cruzadas contra las listas de subidas de stats de Gen 6/7/8 si esa tabla no es accesible — le pasó a Sinnoh, ver nota de memoria del proyecto), NUNCA contra el endpoint por defecto de PokéAPI ni contra páginas de "stats de generación X" sin verificar que reflejen el juego de esa época y no el actual. **Lección crítica aprendida el 2026-07-04:** PokéAPI (y muchas páginas de stats "por generación") devuelven las stats y el tipo del juego más reciente, no de Gen 1-5 — encontramos y corregimos 22 Pokémon con stats post-Gen6 y 15 Pokémon con tipo Hada indebido en las 4 regiones hechas. Ver regla de oro más abajo, ahora corregida para reflejar esto. **Vigilar también:** el campo `evolvesFrom` de PokéAPI a veces usa el slug interno en vez del nombre real cuando el nombre tiene un carácter especial (pasó con Nidoran♀/♂ y con Mime Jr.) — revisar cualquier especie nueva con símbolos raros en el nombre.
-- `src/lib/pokedex.ts` combina todas las regiones en `ALL_POKEMON` — necesario porque muchas cadenas evolutivas cruzan la frontera de región (Crobat/Johto evoluciona de Golbat/Kanto, Pikachu/Kanto de Pichu/Johto, etc.).
+- **Las 5 regiones hechas — Kanto (151), Johto (100), Hoenn (135), Sinnoh (107) y Teselia (156) — 649 Pokémon en total.** Dataset universal (nombre, tipo, stats base, familia evolutiva, sprite) completo y verificado exhaustivamente.
+- `data/<region>/pokemon.json` por región: stats base **verificadas contra la tabla histórica "Generation II-V" de Bulbapedia** (o cruzadas contra las listas de subidas de stats de Gen 6/7/8 si esa tabla no es accesible — le pasó a Sinnoh y Teselia, la tabla se trunca vía WebFetch a partir del dex #386, ver nota de memoria del proyecto), NUNCA contra el endpoint por defecto de PokéAPI ni contra páginas de "stats de generación X" sin verificar que reflejen el juego de esa época y no el actual. **Lección crítica aprendida el 2026-07-04/05:** PokéAPI (y muchas páginas de stats "por generación") devuelven las stats y el tipo del juego más reciente, no de Gen 1-5 — encontramos y corregimos 33 Pokémon con stats post-Gen6/7 y 17 Pokémon con tipo Hada indebido en total. Ver regla de oro más abajo, ahora corregida para reflejar esto. **Vigilar también:** el campo `evolvesFrom` de PokéAPI a veces usa el slug interno en vez del nombre real cuando el nombre tiene un carácter especial (pasó con Nidoran♀/♂ y con Mime Jr.) — revisar cualquier especie nueva con símbolos raros en el nombre. **Y:** si un resumen de búsqueda da una cifra dudosa, verificar contra la tabla/página primaria (p. ej. `serebii.net/sunmoon/updatedstats.shtml`) antes de confiar en el resumen — pasó con Cryogonal.
+- `src/lib/pokedex.ts` combina las 5 regiones en `ALL_POKEMON` — necesario porque muchas cadenas evolutivas cruzan la frontera de región (Crobat/Johto evoluciona de Golbat/Kanto, Pikachu/Kanto de Pichu/Johto, Magnezone/Sinnoh de Magneton/Kanto, etc. — Sinnoh es la región con más casos, 22; Teselia no añade ninguno).
 - `data/type-chart.json`: tabla de efectividad de tipos **de Gen 5 específicamente** (17 tipos, SIN Hada, Acero resiste Fantasma/Siniestro — cambiado en Gen 6+). Verificada programáticamente.
 - Pantallas: lista+buscador, detalle (stats con barras animadas, familia evolutiva con navegación), comparador de tipos interactivo.
-- `movesets.json`/`abilities.json`/`locations.json`/`pokemmo_tiers.json` siguen siendo stubs vacíos por región — la regla de oro de abajo aplica en cuanto se rellenen. **Ver "Ideas pendientes" abajo — hay una fuente candidata muy buena para `locations.json` (guías de farmeo de seviichamp.blogspot.com).**
+- `movesets.json`/`abilities.json`/`locations.json`/`pokemmo_tiers.json` siguen siendo stubs vacíos en las 5 regiones — la regla de oro de abajo aplica en cuanto se rellenen. **Ver "Ideas pendientes" abajo — hay una fuente candidata muy buena para `locations.json` (guías de farmeo de seviichamp.blogspot.com).** Este es el siguiente bloque de trabajo de la Fase 2.
 
-**Fases 3-5:** sin empezar.
+**Fases 3-5:** sin empezar (ahora sí desbloqueadas por el dataset completo de 5 regiones).
 
 **Pulido visual y animaciones (2026-07-03/04):** `react-native-reanimated` + `expo-haptics` + `expo-linear-gradient` + `@expo/vector-icons` para feedback táctil, entradas escalonadas, degradados y iconos. **Gotcha importante para cualquier animación futura:** en el preview web de este proyecto (`expo start --web`), las actualizaciones de Reanimated tras el montaje inicial no llegan al DOM (ver `src/lib/animation.ts` y su `isNative`/`nativeOnly()`) — nativo no está afectado, pero cualquier `useSharedValue` cuyo valor final importe para que la UI se vea bien necesita el patrón de fallback documentado ahí. Además, NativeWind no reconoce `className` en componentes `Animated.*` sin registrarlos explícitamente vía `cssInterop` (ver `src/lib/animatedNativewind.ts`).
 
@@ -47,7 +47,7 @@ Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fu
 
 - **Nunca se ha probado en un dispositivo/simulador nativo real** — todo el testing ha sido vía `expo start --web`. Cosas concretas sin verificar en iOS/Android: los modificadores de opacidad de Tailwind contra colores custom (`bg-pokeRed/10` etc.), el patrón `group-active` de nativewind, y las animaciones de Reanimated (que en teoría funcionan bien en nativo pero nunca se han visto correr ahí).
 - **Icono de la app:** sigue siendo el placeholder genérico de Expo, no hay identidad visual real. Necesita trabajo de diseño real, no algo para improvisar.
-- Para arrancar la Fase 3 hace falta el dataset completo de 5 regiones (van 4 de 5: Kanto/Johto/Hoenn/Sinnoh) — ver "Estructura de datos" más abajo.
+- El dataset completo de 5 regiones ya está listo para arrancar la Fase 3 — ver "Estructura de datos" más abajo.
 
 ### 💡 Ideas pendientes de desarrollar (2026-07-04, aún sin implementar)
 
@@ -148,8 +148,8 @@ Se asumió originalmente (ver Fase 2 inicial) que tipo y stats base eran datos "
 - **Decisión de sincronización (confirmada con Ferran, 2026-07-02):** sin backend, sin login ni sesiones. El organizador exporta el estado del bracket como código de texto; los demás lo importan para ver el estado actualizado. Sincronización manual (el organizador re-exporta tras cada ronda).
 - **Pendiente (2026-07-04):** formato de liga/round-robin además de brackets — ver "Ideas pendientes de desarrollar" en Estado Actual arriba para el diseño propuesto.
 
-### Fase 2 — 🟡 EN PROGRESO (4 de 5 regiones, comparador de tipos hecho, resto pendiente)
-- **Kanto, Johto, Hoenn y Sinnoh hechos (493 Pokémon)**, verificados contra la tabla histórica de Bulbapedia (no PokéAPI por defecto — ver corrección crítica de la regla de oro arriba). Solo Teselia pendiente, mismo método a repetir.
+### Fase 2 — 🟡 EN PROGRESO (5 de 5 regiones — datos universales; movesets/abilities/locations/tiers pendientes)
+- **Kanto, Johto, Hoenn, Sinnoh y Teselia hechos (649 Pokémon)**, verificados contra la tabla histórica de Bulbapedia (no PokéAPI por defecto — ver corrección crítica de la regla de oro arriba).
 - **Pokédex de consulta** (bilingüe): buscar Pokémon, ver ubicación por región/ruta, stats, movimientos válidos en PokeMMO. **Hecho excepto ubicación/movimientos (esperan a que se rellenen los stubs `locations.json`/`movesets.json` — ver idea de las guías de seviichamp.blogspot.com para `locations.json`).**
 - **Comparador de tipos interactivo:** tap-to-check de efectividad, incluyendo combinaciones de doble tipo. **Hecho para tipo simple; combinaciones de doble tipo pendientes.**
 
@@ -175,7 +175,7 @@ Se asumió originalmente (ver Fase 2 inicial) que tipo y stats base eran datos "
     movesets.json       // movimientos válidos en PokeMMO por Pokémon (fuente: overrides manuales, campo "source" obligatorio)
     abilities.json       // habilidades válidas en PokeMMO por Pokémon (fuente: overrides manuales)
     locations.json       // ruta/región, % de captura (fuente candidata: guías de farmeo seviichamp.blogspot.com con atribución a su fuente original, o PokeMMO Wiki / PokeMMO Hub como referencia cruzada)
-  /johto, /hoenn ... (misma estructura — hechas; /sinnoh, /teselia pendientes con el mismo método)
+  /johto, /hoenn, /sinnoh, /teselia (misma estructura — las 5 regiones hechas para pokemon.json)
   /tiers
     pokemmo_tiers.json   // fuente: PokeMMO Wiki + tier lists de comunidad, NUNCA Smogon
 ```
