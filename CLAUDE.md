@@ -12,6 +12,40 @@ App móvil companion para PokeMMO (no para Pokémon oficial — son cosas distin
 
 ---
 
+## 📍 ESTADO ACTUAL (2026-07-03) — leer esto primero
+
+Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fullbusterz/PokeMMO-Companion), remoto `origin`, rama `master`. Todo el trabajo hasta la fecha está commiteado y pusheado (`c818035`).
+
+### Qué está hecho y funcionando
+
+**Fase 1 (gestor de torneos) — completa, con extras más allá del scope original:**
+- Bracket de eliminación simple, con byes manejados correctamente (probado a fondo — hubo un bug real de "doble bye" al principio, quedó arreglado y verificado con simulación).
+- **Doble eliminación** (`src/lib/doubleElimBracket.ts`, separado de `bracket.ts`): bracket de ganadores + perdedores + gran final única (sin "bracket reset"). **Restringida a participantes potencia de 2 (4/8/16/32)** — un bye no genera perdedor, así que se validó eso en vez de generalizar la lógica. Verificada con 40+ simulaciones antes de tocar la UI.
+- Export/import por código de texto (base64, sin backend), con validación de integridad referencial completa en `parseImportedTournament` (rechaza datos corruptos sin crashear).
+- Editar nombre, deshacer último resultado (`history` cronológico, reversible sin corromper rondas posteriores), posiciones de sorteo, compartir el bracket como imagen (`react-native-view-shot` + `expo-sharing`).
+
+**Fase 2 (arrancada) — Pokédex de Kanto:**
+- `data/kanto/pokemon.json`: 151 entradas desde PokéAPI (stats, tipo, familia evolutiva — dato universal válido tal cual).
+- `data/type-chart.json`: tabla de efectividad de tipos **de Gen 5 específicamente** (17 tipos, SIN Hada, Acero resiste Fantasma/Siniestro — cambiado en Gen 6+). Verificada programáticamente.
+- Pantallas: lista+buscador, detalle (stats, familia evolutiva con navegación), comparador de tipos interactivo.
+- `movesets.json`/`abilities.json`/`locations.json`/`pokemmo_tiers.json` siguen siendo stubs vacíos — la regla de oro de abajo aplica en cuanto se rellenen.
+
+**Fases 3-5:** sin empezar.
+
+### Decisiones de diseño importantes (no deshacer sin motivo)
+
+- **Tema oscuro completo** ("UI oscura tipo consola de torneo"), construido vía una sesión de Claude Design + implementación manual — paleta en `src/theme/colors.js` (`ink`/`pokeRed`/`type`/`status`), compartida entre `tailwind.config.js` y componentes RN que necesitan hex crudo (`placeholderTextColor`).
+- **Sobre usar Claude Design:** no hace falta para trabajo incremental sobre el design system ya existente — es más lento (no se puede leer el DOM del lienzo, hay que reconstruir valores a mano vía zoom sobre capturas) y tiene límites de cuota de sesión propios. Aporta valor real como "segunda opinión" visual o pasada creativa con ojos frescos, no como paso obligatorio. Usarlo solo si Ferran lo pide explícitamente o para pantallas genuinamente nuevas sin ningún precedente visual.
+- **Componentes compartidos:** `Button`, `Badge`(`StatusBadge`), `Card`, `DeleteText`, `VsDivider`, `TypeBadge` en `src/components/`. Reutilizarlos en vez de duplicar estilos inline.
+
+### Pendiente / sin verificar
+
+- **Nunca se ha probado en un dispositivo/simulador nativo real** — todo el testing ha sido vía `expo start --web`. Cosas concretas sin verificar en iOS/Android: los modificadores de opacidad de Tailwind contra colores custom (`bg-pokeRed/10` etc.), el patrón `group-active` de nativewind.
+- **Icono de la app:** sigue siendo el placeholder genérico de Expo, no hay identidad visual real. Necesita trabajo de diseño real, no algo para improvisar.
+- Para arrancar la Fase 3 hace falta el dataset completo de 5 regiones (solo está Kanto) — ver "Estructura de datos" más abajo.
+
+---
+
 ## 🚨 REGLA DE ORO — LEER ANTES DE TOCAR NINGÚN DATO DE POKÉMON
 
 **PokeMMO NO es "Pokémon oficial filtrado hasta Gen 5".** Es un juego con desarrollo propio y continuo. El equipo de PokeMMO decide sus propias mecánicas, y a veces adopta cambios de juegos oficiales posteriores y a veces no, según su propio criterio. Esto significa que **ningún dato de Pokémon (movimiento, habilidad, tier competitivo, mecánica) se da por válido solo porque "es de Gen 5 o anterior".** Hay que verificarlo específicamente contra PokeMMO.
@@ -73,16 +107,15 @@ App móvil companion para PokeMMO (no para Pokémon oficial — son cosas distin
 
 ## Features, en orden de construcción (optimizado por dependencia, no por atractivo)
 
-### Fase 1 — Victoria rápida, sin dependencia del archivo de datos verificado
+### Fase 1 — ✅ COMPLETA (ver "Estado actual" arriba)
 **Gestor de torneos/ligas para el grupo de Ferran**
-- Bracket simple, participantes, registro de resultados.
+- Bracket simple, participantes, registro de resultados, más doble eliminación, deshacer, renombrar, posiciones y compartir como imagen (no estaban en el scope original, se añadieron después).
 - **Decisión de sincronización (confirmada con Ferran, 2026-07-02):** sin backend, sin login ni sesiones. El organizador exporta el estado del bracket como código de texto; los demás lo importan para ver el estado actualizado. Sincronización manual (el organizador re-exporta tras cada ronda).
-- Esta es la única feature ya validada por el propio uso real de Ferran — máxima prioridad para tener algo usable pronto.
 
-### Fase 2 — Prueba de concepto del pipeline de datos
-- Construir el archivo de datos verificado de **Kanto únicamente** primero, como prueba de concepto de todo el proceso de verificación (regla de oro de arriba). No avanzar a las demás regiones hasta que el proceso esté validado.
-- **Pokédex de consulta** (bilingüe): buscar Pokémon, ver ubicación por región/ruta, stats, movimientos válidos en PokeMMO.
-- **Comparador de tipos interactivo:** tap-to-check de efectividad, incluyendo combinaciones de doble tipo.
+### Fase 2 — 🟡 ARRANCADA (Pokédex + comparador de tipos hechos, resto pendiente)
+- Construir el archivo de datos verificado de **Kanto únicamente** primero, como prueba de concepto de todo el proceso de verificación (regla de oro de arriba). No avanzar a las demás regiones hasta que el proceso esté validado. **`pokemon.json` hecho; `movesets`/`abilities`/`locations` siguen siendo stubs sin rellenar.**
+- **Pokédex de consulta** (bilingüe): buscar Pokémon, ver ubicación por región/ruta, stats, movimientos válidos en PokeMMO. **Hecho excepto ubicación/movimientos (esperan a que se rellenen los stubs de arriba).**
+- **Comparador de tipos interactivo:** tap-to-check de efectividad, incluyendo combinaciones de doble tipo. **Hecho para tipo simple; combinaciones de doble tipo pendientes.**
 
 ### Fase 3 — Requieren el dataset completo (5 regiones) y lógica más compleja
 - **Calculadora de crianza:** IVs, naturalezas, árbol visual multi-generación (qué padres necesito para llegar al resultado final).
