@@ -1,0 +1,32 @@
+{
+  "name": "PokeMMO Companion",
+  "short_name": "PokeMMO Comp.",
+  "description": "Companion app no oficial para PokeMMO: Pokedex, guias de region, gestor de torneos/ligas, calculadoras de cria/daño y mas.",
+  "start_url": "/PokeMMO-Companion/",
+  "scope": "/PokeMMO-Companion/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0B1A1F",
+  "background_color": "#010207",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/PokeMMO-Companion/pwa-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/PokeMMO-Companion/pwa-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/PokeMMO-Companion/pwa-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}
