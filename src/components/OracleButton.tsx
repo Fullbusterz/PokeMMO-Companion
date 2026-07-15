@@ -9,7 +9,7 @@ import { answerQuery, type OracleAnswer } from '@/lib/oracle/intents';
 import { useLocaleStore } from '@/store/localeStore';
 import colors from '@/theme/colors';
 
-const EXAMPLE_KEYS = ['oracle.example1', 'oracle.example2', 'oracle.example3', 'oracle.example4'] as const;
+const EXAMPLE_KEYS = ['oracle.example1', 'oracle.example2', 'oracle.example3', 'oracle.example4', 'oracle.example5'] as const;
 
 function OracleModal({ visible, onClose }: { visible: boolean; onClose: () => void }) {
   const locale = useLocaleStore((s) => s.locale);

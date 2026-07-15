@@ -11,6 +11,7 @@ import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
+import { confirmDestructive } from '@/lib/confirmDialog';
 import { EV_CAP_TOTAL, totalEvs } from '@/lib/evTraining';
 import { useEvSessionStore, type EvSession } from '@/store/evSessionStore';
 import colors from '@/theme/colors';
@@ -27,11 +28,14 @@ const SessionRow = memo(function SessionRow({
   const total = totalEvs(session.current);
   const overLimit = total > EV_CAP_TOTAL;
 
-  function confirmDelete() {
-    Alert.alert(t('entreno.deleteConfirmTitle'), t('entreno.deleteConfirmMessage', { name: session.name }), [
-      { text: t('common.cancel'), style: 'cancel' },
-      { text: t('common.delete'), style: 'destructive', onPress: () => onDelete(session.id) },
-    ]);
+  async function confirmDelete() {
+    const confirmed = await confirmDestructive({
+      title: t('entreno.deleteConfirmTitle'),
+      message: t('entreno.deleteConfirmMessage', { name: session.name }),
+      confirmLabel: t('common.delete'),
+      cancelLabel: t('common.cancel'),
+    });
+    if (confirmed) onDelete(session.id);
   }
 
   return (

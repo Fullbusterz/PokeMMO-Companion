@@ -2,6 +2,7 @@ import { findAbility, findMove, findPokemon, findType, findTypes, normalize } fr
 import { findItemLocations, type ItemLocation } from './items';
 import { t } from '@/i18n';
 import { getReferenceGuide, getTmsHmsGuide, type FindingEveryMoveGuide } from '@/lib/guides';
+import { getLearners, getRecommendedLearners } from '@/lib/moveLearners';
 import {
   getAbilityDescription,
   getEvolvesFrom,
@@ -15,7 +16,7 @@ import {
 } from '@/lib/pokedex';
 import { getEffectivenessFor, getEffectivenessForCombo, type ComboEffectiveness, type Effectiveness, type PokeType } from '@/lib/typeChart';
 import type { AppLocale } from '@/store/localeStore';
-import type { LocationEntry, PokemonEntry } from '@/types/pokemon';
+import type { LocationEntry, PokemonEntry, PvpTier } from '@/types/pokemon';
 
 export type OracleAnswer = { text: string; images?: string[] };
 
@@ -107,6 +108,55 @@ function answerAbilityHolders(abilityNameEn: string, locale: AppLocale): OracleA
   return { text: t('oracle.answers.abilityHolders', { ability: displayAbility, names, locale }) };
 }
 
+// Reuses the same badge labels the Pokedex screen shows for a tier
+// (pokedex.tierUber/Ou/Uu/Nu) — a tier name is the same word everywhere in
+// the app, no need for a separate oracle-only translation.
+const TIER_LABEL_KEYS: Record<PvpTier, string> = {
+  uber: 'pokedex.tierUber',
+  ou: 'pokedex.tierOu',
+  uu: 'pokedex.tierUu',
+  nu: 'pokedex.tierNu',
+};
+
+// "Who learns X" — mirrors the Pokedex move-detail modal's "Quién lo
+// aprende" section (src/lib/moveLearners.ts): a plain reverse lookup for
+// every move, plus a heuristic top-5 (STAB + raw offensive stat, tier shown
+// but never used to sort) for damage-dealing moves only. Status moves get
+// the honest "no recommendations" notice instead of a fabricated ranking —
+// same rule as the UI, see REGLA DE ORO in CLAUDE.md.
+function answerMoveLearners(moveNameEn: string, locale: AppLocale): OracleAnswer {
+  const displayName = localizedMoveName(moveNameEn, locale);
+  const learners = getLearners(moveNameEn);
+  if (learners.length === 0) {
+    return { text: t('oracle.answers.moveLearnersNone', { move: displayName, locale }) };
+  }
+
+  const header = t('oracle.answers.moveLearnersHeader', { move: displayName, count: learners.length, locale });
+  const recommended = getRecommendedLearners(moveNameEn);
+  if (recommended === null) {
+    return { text: `${header}\n${t('oracle.answers.moveLearnersStatusNotice', { locale })}` };
+  }
+
+  const move = getMoveData(moveNameEn);
+  const attackKey = move?.category === 'physical' ? 'oracle.answers.moveLearnersAtk' : 'oracle.answers.moveLearnersSpA';
+  const lines = recommended.slice(0, 5).map((rec, index) => {
+    const parts: string[] = [];
+    if (rec.reasons.hasStab) parts.push(t('oracle.answers.moveLearnersStab', { locale }));
+    parts.push(t(attackKey, { value: rec.reasons.attackStat, locale }));
+    if (rec.reasons.tier) parts.push(t(TIER_LABEL_KEYS[rec.reasons.tier], { locale }));
+    return t('oracle.answers.moveLearnersRecommendedLine', {
+      index: index + 1,
+      name: pokemonName(rec.pokemon, locale),
+      reasons: parts.join(' · '),
+      locale,
+    });
+  });
+
+  return {
+    text: [header, t('oracle.answers.moveLearnersRecommendedHeader', { locale }), ...lines].join('\n'),
+  };
+}
+
 function formatSingleEffectiveness(typeLabel: string, eff: Effectiveness, locale: AppLocale): OracleAnswer {
   const parts: string[] = [];
   if (eff.superEffective.length) {
@@ -161,6 +211,8 @@ const RE_LOCATION = /\b(donde|encuentro|encontrar|conseguir|consigo|capturar|atr
 const RE_TM_HM = /\b(mt|ct|tm|hm|mo|maquina|machine)\b/;
 const RE_EFFECT = /\b(que hace|efecto de|para que sirve|what does|effect of|what is .* for)\b/;
 const RE_ABILITY_HOLDERS = /\b(que pokemon|quien tiene|pokemon con|which pokemon|who has|pokemon with)\b.*\b(habilidad|ability)\b/;
+const RE_MOVE_LEARNERS =
+  /\b(quien aprende|quien puede aprender|que pokemon aprende|que pokemon aprenden|que pokemon pueden aprender|which pokemon learn|which pokemon can learn|what pokemon learn|who learns)\b/;
 const RE_STATS = /\b(stats|estadisticas)\b/;
 const RE_TYPE_OF = /\b(tipo|type)\b/;
 const RE_EVOLUTION = /\bevol/;
@@ -185,7 +237,13 @@ export function answerQuery(rawQuery: string, locale: AppLocale): OracleAnswer {
     if (ability) return answerAbilityHolders(ability, locale);
   }
 
-  // 3. Move / ability effect text
+  // 3. Reverse move lookup ("quién aprende Terremoto" / "who learns Earthquake")
+  if (RE_MOVE_LEARNERS.test(query)) {
+    const move = findMove(query);
+    if (move) return answerMoveLearners(move, locale);
+  }
+
+  // 4. Move / ability effect text
   if (RE_EFFECT.test(query)) {
     const move = findMove(query);
     if (move) {
@@ -199,7 +257,7 @@ export function answerQuery(rawQuery: string, locale: AppLocale): OracleAnswer {
     }
   }
 
-  // 4. Weaknesses/resistances of a specific Pokemon's own typing
+  // 5. Weaknesses/resistances of a specific Pokemon's own typing
   if (RE_EFFECTIVENESS.test(query)) {
     const pokemon = findPokemon(query);
     if (pokemon) {
@@ -214,13 +272,13 @@ export function answerQuery(rawQuery: string, locale: AppLocale): OracleAnswer {
     }
   }
 
-  // 5. Direct type-effectiveness question without "efectividad"/"debilidad" wording
+  // 6. Direct type-effectiveness question without "efectividad"/"debilidad" wording
   if (RE_TYPE_OF.test(query) && !RE_EVOLUTION.test(query) && !findPokemon(query)) {
     const type = findType(query);
     if (type) return formatSingleEffectiveness(t(`types.${type}`), getEffectivenessFor(type), locale);
   }
 
-  // 6. Anything else needs a Pokemon to be named
+  // 7. Anything else needs a Pokemon to be named
   const pokemon = findPokemon(query);
   if (pokemon) {
     if (RE_EVOLUTION.test(query)) return { text: generalPokemonSummary(pokemon, locale).text };
@@ -246,7 +304,7 @@ export function answerQuery(rawQuery: string, locale: AppLocale): OracleAnswer {
     return generalPokemonSummary(pokemon, locale);
   }
 
-  // 7. Item location (including hidden items with their saved screenshot)
+  // 8. Item location (including hidden items with their saved screenshot)
   if (RE_LOCATION.test(query)) {
     const items = findItemLocations(query, locale);
     if (items.length > 0) return formatItemAnswer(items, locale);

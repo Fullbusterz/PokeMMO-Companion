@@ -72,10 +72,10 @@ export function BoxPickerModal({
                     <PokemonSprite id={pokemon.id} types={pokemon.types} size={36} />
                     <View className="flex-1">
                       <Text className="text-sm font-semibold text-ink-100">
-                        {build.nickname.trim() || pokemon.name.es}
+                        {build.nickname.trim() || pokemon.name[locale]}
                       </Text>
                       <Text className="text-xs text-ink-400">
-                        {pokemon.name.es} · {localizedNatureName(build.nature, locale)} · {t('box.movesCount', { count: build.moves.length })}
+                        {pokemon.name[locale]} · {localizedNatureName(build.nature, locale)} · {t('box.movesCount', { count: build.moves.length })}
                       </Text>
                     </View>
                   </PressScale>

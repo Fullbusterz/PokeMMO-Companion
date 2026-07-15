@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useMemo, useState } from 'react';
-import { Alert, Text, TextInput, View } from 'react-native';
+import { Text, TextInput, View } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { Header } from '@/components/Header';
@@ -9,6 +9,7 @@ import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
+import { confirmDestructive } from '@/lib/confirmDialog';
 import { getPokemonById, searchPokemon } from '@/lib/pokedex';
 import { useShinyStore, type ShinyHunt } from '@/store/shinyStore';
 import colors from '@/theme/colors';
@@ -27,11 +28,14 @@ function HuntRow({ hunt, isActive, index }: { hunt: ShinyHunt; isActive: boolean
   const pokemon = getPokemonById(hunt.pokemonId);
   if (!pokemon) return null;
 
-  const confirmDelete = () => {
-    Alert.alert(t('shinies.deleteConfirmTitle'), t('shinies.deleteConfirmMessage'), [
-      { text: t('common.cancel'), style: 'cancel' },
-      { text: t('common.delete'), style: 'destructive', onPress: () => deleteHunt(hunt.id) },
-    ]);
+  const confirmDelete = async () => {
+    const confirmed = await confirmDestructive({
+      title: t('shinies.deleteConfirmTitle'),
+      message: t('shinies.deleteConfirmMessage'),
+      confirmLabel: t('common.delete'),
+      cancelLabel: t('common.cancel'),
+    });
+    if (confirmed) deleteHunt(hunt.id);
   };
 
   return (

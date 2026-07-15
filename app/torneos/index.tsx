@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 import { memo, useMemo, useState } from 'react';
-import { Alert, FlatList, Text, View } from 'react-native';
+import { FlatList, Text, View } from 'react-native';
 import Animated, { FadeInDown, Layout } from 'react-native-reanimated';
 
 import { StatusBadge } from '@/components/Badge';
@@ -13,6 +13,7 @@ import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
+import { confirmDestructive } from '@/lib/confirmDialog';
 import colors from '@/theme/colors';
 import { useTournamentStore } from '@/store/tournamentStore';
 import type { Tournament, TournamentFormat, TournamentStatus } from '@/types/tournament';
@@ -56,15 +57,14 @@ const TournamentRow = memo(function TournamentRow({
   index: number;
   onDelete: (id: string) => void;
 }) {
-  function confirmDelete() {
-    Alert.alert(
-      t('tournaments.deleteConfirmTitle'),
-      t('tournaments.deleteConfirmMessage', { name: tournament.name }),
-      [
-        { text: t('common.cancel'), style: 'cancel' },
-        { text: t('common.delete'), style: 'destructive', onPress: () => onDelete(tournament.id) },
-      ]
-    );
+  async function confirmDelete() {
+    const confirmed = await confirmDestructive({
+      title: t('tournaments.deleteConfirmTitle'),
+      message: t('tournaments.deleteConfirmMessage', { name: tournament.name }),
+      confirmLabel: t('common.delete'),
+      cancelLabel: t('common.cancel'),
+    });
+    if (confirmed) onDelete(tournament.id);
   }
 
   return (
