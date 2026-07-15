@@ -1,0 +1,32 @@
+{
+  "topic": "building-competitive-teams",
+  "title": "Construccion de equipos competitivos (para principiantes)",
+  "source": "Resumen elaborado a partir del framework de FinnTheMember publicado originalmente en el foro de PokeMMO (forums.pokemmo.eu/index.php?/topic/70874), recopilado en seviichamp.blogspot.com (https://seviichamp.blogspot.com/2017/09/comp-guide-competitive-team-building_10.html). Resumido y traducido al espanol el 2026-07-05 - no es una traduccion literal del post original.",
+  "sections": [
+    {
+      "heading": "Los 3 roles",
+      "paragraphs": [
+        "Strikers (barredores): Pokemon rapidos o muy poderosos pero fragiles. Su trabajo es rematar a rivales ya debilitados. Objetos como Choice Scarf o Salac Berry permiten que incluso Pokemon lentos cumplan este rol.",
+        "Walls (muros): Pokemon con HP y Defensa (o Defensa Especial) muy altas. Aguantan golpes, se curan o usan movimientos de estado (Toxic, Thunder Wave...) y su trabajo es frenar a los strikers rivales.",
+        "Guards: un hibrido entre wall y atacante — tienen HP y defensa altas pero tambien pegan fuerte (Choice Band o movimientos de setup como Swords Dance/Dragon Dance). Cubren las debilidades tipicas de tu wall principal."
+      ]
+    },
+    {
+      "heading": "Formula de equipo equilibrado",
+      "paragraphs": [
+        "Un equipo de 6 se puede pensar como: 2 strikers (uno fisico, uno especial) + 1 guard y 1 wall para el lado fisico + 1 guard y 1 wall para el lado especial.",
+        "Reparto tipico de EVs: los walls suelen llevar 252 HP + 252 en la defensa relevante; los guards, 252 en ataque/ataque especial + 252 en la defensa relevante + resto en HP (o los mismos EVs que una wall si usan movimientos de setup); los strikers, 252 en ataque/ataque especial + 252 en velocidad."
+      ]
+    },
+    {
+      "heading": "Consejos practicos",
+      "paragraphs": [
+        "Empieza la partida con un Guard como lead: aguanta el primer golpe y responde con dano, cubriendo el papel de striker o wall si hace falta.",
+        "No repitas el mismo \"tipo\" de Guard dos veces (por ejemplo, dos Guards con Choice Band) — combina uno ofensivo directo con uno de setup para no quedarte sin opciones si el rival los contrarresta igual a los dos.",
+        "Evita duplicar tipos en tu equipo salvo que sepas cubrir bien las debilidades compartidas — usa una calculadora de tipos (como el comparador de esta misma app) para revisarlo.",
+        "Estudia el metagame real de PokeMMO en vez de fiarte solo de listas de otros juegos — el meta de PokeMMO tiene su propia liga y su propia comunidad, así que ver torneos reales del juego es mas fiable que copiar equipos de fuera.",
+        "Piensa en \"por que\" antes de copiar un consejo ajeno sobre movimientos o EVs — un buen consejo explica qué amenaza concreta resuelve, no solo \"esto es bueno\"."
+      ]
+    }
+  ]
+}

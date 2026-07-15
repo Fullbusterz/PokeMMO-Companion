@@ -1,0 +1,1731 @@
+{
+  "topic": "finding-every-move",
+  "title": "Como encontrar cada movimiento (TMs, tutores, shards)",
+  "source": "seviichamp.blogspot.com (https://seviichamp.blogspot.com/2020/04/pokemmo-comp-guide-finding-every-move-20.html), guia original creada por Bestfriends y KaynineXL en el foro de PokeMMO, republicada por CommanderBlue. Extraido el 2026-07-05, guia actualizada por sus autores el 21 de abril de 2020.",
+  "note": "Los precios y costes en objetos pueden haber cambiado desde 2020 - verificar en juego si el precio no coincide.",
+  "tmMarketLocations": [
+    {
+      "move": "Roar",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Hail",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Protect",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Safeguard",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Frustration",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Dig",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Brick Break",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Double Team",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Sandstorm",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Rock Tomb",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Aerial Ace",
+      "locations": [
+        "Slateport",
+        "Vermilion Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Attract",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Thief",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Flame Charge",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Incinerate",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Round",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Echoed Voice",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "False Swipe",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Work Up",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Struggle Bug",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Bulldoze",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Sky Drop",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Pluck",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Low Sweep",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Hone Claws",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Fling",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Snarl",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Telekinesis",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Dream Eater",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Smack Down",
+      "locations": [
+        "Slateport",
+        "Vermilion",
+        "Eterna City",
+        "Nimbasa"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Hyper Beam",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Hidden Power",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton",
+        "Celadon Game Corner"
+      ],
+      "price": "6000 coins / 30k"
+    },
+    {
+      "move": "Sunny Day",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Taunt",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Solarbeam",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Rain Dance",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Torment",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Facade",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Rest",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Overheat",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Grass Knot",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Explosion",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Retaliate",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Giga Impact",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Psych Up",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Swagger",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "X",
+      "locations": [
+        "Scissor"
+      ],
+      "price": "Fortree / Saffron / Pastoria / Mistralton - 17.5k"
+    },
+    {
+      "move": "Charge Beam",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Acrobatics",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Frost Breath",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Dragon Tail",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Shadow Claw",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Quash",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Embargo",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Payback",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Ally Switch",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Venoshock",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Poison Jab",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Rock Polish",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Rock Slide",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Gyro Ball",
+      "locations": [
+        "Fortree",
+        "Saffron",
+        "Pastoria",
+        "Mistralton"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Focus Punch",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Shock Wave",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Water Pulse",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Bullet Seed",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Giga Drain",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Iron Tail",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Secret Power",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Steel Wing",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Skill Swap",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Snatch",
+      "locations": [
+        "Lilycove Department Store",
+        "Celadon Department Store",
+        "Veilstone Department Store",
+        "Shopping Mall Nine (Unova)"
+      ],
+      "price": "12.5k"
+    },
+    {
+      "move": "Dragon Claw",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "22.5k"
+    },
+    {
+      "move": "Calm Mind",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Toxic",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Bulk Up",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Ice Beam",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus",
+        "Game Corners (Mauville & Celadon)"
+      ],
+      "price": "6000 coins / 30k"
+    },
+    {
+      "move": "Blizzard",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Light Screen",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Flamethrower",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus",
+        "Game Corners (Mauville & Celadon)"
+      ],
+      "price": "6000 coins / 30k"
+    },
+    {
+      "move": "Thunderbolt",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus",
+        "Game Corners (Mauville & Celadon)"
+      ],
+      "price": "6000 coins / 30k"
+    },
+    {
+      "move": "Thunder",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Earthquake",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Return",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Psychic",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Shadow Ball",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Reflect",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Sludge Bomb",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Fire Blast",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Energy Ball",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Will",
+      "locations": [
+        "O"
+      ],
+      "price": "Wisp - Sootopolis / Cinnabar Island / Sunyshore / Icirrus - 25k"
+    },
+    {
+      "move": "Scald",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Swords Dance",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Substitute",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "U",
+      "locations": [
+        "Turn"
+      ],
+      "price": "Sootopolis / Cinnabar Island / Sunyshore / Icirrus - 30k"
+    },
+    {
+      "move": "Volt Switch",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Thunder Wave",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Wild Charge",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Focus Blast",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Psyshock",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Trick Room",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Sludge Wave",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Stone Edge",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Flash Cannon",
+      "locations": [
+        "Sootopolis",
+        "Cinnabar Island",
+        "Sunyshore",
+        "Icirrus"
+      ],
+      "price": "25k"
+    },
+    {
+      "move": "Flash",
+      "locations": [
+        "Nimbasa",
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "2.5k"
+    },
+    {
+      "move": "Rock Smash",
+      "locations": [
+        "Nimbasa",
+        "Veilstone Department Store (Male Merchant)",
+        "Shopping Male Nine"
+      ],
+      "price": "2.5k"
+    },
+    {
+      "move": "Roost",
+      "locations": [
+        "Veilstone Department Store (Male Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Avalanche",
+      "locations": [
+        "Veilstone Department Store (Male Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Drain Punch",
+      "locations": [
+        "Veilstone Department Store (Male Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Dark Pulse",
+      "locations": [
+        "Veilstone Department Store (Male Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Stealth Rock",
+      "locations": [
+        "Veilstone Department Store (Male Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Brine",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Recycle",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Captivate",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "15k"
+    },
+    {
+      "move": "Natural Gift",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Nature Power",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "17.5k"
+    },
+    {
+      "move": "Sleep Talk",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "10k"
+    },
+    {
+      "move": "Endure",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "20k"
+    },
+    {
+      "move": "Silver Wind",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "30k"
+    },
+    {
+      "move": "Leech Life",
+      "locations": [
+        "Veilstone Department Store (Female Merchant)",
+        "Shopping Mall Nine"
+      ],
+      "price": "20k"
+    }
+  ],
+  "shardTutors": [
+    {
+      "color": "red",
+      "tutorLocations": [
+        "Kanto: Tutor's location: 7 Island, Tanoby Ruins (at the left).",
+        "Sinnoh: Survival Area"
+      ],
+      "shardLocation": "(Super Rod: Vermillion City. Cinnabar island, Route 128 & Ever Grande City).",
+      "moves": [
+        {
+          "move": "Super fang",
+          "cost": 3
+        },
+        {
+          "move": "Mud-slap",
+          "cost": 1
+        },
+        {
+          "move": "Ancientpower",
+          "cost": 3
+        },
+        {
+          "move": "Outrage",
+          "cost": 3
+        },
+        {
+          "move": "Fire punch",
+          "cost": 3
+        },
+        {
+          "move": "Uproar",
+          "cost": 2
+        },
+        {
+          "move": "Twister",
+          "cost": 1
+        },
+        {
+          "move": "Selfdestruct",
+          "cost": 2
+        },
+        {
+          "move": "Air cutter",
+          "cost": 2
+        },
+        {
+          "move": "Iron tail",
+          "cost": 3
+        },
+        {
+          "move": "Heat wave",
+          "cost": 3
+        },
+        {
+          "move": "Sky attack",
+          "cost": 3
+        },
+        {
+          "move": "Covet",
+          "cost": 2
+        }
+      ]
+    },
+    {
+      "color": "blue",
+      "tutorLocations": [
+        "Kanto: Tutor's location: north of 6 Island.",
+        "Sinnoh: Route 212"
+      ],
+      "shardLocation": "(underwater).",
+      "moves": [
+        {
+          "move": "Snatch",
+          "cost": 2
+        },
+        {
+          "move": "Skill swap",
+          "cost": 2
+        },
+        {
+          "move": "Hyper voice",
+          "cost": 2
+        },
+        {
+          "move": "Magic coat",
+          "cost": 3
+        },
+        {
+          "move": "Dive",
+          "cost": 3
+        },
+        {
+          "move": "Signal beam",
+          "cost": 3
+        },
+        {
+          "move": "Spite",
+          "cost": 1
+        },
+        {
+          "move": "Trick",
+          "cost": 2
+        },
+        {
+          "move": "Endeavor",
+          "cost": 3
+        },
+        {
+          "move": "Icy Wind",
+          "cost": 3
+        },
+        {
+          "move": "Snore",
+          "cost": 1
+        },
+        {
+          "move": "Swift",
+          "cost": 2
+        },
+        {
+          "move": "Psych up",
+          "cost": 3
+        },
+        {
+          "move": "Nightmare",
+          "cost": 3
+        },
+        {
+          "move": "Ice punch",
+          "cost": 3
+        },
+        {
+          "move": "String shot",
+          "cost": 1
+        },
+        {
+          "move": "Role play",
+          "cost": 2
+        }
+      ]
+    },
+    {
+      "color": "green",
+      "tutorLocations": [
+        "Kanto: Tutor's location: 5 Island, Memorial Pillar (south)."
+      ],
+      "shardLocation": "(underwater and at night in Tanoby Ruins with super rod).",
+      "moves": [
+        {
+          "move": "Synthesis",
+          "cost": 3
+        },
+        {
+          "move": "Pain split",
+          "cost": 3
+        },
+        {
+          "move": "Heal bell",
+          "cost": 3
+        },
+        {
+          "move": "Defense curl",
+          "cost": 1
+        },
+        {
+          "move": "Iron Defense",
+          "cost": 3
+        },
+        {
+          "move": "Recycle",
+          "cost": 2
+        },
+        {
+          "move": "Helping hand",
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "color": "yellow",
+      "tutorLocations": [
+        "Kanto: Tutor's location: 1 island (north).",
+        "Sinnoh: Snowpoint City"
+      ],
+      "shardLocation": "& (they are both underwater).",
+      "moves": [
+        {
+          "move": "Bind",
+          "cost": 1
+        },
+        {
+          "move": "Bounce",
+          "cost": 2
+        },
+        {
+          "move": "Headbutt",
+          "cost": 5
+        },
+        {
+          "move": "Knock off",
+          "cost": 2
+        },
+        {
+          "move": "Endure",
+          "cost": 3
+        },
+        {
+          "move": "Low kick",
+          "cost": 2
+        },
+        {
+          "move": "Block",
+          "cost": 2
+        },
+        {
+          "move": "Superpower",
+          "cost": 3
+        },
+        {
+          "move": "Thunderpunch",
+          "cost": 3
+        }
+      ]
+    }
+  ],
+  "moveTutorsByRegion": {
+    "kanto": [
+      {
+        "move": "Mega Kick/Mega Punch",
+        "cost": "x1 Focus Band",
+        "description": "These move tutors are just outside of Mt.Moon, the one on the left gives you Mega Punch and the one on the right gives you Mega Kick."
+      },
+      {
+        "move": "Seismic Toss",
+        "cost": "x2 Black Belt",
+        "description": "This scientist can be found at the back entrance of the Pewter City Museum."
+      },
+      {
+        "move": "Rock Slide",
+        "cost": "x2 Hard Stone",
+        "description": "This trainer will be situated near the end of rock tunnel."
+      },
+      {
+        "move": "Counter",
+        "cost": "x1 Black Belt",
+        "description": "Speak to this person, located on the third floor of the Celadon department store"
+      },
+      {
+        "move": "Softboiled",
+        "cost": "x1 Silk Scarf",
+        "description": "Situated across Celadon City's Pond."
+      },
+      {
+        "move": "Mimic",
+        "cost": "Free but can only be taught once",
+        "description": "Given to you by the \"Mimic Girl\" in Saffron city. You need to give her a PokeDoll in order to learn the move."
+      },
+      {
+        "move": "Thunder Wave",
+        "cost": "x2 Magnet",
+        "description": "This woman teaches your Pokemon thunder wave, located on the second floor of the Silph Co. Building in Saffron City."
+      },
+      {
+        "move": "Substitute",
+        "cost": "x1 Silk Scarf",
+        "description": "You can find this tutor in Fuchsia city, in front of the Kangaskhan Pen."
+      },
+      {
+        "move": "Dream Eater",
+        "cost": "x1 TwistedSpoon",
+        "description": "This tutor is found next to the Viridian city pond."
+      },
+      {
+        "move": "Metronome",
+        "cost": "x1 Silk Scarf",
+        "description": "Speak to the scientist in the second room of the Cinnabar Laboratory."
+      },
+      {
+        "move": "Double-Edge",
+        "cost": "x2 Thick Club",
+        "description": "You can find this trainer near the exit of Victory Road."
+      },
+      {
+        "move": "Explosion",
+        "cost": "x2 Smoke Ball",
+        "description": "Head north on Island One and you will find this hiker near the entrance of Mt.Ember."
+      },
+      {
+        "move": "Swords Dance",
+        "cost": "x1 Stick",
+        "description": "You can find this tutor on the pier of Island Seven."
+      },
+      {
+        "move": "Body Slam",
+        "cost": "x2 Focus Band",
+        "description": "You can find this tutor on Island Four."
+      }
+    ],
+    "hoenn": [
+      {
+        "move": "Double-Edge",
+        "cost": "x2 Thick Club",
+        "description": "The Double Edge Move Tutor is found inside Sootopolis City Pokemon Center. She's is found on the top left corner."
+      },
+      {
+        "move": "DynamicPunch",
+        "cost": "x1 Black Belt",
+        "description": "This tutor is found directly south of Mossdeep city Pokemon Center."
+      },
+      {
+        "move": "Explosion",
+        "cost": "x2 Smoke Ball",
+        "description": "The Explosion tutor is found in the bottom right corner of the Pacifidlog Town Pokemon Center."
+      },
+      {
+        "move": "Fury Cutter",
+        "cost": "x1 Silverpowder",
+        "description": "This tutor is located at the bottom right corner of Verdanturf Town Pokemon Center."
+      },
+      {
+        "move": "Metronome",
+        "cost": "x1 Silk Scarf",
+        "description": "This tutor is found inside Fallarbor Town's Pokemon Market."
+      },
+      {
+        "move": "Mimic",
+        "cost": "x1 Fluffy Tail",
+        "description": "This tutor is found inside the bottom right house on Lavaridge Town."
+      },
+      {
+        "move": "Rollout",
+        "cost": "x1 Hard Stone",
+        "description": "This tutor is standing outside the Mauville City Gym."
+      },
+      {
+        "move": "Sleep Talk",
+        "cost": "x1 Spell Tag",
+        "description": "This tutor is found inside one of the treehuts in Fortree City."
+      },
+      {
+        "move": "Substitute",
+        "cost": "x1 Silk Scarf",
+        "description": "This tutor can be found on the rooftop of the Lilycove City MegaMart."
+      },
+      {
+        "move": "Swagger",
+        "cost": "x1 Blackglasses",
+        "description": "This tutor can be found inside the Pokemon Fan Club located in Slateport city."
+      }
+    ],
+    "sinnoh": [
+      {
+        "move": "Draco Meteor",
+        "cost": "4x Dragon Fang",
+        "description": "Route 210 - Grandma Wilma's House."
+      }
+    ],
+    "unova": [
+      {
+        "move": "Iron Head",
+        "cost": "2x Metal Coat",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Defog",
+        "cost": "3x Sharp Beak",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Gunk Shot",
+        "cost": "3x Poison Barb",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Seed Bomb",
+        "cost": "3x Miracle Seed",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Bug Bite",
+        "cost": "2x Silver Powder",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Uproar",
+        "cost": "2x Silk Scarf",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Gravity",
+        "cost": "2x Twisted Spoon",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Drill Run",
+        "cost": "2x Soft Sand",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Roost",
+        "cost": "3x Sharp Beak",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Tailwind",
+        "cost": "2x Sharp Beak",
+        "description": "Mistralton City - Airport Building."
+      },
+      {
+        "move": "Aqua Tail",
+        "cost": "3x Mystic Water",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Earth Power",
+        "cost": "3x Soft Sand",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Dark Pulse",
+        "cost": "3x Black Glasses",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Zen Headbutt",
+        "cost": "3x Twisted Spoon",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Foul Play",
+        "cost": "3x Black Glasses",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Magnet Rise",
+        "cost": "2x Magnet",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Last Resort",
+        "cost": "2x Silk Scarf",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Dual Chop",
+        "cost": "1x Black Belt",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Electroweb",
+        "cost": "2x Magnet",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Sucker Punch",
+        "cost": "3x Black Glasses",
+        "description": "Castelia Street - GAME FREAK Building."
+      },
+      {
+        "move": "Sleep Talk",
+        "cost": "2x Silk Scarf",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Stealth Rock",
+        "cost": "4x Hard Stone",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "After You",
+        "cost": "1x Silk Scarf",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Wonder Room",
+        "cost": "2x Twisted Spoon",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Snatch",
+        "cost": "1x Black Glasses",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Worry Seed",
+        "cost": "1x Miracle Seed",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Dragon Pulse",
+        "cost": "2x Dragon Fang",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Drain Punch",
+        "cost": "2x Black Belt",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Gastro Acid",
+        "cost": "2x Poison Barb",
+        "description": "Nacrene City - West of PKMN Center."
+      },
+      {
+        "move": "Draco Meteor",
+        "cost": "4x Dragon Fang",
+        "description": "Opelucid City - Drayden in house next to PKMN Center."
+      }
+    ]
+  },
+  "battleFrontier": {
+    "note": "Estos dos tutores son distintos al resto: enseñan hasta 20 movimientos a cambio de Puntos de Batalla (BP), no de objetos. Algunos movimientos pueden no aparecer en la lista si el Pokémon en cuestión no puede aprenderlos.",
+    "location": "En una caseta de batalla a la izquierda del Battle Dome.",
+    "tutors": [
+      {
+        "side": "left",
+        "moves": [
+          { "move": "Defense Curl", "cost": "5,000 BP" },
+          { "move": "Snore", "cost": "7,500 BP" },
+          { "move": "Mud-Slap", "cost": "5,000 BP" },
+          { "move": "Swift", "cost": "7,500 BP" },
+          { "move": "Icy Wind", "cost": "9,000 BP" },
+          { "move": "Endure", "cost": "8,000 BP" },
+          { "move": "Psych Up", "cost": "8,000 BP" },
+          { "move": "Ice Punch", "cost": "11,000 BP" },
+          { "move": "Thunder Punch", "cost": "11,000 BP" },
+          { "move": "Fire Punch", "cost": "11,000 BP" }
+        ]
+      },
+      {
+        "side": "right",
+        "moves": [
+          { "move": "Softboiled", "cost": "10,000 BP" },
+          { "move": "Seismic Toss", "cost": "8,000 BP" },
+          { "move": "Dream Eater", "cost": "8,000 BP" },
+          { "move": "Mega Punch", "cost": "9,000 BP" },
+          { "move": "Mega Kick", "cost": "9,000 BP" },
+          { "move": "Body Slam", "cost": "9,000 BP" },
+          { "move": "Rock Slide", "cost": "10,000 BP" },
+          { "move": "Counter", "cost": "8,000 BP" },
+          { "move": "Thunder Wave", "cost": "9,000 BP" },
+          { "move": "Swords Dance", "cost": "11,000 BP" }
+        ]
+      }
+    ]
+  },
+  "ultimateMoves": {
+    "locations": [
+      "Kanto: Isla 2",
+      "Sinnoh: Ruta 228"
+    ],
+    "moves": [
+      {
+        "move": "Blast Burn",
+        "requirement": "Requiere tener a Charizard o Blaziken como primer miembro del equipo.",
+        "cost": "x3 Charcoal"
+      },
+      {
+        "move": "Hydro Cannon",
+        "requirement": "Requiere tener a Blastoise o Swampert como primer miembro del equipo.",
+        "cost": "x3 Mystic Water"
+      },
+      {
+        "move": "Frenzy Plant",
+        "requirement": "Requiere tener a Venusaur o Sceptile como primer miembro del equipo.",
+        "cost": "x3 Miracle Seed"
+      }
+    ]
+  }
+}

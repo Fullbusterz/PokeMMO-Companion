@@ -1,8 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Link, useLocalSearchParams } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useEffect } from 'react';
-import { Image, Text, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Modal, Text, View } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -14,46 +14,226 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { Header } from '@/components/Header';
+import { PokemonSprite } from '@/components/PokemonSprite';
 import { PressScale } from '@/components/PressScale';
+import { RoleBadge } from '@/components/RoleBadge';
 import { Screen } from '@/components/Screen';
+import { TierBadge } from '@/components/TierBadge';
 import { TypeBadge } from '@/components/TypeBadge';
 import { t } from '@/i18n';
 import { isNative, nativeOnly } from '@/lib/animation';
-import { getAbilities, getEvolvesFrom, getEvolvesInto, getMoveset, getPokemonById } from '@/lib/pokedex';
+import {
+  getAbilities,
+  getAbilityDescription,
+  getEvolvesFrom,
+  getEvolvesInto,
+  getLocations,
+  getMoveData,
+  getMoveset,
+  getPokemonById,
+  getTier,
+  groupMovesByMethod,
+  localizedAbilityName,
+  localizedEncounterValue,
+  localizedMoveName,
+} from '@/lib/pokedex';
+import { computeRole } from '@/lib/role';
+import { useCaughtStore } from '@/store/caughtStore';
+import { useLocaleStore } from '@/store/localeStore';
 import type { PokeType } from '@/lib/typeChart';
 import colors from '@/theme/colors';
-import type { PokemonEntry, PokemonMove, PokemonStats } from '@/types/pokemon';
+import type { AbilityDescriptionEntry, LocationEntry, MoveEntry, PokemonEntry, PokemonStats, PvpTier } from '@/types/pokemon';
 
-function groupMovesByMethod(moves: PokemonMove[]) {
-  const byLevel: { name: string; level: number }[] = [];
-  const tm = new Set<string>();
-  const egg = new Set<string>();
-  const tutor = new Set<string>();
-
-  for (const move of moves) {
-    for (const method of move.methods) {
-      const levelMatch = method.match(/^level (\d+)$/);
-      if (levelMatch) byLevel.push({ name: move.name, level: Number(levelMatch[1]) });
-      else if (method === 'tm') tm.add(move.name);
-      else if (method === 'egg') egg.add(move.name);
-      else if (method === 'tutor') tutor.add(move.name);
-    }
-  }
-  byLevel.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
-  return { byLevel, tm: [...tm].sort(), egg: [...egg].sort(), tutor: [...tutor].sort() };
+// Own badge-shaped button rather than a plain TypeBadge/TierBadge/RoleBadge
+// clone — those are static display chips, this one needs to be pressable and
+// carry an accessibility label that reflects the current toggle state.
+function CaughtToggle({ caught, onToggle }: { caught: boolean; onToggle: () => void }) {
+  const color = caught ? colors.gold.DEFAULT : colors.ink[400];
+  return (
+    <PressScale
+      haptic="select"
+      scaleTo={0.9}
+      onPress={onToggle}
+      accessibilityRole="button"
+      accessibilityLabel={t(caught ? 'pokedex.caughtAccessibilityOn' : 'pokedex.caughtAccessibilityOff')}
+      className="flex-row items-center gap-1 rounded-full px-2.5 py-1"
+      style={{ backgroundColor: `${color}26` }}
+    >
+      <Ionicons name={caught ? 'checkmark-circle' : 'ellipse-outline'} size={14} color={color} />
+      <Text className="text-xs font-bold uppercase tracking-wide" style={{ color }}>
+        {t(caught ? 'pokedex.caughtLabel' : 'pokedex.notCaughtLabel')}
+      </Text>
+    </PressScale>
+  );
 }
 
-function MoveChipRow({ moves }: { moves: string[] }) {
+function groupLocationsByType(entries: LocationEntry[]) {
+  const order: string[] = [];
+  const byType = new Map<string, LocationEntry[]>();
+  for (const entry of entries) {
+    if (!byType.has(entry.locationType)) {
+      byType.set(entry.locationType, []);
+      order.push(entry.locationType);
+    }
+    byType.get(entry.locationType)!.push(entry);
+  }
+  return order.map((type) => ({ type, rows: byType.get(type)! }));
+}
+
+// Encounter methods where the wiki attaches a "rarity" that's actually a
+// special mechanic rather than a spawn-frequency tier (a Lure spot, a horde
+// battle) — visually flagged the same way hidden guide items are, since both
+// mark "this isn't the default way you'd stumble into this Pokemon."
+const NOTABLE_RATES = new Set(['Lure', 'Horde']);
+
+function LocationRow({ entry }: { entry: LocationEntry }) {
+  const locale = useLocaleStore((s) => s.locale);
+  const notable = NOTABLE_RATES.has(entry.rate);
+  const timeLabel = entry.timeOfDay.map((tod) => localizedEncounterValue('timeOfDay', tod, locale)).join(' · ');
+  return (
+    <View className="flex-row items-center gap-2 py-1">
+      <View className="flex-1">
+        <Text className="text-sm text-ink-100">{entry.location}</Text>
+        {timeLabel.length > 0 && <Text className="text-[11px] text-ink-400">{timeLabel}</Text>}
+      </View>
+      <Text className="text-xs text-ink-400">
+        {t('pokedex.levelsLabel')} {entry.levels}
+      </Text>
+      <View className={`rounded-full border px-2 py-0.5 ${notable ? 'border-pokeRed/40 bg-pokeRed/10' : 'border-ink-600 bg-ink-700'}`}>
+        <Text className={`text-[10px] font-semibold ${notable ? 'text-pokeRed' : 'text-ink-300'}`}>
+          {localizedEncounterValue('rate', entry.rate, locale)}
+        </Text>
+      </View>
+    </View>
+  );
+}
+
+function MoveChipRow({ moves, onPressMove }: { moves: string[]; onPressMove: (name: string) => void }) {
+  const locale = useLocaleStore((s) => s.locale);
   return (
     <View className="flex-row flex-wrap gap-2">
       {moves.map((name) => (
-        <View key={name} className="rounded-full border border-ink-600 bg-ink-700 px-3 py-1.5">
-          <Text className="text-sm font-semibold text-ink-100">{name}</Text>
-        </View>
+        <PressScale
+          key={name}
+          haptic="select"
+          scaleTo={0.95}
+          onPress={() => onPressMove(name)}
+          className="rounded-full border border-ink-600 bg-ink-700 px-3 py-1.5"
+        >
+          <Text className="text-sm font-semibold text-ink-100">{localizedMoveName(name, locale)}</Text>
+        </PressScale>
       ))}
     </View>
   );
 }
+
+// Shared shell for the move/ability detail popups — backdrop tap closes it,
+// the card itself stops that tap from bubbling up (same fix already needed
+// for the Guide section's inline item images: without stopPropagation, a tap
+// anywhere inside the card closes the modal right as it opens).
+function DetailModalShell({
+  visible,
+  onClose,
+  children,
+}: {
+  visible: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
+      <PressScale haptic="none" onPress={onClose} className="flex-1 items-center justify-center bg-black/70 p-6">
+        <PressScale
+          haptic="none"
+          onPress={(e) => e.stopPropagation()}
+          className="w-full max-w-sm rounded-2xl border border-ink-600 bg-ink-800 p-5"
+        >
+          {children}
+        </PressScale>
+        <PressScale
+          haptic="select"
+          scaleTo={0.9}
+          onPress={onClose}
+          hitSlop={12}
+          className="absolute right-6 top-12 rounded-full bg-ink-800/90 p-2"
+          accessibilityRole="button"
+          accessibilityLabel={t('common.close')}
+        >
+          <Ionicons name="close" size={20} color={colors.ink[100]} />
+        </PressScale>
+      </PressScale>
+    </Modal>
+  );
+}
+
+const CATEGORY_LABELS: Record<MoveEntry['category'], string> = {
+  physical: 'pokedex.categoryPhysical',
+  special: 'pokedex.categorySpecial',
+  status: 'pokedex.categoryStatus',
+};
+
+function MoveDetailModal({ move, onClose }: { move: MoveEntry | null; onClose: () => void }) {
+  const locale = useLocaleStore((s) => s.locale);
+  return (
+    <DetailModalShell visible={!!move} onClose={onClose}>
+      {move && (
+        <>
+          <View className="mb-3 flex-row items-center justify-between gap-2">
+            <Text className="flex-1 text-lg font-bold text-ink-100">{localizedMoveName(move.name, locale)}</Text>
+            <TypeBadge type={move.type as PokeType} />
+          </View>
+          <View className="mb-3 flex-row flex-wrap items-center gap-3">
+            <View className="rounded-full border border-ink-600 bg-ink-700 px-2 py-0.5">
+              <Text className="text-[10px] font-semibold uppercase text-ink-300">{t(CATEGORY_LABELS[move.category])}</Text>
+            </View>
+            <Text className="text-xs text-ink-400">
+              {t('guide.power')}: <Text className="text-ink-200">{move.power ?? '—'}</Text>
+            </Text>
+            <Text className="text-xs text-ink-400">
+              {t('guide.accuracy')}: <Text className="text-ink-200">{move.accuracy !== null ? `${move.accuracy}%` : '—'}</Text>
+            </Text>
+            <Text className="text-xs text-ink-400">
+              {t('guide.pp')}: <Text className="text-ink-200">{move.pp}</Text>
+            </Text>
+          </View>
+          <Text className="mb-1 text-xs font-semibold uppercase tracking-wide text-ink-400">{t('pokedex.effectTitle')}</Text>
+          <Text className="text-sm leading-5 text-ink-300">{move.effect}</Text>
+          {!move.verified && (
+            <View className="mt-3 rounded-lg border border-type-electric/30 bg-type-electric/10 px-3 py-2">
+              <Text className="text-xs text-type-electric">{t('guide.unverifiedBadge')}</Text>
+            </View>
+          )}
+        </>
+      )}
+    </DetailModalShell>
+  );
+}
+
+function AbilityDetailModal({ ability, onClose }: { ability: AbilityDescriptionEntry | null; onClose: () => void }) {
+  const locale = useLocaleStore((s) => s.locale);
+  return (
+    <DetailModalShell visible={!!ability} onClose={onClose}>
+      {ability && (
+        <>
+          <Text className="mb-3 text-lg font-bold text-ink-100">{localizedAbilityName(ability.name, locale)}</Text>
+          <Text className="text-sm leading-5 text-ink-300">{ability.effect}</Text>
+          {!ability.verified && (
+            <View className="mt-3 rounded-lg border border-type-electric/30 bg-type-electric/10 px-3 py-2">
+              <Text className="text-xs text-type-electric">{t('guide.unverifiedBadge')}</Text>
+            </View>
+          )}
+        </>
+      )}
+    </DetailModalShell>
+  );
+}
+
+const TIER_LABEL_KEYS: Record<PvpTier, string> = {
+  uber: 'pokedex.tierUber',
+  ou: 'pokedex.tierOu',
+  uu: 'pokedex.tierUu',
+  nu: 'pokedex.tierNu',
+};
 
 const STAT_ROWS: { key: keyof PokemonStats; label: string; icon: keyof typeof Ionicons.glyphMap }[] = [
   { key: 'hp', label: 'pokedex.hp', icon: 'heart' },
@@ -73,7 +253,7 @@ function EvolutionRow({ pokemon }: { pokemon: PokemonEntry }) {
   return (
     <Link href={`/pokedex/${pokemon.id}`} asChild>
       <PressScale haptic="select" scaleTo={0.98} className="flex-row items-center gap-3 rounded-xl border border-ink-600 bg-ink-800 p-2 active:bg-ink-700">
-        <Image source={{ uri: pokemon.sprite }} className="h-10 w-10" resizeMode="contain" />
+        <PokemonSprite id={pokemon.id} types={pokemon.types} size={40} />
         <Text className="text-base font-semibold text-ink-100">{pokemon.name.es}</Text>
       </PressScale>
     </Link>
@@ -108,11 +288,26 @@ function AnimatedStatBar({ value, max, index }: { value: number; max: number; in
 export default function PokemonDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const pokemon = getPokemonById(Number(id));
+  const locale = useLocaleStore((s) => s.locale);
+  const caught = useCaughtStore((s) => (pokemon ? s.caughtIds.includes(pokemon.id) : false));
+  const toggleCaught = useCaughtStore((s) => s.toggleCaught);
+  const [selectedMove, setSelectedMove] = useState<MoveEntry | null>(null);
+  const [selectedAbility, setSelectedAbility] = useState<AbilityDescriptionEntry | null>(null);
+
+  function openMove(name: string) {
+    const move = getMoveData(name);
+    if (move) setSelectedMove(move);
+  }
+
+  function openAbility(name: string) {
+    const ability = getAbilityDescription(name);
+    if (ability) setSelectedAbility(ability);
+  }
 
   if (!pokemon) {
     return (
       <Screen>
-        <Header title={t('pokedex.title')} />
+        <Header title={t('pokedex.title')} backHref="/pokedex" />
         <Text className="text-ink-400">{t('pokedex.empty')}</Text>
       </Screen>
     );
@@ -127,30 +322,47 @@ export default function PokemonDetail() {
   const movesetInfo = getMoveset(pokemon);
   const hasMoves = Boolean(movesetInfo?.verified && movesetInfo.moves.length > 0);
   const moveGroups = hasMoves ? groupMovesByMethod(movesetInfo!.moves) : null;
+  const locationEntries = getLocations(pokemon);
+  const locationGroups = locationEntries.length > 0 ? groupLocationsByType(locationEntries) : null;
+  const tierInfo = getTier(pokemon);
+  const role = computeRole(pokemon.baseStats);
 
   return (
     <Screen>
-      <Header title={pokemon.name.es} />
+      <Header title={pokemon.name.es} backHref="/pokedex" />
 
       <Animated.View entering={nativeOnly(FadeIn.duration(280))} className="mb-5 items-center">
-        <View
-          className="mb-1 h-36 w-36 items-center justify-center rounded-full"
-          style={{ backgroundColor: `${colors.type[primaryType]}1F` }}
-        >
-          <Animated.Image
-            entering={nativeOnly(FadeInDown.duration(360).springify().damping(14))}
-            source={{ uri: pokemon.sprite }}
-            className="h-32 w-32"
-            resizeMode="contain"
-          />
-        </View>
+        <Animated.View entering={nativeOnly(FadeInDown.duration(360).springify().damping(14))} className="mb-1">
+          <PokemonSprite id={pokemon.id} types={pokemon.types} size={144} />
+        </Animated.View>
         <Text className="mb-2 text-ink-400">#{String(pokemon.id).padStart(3, '0')}</Text>
-        <View className="flex-row gap-2">
+        <View className="flex-row flex-wrap items-center justify-center gap-2">
           {(pokemon.types as PokeType[]).map((tp) => (
             <TypeBadge key={tp} type={tp} />
           ))}
+          {tierInfo?.tier && <TierBadge tier={tierInfo.tier} />}
+          <RoleBadge role={role} />
+          <CaughtToggle caught={caught} onToggle={() => toggleCaught(pokemon.id)} />
         </View>
       </Animated.View>
+
+      {tierInfo && (
+        <View className="mb-3 rounded-xl border border-type-electric/30 bg-type-electric/10 px-3 py-2">
+          <Text className="mb-1 text-xs font-semibold uppercase tracking-wide text-type-electric">
+            {t('pokedex.tierTitle')}
+          </Text>
+          <Text className="text-xs text-type-electric">
+            {tierInfo.tier
+              ? t('pokedex.tierSourceNotice', { tier: t(TIER_LABEL_KEYS[tierInfo.tier]), date: tierInfo.asOf })
+              : t('pokedex.tierUnavailable')}
+          </Text>
+        </View>
+      )}
+
+      <View className="mb-5 rounded-xl border border-ink-600 bg-ink-800 px-3 py-2">
+        <Text className="mb-1 text-xs font-semibold uppercase tracking-wide text-ink-400">{t('pokedex.roleTitle')}</Text>
+        <Text className="text-xs text-ink-400">{t('pokedex.roleUnverifiedNotice')}</Text>
+      </View>
 
       <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-ink-400">
         {t('pokedex.statsTitle')}
@@ -182,17 +394,30 @@ export default function PokemonDetail() {
         {hasAbilities ? (
           <View className="flex-row flex-wrap gap-2">
             {abilityInfo!.abilities.map((ability) => (
-              <View key={ability} className="rounded-full border border-ink-600 bg-ink-700 px-3 py-1.5">
-                <Text className="text-sm font-semibold text-ink-100">{ability}</Text>
-              </View>
+              <PressScale
+                key={ability}
+                haptic="select"
+                scaleTo={0.95}
+                onPress={() => openAbility(ability)}
+                className="rounded-full border border-ink-600 bg-ink-700 px-3 py-1.5"
+              >
+                <Text className="text-sm font-semibold text-ink-100">{localizedAbilityName(ability, locale)}</Text>
+              </PressScale>
             ))}
             {abilityInfo!.hiddenAbility && (
-              <View className="flex-row items-center gap-1 rounded-full border border-pokeRed/40 bg-pokeRed/10 px-3 py-1.5">
+              <PressScale
+                haptic="select"
+                scaleTo={0.95}
+                onPress={() => openAbility(abilityInfo!.hiddenAbility!)}
+                className="flex-row items-center gap-1 rounded-full border border-pokeRed/40 bg-pokeRed/10 px-3 py-1.5"
+              >
                 <Text className="text-[10px] font-bold uppercase tracking-wide text-pokeRed">
                   {t('pokedex.hiddenAbility')}
                 </Text>
-                <Text className="text-sm font-semibold text-pokeRed">{abilityInfo!.hiddenAbility}</Text>
-              </View>
+                <Text className="text-sm font-semibold text-pokeRed">
+                  {localizedAbilityName(abilityInfo!.hiddenAbility, locale)}
+                </Text>
+              </PressScale>
             )}
           </View>
         ) : (
@@ -243,12 +468,18 @@ export default function PokemonDetail() {
                 </Text>
                 <View className="gap-1.5">
                   {moveGroups!.byLevel.map(({ name, level }, index) => (
-                    <View key={`${name}-${level}-${index}`} className="flex-row items-center gap-2">
+                    <PressScale
+                      key={`${name}-${level}-${index}`}
+                      haptic="select"
+                      scaleTo={0.98}
+                      onPress={() => openMove(name)}
+                      className="flex-row items-center gap-2"
+                    >
                       <View className="w-10 rounded bg-ink-700 px-1.5 py-0.5">
                         <Text className="text-center text-xs font-bold text-ink-300">{level}</Text>
                       </View>
-                      <Text className="text-sm text-ink-100">{name}</Text>
-                    </View>
+                      <Text className="text-sm text-ink-100">{localizedMoveName(name, locale)}</Text>
+                    </PressScale>
                   ))}
                 </View>
               </View>
@@ -258,7 +489,7 @@ export default function PokemonDetail() {
                 <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
                   {t('pokedex.movesTm')}
                 </Text>
-                <MoveChipRow moves={moveGroups!.tm} />
+                <MoveChipRow moves={moveGroups!.tm} onPressMove={openMove} />
               </View>
             )}
             {moveGroups!.egg.length > 0 && (
@@ -266,7 +497,7 @@ export default function PokemonDetail() {
                 <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
                   {t('pokedex.movesEgg')}
                 </Text>
-                <MoveChipRow moves={moveGroups!.egg} />
+                <MoveChipRow moves={moveGroups!.egg} onPressMove={openMove} />
               </View>
             )}
             {moveGroups!.tutor.length > 0 && (
@@ -274,7 +505,7 @@ export default function PokemonDetail() {
                 <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
                   {t('pokedex.movesTutor')}
                 </Text>
-                <MoveChipRow moves={moveGroups!.tutor} />
+                <MoveChipRow moves={moveGroups!.tutor} onPressMove={openMove} />
               </View>
             )}
           </View>
@@ -284,6 +515,36 @@ export default function PokemonDetail() {
           </Text>
         )}
       </View>
+
+      <Text className="mb-2 mt-5 text-sm font-semibold uppercase tracking-wide text-ink-400">
+        {t('pokedex.locationsTitle')}
+      </Text>
+      <View className="mb-6 rounded-xl border border-ink-600 bg-ink-800 p-4">
+        {locationGroups ? (
+          <View className="gap-4">
+            {locationGroups.map(({ type, rows }) => (
+              <View key={type}>
+                <Text className="mb-1 text-xs font-semibold uppercase tracking-wide text-ink-400">
+                  {localizedEncounterValue('locationType', type, locale)}
+                </Text>
+                <View>
+                  {rows.map((entry, i) => (
+                    <LocationRow key={`${entry.location}-${entry.levels}-${entry.rate}-${i}`} entry={entry} />
+                  ))}
+                </View>
+              </View>
+            ))}
+            <Text className="text-[11px] leading-4 text-ink-500">
+              {t('guide.sourceLabel')}: {locationEntries[0].source}
+            </Text>
+          </View>
+        ) : (
+          <Text className="text-ink-400">{t('pokedex.locationsEmpty')}</Text>
+        )}
+      </View>
+
+      <MoveDetailModal move={selectedMove} onClose={() => setSelectedMove(null)} />
+      <AbilityDetailModal ability={selectedAbility} onClose={() => setSelectedAbility(null)} />
     </Screen>
   );
 }

@@ -14,7 +14,7 @@ type CardProps = AnimatedProps<ViewProps> & {
 };
 
 export function Card({ children, className, index, skipEntrance, ...viewProps }: CardProps) {
-  const baseClassName = `rounded-xl border border-ink-600 bg-ink-800 shadow-md shadow-black/30 ${className ?? ''}`;
+  const baseClassName = `rounded-xl border border-gold/30 bg-ink-800 shadow-md shadow-black/30 ${className ?? ''}`;
 
   if (skipEntrance) {
     return (

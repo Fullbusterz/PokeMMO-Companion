@@ -18,8 +18,7 @@
       "speed": 45
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 2,
@@ -40,8 +39,7 @@
       "speed": 60
     },
     "evolvesFrom": "bulbasaur",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 3,
@@ -62,8 +60,7 @@
       "speed": 80
     },
     "evolvesFrom": "ivysaur",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 4,
@@ -83,8 +80,7 @@
       "speed": 65
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 5,
@@ -104,8 +100,7 @@
       "speed": 80
     },
     "evolvesFrom": "charmander",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 6,
@@ -126,8 +121,7 @@
       "speed": 100
     },
     "evolvesFrom": "charmeleon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 7,
@@ -147,8 +141,7 @@
       "speed": 43
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 8,
@@ -168,8 +161,7 @@
       "speed": 58
     },
     "evolvesFrom": "squirtle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 9,
@@ -189,8 +181,7 @@
       "speed": 78
     },
     "evolvesFrom": "wartortle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 10,
@@ -210,8 +201,7 @@
       "speed": 45
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 11,
@@ -231,8 +221,7 @@
       "speed": 30
     },
     "evolvesFrom": "caterpie",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 12,
@@ -253,8 +242,7 @@
       "speed": 70
     },
     "evolvesFrom": "metapod",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 13,
@@ -275,8 +263,7 @@
       "speed": 50
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 14,
@@ -297,8 +284,7 @@
       "speed": 35
     },
     "evolvesFrom": "weedle",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 15,
@@ -319,8 +305,7 @@
       "speed": 75
     },
     "evolvesFrom": "kakuna",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 16,
@@ -341,8 +326,7 @@
       "speed": 56
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 17,
@@ -363,8 +347,7 @@
       "speed": 71
     },
     "evolvesFrom": "pidgey",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 18,
@@ -385,8 +368,7 @@
       "speed": 91
     },
     "evolvesFrom": "pidgeotto",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 19,
@@ -406,8 +388,7 @@
       "speed": 72
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 20,
@@ -427,8 +408,7 @@
       "speed": 97
     },
     "evolvesFrom": "rattata",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 21,
@@ -449,8 +429,7 @@
       "speed": 70
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 22,
@@ -471,8 +450,7 @@
       "speed": 100
     },
     "evolvesFrom": "spearow",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 23,
@@ -492,8 +470,7 @@
       "speed": 55
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 24,
@@ -513,8 +490,7 @@
       "speed": 80
     },
     "evolvesFrom": "ekans",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 25,
@@ -534,8 +510,7 @@
       "speed": 90
     },
     "evolvesFrom": "pichu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Defensa/Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Defensa/Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 26,
@@ -555,8 +530,7 @@
       "speed": 100
     },
     "evolvesFrom": "pikachu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 27,
@@ -576,8 +550,7 @@
       "speed": 40
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 28,
@@ -597,8 +570,7 @@
       "speed": 65
     },
     "evolvesFrom": "sandshrew",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 29,
@@ -618,8 +590,7 @@
       "speed": 41
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 30,
@@ -639,8 +610,7 @@
       "speed": 56
     },
     "evolvesFrom": "nidoran♀",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 31,
@@ -661,8 +631,7 @@
       "speed": 76
     },
     "evolvesFrom": "nidorina",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 32,
@@ -682,8 +651,7 @@
       "speed": 50
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 33,
@@ -703,8 +671,7 @@
       "speed": 65
     },
     "evolvesFrom": "nidoran♂",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 34,
@@ -725,8 +692,7 @@
       "speed": 85
     },
     "evolvesFrom": "nidorino",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 35,
@@ -746,8 +712,7 @@
       "speed": 35
     },
     "evolvesFrom": "cleffa",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Clefairy es Normal en Gen 1-5."
+    "source": "Stats/familia evolutiva: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Clefairy es Normal en Gen 1-5."
   },
   {
     "id": 36,
@@ -767,8 +732,7 @@
       "speed": 60
     },
     "evolvesFrom": "clefairy",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 37,
@@ -788,8 +752,7 @@
       "speed": 65
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 38,
@@ -809,8 +772,7 @@
       "speed": 100
     },
     "evolvesFrom": "vulpix",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 39,
@@ -830,8 +792,7 @@
       "speed": 20
     },
     "evolvesFrom": "igglybuff",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Normal/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Jigglypuff es Normal puro en Gen 1-5."
+    "source": "Stats/familia evolutiva: PokeAPI. Tipo corregido a Normal (2026-07-03): PokeAPI devuelve Normal/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Jigglypuff es Normal puro en Gen 1-5."
   },
   {
     "id": 40,
@@ -851,8 +812,7 @@
       "speed": 45
     },
     "evolvesFrom": "jigglypuff",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 41,
@@ -873,8 +833,7 @@
       "speed": 55
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 42,
@@ -895,8 +854,7 @@
       "speed": 90
     },
     "evolvesFrom": "zubat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 43,
@@ -917,8 +875,7 @@
       "speed": 30
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 44,
@@ -939,8 +896,7 @@
       "speed": 40
     },
     "evolvesFrom": "oddish",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 45,
@@ -961,8 +917,7 @@
       "speed": 50
     },
     "evolvesFrom": "gloom",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. At. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 46,
@@ -983,8 +938,7 @@
       "speed": 25
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 47,
@@ -1005,8 +959,7 @@
       "speed": 30
     },
     "evolvesFrom": "paras",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 48,
@@ -1027,8 +980,7 @@
       "speed": 45
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 49,
@@ -1049,8 +1001,7 @@
       "speed": 90
     },
     "evolvesFrom": "venonat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 50,
@@ -1070,8 +1021,7 @@
       "speed": 95
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 51,
@@ -1091,8 +1041,7 @@
       "speed": 120
     },
     "evolvesFrom": "diglett",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 52,
@@ -1112,8 +1061,7 @@
       "speed": 90
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 53,
@@ -1133,8 +1081,7 @@
       "speed": 115
     },
     "evolvesFrom": "meowth",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 54,
@@ -1154,8 +1101,7 @@
       "speed": 55
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 55,
@@ -1175,8 +1121,7 @@
       "speed": 85
     },
     "evolvesFrom": "psyduck",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 56,
@@ -1196,8 +1141,7 @@
       "speed": 70
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 57,
@@ -1217,8 +1161,7 @@
       "speed": 95
     },
     "evolvesFrom": "mankey",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 58,
@@ -1238,8 +1181,7 @@
       "speed": 60
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 59,
@@ -1259,8 +1201,7 @@
       "speed": 95
     },
     "evolvesFrom": "growlithe",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 60,
@@ -1280,8 +1221,7 @@
       "speed": 90
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 61,
@@ -1301,8 +1241,7 @@
       "speed": 90
     },
     "evolvesFrom": "poliwag",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 62,
@@ -1323,8 +1262,7 @@
       "speed": 70
     },
     "evolvesFrom": "poliwhirl",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 63,
@@ -1344,8 +1282,7 @@
       "speed": 90
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 64,
@@ -1365,8 +1302,7 @@
       "speed": 105
     },
     "evolvesFrom": "abra",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 65,
@@ -1386,8 +1322,7 @@
       "speed": 120
     },
     "evolvesFrom": "kadabra",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 66,
@@ -1407,8 +1342,7 @@
       "speed": 35
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 67,
@@ -1428,8 +1362,7 @@
       "speed": 45
     },
     "evolvesFrom": "machop",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 68,
@@ -1449,8 +1382,7 @@
       "speed": 55
     },
     "evolvesFrom": "machoke",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 69,
@@ -1471,8 +1403,7 @@
       "speed": 40
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 70,
@@ -1493,8 +1424,7 @@
       "speed": 55
     },
     "evolvesFrom": "bellsprout",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 71,
@@ -1515,8 +1445,7 @@
       "speed": 70
     },
     "evolvesFrom": "weepinbell",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 72,
@@ -1537,8 +1466,7 @@
       "speed": 70
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 73,
@@ -1559,8 +1487,7 @@
       "speed": 100
     },
     "evolvesFrom": "tentacool",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 74,
@@ -1581,8 +1508,7 @@
       "speed": 20
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 75,
@@ -1603,8 +1529,7 @@
       "speed": 35
     },
     "evolvesFrom": "geodude",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 76,
@@ -1625,8 +1550,7 @@
       "speed": 45
     },
     "evolvesFrom": "graveler",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 77,
@@ -1646,8 +1570,7 @@
       "speed": 90
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 78,
@@ -1667,8 +1590,7 @@
       "speed": 105
     },
     "evolvesFrom": "ponyta",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 79,
@@ -1689,8 +1611,7 @@
       "speed": 15
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 80,
@@ -1711,8 +1632,7 @@
       "speed": 30
     },
     "evolvesFrom": "slowpoke",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 81,
@@ -1733,8 +1653,7 @@
       "speed": 45
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 82,
@@ -1755,8 +1674,7 @@
       "speed": 70
     },
     "evolvesFrom": "magnemite",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 83,
@@ -1777,8 +1695,7 @@
       "speed": 60
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Ataque corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 84,
@@ -1799,8 +1716,7 @@
       "speed": 75
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 85,
@@ -1821,8 +1737,7 @@
       "speed": 100
     },
     "evolvesFrom": "doduo",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 86,
@@ -1842,8 +1757,7 @@
       "speed": 45
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 87,
@@ -1864,8 +1778,7 @@
       "speed": 70
     },
     "evolvesFrom": "seel",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 88,
@@ -1885,8 +1798,7 @@
       "speed": 25
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 89,
@@ -1906,8 +1818,7 @@
       "speed": 50
     },
     "evolvesFrom": "grimer",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 90,
@@ -1927,8 +1838,7 @@
       "speed": 40
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 91,
@@ -1949,8 +1859,7 @@
       "speed": 70
     },
     "evolvesFrom": "shellder",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 92,
@@ -1971,8 +1880,7 @@
       "speed": 80
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 93,
@@ -1993,8 +1901,7 @@
       "speed": 95
     },
     "evolvesFrom": "gastly",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 94,
@@ -2015,8 +1922,7 @@
       "speed": 110
     },
     "evolvesFrom": "haunter",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 95,
@@ -2037,8 +1943,7 @@
       "speed": 70
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 96,
@@ -2058,8 +1963,7 @@
       "speed": 42
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 97,
@@ -2079,8 +1983,7 @@
       "speed": 67
     },
     "evolvesFrom": "drowzee",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 98,
@@ -2100,8 +2003,7 @@
       "speed": 50
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 99,
@@ -2121,8 +2023,7 @@
       "speed": 75
     },
     "evolvesFrom": "krabby",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 100,
@@ -2142,8 +2043,7 @@
       "speed": 100
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 101,
@@ -2163,8 +2063,7 @@
       "speed": 140
     },
     "evolvesFrom": "voltorb",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Velocidad corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 102,
@@ -2185,8 +2084,7 @@
       "speed": 40
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 103,
@@ -2207,8 +2105,7 @@
       "speed": 55
     },
     "evolvesFrom": "exeggcute",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
+    "source": "Stats/familia evolutiva: PokeAPI. Def. especial corregido a valor Gen 1-5 (2026-07-03): PokeAPI devuelve el valor actual (post-buff de Gen 6+), pero PokeMMO usa las stats base originales de Gen 1-5 (fuente: Bulbapedia, tabla Gen II-V)."
   },
   {
     "id": 104,
@@ -2228,8 +2125,7 @@
       "speed": 35
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 105,
@@ -2249,8 +2145,7 @@
       "speed": 45
     },
     "evolvesFrom": "cubone",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 106,
@@ -2270,8 +2165,7 @@
       "speed": 87
     },
     "evolvesFrom": "tyrogue",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 107,
@@ -2291,8 +2185,7 @@
       "speed": 76
     },
     "evolvesFrom": "tyrogue",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 108,
@@ -2312,8 +2205,7 @@
       "speed": 30
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 109,
@@ -2333,8 +2225,7 @@
       "speed": 35
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 110,
@@ -2354,8 +2245,7 @@
       "speed": 60
     },
     "evolvesFrom": "koffing",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 111,
@@ -2376,8 +2266,7 @@
       "speed": 25
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 112,
@@ -2398,8 +2287,7 @@
       "speed": 40
     },
     "evolvesFrom": "rhyhorn",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 113,
@@ -2419,8 +2307,7 @@
       "speed": 50
     },
     "evolvesFrom": "happiny",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 114,
@@ -2440,8 +2327,7 @@
       "speed": 60
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 115,
@@ -2461,8 +2347,7 @@
       "speed": 90
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 116,
@@ -2482,8 +2367,7 @@
       "speed": 60
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 117,
@@ -2503,8 +2387,7 @@
       "speed": 85
     },
     "evolvesFrom": "horsea",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 118,
@@ -2524,8 +2407,7 @@
       "speed": 63
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 119,
@@ -2545,8 +2427,7 @@
       "speed": 68
     },
     "evolvesFrom": "goldeen",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 120,
@@ -2566,8 +2447,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 121,
@@ -2588,8 +2468,7 @@
       "speed": 115
     },
     "evolvesFrom": "staryu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 122,
@@ -2609,8 +2488,7 @@
       "speed": 90
     },
     "evolvesFrom": "Mime Jr.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
-    "source": "Stats/familia evolutiva/sprite: PokeAPI. Tipo corregido a Psiquico puro (2026-07-03): PokeAPI devuelve Psiquico/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Mr. Mime es Psiquico puro en Gen 1-5."
+    "source": "Stats/familia evolutiva: PokeAPI. Tipo corregido a Psiquico puro (2026-07-03): PokeAPI devuelve Psiquico/Hada por defecto (retcon de Gen 6), pero PokeMMO usa tipado Gen 5 sin Hada (ver data/type-chart.json) - Mr. Mime es Psiquico puro en Gen 1-5."
   },
   {
     "id": 123,
@@ -2631,8 +2509,7 @@
       "speed": 105
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 124,
@@ -2653,8 +2530,7 @@
       "speed": 95
     },
     "evolvesFrom": "smoochum",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 125,
@@ -2674,8 +2550,7 @@
       "speed": 105
     },
     "evolvesFrom": "elekid",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 126,
@@ -2695,8 +2570,7 @@
       "speed": 93
     },
     "evolvesFrom": "magby",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 127,
@@ -2716,8 +2590,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 128,
@@ -2737,8 +2610,7 @@
       "speed": 110
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 129,
@@ -2758,8 +2630,7 @@
       "speed": 80
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 130,
@@ -2780,8 +2651,7 @@
       "speed": 81
     },
     "evolvesFrom": "magikarp",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 131,
@@ -2802,8 +2672,7 @@
       "speed": 60
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 132,
@@ -2823,8 +2692,7 @@
       "speed": 48
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 133,
@@ -2844,8 +2712,7 @@
       "speed": 55
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 134,
@@ -2865,8 +2732,7 @@
       "speed": 65
     },
     "evolvesFrom": "eevee",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 135,
@@ -2886,8 +2752,7 @@
       "speed": 130
     },
     "evolvesFrom": "eevee",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 136,
@@ -2907,8 +2772,7 @@
       "speed": 65
     },
     "evolvesFrom": "eevee",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 137,
@@ -2928,8 +2792,7 @@
       "speed": 40
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 138,
@@ -2950,8 +2813,7 @@
       "speed": 35
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 139,
@@ -2972,8 +2834,7 @@
       "speed": 55
     },
     "evolvesFrom": "omanyte",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 140,
@@ -2994,8 +2855,7 @@
       "speed": 55
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 141,
@@ -3016,8 +2876,7 @@
       "speed": 80
     },
     "evolvesFrom": "kabuto",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 142,
@@ -3038,8 +2897,7 @@
       "speed": 130
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 143,
@@ -3059,8 +2917,7 @@
       "speed": 30
     },
     "evolvesFrom": "munchlax",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 144,
@@ -3081,8 +2938,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 145,
@@ -3103,8 +2959,7 @@
       "speed": 100
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 146,
@@ -3125,8 +2980,7 @@
       "speed": 90
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 147,
@@ -3146,8 +3000,7 @@
       "speed": 50
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 148,
@@ -3167,8 +3020,7 @@
       "speed": 70
     },
     "evolvesFrom": "dratini",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 149,
@@ -3189,8 +3041,7 @@
       "speed": 80
     },
     "evolvesFrom": "dragonair",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 150,
@@ -3210,8 +3061,7 @@
       "speed": 130
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   },
   {
     "id": 151,
@@ -3231,7 +3081,6 @@
       "speed": 100
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
-    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva, sprite), valido sin necesidad de verificacion PokeMMO"
+    "source": "PokeAPI - datos universales (stats base, tipo, familia evolutiva), valido sin necesidad de verificacion PokeMMO"
   }
 ]

@@ -350,7 +350,7 @@ export default function TournamentDetail() {
   if (!tournament) {
     return (
       <Screen>
-        <Header title={t('tournaments.title')} />
+        <Header title={t('tournaments.title')} backHref="/torneos" />
         <Text className="text-ink-400">{t('tournaments.empty')}</Text>
       </Screen>
     );
@@ -415,7 +415,7 @@ export default function TournamentDetail() {
           </View>
         </View>
       ) : (
-        <Header title={tournament.name} onEdit={startEditingName} />
+        <Header title={tournament.name} backHref="/torneos" onEdit={startEditingName} />
       )}
 
       <View className="mb-3 flex-row gap-3">

@@ -46,7 +46,7 @@ export default function ImportTournament() {
 
   return (
     <Screen>
-      <Header title={t('exportImport.importTitle')} />
+      <Header title={t('exportImport.importTitle')} backHref="/torneos" />
       <Text className="mb-4 text-ink-300">{t('exportImport.importSubtitle')}</Text>
 
       <AnimatedTextInput

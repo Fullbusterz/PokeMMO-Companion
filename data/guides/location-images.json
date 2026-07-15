@@ -1,0 +1,986 @@
+{
+  "source": "PokeMMO Wiki (pokemmo.shoutwiki.com), capturas propias del juego alojadas en images.shoutwiki.com (no capturas del juego oficial ni de sitios de terceros). Recopilado con ayuda de ChatGPT el 2026-07-10, verificando cada URL de imagen contra su ficha de la wiki.",
+  "note": "Cobertura parcial: algunas ubicaciones no se pudieron verificar por el bloqueo anti-bot de la wiki durante la recopilacion (ver el bloque unverified). No se ha vuelto a intentar automaticamente. Reintento 2026-07-11: se recuperaron 14 imágenes específicas más (vía curl con User-Agent de navegador, el bloqueo anti-bot original ya no aplicaba); otras 24 solo tenían disponible el mapa genérico de la región (descartadas a propósito) y 31 siguen sin imagen reconocible.",
+  "kanto": [
+    {
+      "location": "Pallet Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Pallet_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/6b/Pallet_Town.png"
+    },
+    {
+      "location": "Viridian City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Viridian_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/9f/Viridian_City.png"
+    },
+    {
+      "location": "Pewter City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Pewter_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/6c/Pewter_City.png"
+    },
+    {
+      "location": "Cerulean City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Cerulean_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/1/18/Cerulean_City.png"
+    },
+    {
+      "location": "Vermilion City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Vermilion_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/8d/Vermilion_City_FRLG.png"
+    },
+    {
+      "location": "Fuchsia City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Fuchsia_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/db/Fuchsia_City.png"
+    },
+    {
+      "location": "Cinnabar Island",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Cinnabar_Island",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/40/Cinnabar_Island.png"
+    },
+    {
+      "location": "Kanto Route 1",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_1",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/2/23/Map_Kanto_Route_1.png"
+    },
+    {
+      "location": "Kanto Route 2",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_2",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/89/Map_Kanto_Route_2.png"
+    },
+    {
+      "location": "Kanto Route 3",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_3",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/74/Map_Kanto_Route_3.png"
+    },
+    {
+      "location": "Kanto Route 4",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_4",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/6e/Map_Kanto_Route_4.png"
+    },
+    {
+      "location": "Kanto Route 5",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_5",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a7/Map_Kanto_Route_5.png"
+    },
+    {
+      "location": "Kanto Route 6",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_6",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/dc/Map_Kanto_Route_6.png"
+    },
+    {
+      "location": "Kanto Route 8",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_8",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/1/1c/Map_Kanto_Route_8.png"
+    },
+    {
+      "location": "Kanto Route 9",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_9",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/43/Map_Kanto_Route_9.png"
+    },
+    {
+      "location": "Kanto Route 10",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_10",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/87/Route_10.png"
+    },
+    {
+      "location": "Kanto Route 11",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_11",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/7c/Kanto_Route_11_FRLG.png"
+    },
+    {
+      "location": "Kanto Route 13",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_13",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d4/Kanto_Route_13_FRLG.png"
+    },
+    {
+      "location": "Kanto Route 15",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_15",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/5b/Kanto_Route_15.png"
+    },
+    {
+      "location": "Kanto Route 16",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_16",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/80/Route-16.png"
+    },
+    {
+      "location": "Kanto Route 18",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_18",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/99/Route-18.png"
+    },
+    {
+      "location": "Kanto Route 19",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_19",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/1/1e/Kanto_Route_19_FRLG.png"
+    },
+    {
+      "location": "Kanto Route 22",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_22",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/f2/Kanto_Route_22_FRLG.png"
+    },
+    {
+      "location": "Kanto Route 24",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Kanto_Route_24",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/0/06/Kanto_Route_24_FRLG.png"
+    },
+    {
+      "location": "Lavender Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Lavender_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/4e/Lavender_Town.png"
+    },
+    {
+      "location": "Celadon City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Celadon_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/1/1c/Celadon_City.png"
+    }
+  ],
+  "johto": [
+    {
+      "location": "New Bark Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/New_Bark_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/f6/New_Bark_Town.png"
+    },
+    {
+      "location": "Cherrygrove City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Cherrygrove_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/3f/Cherrygrove_City.png"
+    },
+    {
+      "location": "Violet City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Violet_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/34/Violet_City.png"
+    },
+    {
+      "location": "Azalea Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Azalea_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a8/Azalea_Town.png"
+    },
+    {
+      "location": "Goldenrod City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Goldenrod_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/f2/Goldenrod_City.png"
+    },
+    {
+      "location": "Ecruteak City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Ecruteak_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/80/Ecruteak_City.png"
+    },
+    {
+      "location": "Olivine City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Olivine_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/57/Olivine_City.png"
+    },
+    {
+      "location": "Cianwood City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Cianwood_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/ad/Cianwood_City.png"
+    },
+    {
+      "location": "Mahogany Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Mahogany_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/b/be/Mahogany_Town.png"
+    },
+    {
+      "location": "Blackthorn City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Blackthorn_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/35/Blackthorn_City.png"
+    },
+    {
+      "location": "Johto Route 31",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_31",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/c2/Map_Johto_Route_31.png"
+    },
+    {
+      "location": "Johto Route 32",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_32",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/3e/Map_Johto_Route_32.png"
+    },
+    {
+      "location": "Johto Route 33",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_33",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/31/Map_Johto_Route_33.png"
+    },
+    {
+      "location": "Johto Route 34",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_34",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/c6/Map_Johto_Route_34.png"
+    },
+    {
+      "location": "Johto Route 35",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_35",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/9b/Map_Johto_Route_35.png"
+    },
+    {
+      "location": "Johto Route 37",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_37",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/aa/Map_Johto_Route_37.png"
+    },
+    {
+      "location": "Johto Route 38",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_38",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/5b/Map_Johto_Route_38.png"
+    },
+    {
+      "location": "Johto Route 41",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_41",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/62/Map_Johto_Route_41.png"
+    },
+    {
+      "location": "Johto Route 43",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_43",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/1/19/Map_Johto_Route_43.png"
+    },
+    {
+      "location": "Johto Route 44",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_44",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/c0/Map_Johto_Route_44.png"
+    },
+    {
+      "location": "Johto Route 45",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_45",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/2/23/Map_Johto_Route_45.png"
+    },
+    {
+      "location": "Johto Route 39",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_39",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d5/Map_Johto_Route_39.png"
+    },
+    {
+      "location": "Johto Route 46",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Johto_Route_46",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/ce/Map_Johto_Route_46.png"
+    }
+  ],
+  "hoenn": [
+    {
+      "location": "Littleroot Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Littleroot_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/f0/Littleroot_Town.png"
+    },
+    {
+      "location": "Oldale Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Oldale_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/f0/Oldale_Town_E.png"
+    },
+    {
+      "location": "Petalburg City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Petalburg_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/cc/Petalburg_City.png"
+    },
+    {
+      "location": "Rustboro City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Rustboro_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/5d/Rustboro_City.png"
+    },
+    {
+      "location": "Mauville City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Mauville_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/b/b9/Mauville_City.png"
+    },
+    {
+      "location": "Mossdeep City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Mossdeep_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/5a/Mossdeep_City.png"
+    },
+    {
+      "location": "Sootopolis City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sootopolis_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/e/e5/Sootopolis_City.png"
+    },
+    {
+      "location": "Slateport City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Slateport_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a4/Slateport_City.png"
+    },
+    {
+      "location": "Verdanturf Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Verdanturf_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/c3/Verdanturf_Town.png"
+    },
+    {
+      "location": "Fallarbor Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Fallarbor_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/e/eb/Fallarbor_Town.png"
+    },
+    {
+      "location": "Ever Grande City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Ever_Grande_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/e/e0/Map_Hoenn_Ever_Grande_City.png"
+    },
+    {
+      "location": "Hoenn Route 102",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_102",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/99/Hoenn_Route_102.png"
+    },
+    {
+      "location": "Hoenn Route 104",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_104",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/61/Hoenn_Route_104.png"
+    },
+    {
+      "location": "Hoenn Route 106",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_106",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/9f/Hoenn_Route_106.png"
+    },
+    {
+      "location": "Hoenn Route 110",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_110",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/9f/Hoenn_Route_110.png"
+    },
+    {
+      "location": "Hoenn Route 112",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_112",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a9/Hoenn_Route_112.png"
+    },
+    {
+      "location": "Hoenn Route 113",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_113",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/cd/Hoenn_Route_113.png"
+    },
+    {
+      "location": "Hoenn Route 115",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_115",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/0/0b/Hoenn_Route_115.png"
+    },
+    {
+      "location": "Hoenn Route 117",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_117",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/88/Hoenn_Route_117.png"
+    },
+    {
+      "location": "Hoenn Route 118",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_118",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/72/Hoenn_Route_118.png"
+    },
+    {
+      "location": "Hoenn Route 128",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_128",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/2/24/Hoenn_Route_128.png"
+    },
+    {
+      "location": "Hoenn Route 133",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_133",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/34/Hoenn_Route_133.png"
+    },
+    {
+      "location": "Dewford Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Dewford_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/3a/Dewford_Town.png"
+    },
+    {
+      "location": "Lavaridge Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Lavaridge_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/c9/Lavaridge_Town.png"
+    },
+    {
+      "location": "Hoenn Route 101",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_101",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/41/Hoenn_Route_101.png"
+    },
+    {
+      "location": "Hoenn Route 109",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_109",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/f8/Hoenn_Route_109.png"
+    },
+    {
+      "location": "Hoenn Route 127",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_127",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/5d/Hoenn_Route_127.png"
+    },
+    {
+      "location": "Hoenn Route 131",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_131",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/59/Hoenn_Route_131.png"
+    }
+  ],
+  "sinnoh": [
+    {
+      "location": "Twinleaf Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Twinleaf_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/3b/Twinleaf_Town.png"
+    },
+    {
+      "location": "Sandgem Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sandgem_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/cb/Sandgem_Town.png"
+    },
+    {
+      "location": "Jubilife City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Jubilife_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/98/Jubilife_City.png"
+    },
+    {
+      "location": "Oreburgh City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Oreburgh_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/7c/Oreburgh_City.png"
+    },
+    {
+      "location": "Floaroma Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Floaroma_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/fc/Floaroma_Town.png"
+    },
+    {
+      "location": "Eterna City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Eterna_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d3/Eterna_City.png"
+    },
+    {
+      "location": "Hearthome City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Hearthome_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/7d/Hearthome_City.png"
+    },
+    {
+      "location": "Solaceon Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Solaceon_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/b/ba/Solaceon_Town.png"
+    },
+    {
+      "location": "Veilstone City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Veilstone_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/7e/Veilstone_City.png"
+    },
+    {
+      "location": "Pastoria City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Pastoria_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/e/eb/Pastoria_City.png"
+    },
+    {
+      "location": "Celestic Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Celestic_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/af/Celestic_Town.png"
+    },
+    {
+      "location": "Canalave City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Canalave_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/3/32/Canalave_City.png"
+    },
+    {
+      "location": "Snowpoint City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Snowpoint_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/c4/Snowpoint_City.png"
+    },
+    {
+      "location": "Sunyshore City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sunyshore_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/ce/Sunyshore_City.png"
+    },
+    {
+      "location": "Sinnoh Route 201",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_201",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/6e/Sinnoh_Route_201.png"
+    },
+    {
+      "location": "Sinnoh Route 202",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_202",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/82/Sinnoh_Route_202.png"
+    },
+    {
+      "location": "Sinnoh Route 205",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_205",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d7/Sinnoh_Route_205.png"
+    },
+    {
+      "location": "Sinnoh Route 206",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_206",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/b/bb/Sinnoh_Route_206.png"
+    },
+    {
+      "location": "Sinnoh Route 207",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_207",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/0/06/Sinnoh_Route_207.png"
+    },
+    {
+      "location": "Sinnoh Route 209",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_209",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/2/2e/Sinnoh_Route_209.png"
+    },
+    {
+      "location": "Sinnoh Route 210",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_210",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/75/Sinnoh_Route_210.png"
+    },
+    {
+      "location": "Sinnoh Route 212",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_212",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/43/Sinnoh_Route_212.png"
+    },
+    {
+      "location": "Sinnoh Route 214",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_214",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/ae/Sinnoh_Route_214.png"
+    },
+    {
+      "location": "Sinnoh Route 218",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_218",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/4c/Sinnoh_Route_218.png"
+    },
+    {
+      "location": "Sinnoh Route 219",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_219",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/2/28/Sinnoh_Route_219.png"
+    },
+    {
+      "location": "Sinnoh Route 221",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_221",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/f4/Sinnoh_Route_221.png"
+    },
+    {
+      "location": "Sinnoh Route 222",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_222",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/81/Sinnoh_Route_222.png"
+    },
+    {
+      "location": "Sinnoh Route 223",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_223",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a4/Sinnoh_Route_223.png"
+    },
+    {
+      "location": "Sinnoh Route 224",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_224",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/b/b8/Sinnoh_Route_224.png"
+    },
+    {
+      "location": "Sinnoh Route 225",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_225",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/89/Sinnoh_Route_225.png"
+    },
+    {
+      "location": "Sinnoh Route 226",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_226",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/e/e8/Sinnoh_Route_226.png"
+    },
+    {
+      "location": "Sinnoh Route 227",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_227",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/af/Sinnoh_Route_227.png"
+    },
+    {
+      "location": "Sinnoh Route 229",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Sinnoh_Route_229",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/2/26/Sinnoh_Route_229.png"
+    }
+  ],
+  "teselia": [
+    {
+      "location": "Nuvema Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Nuvema_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/b/bf/Nuvema_Town.png"
+    },
+    {
+      "location": "Accumula Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Accumula_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/84/Accumula_Town_Autumn_BW.png"
+    },
+    {
+      "location": "Striaton City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Striaton_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a8/Striaton_City.png"
+    },
+    {
+      "location": "Nacrene City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Nacrene_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/9d/Nacrene_City_Spring_BW.png"
+    },
+    {
+      "location": "Castelia City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Castelia_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d0/Castelia_City_Map_BW.png"
+    },
+    {
+      "location": "Nimbasa City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Nimbasa_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/57/Nimbasa_City_Spring_BW.png"
+    },
+    {
+      "location": "Driftveil City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Driftveil_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/5/53/Driftveil_City_BW.png"
+    },
+    {
+      "location": "Mistralton City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Mistralton_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/b/bd/Mistralton_City_Spring_B.png"
+    },
+    {
+      "location": "Icirrus City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Icirrus_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d6/Icirrus_City.png"
+    },
+    {
+      "location": "Opelucid City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Opelucid_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/4d/Opelucid_City.png"
+    },
+    {
+      "location": "Lacunosa Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Lacunosa_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/83/Lacunosa_Town.png"
+    },
+    {
+      "location": "Undella Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Undella_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/7b/Undella_Town_BW.png"
+    },
+    {
+      "location": "Black City",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Black_City",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a6/Black_City_and_White_Forest.png"
+    },
+    {
+      "location": "Anville Town",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Anville_Town",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/6f/Anville_Town.png"
+    },
+    {
+      "location": "Unova Route 1",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_1",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/9/94/Unova_Route_1.png"
+    },
+    {
+      "location": "Unova Route 2",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_2",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/4/4e/Unova_Route_2.png"
+    },
+    {
+      "location": "Unova Route 3",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_3",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/aa/Unova_Route_3.png"
+    },
+    {
+      "location": "Unova Route 5",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_5",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/1/15/Unova_Route_5.png"
+    },
+    {
+      "location": "Unova Route 6",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_6",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/e/e3/Unova_Route_6.png"
+    },
+    {
+      "location": "Unova Route 8",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_8",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d3/Unova_Route_8.png"
+    },
+    {
+      "location": "Unova Route 10",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_10",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/a/a5/Unova_Route_10.png"
+    },
+    {
+      "location": "Unova Route 11",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_11",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/7/71/Unova_Route_11.png"
+    },
+    {
+      "location": "Unova Route 13",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_13",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/8/89/Unova_Route_13.png"
+    },
+    {
+      "location": "Unova Route 17",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_17",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d8/Unova_Route_17.png"
+    },
+    {
+      "location": "Unova Route 18",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_18",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/6/6c/Unova_Route_18.png"
+    },
+    {
+      "location": "Unova Route 4",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_4",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/c/c0/Unova_Route_4.png"
+    },
+    {
+      "location": "Unova Route 9",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_9",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/f/fa/Unova_Route_9.png"
+    },
+    {
+      "location": "Unova Route 15",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_15",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/d/d7/Unova_Route_15.png"
+    },
+    {
+      "location": "Unova Route 16",
+      "wikiPageUrl": "https://pokemmo.shoutwiki.com/wiki/Unova_Route_16",
+      "imageUrl": "https://images.shoutwiki.com/pokemmo/2/22/Unova_Route_16.png"
+    }
+  ],
+  "unverified": [
+    {
+      "location": "Saffron City",
+      "region": "kanto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Kanto Route 7",
+      "region": "kanto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Kanto Route 12",
+      "region": "kanto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Kanto Route 14",
+      "region": "kanto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Kanto Route 17",
+      "region": "kanto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Kanto Route 20",
+      "region": "kanto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Kanto Route 21",
+      "region": "kanto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Kanto Route 23",
+      "region": "kanto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Kanto Route 25",
+      "region": "kanto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 26",
+      "region": "johto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 27",
+      "region": "johto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 28",
+      "region": "johto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 29",
+      "region": "johto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Johto Route 30",
+      "region": "johto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 36",
+      "region": "johto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 40",
+      "region": "johto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Johto Route 42",
+      "region": "johto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 47",
+      "region": "johto",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Johto Route 48",
+      "region": "johto",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Fortree City",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Lilycove City",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Pacifidlog Town",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 103",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 105",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 107",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 108",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 111",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 114",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 116",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 119",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 120",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 121",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 122",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 123",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 124",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 125",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 126",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 129",
+      "region": "hoenn",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Hoenn Route 130",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 132",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Hoenn Route 134",
+      "region": "hoenn",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 203",
+      "region": "sinnoh",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Sinnoh Route 204",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 208",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 211",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 213",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 215",
+      "region": "sinnoh",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Sinnoh Route 216",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 217",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 220",
+      "region": "sinnoh",
+      "reason": "página accesible, pero la única imagen disponible es el mapa genérico de la región (no una captura específica de esta ubicación) — descartada para no repetir el bug de imagen incorrecta ya corregido"
+    },
+    {
+      "location": "Sinnoh Route 228",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Sinnoh Route 230",
+      "region": "sinnoh",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Unova Route 7",
+      "region": "teselia",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Unova Route 12",
+      "region": "teselia",
+      "reason": "página accesible pero sin imagen reconocible"
+    },
+    {
+      "location": "Unova Route 14",
+      "region": "teselia",
+      "reason": "página accesible pero sin imagen reconocible"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "topic": "breeding",
+  "title": "Cómo funciona la cría en PokeMMO",
+  "source": "Foro oficial de PokeMMO, hilo \"The New Breeding Guide\" (forums.pokemmo.com/topic/49440), autor Gilan, enlazado como referencia vigente desde el hilo fijado \"Useful Links for Competitive Play\". Extraído y verificado el 2026-07-10 contrastando varios ejemplos numéricos del propio hilo (no es una traducción literal, es un resumen estructurado de la mecánica).",
+  "note": "El sistema de cría de PokeMMO es DISTINTO al de los juegos oficiales de Pokémon — no hay Piedra Lazo (Destiny Knot) ni IVs aleatorias 0-31 en los espacios no heredados. No dar por buena ninguna guía de cría de los juegos oficiales para PokeMMO — ver REGLA DE ORO.",
+  "mechanics": [
+    { "title": "Un huevo por cría", "description": "Ambos progenitores se entregan a la pareja de la guardería y no se devuelven. Cada cruce produce siempre un único huevo." },
+    { "title": "Eclosión por tiempo", "description": "Los huevos eclosionan tras un periodo de tiempo, no hay pasos ni banderas como en los juegos oficiales." },
+    { "title": "Naturaleza — Piedra Everstone", "description": "Dar una Piedra Everstone a un progenitor garantiza al 100% que la cría herede su naturaleza. La piedra se consume junto con los progenitores." },
+    { "title": "Herencia de IVs: 3 directas + 3 promediadas", "description": "3 de los 6 IVs se heredan directamente de los progenitores (al azar, de cualquiera de los dos). Los otros 3 IVs se calculan promediando el valor de ambos progenitores, redondeando hacia abajo. No es azar 0-31 como en los juegos oficiales." },
+    { "title": "Braces — forzar qué IV se hereda", "description": "Un \"brace\" (comprable a un PNJ de la guardería por 10.000 cada uno) se da a un progenitor para forzar que un IV concreto de ese progenitor se herede directamente en la cría. Cada progenitor solo puede llevar un objeto (brace O Everstone, no ambos), así que como máximo 2 de las 3 IVs heredadas directamente se pueden elegir a mano — la tercera siempre es al azar." },
+    { "title": "Habilidad — 80% de la madre", "description": "Si el Pokémon tiene dos habilidades normales posibles, hay un 80% de probabilidad de que la cría herede la habilidad de la madre. Criar por habilidad concreta no suele ser un problema porque la habilidad se puede cambiar después con un objeto consumible." },
+    { "title": "Elegir el sexo de la cría", "description": "Se puede pagar una tarifa para elegir el sexo del huevo. El coste depende de la proporción de sexos de la especie — cuanto más desequilibrada la proporción natural, más caro forzar el sexo minoritario. Ver tabla." },
+    { "title": "Pokémon sin sexo", "description": "Los Pokémon sin sexo de la misma línea evolutiva pueden criar entre sí (p. ej. Magnemite con Magneton). Dos Ditto no pueden criar entre sí, pero Ditto sí puede criar con cualquier otro Pokémon." },
+    { "title": "Poder Oculto (Hidden Power)", "description": "Criar específicamente por el tipo de Poder Oculto apenas tiene sentido en PokeMMO: se puede conseguir cualquier tipo en un Pokémon ya criado usando gemas especiales, sin tener que controlar el IV spread para ello." },
+    { "title": "Movimientos huevo", "description": "Los movimientos huevo se heredan de los progenitores de la forma habitual — ver la guía \"Cómo encontrar cada movimiento\" para tutores y MTs si el movimiento que buscas no es un movimiento huevo." }
+  ],
+  "genderSelectionCosts": [
+    { "femaleChancePercent": 75, "costMale": "9.000", "costFemale": "5.000" },
+    { "femaleChancePercent": 50, "costMale": "5.000", "costFemale": "5.000" },
+    { "femaleChancePercent": 25, "costMale": "5.000", "costFemale": "9.000" },
+    { "femaleChancePercent": 12.5, "costMale": "5.000", "costFemale": "21.000" }
+  ],
+  "shinyBreeding": {
+    "intro": "Cruzar 2 Pokémon shiny entre sí garantiza que la cría también sea shiny (no se puede cruzar un Pokémon normal con uno shiny). Las probabilidades base de shiny con 2 progenitores normales son 1/30.000 más modificadores.",
+    "ivFormula": "La herencia de IVs cambia respecto a la cría normal: 2 IVs se heredan directamente (forzables con brace), otros 2 IVs se heredan directamente pero SIEMPRE se queda con el valor más alto entre los dos progenitores para ese stat, y los últimos 2 IVs se promedian igual que en la cría normal.",
+    "otTransfer": "La cría heredada de 2 shiny no tiene por qué llevar tu propio OT (entrenador original) salvo que la cría sea de la misma línea evolutiva que uno de tus Pokémon shiny con tu OT — en ese caso sí lo hereda."
+  },
+  "costTable": {
+    "note": "Coste MÍNIMO teórico solo en braces/Everstones (más pokeballs para atrapar los 1x31 base), asumiendo que todo sale perfecto a la primera — en la práctica sube bastante más por selección de sexo y intentos fallidos. No incluye una fórmula genérica para calcular el número de 1x31 necesarios para un objetivo intermedio arbitrario — la guía original solo detalla dos ejemplos completos (6x31 sin naturaleza y 6x31 con naturaleza), no una fórmula para cualquier combinación.",
+    "rows": [
+      { "target": "6x31 (con naturaleza)", "cost": "1.800.000" },
+      { "target": "6x31", "cost": "930.000" },
+      { "target": "5x31 (con naturaleza)", "cost": "855.000" },
+      { "target": "5x31", "cost": "480.000" },
+      { "target": "4x31 (con naturaleza)", "cost": "390.000" },
+      { "target": "4x31", "cost": "210.000" },
+      { "target": "3x31 (con naturaleza)", "cost": "165.000" },
+      { "target": "3x31", "cost": "90.000" },
+      { "target": "2x31 (con naturaleza)", "cost": "60.000" },
+      { "target": "2x31", "cost": "30.000" },
+      { "target": "1x31 (con naturaleza)", "cost": "15.000" },
+      { "target": "1x31", "cost": "Solo atraparlo" }
+    ]
+  }
+}

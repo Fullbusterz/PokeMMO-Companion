@@ -1,0 +1,1022 @@
+[
+  {
+    "name": "Zen Mode",
+    "effect": "Changes the Pokémon's form when its HP falls to half of its maximum or lower.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Zen_Mode), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Wonder Skin",
+    "effect": "Makes status moves used against the Pokémon more likely to miss.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Wonder_Skin), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Wonder Guard",
+    "effect": "Blocks attacks that are not super effective against the Pokémon. Outside PvP battles, this protection is limited to absorbing two enemy hits; in PvP, that two-hit restriction does not apply.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Wonder_Guard), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Wind Rider",
+    "effect": "Grants immunity to wind-based moves and raises the Pokémon's Attack when it absorbs one of these moves or when Tailwind is activated on its side of the field. Affected moves include Gust, Whirlwind, Blizzard, Icy Wind, Sandstorm, Twister, Heat Wave, Air Cutter, Tailwind, and Hurricane.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Wind_Rider), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "White Smoke",
+    "effect": "Prevents the Pokémon's stats from being lowered during battle. When a Pokémon with this ability leads the party, the wild encounter rate is also reduced by 15%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/White_Smoke), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Weak Armor",
+    "effect": "When the Pokémon is struck by a physical attack, its Defense is lowered and its Speed is increased.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Weak_Armor), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Water Veil",
+    "effect": "Prevents the Pokémon from being burned during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Water_Veil), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Water Absorb",
+    "effect": "When the Pokémon is hit by a Water-type move, it restores HP instead of taking the move's normal damage.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Water_Absorb), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Volt Absorb",
+    "effect": "When the Pokémon is hit by an Electric-type move, it restores HP instead of suffering the move's normal effect.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Volt_Absorb), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Vital Spirit",
+    "effect": "Prevents the Pokémon from falling asleep. Outside battle, placing a Pokémon with this ability at the front of the party increases the likelihood of encountering higher-level wild Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Vital_Spirit), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Victory Star",
+    "effect": "Increases the accuracy of the Pokémon and its allies.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Victory_Star), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Unnerve",
+    "effect": "Prevents opposing Pokémon from consuming Berries while the Pokémon with this ability remains active in battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Unnerve), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Unburden",
+    "effect": "Raises the Pokémon's Speed after it uses or loses its held item. This Speed increase disappears immediately when the Pokémon leaves battle, including when it switches through moves such as U-turn or Volt Switch.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Unburden), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Unaware",
+    "effect": "Causes the Pokémon to disregard stat changes during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Unaware), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Truant",
+    "effect": "Prevents the Pokémon from attacking on two consecutive turns, forcing it to remain inactive after a turn in which it attacks.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Truant), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Trace",
+    "effect": "When the Pokémon enters battle, it copies the ability of one of its opponents. The copied ability is temporary and is lost after the battle ends.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Trace), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Torrent",
+    "effect": "Increases the damage of the Pokémon's Water-type moves by 50% while its remaining HP is below 25% of its maximum. The boost ends if its HP rises above that threshold or if the Pokémon faints.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Torrent), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Thick Fat",
+    "effect": "Reduces the damage the Pokémon receives from Fire-type and Ice-type moves by half.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Thick_Fat), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Teravolt",
+    "effect": "Allows the Pokémon's moves to ignore opposing abilities that would otherwise stop those moves from connecting or applying their effects.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Teravolt), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Telepathy",
+    "effect": "Protects the Pokémon from attacks used by its allies, allowing it to avoid friendly-fire moves in multi-Pokémon battles.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Telepathy), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Technician",
+    "effect": "Increases the power of moves with a base power of 60 or less by 50%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Technician), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Tangled Feet",
+    "effect": "Raises the Pokémon's evasion while it is confused.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Tangled_Feet), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Synchronize",
+    "effect": "When another Pokémon burns, poisons, or paralyzes the user, Synchronize attempts to inflict the same condition on that Pokémon; it does not reflect sleep or freeze and can activate through Substitute. Outside battle, an unfainted lead Pokémon with Synchronize gives wild Pokémon a 20% chance of having the same Nature, but this does not affect Alpha Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Synchronize), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Swift Swim",
+    "effect": "Doubles the Pokémon's Speed while rain is active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Swift_Swim), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Swarm",
+    "effect": "Increases the power of Bug-type moves by 50% when the Pokémon has less than one-third of its maximum HP. When a Pokémon with Swarm leads the party, the wild encounter rate is increased by 10%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Swarm_(ability)), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Super Luck",
+    "effect": "Raises the Pokémon's critical-hit ratio by one stage.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Super_Luck), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Suction Cups",
+    "effect": "Prevents the Pokémon from being forced out of battle by switching moves. When it leads the party, it also increases the likelihood of getting a bite while fishing.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Suction_Cups), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sturdy",
+    "effect": "If the Pokémon is at full health, an attack that would knock it out instead leaves it with 1 HP.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sturdy), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Storm Drain",
+    "effect": "Draws Water-type moves toward the Pokémon and raises its Special Attack instead of allowing those moves to damage it.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Storm_Drain), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sticky Hold",
+    "effect": "Prevents opposing Pokémon from stealing or removing the Pokémon's held item. When a Pokémon with Sticky Hold leads the party, it also increases the bite rate while fishing.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sticky_Hold), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Stench",
+    "effect": "Gives the Pokémon's attacks a chance to make their target flinch. When a Pokémon with Stench leads the party, the wild encounter rate is reduced by 15%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Stench), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Steadfast",
+    "effect": "Raises the Pokémon's Speed after it flinches.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Steadfast), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Static",
+    "effect": "An opponent that makes physical contact with the Pokémon may become paralyzed. When a Pokémon with Static leads the party, encounters with Electric-type wild Pokémon become more likely.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Static), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Stall",
+    "effect": "Makes the Pokémon act last within its move's normal priority bracket.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Stall), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Speed Boost",
+    "effect": "Raises the Pokémon's Speed by one stage at the end of each turn it remains in battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Speed_Boost), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Soundproof",
+    "effect": "Makes the Pokémon immune to moves classified as sound-based.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Soundproof), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Solid Rock",
+    "effect": "Reduces the damage received from super-effective attacks by 25%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Solid_Rock), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Solar Power",
+    "effect": "During strong sunlight, the Pokémon's Special Attack is increased by 50%, but it loses one-eighth of its maximum HP at the end of each turn.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Solar_Power), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Snow Warning",
+    "effect": "Creates a hailstorm when the Pokémon enters battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Snow_Warning), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Snow Plow",
+    "effect": "Doubles the Pokémon's Speed while hail is active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Snow_Plow), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Snow Cloak",
+    "effect": "Raises the Pokémon's evasion during hail and protects it from hail damage.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Snow_Cloak), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sniper",
+    "effect": "Causes the Pokémon's critical hits to inflict more damage than they normally would.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sniper), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Slow Start",
+    "effect": "Halves the Pokémon's Attack and Speed during its first five turns after entering battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Slow_Start), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Skill Link",
+    "effect": "Causes moves that normally strike between two and five times to always hit the maximum number of times.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Skill_Link), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Simple",
+    "effect": "Doubles the effect that stat-stage increases and decreases have on the Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Simple), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Shield Dust",
+    "effect": "Prevents additional secondary effects from opposing damaging moves, such as flinching or stat reductions.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Shield_Dust), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Shell Armor",
+    "effect": "Prevents opposing attacks from landing critical hits on the Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Shell_Armor), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sheer Force",
+    "effect": "Increases the power of moves with additional effects by 30%, but removes those additional effects.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sheer_Force), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Shed Skin",
+    "effect": "Gives the Pokémon a chance at the end of each turn to recover from a major status condition.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Shed_Skin), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sharpness",
+    "effect": "Increases the power of moves classified as slicing moves.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sharpness), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Shadow Tag",
+    "effect": "Prevents opposing Pokémon from switching or fleeing while the Pokémon with Shadow Tag remains active, although opposing Pokémon with Shadow Tag are not trapped by it.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Shadow_Tag), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Serene Grace",
+    "effect": "Doubles the probability of additional effects occurring when the Pokémon uses a move.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Serene_Grace), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Scrappy",
+    "effect": "Allows the Pokémon's Normal- and Fighting-type moves to hit Ghost-type Pokémon and prevents Intimidate from lowering its Attack.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Scrappy), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sap Sipper",
+    "effect": "Makes the Pokémon immune to Grass-type moves and raises its Attack by one stage when it is targeted by one.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sap_Sipper), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sand Veil",
+    "effect": "Raises the Pokémon's evasion during a sandstorm and protects it from sandstorm damage.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sand_Veil), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sand Stream",
+    "effect": "Creates a sandstorm when the Pokémon enters battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sand_Stream), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sand Rush",
+    "effect": "Doubles the Pokémon's Speed during a sandstorm and protects it from sandstorm damage.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sand_Rush), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Sand Force",
+    "effect": "During a sandstorm, increases the power of the Pokémon's Rock-, Ground-, and Steel-type moves and protects it from sandstorm damage.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Sand_Force), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Run Away",
+    "effect": "Allows the Pokémon to escape successfully from ordinary wild battles regardless of the opposing Pokémon's Speed. It does not provide a direct benefit in trainer battles.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Run_Away), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Rough Skin",
+    "effect": "Damages an attacker whenever it uses a move that makes physical contact with the Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rough_Skin), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Rock Head",
+    "effect": "Prevents the Pokémon from receiving recoil damage from its own recoil-inflicting moves.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rock_Head), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Rivalry",
+    "effect": "Increases the damage dealt to Pokémon of the same gender but reduces the damage dealt to Pokémon of the opposite gender; it has no effect against genderless targets.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rivalry), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Regenerator",
+    "effect": "Restores one-third of the Pokémon's maximum HP whenever it leaves battle by switching out.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Regenerator), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Reckless",
+    "effect": "Increases the power of moves that inflict recoil damage or cause crash damage if they miss.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Reckless), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Reactive Gas",
+    "effect": "Suppresses the effects of other Pokémon's abilities while the Pokémon with Reactive Gas remains active on the battlefield.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Reactive_Gas), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Rattled",
+    "effect": "Raises the Pokémon's Speed by one stage when it is hit by a Bug-, Ghost-, or Dark-type move or affected by Intimidate.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rattled), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Rain Dish",
+    "effect": "Restores one-sixteenth of the Pokémon's maximum HP at the end of each turn while rain is active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Rain_Dish), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Quick Feet",
+    "effect": "Increases the Pokémon's Speed by 50% while it has a major status condition and prevents paralysis from applying its usual Speed reduction.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Quick_Feet), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Pure Power",
+    "effect": "Doubles the Pokémon's Attack stat.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pure_Power), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Protean",
+    "effect": "Changes the Pokémon's type to match the type of the move it is about to use.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Protean), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Pressure",
+    "effect": "Causes opposing Pokémon to consume two PP instead of one when they use a move that targets the Pokémon. When a Pokémon with Pressure leads the party, higher-level wild Pokémon are more likely to appear.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pressure), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Prankster",
+    "effect": "Gives increased priority to the Pokémon's status moves.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Prankster), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Poison Touch",
+    "effect": "Gives contact moves used by the Pokémon a chance to poison their target.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Poison_Touch), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Poison Point",
+    "effect": "An opponent that makes physical contact with the Pokémon may become poisoned.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Poison_Point), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Poison Heal",
+    "effect": "Causes poison to restore the Pokémon's HP at the end of each turn instead of damaging it.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Poison_Heal), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Plus",
+    "effect": "Increases the Pokémon's Special Attack when an allied Pokémon with Plus or Minus is active alongside it.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Plus), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Pickup",
+    "effect": "Gives the Pokémon a chance to obtain an item after a battle if it is not already holding one. It may also collect an item consumed by another Pokémon during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pickup), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Pickpocket",
+    "effect": "Steals an attacker's held item when the attacker makes physical contact, provided the Pokémon with Pickpocket is not already holding an item.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Pickpocket), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Own Tempo",
+    "effect": "Prevents the Pokémon from becoming confused and stops Intimidate from lowering its Attack.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Own_Tempo), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Overgrow",
+    "effect": "Increases the power of the Pokémon's Grass-type moves by 50% when its remaining HP falls below 25% of its maximum.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Overgrow), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Overcoat",
+    "effect": "Protects the Pokémon from damage caused by weather and from powder- or spore-based moves.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Overcoat), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Oblivious",
+    "effect": "Prevents the Pokémon from becoming infatuated or being affected by Taunt and prevents Intimidate from lowering its Attack.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Oblivious), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Adaptability",
+    "effect": "Increases the same-type attack bonus applied to the Pokémon's moves from the usual 1.5× multiplier to 2×.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Adaptability), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Aftermath",
+    "effect": "Damages an attacker when its attack delivers the finishing blow to the Pokémon with Aftermath.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Aftermath), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Analytic",
+    "effect": "Increases the power of the Pokémon's move by 30% when it acts after its target during the turn.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Analytic), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Anger Point",
+    "effect": "When the Pokémon is struck by a critical hit, its Attack is immediately raised to the maximum level of six positive stat stages.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Anger_Point), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Anticipation",
+    "effect": "When the Pokémon enters battle, it shudders to alert its trainer if an opposing Pokémon knows a move that would be super effective against it.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Anticipation), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Arena Trap",
+    "effect": "Prevents opposing grounded Pokémon from switching out while the Pokémon with Arena Trap is active. Outside battle, placing it first in the party increases the wild encounter rate by 10%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Arena_Trap), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Battle Armor",
+    "effect": "Protects the Pokémon from receiving critical hits during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Battle_Armor), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Big Pecks",
+    "effect": "Prevents opposing attacks and effects from lowering the Pokémon's Defense stat.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Big_Pecks), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Chlorophyll",
+    "effect": "Doubles the Pokémon's Speed while harsh sunlight is active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Chlorophyll), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Clear Body",
+    "effect": "Prevents moves and abilities used by other Pokémon from lowering the bearer's stats. It does not stop stat reductions caused by the bearer's own moves, such as Superpower or Shell Smash.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Clear_Body), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Cloud Nine",
+    "effect": "Suppresses every active weather effect while this Pokémon remains in battle, although it does not remove the weather itself or stop its remaining duration from progressing.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Cloud_Nine), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Color Change",
+    "effect": "After the Pokémon is hit by a move, its type changes to match the type of that move.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Color_Change), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Competitive",
+    "effect": "Raises the Pokémon's Special Attack by two stages whenever an opponent lowers one of its stats. It does not activate from self-inflicted or allied stat reductions, and it activates separately for every stat lowered.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Competitive), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Compoundeyes",
+    "effect": "Boosts the Pokémon's accuracy during battle. The wiki does not list an additional overworld effect for this ability.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Compoundeyes), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Contrary",
+    "effect": "Reverses stat-stage changes affecting the Pokémon, so increases become decreases and decreases become increases.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Contrary), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Cursed Body",
+    "effect": "May disable a move that is used against the Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Cursed_Body), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Cute Charm",
+    "effect": "When the Pokémon is hit by a contact move, the attacker has a 15% chance of becoming infatuated, provided the two Pokémon have compatible genders and the attacker is not protected by Oblivious. An infatuated Pokémon has a 50% chance of being unable to attack each turn. When this ability leads the party, encounters with Pokémon of the opposite gender increase by a flat 15%, except for Alpha Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Cute_Charm), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Damp",
+    "effect": "Prevents opposing Pokémon from using moves that cause the user to self-destruct.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Damp), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Defeatist",
+    "effect": "Lowers the Pokémon's offensive stats when its remaining HP falls to half of its maximum or less. The wiki's description does not specify the exact reduction multiplier.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Defeatist), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Defiant",
+    "effect": "Raises the Pokémon's Attack when one of its stats is lowered. The wiki's page does not specify the exact number of stages gained.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Defiant), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Download",
+    "effect": "When the Pokémon enters battle, it raises either Attack or Special Attack according to which defensive stat is lower among its opponents.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Download), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Drizzle",
+    "effect": "Causes rain to begin when the Pokémon enters battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Drizzle), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Drought",
+    "effect": "Causes sunny weather to begin when the Pokémon enters battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Drought), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Dry Skin",
+    "effect": "Makes the Pokémon lose HP during sunny weather, while rain and Water-type attacks restore its HP instead. The wiki's page does not specify the exact healing or damage percentages.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Dry_Skin), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Early Bird",
+    "effect": "Halves the amount of time the Pokémon remains asleep in battle, allowing it to wake up sooner than normal.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Early_Bird), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Effect Spore",
+    "effect": "When the Pokémon is struck by a contact move, there is a chance that the attacker will be poisoned, paralyzed, or put to sleep.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Effect_Spore), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Filter",
+    "effect": "Reduces the damage the Pokémon receives from super-effective attacks. The wiki's page does not state the exact reduction percentage.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Filter), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Flame Body",
+    "effect": "Burns an attacker when it hits the Pokémon with a contact move. When a Pokémon with Flame Body occupies the first party slot, Eggs also require less time to hatch.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Flame_Body), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Flare Boost",
+    "effect": "Increases the Pokémon's Special Attack while it is burned.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Flare_Boost), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Flash Fire",
+    "effect": "Makes the Pokémon immune to Fire-type moves. After it is targeted by one, its own Fire-type attacks are strengthened.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Flash_Fire), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Flower Gift",
+    "effect": "Strengthens the Pokémon's party while sunny weather is active. The wiki's page does not identify which stats are increased or the exact multiplier.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Flower_Gift), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Forecast",
+    "effect": "Changes Castform's form according to the weather currently active in battle. This ability is exclusive to Castform.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Forecast), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Forewarn",
+    "effect": "When the Pokémon enters battle, it reveals the opposing Pokémon's move with the highest base power.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Forewarn), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Friend Guard",
+    "effect": "Reduces the damage received by the Pokémon's allies while the bearer is active in battle. It has no effect outside battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Friend_Guard), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Frisk",
+    "effect": "Reveals whether an opposing Pokémon is holding an item, but does not identify the item itself. In horde battles, it gives repeated notifications when multiple opponents hold items, without indicating which opponent holds each one.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Frisk), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Gluttony",
+    "effect": "Causes held Berries that normally activate at low HP to be consumed when the Pokémon reaches half of its maximum HP instead.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Gluttony), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Guts",
+    "effect": "Increases the Pokémon's Attack by 50% while it has a major status condition and prevents a burn from applying its usual Attack reduction.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Guts), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Harvest",
+    "effect": "Gives the Pokémon a chance to recreate a Berry after that Berry has been consumed during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Harvest), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Healer",
+    "effect": "Gives the Pokémon a chance to cure a status condition affecting one of its allies.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Healer), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Heavy Metal",
+    "effect": "Doubles the Pokémon's effective weight during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Heavy_Metal), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Hyper Cutter",
+    "effect": "Prevents other Pokémon from lowering the bearer's Attack stat. It does not state that self-inflicted Attack reductions are prevented.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Hyper_Cutter), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Illuminate",
+    "effect": "Prevents the Pokémon's accuracy from being lowered and allows its moves to ignore the target's evasion changes. Outside battle, placing it first in the party increases the wild encounter rate by 10%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Illuminate), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Intimidate",
+    "effect": "Lowers each opponent's Attack by one stage when the Pokémon enters battle. Outside battle, placing it first in the party repels some lower-level wild Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Intimidate), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Honey Gather",
+    "effect": "After winning a battle, a Pokémon with this ability may obtain Honey as its held item, provided it is in the first party slot and is not already holding another item.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Honey_Gather), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Huge Power",
+    "effect": "Doubles the Pokémon's Attack stat.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Huge_Power), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Hustle",
+    "effect": "Increases the Pokémon's Attack but reduces its accuracy. Outside battle, placing a Pokémon with Hustle first in the party makes higher-level wild Pokémon more likely to appear.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Hustle), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Ice Body",
+    "effect": "Gradually restores the Pokémon's HP while a hailstorm is active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Ice_Body), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Insomnia",
+    "effect": "Prevents the Pokémon from being put to sleep during battle. Moves that require the user to fall asleep, such as Rest, fail when used by a Pokémon with this ability.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Insomnia), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Iron Fist",
+    "effect": "Increases the damage of punching moves by 20%.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Iron_Fist), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Keen Eye",
+    "effect": "Prevents other Pokémon from lowering the bearer's accuracy. Outside battle, placing a Pokémon with Keen Eye first in the party repels some lower-level wild Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Keen_Eye), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Immunity",
+    "effect": "Prevents the Pokémon from being poisoned during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Immunity), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Infiltrator",
+    "effect": "Allows the Pokémon's attacks to bypass defensive barriers and Substitute when striking a target.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Infiltrator), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Hydration",
+    "effect": "Cures the Pokémon of status conditions while rain is active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Hydration), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Imposter",
+    "effect": "Automatically transforms the Pokémon into the opposing Pokémon when it enters battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Imposter), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Iron Barbs",
+    "effect": "Damages an opposing Pokémon whenever it makes physical contact with the Pokémon that has this ability.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Iron_Barbs), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Justified",
+    "effect": "Raises the Pokémon's Attack by one stage each time it is hit by a Dark-type move.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Justified), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Klutz",
+    "effect": "Prevents the Pokémon from using the effects of its held item.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Klutz), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Illusion",
+    "effect": "Allows the Pokémon to disguise itself as another Pokémon during battle. The retrievable wiki text does not provide more detailed mechanics about how the disguise is selected or broken.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Illusion), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Leaf Guard",
+    "effect": "Protects the Pokémon from being afflicted with status conditions while sunny weather is active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Leaf_Guard), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Levitate",
+    "effect": "Makes the Pokémon immune to damaging Ground-type moves and protects it from Spikes, Toxic Spikes, and Arena Trap. These protections are disabled during Gravity or when the Pokémon is grounded by an Iron Ball, Ingrain, or Smack Down.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Levitate), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Lightningrod",
+    "effect": "Makes the Pokémon immune to Electric-type attacks and raises its Special Attack when it is targeted by one.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Lightningrod), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Limber",
+    "effect": "Prevents the Pokémon from becoming paralyzed.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Limber), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Liquid Ooze",
+    "effect": "Causes opponents using HP-draining moves against the Pokémon to take damage instead of recovering HP normally.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Liquid_Ooze), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Magma Armor",
+    "effect": "Prevents the Pokémon from being frozen. When a Pokémon with Magma Armor is placed first in the party, it also reduces the time required for Eggs to hatch.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Magma_Armor), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Magnet Pull",
+    "effect": "Prevents opposing Steel-type Pokémon from switching out while the Pokémon with this ability remains active.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Magnet_Pull), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Marvel Scale",
+    "effect": "Increases the Pokémon's Defense by 50% while it is affected by a status condition.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Marvel_Scale), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Minus",
+    "effect": "Raises the Pokémon's Special Attack when another active Pokémon has either Plus or Minus.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Minus), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Mold Breaker",
+    "effect": "Allows the Pokémon's moves to ignore opposing abilities that would otherwise cause those moves to fail.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Mold_Breaker), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Moody",
+    "effect": "At the end of each turn, randomly raises one of the Pokémon's stats by two stages and lowers a different stat by one stage. It has no effect outside battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Moody), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Motor Drive",
+    "effect": "Makes the Pokémon immune to damaging Electric-type moves and raises its Speed when it is hit by one.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Motor_Drive), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Moxie",
+    "effect": "Raises the Pokémon's Attack after it knocks out another Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Moxie), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Multiscale",
+    "effect": "Reduces the damage received from an attack by half when the Pokémon is at full HP. It has no effect outside battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Multiscale), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Multitype",
+    "effect": "Changes Arceus's type to correspond to the Plate it is holding. The wiki identifies this as an ability exclusive to Arceus.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Multitype), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Natural Cure",
+    "effect": "Removes the Pokémon's status condition whenever it switches out during battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Natural_Cure), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Mummy",
+    "effect": "Replaces the ability of a Pokémon that makes physical contact with the bearer, giving the attacker Mummy. The recoverable wiki text confirms this interaction through Cofagrigus, although the dedicated ability page itself was not retrievable.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Mummy), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Inner Focus",
+    "effect": "Prevents the Pokémon from flinching. However, moves or abilities that ignore other abilities can bypass this protection.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Inner_Focus), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "No Guard",
+    "effect": "Ensures that moves used by the Pokémon and moves directed against it successfully connect. Outside battle, placing a Pokémon with No Guard first in the party also improves the effectiveness of lure encounters.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/No_Guard), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Heatproof",
+    "effect": "Halves the residual damage the Pokémon takes from burn, reducing the HP loss to 1/32 of its maximum HP per turn instead of the usual 1/16. This was confirmed on the wiki's general Status Effect page rather than a dedicated Heatproof page, so any additional effects (e.g. reduced Fire-type damage taken, as in the official games) are not confirmed here.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Status_Effect), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Magic Bounce",
+    "effect": "Reflects certain effects back at the Pokémon that caused them, confirmed specifically for entry hazards — Spikes, Stealth Rock, Sticky Web, and Toxic Spikes. These hazards can only be reflected once per side, by the leftmost Pokémon affected by Magic Bounce or Magic Coat. This was confirmed on the wiki's Magic Coat (move) page rather than a dedicated Magic Bounce page, so whether it also reflects other status moves (as in the official games) is not confirmed here.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Magic_Coat), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Magic Guard",
+    "effect": "Prevents the Pokémon from losing HP to burn damage, though burn's Attack reduction still applies. This was confirmed on the wiki's general Status Effect page rather than a dedicated Magic Guard page, so its full list of protected indirect-damage sources (e.g. Sandstorm, Life Orb, entry hazards, as in the official games) is not confirmed here.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Status_Effect), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Light Metal",
+    "effect": "Halves the Pokémon's effective weight in battle.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Light_Metal), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Normalize",
+    "effect": "Changes all of the Pokémon's moves to Normal type.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Normalize), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Tinted Lens",
+    "effect": "Increases the power of the Pokémon's 'not very effective' moves.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Tinted_Lens), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Blaze",
+    "effect": "Increases the power of the Pokémon's Fire-type moves by 50% when its remaining HP falls below 25% of its maximum. The boost ends if its HP rises above that threshold or if the Pokémon faints. Exclusive to Fire-type starter Pokémon.",
+    "source": "PokeMMO Wiki (https://pokemmo.shoutwiki.com/wiki/Blaze), extraido 2026-07-10",
+    "verified": true
+  },
+  {
+    "name": "Air Lock",
+    "effect": "Suppresses every active weather effect while this Pokémon remains in battle, although it does not remove the weather itself or stop its remaining duration from progressing. Functionally identical to Cloud Nine. (sin verificar contra PokeMMO Wiki (sin página localizable) — dato de Pokémon oficial Gen 5, por instrucción de Ferran)",
+    "source": "Pokémon oficial Gen 5 — sin página localizable en PokeMMO Wiki tras múltiples variantes de URL, extraido 2026-07-10",
+    "verified": false
+  },
+  {
+    "name": "Bad Dreams",
+    "effect": "Damages a sleeping opponent for 1/8 of its maximum HP at the end of each turn while it remains asleep. (sin verificar contra PokeMMO Wiki (sin página localizable) — dato de Pokémon oficial Gen 5, por instrucción de Ferran)",
+    "source": "Pokémon oficial Gen 5 — sin página localizable en PokeMMO Wiki tras múltiples variantes de URL, extraido 2026-07-10",
+    "verified": false
+  },
+  {
+    "name": "Toxic Boost",
+    "effect": "Increases the Pokémon's Attack by 50% while it is poisoned. (sin verificar contra PokeMMO Wiki (sin página localizable) — dato de Pokémon oficial Gen 5, por instrucción de Ferran)",
+    "source": "Pokémon oficial Gen 5 — sin página localizable en PokeMMO Wiki tras múltiples variantes de URL, extraido 2026-07-10",
+    "verified": false
+  },
+  {
+    "name": "Turboblaze",
+    "effect": "Allows the Pokémon's moves to ignore opposing abilities that would otherwise stop those moves from connecting or applying their effects. Functionally identical to Teravolt. (sin verificar contra PokeMMO Wiki (sin página localizable) — dato de Pokémon oficial Gen 5, por instrucción de Ferran)",
+    "source": "Pokémon oficial Gen 5 — sin página localizable en PokeMMO Wiki tras múltiples variantes de URL, extraido 2026-07-10",
+    "verified": false
+  }
+]

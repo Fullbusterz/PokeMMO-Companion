@@ -1,0 +1,4364 @@
+{
+  "region": "kanto",
+  "title": "Kanto - guia completa (objetos y ruta)",
+  "source": "Guia de farmeo seviichamp.blogspot.com (https://seviichamp.blogspot.com/2022/12/pokemmo-farm-guide-walkthrough-kanto.html), basada en el post original de MightyBoxer en el foro oficial de PokeMMO. Extraido y reestructurado a JSON el 2026-07-05. Actualizada por el autor original el 1 de agosto de 2022. Enlaces de imagen de Gyazo incluidos en la guia original (capturas de pantalla de la ubicacion exacta de cada objeto).",
+  "note": "Los objetos en morado en la guia original no existian en los juegos originales de Pokemon (son exclusivos de PokeMMO) - no distinguidos en este dataset, ver guia original si hace falta el detalle. Los nombres de lugar (location) se mantienen SIEMPRE en ingles - PokeMMO no traduce ubicaciones al espanol, son las mismas para toda la comunidad independientemente del idioma del cliente (aplicar el mismo criterio en las demas regiones, no asumir traduccion oficial de los juegos). Toda esta guia (pasos y nombres) se muestra en ingles, el idioma original de la fuente - sin mezclar frases en espanol dentro del contenido en ingles.",
+  "steps": [
+    {
+      "order": 1,
+      "location": "PALLET TOWN",
+      "steps": [
+        "Go down the stairs and exit the house.",
+        "Go north in the grass.",
+        "Pick your starter pokemon and go south.",
+        "Fight your rival and exit the house. Go north to route 1."
+      ],
+      "items": [],
+      "stepsEs": [
+        "Baja las escaleras y sal de la casa.",
+        "Avanza hacia el norte por la hierba.",
+        "Recoge tu Pokémon inicial y ve al sur.",
+        "Lucha contra tu rival y sal de la casa. Ve al norte hacia Route 1."
+      ]
+    },
+    {
+      "order": 2,
+      "location": "ROUTE 1",
+      "steps": [
+        "Talk to the first person that you see to get a potion.",
+        "Go north to viridian city."
+      ],
+      "items": [
+        {
+          "name": "potion",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Habla con la primera persona que veas para conseguir una Poción.",
+        "Ve al norte hacia Viridian City."
+      ]
+    },
+    {
+      "order": 3,
+      "location": "VIRIDIAN CITY",
+      "steps": [
+        "Go north east and enter the pokemart.",
+        "You will get the oak'sparcel.",
+        "Exit the house and go south to route 1.",
+        "Go south to pallet town."
+      ],
+      "items": [
+        {
+          "name": "oak'sparcel",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al noreste y entra en la Tienda Pokémon.",
+        "Recibirás el Paquete de Oak.",
+        "Sal de la casa y ve al sur hacia Route 1.",
+        "Ve al sur hacia Pallet Town."
+      ]
+    },
+    {
+      "order": 4,
+      "location": "PALLET TOWN",
+      "steps": [
+        "Go south east and enter the laboratory.",
+        "Talk to professor oak and you will get a pokedex.",
+        "You will also get x5 pokeball. Exit the laboratory and enter the house north.",
+        "Talk to the girl to get a townmap.",
+        "Exit the house and go north to route 1. Go north to viridian city.",
+        "Go north to route 2.",
+        "Go north to viridian forest."
+      ],
+      "items": [
+        {
+          "name": "pokedex",
+          "hidden": false
+        },
+        {
+          "name": "townmap",
+          "hidden": false
+        },
+        {
+          "name": "pokeball",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sureste y entra en el laboratorio.",
+        "Habla con el Profesor Oak y recibirás una Pokédex.",
+        "También recibirás x5 Poké Balls. Sal del laboratorio y entra en la casa del norte.",
+        "Habla con la chica para conseguir un Mapa.",
+        "Sal de la casa y ve al norte hacia Route 1. Ve al norte hacia Viridian City.",
+        "Ve al norte hacia Route 2.",
+        "Ve al norte hacia Viridian Forest."
+      ]
+    },
+    {
+      "order": 5,
+      "location": "VIRIDIAN FOREST",
+      "steps": [
+        "Pick a hidden antidote in the tree.",
+        "Go west all the way and go north all the way.",
+        "Pick a pokeball in the grass and go south all the way. Go east all the way and pick a superpotion in the grass.",
+        "Go north and avoid the trainer by going in the grass. Go north and avoid another trainer.",
+        "Go north and pick a antidote.",
+        "Go west and then go south.",
+        "Follow the path and avoid a trainer. Go south and pick a potion.",
+        "Follow the path and fight a trainer.",
+        "Pick a hidden potion in the grass.",
+        "Go north to route 2. Go north to pewter city."
+      ],
+      "items": [
+        {
+          "name": "antidote",
+          "hidden": true,
+          "image": "https://gyazo.com/1f1187acd3cd07ed7a626cd34d7d1385"
+        },
+        {
+          "name": "pokeball",
+          "hidden": false
+        },
+        {
+          "name": "superpotion",
+          "hidden": false
+        },
+        {
+          "name": "antidote",
+          "hidden": false
+        },
+        {
+          "name": "potion",
+          "hidden": false
+        },
+        {
+          "name": "potion",
+          "hidden": true,
+          "image": "https://gyazo.com/c3d1425d2aa54c36d4edfbaac712fda0"
+        }
+      ],
+      "stepsEs": [
+        "Recoge un Antídoto oculto en el árbol.",
+        "Ve al oeste hasta el final y ve al norte hasta el final.",
+        "Recoge una Poké Ball en la hierba y ve al sur hasta el final. Ve al este hasta el final y recoge una Superpoción en la hierba.",
+        "Ve al norte y evita al entrenador metiéndose en la hierba. Ve al norte y evita a otro entrenador.",
+        "Ve al norte y recoge un Antídoto.",
+        "Ve al oeste y después ve al sur.",
+        "Sigue el camino y evita a un entrenador. Ve al sur y recoge una Poción.",
+        "Sigue el camino y lucha contra un entrenador.",
+        "Recoge una Poción oculta en la hierba.",
+        "Ve al norte hacia Route 2. Ve al norte hacia Pewter City."
+      ]
+    },
+    {
+      "order": 6,
+      "location": "PEWTER CITY",
+      "steps": [
+        "Go north west all the way and pick a hidden pokeball.",
+        "Go south and enter the gym. Avoid the trainer and beat the gym leader to get a tm-rocktomb. Exit the gym and go east all the way.",
+        "Talk to the guy with the glasses to get the runningshoes.",
+        "Go east to route 3."
+      ],
+      "items": [
+        {
+          "name": "pokeball",
+          "hidden": true,
+          "image": "https://gyazo.com/ebe16148994769b0f48d6361c2d0d202"
+        },
+        {
+          "name": "tm-rocktomb",
+          "hidden": false
+        },
+        {
+          "name": "runningshoes",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al noroeste hasta el final y recoge una Poké Ball oculta.",
+        "Ve al sur y entra en el gimnasio. Evita al entrenador y vence al líder del gimnasio para conseguir la MT-Tumba Rocas. Sal del gimnasio y ve al este hasta el final.",
+        "Habla con el chico con gafas para conseguir las Deportivas.",
+        "Ve al este hacia Route 3."
+      ]
+    },
+    {
+      "order": 7,
+      "location": "ROUTE 3",
+      "steps": [
+        "Go east and avoid the girl trainer.",
+        "Fight the bug trainer.",
+        "Avoid the trainer with a blue hat.",
+        "Fight another bug trainer. Jump south and get a oranberry.",
+        "Remember the design of that hole.",
+        "Those holes have a hidden berry. Avoid the trainer with a blue hat and go back to the 2nd bug trainer. Avoid the girl trainer and fight the 3rd bug trainer.",
+        "Go east and avoid the girl trainer. Follow the path until you get to a pokecenter."
+      ],
+      "items": [
+        {
+          "name": "oranberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y evita a la entrenadora.",
+        "Lucha contra el cazabichos.",
+        "Evita al entrenador con sombrero azul.",
+        "Lucha contra otro cazabichos. Salta hacia el sur y consigue una Baya Aranja.",
+        "Recuerda el diseño de ese agujero.",
+        "Esos agujeros contienen una baya oculta. Evita al entrenador del sombrero azul y vuelve junto al segundo cazabichos. Evita a la entrenadora y lucha contra el tercer cazabichos.",
+        "Ve al este y evita a la entrenadora. Sigue el camino hasta llegar a un Centro Pokémon."
+      ]
+    },
+    {
+      "order": 8,
+      "location": "ROUTE 4",
+      "steps": [
+        "Pick a persimberry west of the pokecenter.",
+        "If you enter the pokecenter and talk to the guy north west you can buy a magikarp for 500$. Now enter the cave."
+      ],
+      "items": [
+        {
+          "name": "persimberry",
+          "hidden": false
+        },
+        {
+          "name": "magikarp",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Recoge una Baya Caquic al oeste del Centro Pokémon.",
+        "Entra en el Centro Pokémon y habla con el chico del noroeste para comprar un Magikarp por 500 $. Después, entra en la cueva."
+      ]
+    },
+    {
+      "order": 9,
+      "location": "MT.MOON",
+      "steps": [
+        "Go south west and pick a TM-WaterGun.",
+        "Go north west and pick a parlyzheal while avoiding the trainer. Go north east and go down the stairs while avoiding the girl trainer.",
+        "Go south all the way and pick a hidden tinymushroom in a rock. Go west all the way and pick a hidden tinymushroom in a rock.",
+        "Also pick a hidden bigmushroom in a rock. Go down the stairs and go east to pick a silkscarf while avoiding the trainer.",
+        "Go up the stairs.",
+        "Follow the path and go up the stairs. Go south and pick a potion while avoiding the trainer.",
+        "Go south east and pick a rarecandy. Go north and pick a escaperope while avoiding the bug trainer.",
+        "Go north west and go down the stairs while avoiding the girl trainer. Pick a hidden tinymushroom in a rock and go down the stairs.",
+        "Pick a TM-Assurance and pick a hidden ether in a rock while avoiding the trainer. Go up the stairs.",
+        "Go up the stairs.",
+        "Go north west and pick a moonstone while avoiding the 2 trainers.",
+        "Go down the stairs. Pick a hidden bigmushroom in a rock.",
+        "Go east and go down the stairs. Go north and pick a revive.",
+        "Go south east and avoid the rocket trainer. Follow the path and fight a rocket trainer.",
+        "Pick a hidden moonstone in a rock.",
+        "Go north and fight a trainer. Pick a domefossil or a helixfossil.",
+        "You can only pick one and go west to pick a antidote. Go up the stairs and pick a hidden tinymushroom in a rock.",
+        "Go up the stairs."
+      ],
+      "items": [
+        {
+          "name": "tm-watergun",
+          "hidden": false
+        },
+        {
+          "name": "parlyzheal",
+          "hidden": false
+        },
+        {
+          "name": "tinymushroom",
+          "hidden": true,
+          "image": "https://gyazo.com/134241d88520339c438b1dad7ab40748"
+        },
+        {
+          "name": "tinymushroom",
+          "hidden": true,
+          "image": "https://gyazo.com/0a9d57ed560ca7576b3f2422d9ced007"
+        },
+        {
+          "name": "bigmushroom",
+          "hidden": true,
+          "image": "https://gyazo.com/5fdc0d51c9516a640e771844e69a096e"
+        },
+        {
+          "name": "silkscarf",
+          "hidden": false
+        },
+        {
+          "name": "potion",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": false
+        },
+        {
+          "name": "escaperope",
+          "hidden": false
+        },
+        {
+          "name": "tinymushroom",
+          "hidden": true,
+          "image": "https://gyazo.com/34fd05c62e7abe15e81b8037400c0b10"
+        },
+        {
+          "name": "tm-assurance",
+          "hidden": false
+        },
+        {
+          "name": "ether",
+          "hidden": true,
+          "image": "https://gyazo.com/753626e4be2d737cd5bb864a1bb39dd5"
+        },
+        {
+          "name": "moonstone",
+          "hidden": false
+        },
+        {
+          "name": "bigmushroom",
+          "hidden": true,
+          "image": "https://gyazo.com/5c7f3b2a02a5515517f5e111ca85fe3e"
+        },
+        {
+          "name": "revive",
+          "hidden": false
+        },
+        {
+          "name": "moonstone",
+          "hidden": true,
+          "image": "https://gyazo.com/f7892b17aaa2ee17190c705efd5a9321"
+        },
+        {
+          "name": "domefossil",
+          "hidden": false
+        },
+        {
+          "name": "antidote",
+          "hidden": false
+        },
+        {
+          "name": "tinymushroom",
+          "hidden": true,
+          "image": "https://gyazo.com/8831aec43e98d0f426e139aa3f816e0f"
+        },
+        {
+          "name": "helixfossil",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al suroeste y recoge la MT-Pistola Agua.",
+        "Ve al noroeste y recoge un Antiparalizador mientras evitas al entrenador. Ve al noreste y baja las escaleras mientras evitas a la entrenadora.",
+        "Ve al sur hasta el final y recoge una Miniseta oculto en una roca. Ve al oeste hasta el final y recoge una Miniseta oculto en una roca.",
+        "También recoge un Seta Grande oculto en una roca. Baja las escaleras y ve al este para recoger un Pañuelo de Seda mientras evitas al entrenador.",
+        "Sube las escaleras.",
+        "Sigue el camino y sube las escaleras. Ve al sur y recoge una Poción mientras evitas al entrenador.",
+        "Ve al sureste y recoge un Caramelo Raro. Ve al norte y recoge una Cuerda Huida mientras evitas al cazabichos.",
+        "Ve al noroeste y baja las escaleras mientras evitas a la entrenadora. Recoge una Miniseta oculto en una roca y baja las escaleras.",
+        "Recoge la MT-Buena Baza y recoge un Éter oculto en una roca mientras evitas al entrenador. Sube las escaleras.",
+        "Sube las escaleras.",
+        "Ve al noroeste y recoge una Piedra Lunar mientras evitas a los 2 entrenadores.",
+        "Baja las escaleras. Recoge un Seta Grande oculto en una roca.",
+        "Ve al este y baja las escaleras. Ve al norte y recoge un Revivir.",
+        "Ve al sureste y evita al entrenador del Team Rocket. Sigue el camino y lucha contra un entrenador del Team Rocket.",
+        "Recoge una Piedra Lunar oculta en una roca.",
+        "Ve al norte y lucha contra un entrenador. Recoge un Fósil Domo o un Fósil Hélix.",
+        "Solo puedes elegir uno. Ve al oeste para recoger un Antídoto. Sube las escaleras y recoge una Miniseta oculto en una roca.",
+        "Sube las escaleras."
+      ]
+    },
+    {
+      "order": 10,
+      "location": "ROUTE 4",
+      "steps": [
+        "Go east and pick a hidden greatball near the fighters.",
+        "Talk to the first fighter and say yes to get a TM-MegaPunch. Talk to the other fighter and say yes to get a TM-MegaKick.",
+        "Go south east and pick a razzberry.",
+        "Go north and pick a TM-MegaDrain. Go east to cerulean city."
+      ],
+      "items": [
+        {
+          "name": "greatball",
+          "hidden": true,
+          "image": "https://gyazo.com/a6b8dada90a202b5f74ec9737b118637"
+        },
+        {
+          "name": "tm-megapunch",
+          "hidden": false
+        },
+        {
+          "name": "tm-megakick",
+          "hidden": false
+        },
+        {
+          "name": "razzberry",
+          "hidden": false
+        },
+        {
+          "name": "tm-megadrain",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y recoge una Super Ball oculta cerca de los luchadores.",
+        "Habla con el primer luchador y di que sí para conseguir la MT-Megapuño. Habla con el otro luchador y di que sí para conseguir la MT-Megapatada.",
+        "Ve al sureste y recoge una Baya Frambu.",
+        "Ve al norte y recoge la MT-Megaagotar. Ve al este hacia Cerulean City."
+      ]
+    },
+    {
+      "order": 11,
+      "location": "CERULEAN CITY",
+      "steps": [
+        "Go in the house north west and go in the door north.",
+        "Pick a hidden rarecandy and exit the house. Go in the house east.",
+        "Talk to the guy and say yes to get a powderjar.",
+        "Exit the house. If you go in the house west of the pokecenter you can trade your poliwhirl for a jynx by talking to the guy. Now go north to fight your rival.",
+        "Go north to route 24."
+      ],
+      "items": [
+        {
+          "name": "rarecandy",
+          "hidden": true,
+          "image": "https://gyazo.com/21383c0a4574210e9324bbe86fca938e"
+        },
+        {
+          "name": "powderjar",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en la casa del noroeste y entra por la puerta del norte.",
+        "Recoge un Caramelo Raro oculto y sal de la casa. Entra en la casa del este.",
+        "Habla con el chico y di que sí para conseguir un Tarro de Polvos.",
+        "Sal de la casa. En la casa al oeste del Centro Pokémon puedes intercambiar tu Poliwhirl por un Jynx hablando con el chico. Después, ve al norte para luchar contra tu rival.",
+        "Ve al norte hacia Route 24."
+      ]
+    },
+    {
+      "order": 12,
+      "location": "ROUTE 24",
+      "steps": [
+        "Fight the 5 trainers.",
+        "Go north and the 6th trainer will give you a nugget.",
+        "Beat him and go north west to pick a TM-BeatUp. Go east and pick a pechaberry near the grass.",
+        "Go east to route 25."
+      ],
+      "items": [
+        {
+          "name": "tm-beatup",
+          "hidden": false
+        },
+        {
+          "name": "pechaberry",
+          "hidden": false
+        },
+        {
+          "name": "nugget",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Lucha contra los 5 entrenadores.",
+        "Ve al norte y el sexto entrenador te dará una Pepita.",
+        "Véncelo y ve al noroeste para recoger la MT-Paliza. Ve al este y recoge una Baya Meloc cerca de la hierba.",
+        "Ve al este hacia Route 25."
+      ]
+    },
+    {
+      "order": 13,
+      "location": "ROUTE 25",
+      "steps": [
+        "Pick a hidden leppaberry near the first hiker.",
+        "Avoid the first hiker and the guy with a blue hat.",
+        "Fight the 2nd hiker. Avoid the next trainer with a blue hat.",
+        "Fight the next trainer.",
+        "Avoid the hiker and fight the guy in green. Go east to pick a oranberry.",
+        "Avoid the trainer with a blue hat and pick a blukberry.",
+        "Fight the girl trainer. Go east and pick a hidden ether.",
+        "Enter the house.",
+        "Talk to the pokemon and say yes. Click on the computer and talk to bill to get a s.s.ticket.",
+        "Run to cerulean city."
+      ],
+      "items": [
+        {
+          "name": "leppaberry",
+          "hidden": true,
+          "image": "https://gyazo.com/c39bcee469825ad96b8dd9bbb03289c8"
+        },
+        {
+          "name": "oranberry",
+          "hidden": false
+        },
+        {
+          "name": "blukberry",
+          "hidden": false
+        },
+        {
+          "name": "ether",
+          "hidden": true,
+          "image": "https://gyazo.com/bc5f02b47cc68250cd0edc7fc8908434"
+        }
+      ],
+      "stepsEs": [
+        "Recoge una Baya Zanama oculta cerca del primer montañero.",
+        "Evita al primer montañero y al chico del sombrero azul.",
+        "Lucha contra el segundo montañero. Evita al siguiente entrenador con sombrero azul.",
+        "Lucha contra el siguiente entrenador.",
+        "Evita al montañero y lucha contra el chico de verde. Ve al este para recoger una Baya Aranja.",
+        "Evita al entrenador con sombrero azul y recoge una Baya Oram.",
+        "Lucha contra la entrenadora. Ve al este y recoge un Éter oculto.",
+        "Entra en la casa.",
+        "Habla con el Pokémon y di que sí. Haz clic en el ordenador y habla con Bill para conseguir un Ticket Barco.",
+        "Corre a Cerulean City."
+      ]
+    },
+    {
+      "order": 14,
+      "location": "CERULEAN CITY",
+      "steps": [
+        "Go east of the pokecenter and enter the gym.",
+        "Avoid the first trainer and talk to the gym leader on her right side to avoid the 2nd trainer. Beat the gym leader and get a tm-waterpulse.",
+        "Exit the gym and go in the house north.",
+        "Go in the door north.",
+        "Beat the rocket trainer to get a tm-dig. Go south to route 5.",
+        "Enter the small house south east.",
+        "If you want you can trade your nidoran male for a nidoran female by talking to the girl. Now go down the stairs."
+      ],
+      "items": [
+        {
+          "name": "tm-waterpulse",
+          "hidden": false
+        },
+        {
+          "name": "tm-dig",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este del Centro Pokémon y entra en el gimnasio.",
+        "Evita al primer entrenador y habla con la líder del gimnasio desde su lado derecho para esquivar al segundo. Vence a la líder y consigue la MT-Hidropulso.",
+        "Sal del gimnasio y entra en la casa del norte.",
+        "Entra por la puerta del norte.",
+        "Vence al entrenador del Team Rocket para conseguir la MT-Excavar. Ve al sur hacia Route 5.",
+        "Entra en la casa pequeña del sureste.",
+        "Si quieres puedes intercambiar tu Nidoran macho por un Nidoran hembra hablando con la chica. Ahora baja las escaleras."
+      ]
+    },
+    {
+      "order": 15,
+      "location": "UNDERGROUND PATH",
+      "steps": [
+        "Pick a hidden antidote near the stairs.",
+        "Pick a hidden superpotion near the first blue line.",
+        "Pick a hidden awakening on the floor that is blue. Pick a hidden potion near the first red line.",
+        "Pick a hidden ether on the floor that is red.",
+        "Pick a hidden iceheal after the last red line. Pick a hidden burnheal near the stairs.",
+        "Go up the stairs and exit the house."
+      ],
+      "items": [
+        {
+          "name": "antidote",
+          "hidden": true,
+          "image": "https://gyazo.com/35664dbfeba19fbb1b5aa92f41913460"
+        },
+        {
+          "name": "superpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/306bef18613300908f476e569fff9a03"
+        },
+        {
+          "name": "awakening",
+          "hidden": true,
+          "image": "https://gyazo.com/9423cdc66ad3c674ae55165c397a0ddd"
+        },
+        {
+          "name": "potion",
+          "hidden": true,
+          "image": "https://gyazo.com/a479fa395554cf37ead7ec135e6d2c75"
+        },
+        {
+          "name": "ether",
+          "hidden": true,
+          "image": "https://gyazo.com/fa7d4a5b36184267d2471d569877ee26"
+        },
+        {
+          "name": "iceheal",
+          "hidden": true,
+          "image": "https://gyazo.com/f5fde384aad18f21415bb623d5623601"
+        },
+        {
+          "name": "burnheal",
+          "hidden": true,
+          "image": "https://gyazo.com/2ad9b633f016563a272bffa75be74836"
+        }
+      ],
+      "stepsEs": [
+        "Recoge un Antídoto oculto cerca de las escaleras.",
+        "Recoge una Superpoción oculta cerca de la primera línea azul.",
+        "Recoge un Despertar oculto sobre la zona azul del suelo. Recoge una Poción oculta cerca de la primera línea roja.",
+        "Recoge un Éter oculto sobre la zona roja del suelo.",
+        "Recoge un Antihielo oculto después de la última línea roja. Recoge un Antiquemar oculto cerca de las escaleras.",
+        "Sube las escaleras y sal de la casa."
+      ]
+    },
+    {
+      "order": 16,
+      "location": "ROUTE 6",
+      "steps": [
+        "Go north west and pick a sitrusberry.",
+        "Go north east and pick a hidden rarecandy.",
+        "Go south and avoid the 2 trainers. Go south and avoid the bug trainer by going in the grass.",
+        "Go south and avoid the girl trainer. Fight only the guy trainer by making him see you from the western most position.",
+        "Go south to vermilion city."
+      ],
+      "items": [
+        {
+          "name": "sitrusberry",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": true,
+          "image": "https://gyazo.com/dfd90e6c2dc5cf5b90394ca584e9a289"
+        }
+      ],
+      "stepsEs": [
+        "Ve al noroeste y recoge una Baya Zidra.",
+        "Ve al noreste y recoge un Caramelo Raro oculto.",
+        "Ve al sur y evita a los 2 entrenadores. Ve al sur y evita al cazabichos metiéndose en la hierba.",
+        "Ve al sur y evita a la entrenadora. Lucha solo contra el entrenador, haciendo que te vea desde la posición situada más al oeste.",
+        "Ve al sur hacia Vermilion City."
+      ]
+    },
+    {
+      "order": 17,
+      "location": "VERMILION CITY",
+      "steps": [
+        "Pick a hidden superpotion near the pokecenter.",
+        "Go in the pokecenter and talk to the girl in red to get a vsseeker.",
+        "Exit the house. Go in the house west of the pokecenter and talk to the fisher.",
+        "Say yes to get a oldrod. Go in the house south west of the pokecenter and talk to the guy with a hat.",
+        "Say yes to get a bikevoucher.",
+        "Exit the house. If you go in the house west of the pokemart you can trade your spearow for a farfetchd by talking to the girl. Go south from the pokemart.",
+        "Go west all the way and go south to the next area.",
+        "Go south and enter the boat."
+      ],
+      "items": [
+        {
+          "name": "superpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/c35d624ed6c217c17006f70a4ab81fa8"
+        },
+        {
+          "name": "vsseeker",
+          "hidden": false
+        },
+        {
+          "name": "oldrod",
+          "hidden": false
+        },
+        {
+          "name": "bikevoucher",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Recoge una Superpoción oculta cerca del Centro Pokémon.",
+        "Entra en el Centro Pokémon y habla con la chica de rojo para conseguir un Buscapelea.",
+        "Sal de la casa. Entra en la casa al oeste del Centro Pokémon y habla con el pescador.",
+        "Di que sí para conseguir una Caña Vieja. Entra en la casa al suroeste del Centro Pokémon y habla con el chico del sombrero.",
+        "Di que sí para conseguir un Bono Bici.",
+        "Sal de la casa. En la casa al oeste de la Tienda Pokémon puedes intercambiar tu Spearow por un Farfetch’d hablando con la chica. Ve al sur desde la Tienda Pokémon.",
+        "Ve al oeste hasta el final y ve al sur hacia la siguiente zona.",
+        "Ve al sur y entra en el barco."
+      ]
+    },
+    {
+      "order": 18,
+      "location": "S.S. ANNE",
+      "steps": [
+        "Go south east and go down the stairs.",
+        "Pick a hidden superpotion in a trash can. Go in the first room and get a superpotion.",
+        "Exit the room.",
+        "Avoid the 2nd room. Go in the 3rd room and fight a sailor.",
+        "Pick a ether and exit the room. Go in the 4th room and pick a TM-PayDay while avoiding the trainer.",
+        "Exit the room.",
+        "Avoid the last room. Go east all the way and go up the stairs.",
+        "The 2nd room there is a girl that can heal your pokemon.",
+        "Go in the 6th room and fight the guy. Get a TM-Submission while avoiding the girl trainer.",
+        "Exit the room and go south west.",
+        "Enter the door and go south west to pick a greatball. Go east and pick a hidden chestoberry in a trash can.",
+        "Pick a hidden cheriberry in a trash can.",
+        "Pick a hidden pechaberry in a trash can. Exit the room and go up the stairs north west.",
+        "Go south and go in the 2nd room.",
+        "Fight the 2 trainers and pick a stardust.",
+        "Exit the room. Go in the 4th room and fight only the guy.",
+        "Pick a superpotion and exit the room.",
+        "Go east all the way and go north to fight your rival. Go up the stairs and talk to the captain to get a HM01-Cut.",
+        "Exit the boat and go to vermilion city.",
+        "Go east to route 11."
+      ],
+      "items": [
+        {
+          "name": "superpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/a51e7bf0ad0c4ebf375e5ab456e98c61"
+        },
+        {
+          "name": "superpotion",
+          "hidden": false
+        },
+        {
+          "name": "ether",
+          "hidden": false
+        },
+        {
+          "name": "tm-payday",
+          "hidden": false
+        },
+        {
+          "name": "tm-submission",
+          "hidden": false
+        },
+        {
+          "name": "greatball",
+          "hidden": false
+        },
+        {
+          "name": "chestoberry",
+          "hidden": true,
+          "image": "https://gyazo.com/939754489235068ab36ac95451e49e76"
+        },
+        {
+          "name": "cheriberry",
+          "hidden": true,
+          "image": "https://gyazo.com/de23603c6122a6a30decbc71f253337d"
+        },
+        {
+          "name": "pechaberry",
+          "hidden": true,
+          "image": "https://gyazo.com/8a52c5ad1da5979a28714933b538819a"
+        },
+        {
+          "name": "stardust",
+          "hidden": false
+        },
+        {
+          "name": "superpotion",
+          "hidden": false
+        },
+        {
+          "name": "hm01-cut",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sureste y baja las escaleras.",
+        "Recoge una Superpoción oculta en una papelera. Entra en la primera sala y consigue una Superpoción.",
+        "Sal de la sala.",
+        "Pasa de largo la segunda sala. Entra en la tercera y lucha contra un marinero.",
+        "Recoge un Éter y sal de la sala. Entra en la cuarta sala y recoge la MT-Día de Pago mientras evitas al entrenador.",
+        "Sal de la sala.",
+        "Evita la última sala. Ve al este hasta el final y sube las escaleras.",
+        "En la segunda sala hay una chica que puede curar a tus Pokémon.",
+        "Entra en la sexta sala y lucha contra el chico. Consigue la MT-Sumisión mientras evitas a la entrenadora.",
+        "Sal de la sala y ve al suroeste.",
+        "Entra por la puerta y ve al suroeste para recoger una Super Ball. Ve al este y recoge una Baya Atania oculta en una papelera.",
+        "Recoge una Baya Zreza oculta en una papelera.",
+        "Recoge una Baya Meloc oculta en una papelera. Sal de la sala y sube por las escaleras del noroeste.",
+        "Ve al sur y entra en la segunda sala.",
+        "Lucha contra los 2 entrenadores y recoge un Polvo Estelar.",
+        "Sal de la sala. Entra en la cuarta sala y lucha solo contra el chico.",
+        "Recoge una Superpoción y sal de la sala.",
+        "Ve hacia el este hasta el final y después al norte para luchar contra tu rival. Sube las escaleras y habla con el capitán para conseguir la MO01-Corte.",
+        "Sal del barco y ve a Vermilion City.",
+        "Ve al este hacia Route 11."
+      ]
+    },
+    {
+      "order": 19,
+      "location": "ROUTE 11",
+      "steps": [
+        "Avoid all the trainers and go south east.",
+        "Pick a magnet in the grass.",
+        "Go south east all the way and pick a greatball. If you go in the house you can trade your nidorino for a nidorina by talking to the guy with the blue hat on the 2nd floor. Now go north east all the way and pick a hidden escaperope in a rock.",
+        "Go west and fight the trainer with the grey hair. Go north west all the way and pick a awakening.",
+        "Check your pokedex and make sure you have at least 10 owned pokemon. Enter the cave and go down the stairs.",
+        "Go west and follow the path.",
+        "Go up the stairs and exit the cave."
+      ],
+      "items": [
+        {
+          "name": "magnet",
+          "hidden": false
+        },
+        {
+          "name": "greatball",
+          "hidden": false
+        },
+        {
+          "name": "escaperope",
+          "hidden": true,
+          "image": "https://gyazo.com/b2a4929ddba176a64700b15d271eae68"
+        },
+        {
+          "name": "awakening",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Evita a todos los entrenadores y ve al sureste.",
+        "Recoge un Imán en la hierba.",
+        "Ve hasta el final hacia el sureste y recoge una Super Ball. En la casa puedes intercambiar tu Nidorino por una Nidorina hablando con el chico del sombrero azul de la segunda planta. Después, ve hasta el final hacia el noreste y recoge una Cuerda Huida oculta en una roca.",
+        "Ve al oeste y lucha contra el entrenador de pelo gris. Ve al noroeste hasta el final y recoge un Despertar.",
+        "Consulta tu Pokédex y asegúrate de tener al menos 10 Pokémon capturados. Entra en la cueva y baja las escaleras.",
+        "Ve al oeste y sigue el camino.",
+        "Sube las escaleras y sal de la cueva."
+      ]
+    },
+    {
+      "order": 20,
+      "location": "ROUTE 2",
+      "steps": [
+        "Go south and if you enter the small house you can trade your abra for a mr.mime by talking to the guy north east. Now go south and cut the tree.",
+        "Enter the big house.",
+        "Talk to the guy with the glasses and say yes. You will get a HM05-Flash if you own at least 10 pokemon.",
+        "Enter the door south.",
+        "Go south and pick a sharpbeak. Go south and pick a parlyzheal.",
+        "Go back to vermilion city."
+      ],
+      "items": [
+        {
+          "name": "hm05-flash",
+          "hidden": false
+        },
+        {
+          "name": "sharpbeak",
+          "hidden": false
+        },
+        {
+          "name": "parlyzheal",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur. En la casa pequeña puedes intercambiar tu Abra por un Mr. Mime hablando con el chico del noreste. Después, ve al sur y corta el árbol.",
+        "Entra en la casa grande.",
+        "Habla con el chico con gafas y di que sí. Recibirás una MO05-Destello si tienes al menos 10 Pokémon.",
+        "Entra por la puerta del sur.",
+        "Ve al sur y recoge un Pico Afilado. Ve al sur y recoge un Antiparalizador.",
+        "Vuelve a Vermilion City."
+      ]
+    },
+    {
+      "order": 21,
+      "location": "VERMILION CITY",
+      "steps": [
+        "Go south west of the city and go in the gym.",
+        "Fight the 3 trainers.",
+        "You need to click on the trash cans and find the first switch. Then the 2nd switch will always be in a trash can next to the first switch.",
+        "Make sure you try all 4 directions for the 2nd switch. Beat the gym leader to get a tm-shockwave.",
+        "Exit the gym and go to cerulean city."
+      ],
+      "items": [
+        {
+          "name": "tm-shockwave",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al suroeste de la ciudad y entra en el gimnasio.",
+        "Lucha contra los 3 entrenadores.",
+        "Haz clic en las papeleras hasta encontrar el primer interruptor. El segundo siempre estará en una papelera situada junto a la del primero.",
+        "Asegúrate de probar las 4 direcciones para encontrar el segundo interruptor. Vence al líder del gimnasio para conseguir la MT-Onda Voltio.",
+        "Sal del gimnasio y ve a Cerulean City."
+      ]
+    },
+    {
+      "order": 22,
+      "location": "CERULEAN CITY",
+      "steps": [
+        "Go in the house south west of the pokecenter.",
+        "Talk to the guy with the yellow hair to get a bicycle.",
+        "Exit the house. Go north to route 24.",
+        "Go north east to route 25."
+      ],
+      "items": [
+        {
+          "name": "bicycle",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en la casa al suroeste del Centro Pokémon.",
+        "Habla con el chico de pelo amarillo para conseguir una Bicicleta.",
+        "Sal de la casa. Ve al norte hacia Route 24.",
+        "Ve al noreste hacia Route 25."
+      ]
+    },
+    {
+      "order": 23,
+      "location": "ROUTE 25",
+      "steps": [
+        "Go east and cut a tree to get a TM-Teleport.",
+        "Go back to cerulean city. Go in the house north of the gym.",
+        "Go in the door north.",
+        "Go east to route 9."
+      ],
+      "items": [
+        {
+          "name": "tm-teleport",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y corta un árbol para conseguir la MT-Teletransporte.",
+        "Vuelve a Cerulean City. Entra en la casa al norte del gimnasio.",
+        "Entra por la puerta del norte.",
+        "Ve al este hacia Route 9."
+      ]
+    },
+    {
+      "order": 24,
+      "location": "ROUTE 9",
+      "steps": [
+        "Cut the tree and fight a girl trainer.",
+        "Go south and pick a TM-TakeDown.",
+        "Go east and avoid the hiker.",
+        "Go north and avoid the trainer in green. Go north and fight a bug trainer.",
+        "Go west and pick a hidden ether in a rock.",
+        "Jump south 2 times and go east while avoiding the hiker. Go south east and fight a hiker.",
+        "Pick a twistedspoon and go north to fight a bug trainer.",
+        "Go north and pick a chestoberry. Go east and pick a hidden rarecandy while avoiding the hiker.",
+        "Jump south and go east to route 10 while avoiding the girl trainer."
+      ],
+      "items": [
+        {
+          "name": "tm-takedown",
+          "hidden": false
+        },
+        {
+          "name": "ether",
+          "hidden": true,
+          "image": "https://gyazo.com/02c278e274806c030d2beb141a482e65"
+        },
+        {
+          "name": "twistedspoon",
+          "hidden": false
+        },
+        {
+          "name": "chestoberry",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": true,
+          "image": "https://gyazo.com/d9094fb5881007f13c8b1f49a2c03f72"
+        }
+      ],
+      "stepsEs": [
+        "Corta el árbol y lucha contra una entrenadora.",
+        "Ve al sur y recoge la MT-Derribo.",
+        "Ve al este y evita al montañero.",
+        "Ve al norte y evita al entrenador de verde. Ve al norte y lucha contra un cazabichos.",
+        "Ve al oeste y recoge un Éter oculto en una roca.",
+        "Salta 2 veces hacia el sur y ve al este mientras evitas al montañero. Ve al sureste y lucha contra un montañero.",
+        "Recoge una Cuchara Torcida y ve al norte para luchar contra un cazabichos.",
+        "Ve al norte y recoge una Baya Atania. Ve al este y recoge un Caramelo Raro oculto mientras evitas al montañero.",
+        "Salta hacia el sur y ve al este hacia Route 10 mientras evitas a la entrenadora."
+      ]
+    },
+    {
+      "order": 25,
+      "location": "ROUTE 10",
+      "steps": [
+        "Go south east and pick a persimberry.",
+        "Pick a hidden superpotion on the wall near the cave.",
+        "Pick a cheriberry near the girl trainer. Avoid the trainer and go in the cave."
+      ],
+      "items": [
+        {
+          "name": "persimberry",
+          "hidden": false
+        },
+        {
+          "name": "superpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/94419b966b9618574e522fc5fa1af45d"
+        },
+        {
+          "name": "cheriberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sureste y recoge una Baya Caquic.",
+        "Recoge una Superpoción oculta en la pared cerca de la cueva.",
+        "Recoge una Baya Zreza cerca de la entrenadora. Evítala y entra en la cueva."
+      ]
+    },
+    {
+      "order": 26,
+      "location": "ROCK TUNNEL",
+      "steps": [
+        "Go east and pick a repel.",
+        "Go south and fight a trainer.",
+        "Go south east and follow the path. Go down the stairs and go south west to fight a trainer. Go west all the way and pick a revive.",
+        "Go north to fight a trainer.",
+        "Go north east and avoid the trainer. Follow the path and go west to fight a hiker.",
+        "Go north west and go up the stairs. Go south all the way while avoiding the first hiker that you see.",
+        "Fight the 2nd hiker and go east all the way. Pick a hardstone and go north east while avoiding the hiker.",
+        "Go down the stairs.",
+        "Go west and fight a girl. Go south all the way and go west a few steps.",
+        "Talk to the guy and say yes to get a TM-RockSlide.",
+        "Go north all the way and get a maxether. Go west to fight a hiker.",
+        "Go north and go up the stairs while avoiding the trainer. Go south and avoid the first trainer.",
+        "Fight the next girl trainer. Go west a few steps and go north to pick a pearl.",
+        "Go west to fight a girl.",
+        "Go south and exit the cave."
+      ],
+      "items": [
+        {
+          "name": "repel",
+          "hidden": false
+        },
+        {
+          "name": "revive",
+          "hidden": false
+        },
+        {
+          "name": "hardstone",
+          "hidden": false
+        },
+        {
+          "name": "tm-rockslide",
+          "hidden": false
+        },
+        {
+          "name": "maxether",
+          "hidden": false
+        },
+        {
+          "name": "pearl",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y recoge un Repelente.",
+        "Ve al sur y lucha contra un entrenador.",
+        "Ve al sureste y sigue el camino. Baja las escaleras y ve al suroeste para luchar contra un entrenador. Ve al oeste hasta el final y recoge un Revivir.",
+        "Ve al norte para luchar contra un entrenador.",
+        "Ve al noreste y evita al entrenador. Sigue el camino y ve al oeste para luchar contra un montañero.",
+        "Ve al noroeste y sube las escaleras. Ve hasta el final hacia el sur mientras evitas al primer montañero que veas.",
+        "Lucha contra el segundo montañero y ve al este hasta el final. Recoge una Piedra Dura y ve al noreste mientras evitas al montañero.",
+        "Baja las escaleras.",
+        "Ve al oeste y lucha contra una chica. Ve hacia el sur hasta el final y avanza unos pasos hacia el oeste.",
+        "Habla con el chico y di que sí para conseguir la MT-Avalancha.",
+        "Ve al norte hasta el final y consigue un Éter Máximo. Ve al oeste para luchar contra un montañero.",
+        "Ve al norte y sube las escaleras mientras evitas al entrenador. Ve al sur y evita al primer entrenador.",
+        "Lucha contra la siguiente entrenadora. Avanza unos pasos hacia el oeste y ve al norte para recoger una Perla.",
+        "Ve al oeste para luchar contra una chica.",
+        "Ve al sur y sal de la cueva."
+      ]
+    },
+    {
+      "order": 27,
+      "location": "ROUTE 10",
+      "steps": [
+        "Go east and pick a nanabberry.",
+        "Go south to lavender town while avoiding all the trainers.",
+        "Go west to route 8."
+      ],
+      "items": [
+        {
+          "name": "nanabberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y recoge una Baya Latano.",
+        "Ve al sur hacia Lavender Town mientras evitas a todos los entrenadores.",
+        "Ve al oeste hacia Route 8."
+      ]
+    },
+    {
+      "order": 28,
+      "location": "ROUTE 8",
+      "steps": [
+        "Avoid the girl trainer and fight the old man.",
+        "Go west and cut the tree.",
+        "Pick a rawstberry and pick a lumberry. Pick a leppaberry.",
+        "Cut another tree and go west all the way while avoiding all the trainers. Go north and enter the small house.",
+        "Go down the stairs."
+      ],
+      "items": [
+        {
+          "name": "rawstberry",
+          "hidden": false
+        },
+        {
+          "name": "lumberry",
+          "hidden": false
+        },
+        {
+          "name": "leppaberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Evita a la entrenadora y lucha contra el anciano.",
+        "Ve al oeste y corta el árbol.",
+        "Recoge una Baya Safre y recoge una Baya Ziuela. Recoge una Baya Zanama.",
+        "Corta otro árbol y ve al oeste hasta el final mientras evitas a todos los entrenadores. Ve al norte y entra en la casa pequeña.",
+        "Baja las escaleras."
+      ]
+    },
+    {
+      "order": 29,
+      "location": "UNDERGROUND PATH",
+      "steps": [
+        "Pick a hidden freshwater between the 1st and the 2nd light.",
+        "Pick a hidden antidote between the 2nd and the 3rd light. Pick a hidden ether between the 3rd and the 4th light.",
+        "Pick a hidden burnheal between the 4th and the 5th light. Pick a hidden awakening between the 5th and the 6th light.",
+        "Pick a hidden superpotion between the 6th and the 7th light. Pick a hidden potion near the stairs.",
+        "Go up the stairs and exit the house."
+      ],
+      "items": [
+        {
+          "name": "freshwater",
+          "hidden": true,
+          "image": "https://gyazo.com/bd8171748487bfe23410c995e4d7f69c"
+        },
+        {
+          "name": "antidote",
+          "hidden": true,
+          "image": "https://gyazo.com/8b9f872ff54634383ede869204fd400b"
+        },
+        {
+          "name": "ether",
+          "hidden": true,
+          "image": "https://gyazo.com/52f3378aa8589f98b9136995933b6c38"
+        },
+        {
+          "name": "burnheal",
+          "hidden": true,
+          "image": "https://gyazo.com/82fbb8a81c165ae666971a10a0ecb772"
+        },
+        {
+          "name": "awakening",
+          "hidden": true,
+          "image": "https://gyazo.com/b56314ff8154e5e3ac6b6b86721ef1be"
+        },
+        {
+          "name": "superpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/14c8034c7cfbdbb942da68c474f058d7"
+        },
+        {
+          "name": "potion",
+          "hidden": true,
+          "image": "https://gyazo.com/3e0b7784e8c03062f02539de95b49d3b"
+        }
+      ],
+      "stepsEs": [
+        "Recoge un Agua Fresca oculta entre la primera y la segunda luz.",
+        "Recoge un Antídoto oculto entre la segunda y la tercera luz. Recoge un Éter oculto entre la tercera y la cuarta luz.",
+        "Recoge un Antiquemar oculto entre la cuarta y la quinta luz. Recoge un Despertar oculto entre la quinta y la sexta luz.",
+        "Recoge una Superpoción oculta entre la sexta y la séptima luz. Recoge una Poción oculta cerca de las escaleras.",
+        "Sube las escaleras y sal de la casa."
+      ]
+    },
+    {
+      "order": 30,
+      "location": "ROUTE 7",
+      "steps": [
+        "Pick a wepearberry and go north west to celadon city."
+      ],
+      "items": [
+        {
+          "name": "wepearberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Recoge una Baya Peragu y ve al noroeste hacia Celadon City."
+      ]
+    },
+    {
+      "order": 31,
+      "location": "CELADON CITY",
+      "steps": [
+        "Go north of the pokecenter and go north west all the way to pick a ether.",
+        "Go east a few steps and enter the building. Go up the stairs 3 times.",
+        "Go south and enter the door.",
+        "Pick a eevee in a pokeball and exit the building. Go south of the pokecenter and cut a tree.",
+        "Pick a hidden ppup and go in the house west of the pokecenter. Go north west and talk to the old woman to get a tea. Exit the house and go in the building west.",
+        "Go north and enter the elevator.",
+        "Go to the 3rd floor and exit the elevator. Talk to the guy south east and say yes to get a TM-Counter.",
+        "Go in the elevator and go to the 5th floor.",
+        "Exit the elevator and go up the stairs. Click on the vending machine and buy a fresh water.",
+        "Buy a soda pop and buy 2 lemonade.",
+        "Talk to the girl and say yes. Give her a fresh water and you will get a tm-lightscreen.",
+        "Then give her a soda pop and you will get a tm-safeguard. Also give her a lemonade and you will get a tm-reflect.",
+        "Exit the building and go in the house east of the gym. Talk to the guy north west to get a coincase and exit the house.",
+        "Go west to route 16."
+      ],
+      "items": [
+        {
+          "name": "ether",
+          "hidden": false
+        },
+        {
+          "name": "eevee",
+          "hidden": false
+        },
+        {
+          "name": "ppup",
+          "hidden": true,
+          "image": "https://gyazo.com/8afcf3461e880bf110b6fd5cc9aca18e"
+        },
+        {
+          "name": "tea",
+          "hidden": false
+        },
+        {
+          "name": "tm-counter",
+          "hidden": false
+        },
+        {
+          "name": "fresh water",
+          "hidden": false
+        },
+        {
+          "name": "soda pop",
+          "hidden": false
+        },
+        {
+          "name": "tm-lightscreen",
+          "hidden": false
+        },
+        {
+          "name": "tm-safeguard",
+          "hidden": false
+        },
+        {
+          "name": "tm-reflect",
+          "hidden": false
+        },
+        {
+          "name": "coincase",
+          "hidden": false
+        },
+        {
+          "name": "lemonade",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte del Centro Pokémon y ve al noroeste hasta el final para recoger un Éter.",
+        "Avanza unos pasos hacia el este y entra en el edificio. Sube las escaleras 3 veces.",
+        "Ve al sur y entra por la puerta.",
+        "Recoge a Eevee de la Poké Ball y sal del edificio. Ve al sur del Centro Pokémon y corta un árbol.",
+        "Recoge un Más PP oculto y entra en la casa al oeste del Centro Pokémon. Ve al noroeste y habla con la anciana para conseguir un Té. Sal de la casa y entra en el edificio del oeste.",
+        "Ve al norte y entra en el ascensor.",
+        "Ve a la tercera planta y sal del ascensor. Habla con el chico del sureste y di que sí para conseguir la MT-Contraataque.",
+        "Entra en el ascensor y ve a la quinta planta.",
+        "Sal del ascensor y sube las escaleras. Haz clic en la máquina expendedora y compra un Agua Fresca.",
+        "Compra un Refresco y 2 Limonadas.",
+        "Habla con la chica y di que sí. Dale Agua Fresca y recibirás la MT-Pantalla Luz.",
+        "Después, dale un Refresco para recibir la MT-Velo Sagrado. Dale también una Limonada para recibir la MT-Reflejo.",
+        "Sal del edificio y entra en la casa al este del gimnasio. Habla con el chico del noroeste para conseguir un Monedero y sal de la casa.",
+        "Ve al oeste hacia Route 16."
+      ]
+    },
+    {
+      "order": 32,
+      "location": "ROUTE 16",
+      "steps": [
+        "Cut the tree and go north west.",
+        "Fight the trainers and go in the house.",
+        "Go west and enter the door.",
+        "Go west and enter the house. Talk to the girl to get a HM02-Fly and exit the house.",
+        "Fly to celadon city."
+      ],
+      "items": [
+        {
+          "name": "hm02-fly",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Corta el árbol y ve al noroeste.",
+        "Lucha contra los entrenadores y entra en la casa.",
+        "Ve al oeste y entra por la puerta.",
+        "Ve al oeste y entra en la casa. Habla con la chica para conseguir una MO02-Vuelo y sal de la casa.",
+        "Vuela a Celadon City."
+      ]
+    },
+    {
+      "order": 33,
+      "location": "CELADON CITY",
+      "steps": [
+        "Go in the big red house south west of the pokecenter.",
+        "Go north and fight the rocket trainer.",
+        "Click on the poster and go down the stairs."
+      ],
+      "items": [],
+      "stepsEs": [
+        "Entra en la casa grande roja al suroeste del Centro Pokémon.",
+        "Ve al norte y lucha contra el entrenador del Team Rocket.",
+        "Haz clic en el póster y baja las escaleras."
+      ]
+    },
+    {
+      "order": 34,
+      "location": "ROCKET HIDEOUT",
+      "steps": [
+        "Go south and get a hidden ppup in a tree.",
+        "Go west to pick a escaperope while avoiding the trainer.",
+        "Go north east and go down the stairs. Go west and go down the stairs while avoiding the trainer.",
+        "Go south to fight a trainer and get a TM-FakeTears. Go north west all the way and pick a hidden nugget.",
+        "Go south and go on the arrow pointing south. Get a rarecandy and go on the arrow pointing north. Go on the arrow pointing west.",
+        "Go on the arrow pointing east.",
+        "Walk 2 steps west.",
+        "Walk 3 steps south.",
+        "Walk 3 steps west. Walk 2 steps south.",
+        "Walk 2 steps east.",
+        "Avoid the trainer and go east to pick the up-grade. Go down the stairs.",
+        "Pick a ether and go north to pick a tm-snatch. Fight the rocket trainer and get the liftkey.",
+        "Go south east and go up the stairs. Go north and go on the arrow pointing north.",
+        "Go on the arrow pointing north. Go north east and go up the stairs.",
+        "Avoid the trainer and go on the first arrow that you see.",
+        "Go on the arrow pointing north. Pick a moonstone and go north east to pick a hyperpotion.",
+        "Go north west all the way. Go on the 1st arrow pointing east that you see and pick a TM-Snarl. Go on the eastern most arrow pointing south.",
+        "Go on the arrow pointing west. Go on the southern most arrow pointing west.",
+        "Pick a superpotion. Go on the arrow pointing east.",
+        "Go on the eastern most arrow pointing south. Go on the arrow pointing west.",
+        "Walk 3 steps east.",
+        "Walk 2 steps south. Walk 1 step west.",
+        "Go on the arrow pointing east.",
+        "Go east and go up the stairs. Go north west and pick a hyperpotion while avoiding the trainers. Go south east and go down the stairs.",
+        "Go in the elevator and go to the B4F floor.",
+        "Exit the elevator and go west to pick a calcium. Go north and fight the 2 rocket trainers.",
+        "Go north and pick a hidden netball.",
+        "Also pick a hidden nestball.",
+        "Beat the boss of team rocket. Pick a silphscope and exit the building."
+      ],
+      "items": [
+        {
+          "name": "ppup",
+          "hidden": true,
+          "image": "https://gyazo.com/d2a48658b817f8785fcc8c24385b5c5a"
+        },
+        {
+          "name": "escaperope",
+          "hidden": false
+        },
+        {
+          "name": "tm-faketears",
+          "hidden": false
+        },
+        {
+          "name": "nugget",
+          "hidden": true,
+          "image": "https://gyazo.com/b575d062a741b4e76a4c93e2ab0bc16e"
+        },
+        {
+          "name": "rarecandy",
+          "hidden": false
+        },
+        {
+          "name": "up-grade",
+          "hidden": false
+        },
+        {
+          "name": "ether",
+          "hidden": false
+        },
+        {
+          "name": "tm-snatch",
+          "hidden": false
+        },
+        {
+          "name": "liftkey",
+          "hidden": false
+        },
+        {
+          "name": "moonstone",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        },
+        {
+          "name": "tm-snarl",
+          "hidden": false
+        },
+        {
+          "name": "superpotion",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        },
+        {
+          "name": "calcium",
+          "hidden": false
+        },
+        {
+          "name": "netball",
+          "hidden": true,
+          "image": "https://gyazo.com/d858adf43369fc37b38b0166b9ff6a65"
+        },
+        {
+          "name": "nestball",
+          "hidden": true,
+          "image": "https://gyazo.com/5bf23ca6625758be1fe32ae2c64b0c4c"
+        },
+        {
+          "name": "silphscope",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur y consigue un Más PP oculto en un árbol.",
+        "Ve al oeste para recoger una Cuerda Huida mientras evitas al entrenador.",
+        "Ve al noreste y baja las escaleras. Ve al oeste y baja las escaleras mientras evitas al entrenador.",
+        "Ve al sur para luchar contra un entrenador y consigue la MT-Llanto Falso. Ve al noroeste hasta el final y recoge una Pepita oculta.",
+        "Ve al sur y pisa la flecha que apunta al sur. Consigue un Caramelo Raro y pisa la flecha que apunta al norte. Pisa la flecha que apunta al oeste.",
+        "Pisa la flecha que apunta al este.",
+        "Camina 2 pasos hacia el oeste.",
+        "Camina 3 pasos hacia el sur.",
+        "Camina 3 pasos hacia el oeste. Camina 2 pasos hacia el sur.",
+        "Camina 2 pasos hacia el este.",
+        "Evita al entrenador y ve al este para recoger la Mejora. Baja las escaleras.",
+        "Recoge un Éter y ve al norte para recoger la MT-Robo. Lucha contra el entrenador del Team Rocket y consigue la Llave Ascensor.",
+        "Ve al sureste y sube las escaleras. Ve al norte y pisa la flecha que apunta al norte.",
+        "Pisa la flecha que apunta al norte. Ve al noreste y sube las escaleras.",
+        "Evita al entrenador y pisa la primera flecha que veas.",
+        "Pisa la flecha que apunta al norte. Recoge una Piedra Lunar y ve al noreste para recoger una Hiperpoción.",
+        "Ve hasta el final hacia el noroeste. Pisa la primera flecha que veas que apunte al este y recoge la MT-Alarido. Después, pisa la flecha situada más al este que apunte al sur.",
+        "Pisa la flecha que apunta al oeste. Pisa la flecha situada más al sur que apunta al oeste.",
+        "Recoge una Superpoción. Pisa la flecha que apunta al este.",
+        "Pisa la flecha situada más al este que apunta al sur. Pisa la flecha que apunta al oeste.",
+        "Camina 3 pasos hacia el este.",
+        "Camina 2 pasos hacia el sur. Camina 1 paso hacia el oeste.",
+        "Pisa la flecha que apunta al este.",
+        "Ve al este y sube las escaleras. Ve al noroeste y recoge una Hiperpoción mientras evitas a los entrenadores. Ve al sureste y baja las escaleras.",
+        "Entra en el ascensor y ve a la planta B4F.",
+        "Sal del ascensor y ve al oeste para recoger un Calcio. Ve al norte y lucha contra los 2 entrenadores del Team Rocket.",
+        "Ve al norte y recoge una Malla Ball oculta.",
+        "También recoge una Nido Ball oculta.",
+        "Vence al jefe de Team Rocket. Recoge un Scope Silph y sal del edificio."
+      ]
+    },
+    {
+      "order": 35,
+      "location": "CELADON CITY",
+      "steps": [
+        "Go south all the way and cut the tree.",
+        "Go south west and enter the gym.",
+        "Go north west to fight a beauty girl while avoiding the other trainers. Cut the tree and fight the next beauty girl.",
+        "The next girl is the gym leader.",
+        "Beat the gym leader and get a tm-gigadrain.",
+        "Exit the gym. Go east to route 7.",
+        "Go in the big house.",
+        "Go east and enter the door to enter saffron city."
+      ],
+      "items": [
+        {
+          "name": "tm-gigadrain",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur hasta el final y corta el árbol.",
+        "Ve al suroeste y entra en el gimnasio.",
+        "Ve al noroeste para luchar contra una entrenadora Bella mientras evitas a los demás entrenadores. Corta el árbol y lucha contra la siguiente Bella.",
+        "La siguiente chica es la líder del gimnasio.",
+        "Vence al líder del gimnasio y consigue la MT-Gigadrenado.",
+        "Sal del gimnasio. Ve al este hacia Route 7.",
+        "Entra en la casa grande.",
+        "Ve al este y entra por la puerta para entrar en Saffron City."
+      ]
+    },
+    {
+      "order": 36,
+      "location": "SAFFRON CITY",
+      "steps": [
+        "Go in the house south east of the city and talk to the guy to get a tm-psychic. Exit the house.",
+        "If you go in the small gym you can get a hitmonlee or hitmonchan pokemon by beating the guy all the way north. Now fly to lavender town.",
+        "Go in the building east of the pokecenter."
+      ],
+      "items": [
+        {
+          "name": "tm-psychic",
+          "hidden": false
+        },
+        {
+          "name": "hitmonlee",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en la casa al sureste de la ciudad y habla con el chico para conseguir la MT-Psíquico. Sal de la casa.",
+        "En el gimnasio pequeño puedes conseguir a Hitmonlee o Hitmonchan venciendo al chico del extremo norte. Después, vuela a Lavender Town.",
+        "Entra en el edificio al este del Centro Pokémon."
+      ]
+    },
+    {
+      "order": 37,
+      "location": "POKEMON TOWER",
+      "steps": [
+        "Go north east and go up the stairs.",
+        "Go north and fight your rival.",
+        "Go west and go up the stairs. Go north east and get a escaperope while avoiding the trainer. Go south and avoid the 2 trainers.",
+        "Go east and go up the stairs.",
+        "Avoid the 2 trainers and pick a elixir. Pick a awakening and pick a greatball.",
+        "Go north west to avoid the 3rd trainer.",
+        "Go up the stairs.",
+        "Go north and avoid a trainer. Go north and pick a hidden tinymushroom.",
+        "Go south and pick a cleansetag. Go south a few steps and fight a trainer.",
+        "Avoid the next trainer and pick a nugget. Go east and go up the stairs while avoiding a trainer.",
+        "Go south and pick a xaccuracy.",
+        "Go north and avoid the first trainer. Go north and fight the next 2 trainers.",
+        "Follow the path and get a rarecandy.",
+        "Beat the marowak near the stairs and go up the stairs. Go north and fight the 3 rocket trainers.",
+        "Talk to the old man."
+      ],
+      "items": [
+        {
+          "name": "escaperope",
+          "hidden": false
+        },
+        {
+          "name": "elixir",
+          "hidden": false
+        },
+        {
+          "name": "awakening",
+          "hidden": false
+        },
+        {
+          "name": "greatball",
+          "hidden": false
+        },
+        {
+          "name": "tinymushroom",
+          "hidden": true,
+          "image": "https://gyazo.com/6041b4812925144ed78308cee73dd60d"
+        },
+        {
+          "name": "cleansetag",
+          "hidden": false
+        },
+        {
+          "name": "nugget",
+          "hidden": false
+        },
+        {
+          "name": "xaccuracy",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al noreste y sube las escaleras.",
+        "Ve al norte y lucha contra tu rival.",
+        "Ve al oeste y sube las escaleras. Ve al noreste y consigue una Cuerda Huida mientras evitas al entrenador. Ve al sur y evita a los 2 entrenadores.",
+        "Ve al este y sube las escaleras.",
+        "Evita a los 2 entrenadores y recoge un Elixir. Recoge un Despertar y recoge una Super Ball.",
+        "Ve al noroeste para evitar al tercer entrenador.",
+        "Sube las escaleras.",
+        "Ve al norte y evita a un entrenador. Ve al norte y recoge una Miniseta oculto.",
+        "Ve al sur y recoge un Amuleto. Avanza unos pasos hacia el sur y lucha contra un entrenador.",
+        "Evita al siguiente entrenador y recoge una Pepita. Ve al este y sube las escaleras mientras evitas a un entrenador.",
+        "Ve al sur y recoge una Precisión X.",
+        "Ve al norte y evita al primer entrenador. Ve al norte y lucha contra los 2 entrenadores siguientes.",
+        "Sigue el camino y consigue un Caramelo Raro.",
+        "Vence a Marowak cerca de las escaleras y sube. Ve al norte y lucha contra los 3 entrenadores del Team Rocket.",
+        "Habla con el anciano."
+      ]
+    },
+    {
+      "order": 38,
+      "location": "LAVENDER TOWN",
+      "steps": [
+        "Talk to the old man again to get a pokeflute.",
+        "Exit the house and fly to celadon city.",
+        "Go west to route 16. Click the snorlax and say yes.",
+        "Beat snorlax and go west in the house.",
+        "Go west and enter the door. Avoid the first biker by going west from the southern most position. Fight the 2nd biker.",
+        "Avoid the other bikers and go south to route 17."
+      ],
+      "items": [
+        {
+          "name": "pokeflute",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Habla con el anciano de nuevo para conseguir una Poké Flauta.",
+        "Sal de la casa y vuela a Celadon City.",
+        "Ve al oeste hacia Route 16. Haz clic en Snorlax y di que sí.",
+        "Vence a Snorlax y ve al oeste dentro de la casa.",
+        "Ve al oeste y entra por la puerta. Evita al primer motorista avanzando hacia el oeste desde la posición situada más al sur. Lucha contra el segundo motorista.",
+        "Evita a los demás motoristas y ve al sur hacia Route 17."
+      ]
+    },
+    {
+      "order": 39,
+      "location": "ROUTE 17",
+      "steps": [
+        "Avoid all the trainers and go south east a few steps until you see the grass.",
+        "Go east all the way. Go south until you see a biker not moving while avoiding all the trainers.",
+        "Avoid that biker too. Go south a few steps and pick a hidden rarecandy.",
+        "Go south and avoid a trainer. Go south and go west when you can.",
+        "Pick a hidden maxrevive.",
+        "Go north until you see 2 paths while avoiding a trainer. Go north on the western path and pick a hidden ppup.",
+        "Go south and go north on the eastern path to pick a hidden hyperpotion. Go south to route 18 while avoiding all the trainers.",
+        "Go north a few steps to route 17 and pick a hidden ether.",
+        "Go south to route 18. Go south east and enter the house.",
+        "If you want you can trade your golduck for a lickitung by talking to the guy on the 2nd floor. Now go east and enter the door.",
+        "Go south and fight the trainer in the grass while avoiding the other trainers.",
+        "Go east to fuchsia city."
+      ],
+      "items": [
+        {
+          "name": "rarecandy",
+          "hidden": true,
+          "image": "https://gyazo.com/d870c080a79672cf03c31efe21ab1ed9"
+        },
+        {
+          "name": "maxrevive",
+          "hidden": true,
+          "image": "https://gyazo.com/84d0b45a900768787a8338c165a44d2d"
+        },
+        {
+          "name": "ppup",
+          "hidden": true,
+          "image": "https://gyazo.com/904ef0f05bfea53bc88b2a683141435e"
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/0936a2083a18889af8c37e98a5faa70a"
+        },
+        {
+          "name": "ether",
+          "hidden": true,
+          "image": "https://gyazo.com/73ee39badf1b86000525d3366935882b"
+        }
+      ],
+      "stepsEs": [
+        "Evita a todos los entrenadores y avanza unos pasos hacia el sureste hasta que veas la hierba.",
+        "Ve al este hasta el final. Ve al sur hasta que veas un motorista que no se mueve mientras evitas a todos los entrenadores.",
+        "Evita a ese motorista también. Avanza unos pasos hacia el sur y recoge un Caramelo Raro oculto.",
+        "Ve al sur y evita a un entrenador. Continúa hacia el sur y ve al oeste cuando puedas.",
+        "Recoge un Revivir Máximo oculto.",
+        "Ve al norte hasta que veas 2 caminos mientras evitas a un entrenador. Ve al norte en el camino occidental y recoge un Más PP oculto.",
+        "Ve al sur y ve al norte en el camino oriental para recoger una Hiperpoción oculta. Ve al sur hacia Route 18 mientras evitas a todos los entrenadores.",
+        "Avanza unos pasos hacia el norte hasta Route 17 y recoge un Éter oculto.",
+        "Ve al sur hacia Route 18. Ve al sureste y entra en la casa.",
+        "Puedes intercambiar tu Golduck por un Lickitung hablando con el chico de la segunda planta. Después, ve al este y entra por la puerta.",
+        "Ve al sur y lucha contra el entrenador de la hierba mientras evitas a los demás entrenadores.",
+        "Ve al este hacia Fuchsia City."
+      ]
+    },
+    {
+      "order": 40,
+      "location": "FUCHSIA CITY",
+      "steps": [
+        "Go south west and enter the gym.",
+        "Avoid the trainer west and fight the other trainer.",
+        "Go south east all the way and go north to fight a trainer. Go north east all the way in the corner while avoiding a trainer.",
+        "Walk 5 steps west.",
+        "Walk 8 steps south.",
+        "Walk 7 steps west. Avoid the 2 trainers north west.",
+        "Walk 2 steps south and walk 5 steps east. Beat the gym leader to get a tm-toxic.",
+        "Exit the gym and go in the house south east of the city. Talk to the fisher and say yes to get a goodrod.",
+        "Go north and enter the door.",
+        "Pick a hidden maxrevive and exit the house. Go near the pokemart and talk to the guy with a hat.",
+        "Say yes to get a TM-substitute. Go north east a few steps and enter the house.",
+        "Go north and say yes."
+      ],
+      "items": [
+        {
+          "name": "tm-toxic",
+          "hidden": false
+        },
+        {
+          "name": "goodrod",
+          "hidden": false
+        },
+        {
+          "name": "maxrevive",
+          "hidden": true,
+          "image": "https://gyazo.com/fd89cedc5459c30be15318eabc3abcae"
+        },
+        {
+          "name": "tm-substitute",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al suroeste y entra en el gimnasio.",
+        "Evita al entrenador del oeste y lucha contra el otro entrenador.",
+        "Ve hacia el sureste hasta el final y después al norte para luchar contra un entrenador. Ve hasta la esquina del noreste mientras evitas a otro entrenador.",
+        "Camina 5 pasos hacia el oeste.",
+        "Camina 8 pasos hacia el sur.",
+        "Camina 7 pasos hacia el oeste. Evita a los 2 entrenadores del noroeste.",
+        "Camina 2 pasos hacia el sur y camina 5 pasos hacia el este. Vence al líder del gimnasio para conseguir la MT-Tóxico.",
+        "Sal del gimnasio y entra en la casa al sureste de la ciudad. Habla con el pescador y di que sí para conseguir una Caña Buena.",
+        "Ve al norte y entra por la puerta.",
+        "Recoge un Revivir Máximo oculto y sal de la casa. Acércate a la Tienda Pokémon y habla con el chico con sombrero.",
+        "Di que sí para conseguir la MT-Sustituto. Avanza unos pasos hacia el noreste y entra en la casa.",
+        "Ve al norte y di que sí."
+      ]
+    },
+    {
+      "order": 41,
+      "location": "SAFARI ZONE",
+      "steps": [
+        "Go north east and go in the next area.",
+        "Go east and go up the stairs.",
+        "Go north and pick a leafstone. Go west and pick a TM-NaturePower in the grass.",
+        "Go north west and pick a maxpotion.",
+        "Go east and pick a superpotion. Go north all the way and go west to the next area.",
+        "Go up the stairs and follow the path to get a quickclaw. Go back to the first stairs.",
+        "Go west and go up the stairs.",
+        "Go north to pick a TM-EggBomb. Go north and pick a protein.",
+        "Go west all the way and go south to the next area. Go south and pick the goldteeth.",
+        "Go west and pick a TM-Screech.",
+        "Pick a hidden revive and enter the house. Talk to the guy to get a HM03-Surf and exit the house.",
+        "Go south and surf south.",
+        "Go south all the way and pick a superpotion in the grass. Go east and pick a maxrevive.",
+        "Go east and go in the next area.",
+        "Go east and surf east to get a dragonscale on the ground. Pick a hidden leafstone on the ground.",
+        "Go back to fuchsia city."
+      ],
+      "items": [
+        {
+          "name": "leafstone",
+          "hidden": false
+        },
+        {
+          "name": "tm-naturepower",
+          "hidden": false
+        },
+        {
+          "name": "maxpotion",
+          "hidden": false
+        },
+        {
+          "name": "superpotion",
+          "hidden": false
+        },
+        {
+          "name": "quickclaw",
+          "hidden": false
+        },
+        {
+          "name": "tm-eggbomb",
+          "hidden": false
+        },
+        {
+          "name": "protein",
+          "hidden": false
+        },
+        {
+          "name": "goldteeth",
+          "hidden": false
+        },
+        {
+          "name": "tm-screech",
+          "hidden": false
+        },
+        {
+          "name": "revive",
+          "hidden": true,
+          "image": "https://gyazo.com/4c1fa12985a012727c728b22e89411f2"
+        },
+        {
+          "name": "hm03-surf",
+          "hidden": false
+        },
+        {
+          "name": "superpotion",
+          "hidden": false
+        },
+        {
+          "name": "maxrevive",
+          "hidden": false
+        },
+        {
+          "name": "dragonscale",
+          "hidden": false
+        },
+        {
+          "name": "leafstone",
+          "hidden": true,
+          "image": "https://gyazo.com/7faf3ace068dba161b5ab99219463c91"
+        }
+      ],
+      "stepsEs": [
+        "Ve al noreste y pasa a la siguiente zona.",
+        "Ve al este y sube las escaleras.",
+        "Ve al norte y recoge una Piedra Hoja. Ve al oeste y recoge la MT-Adaptación en la hierba.",
+        "Ve al noroeste y recoge una Poción Máxima.",
+        "Ve al este y recoge una Superpoción. Ve al norte hasta el final y ve al oeste hacia la siguiente zona.",
+        "Sube las escaleras y sigue el camino para conseguir una Garra Rápida. Vuelve a las primeras escaleras.",
+        "Ve al oeste y sube las escaleras.",
+        "Ve al norte para recoger la MT-Bomba Huevo. Ve al norte y recoge una Proteína.",
+        "Ve hacia el oeste hasta el final y después al sur hacia la siguiente zona. Ve al sur y recoge los Dientes de Oro.",
+        "Ve al oeste y recoge la MT-Chirrido.",
+        "Recoge un Revivir oculto y entra en la casa. Habla con el chico para conseguir la MO03-Surf y sal de la casa.",
+        "Ve al sur y haz Surf hacia el sur.",
+        "Ve al sur hasta el final y recoge una Superpoción en la hierba. Ve al este y recoge un Revivir Máximo.",
+        "Ve al este y pasa a la siguiente zona.",
+        "Ve al este y haz Surf hacia el este para conseguir una Escama Dragón en el suelo. Recoge una Piedra Hoja oculta en el suelo.",
+        "Vuelve a Fuchsia City."
+      ]
+    },
+    {
+      "order": 42,
+      "location": "FUCHSIA CITY",
+      "steps": [
+        "Go in the house east of the pokecenter and talk to the guy to get a HM04-Strength.",
+        "Push the boulder and get a rarecandy. Exit the house and go east to route 15."
+      ],
+      "items": [
+        {
+          "name": "hm04-strength",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en la casa al este del Centro Pokémon y habla con el chico para conseguir una MO04-Fuerza.",
+        "Empuja la roca y consigue un Caramelo Raro. Sal de la casa y ve al este hacia Route 15."
+      ]
+    },
+    {
+      "order": 43,
+      "location": "ROUTE 15",
+      "steps": [
+        "Go east and avoid all the trainers until you see the 2 beauty trainers. Beat the 2 beauty trainers and go east to cut a tree while avoiding all the trainers. Go north west and pick a TM-WhirlWind while avoiding all the trainers.",
+        "Go east to route 14."
+      ],
+      "items": [
+        {
+          "name": "tm-whirlwind",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este evitando a todos los entrenadores hasta que veas a las 2 entrenadoras Bella. Véncelas y sigue hacia el este para cortar un árbol mientras evitas a los demás entrenadores. Ve al noroeste y recoge la MT-Remolino mientras sigues evitando a todos los entrenadores.",
+        "Ve al este hacia Route 14."
+      ]
+    },
+    {
+      "order": 44,
+      "location": "ROUTE 14",
+      "steps": [
+        "Go south east and pick a pinapberry while avoiding all the trainers.",
+        "Go north west and cut the tree while avoiding all the trainers. Pick a hidden zinc in the grass.",
+        "Go south and cut the tree.",
+        "Go north to route 13 while avoiding all the trainers."
+      ],
+      "items": [
+        {
+          "name": "pinapberry",
+          "hidden": false
+        },
+        {
+          "name": "zinc",
+          "hidden": true,
+          "image": "https://gyazo.com/93af7ab53bf667cb4037df3e83755eda"
+        }
+      ],
+      "stepsEs": [
+        "Ve al sureste y recoge una Baya Pinia mientras evitas a todos los entrenadores.",
+        "Ve al noroeste y corta el árbol mientras evitas a todos los entrenadores. Recoge un Zinc oculto en la hierba.",
+        "Ve al sur y corta el árbol.",
+        "Ve al norte hacia Route 13 mientras evitas a todos los entrenadores."
+      ]
+    },
+    {
+      "order": 45,
+      "location": "ROUTE 13",
+      "steps": [
+        "Go north east all the way and fight the first beauty trainer only while avoiding the other trainers.",
+        "Go south west and pick a hidden ppup. Go east and follow the path to route 12 while avoiding all the trainers."
+      ],
+      "items": [
+        {
+          "name": "ppup",
+          "hidden": true,
+          "image": "https://gyazo.com/b2cca13cb6425aa3e7d458a466b661cf"
+        }
+      ],
+      "stepsEs": [
+        "Ve hacia el noreste hasta el final y lucha solo contra la primera entrenadora Bella mientras evitas a los demás entrenadores.",
+        "Ve al suroeste y recoge un Más PP oculto. Ve al este y sigue el camino a Route 12 mientras evitas a todos los entrenadores."
+      ]
+    },
+    {
+      "order": 46,
+      "location": "ROUTE 12",
+      "steps": [
+        "Go north and cut the tree to get a hidden rarecandy in the grass.",
+        "Go north and cut the tree while avoiding the fisher. Beat the trainer and get a sunstone.",
+        "Go north and enter the house while avoiding the trainer.",
+        "Talk to the fisher and say yes to get a superrod. Exit the house and go north.",
+        "Click the snorlax and say yes.",
+        "Beat the snorlax and go north.",
+        "Avoid the couple. Go north while avoiding the trainers and get a hidden hyperpotion on the ground. Go north and fight the fisher.",
+        "Go north and avoid the fisher.",
+        "Surf east and get a TM-PsyWave. Go north and enter the house while avoiding another fisher. Go up the stairs and talk to the girl to get a tm-return.",
+        "Exit the house and fly to saffron city.",
+        "Go in the building north east of the pokecenter."
+      ],
+      "items": [
+        {
+          "name": "rarecandy",
+          "hidden": true,
+          "image": "https://gyazo.com/942fe0fa23fffd7ddc9faaa4fef49130"
+        },
+        {
+          "name": "sunstone",
+          "hidden": false
+        },
+        {
+          "name": "superrod",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/75fc060af00b5cf4d1344d16d61448d7"
+        },
+        {
+          "name": "tm-psywave",
+          "hidden": false
+        },
+        {
+          "name": "tm-return",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte y corta el árbol para conseguir un Caramelo Raro oculto en la hierba.",
+        "Ve al norte y corta el árbol mientras evitas al pescador. Vence al entrenador y consigue una Piedra Solar.",
+        "Ve al norte y entra en la casa mientras evitas al entrenador.",
+        "Habla con el pescador y di que sí para conseguir una Supercaña. Sal de la casa y ve al norte.",
+        "Haz clic en Snorlax y di que sí.",
+        "Vence a Snorlax y ve al norte.",
+        "Evita a la pareja. Ve al norte mientras esquivas a los entrenadores y consigue una Hiperpoción oculta en el suelo. Continúa al norte y lucha contra el pescador.",
+        "Ve al norte y evita al pescador.",
+        "Haz Surf hacia el este y consigue la MT-Psicoonda. Ve al norte y entra en la casa mientras evitas a otro pescador. Sube las escaleras y habla con la chica para conseguir la MT-Retribución.",
+        "Sal de la casa y vuela a Saffron City.",
+        "Entra en el edificio al noreste del Centro Pokémon."
+      ]
+    },
+    {
+      "order": 47,
+      "location": "SILPH CO.",
+      "steps": [
+        "Go north east and enter the elevator.",
+        "Go to the 11th floor and exit the elevator.",
+        "Go south and pick a zinc while avoiding the trainer. Go north west and go down the stairs.",
+        "Go south east and pick a hidden hpup in the tree.",
+        "Go west and avoid the scientist.",
+        "Fight the rocket. Pick a carbos and pick a rarecandy.",
+        "Also pick a greatball.",
+        "Go north and enter the elevator.",
+        "Go to the 5th floor and exit the elevator. Go east and fight the rocket trainer.",
+        "Go west all the way while avoiding the scientist trainer.",
+        "Go south and fight the rocket trainer. Go in the portal and go in the portal again.",
+        "Go east and pick a cardkey.",
+        "Go west and go in the portal. Go north and enter the elevator while avoiding the scientist.",
+        "Go to the 8th floor and exit the elevator. Avoid the rocket trainer and go south east to pick a iron.",
+        "Also pick a hidden nugget in a tree. Go north east and go down the stairs while avoiding the trainers. Go south east and pick a TM-Imprison.",
+        "Also pick a hidden zinc in a tree.",
+        "Avoid the rocket trainers and go south west. Pick a calcium and avoid the scientist.",
+        "Go north east.",
+        "Avoid the rocket and go down the stairs.",
+        "Go west and pick a hidden carbos in a tree. Go south west and pick a hpup while avoiding the trainer.",
+        "Also pick a xspecial.",
+        "Go north east and enter the elevator. Go to the 4th floor and exit the elevator.",
+        "Go south east and pick a tm-torment. Pick a hidden iron in a tree while avoiding the rocket trainer.",
+        "Go north west to fight a scientist while avoiding the rocket trainer. Go south west and pick a escaperope.",
+        "Also pick a fullheal.",
+        "Pick a maxrevive and go in the portal south west. Go north and enter the elevator.",
+        "Go to the 5th floor and exit the elevator. Go east to pick a hidden ppup in a tree.",
+        "Go west and pick a hidden elixir in a tree while avoiding the trainer. Go north west and pick a protein while avoiding the scientist trainer.",
+        "Go south west and pick a TM-ElectroBall. Go in the portal and go east all the way to pick a hidden protein in a tree.",
+        "Go north and go west to pick a dubiousdisc. Avoid the trainer and go in the portal east of that trainer.",
+        "Beat your rival and talk to the guy to get a lapras.",
+        "Go in the portal south east. Go south and fight the trainer.",
+        "Go east and pick a hidden revive in a tree.",
+        "Go north and beat the boss of team rocket. Go north and talk to the old man to get a masterball.",
+        "Go north west and go in the portal.",
+        "Go in the portal north east. Go north and enter the elevator.",
+        "Go to the 9th floor and exit the elevator. Go south west and pick a hidden hyperpotion near the yellow boxes. Go north west and pick a hidden calcium in a tree.",
+        "Go north east and go in the elevator.",
+        "Go to the 3rd floor and exit the elevator. Go east and go in the portal.",
+        "Talk to the girl and say yes to get a TM-ThunderWave. Go south and pick a hidden greatball in a tree.",
+        "Exit the building."
+      ],
+      "items": [
+        {
+          "name": "zinc",
+          "hidden": false
+        },
+        {
+          "name": "hpup",
+          "hidden": true,
+          "image": "https://gyazo.com/6c3825d61b314d22d6ad816b579eccef"
+        },
+        {
+          "name": "carbos",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": false
+        },
+        {
+          "name": "greatball",
+          "hidden": false
+        },
+        {
+          "name": "cardkey",
+          "hidden": false
+        },
+        {
+          "name": "iron",
+          "hidden": false
+        },
+        {
+          "name": "nugget",
+          "hidden": true,
+          "image": "https://gyazo.com/2748878399784e52d3e0ca1028f6967c"
+        },
+        {
+          "name": "tm-imprison",
+          "hidden": false
+        },
+        {
+          "name": "zinc",
+          "hidden": true,
+          "image": "https://gyazo.com/18014d00845ca6cfdcb0cc631193dbe4"
+        },
+        {
+          "name": "calcium",
+          "hidden": false
+        },
+        {
+          "name": "carbos",
+          "hidden": true,
+          "image": "https://gyazo.com/36e9fe87d001d11ab1935801cc91ca3b"
+        },
+        {
+          "name": "hpup",
+          "hidden": false
+        },
+        {
+          "name": "xspecial",
+          "hidden": false
+        },
+        {
+          "name": "tm-torment",
+          "hidden": false
+        },
+        {
+          "name": "iron",
+          "hidden": true,
+          "image": "https://gyazo.com/db385c691c4b0c964cd2899b72e3bdd3"
+        },
+        {
+          "name": "escaperope",
+          "hidden": false
+        },
+        {
+          "name": "fullheal",
+          "hidden": false
+        },
+        {
+          "name": "maxrevive",
+          "hidden": false
+        },
+        {
+          "name": "ppup",
+          "hidden": true,
+          "image": "https://gyazo.com/48535223b17c298f4c94cda6475711f9"
+        },
+        {
+          "name": "elixir",
+          "hidden": true,
+          "image": "https://gyazo.com/43ba3ddae1162399818fb1f3705cabd1"
+        },
+        {
+          "name": "protein",
+          "hidden": false
+        },
+        {
+          "name": "tm-electroball",
+          "hidden": false
+        },
+        {
+          "name": "protein",
+          "hidden": true,
+          "image": "https://gyazo.com/31e1afc5aef45ae190653330e1097f7c"
+        },
+        {
+          "name": "dubiousdisc",
+          "hidden": false
+        },
+        {
+          "name": "lapras",
+          "hidden": false
+        },
+        {
+          "name": "revive",
+          "hidden": true,
+          "image": "https://gyazo.com/3a250dbb0999bdd885f24d76656ae702"
+        },
+        {
+          "name": "masterball",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/0b45bcb68514fcea5be1a7f5817580e7"
+        },
+        {
+          "name": "calcium",
+          "hidden": true,
+          "image": "https://gyazo.com/34bfedb97df3c229ee3c4c8ba9f5d5d4"
+        },
+        {
+          "name": "tm-thunderwave",
+          "hidden": false
+        },
+        {
+          "name": "greatball",
+          "hidden": true,
+          "image": "https://gyazo.com/848fa71ee2c9f2656839cdd9727cce0a"
+        }
+      ],
+      "stepsEs": [
+        "Ve al noreste y entra en el ascensor.",
+        "Ve a la undécima planta y sal del ascensor.",
+        "Ve al sur y recoge un Zinc mientras evitas al entrenador. Ve al noroeste y baja las escaleras.",
+        "Ve al sureste y recoge un Más PS oculto en el árbol.",
+        "Ve al oeste y evita al científico.",
+        "Lucha contra el miembro del Team Rocket. Recoge un Carburante y un Caramelo Raro.",
+        "También recoge una Super Ball.",
+        "Ve al norte y entra en el ascensor.",
+        "Ve a la quinta planta y sal del ascensor. Ve al este y lucha contra el entrenador del Team Rocket.",
+        "Ve hacia el oeste hasta el final mientras evitas al científico.",
+        "Ve al sur y lucha contra el entrenador del Team Rocket. Entra en el portal y entra en el portal de nuevo.",
+        "Ve al este y recoge una Llave Magnética.",
+        "Ve al oeste y entra en el portal. Ve al norte y entra en el ascensor mientras evitas al científico.",
+        "Ve a la octava planta y sal del ascensor. Evita al entrenador del Team Rocket y ve al sureste para recoger un Hierro.",
+        "También recoge una Pepita oculta en un árbol. Ve al noreste y baja las escaleras mientras evitas a los entrenadores. Ve al sureste y recoge la MT-Cerca.",
+        "También recoge un Zinc oculto en un árbol.",
+        "Evita a los entrenadores del Team Rocket y ve al suroeste. Recoge un Calcio y evita al científico.",
+        "Ve al noreste.",
+        "Evita al miembro del Team Rocket y baja las escaleras.",
+        "Ve al oeste y recoge un Carburante oculto en un árbol. Ve al suroeste y recoge un Más PS mientras evitas al entrenador.",
+        "También recoge un Especial X.",
+        "Ve al noreste y entra en el ascensor. Ve a la cuarta planta y sal del ascensor.",
+        "Ve al sureste y recoge la MT-Tormento. Recoge un Hierro oculto en un árbol mientras evitas al entrenador del Team Rocket.",
+        "Ve al noroeste para luchar contra un científico mientras evitas al entrenador del Team Rocket. Ve al suroeste y recoge una Cuerda Huida.",
+        "También recoge una Cura Total.",
+        "Recoge un Revivir Máximo y entra en el portal del suroeste. Ve al norte y entra en el ascensor.",
+        "Ve a la quinta planta y sal del ascensor. Ve al este para recoger un Más PP oculto en un árbol.",
+        "Ve al oeste y recoge un Elixir oculto en un árbol mientras evitas al entrenador. Ve al noroeste y recoge una Proteína mientras evitas al científico.",
+        "Ve al suroeste y recoge la MT-Electrobola. Entra en el portal y ve al este hasta el final para recoger una Proteína oculta en un árbol.",
+        "Ve al norte y ve al oeste para recoger un Disco Extraño. Evita al entrenador y entra en el portal al este de ese entrenador.",
+        "Vence a tu rival y habla con el chico para conseguir a Lapras.",
+        "Entra en el portal del sureste. Ve al sur y lucha contra el entrenador.",
+        "Ve al este y recoge un Revivir oculto en un árbol.",
+        "Ve al norte y vence al jefe de Team Rocket. Ve al norte y habla con el anciano para conseguir una Master Ball.",
+        "Ve al noroeste y entra en el portal.",
+        "Entra en el portal del noreste. Ve al norte y entra en el ascensor.",
+        "Ve a la novena planta y sal del ascensor. Ve al suroeste y recoge una Hiperpoción oculta cerca de las cajas amarillas. Ve al noroeste y recoge un Calcio oculto en un árbol.",
+        "Ve al noreste y entra en el ascensor.",
+        "Ve a la tercera planta y sal del ascensor. Ve al este y entra en el portal.",
+        "Habla con la chica y di que sí para conseguir la MT-Onda Trueno. Ve al sur y recoge una Super Ball oculta en un árbol.",
+        "Sal del edificio."
+      ]
+    },
+    {
+      "order": 48,
+      "location": "SAFFRON CITY",
+      "steps": [
+        "Go in the house north west and go up the stairs.",
+        "Talk to the girl to get a TM-Mimic. Pick a hidden nugget on the table and exit the house.",
+        "Go north east and enter the gym. Go in the portal and then go in the portal north west while avoiding the trainer.",
+        "Go in the portal south west while avoiding the trainer. Avoid the trainer and go in the portal south east.",
+        "Beat the trainer and go in the portal south west.",
+        "Go in the portal south west. Beat the gym leader to get a tm-calmmind.",
+        "Go in the portal and go in the portal north west.",
+        "Go in the portal north east. Go in the portal south east.",
+        "Exit the gym and fly to pallet town.",
+        "Surf south to route 21."
+      ],
+      "items": [
+        {
+          "name": "tm-mimic",
+          "hidden": false
+        },
+        {
+          "name": "nugget",
+          "hidden": true,
+          "image": "https://gyazo.com/656495623fb9c85df3e67ce2159de4d5"
+        },
+        {
+          "name": "tm-calmmind",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en la casa del noroeste y sube las escaleras.",
+        "Habla con la chica para conseguir la MT-Mimético. Recoge una Pepita oculta sobre la mesa y sal de la casa.",
+        "Ve al noreste y entra en el gimnasio. Entra en el portal y después entra en el portal del noroeste mientras evitas al entrenador.",
+        "Entra en el portal del suroeste mientras evitas al entrenador. Evita al entrenador y entra en el portal del sureste.",
+        "Vence al entrenador y entra en el portal del suroeste.",
+        "Entra en el portal del suroeste. Vence al líder del gimnasio para conseguir la MT-Paz Mental.",
+        "Entra en el portal y entra en el portal del noroeste.",
+        "Entra en el portal del noreste. Entra en el portal del sureste.",
+        "Sal del gimnasio y vuela a Pallet Town.",
+        "Haz Surf hacia el sur hasta Route 21."
+      ]
+    },
+    {
+      "order": 49,
+      "location": "ROUTE 21",
+      "steps": [
+        "Go south until you can see the twins while avoiding all the trainers.",
+        "Pick a hidden pearl on the ground south of the twins. Go south to cinnabar island while avoiding all the trainers.",
+        "Surf east to route 20."
+      ],
+      "items": [
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/49b31fdcf766f1ec38f28c68c4bb426b"
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur hasta que puedas ver a las gemelas, mientras evitas a todos los entrenadores.",
+        "Recoge una Perla oculta en el suelo al sur de las gemelas. Ve al sur hacia Cinnabar Island mientras evitas a todos los entrenadores.",
+        "Haz Surf hacia el este hasta Route 20."
+      ]
+    },
+    {
+      "order": 50,
+      "location": "ROUTE 20",
+      "steps": [
+        "Go east and pick a hidden stardust on the ground north of the swimmer guy while avoiding all the trainers. Go east and enter the cave while avoiding all the trainers."
+      ],
+      "items": [
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/861369e77e17a677729b091cb107c6a6"
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y recoge un Polvo Estelar oculto en el suelo, al norte del nadador, mientras evitas a todos los entrenadores. Continúa hacia el este y entra en la cueva sin enfrentarte a ellos."
+      ]
+    },
+    {
+      "order": 51,
+      "location": "SEAFOAM ISLANDS",
+      "steps": [
+        "Go down the stairs.",
+        "Go down the stairs.",
+        "Go down the stairs.",
+        "Go north west and pick a hidden nugget in a rock.",
+        "Go down the stairs. Pick a hidden waterstone in a rock and go south east to pick a king'srock.",
+        "Go north west and go up the stairs. Go south west and go up the stairs.",
+        "Go east and pick a pearl.",
+        "Go east and go up the stairs.",
+        "Pick a waterstone and go down the stairs. Go north and go up the stairs.",
+        "Pick a revive and go north west.",
+        "Go up the stairs and pick a hyperpotion.",
+        "Go south west and enter the door. Fly to cinnabar island and go in the house west of the gym."
+      ],
+      "items": [
+        {
+          "name": "nugget",
+          "hidden": true,
+          "image": "https://gyazo.com/c4c8dd65fe3027c32c780904eb1ba21f"
+        },
+        {
+          "name": "waterstone",
+          "hidden": true,
+          "image": "https://gyazo.com/9a7dc20db78d4dfa2350e96700786639"
+        },
+        {
+          "name": "king'srock",
+          "hidden": false
+        },
+        {
+          "name": "pearl",
+          "hidden": false
+        },
+        {
+          "name": "waterstone",
+          "hidden": false
+        },
+        {
+          "name": "revive",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Baja las escaleras.",
+        "Baja las escaleras.",
+        "Baja las escaleras.",
+        "Ve al noroeste y recoge una Pepita oculta en una roca.",
+        "Baja las escaleras. Recoge una Piedra Agua oculta en una roca y ve al sureste para recoger una Roca del Rey.",
+        "Ve al noroeste y sube las escaleras. Ve al suroeste y sube las escaleras.",
+        "Ve al este y recoge una Perla.",
+        "Ve al este y sube las escaleras.",
+        "Recoge una Piedra Agua y baja las escaleras. Ve al norte y sube las escaleras.",
+        "Recoge un Revivir y ve al noroeste.",
+        "Sube las escaleras y recoge una Hiperpoción.",
+        "Ve al suroeste y entra por la puerta. Vuela a Cinnabar Island y entra en la casa al oeste del gimnasio."
+      ]
+    },
+    {
+      "order": 52,
+      "location": "POKEMON MANSION",
+      "steps": [
+        "Go north and pick a hidden moonstone in a rock.",
+        "Go north west all the way while avoiding the trainer.",
+        "Click on the statue and say yes. Go east and pick a escaperope.",
+        "Go south and pick a protein.",
+        "Go west and go up the stairs.",
+        "Go up the stairs and fight the trainer. Pick a wiseglasses and go down the stairs.",
+        "Click on the statue and say yes.",
+        "Go south and fight the trainer. Go south east and pick a zinc.",
+        "Go north east all the way and pick a calcium.",
+        "Go north west all the way and go up the stairs. Go east all the way and pick a iron.",
+        "Go west and click on the statue.",
+        "Say yes and go south to fight a trainer. Go east and pick a hidden rarecandy.",
+        "Go down the stairs and pick a hpup.",
+        "Go up the stairs and go to the scientist. Jump south on the western side.",
+        "Avoid the trainer and go south east to pick a carbos.",
+        "Go down the stairs. Go west and fight the trainer.",
+        "Click on the statue and say yes.",
+        "Go west and pick a fullrestore.",
+        "Go north east all the way to fight a trainer. Pick a hidden elixir and click on the statue.",
+        "Say yes and go west to pick a tm-blizzard.",
+        "Go west and pick a secretkey.",
+        "Go south and pick a tm-solarbeam. Go north east all the way and click on the statue.",
+        "Say yes and go south a few steps.",
+        "Go south west and click on the statue. Say yes and go south east all the way.",
+        "Go up the stairs and go south east to exit the building."
+      ],
+      "items": [
+        {
+          "name": "moonstone",
+          "hidden": true,
+          "image": "https://gyazo.com/aebb2c4c7d8f4d81ed18ad10c06a9213"
+        },
+        {
+          "name": "escaperope",
+          "hidden": false
+        },
+        {
+          "name": "protein",
+          "hidden": false
+        },
+        {
+          "name": "wiseglasses",
+          "hidden": false
+        },
+        {
+          "name": "zinc",
+          "hidden": false
+        },
+        {
+          "name": "calcium",
+          "hidden": false
+        },
+        {
+          "name": "iron",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": true,
+          "image": "https://gyazo.com/4f0c58560efa468ab3996e7999db35d4"
+        },
+        {
+          "name": "hpup",
+          "hidden": false
+        },
+        {
+          "name": "carbos",
+          "hidden": false
+        },
+        {
+          "name": "fullrestore",
+          "hidden": false
+        },
+        {
+          "name": "elixir",
+          "hidden": true,
+          "image": "https://gyazo.com/cddf9d8912886ff8e4b4286878166b6d"
+        },
+        {
+          "name": "tm-blizzard",
+          "hidden": false
+        },
+        {
+          "name": "secretkey",
+          "hidden": false
+        },
+        {
+          "name": "tm-solarbeam",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte y recoge una Piedra Lunar oculta en una roca.",
+        "Ve al noroeste hasta el final mientras evitas al entrenador.",
+        "Haz clic en la estatua y di que sí. Ve al este y recoge una Cuerda Huida.",
+        "Ve al sur y recoge una Proteína.",
+        "Ve al oeste y sube las escaleras.",
+        "Sube las escaleras y lucha contra el entrenador. Recoge una Gafas Especiales y baja las escaleras.",
+        "Haz clic en la estatua y di que sí.",
+        "Ve al sur y lucha contra el entrenador. Ve al sureste y recoge un Zinc.",
+        "Ve al noreste hasta el final y recoge un Calcio.",
+        "Ve al noroeste hasta el final y sube las escaleras. Ve al este hasta el final y recoge un Hierro.",
+        "Ve al oeste y haz clic en la estatua.",
+        "Di que sí y ve al sur para luchar contra un entrenador. Ve al este y recoge un Caramelo Raro oculto.",
+        "Baja las escaleras y recoge un Más PS.",
+        "Sube las escaleras y ve al científico. Salta hacia el sur en el lado oeste.",
+        "Evita al entrenador y ve al sureste para recoger un Carburante.",
+        "Baja las escaleras. Ve al oeste y lucha contra el entrenador.",
+        "Haz clic en la estatua y di que sí.",
+        "Ve al oeste y recoge un Restaurar Todo.",
+        "Ve hacia el noreste hasta el final para luchar contra un entrenador. Recoge un Elixir oculto y haz clic en la estatua.",
+        "Di que sí y ve al oeste para recoger la MT-Ventisca.",
+        "Ve al oeste y recoge una Llave Secreta.",
+        "Ve al sur y recoge la MT-Rayo Solar. Ve hacia el noreste hasta el final y haz clic en la estatua.",
+        "Di que sí y avanza unos pasos hacia el sur.",
+        "Ve al suroeste y haz clic en la estatua. Di que sí y ve hacia el sureste hasta el final.",
+        "Sube las escaleras y ve al sureste para salir del edificio."
+      ]
+    },
+    {
+      "order": 53,
+      "location": "CINNABAR ISLAND",
+      "steps": [
+        "Go in the building west of the pokecenter.",
+        "You can trade your raichu for a electrode by talking to the old man in the first room. If you want you can trade a venonat for a tangela by talking to the girl in the first room. Go in the 2nd room and talk to the guy west.",
+        "Say yes to get a TM-Metronome.",
+        "Exit the room. If you talk to the first guy in the 3rd room you can trade your ponyta for a seel. The guy all the way north in the 3rd room can revive your pokemon from a fossil. If you give him a fossil you have to leave the room and come back to pick your pokemon. Now go in the gym.",
+        "Avoid the first trainer and click on the computer.",
+        "Say yes.",
+        "Avoid the next 2 trainers and click on the computer. Say no and fight the next trainer.",
+        "Avoid the next trainer and fight the next trainer.",
+        "Avoid the next trainer and click on the computer. Say no and go fight the gym leader.",
+        "Beat the gym leader to get a tm-fireblast.",
+        "Exit the gym.",
+        "Talk to bill and say yes."
+      ],
+      "items": [
+        {
+          "name": "tm-metronome",
+          "hidden": false
+        },
+        {
+          "name": "tm-fireblast",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en el edificio al oeste del Centro Pokémon.",
+        "En la primera sala puedes intercambiar tu Raichu por un Electrode hablando con el anciano. También puedes intercambiar un Venonat por un Tangela hablando con la chica de esa misma sala. Entra en la segunda sala y habla con el chico del oeste.",
+        "Di que sí para conseguir la MT-Metrónomo.",
+        "Sal de la sala. Si hablas con el primer chico de la tercera sala, puedes intercambiar tu Ponyta por un Seel. El chico que está al fondo, al norte de esa sala, puede revivir un Pokémon a partir de un fósil. Si le entregas uno, tendrás que salir de la sala y volver para recoger tu Pokémon. Después, entra en el gimnasio.",
+        "Evita al primer entrenador y haz clic en el ordenador.",
+        "Di que sí.",
+        "Evita a los 2 siguientes entrenadores y haz clic en el ordenador. Di que no y lucha contra el siguiente entrenador.",
+        "Evita al siguiente entrenador y lucha contra el siguiente entrenador.",
+        "Evita al siguiente entrenador y haz clic en el ordenador. Di que no y ve a luchar contra el líder del gimnasio.",
+        "Vence al líder del gimnasio para conseguir la MT-Llamarada.",
+        "Sal del gimnasio.",
+        "Habla con Bill y di que sí."
+      ]
+    },
+    {
+      "order": 54,
+      "location": "ONE ISLAND",
+      "steps": [
+        "You will get a meteorite.",
+        "You will also get a tri-pass.",
+        "Exit the pokecenter and surf south to treasure beach."
+      ],
+      "items": [
+        {
+          "name": "meteorite",
+          "hidden": false
+        },
+        {
+          "name": "tri-pass",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Recibirás un Meteorito.",
+        "También recibirás un Tri-Pase.",
+        "Sal del Centro Pokémon y haz Surf hacia el sur hasta Treasure Beach."
+      ]
+    },
+    {
+      "order": 55,
+      "location": "TREASURE BEACH",
+      "steps": [
+        "Go south until you get on the land while avoiding the swimmer.",
+        "Pick a hidden stardust on the ground north west. Pick a hidden ultraball on the ground north east.",
+        "Pick a hidden pearl near the grass.",
+        "Pick a hidden stardust near the grass. Pick a hidden starpiece near the grass.",
+        "Pick a hidden pearl near the grass.",
+        "Pick a hidden stardust south east. Pick a hidden pearl south west.",
+        "Fly to one island.",
+        "Go south and enter the red house.",
+        "Talk to the guy to go to two island."
+      ],
+      "items": [
+        {
+          "name": "land",
+          "hidden": false
+        },
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/2c51bcfb1bd747e5e9a8db5d0f76a33b"
+        },
+        {
+          "name": "ultraball",
+          "hidden": true,
+          "image": "https://gyazo.com/87f003b2dbf341ae3e8ddcdad2f86a10"
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/d8f5c2f921da7350d97252915769301a"
+        },
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/f9cc254891b62ff78fd835a6db05ffd2"
+        },
+        {
+          "name": "starpiece",
+          "hidden": true,
+          "image": "https://gyazo.com/30298e3b615b42bf5088ce6313af06f1"
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/0413dfb89d881b1a728a69493dd57f60"
+        },
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/6c365ffc0a943f10a449fb79628bd275"
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/cf9e5d334325e99cfc26f97991aae69e"
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur hasta llegar a tierra firme mientras evitas al nadador.",
+        "Recoge un Polvo Estelar oculto en el suelo del noroeste. Recoge una Ultra Ball oculta en el suelo del noreste.",
+        "Recoge una Perla oculta cerca de la hierba.",
+        "Recoge un Polvo Estelar oculto cerca de la hierba. Recoge un Trozo Estrella oculto cerca de la hierba.",
+        "Recoge una Perla oculta cerca de la hierba.",
+        "Recoge un Polvo Estelar oculto al sureste. Recoge una Perla oculta al suroeste.",
+        "Vuela a One Island.",
+        "Ve al sur y entra en la casa roja.",
+        "Habla con el chico para ir a Two Island."
+      ]
+    },
+    {
+      "order": 56,
+      "location": "TWO ISLAND",
+      "steps": [
+        "Go north and enter the door.",
+        "Go south east and pick a revive.",
+        "Enter the house all the way east.",
+        "Exit the house. Go north to cape brink."
+      ],
+      "items": [
+        {
+          "name": "revive",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte y entra por la puerta.",
+        "Ve al sureste y recoge un Revivir.",
+        "Entra en la casa del extremo este.",
+        "Sal de la casa. Ve al norte hacia Cape Brink."
+      ]
+    },
+    {
+      "order": 57,
+      "location": "CAPE BRINK",
+      "steps": [
+        "Go north all the way and pick a hidden rarecandy near the house.",
+        "Fly to two island.",
+        "Go in the red house south west of the pokecenter. Talk to the guy to go to three island.",
+        "Go north and enter the door."
+      ],
+      "items": [
+        {
+          "name": "rarecandy",
+          "hidden": true,
+          "image": "https://gyazo.com/56c0efd36434964a76684ba7448beece"
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte hasta el final y recoge un Caramelo Raro oculto cerca de la casa.",
+        "Vuela a Two Island.",
+        "Entra en la casa roja al suroeste del Centro Pokémon. Habla con el chico para ir a Three Island.",
+        "Ve al norte y entra por la puerta."
+      ]
+    },
+    {
+      "order": 58,
+      "location": "THREE ISLAND",
+      "steps": [
+        "Go north all the way and say yes to fight the 4 bikers.",
+        "Talk to the first guy that you see to get a fullrestore.",
+        "Go north east and cut the tree. Get a zinc and go west to bond bridge.",
+        "Cut the tree and get a hidden ppup."
+      ],
+      "items": [
+        {
+          "name": "fullrestore",
+          "hidden": false
+        },
+        {
+          "name": "zinc",
+          "hidden": false
+        },
+        {
+          "name": "ppup",
+          "hidden": true,
+          "image": "https://gyazo.com/b4fb8714afc6bc9094ff620e8135d5af"
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte hasta el final y di que sí para luchar contra los 4 motoristas.",
+        "Habla con el primer chico que veas para conseguir un Restaurar Todo.",
+        "Ve al noreste y corta el árbol. Consigue un Zinc y ve al oeste hacia Bond Bridge.",
+        "Corta el árbol y consigue un Más PP oculto."
+      ]
+    },
+    {
+      "order": 59,
+      "location": "BOND BRIDGE",
+      "steps": [
+        "Go west and avoid the twins.",
+        "Cut the tree and get a hidden maxrepel in a rock.",
+        "Fight the girl trainer and go west. Avoid the little girl and pick a hidden pearl.",
+        "Go west and pick a hidden stardust while avoiding all the trainers.",
+        "Go west to berry forest."
+      ],
+      "items": [
+        {
+          "name": "maxrepel",
+          "hidden": true,
+          "image": "https://gyazo.com/b93d8b1feeaf70a853c5884d53032a45"
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/a0fe33cd467a8c375f9195fb723e9cf0"
+        },
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/4f1f34a7b1963b9fc0fc20ac65d7c875"
+        }
+      ],
+      "stepsEs": [
+        "Ve al oeste y evita a las gemelas.",
+        "Corta el árbol y consigue un Repelente Máximo oculto en una roca.",
+        "Lucha contra la entrenadora y ve al oeste. Evita a la niña y recoge una Perla oculta.",
+        "Ve al oeste y recoge un Polvo Estelar oculto mientras evitas a todos los entrenadores.",
+        "Ve al oeste hacia Berry Forest."
+      ]
+    },
+    {
+      "order": 60,
+      "location": "BERRY FOREST",
+      "steps": [
+        "Follow the path and pick a razzberry.",
+        "Then pick a oranberry.",
+        "Go south east to pick a persimberry.",
+        "Go north to pick a pinapberry. Go north east to pick a chestoberry.",
+        "Jump south 1 time and and go west to pick a fullheal.",
+        "Go east and jump south. Go north east and then go west to pick a aspearberry.",
+        "Cut the tree and pick a rawstberry.",
+        "Pick a ether and go south to pick a blukberry. Go south and pick a wepearberry.",
+        "Also pick a cheriberry.",
+        "Go east and pick a nanabberry.",
+        "Go south west and pick a pechaberry. Surf south and cut the trees to pick a silverpowder.",
+        "Go north west all the way and pick a lumberry near the girl.",
+        "Talk to the girl and beat a hypno. You will get a iapapaberry."
+      ],
+      "items": [
+        {
+          "name": "razzberry",
+          "hidden": false
+        },
+        {
+          "name": "oranberry",
+          "hidden": false
+        },
+        {
+          "name": "persimberry",
+          "hidden": false
+        },
+        {
+          "name": "pinapberry",
+          "hidden": false
+        },
+        {
+          "name": "chestoberry",
+          "hidden": false
+        },
+        {
+          "name": "fullheal",
+          "hidden": false
+        },
+        {
+          "name": "aspearberry",
+          "hidden": false
+        },
+        {
+          "name": "rawstberry",
+          "hidden": false
+        },
+        {
+          "name": "ether",
+          "hidden": false
+        },
+        {
+          "name": "blukberry",
+          "hidden": false
+        },
+        {
+          "name": "wepearberry",
+          "hidden": false
+        },
+        {
+          "name": "cheriberry",
+          "hidden": false
+        },
+        {
+          "name": "nanabberry",
+          "hidden": false
+        },
+        {
+          "name": "pechaberry",
+          "hidden": false
+        },
+        {
+          "name": "silverpowder",
+          "hidden": false
+        },
+        {
+          "name": "lumberry",
+          "hidden": false
+        },
+        {
+          "name": "iapapaberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Sigue el camino y recoge una Baya Frambu.",
+        "Después recoge una Baya Aranja.",
+        "Ve al sureste para recoger una Baya Caquic.",
+        "Ve al norte para recoger una Baya Pinia. Ve al noreste para recoger una Baya Atania.",
+        "Salta 1 vez hacia el sur y ve al oeste para recoger una Cura Total.",
+        "Ve al este y salta hacia el sur. Ve al noreste y después ve al oeste para recoger una Baya Perasi.",
+        "Corta el árbol y recoge una Baya Safre.",
+        "Recoge un Éter y ve al sur para recoger una Baya Oram. Ve al sur y recoge una Baya Peragu.",
+        "También recoge una Baya Zreza.",
+        "Ve al este y recoge una Baya Latano.",
+        "Ve al suroeste y recoge una Baya Meloc. Haz Surf hacia el sur y corta los árboles para recoger un Polvo Plata.",
+        "Ve al noroeste hasta el final y recoge una Baya Ziuela cerca de la chica.",
+        "Habla con la chica y vence a un Hypno. Recibirás una Baya Pabaya."
+      ]
+    },
+    {
+      "order": 61,
+      "location": "TWO ISLAND",
+      "steps": [
+        "Talk to the guy to get a moonstone.",
+        "Exit the house and fly to one island.",
+        "Go in the pokecenter and talk to bill. Fly to cerulean city and go east to route 9.",
+        "Go east to route 10 while avoiding the hikers."
+      ],
+      "items": [
+        {
+          "name": "moonstone",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Habla con el chico para conseguir una Piedra Lunar.",
+        "Sal de la casa y vuela a One Island.",
+        "Entra en el Centro Pokémon y habla con Bill. Vuela a Cerulean City y ve al este hacia Route 9.",
+        "Ve al este hacia Route 10 mientras evitas a los montañeros."
+      ]
+    },
+    {
+      "order": 62,
+      "location": "ROUTE 10",
+      "steps": [
+        "Go north east all the way and surf south all the way.",
+        "Avoid the trainer and get a hidden leppaberry.",
+        "Enter the building."
+      ],
+      "items": [
+        {
+          "name": "leppaberry",
+          "hidden": true,
+          "image": "https://gyazo.com/8c3629ae240000866d07a1942207adab"
+        }
+      ],
+      "stepsEs": [
+        "Ve al noreste hasta el final y haz Surf hacia el sur hasta el final.",
+        "Evita al entrenador y consigue una Baya Zanama oculta.",
+        "Entra en el edificio."
+      ]
+    },
+    {
+      "order": 63,
+      "location": "POWER PLANT",
+      "steps": [
+        "Go north and pick a hyperpotion.",
+        "Follow the path and go east to pick a TM-Agility.",
+        "Also pick a electirizer. Go west and then go south.",
+        "Go east and then go south east all the way to pick a tm-thunder. Go north east all the way and pick a metalcoat.",
+        "Avoid the other ball and go west. Go south and pick a hidden maxelixir.",
+        "Go west and pick a hidden thunderstone near the door. The other balls are the pokemon electrode.",
+        "Go west and enter the door.",
+        "Fly to viridian city."
+      ],
+      "items": [
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        },
+        {
+          "name": "tm-agility",
+          "hidden": false
+        },
+        {
+          "name": "electirizer",
+          "hidden": false
+        },
+        {
+          "name": "tm-thunder",
+          "hidden": false
+        },
+        {
+          "name": "metalcoat",
+          "hidden": false
+        },
+        {
+          "name": "maxelixir",
+          "hidden": true,
+          "image": "https://gyazo.com/847d8de98a5c6dc9f7125b964f29d9d2"
+        },
+        {
+          "name": "thunderstone",
+          "hidden": true,
+          "image": "https://gyazo.com/4c0c63fcebbbbcf1c37acbb37aff0caa"
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte y recoge una Hiperpoción.",
+        "Sigue el camino y ve al este para recoger la MT-Agilidad.",
+        "También recoge un Electrizador. Ve al oeste y después ve al sur.",
+        "Ve al este y después ve al sureste hasta el final para recoger la MT-Trueno. Ve al noreste hasta el final y recoge un Revestimiento Metálico.",
+        "Evita la otra Poké Ball y ve al oeste. Ve al sur y recoge un Elixir Máximo oculto.",
+        "Ve al oeste y recoge una Piedra Trueno oculta cerca de la puerta. Las demás Poké Balls son Electrode.",
+        "Ve al oeste y entra por la puerta.",
+        "Vuela a Viridian City."
+      ]
+    },
+    {
+      "order": 64,
+      "location": "VIRIDIAN CITY",
+      "steps": [
+        "Go west from the pokecenter and cut the tree.",
+        "Talk to the fat guy and say yes to get a TM-DreamEater. Go north east and enter the gym.",
+        "Go on the arrow pointing west and avoid a trainer.",
+        "Go on the arrow pointing north and fight a trainer. Go on the arrow pointing south.",
+        "Go on the arrow pointing east.",
+        "Go north and avoid the 3 trainers.",
+        "Go north and fight the 2 trainers. Go south east all the way and go north east all the way.",
+        "Go on the arrow pointing west. Go west while avoiding the last trainer and fight the gym leader. Beat the gym leader to get a tm-earthquake.",
+        "Talk to the gym leader again.",
+        "Exit the gym and go west to cut a tree.",
+        "Pick a potion. Go west to route 22.",
+        "Go north west to fight your rival.",
+        "Go west and enter the house.",
+        "Go north and enter the door."
+      ],
+      "items": [
+        {
+          "name": "tm-dreameater",
+          "hidden": false
+        },
+        {
+          "name": "tm-earthquake",
+          "hidden": false
+        },
+        {
+          "name": "potion",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al oeste desde el Centro Pokémon y corta el árbol.",
+        "Habla con el chico gordo y di que sí para conseguir la MT-Comesueños. Ve al noreste y entra en el gimnasio.",
+        "Pisa la flecha que apunta al oeste y evita a un entrenador.",
+        "Pisa la flecha que apunta al norte y lucha contra un entrenador. Pisa la flecha que apunta al sur.",
+        "Pisa la flecha que apunta al este.",
+        "Ve al norte y evita a los 3 entrenadores.",
+        "Ve al norte y lucha contra los 2 entrenadores. Ve al sureste hasta el final y ve al noreste hasta el final.",
+        "Pisa la flecha que apunta al oeste. Ve al oeste mientras evitas al último entrenador y lucha contra el líder del gimnasio. Vence al líder del gimnasio para conseguir la MT-Terremoto.",
+        "Habla con el líder del gimnasio de nuevo.",
+        "Sal del gimnasio y ve al oeste para cortar un árbol.",
+        "Recoge una Poción. Ve al oeste hacia Route 22.",
+        "Ve al noroeste para luchar contra tu rival.",
+        "Ve al oeste y entra en la casa.",
+        "Ve al norte y entra por la puerta."
+      ]
+    },
+    {
+      "order": 65,
+      "location": "ROUTE 23",
+      "steps": [
+        "Go north and follow the path.",
+        "Pick a leppaberry after showing your 3rd badge.",
+        "Go north and surf north. Pick a hidden leppaberry on the ground after showing your 5th badge.",
+        "Go north and follow the path. Pick a hidden greatball near the grass after showing your 6th badge.",
+        "Also pick a aspearberry and go north. Pick a hidden hyperpotion in a rock after showing your 7th badge.",
+        "Go north and follow the path. Pick a sitrusberry after showing your 8th badge.",
+        "Enter the cave."
+      ],
+      "items": [
+        {
+          "name": "leppaberry",
+          "hidden": false
+        },
+        {
+          "name": "leppaberry",
+          "hidden": true,
+          "image": "https://gyazo.com/2b157f9ca3aad15df62288b16f1019aa"
+        },
+        {
+          "name": "greatball",
+          "hidden": true,
+          "image": "https://gyazo.com/98c6a44a96eceba8b46cf7cfb191cf9f"
+        },
+        {
+          "name": "aspearberry",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": true,
+          "image": "https://gyazo.com/44ff96ac1cd23aff8959c82b3134e82e"
+        },
+        {
+          "name": "sitrusberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte y sigue el camino.",
+        "Recoge una Baya Zanama después de mostrar tu tercera medalla.",
+        "Ve al norte y haz Surf hacia el norte. Recoge una Baya Zanama oculta en el suelo después de mostrar tu quinta medalla.",
+        "Ve al norte y sigue el camino. Recoge una Super Ball oculta cerca de la hierba después de mostrar tu sexta medalla.",
+        "También recoge una Baya Perasi y ve al norte. Recoge una Hiperpoción oculta en una roca después de mostrar tu séptima medalla.",
+        "Ve al norte y sigue el camino. Recoge una Baya Zidra después de mostrar tu octava medalla.",
+        "Entra en la cueva."
+      ]
+    },
+    {
+      "order": 66,
+      "location": "VICTORY ROAD",
+      "steps": [
+        "Push the boulder south 1 time.",
+        "Push the boulder east 5 times.",
+        "Push the boulder north 2 times.",
+        "Push the boulder east 7 times. Push the boulder north 2 times.",
+        "Push the boulder east 1 time and push the boulder south 1 time. Go north east all the way and pick a hidden fullrestore in a rock while avoiding the girl trainer. Push the boulder west 2 times and push the boulder north 1 time.",
+        "Pick a rarecandy and go west. Pick a hidden greatball in a rock near the girl.",
+        "Go north west and go up the stairs while avoiding the guy trainer.",
+        "Go down the stairs. Go north east all the way and push the boulder west 3 times.",
+        "Pick a TM-AuraSphere and go north west all the way.",
+        "Go up the stairs. Go south and push the boulder south 1 time.",
+        "Push the boulder west 2 times.",
+        "Push the boulder south 1 time.",
+        "Push the boulder west 2 times. Go south east all the way and avoid the 2 trainers.",
+        "Go north and pick a fullheal.",
+        "Beat the trainer and go north east to fight another trainer. Pick a TM-HyperBeam and go up the stairs.",
+        "Go east and fight the trainer. Pick a maxrevive and push the boulder north 2 times.",
+        "Push the boulder west 22 times. Pick a tm-overheat and push the boulder south 1 time.",
+        "Push the boulder west 4 times. Push the boulder south 3 times.",
+        "Push the boulder east 1 time. Go down the stairs and go east to pick a protector while avoiding the trainer.",
+        "Go up the stairs.",
+        "Go east and go to the girl. Avoid that trainer and go west.",
+        "Follow the path and avoid the next 2 trainers.",
+        "Go east and push the boulder in the hole. Go down the hole and push the boulder west 19 times.",
+        "Pick a TM-FocusBlast and go east.",
+        "Go up the stairs and fight the 2 trainers. Walk north a few steps and go down the stairs.",
+        "Talk to the guy and say yes to get a TM-Double-Edge.",
+        "Go east and enter the door."
+      ],
+      "items": [
+        {
+          "name": "fullrestore",
+          "hidden": true,
+          "image": "https://gyazo.com/7ff5c5bd986a4ed4ad0e893c76942d79"
+        },
+        {
+          "name": "rarecandy",
+          "hidden": false
+        },
+        {
+          "name": "greatball",
+          "hidden": true,
+          "image": "https://gyazo.com/66b71c0f6653e51c2364d653c1c06ba4"
+        },
+        {
+          "name": "tm-aurasphere",
+          "hidden": false
+        },
+        {
+          "name": "fullheal",
+          "hidden": false
+        },
+        {
+          "name": "tm-hyperbeam",
+          "hidden": false
+        },
+        {
+          "name": "maxrevive",
+          "hidden": false
+        },
+        {
+          "name": "tm-overheat",
+          "hidden": false
+        },
+        {
+          "name": "protector",
+          "hidden": false
+        },
+        {
+          "name": "tm-focusblast",
+          "hidden": false
+        },
+        {
+          "name": "tm-double-edge",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Empuja la roca hacia el sur 1 vez.",
+        "Empuja la roca hacia el este 5 veces.",
+        "Empuja la roca hacia el norte 2 veces.",
+        "Empuja la roca hacia el este 7 veces. Empuja la roca hacia el norte 2 veces.",
+        "Empuja la roca 1 vez hacia el este y 1 vez hacia el sur. Ve hasta el final hacia el noreste y recoge un Restaurar Todo oculto en una roca mientras evitas a la entrenadora. Después, empuja la roca 2 veces hacia el oeste y 1 vez hacia el norte.",
+        "Recoge un Caramelo Raro y ve al oeste. Recoge una Super Ball oculta en una roca cerca de la chica.",
+        "Ve al noroeste y sube las escaleras mientras evitas al entrenador.",
+        "Baja las escaleras. Ve al noreste hasta el final y empuja la roca hacia el oeste 3 veces.",
+        "Recoge la MT-Esfera Aural y ve al noroeste hasta el final.",
+        "Sube las escaleras. Ve al sur y empuja la roca hacia el sur 1 vez.",
+        "Empuja la roca hacia el oeste 2 veces.",
+        "Empuja la roca hacia el sur 1 vez.",
+        "Empuja la roca hacia el oeste 2 veces. Ve al sureste hasta el final y evita a los 2 entrenadores.",
+        "Ve al norte y recoge una Cura Total.",
+        "Vence al entrenador y ve al noreste para luchar contra otro entrenador. Recoge la MT-Hiperrayo y sube las escaleras.",
+        "Ve al este y lucha contra el entrenador. Recoge un Revivir Máximo y empuja la roca hacia el norte 2 veces.",
+        "Empuja la roca hacia el oeste 22 veces. Recoge la MT-Sofoco y empuja la roca hacia el sur 1 vez.",
+        "Empuja la roca hacia el oeste 4 veces. Empuja la roca hacia el sur 3 veces.",
+        "Empuja la roca hacia el este 1 vez. Baja las escaleras y ve al este para recoger un Protector mientras evitas al entrenador.",
+        "Sube las escaleras.",
+        "Ve al este y ve a la chica. Evita a ese entrenador y ve al oeste.",
+        "Sigue el camino y evita a los 2 siguientes entrenadores.",
+        "Ve al este y empuja la roca dentro del agujero. Déjate caer y empuja la roca 19 veces hacia el oeste.",
+        "Recoge la MT-Onda Certera y ve al este.",
+        "Sube las escaleras y lucha contra los 2 entrenadores. Camina hacia el norte unos pasos y baja las escaleras.",
+        "Habla con el chico y di que sí para conseguir la MT-Doble Filo.",
+        "Ve al este y entra por la puerta."
+      ]
+    },
+    {
+      "order": 67,
+      "location": "ROUTE 23",
+      "steps": [
+        "Go north west and pick a lumberry.",
+        "Go north and pick a hidden apicotberry.",
+        "Go north all the way and enter the building. Go north west and talk to the girl.",
+        "Enter the room and beat the 5 trainers.",
+        "Exit the house and fly to one island. Enter the pokecenter and talk to Celio all the way east.",
+        "Exit the house and surf east. Surf north and go north all the way until you can see a cave while avoiding all the trainers.",
+        "Fight the couple.",
+        "Enter the cave and go north all the way."
+      ],
+      "items": [
+        {
+          "name": "lumberry",
+          "hidden": false
+        },
+        {
+          "name": "apicotberry",
+          "hidden": true,
+          "image": "https://gyazo.com/739bc508e2c9cf87887f45db5b09f4e6"
+        }
+      ],
+      "stepsEs": [
+        "Ve al noroeste y recoge una Baya Ziuela.",
+        "Ve al norte y recoge una Baya Aricoc oculta.",
+        "Ve al norte hasta el final y entra en el edificio. Ve al noroeste y habla con la chica.",
+        "Entra en la sala y vence a los 5 entrenadores.",
+        "Sal de la casa y vuela a One Island. Entra en el Centro Pokémon y habla con Celio del extremo este.",
+        "Sal de la casa y haz Surf hacia el este. Después, haz Surf y continúa hacia el norte hasta que veas una cueva, mientras evitas a todos los entrenadores.",
+        "Lucha contra la pareja.",
+        "Entra en la cueva y ve al norte hasta el final."
+      ]
+    },
+    {
+      "order": 68,
+      "location": "EMBER SPA",
+      "steps": [
+        "Talk to the old man all the way north to get a HM06-RockSmash.",
+        "Exit the cave."
+      ],
+      "items": [
+        {
+          "name": "hm06-rocksmash",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Habla con el anciano del extremo norte para conseguir una MO06-Golpe Roca.",
+        "Sal de la cueva."
+      ]
+    },
+    {
+      "order": 69,
+      "location": "KINDLE ROAD",
+      "steps": [
+        "Go south and smash the rocks to get a blackbelt.",
+        "Go south on the eastern side and pick a maxrepel while avoiding the trainer. Go north and when you can see the trainer go west.",
+        "Go south and go up the stairs. Go south and smash the rocks to get a carbos while avoiding the girl trainer. Go north all the way to mt.ember while avoiding all the trainers."
+      ],
+      "items": [
+        {
+          "name": "blackbelt",
+          "hidden": false
+        },
+        {
+          "name": "maxrepel",
+          "hidden": false
+        },
+        {
+          "name": "carbos",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur y rompe las rocas para conseguir un Cinturón Negro.",
+        "Ve al sur por el lado este y recoge un Repelente Máximo mientras evitas al entrenador. Ve al norte y, cuando puedas ver al entrenador, dirígete al oeste.",
+        "Ve al sur y sube las escaleras. Continúa hacia el sur y rompe las rocas para conseguir un Carburante mientras evitas a la entrenadora. Después, ve hasta el final hacia el norte hasta Mt. Ember evitando a todos los entrenadores."
+      ]
+    },
+    {
+      "order": 70,
+      "location": "MT.EMBER",
+      "steps": [
+        "Talk to the hiker and say yes to get a TM-Explosion.",
+        "Go east and fight the 2 rocket members. Enter the cave.",
+        "Go north west and go down the stairs.",
+        "Go north and go down the stairs. Push the first boulder east 2 times.",
+        "Push the 2nd boulder east 1 time.",
+        "Push the 3rd boulder north 1 time.",
+        "Go down the stairs. Push the boulder east 1 time.",
+        "Push the boulder south 1 time.",
+        "Then go south west.",
+        "Push the boulder and go down the stairs. Go south east and go down the stairs.",
+        "Click on the red stone to get a ruby.",
+        "Go up the stairs.",
+        "Go north west and go up the stairs. Push the boulder and go east.",
+        "Push the first boulder east 1 time.",
+        "Push the other boulder west 1 time.",
+        "Go south and go up the stairs. Go up the stairs.",
+        "Go up the stairs.",
+        "Go south and enter the door.",
+        "Go west and push the 2 boulders.",
+        "Avoid the girl trainer and go north. Smash the rock and go north west to fight a trainer.",
+        "Pick a hidden greatball and enter the cave.",
+        "Go north and enter the door. Go north and enter the door.",
+        "Go south east and enter the door.",
+        "Go north and pick a magmarizer.",
+        "Go west and pick a hidden firestone in a rock. Go north west and pick a greatball.",
+        "Go south and jump south.",
+        "Go east and pick a hyperpotion near the grass.",
+        "Fly to one island. Go in the pokecenter and talk to the guy east.",
+        "You will get a rainbowpass. Exit the house and go south in the red house.",
+        "Talk to the guy to go to four island.",
+        "Go north and enter the door."
+      ],
+      "items": [
+        {
+          "name": "tm-explosion",
+          "hidden": false
+        },
+        {
+          "name": "ruby",
+          "hidden": false
+        },
+        {
+          "name": "greatball",
+          "hidden": true,
+          "image": "https://gyazo.com/ef7c8b87893430813e12d12dd496cd82"
+        },
+        {
+          "name": "magmarizer",
+          "hidden": false
+        },
+        {
+          "name": "firestone",
+          "hidden": true,
+          "image": "https://gyazo.com/239732570d44ce5c5adae2a4e3c82c7f"
+        },
+        {
+          "name": "greatball",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        },
+        {
+          "name": "rainbowpass",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Habla con el montañero y di que sí para conseguir la MT-Explosión.",
+        "Ve al este y lucha contra los 2 miembros del Team Rocket. Entra en la cueva.",
+        "Ve al noroeste y baja las escaleras.",
+        "Ve al norte y baja las escaleras. Empuja la primera roca 2 veces hacia el este.",
+        "Empuja la segunda roca 1 vez hacia el este.",
+        "Empuja la tercera roca 1 vez hacia el norte.",
+        "Baja las escaleras. Empuja la roca hacia el este 1 vez.",
+        "Empuja la roca hacia el sur 1 vez.",
+        "Después ve al suroeste.",
+        "Empuja la roca y baja las escaleras. Ve al sureste y baja las escaleras.",
+        "Haz clic en la piedra roja para conseguir un Rubí.",
+        "Sube las escaleras.",
+        "Ve al noroeste y sube las escaleras. Empuja la roca y ve al este.",
+        "Empuja la primera roca 1 vez hacia el este.",
+        "Empuja la otra roca 1 vez hacia el oeste.",
+        "Ve al sur y sube las escaleras. Sube las escaleras.",
+        "Sube las escaleras.",
+        "Ve al sur y entra por la puerta.",
+        "Ve al oeste y empuja las 2 rocas.",
+        "Evita a la entrenadora y ve al norte. Rompe la roca y ve al noroeste para luchar contra un entrenador.",
+        "Recoge una Super Ball oculta y entra en la cueva.",
+        "Ve al norte y entra por la puerta. Ve al norte y entra por la puerta.",
+        "Ve al sureste y entra por la puerta.",
+        "Ve al norte y recoge un Magmatizador.",
+        "Ve al oeste y recoge una Piedra Fuego oculta en una roca. Ve al noroeste y recoge una Super Ball.",
+        "Ve al sur y salta hacia el sur.",
+        "Ve al este y recoge una Hiperpoción cerca de la hierba.",
+        "Vuela a One Island. Entra en el Centro Pokémon y habla con el chico del este.",
+        "Recibirás un Pase Arcoíris. Sal del edificio y entra en la casa roja del sur.",
+        "Habla con el chico para ir a Four Island.",
+        "Ve al norte y entra por la puerta."
+      ]
+    },
+    {
+      "order": 71,
+      "location": "FOUR ISLAND",
+      "steps": [
+        "Pick a hidden greatball.",
+        "Go north west and smash the rock to get a starpiece.",
+        "Go south of the pokemart and pick a hidden pearl. Go in the house north east of the pokecenter.",
+        "Talk to the first guy that you see and say yes to get a TM-BodySlam.",
+        "Exit the house. Go east of the pokemart and surf north to get a stardust.",
+        "Enter the cave."
+      ],
+      "items": [
+        {
+          "name": "greatball",
+          "hidden": true,
+          "image": "https://gyazo.com/00307c5316f72c07955c4c0e004c7357"
+        },
+        {
+          "name": "starpiece",
+          "hidden": false
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/edef9df84ae6247c22075eed174df240"
+        },
+        {
+          "name": "tm-bodyslam",
+          "hidden": false
+        },
+        {
+          "name": "stardust",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Recoge una Super Ball oculta.",
+        "Ve al noroeste y rompe la roca para conseguir un Trozo Estrella.",
+        "Ve al sur de la Tienda Pokémon y recoge una Perla oculta. Entra en la casa al noreste del Centro Pokémon.",
+        "Habla con el primer chico que veas y di que sí para conseguir la MT-Golpe Cuerpo.",
+        "Sal de la casa. Ve al este de la Tienda Pokémon y haz Surf hacia el norte para conseguir un Polvo Estelar.",
+        "Entra en la cueva."
+      ]
+    },
+    {
+      "order": 72,
+      "location": "ICEFALL CAVE",
+      "steps": [
+        "Surf north west and go in the door.",
+        "Go north east and pick a greatball. Go north all the way and walk 2 times on the northern most ice square. Go up the stairs.",
+        "Walk 2 times on the first ice square.",
+        "Slide south and slide east to get a nevermeltice.",
+        "Slide west and slide north. Go up the stairs and walk 2 times on the southern ice square.",
+        "Slide north and slide east.",
+        "Slide south and slide west. Pick a fullrestore and go up the stairs.",
+        "Pick a HM07-WaterFall and go in the door south west.",
+        "Go up the waterfall and go north west. Go down the stairs and enter the door.",
+        "Go north and fight the rocket trainer.",
+        "Go south and enter the door.",
+        "Go south and enter the door. Go south east and enter the door.",
+        "Go in the red house south west of the pokecenter and talk to the guy to go to six island. Go north and enter the door."
+      ],
+      "items": [
+        {
+          "name": "greatball",
+          "hidden": false
+        },
+        {
+          "name": "nevermeltice",
+          "hidden": false
+        },
+        {
+          "name": "fullrestore",
+          "hidden": false
+        },
+        {
+          "name": "hm07-waterfall",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Haz Surf hacia el noroeste y entra por la puerta.",
+        "Haz Surf hacia el noroeste y entra por la puerta. Ve al noreste y recoge una Super Ball. Ve hacia el norte hasta el final, atraviesa 2 veces la casilla de hielo situada más al norte y sube las escaleras.",
+        "Atraviesa 2 veces la primera casilla de hielo.",
+        "Deslízate hacia el sur y deslízate hacia el este para conseguir un Hielo Perpetuo.",
+        "Deslízate hacia el oeste y después hacia el norte. Sube las escaleras y atraviesa 2 veces la casilla de hielo situada más al sur.",
+        "Deslízate hacia el norte y deslízate hacia el este.",
+        "Deslízate hacia el sur y deslízate hacia el oeste. Recoge un Restaurar Todo y sube las escaleras.",
+        "Recoge una MO07-Cascada y entra por la puerta del suroeste.",
+        "Sube la cascada y ve al noroeste. Baja las escaleras y entra por la puerta.",
+        "Ve al norte y lucha contra el entrenador del Team Rocket.",
+        "Ve al sur y entra por la puerta.",
+        "Ve al sur y entra por la puerta. Ve al sureste y entra por la puerta.",
+        "Entra en la casa roja al suroeste del Centro Pokémon y habla con el chico para ir a Six Island. Ve al norte y entra por la puerta."
+      ]
+    },
+    {
+      "order": 73,
+      "location": "SIX ISLAND",
+      "steps": [
+        "Pick a leppaberry north of the pokecenter.",
+        "Go east to water path."
+      ],
+      "items": [
+        {
+          "name": "leppaberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Recoge una Baya Zanama al norte del Centro Pokémon.",
+        "Ve al este hacia Water Path."
+      ]
+    },
+    {
+      "order": 74,
+      "location": "WATER PATH",
+      "steps": [
+        "Surf north and go north until you see a girl with a white hat while avoiding all the trainers. Avoid the girl with the white hat and fight the twins.",
+        "Go north east.",
+        "Surf south and get a elixir. Go back to the girl with a white hat.",
+        "Go west and pick a oranberry. In the house west of the girl with a white hat there is a girl that will give you a nestball if you show her a big heracross. Go west to pattern bush.",
+        "Avoid the first trainer and go north to fight a girl with a white hat. Go south west all the way to green path while avoiding all the trainers."
+      ],
+      "items": [
+        {
+          "name": "elixir",
+          "hidden": false
+        },
+        {
+          "name": "oranberry",
+          "hidden": false
+        },
+        {
+          "name": "nestball",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Haz Surf hacia el norte y continúa hasta que veas a una entrenadora con sombrero blanco, mientras evitas a todos los entrenadores. Evita a la chica del sombrero blanco y lucha contra las gemelas.",
+        "Ve al noreste.",
+        "Haz Surf hacia el sur y consigue un Elixir. Vuelve a la chica con sombrero blanco.",
+        "Ve al oeste y recoge una Baya Aranja. En la casa situada al oeste de la chica del sombrero blanco hay otra chica que te dará una Nido Ball si le enseñas un Heracross grande. Después, ve al oeste hacia Pattern Bush.",
+        "Evita al primer entrenador y ve al norte para luchar contra una chica con sombrero blanco. Ve hacia el suroeste hasta el final para llegar a Green Path mientras evitas a todos los entrenadores."
+      ]
+    },
+    {
+      "order": 75,
+      "location": "GREEN PATH",
+      "steps": [
+        "Surf west and pick a hidden ultraball near a trainer.",
+        "Avoid the trainer and surf north to outcast island."
+      ],
+      "items": [
+        {
+          "name": "ultraball",
+          "hidden": true,
+          "image": "https://gyazo.com/21671c3e8cd7219b0893678307a7bbf0"
+        }
+      ],
+      "stepsEs": [
+        "Haz Surf hacia el oeste y recoge una Ultra Ball oculta cerca de un entrenador.",
+        "Evita al entrenador y haz Surf hacia el norte hasta Outcast Island."
+      ]
+    },
+    {
+      "order": 76,
+      "location": "OUTCAST ISLAND",
+      "steps": [
+        "Surf north until you see a male swimmer trainer while avoiding all the trainers.",
+        "Avoid the guy swimmer and go north west. Pick a hidden netball and avoid the rocket trainer.",
+        "Go back to the guy swimmer and go north east. Pick a hidden starpiece on the ground and go north to fight a fisher.",
+        "Pick a ppup and fly to six island. Go east to water path."
+      ],
+      "items": [
+        {
+          "name": "netball",
+          "hidden": true,
+          "image": "https://gyazo.com/baa7407522ddb3a5171b0c3b0ad54ca2"
+        },
+        {
+          "name": "starpiece",
+          "hidden": true,
+          "image": "https://gyazo.com/36cb3219cca872cf71ed864217e0b6e8"
+        },
+        {
+          "name": "ppup",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Haz Surf hacia el norte hasta que veas a un nadador, mientras evitas a todos los entrenadores.",
+        "Evita al chico nadador y ve al noroeste. Recoge una Malla Ball oculta y evita al entrenador del Team Rocket.",
+        "Vuelve al chico nadador y ve al noreste. Recoge un Trozo Estrella oculto en el suelo y ve al norte para luchar contra un pescador.",
+        "Recoge un Más PP y vuela a Six Island. Ve al este hacia Water Path."
+      ]
+    },
+    {
+      "order": 77,
+      "location": "WATER PATH",
+      "steps": [
+        "Go south to pick a pinapberry.",
+        "Go south and pick a aspearberry near the trainer.",
+        "Surf south and pick a maxpotion. Surf north and go fight the trainer.",
+        "Go south west to ruin valley."
+      ],
+      "items": [
+        {
+          "name": "pinapberry",
+          "hidden": false
+        },
+        {
+          "name": "aspearberry",
+          "hidden": false
+        },
+        {
+          "name": "maxpotion",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur para recoger una Baya Pinia.",
+        "Ve al sur y recoge una Baya Perasi cerca del entrenador.",
+        "Haz Surf hacia el sur y recoge una Poción Máxima. Haz Surf hacia el norte y lucha contra el entrenador.",
+        "Ve al suroeste hacia Ruin Valley."
+      ]
+    },
+    {
+      "order": 78,
+      "location": "RUIN VALLEY",
+      "steps": [
+        "Go south and pick a ultraball.",
+        "Go north west all the way and go south west all the way to pick a hpup. Go north and go up the stairs to fight a trainer.",
+        "Pick a hyperpotion.",
+        "Go south east and fight a trainer. Follow the path and avoid the next trainer.",
+        "Fight the next 2 trainers.",
+        "Use cut on the door and enter the cave. Go down in the hole.",
+        "Go down in the hole north.",
+        "Go down in the hole west.",
+        "Go down in the hole east.",
+        "Go down in the hole south. Click on the purple stone to get a sapphire.",
+        "Go up the stairs.",
+        "Go in the door south.",
+        "Fly to six island. Go in the red house south of the pokecenter and talk to the guy to go to five island.",
+        "Go north and enter the door. Surf north to water labyrinth.",
+        "If you surf west you can get a togepi egg from the guy with a hat.",
+        "Now surf north to resort gorgeous."
+      ],
+      "items": [
+        {
+          "name": "ultraball",
+          "hidden": false
+        },
+        {
+          "name": "hpup",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        },
+        {
+          "name": "sapphire",
+          "hidden": false
+        },
+        {
+          "name": "togepi egg",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur y recoge una Ultra Ball.",
+        "Ve al noroeste hasta el final y ve al suroeste hasta el final para recoger un Más PS. Ve al norte y sube las escaleras para luchar contra un entrenador.",
+        "Recoge una Hiperpoción.",
+        "Ve al sureste y lucha contra un entrenador. Sigue el camino y evita al siguiente entrenador.",
+        "Lucha contra los 2 entrenadores siguientes.",
+        "Usa Corte en la puerta y entra en la cueva. Déjate caer por el agujero.",
+        "Déjate caer por el agujero del norte.",
+        "Déjate caer por el agujero del oeste.",
+        "Déjate caer por el agujero del este.",
+        "Déjate caer por el agujero del sur. Haz clic en la piedra morada para conseguir un Zafiro.",
+        "Sube las escaleras.",
+        "Entra por la puerta del sur.",
+        "Vuela a Six Island. Entra en la casa roja al sur del Centro Pokémon y habla con el chico para ir a Five Island.",
+        "Ve al norte y entra por la puerta. Haz Surf hacia el norte hasta Water Labyrinth.",
+        "Si haces Surf hacia el oeste, el chico del sombrero te dará un Huevo de Togepi.",
+        "Ahora haz Surf hacia el norte hasta Resort Gorgeous."
+      ]
+    },
+    {
+      "order": 79,
+      "location": "RESORT GORGEOUS",
+      "steps": [
+        "Surf north and pick a hidden nestball on the ground.",
+        "Fight the trainer and surf east. Fight the 4 trainers while avoiding the guy with a blue hat. Pick a hidden stardust north west of the house.",
+        "Pick a hidden stardust south west of the house.",
+        "Pick a hidden starpiece south of the house. Surf east and enter the cave while avoiding the swimmer."
+      ],
+      "items": [
+        {
+          "name": "nestball",
+          "hidden": true,
+          "image": "https://gyazo.com/5d5dd4957d185fe3b34cc9acc08748a9"
+        },
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/e60356a596f38f1c8ef45802787b0b1a"
+        },
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/6d82236546279775f6a2867db217e3f6"
+        },
+        {
+          "name": "starpiece",
+          "hidden": true,
+          "image": "https://gyazo.com/cb0f0424228d83aa2d53a8fc087ed902"
+        }
+      ],
+      "stepsEs": [
+        "Haz Surf hacia el norte y recoge una Nido Ball oculta en el suelo.",
+        "Lucha contra el entrenador y haz Surf hacia el este. Lucha contra los 4 entrenadores mientras evitas al chico con sombrero azul. Recoge un Polvo Estelar oculto al noroeste de la casa.",
+        "Recoge un Polvo Estelar oculto al suroeste de la casa.",
+        "Recoge un Trozo Estrella oculto al sur de la casa. Haz Surf hacia el este y entra en la cueva mientras evitas al nadador."
+      ]
+    },
+    {
+      "order": 80,
+      "location": "LOST CAVE",
+      "steps": [
+        "Go down the stairs and avoid the ruin maniac.",
+        "Go in the door east.",
+        "Go in the door south and pick a laxincense.",
+        "Go in the door north. Go in the door east and go in the door north.",
+        "Go in the door south and go in the door north.",
+        "Pick a seaincense and go in the door south. Go in the door east and go in the door north.",
+        "Go in the door south and go in the door south while avoiding the psychic trainer. Go in the door east and go in the door east.",
+        "Pick a revive and go in the door west.",
+        "Go in the door east and go in the door north. Go in the door south and go in the door south.",
+        "Go in the door east and go in the door west.",
+        "Go in the door south and go in the door west. Pick a rarecandy and go in the door east.",
+        "Go in the door east and go in the door north.",
+        "Go in the door south and go in the door south. Go in the door east and go in the door west.",
+        "Go in the door south and go in the door east.",
+        "Go in the door north and fight a trainer. Surf east and enter the cave while avoiding the swimmer.",
+        "Go down the stairs.",
+        "Go in the door east and go in the door north. Go in the door south and go in the door south.",
+        "Go in the door east and go in the door west.",
+        "Go in the door south and go in the door east. Go in the door north and pick a nugget.",
+        "Go in the door south and go up the stairs.",
+        "Go in the door south and fly to five island. Go east to five isle meadow."
+      ],
+      "items": [
+        {
+          "name": "laxincense",
+          "hidden": false
+        },
+        {
+          "name": "seaincense",
+          "hidden": false
+        },
+        {
+          "name": "revive",
+          "hidden": false
+        },
+        {
+          "name": "rarecandy",
+          "hidden": false
+        },
+        {
+          "name": "nugget",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Baja las escaleras y evita al Maníaco de las Ruinas.",
+        "Entra por la puerta del este.",
+        "Entra por la puerta del sur y recoge un Incienso Suave.",
+        "Entra por la puerta del norte. Entra por la puerta del este y entra por la puerta del norte.",
+        "Entra por la puerta del sur y entra por la puerta del norte.",
+        "Recoge un Incienso Marino y entra por la puerta del sur. Entra por la puerta del este y entra por la puerta del norte.",
+        "Entra por la puerta del sur y entra por la puerta del sur mientras evitas al entrenador psíquico. Entra por la puerta del este y entra por la puerta del este.",
+        "Recoge un Revivir y entra por la puerta del oeste.",
+        "Entra por la puerta del este y entra por la puerta del norte. Entra por la puerta del sur y entra por la puerta del sur.",
+        "Entra por la puerta del este y entra por la puerta del oeste.",
+        "Entra por la puerta del sur y entra por la puerta del oeste. Recoge un Caramelo Raro y entra por la puerta del este.",
+        "Entra por la puerta del este y entra por la puerta del norte.",
+        "Entra por la puerta del sur y entra por la puerta del sur. Entra por la puerta del este y entra por la puerta del oeste.",
+        "Entra por la puerta del sur y entra por la puerta del este.",
+        "Entra por la puerta del norte y lucha contra un entrenador. Haz Surf hacia el este y entra en la cueva mientras evitas al nadador.",
+        "Baja las escaleras.",
+        "Entra por la puerta del este y entra por la puerta del norte. Entra por la puerta del sur y entra por la puerta del sur.",
+        "Entra por la puerta del este y entra por la puerta del oeste.",
+        "Entra por la puerta del sur y entra por la puerta del este. Entra por la puerta del norte y recoge una Pepita.",
+        "Entra por la puerta del sur y sube las escaleras.",
+        "Entra por la puerta del sur y vuela a Five Island. Ve al este hacia Five Isle Meadow."
+      ]
+    },
+    {
+      "order": 81,
+      "location": "FIVE ISLE MEADOW",
+      "steps": [
+        "Cut the tree and get a hyperpotion.",
+        "Go south east and avoid the 2 rocket trainers.",
+        "Surf east to memorial pillar."
+      ],
+      "items": [
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Corta el árbol y consigue una Hiperpoción.",
+        "Ve al sureste y evita a los 2 entrenadores del Team Rocket.",
+        "Haz Surf hacia el este hasta Memorial Pillar."
+      ]
+    },
+    {
+      "order": 82,
+      "location": "MEMORIAL PILLAR",
+      "steps": [
+        "Go east and pick a razzberry in the grass while avoiding the trainer.",
+        "Go south and pick a sitrusberry while avoiding another trainer. Also pick a blukberry.",
+        "Go south and surf south while avoiding a trainer.",
+        "Stand on the right side of the guy with the yellow hair. Click on the statue and say yes to place a lemonade and get a TM-BatonPass.",
+        "Pick a iron and pick a hidden pearl.",
+        "Go back to the 2nd rocket member."
+      ],
+      "items": [
+        {
+          "name": "razzberry",
+          "hidden": false
+        },
+        {
+          "name": "sitrusberry",
+          "hidden": false
+        },
+        {
+          "name": "blukberry",
+          "hidden": false
+        },
+        {
+          "name": "tm-batonpass",
+          "hidden": false
+        },
+        {
+          "name": "iron",
+          "hidden": false
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/6e60755562ffc4c04014820d4edf9183"
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y recoge una Baya Frambu en la hierba mientras evitas al entrenador.",
+        "Ve al sur y recoge una Baya Zidra mientras evitas a otro entrenador. También recoge una Baya Oram.",
+        "Ve al sur y haz Surf hacia el sur mientras evitas a un entrenador.",
+        "Colócate a la derecha del chico de pelo amarillo. Haz clic en la estatua y di que sí para dejar una Limonada y conseguir la MT-Relevo.",
+        "Recoge un Hierro y recoge una Perla oculta.",
+        "Vuelve al segundo miembro del Team Rocket."
+      ]
+    },
+    {
+      "order": 83,
+      "location": "FIVE ISLE MEADOW",
+      "steps": [
+        "Go south west and surf north west to get a ppup.",
+        "Go fight the rocket member.",
+        "Click on the door and enter the house."
+      ],
+      "items": [
+        {
+          "name": "ppup",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al suroeste y haz Surf hacia el noroeste para conseguir un Más PP.",
+        "Ve a luchar contra el miembro del Team Rocket.",
+        "Haz clic en la puerta y entra en la casa."
+      ]
+    },
+    {
+      "order": 84,
+      "location": "ROCKET WAREHOUSE",
+      "steps": [
+        "Go on the arrow pointing west.",
+        "Run north and go on the arrow pointing east.",
+        "Go on the arrow pointing east. Pick a pearl and go on the arrow pointing west.",
+        "Run north and go on the arrow pointing east.",
+        "Go on the arrow pointing south. Run north west and get a pearl.",
+        "Go on the arrow pointing north.",
+        "Pick the hyperpotion and avoid the trainer. Go on the western most arrow pointing south.",
+        "Walk north and go on the middle most arrow pointing west while avoiding the rocket trainer. Pick a hidden netball in a yellow box.",
+        "Run north east and get a TM-ToxicSpikes.",
+        "Go on the eastern most arrow pointing south. Beat the rocket trainer and go on the arrow pointing east.",
+        "Avoid the girl trainer and go north to fight the next rocket trainer. Go north and beat the scientist to get a sapphire.",
+        "Pick a hidden nestball in a yellow box.",
+        "Exit the house and fly to one island. Go in the pokecenter and talk to the guy east.",
+        "Exit the house and go in the red house south of the pokecenter. Talk to the guy to go to seven island.",
+        "Go north and enter the door.",
+        "Go north to trainer tower."
+      ],
+      "items": [
+        {
+          "name": "pearl",
+          "hidden": false
+        },
+        {
+          "name": "pearl",
+          "hidden": false
+        },
+        {
+          "name": "hyperpotion",
+          "hidden": false
+        },
+        {
+          "name": "netball",
+          "hidden": true,
+          "image": "https://gyazo.com/38b9016e41769ac19f76dc14c6330900"
+        },
+        {
+          "name": "tm-toxicspikes",
+          "hidden": false
+        },
+        {
+          "name": "sapphire",
+          "hidden": false
+        },
+        {
+          "name": "nestball",
+          "hidden": true,
+          "image": "https://gyazo.com/a049bfa150b8c4427a0dc2a5c4577f05"
+        }
+      ],
+      "stepsEs": [
+        "Pisa la flecha que apunta al oeste.",
+        "Corre hacia el norte y pisa la flecha que apunta al este.",
+        "Pisa la flecha que apunta al este. Recoge una Perla y pisa la flecha que apunta al oeste.",
+        "Corre hacia el norte y pisa la flecha que apunta al este.",
+        "Pisa la flecha que apunta al sur. Corre hacia el noroeste y consigue una Perla.",
+        "Pisa la flecha que apunta al norte.",
+        "Recoge la Hiperpoción y evita al entrenador. Pisa la flecha situada más al oeste que apunta al sur.",
+        "Camina hacia el norte y pisa la flecha central que apunta al oeste mientras evitas al entrenador del Team Rocket. Recoge una Malla Ball oculta en una caja amarilla.",
+        "Corre hacia el noreste y consigue la MT-Púas Tóxicas.",
+        "Pisa la flecha situada más al este que apunta al sur. Vence al entrenador del Team Rocket y pisa la flecha que apunta al este.",
+        "Evita a la entrenadora y ve al norte para luchar contra el siguiente entrenador del Team Rocket. Ve al norte y vence al científico para conseguir un Zafiro.",
+        "Recoge una Nido Ball oculta en una caja amarilla.",
+        "Sal de la casa y vuela a One Island. Entra en el Centro Pokémon y habla con el chico del este.",
+        "Sal de la casa y entra en la casa roja al sur del Centro Pokémon. Habla con el chico para ir a Seven Island.",
+        "Ve al norte y entra por la puerta.",
+        "Ve al norte hacia Trainer Tower."
+      ]
+    },
+    {
+      "order": 85,
+      "location": "TRAINER TOWER",
+      "steps": [
+        "Pick a nanabberry and avoid the first trainer.",
+        "Pick a hidden pearl near the sign.",
+        "Pick a hidden bigpearl near the sign. Fight the other trainer.",
+        "Go south to seven island."
+      ],
+      "items": [
+        {
+          "name": "nanabberry",
+          "hidden": false
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/195748503cf0892a168b29b25c00eaae"
+        },
+        {
+          "name": "bigpearl",
+          "hidden": true,
+          "image": "https://gyazo.com/68c56ae7e3da7989735d363477442bb0"
+        }
+      ],
+      "stepsEs": [
+        "Recoge una Baya Latano y evita al primer entrenador.",
+        "Recoge una Perla oculta cerca del cartel.",
+        "Recoge una Perla Grande oculta cerca del cartel. Lucha contra el otro entrenador.",
+        "Ve al sur hacia Seven Island."
+      ]
+    },
+    {
+      "order": 86,
+      "location": "SEVEN ISLAND",
+      "steps": [
+        "Go south a few steps from the pokemart and talk to the guy.",
+        "Say yes to get a TM-SwordsDance. Go south to canyon entrance."
+      ],
+      "items": [
+        {
+          "name": "tm-swordsdance",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Avanza unos pasos hacia el sur desde la Tienda Pokémon y habla con el chico.",
+        "Di que sí para conseguir la MT-Danza Espada. Ve al sur hacia Canyon Entrance."
+      ]
+    },
+    {
+      "order": 87,
+      "location": "CANYON ENTRANCE",
+      "steps": [
+        "Go south and avoid a girl.",
+        "Go south and avoid the next trainer.",
+        "Go south and fight the 2 trainers in green. Go south west and pick a rawstberry.",
+        "Fight the 2 trainers with the yellow hair.",
+        "Go back to the trainers in green. Go east to sevault canyon."
+      ],
+      "items": [
+        {
+          "name": "rawstberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al sur y evita a una chica.",
+        "Ve al sur y evita al siguiente entrenador.",
+        "Ve al sur y lucha contra los 2 entrenadores de verde. Ve al suroeste y recoge una Baya Safre.",
+        "Lucha contra los 2 entrenadores de pelo amarillo.",
+        "Vuelve junto a los entrenadores de verde. Ve al este hacia Sevault Canyon."
+      ]
+    },
+    {
+      "order": 88,
+      "location": "SEVAULT CANYON",
+      "steps": [
+        "Follow the path and fight the 2 trainers in red.",
+        "Go south and pick a nugget.",
+        "Go south and avoid a trainer. Pick a maxelixir in the grass.",
+        "Avoid the guy in green and fight the girl in green.",
+        "Go south and pick a elixir while avoiding the girl. Go south and avoid the 2 trainers in red.",
+        "Enter the house and get a luckypunch.",
+        "Exit the house and get a cheriberry. Go south to tanoby ruins."
+      ],
+      "items": [
+        {
+          "name": "nugget",
+          "hidden": false
+        },
+        {
+          "name": "maxelixir",
+          "hidden": false
+        },
+        {
+          "name": "elixir",
+          "hidden": false
+        },
+        {
+          "name": "luckypunch",
+          "hidden": false
+        },
+        {
+          "name": "cheriberry",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Sigue el camino y lucha contra los 2 entrenadores de rojo.",
+        "Ve al sur y recoge una Pepita.",
+        "Ve al sur y evita a un entrenador. Recoge un Elixir Máximo en la hierba.",
+        "Evita al chico de verde y lucha contra la chica de verde.",
+        "Ve al sur y recoge un Elixir mientras evitas a la chica. Ve al sur y evita a los 2 entrenadores de rojo.",
+        "Entra en la casa y consigue un Puño Suerte.",
+        "Sal de la casa y consigue una Baya Zreza. Ve al sur hacia Tanoby Ruins."
+      ]
+    },
+    {
+      "order": 89,
+      "location": "TANOBY RUINS",
+      "steps": [
+        "Surf west to fight a ruin maniac.",
+        "Pick a hidden heartscale on the ground.",
+        "Surf north west all the way and get a hidden stardust. Surf east until you see a girl trainer.",
+        "Pick a hidden heartscale on the ground and beat the 2 trainers. Go north east all the way and pick a hidden pearl.",
+        "Avoid the ruin maniac and fly to three island. Go south to three isle port and enter the cave."
+      ],
+      "items": [
+        {
+          "name": "heartscale",
+          "hidden": true,
+          "image": "https://gyazo.com/ecf79a22cd26cd3867b5a3173f978292"
+        },
+        {
+          "name": "stardust",
+          "hidden": true,
+          "image": "https://gyazo.com/043b8abed1c60b8739192414fd49960e"
+        },
+        {
+          "name": "heartscale",
+          "hidden": true,
+          "image": "https://gyazo.com/3da9b7667d99e74b6dcf3115a0685b91"
+        },
+        {
+          "name": "pearl",
+          "hidden": true,
+          "image": "https://gyazo.com/fd53a8d61d8eed42bc81e94c9ba88344"
+        }
+      ],
+      "stepsEs": [
+        "Haz Surf hacia el oeste para luchar contra un Maníaco de las Ruinas.",
+        "Recoge una Escama Corazón oculta en el suelo.",
+        "Haz Surf hacia el noroeste hasta el final y consigue un Polvo Estelar oculto. Haz Surf hacia el este hasta que veas una entrenadora.",
+        "Recoge una Escama Corazón oculta en el suelo y vence a los 2 entrenadores. Ve hacia el noreste hasta el final y recoge una Perla oculta.",
+        "Evita al Maníaco de las Ruinas y vuela a Three Island. Ve al sur hacia Three Isle Port y entra en la cueva."
+      ]
+    },
+    {
+      "order": 90,
+      "location": "THREE ISLE PATH",
+      "steps": [
+        "Go east and pick a hidden nugget in a rock near the guy.",
+        "Talk to the guy to get a nugget.",
+        "Go in the door and fly to cerulean city. Go north to route 24.",
+        "Surf south and follow the path until you see a cave.",
+        "Enter the cave."
+      ],
+      "items": [
+        {
+          "name": "nugget",
+          "hidden": true,
+          "image": "https://gyazo.com/5792cbda5632be8f35f0f05d61b19851"
+        },
+        {
+          "name": "nugget",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este y recoge una Pepita oculta en una roca cerca del chico.",
+        "Habla con el chico para conseguir una Pepita.",
+        "Entra por la puerta y vuela a Cerulean City. Ve al norte hacia Route 24.",
+        "Haz Surf hacia el sur y sigue el camino hasta que veas una cueva.",
+        "Entra en la cueva."
+      ]
+    },
+    {
+      "order": 91,
+      "location": "CERULEAN CAVE",
+      "steps": [
+        "Go north and go up the stairs.",
+        "Pick a fullrestore and go down the stairs. Surf west all the way and go north all the way to pick a hidden ultraball. Pick a nugget and go south.",
+        "Go up the stairs and pick a ppup.",
+        "Go down the stairs and pick a fullrestore.",
+        "Go east and go up the stairs. Pick a ultraball and go down the stairs.",
+        "Pick a maxelixir and go west.",
+        "Go up the stairs.",
+        "Go 6 steps west.",
+        "Go 2 steps south.",
+        "Go 6 steps east. Go 2 steps south.",
+        "Go 4 steps east.",
+        "Go south and follow the path.",
+        "Go down the stairs.",
+        "Go down the stairs.",
+        "Go north east and pick a maxrevive. Go south and pick a ultraball.",
+        "Exit the cave and fly to pewter city."
+      ],
+      "items": [
+        {
+          "name": "fullrestore",
+          "hidden": false
+        },
+        {
+          "name": "ultraball",
+          "hidden": true,
+          "image": "https://gyazo.com/83e05a21769bb4319e0ff8ad853940b5"
+        },
+        {
+          "name": "nugget",
+          "hidden": false
+        },
+        {
+          "name": "ppup",
+          "hidden": false
+        },
+        {
+          "name": "fullrestore",
+          "hidden": false
+        },
+        {
+          "name": "ultraball",
+          "hidden": false
+        },
+        {
+          "name": "maxelixir",
+          "hidden": false
+        },
+        {
+          "name": "maxrevive",
+          "hidden": false
+        },
+        {
+          "name": "ultraball",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al norte y sube las escaleras.",
+        "Recoge un Restaurar Todo y baja las escaleras. Haz Surf hacia el oeste hasta el final y ve al norte hasta el final para recoger una Ultra Ball oculta. Recoge una Pepita y ve al sur.",
+        "Sube las escaleras y recoge un Más PP.",
+        "Baja las escaleras y recoge un Restaurar Todo.",
+        "Ve al este y sube las escaleras. Recoge una Ultra Ball y baja las escaleras.",
+        "Recoge un Elixir Máximo y ve al oeste.",
+        "Sube las escaleras.",
+        "Da 6 pasos al oeste.",
+        "Da 2 pasos al sur.",
+        "Da 6 pasos al este. Da 2 pasos al sur.",
+        "Da 4 pasos al este.",
+        "Ve al sur y sigue el camino.",
+        "Baja las escaleras.",
+        "Baja las escaleras.",
+        "Ve al noreste y recoge un Revivir Máximo. Ve al sur y recoge una Ultra Ball.",
+        "Sal de la cueva y vuela a Pewter City."
+      ]
+    },
+    {
+      "order": 92,
+      "location": "PEWTER CITY",
+      "steps": [
+        "Go north east all the way and cut the tree.",
+        "Enter the house and talk to the guy all the way north to get a oldamber. Talk to the guy south east and say yes to get a TM-SeismicToss.",
+        "Exit the house. Look at your pokedex and make sure you have 50 owned pokemon.",
+        "Fly to the pokecenter in route 10."
+      ],
+      "items": [
+        {
+          "name": "oldamber",
+          "hidden": false
+        },
+        {
+          "name": "tm-seismictoss",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al noreste hasta el final y corta el árbol.",
+        "Entra en la casa y habla con el chico del extremo norte para conseguir un Ámbar Viejo. Habla con el chico del sureste y di que sí para conseguir la MT-Movimiento Sísmico.",
+        "Sal de la casa. Mira tu Pokédex y asegúrate de tener 50 Pokémon capturados.",
+        "Vuela al Centro Pokémon en Route 10."
+      ]
+    },
+    {
+      "order": 93,
+      "location": "ROUTE 10",
+      "steps": [
+        "Enter the pokecenter and talk to the scientist.",
+        "Say yes and you will get a everstone if you own 20 pokemon. Exit the house and fly to vermilion city.",
+        "Go east to route 11."
+      ],
+      "items": [
+        {
+          "name": "everstone",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en el Centro Pokémon y habla con el científico.",
+        "Di que sí y recibirás una Piedra Eterna si tienes 20 Pokémon. Sal de la casa y vuela a Vermilion City.",
+        "Ve al este hacia Route 11."
+      ]
+    },
+    {
+      "order": 94,
+      "location": "ROUTE 11",
+      "steps": [
+        "Go east all the way and enter the house while avoiding all the trainers.",
+        "Go up the stairs and talk to the scientist. Say yes and you will get a itemfinder if you own 30 pokemon.",
+        "Go down the stairs and enter the door east.",
+        "Go east to route 12."
+      ],
+      "items": [
+        {
+          "name": "itemfinder",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Ve al este hasta el final y entra en la casa mientras evitas a todos los entrenadores.",
+        "Sube las escaleras y habla con el científico. Di que sí y recibirás un Zahorí si tienes 30 Pokémon.",
+        "Baja las escaleras y entra por la puerta del este.",
+        "Ve al este hacia Route 12."
+      ]
+    },
+    {
+      "order": 95,
+      "location": "ROUTE 12",
+      "steps": [
+        "Go stand where the snorlax was and use the item finder to get a leftovers.",
+        "Fly to celadon city."
+      ],
+      "items": [
+        {
+          "name": "leftovers",
+          "hidden": false,
+          "image": "https://gyazo.com/7f395c238fa43c82f2861e2b482dbb09"
+        }
+      ],
+      "stepsEs": [
+        "Colócate donde estaba Snorlax y usa el Zahorí para conseguir unos Restos.",
+        "Vuela a Celadon City."
+      ]
+    },
+    {
+      "order": 96,
+      "location": "CELADON CITY",
+      "steps": [
+        "Go a few steps north east from the gym.",
+        "Surf north and talk to the guy.",
+        "Say yes to get a TM-SoftBoiled. Go west to route 16."
+      ],
+      "items": [
+        {
+          "name": "tm-softboiled",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Avanza unos pasos hacia el noreste del gimnasio.",
+        "Haz Surf hacia el norte y habla con el chico.",
+        "Di que sí para conseguir la MT-Amortiguador. Ve al oeste hacia Route 16."
+      ]
+    },
+    {
+      "order": 97,
+      "location": "ROUTE 16",
+      "steps": [
+        "Go stand where the snorlax was and use the item finder to get a leftovers.",
+        "Go west and enter the house. Go up the stairs and talk to the scientist. Say yes and you will get a amuletcoin if you own 40 pokemon.",
+        "Go down the stairs and exit the house. Fly to fuchsia city and go east to route 15."
+      ],
+      "items": [
+        {
+          "name": "leftovers",
+          "hidden": false,
+          "image": "https://gyazo.com/9e2352a96f1f214cabda4ff45f9f4a14"
+        },
+        {
+          "name": "amuletcoin",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Colócate donde estaba Snorlax y usa el Zahorí para conseguir unos Restos.",
+        "Ve al oeste y entra en la casa. Sube las escaleras y habla con el científico. Di que sí y recibirás una Moneda Amuleto si tienes 40 Pokémon.",
+        "Baja las escaleras y sal de la casa. Vuela a Fuchsia City y ve al este hacia Route 15."
+      ]
+    },
+    {
+      "order": 98,
+      "location": "ROUTE 15",
+      "steps": [
+        "Enter the house and go up the stairs.",
+        "Talk to the scientist and say yes.",
+        "You will get a exp.share if you own 50 pokemon. Go down the stairs and exit the house.",
+        "Fly to viridian city."
+      ],
+      "items": [
+        {
+          "name": "exp",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en la casa y sube las escaleras.",
+        "Habla con el científico y di que sí.",
+        "Recibirás un Repartir Experiencia si tienes 50 Pokémon. Baja las escaleras y sal de la casa.",
+        "Vuela a Viridian City."
+      ]
+    },
+    {
+      "order": 99,
+      "location": "VIRIDIAN CITY",
+      "steps": [
+        "Go north east and enter the gym.",
+        "Go stand where the gym leader was and use the item finder to get a machobrace. Exit the gym and fly to two island.",
+        "Go north to cape brink."
+      ],
+      "items": [
+        {
+          "name": "machobrace",
+          "hidden": false,
+          "image": "https://gyazo.com/9ce42e67d17f12f84793348c42b3dbc0"
+        }
+      ],
+      "stepsEs": [
+        "Ve al noreste y entra en el gimnasio.",
+        "Colócate donde estaba el líder del gimnasio y usa el Zahorí para conseguir un Brazal Firme. Sal del gimnasio y vuela a Two Island.",
+        "Ve al norte hacia Cape Brink."
+      ]
+    },
+    {
+      "order": 100,
+      "location": "CAPE BRINK",
+      "steps": [
+        "Surf north east and go stand on the square.",
+        "Use the item finder to get a ppmax. Fly to lavender town and go in the building east of the pokecenter."
+      ],
+      "items": [
+        {
+          "name": "ppmax",
+          "hidden": false,
+          "image": "https://gyazo.com/2ef4204d6e5a480c9e3f0f7996bc3f81"
+        }
+      ],
+      "stepsEs": [
+        "Haz Surf hacia el noreste y colócate sobre la casilla.",
+        "Usa el Zahorí para conseguir unos PP Máximos. Vuela a Lavender Town y entra en el edificio al este del Centro Pokémon."
+      ]
+    },
+    {
+      "order": 101,
+      "location": "POKEMON TOWER",
+      "steps": [
+        "Go to the top of the tower and go stand where the old man was.",
+        "Use the item finder to get a soothebell.",
+        "THE END! [PokeMMO Farm Guide] How (and Where) to Find all Items (Kanto + Walkthrough) Reviewed by CommanderBlue on dezembro 24, 2022 Rating: 5."
+      ],
+      "items": [
+        {
+          "name": "soothebell",
+          "hidden": false,
+          "image": "https://gyazo.com/4b7a0d7094674063c5d73ff810e0db3f"
+        }
+      ],
+      "stepsEs": [
+        "Sube hasta lo alto de la torre y colócate donde estaba el anciano.",
+        "Usa el objeto buscador para conseguir una Cascabel Alivio.",
+        "¡FIN! [Guía de farmeo de PokeMMO] Cómo y dónde encontrar todos los objetos de Kanto, con recorrido completo. Reseñada por CommanderBlue el 24 de diciembre de 2022. Valoración: 5."
+      ]
+    }
+  ]
+}

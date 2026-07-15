@@ -53,3 +53,39 @@ export function getEffectivenessFor(attackerType: PokeType): Effectiveness {
 
   return { superEffective, notVeryEffective, noEffect };
 }
+
+// Raw combined multiplier of one attacking type against 1-2 defending types
+// — the building block both getEffectivenessForCombo() and the team builder
+// (src/lib/teamBuilder.ts) use, exposed separately since the team builder
+// needs a single number per (attacker, defender) pair rather than a bucketed
+// list.
+export function getMultiplier(attackerType: PokeType, defenderTypes: PokeType[]): number {
+  const row = typeChart.effectiveness[attackerType] ?? {};
+  return defenderTypes.reduce((acc, defType) => acc * (row[defType] ?? 1), 1);
+}
+
+export type ComboEffectiveness = {
+  x4: PokeType[];
+  x2: PokeType[];
+  x05: PokeType[];
+  x025: PokeType[];
+  x0: PokeType[];
+};
+
+// Effectiveness of each attacking type against a *defending* dual-type
+// combination (e.g. Grass/Poison) — multiplies the two per-type matchups,
+// same math the games use for double-typed Pokemon.
+export function getEffectivenessForCombo(defenderTypes: PokeType[]): ComboEffectiveness {
+  const result: ComboEffectiveness = { x4: [], x2: [], x05: [], x025: [], x0: [] };
+
+  for (const attackerType of ALL_TYPES) {
+    const multiplier = getMultiplier(attackerType, defenderTypes);
+    if (multiplier === 4) result.x4.push(attackerType);
+    else if (multiplier === 2) result.x2.push(attackerType);
+    else if (multiplier === 0.5) result.x05.push(attackerType);
+    else if (multiplier === 0.25) result.x025.push(attackerType);
+    else if (multiplier === 0) result.x0.push(attackerType);
+  }
+
+  return result;
+}

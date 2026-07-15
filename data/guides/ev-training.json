@@ -1,0 +1,594 @@
+{
+  "topic": "ev-training",
+  "title": "Entrenamiento de EVs (Effort Values)",
+  "source": "seviichamp.blogspot.com (https://seviichamp.blogspot.com/2022/12/pokemmo-comp-guide-ev-training.html), creditos originales a Akshit. Extraido y reestructurado el 2026-07-05.",
+  "note": "Todos los EVs mencionados son sin Macho Brace. Se recomienda tener acceso completo a las 5 regiones.",
+  "bestSpots": [
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Hariyama",
+          "evs": 10
+        }
+      ],
+      "details": "Victory Road, Hoenn, 100% HP EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Machoke",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 211, Sinnoh, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "def",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Pelipper",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Undella Bay, Unova, 100% Def EV Encounter"
+    },
+    {
+      "stat": "spAtk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Gloom",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 119, Hoenn, 100% Sp Atk EV Encounter"
+    },
+    {
+      "stat": "spDef",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Mantine",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Undella Town, Unova, 100% Sp Def EV Encounter"
+    },
+    {
+      "stat": "speed",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Rapidash",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 12, Unova, 100% Speed EV Encounter"
+    }
+  ],
+  "levelingSpots": [
+    {
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Golduck"
+        }
+      ],
+      "details": "Surf, Cerulean Cave, Kanto, 6k Exp. per horde"
+    },
+    {
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Tentacruel"
+        }
+      ],
+      "details": "Surf, Battle Frontier, Hoenn, 6k Exp. per horde"
+    },
+    {
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Camerupt"
+        }
+      ],
+      "details": "Grass, Stark Mountain, Sinnoh, 6k Exp. per horde"
+    },
+    {
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Piloswine"
+        }
+      ],
+      "details": "Dark Grass, Giant Chasm, Other Side of Cave, Unova, 6k Exp. per horde"
+    }
+  ],
+  "alternativeSpots": [
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Dunsparce",
+          "evs": 5
+        }
+      ],
+      "details": "Three Isle Port, Grass, Three Island, Kanto, 100% HP EV Encounter"
+    },
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Wobbuffet",
+          "evs": 10
+        },
+        {
+          "count": 5,
+          "pokemon": "Lickitung",
+          "evs": 10
+        }
+      ],
+      "details": "Cerulean Cave Entrance, Kanto, 100% HP EV Encounter"
+    },
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Marill",
+          "evs": 10
+        }
+      ],
+      "details": "Route 114, Surf, Hoenn, 100% HP EV Encounter"
+    },
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Loudred",
+          "evs": 10
+        }
+      ],
+      "details": "Desert Underpass, Hoenn, 100% HP EV Encounter"
+    },
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Sealeo",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Route 230, Sinnoh, 100% HP EV Encounter"
+    },
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Stunfisk",
+          "evs": 10
+        }
+      ],
+      "details": "Icirrus City, Surf in Pond, Unova, 100% HP EV Encounter"
+    },
+    {
+      "stat": "hp",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Amoonguss",
+          "evs": 10
+        }
+      ],
+      "details": "Dark Grass, Route 10, Unova, 100% HP EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 3,
+          "pokemon": "Paras",
+          "evs": 3
+        }
+      ],
+      "details": "Mt. Moon, Cave, B1F, Kanto, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Nidorino",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 15, Kanto, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Primeape",
+          "evs": 10
+        },
+        {
+          "count": 5,
+          "pokemon": "Arbok",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 23, Kanto, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Ariados",
+          "evs": 10
+        },
+        {
+          "count": 5,
+          "pokemon": "Banette",
+          "evs": 10
+        }
+      ],
+      "details": "Sky Pillar, Cave, Hoenn, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Bouffalant",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 10, Unova, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Tranquill",
+          "evs": 10
+        }
+      ],
+      "details": "Dark Grass, Route 12, Unova, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Bibarel",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Sendoff Spring, Sinnoh, 100% Atk EV Encounter"
+    },
+    {
+      "stat": "atk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Rhydon",
+          "evs": 10
+        }
+      ],
+      "details": "Victory Road, Sinnoh 100% Atk EV Encounter"
+    },
+    {
+      "stat": "def",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Sandslash",
+          "evs": 10
+        },
+        {
+          "count": 5,
+          "pokemon": "Marowak",
+          "evs": 10
+        }
+      ],
+      "details": "Victory Road, Kanto, 100% Def EV Encounter"
+    },
+    {
+      "stat": "def",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Tangela",
+          "evs": 5
+        }
+      ],
+      "details": "Route 21, Grass, Kanto, 100% Def EV Encounter"
+    },
+    {
+      "stat": "def",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Slowbro",
+          "evs": 10
+        }
+      ],
+      "details": "Cape Brink, Grass, Two Island, Kanto, 100% Def EV Encounter"
+    },
+    {
+      "stat": "def",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Metapod",
+          "evs": 10
+        }
+      ],
+      "details": "Kakuna (10 EVs, Pattern Bush, Grass, Six Island, Kanto, 100% Def EV Encounter"
+    },
+    {
+      "stat": "def",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Pelipper",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Ever Grande City Entrance, Hoenn, 100% Def EV Encounter"
+    },
+    {
+      "stat": "def",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Pelipper",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Route 222, Sinnoh, 100% Def EV Encounter"
+    },
+    {
+      "stat": "spAtk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Golduck",
+          "evs": 10
+        }
+      ],
+      "details": "Cape Brink, Surf, Two Island, Kanto, 100% Sp Atk EV Encounter"
+    },
+    {
+      "stat": "spAtk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Golduck",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Resort Area, Sinnoh, 100% Sp Atk EV Encounter"
+    },
+    {
+      "stat": "spAtk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Duosion",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 9, Unova, 100% Sp Atk EV Encounter"
+    },
+    {
+      "stat": "spAtk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Heatmor",
+          "evs": 10
+        }
+      ],
+      "details": "Victory Road, Outside Grass, Unova, 100% Sp Atk EV Encounter"
+    },
+    {
+      "stat": "spAtk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Litwick",
+          "evs": 5
+        }
+      ],
+      "details": "Celestial Tower, Unova, 100% Sp Atk EV Encounter"
+    },
+    {
+      "stat": "spAtk",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Golduck",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 11, Unova, 100% Sp Atk EV Encounter"
+    },
+    {
+      "stat": "spDef",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Tentacruel",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Seven Island, Kanto, 100% Sp Def EV Encounter"
+    },
+    {
+      "stat": "spDef",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Dewgong",
+          "evs": 10
+        }
+      ],
+      "details": "Icefall Cave, Four Island, Kanto, 100% Sp Def EV Encounter"
+    },
+    {
+      "stat": "spDef",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Tentacruel",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Battle Frontier, Hoenn, 100% Sp Def EV Encounter"
+    },
+    {
+      "stat": "spDef",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Tentacruel",
+          "evs": 10
+        }
+      ],
+      "details": "Surf, Victory Road, Sinnoh, 100% Sp Def EV Encounter"
+    },
+    {
+      "stat": "spDef",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Gothorita",
+          "evs": 10
+        }
+      ],
+      "details": "Dark Grass, Route 9, Unova, 100% Sp Def EV Encounter"
+    },
+    {
+      "stat": "speed",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Pigeotto",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Five Isle Meadow, Kanto, 100% Speed EV Encounter"
+    },
+    {
+      "stat": "speed",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Linoone",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 121, Hoenn, 100% Speed EV Encounter"
+    },
+    {
+      "stat": "speed",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Raticate",
+          "evs": 10
+        }
+      ],
+      "details": "Dreamyard Basement, Unova, 100% Speed EV Encounter"
+    },
+    {
+      "stat": "speed",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Basculin",
+          "evs": 10
+        },
+        {
+          "count": 5,
+          "pokemon": "Buizel",
+          "evs": 5
+        }
+      ],
+      "details": "Surf, Route 11, Unova, 100% Speed EV Encounter"
+    },
+    {
+      "stat": "speed",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Liepard",
+          "evs": 10
+        }
+      ],
+      "details": "Dreamyard, Dark Grass, Unova, 100% Speed EV Encounter"
+    },
+    {
+      "stat": "speed",
+      "pokemon": [
+        {
+          "count": 5,
+          "pokemon": "Floatzel",
+          "evs": 10
+        },
+        {
+          "count": 5,
+          "pokemon": "Electabuzz",
+          "evs": 10
+        }
+      ],
+      "details": "Grass, Route 222, Sinnoh, 100% Speed EV Encounter"
+    }
+  ],
+  "reducingBerries": [
+    {
+      "stat": "hp",
+      "berry": "Pomeg Berry",
+      "effect": "-10 EVs de HP"
+    },
+    {
+      "stat": "atk",
+      "berry": "Kelpsy Berry",
+      "effect": "-10 EVs de Ataque"
+    },
+    {
+      "stat": "def",
+      "berry": "Qualot Berry",
+      "effect": "-10 EVs de Defensa"
+    },
+    {
+      "stat": "spAtk",
+      "berry": "Hondew Berry",
+      "effect": "-10 EVs de Ataque Especial"
+    },
+    {
+      "stat": "spDef",
+      "berry": "Grepa Berry",
+      "effect": "-10 EVs de Defensa Especial"
+    },
+    {
+      "stat": "speed",
+      "berry": "Tamato Berry",
+      "effect": "-10 EVs de Velocidad"
+    }
+  ]
+}

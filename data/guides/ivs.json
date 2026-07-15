@@ -1,0 +1,33 @@
+{
+  "topic": "ivs",
+  "title": "Que son los IVs (Individual Values)",
+  "source": "seviichamp.blogspot.com (https://seviichamp.blogspot.com/2022/12/pokemmo-comp-guide-what-are-ivs.html), creditos a pokemondb.net/mechanics/hidden. Extraido el 2026-07-05.",
+  "sections": [
+    {
+      "heading": null,
+      "paragraphs": [
+        "Cada Pokemon tiene unos numeros en sus datos internos llamados Individual Values (IVs). Son aleatorios para cada Pokemon salvaje que encuentras, y no se pueden cambiar. Determinan en gran parte sus estadisticas.",
+        "Los IVs son clave para determinar las estadisticas de tu Pokemon. Se asignan al azar en el momento de encontrar cualquier Pokemon salvaje (o recibirlo como regalo o huevo). No puedes cambiar los IVs de un Pokemon una vez capturado, pero (a diferencia de los juegos originales) en PokeMMO puedes conocer los IVs exactos.",
+        "Los IVs son seis numeros, uno por cada estadistica (HP, Ataque, Defensa, Ataque Especial, Defensa Especial y Velocidad). Cada uno va de 0 a 31, y cuanto mas alto sea el numero, mejor sera esa estadistica de tu Pokemon."
+      ]
+    },
+    {
+      "heading": "Pokemon criados (breeding)",
+      "paragraphs": [
+        "Los IVs perfectos (31) se pueden transmitir usando la mecanica de crianza."
+      ]
+    },
+    {
+      "heading": "Pokemon salvajes",
+      "paragraphs": [
+        "En la mayoria de los casos, los Pokemon salvajes tendran IVs aleatorios."
+      ]
+    },
+    {
+      "heading": "Nota",
+      "paragraphs": [
+        "Todos los Pokemon \"de regalo\" (como los iniciales) tienen atributos neutros (naturaleza neutra y 15 IV en todas las estadisticas)."
+      ]
+    }
+  ]
+}

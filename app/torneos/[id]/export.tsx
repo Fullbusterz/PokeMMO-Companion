@@ -23,7 +23,7 @@ export default function ExportTournament() {
   if (!tournament) {
     return (
       <Screen>
-        <Header title={t('exportImport.exportTitle')} />
+        <Header title={t('exportImport.exportTitle')} backHref="/torneos" />
         <Text className="text-ink-400">{t('tournaments.empty')}</Text>
       </Screen>
     );
@@ -45,7 +45,7 @@ export default function ExportTournament() {
 
   return (
     <Screen scroll={false}>
-      <Header title={tournament.name} />
+      <Header title={tournament.name} backHref={`/torneos/${tournamentId}`} />
       <Text className="mb-6 text-ink-300">{t('exportImport.exportSubtitle')}</Text>
 
       {!code && <Button onPress={handleGenerate}>{t('exportImport.exportButton')}</Button>}

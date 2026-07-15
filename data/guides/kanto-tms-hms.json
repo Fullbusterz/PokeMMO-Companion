@@ -1,0 +1,594 @@
+{
+  "region": "kanto",
+  "title": "Kanto - TMs y HMs (objetos de historia)",
+  "source": "Guia seviichamp.blogspot.com (https://seviichamp.blogspot.com/2019/09/guia-pokemmo-kanto-tms-hms.html), datos originales de pokemondb.net sobre Pokemon FireRed/LeafGreen. Localizaciones traducidas del portugues al espanol el 2026-07-05. IMPORTANTE: refleja los juegos originales, no PokeMMO especificamente - la propia guia original avisa de que algunos objetos pueden haberse movido, sustituido o eliminado en PokeMMO.",
+  "verified": false,
+  "tms": [
+    {
+      "tm": 1,
+      "name": "Focus Punch",
+      "type": "FIGHTING",
+      "power": "150",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Silph Co. (5F, suroeste)"
+      ]
+    },
+    {
+      "tm": 2,
+      "name": "Dragon Claw",
+      "type": "DRAGON",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Victory Road (1F, norte)"
+      ]
+    },
+    {
+      "tm": 3,
+      "name": "Water Pulse",
+      "type": "WATER",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Cerulean City (Gimnasio - derrota a Misty)"
+      ]
+    },
+    {
+      "tm": 4,
+      "name": "Calm Mind",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Saffron City (Gimnasio - derrota a Sabrina)"
+      ]
+    },
+    {
+      "tm": 5,
+      "name": "Roar",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Route 4 (noreste)",
+        "Celadon City (Department Store - $1,000)"
+      ]
+    },
+    {
+      "tm": 6,
+      "name": "Toxic",
+      "type": "POISON",
+      "power": "—",
+      "accuracy": "90",
+      "pp": "10",
+      "locations": [
+        "Fuchsia City (Gimnasio - derrota a Koga)"
+      ]
+    },
+    {
+      "tm": 7,
+      "name": "Hail",
+      "type": "ICE",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Victory Road (2F, noreste)"
+      ]
+    },
+    {
+      "tm": 8,
+      "name": "Bulk Up",
+      "type": "FIGHTING",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Silph Co. (7F, este)"
+      ]
+    },
+    {
+      "tm": 9,
+      "name": "Bullet Seed",
+      "type": "GRASS",
+      "power": "25",
+      "accuracy": "100",
+      "pp": "30",
+      "locations": [
+        "Mt. Moon (1F, sureste)"
+      ]
+    },
+    {
+      "tm": 10,
+      "name": "Hidden Power",
+      "type": "NORMAL",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "(Pickup ability, 5% chance)"
+      ]
+    },
+    {
+      "tm": 11,
+      "name": "Sunny Day",
+      "type": "FIRE",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "5",
+      "locations": [
+        "Safari Zone (Area 1: este)"
+      ]
+    },
+    {
+      "tm": 12,
+      "name": "Taunt",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Rocket Hideout (B2F, noroeste)"
+      ]
+    },
+    {
+      "tm": 13,
+      "name": "Ice Beam",
+      "type": "ICE",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Celadon City (Game Corner - 4,000 Coins)"
+      ]
+    },
+    {
+      "tm": 14,
+      "name": "Blizzard",
+      "type": "ICE",
+      "power": "110",
+      "accuracy": "70",
+      "pp": "5",
+      "locations": [
+        "Pokémon Mansion (B1F, norte)"
+      ]
+    },
+    {
+      "tm": 15,
+      "name": "Hyper Beam",
+      "type": "NORMAL",
+      "power": "150",
+      "accuracy": "90",
+      "pp": "5",
+      "locations": [
+        "Celadon City (Department Store - $7,500)"
+      ]
+    },
+    {
+      "tm": 16,
+      "name": "Light Screen",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "30",
+      "locations": [
+        "Celadon City (Department Store cobertura - dale una Fresh Water a la chica)"
+      ]
+    },
+    {
+      "tm": 17,
+      "name": "Protect",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Power Plant (centro)"
+      ]
+    },
+    {
+      "tm": 18,
+      "name": "Rain Dance",
+      "type": "WATER",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "5",
+      "locations": [
+        "Route 15 (noroeste)"
+      ]
+    },
+    {
+      "tm": 19,
+      "name": "Giga Drain",
+      "type": "GRASS",
+      "power": "75",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Celadon City (Gimnasio - derrota a Erika)"
+      ]
+    },
+    {
+      "tm": 20,
+      "name": "Safeguard",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "25",
+      "locations": [
+        "Celadon City (Department Store cobertura - dale una Soda Pop a la chica)"
+      ]
+    },
+    {
+      "tm": 21,
+      "name": "Frustration",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Rocket Hideout (B3F, sur)"
+      ]
+    },
+    {
+      "tm": 22,
+      "name": "Solar Beam",
+      "type": "GRASS",
+      "power": "120",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Pokémon Mansion (B1F, oeste)"
+      ]
+    },
+    {
+      "tm": 23,
+      "name": "Iron Tail",
+      "type": "STEEL",
+      "power": "100",
+      "accuracy": "75",
+      "pp": "15",
+      "locations": [
+        "Celadon City (Game Corner - 3,500 Coins)"
+      ]
+    },
+    {
+      "tm": 24,
+      "name": "Thunderbolt",
+      "type": "ELECTRIC",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Celadon City (Game Corner - 4,000 Coins)"
+      ]
+    },
+    {
+      "tm": 25,
+      "name": "Thunder",
+      "type": "ELECTRIC",
+      "power": "110",
+      "accuracy": "70",
+      "pp": "10",
+      "locations": [
+        "Power Plant (sureste)"
+      ]
+    },
+    {
+      "tm": 26,
+      "name": "Earthquake",
+      "type": "GROUND",
+      "power": "100",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Viridian City (Gimnasio - derrota a Giovanni)"
+      ]
+    },
+    {
+      "tm": 27,
+      "name": "Return",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Route 12 (norte, de la chica en Lavender gate)"
+      ]
+    },
+    {
+      "tm": 28,
+      "name": "Dig",
+      "type": "GROUND",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Cerulean City (derrota a Team Rocket Grunt)",
+        "Celadon City (Department Store - $2,000)"
+      ]
+    },
+    {
+      "tm": 29,
+      "name": "Psychic",
+      "type": "PSYCHIC",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Saffron City (sureste, del Mr. Psychic)"
+      ]
+    },
+    {
+      "tm": 30,
+      "name": "Shadow Ball",
+      "type": "GHOST",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Celadon City (Game Corner - 4,500 Coins)"
+      ]
+    },
+    {
+      "tm": 31,
+      "name": "Brick Break",
+      "type": "FIGHTING",
+      "power": "75",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "SS Anne (1F)",
+        "Celadon City (Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 32,
+      "name": "Double Team",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "15",
+      "locations": [
+        "Safari Zone (Area 3: oeste)"
+      ]
+    },
+    {
+      "tm": 33,
+      "name": "Reflect",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Celadon City (Department Store - $1,000)",
+        "Celadon City (Department Store cobertura - dale una Lemonade a la chica)"
+      ]
+    },
+    {
+      "tm": 34,
+      "name": "Shock Wave",
+      "type": "ELECTRIC",
+      "power": "60",
+      "accuracy": "∞",
+      "pp": "20",
+      "locations": [
+        "Vermilion City (Gimnasio - derrota a Lt. Surge)"
+      ]
+    },
+    {
+      "tm": 35,
+      "name": "Flamethrower",
+      "type": "FIRE",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Celadon City (Game Corner - 4,000 Coins)"
+      ]
+    },
+    {
+      "tm": 36,
+      "name": "Sludge Bomb",
+      "type": "POISON",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Rocket Warehouse (noroeste)"
+      ]
+    },
+    {
+      "tm": 37,
+      "name": "Sandstorm",
+      "type": "ROCK",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Victory Road (2F, este)"
+      ]
+    },
+    {
+      "tm": 38,
+      "name": "Fire Blast",
+      "type": "FIRE",
+      "power": "110",
+      "accuracy": "85",
+      "pp": "5",
+      "locations": [
+        "Cinnabar Island (Gimnasio - derrota a Blaine)"
+      ]
+    },
+    {
+      "tm": 39,
+      "name": "Rock Tomb",
+      "type": "ROCK",
+      "power": "60",
+      "accuracy": "95",
+      "pp": "15",
+      "locations": [
+        "Pewter City (Gimnasio - derrota a Brock)"
+      ]
+    },
+    {
+      "tm": 40,
+      "name": "Aerial Ace",
+      "type": "FLYING",
+      "power": "60",
+      "accuracy": "∞",
+      "pp": "20",
+      "locations": [
+        "Route 9 (suroeste)"
+      ]
+    },
+    {
+      "tm": 41,
+      "name": "Torment",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Silph Co. (4F, sureste)"
+      ]
+    },
+    {
+      "tm": 42,
+      "name": "Facade",
+      "type": "NORMAL",
+      "power": "70",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Memorial Pillar (coloca Lemonade en el memorial)"
+      ]
+    },
+    {
+      "tm": 43,
+      "name": "Secret Power",
+      "type": "NORMAL",
+      "power": "70",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Route 25 (noroeste)",
+        "Celadon City (Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 44,
+      "name": "Rest",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "SS Anne (B1F)"
+      ]
+    },
+    {
+      "tm": 45,
+      "name": "Attract",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Route 24 (noroeste)",
+        "Celadon City (Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 46,
+      "name": "Thief",
+      "type": "DARK",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "25",
+      "locations": [
+        "Mt. Moon (B2F, norte del Team Rocket Grunt)"
+      ]
+    },
+    {
+      "tm": 47,
+      "name": "Steel Wing",
+      "type": "STEEL",
+      "power": "70",
+      "accuracy": "90",
+      "pp": "25",
+      "locations": [
+        "Safari Zone (Area 2: norte)"
+      ]
+    },
+    {
+      "tm": 48,
+      "name": "Skill Swap",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Route 12 (noreste, necesita Surf)"
+      ]
+    },
+    {
+      "tm": 49,
+      "name": "Snatch",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Rocket Hideout (B4F, noroeste)"
+      ]
+    },
+    {
+      "tm": 50,
+      "name": "Overheat",
+      "type": "FIRE",
+      "power": "130",
+      "accuracy": "90",
+      "pp": "5",
+      "locations": [
+        "Victory Road (3F, noroeste)"
+      ]
+    }
+  ],
+  "hms": [
+    {
+      "name": "Cut",
+      "location": "SS Anne (del capitán)"
+    },
+    {
+      "name": "Fly",
+      "location": "Route 16 (de la chica al norte de la entrada de Cycling Road)"
+    },
+    {
+      "name": "Surf",
+      "location": "Safari Zone (del hombre en la Secret House)"
+    },
+    {
+      "name": "Strength",
+      "location": "Fuchsia City (del Safari Zone Warden tras devolver los dientes de oro)"
+    },
+    {
+      "name": "Flash",
+      "location": "Route 2 (del ayudante del Profesor Oak, en el edificio al sur del túnel de Diglett)"
+    },
+    {
+      "name": "Rock Smash",
+      "location": "Kindle Road (del hombre en el Ember Spa)"
+    },
+    {
+      "name": "Waterfall",
+      "location": "Icefall Cave (1F, este)"
+    }
+  ]
+}

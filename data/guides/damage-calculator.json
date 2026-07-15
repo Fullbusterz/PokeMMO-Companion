@@ -1,0 +1,16 @@
+{
+  "topic": "damage-calculator",
+  "title": "Calculadora de dano (referencia)",
+  "source": "seviichamp.blogspot.com (https://seviichamp.blogspot.com/2020/04/pokemmo-comp-guide-damage-calculator.html). Extraido el 2026-07-05.",
+  "note": "Esta guia original es solo un puntero conceptual a una calculadora de dano externa (no PokeMMO-especifica), no una herramienta interactiva. La app tiene su propia calculadora de dano planificada en la Fase 5 del roadmap - ver CLAUDE.md.",
+  "sections": [
+    {
+      "heading": null,
+      "paragraphs": [
+        "Una calculadora de dano Pokemon es una herramienta util para el juego competitivo. Aunque esta hecha para juegos con Pokemon y movimientos de generaciones mas avanzadas, sigue siendo excelente para tener ideas de movesets y sugerencias de entrenamiento de EVs, habilidades, objetos equipados, etc.",
+        "Lo mejor es que puedes elegir un oponente y probar cual de los dos tendria ventaja en un enfrentamiento directo.",
+        "Debes seleccionar la generacion deseada para obtener resultados mas precisos. En el caso de PokeMMO, los movimientos son de la generacion B/W (5), aunque los niveles de aprendizaje sean de la 7a generacion."
+      ]
+    }
+  ]
+}

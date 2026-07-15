@@ -1,0 +1,601 @@
+{
+  "region": "hoenn",
+  "title": "Hoenn - TMs y HMs (objetos de historia)",
+  "source": "Guia seviichamp.blogspot.com (https://seviichamp.blogspot.com/2019/09/guia-pokemmo-hoenn-tms-hms.html), datos originales de pokemondb.net sobre Pokemon Emerald. Localizaciones traducidas del portugues al espanol el 2026-07-06. IMPORTANTE: refleja el juego original, no PokeMMO especificamente - la propia guia original avisa de que algunos objetos pueden haberse movido, sustituido o eliminado en PokeMMO.",
+  "verified": false,
+  "tms": [
+    {
+      "tm": 1,
+      "name": "Focus Punch",
+      "type": "FIGHTING",
+      "power": "150",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Route 115 (sur)",
+        "(Habilidad Pickup, 1% de probabilidad en nivel 71-90)"
+      ]
+    },
+    {
+      "tm": 2,
+      "name": "Dragon Claw",
+      "type": "DRAGON",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Meteor Falls"
+      ]
+    },
+    {
+      "tm": 3,
+      "name": "Water Pulse",
+      "type": "WATER",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Sootopolis City (Gimnasio - derrota a Wallace/Juan)"
+      ]
+    },
+    {
+      "tm": 4,
+      "name": "Calm Mind",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Mossdeep City (Gimnasio - derrota a Tate & Liza)"
+      ]
+    },
+    {
+      "tm": 5,
+      "name": "Roar",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Route 114"
+      ]
+    },
+    {
+      "tm": 6,
+      "name": "Toxic",
+      "type": "POISON",
+      "power": "—",
+      "accuracy": "90",
+      "pp": "10",
+      "locations": [
+        "Fiery Path (oeste; necesita Strength)"
+      ]
+    },
+    {
+      "tm": 7,
+      "name": "Hail",
+      "type": "ICE",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Shoal Cave"
+      ]
+    },
+    {
+      "tm": 8,
+      "name": "Bulk Up",
+      "type": "FIGHTING",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Dewford Town (Gimnasio - derrota a Brawly)"
+      ]
+    },
+    {
+      "tm": 9,
+      "name": "Bullet Seed",
+      "type": "GRASS",
+      "power": "25",
+      "accuracy": "100",
+      "pp": "30",
+      "locations": [
+        "Route 104"
+      ]
+    },
+    {
+      "tm": 10,
+      "name": "Hidden Power",
+      "type": "NORMAL",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Fortree City (norte; responde preguntas Derecha, Derecha, Izquierda)",
+        "Slateport City (Slateport Mercado - $3,000)"
+      ]
+    },
+    {
+      "tm": 11,
+      "name": "Sunny Day",
+      "type": "FIRE",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "5",
+      "locations": [
+        "Scorched Slab (sur; necesita Surf)"
+      ]
+    },
+    {
+      "tm": 12,
+      "name": "Taunt",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Route 110 (Trick House, premio tras el 5o puzzle)"
+      ]
+    },
+    {
+      "tm": 13,
+      "name": "Ice Beam",
+      "type": "ICE",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Abandoned Ship (Storage Room, necesita Dive/Surf)",
+        "Mauville City (Game Corner - 4,000 Coins)"
+      ]
+    },
+    {
+      "tm": 14,
+      "name": "Blizzard",
+      "type": "ICE",
+      "power": "110",
+      "accuracy": "70",
+      "pp": "5",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $5,500)"
+      ]
+    },
+    {
+      "tm": 15,
+      "name": "Hyper Beam",
+      "type": "NORMAL",
+      "power": "150",
+      "accuracy": "90",
+      "pp": "5",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $7,500)"
+      ]
+    },
+    {
+      "tm": 16,
+      "name": "Light Screen",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "30",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 17,
+      "name": "Protect",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 18,
+      "name": "Rain Dance",
+      "type": "WATER",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "5",
+      "locations": [
+        "Abandoned Ship (B1F)"
+      ]
+    },
+    {
+      "tm": 19,
+      "name": "Giga Drain",
+      "type": "GRASS",
+      "power": "75",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Route 123"
+      ]
+    },
+    {
+      "tm": 20,
+      "name": "Safeguard",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "25",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 21,
+      "name": "Frustration",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Pacifidlog Town (sur; se recibe si la felicidad del Pokemon es baja)"
+      ]
+    },
+    {
+      "tm": 22,
+      "name": "Solar Beam",
+      "type": "GRASS",
+      "power": "120",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Safari Zone"
+      ]
+    },
+    {
+      "tm": 23,
+      "name": "Iron Tail",
+      "type": "STEEL",
+      "power": "100",
+      "accuracy": "75",
+      "pp": "15",
+      "locations": [
+        "Meteor Falls"
+      ]
+    },
+    {
+      "tm": 24,
+      "name": "Thunderbolt",
+      "type": "ELECTRIC",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Mauville City (del Wattson tras apagar el generador)",
+        "Mauville City (Mauville Game Corner - 4,000 Coins)"
+      ]
+    },
+    {
+      "tm": 25,
+      "name": "Thunder",
+      "type": "ELECTRIC",
+      "power": "110",
+      "accuracy": "70",
+      "pp": "10",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $5,500)"
+      ]
+    },
+    {
+      "tm": 26,
+      "name": "Earthquake",
+      "type": "GROUND",
+      "power": "100",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Seafloor Cavern (sala final con Groudon/Kyogre)",
+        "(con la habilidad Pickup, 1% de probabilidad en nivel 91-100)"
+      ]
+    },
+    {
+      "tm": 27,
+      "name": "Return",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Pacifidlog Town (sur; se recibe si la felicidad del Pokemon es alta)",
+        "Fallarbor Town (sur; a cambio de Meteorite)"
+      ]
+    },
+    {
+      "tm": 28,
+      "name": "Dig",
+      "type": "GROUND",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Route 114"
+      ]
+    },
+    {
+      "tm": 29,
+      "name": "Psychic",
+      "type": "PSYCHIC",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Victory Road (B1F, noreste)",
+        "Mauville City (Game Corner - 3,500 Coins)"
+      ]
+    },
+    {
+      "tm": 30,
+      "name": "Shadow Ball",
+      "type": "GHOST",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Mt. Pyre (6F)"
+      ]
+    },
+    {
+      "tm": 31,
+      "name": "Brick Break",
+      "type": "FIGHTING",
+      "power": "75",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Sootopolis City (noroeste)"
+      ]
+    },
+    {
+      "tm": 32,
+      "name": "Double Team",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "15",
+      "locations": [
+        "Mauville City (Mauville Game Corner - 1,500 Coins)"
+      ]
+    },
+    {
+      "tm": 33,
+      "name": "Reflect",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 34,
+      "name": "Shock Wave",
+      "type": "ELECTRIC",
+      "power": "60",
+      "accuracy": "∞",
+      "pp": "20",
+      "locations": [
+        "Mauville City (Gimnasio - derrota a Wattson)"
+      ]
+    },
+    {
+      "tm": 35,
+      "name": "Flamethrower",
+      "type": "FIRE",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Mauville City (Mauville Game Corner - 4,000 Coins)"
+      ]
+    },
+    {
+      "tm": 36,
+      "name": "Sludge Bomb",
+      "type": "POISON",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Dewford Town"
+      ]
+    },
+    {
+      "tm": 37,
+      "name": "Sandstorm",
+      "type": "ROCK",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Route 111 (sur)"
+      ]
+    },
+    {
+      "tm": 38,
+      "name": "Fire Blast",
+      "type": "FIRE",
+      "power": "110",
+      "accuracy": "85",
+      "pp": "5",
+      "locations": [
+        "Lilycove City (Lilycove Department Store - $5,500)"
+      ]
+    },
+    {
+      "tm": 39,
+      "name": "Rock Tomb",
+      "type": "ROCK",
+      "power": "60",
+      "accuracy": "95",
+      "pp": "15",
+      "locations": [
+        "Rustboro City (Gimnasio - derrota a Roxanne)"
+      ]
+    },
+    {
+      "tm": 40,
+      "name": "Aerial Ace",
+      "type": "FLYING",
+      "power": "60",
+      "accuracy": "∞",
+      "pp": "20",
+      "locations": [
+        "Fortree City (Gimnasio - derrota a Winona)"
+      ]
+    },
+    {
+      "tm": 41,
+      "name": "Torment",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Slateport City"
+      ]
+    },
+    {
+      "tm": 42,
+      "name": "Facade",
+      "type": "NORMAL",
+      "power": "70",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Petalburg City (Gimnasio - derrota a Norman)"
+      ]
+    },
+    {
+      "tm": 43,
+      "name": "Secret Power",
+      "type": "NORMAL",
+      "power": "70",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Route 111 (norte; del chico frente al arbol)",
+        "Slateport City (Slateport Mercado - $3,000)"
+      ]
+    },
+    {
+      "tm": 44,
+      "name": "Rest",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Lilycove City (este; del hombre en la casa)",
+        "(Habilidad Pickup, 1% de probabilidad en nivel 51-70)"
+      ]
+    },
+    {
+      "tm": 45,
+      "name": "Attract",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Verdanturf Town"
+      ]
+    },
+    {
+      "tm": 46,
+      "name": "Thief",
+      "type": "DARK",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "25",
+      "locations": [
+        "Slateport City"
+      ]
+    },
+    {
+      "tm": 47,
+      "name": "Steel Wing",
+      "type": "STEEL",
+      "power": "70",
+      "accuracy": "90",
+      "pp": "25",
+      "locations": [
+        "Granite Cave"
+      ]
+    },
+    {
+      "tm": 48,
+      "name": "Skill Swap",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Mt. Pyre (lado exterior 2F)"
+      ]
+    },
+    {
+      "tm": 49,
+      "name": "Snatch",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "SS Tidal"
+      ]
+    },
+    {
+      "tm": 50,
+      "name": "Overheat",
+      "type": "FIRE",
+      "power": "130",
+      "accuracy": "90",
+      "pp": "5",
+      "locations": [
+        "Lavaridge Town (Gimnasio - derrota a Flannery)"
+      ]
+    }
+  ],
+  "hms": [
+    {
+      "name": "Cut",
+      "location": "Rustboro City (del Cutter en la casa al oeste del centro Pokemon)"
+    },
+    {
+      "name": "Fly",
+      "location": "Route 119 (derrota a Brendan/May)"
+    },
+    {
+      "name": "Surf",
+      "location": "Petalburg City (Gimnasio - del padre de Wally, tras derrotar a Norman)"
+    },
+    {
+      "name": "Strength",
+      "location": "Rusturf Tunnel (del novio de Wanda, tras romper las rocas)"
+    },
+    {
+      "name": "Flash",
+      "location": "Granite Cave (1F, del excursionista)"
+    },
+    {
+      "name": "Rock Smash",
+      "location": "Mauville City (del hombre en la casa del sureste)"
+    },
+    {
+      "name": "Waterfall",
+      "location": "Sootopolis City (de Wallace, fuera del Gimnasio, tras derrotar a Groudon/Kyogre)"
+    },
+    {
+      "name": "Dive",
+      "location": "Mossdeep City (de Steven)"
+    }
+  ]
+}

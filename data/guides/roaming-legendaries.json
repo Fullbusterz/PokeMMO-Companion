@@ -1,0 +1,44 @@
+{
+  "topic": "roaming-legendaries",
+  "title": "Legendarios errantes (FAQ)",
+  "source": "seviichamp.blogspot.com (https://seviichamp.blogspot.com/2024/10/pokemmo-guide-roaming-legendaries-faq.html), guia/FAQ original creada por Damian en el foro de PokeMMO. Extraido el 2026-07-05.",
+  "note": "Contenido especifico de PokeMMO (no aplica a los juegos oficiales) - rotaciones mensuales y objetos mencionados pueden cambiar con el tiempo, verificar fecha del post.",
+  "qa": [
+    {
+      "question": "Hay legendarios en el juego?",
+      "answer": "Si. Las bestias legendarias (Raikou, Entei, Suicune) se liberaron para captura permanente junto con el lanzamiento de la region de Johto. Las aves legendarias (Articuno, Zapdos, Moltres) llegaron con el evento de Navidad de 2023."
+    },
+    {
+      "question": "Que legendarios errantes se pueden conseguir?",
+      "answer": "Rotan cada mes real. La secuencia observada fue Suicune en agosto de 2023, Raikou en septiembre y Entei en octubre, y luego vuelve a empezar (Suicune de nuevo en noviembre, etc). Las aves siguen el mismo patron de rotacion mensual, desfasado (Articuno en diciembre de 2023, Zapdos en enero de 2024, Moltres en febrero)."
+    },
+    {
+      "question": "Como me encuentro con un legendario errante?",
+      "answer": "Para las bestias: derrota el combate contra Ho-Oh de la historia de Johto; a partir de ahi, la bestia del mes puede aparecer en cualquier hierba exterior de Johto salvo la Safari Zone (Suicune tambien puede salir surfeando). Para las aves: consigue las 8 medallas de Kanto y el ave del mes aparecera igual en cualquier zona exterior de Kanto, Sevii incluidas. En ambos casos la probabilidad es muy baja (la comunidad la estima por debajo del 0.1%), no hay ningun requisito oculto adicional aparte de la baja probabilidad, y el encuentro sustituye a un encuentro salvaje normal (no se ve afectado por Lures, Repel-trick, ni por Intimidate/Presion) — eso si, no puede sustituir a una horda invocada con Dulce Aroma, aunque si puede sustituir una horda o multi-encuentro normal mientras corres."
+    },
+    {
+      "question": "Que pasa si fallo la captura, lo debilito o huye?",
+      "answer": "Puedes volver a encontrartelo con normalidad, y de hecho la probabilidad de encuentro sube bastante tras un fallo."
+    },
+    {
+      "question": "Puede ser shiny? Puedo shiny-huntearlos?",
+      "answer": "Si puede ser shiny, pero al igual que los alfa, la condicion shiny se decide en el primer encuentro del mes y queda fija para el resto de encuentros de ese ciclo — no se puede repetir intentos dentro del mismo mes para buscar shiny."
+    },
+    {
+      "question": "Cuantos legendarios errantes puedo capturar?",
+      "answer": "Uno por personaje, por region, por rotacion mensual. Por ejemplo, si capturas a Suicune en agosto, puedes capturar otro en noviembre; y capturar a Zapdos en Kanto no te impide capturar a Entei en Johto ese mismo mes si aun no has capturado ninguno en Johto."
+    },
+    {
+      "question": "Capturar una bestia me impide capturar las otras?",
+      "answer": "No, son independientes entre si y puedes capturar las 3 (incluso repetidas de mes en mes). Una vez capturas la del mes en curso no aparece una segunda, y ya no puedes capturar la del mes anterior si lo dejaste pasar. Nota: hubo un bug antiguo por el que capturar a Suicune bloqueaba a Raikou, ya corregido."
+    },
+    {
+      "question": "Puedo cambiar sus IVs o naturaleza?",
+      "answer": "Si. Los IVs de las bestias se pueden subir o bajar con Rainbow Quills, los de las aves con Elemental Orbs, y la naturaleza de cualquiera de ellos con Nature Herbs."
+    },
+    {
+      "question": "Como consigo Rainbow Quills, Nature Herbs o Elemental Orbs?",
+      "answer": "Al capturar una bestia recibes 20 Quills fijas; se pueden conseguir mas con la habilidad Pickup o recogiendolas del suelo, pero solo en Johto. Las Nature Herbs caen aleatoriamente al recolectar plantas Gracidea. Las Elemental Orbs caen aleatoriamente al debilitar un Pokemon salvaje con un movimiento del tipo elemental del ave correspondiente (p. ej. usar un movimiento Electrico para tener opcion de Elemental Orb del mes de Zapdos)."
+    }
+  ]
+}

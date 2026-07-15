@@ -17,8 +17,7 @@
       "speed": 45
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 153,
@@ -38,8 +37,7 @@
       "speed": 60
     },
     "evolvesFrom": "chikorita",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 154,
@@ -59,8 +57,7 @@
       "speed": 80
     },
     "evolvesFrom": "bayleef",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 155,
@@ -80,8 +77,7 @@
       "speed": 65
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 156,
@@ -101,8 +97,7 @@
       "speed": 80
     },
     "evolvesFrom": "cyndaquil",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 157,
@@ -122,8 +117,7 @@
       "speed": 100
     },
     "evolvesFrom": "quilava",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 158,
@@ -143,8 +137,7 @@
       "speed": 43
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 159,
@@ -164,8 +157,7 @@
       "speed": 58
     },
     "evolvesFrom": "totodile",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 160,
@@ -185,8 +177,7 @@
       "speed": 78
     },
     "evolvesFrom": "croconaw",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 161,
@@ -206,8 +197,7 @@
       "speed": 20
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 162,
@@ -227,8 +217,7 @@
       "speed": 90
     },
     "evolvesFrom": "sentret",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 163,
@@ -249,8 +238,7 @@
       "speed": 50
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 164,
@@ -271,8 +259,7 @@
       "speed": 70
     },
     "evolvesFrom": "hoothoot",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 165,
@@ -293,8 +280,7 @@
       "speed": 55
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 166,
@@ -315,8 +301,7 @@
       "speed": 85
     },
     "evolvesFrom": "ledyba",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 167,
@@ -337,8 +322,7 @@
       "speed": 30
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 168,
@@ -359,8 +343,7 @@
       "speed": 40
     },
     "evolvesFrom": "spinarak",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 169,
@@ -381,8 +364,7 @@
       "speed": 130
     },
     "evolvesFrom": "golbat",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 170,
@@ -403,8 +385,7 @@
       "speed": 67
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 171,
@@ -425,8 +406,7 @@
       "speed": 67
     },
     "evolvesFrom": "chinchou",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 172,
@@ -446,8 +426,7 @@
       "speed": 60
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 173,
@@ -467,8 +446,7 @@
       "speed": 15
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 174,
@@ -488,8 +466,7 @@
       "speed": 15
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 175,
@@ -509,8 +486,7 @@
       "speed": 20
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 176,
@@ -531,8 +507,7 @@
       "speed": 40
     },
     "evolvesFrom": "togepi",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal/flying (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a normal/flying (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 177,
@@ -553,8 +528,7 @@
       "speed": 70
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 178,
@@ -575,8 +549,7 @@
       "speed": 95
     },
     "evolvesFrom": "natu",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 179,
@@ -596,8 +569,7 @@
       "speed": 35
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 180,
@@ -617,8 +589,7 @@
       "speed": 45
     },
     "evolvesFrom": "mareep",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 181,
@@ -638,8 +609,7 @@
       "speed": 55
     },
     "evolvesFrom": "flaaffy",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 182,
@@ -659,8 +629,7 @@
       "speed": 50
     },
     "evolvesFrom": "gloom",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 183,
@@ -680,8 +649,7 @@
       "speed": 40
     },
     "evolvesFrom": "azurill",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a water (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a water (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 184,
@@ -701,8 +669,7 @@
       "speed": 50
     },
     "evolvesFrom": "marill",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a water (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a water (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 185,
@@ -722,8 +689,7 @@
       "speed": 30
     },
     "evolvesFrom": "bonsly",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 186,
@@ -743,8 +709,7 @@
       "speed": 70
     },
     "evolvesFrom": "poliwhirl",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 187,
@@ -765,8 +730,7 @@
       "speed": 50
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 188,
@@ -787,8 +751,7 @@
       "speed": 80
     },
     "evolvesFrom": "hoppip",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 189,
@@ -809,8 +772,7 @@
       "speed": 110
     },
     "evolvesFrom": "skiploom",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 190,
@@ -830,8 +792,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 191,
@@ -851,8 +812,7 @@
       "speed": 30
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 192,
@@ -872,8 +832,7 @@
       "speed": 30
     },
     "evolvesFrom": "sunkern",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 193,
@@ -894,8 +853,7 @@
       "speed": 95
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 194,
@@ -916,8 +874,7 @@
       "speed": 15
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 195,
@@ -938,8 +895,7 @@
       "speed": 35
     },
     "evolvesFrom": "wooper",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 196,
@@ -959,8 +915,7 @@
       "speed": 110
     },
     "evolvesFrom": "eevee",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 197,
@@ -980,8 +935,7 @@
       "speed": 65
     },
     "evolvesFrom": "eevee",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 198,
@@ -1002,8 +956,7 @@
       "speed": 91
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 199,
@@ -1024,8 +977,7 @@
       "speed": 30
     },
     "evolvesFrom": "slowpoke",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 200,
@@ -1045,8 +997,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 201,
@@ -1066,8 +1017,7 @@
       "speed": 48
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 202,
@@ -1087,8 +1037,7 @@
       "speed": 33
     },
     "evolvesFrom": "wynaut",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 203,
@@ -1109,8 +1058,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 204,
@@ -1130,8 +1078,7 @@
       "speed": 15
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 205,
@@ -1152,8 +1099,7 @@
       "speed": 40
     },
     "evolvesFrom": "pineco",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 206,
@@ -1173,8 +1119,7 @@
       "speed": 45
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 207,
@@ -1195,8 +1140,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 208,
@@ -1217,8 +1161,7 @@
       "speed": 30
     },
     "evolvesFrom": "onix",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 209,
@@ -1238,8 +1181,7 @@
       "speed": 30
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 210,
@@ -1259,8 +1201,7 @@
       "speed": 45
     },
     "evolvesFrom": "snubbull",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI. Tipo corregido a normal (PokeAPI devuelve Hada, retcon de Gen 6 no usado por PokeMMO — ver src/lib docs de la auditoria de Kanto)."
   },
   {
     "id": 211,
@@ -1281,8 +1222,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 212,
@@ -1303,8 +1243,7 @@
       "speed": 65
     },
     "evolvesFrom": "scyther",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 213,
@@ -1325,8 +1264,7 @@
       "speed": 5
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 214,
@@ -1347,8 +1285,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 215,
@@ -1369,8 +1306,7 @@
       "speed": 115
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 216,
@@ -1390,8 +1326,7 @@
       "speed": 40
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 217,
@@ -1411,8 +1346,7 @@
       "speed": 55
     },
     "evolvesFrom": "teddiursa",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 218,
@@ -1432,8 +1366,7 @@
       "speed": 20
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 219,
@@ -1454,8 +1387,7 @@
       "speed": 30
     },
     "evolvesFrom": "slugma",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 220,
@@ -1476,8 +1408,7 @@
       "speed": 50
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 221,
@@ -1498,8 +1429,7 @@
       "speed": 50
     },
     "evolvesFrom": "swinub",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 222,
@@ -1520,8 +1450,7 @@
       "speed": 35
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 223,
@@ -1541,8 +1470,7 @@
       "speed": 65
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 224,
@@ -1562,8 +1490,7 @@
       "speed": 45
     },
     "evolvesFrom": "remoraid",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 225,
@@ -1584,8 +1511,7 @@
       "speed": 75
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 226,
@@ -1606,8 +1532,7 @@
       "speed": 70
     },
     "evolvesFrom": "mantyke",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 227,
@@ -1628,8 +1553,7 @@
       "speed": 70
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 228,
@@ -1650,8 +1574,7 @@
       "speed": 65
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 229,
@@ -1672,8 +1595,7 @@
       "speed": 95
     },
     "evolvesFrom": "houndour",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 230,
@@ -1694,8 +1616,7 @@
       "speed": 85
     },
     "evolvesFrom": "seadra",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 231,
@@ -1715,8 +1636,7 @@
       "speed": 40
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 232,
@@ -1736,8 +1656,7 @@
       "speed": 50
     },
     "evolvesFrom": "phanpy",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 233,
@@ -1757,8 +1676,7 @@
       "speed": 60
     },
     "evolvesFrom": "porygon",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 234,
@@ -1778,8 +1696,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 235,
@@ -1799,8 +1716,7 @@
       "speed": 75
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 236,
@@ -1820,8 +1736,7 @@
       "speed": 35
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 237,
@@ -1841,8 +1756,7 @@
       "speed": 70
     },
     "evolvesFrom": "tyrogue",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 238,
@@ -1863,8 +1777,7 @@
       "speed": 65
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 239,
@@ -1884,8 +1797,7 @@
       "speed": 95
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 240,
@@ -1905,8 +1817,7 @@
       "speed": 83
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 241,
@@ -1926,8 +1837,7 @@
       "speed": 100
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 242,
@@ -1947,8 +1857,7 @@
       "speed": 55
     },
     "evolvesFrom": "chansey",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 243,
@@ -1968,8 +1877,7 @@
       "speed": 115
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 244,
@@ -1989,8 +1897,7 @@
       "speed": 100
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 245,
@@ -2010,8 +1917,7 @@
       "speed": 85
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 246,
@@ -2032,8 +1938,7 @@
       "speed": 41
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 247,
@@ -2054,8 +1959,7 @@
       "speed": 51
     },
     "evolvesFrom": "larvitar",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 248,
@@ -2076,8 +1980,7 @@
       "speed": 61
     },
     "evolvesFrom": "pupitar",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 249,
@@ -2098,8 +2001,7 @@
       "speed": 110
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 250,
@@ -2120,8 +2022,7 @@
       "speed": 90
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   },
   {
     "id": 251,
@@ -2142,7 +2043,6 @@
       "speed": 100
     },
     "evolvesFrom": null,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
-    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva/sprite: PokeAPI."
+    "source": "Stats: Bulbapedia (tabla Gen II-V, pre-buffs de Gen 6+, verificado 2026-07-04). Tipo/familia evolutiva: PokeAPI."
   }
 ]

@@ -65,12 +65,6 @@ function FormatOption({
   );
 }
 
-const NEXT_VALID_DOUBLE_ELIM_SIZES = [4, 8, 16, 32];
-
-function nextValidDoubleElimSize(count: number): number {
-  return NEXT_VALID_DOUBLE_ELIM_SIZES.find((size) => size >= count) ?? NEXT_VALID_DOUBLE_ELIM_SIZES[NEXT_VALID_DOUBLE_ELIM_SIZES.length - 1];
-}
-
 export default function NewTournament() {
   const createTournament = useTournamentStore((s) => s.createTournament);
   const [name, setName] = useState('');
@@ -104,9 +98,7 @@ export default function NewTournament() {
       return;
     }
     if (format === 'double' && !isValidDoubleElimSize(participants.length)) {
-      Alert.alert(
-        t('newTournament.doubleElimSizeError', { size: nextValidDoubleElimSize(participants.length) })
-      );
+      Alert.alert(t('newTournament.doubleElimSizeError'));
       return;
     }
     const tournament = createTournament(name, participants, format);
@@ -116,7 +108,7 @@ export default function NewTournament() {
 
   return (
     <Screen>
-      <Header title={t('newTournament.title')} />
+      <Header title={t('newTournament.title')} backHref="/torneos" />
 
       <Text className="mb-1 font-medium text-ink-300">{t('newTournament.nameLabel')}</Text>
       <TextInput

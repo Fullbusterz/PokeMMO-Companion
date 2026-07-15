@@ -1,0 +1,39 @@
+{
+  "topic": "general-mechanics",
+  "title": "Mecánicas propias de PokeMMO",
+  "source": "PokeMMO Wiki (pokemmo.shoutwiki.com/wiki/Shiny_Pokémon, /wiki/Alpha_Pokémon) y PokeMMO Support (support.pokemmo.com/knowledgebase/article/shiny-rate). Extraído el 2026-07-11.",
+  "note": "Segunda mitad de la guía de diferencias PokeMMO-vs-oficial (la primera mitad, objeto por objeto, está en \"PokeMMO vs. oficial: objetos\"). Esta cubre mecánicas generales donde PokeMMO se aparta del juego original. La cría ya tiene su propia guía dedicada (\"Cómo funciona la cría\") y no se repite aquí. Se investigó también una posible diferencia en movepools respecto a Generación 8, pero no se encontró ninguna fuente específica de PokeMMO que la confirme o la describa — se deja fuera en vez de inventar el dato, siguiendo la regla de oro del proyecto (nunca asumir que una mecánica oficial aplica igual en PokeMMO sin verificarlo).",
+  "sections": [
+    {
+      "heading": "Tasa de shiny",
+      "paragraphs": [
+        "La tasa base de encontrar un Pokémon shiny en PokeMMO es de 1/30.000 — mucho más alta que en los juegos oficiales sin métodos especiales.",
+        "Se puede mejorar activando el Estatus de Donador (aproximadamente 1/27.000) o usando un Amuleto Shiny (Shiny Charm, aproximadamente 1/27.000), o combinando ambos a la vez (aproximadamente 1/24.000).",
+        "Los castigos como el mute o los baneos temporales NO reducen la tasa de shiny — es un mito sin base real."
+      ]
+    },
+    {
+      "heading": "Pokémon Alfa — qué son",
+      "paragraphs": [
+        "Los Pokémon Alfa son una variante que introduce habilidades ocultas en ciertas especies. Al capturarlos, tienen dos IVs perfectos (31) elegidos al azar, junto con la habilidad oculta correspondiente (que se puede cambiar después con una Píldora de Habilidad).",
+        "Visualmente: aparecen más grandes como Pokémon seguidor con un efecto especial, tienen un contorno rojo en combate y en la pantalla de resumen, y su grito de combate suena más grave. Se identifican por un icono especial en su ficha.",
+        "Los Pokémon Alfa pueden ser shiny bajo las mismas probabilidades que cualquier otro Pokémon salvaje."
+      ]
+    },
+    {
+      "heading": "Pokémon Alfa — cómo aparecen y se capturan",
+      "paragraphs": [
+        "Aparecen en \"Alpha Swarms\" (enjambres Alfa) una vez por día del juego, en una ubicación y hora aleatorias, y duran 75 minutos. Un día del juego dura 6 horas reales, así que hay 4 apariciones cada día real. La ubicación se marca en el mapa de la ciudad mientras está activa.",
+        "En combate pueden activar \"Wild Might\", que sube drásticamente todas sus estadísticas tras el primer intento de captura del entrenador. Si tu equipo se debilita, puedes volver al punto de aparición y desafiarlo de nuevo. Si huyes del combate, tienes que esperar 2 minutos para que el Alfa vuelva a aparecer.",
+        "Capturarlo da Caramelos EXP como recompensa; derrotarlo (sin capturar) no da nada.",
+        "Truco de la comunidad: usar un Pokémon con la habilidad Contrario (Contrary) y el movimiento Cambio de Habilidad (Skill Swap) hace que la subida de estadísticas de Wild Might se convierta en bajada, neutralizando la mecánica."
+      ]
+    },
+    {
+      "heading": "Pokémon Alfa — cría",
+      "paragraphs": [
+        "Para que una cría conserve el atributo Alfa, AMBOS progenitores deben tener el atributo Alfa. Si solo uno de los dos lo tiene, la cría nace como un Pokémon normal."
+      ]
+    }
+  ]
+}

@@ -19,7 +19,7 @@ const VARIANT_CONFIG: Record<ButtonVariant, { container: string; text: string }>
     text: 'text-center text-base font-bold text-white',
   },
   secondary: {
-    container: 'min-h-[46px] rounded-xl border border-ink-600 p-3 active:bg-ink-700 disabled:opacity-40',
+    container: 'min-h-[46px] rounded-xl border border-gold/40 p-3 active:bg-ink-700 disabled:opacity-40',
     text: 'text-center font-semibold text-ink-100',
   },
   danger: {

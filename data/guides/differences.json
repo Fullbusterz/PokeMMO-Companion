@@ -1,0 +1,432 @@
+{
+  "topic": "differences",
+  "title": "Diferencias entre PokeMMO y los juegos oficiales — Objetos",
+  "source": "PokeMMO Wiki (pokemmo.shoutwiki.com), página individual de cada objeto (ver sourceUrl de cada entrada), contrastada contra el comportamiento oficial de Gen I-V. Recopilado con ayuda de ChatGPT el 2026-07-10.",
+  "note": "Esta lista cubre solo objetos con un comportamiento DISTINTO al de los juegos oficiales — si un objeto no aparece aquí, no significa que sea idéntico al oficial, solo que no se ha revisado o no se ha encontrado diferencia. Para diferencias generales de mecánicas (cría, tasa shiny, movepools...) ver el resto de guías de referencia.",
+  "scopeNote": "Incluye todos los objetos y grupos de objetos localizados y verificados en la recopilación realizada. No se garantiza que sea un inventario absolutamente exhaustivo de toda la wiki de PokeMMO.",
+  "items": [
+    {
+      "nameEs": "Moneda Amuleto",
+      "nameEn": "Amulet Coin",
+      "pokemmoEffect": "Se consume al activarla y multiplica por 1,5 el dinero obtenido en combates contra entrenadores. La wiki también muestra un precio de 100 PokéYen y un precio de venta de 50.",
+      "officialEffect": "En los juegos oficiales de las generaciones II-V es un objeto equipado y reutilizable que duplica el dinero si su portador participa en el combate; no se consume.",
+      "differenceType": "consumible con multiplicador x1,5 frente a objeto permanente con multiplicador x2",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Amulet_Coin",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Máquinas Técnicas",
+      "nameEn": "Technical Machines",
+      "pokemmoEffect": "Cada MT enseña una vez su movimiento a un Pokémon compatible y se consume después de utilizarla.",
+      "officialEffect": "Las MT son de un solo uso en las generaciones I-IV, pero pasan a ser reutilizables sin límite en la generación V.",
+      "differenceType": "PokeMMO conserva el uso único y difiere específicamente de las MT reutilizables de Gen V",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/TM",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Piedra Eterna",
+      "nameEn": "Everstone",
+      "pokemmoEffect": "Impide que el portador evolucione y, durante la crianza, garantiza que la cría reciba siempre la naturaleza del progenitor que la lleva.",
+      "officialEffect": "En Esmeralda, Gen IV y Pokémon Blanco y Negro, la herencia de naturaleza mediante Piedra Eterna tiene normalmente un 50% de probabilidad y presenta restricciones según el juego; en Blanco 2 y Negro 2 pasa a ser garantizada. El objeto es reutilizable.",
+      "differenceType": "herencia de naturaleza garantizada frente a probabilidad del 50% en buena parte de Gen III-V; coincide con B2W2",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Everstone",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Pesa Recia",
+      "nameEn": "Power Weight",
+      "pokemmoEffect": "Durante la crianza garantiza la herencia del IV de PS del portador y se consume al utilizarse; cuesta 10.000 PokéYen y se vende por 5.000.",
+      "officialEffect": "En Gen IV-V es un objeto equipado reutilizable: reduce a la mitad la Velocidad, concede 4 EV adicionales de PS al ganar EV y, desde HGSS, permite heredar el IV de PS sin consumirse.",
+      "differenceType": "consumible de crianza frente a objeto equipado reutilizable con efectos de EV y crianza",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Power_Weight",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Brazal Recio",
+      "nameEn": "Power Bracer",
+      "pokemmoEffect": "Durante la crianza garantiza la herencia del IV de Ataque del portador, cuesta 10.000 PokéYen y se consume al utilizarse.",
+      "officialEffect": "En Gen IV-V es reutilizable, reduce a la mitad la Velocidad, concede 4 EV adicionales de Ataque y desde HGSS transmite el IV de Ataque durante la crianza sin consumirse.",
+      "differenceType": "consumible de crianza frente a objeto equipado reutilizable",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Breeding_Items",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Cinto Recio",
+      "nameEn": "Power Belt",
+      "pokemmoEffect": "Durante la crianza garantiza la herencia del IV de Defensa del portador, cuesta 10.000 PokéYen y se consume al utilizarse.",
+      "officialEffect": "En Gen IV-V es reutilizable, reduce a la mitad la Velocidad, concede 4 EV adicionales de Defensa y desde HGSS transmite el IV de Defensa durante la crianza sin consumirse.",
+      "differenceType": "consumible de crianza frente a objeto equipado reutilizable",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Breeding_Items",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Lente Recia",
+      "nameEn": "Power Lens",
+      "pokemmoEffect": "Durante la crianza garantiza la herencia del IV de Ataque Especial del portador, cuesta 10.000 PokéYen y se consume al utilizarse.",
+      "officialEffect": "En Gen IV-V es reutilizable, reduce a la mitad la Velocidad, concede 4 EV adicionales de Ataque Especial y desde HGSS transmite ese IV durante la crianza sin consumirse.",
+      "differenceType": "consumible de crianza frente a objeto equipado reutilizable",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Breeding_Items",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Banda Recia",
+      "nameEn": "Power Band",
+      "pokemmoEffect": "Durante la crianza garantiza la herencia del IV de Defensa Especial del portador, cuesta 10.000 PokéYen y se consume al utilizarse.",
+      "officialEffect": "En Gen IV-V es reutilizable, reduce a la mitad la Velocidad, concede 4 EV adicionales de Defensa Especial y desde HGSS transmite ese IV durante la crianza sin consumirse.",
+      "differenceType": "consumible de crianza frente a objeto equipado reutilizable",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Breeding_Items",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Franja Recia",
+      "nameEn": "Power Anklet",
+      "pokemmoEffect": "Durante la crianza garantiza la herencia del IV de Velocidad del portador, cuesta 10.000 PokéYen y se consume al utilizarse.",
+      "officialEffect": "En Gen IV-V es reutilizable, reduce a la mitad la Velocidad, concede 4 EV adicionales de Velocidad y desde HGSS transmite ese IV durante la crianza sin consumirse.",
+      "differenceType": "consumible de crianza frente a objeto equipado reutilizable",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Breeding_Items",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Escama Marina",
+      "nameEn": "Deep Sea Scale",
+      "pokemmoEffect": "Puede usarse directamente desde la bolsa sobre Clamperl para evolucionarlo, aunque el intercambio con el objeto equipado sigue funcionando; se consume al evolucionar.",
+      "officialEffect": "En los juegos oficiales de Gen III-V, Clamperl debe intercambiarse mientras lleva equipada la Escama Marina.",
+      "differenceType": "evolución mediante uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Diente Marino",
+      "nameEn": "Deep Sea Tooth",
+      "pokemmoEffect": "Puede usarse directamente desde la bolsa sobre Clamperl para evolucionarlo o activarse mediante intercambio; se consume con la evolución.",
+      "officialEffect": "En Gen III-V, Clamperl evoluciona únicamente al ser intercambiado mientras lleva equipado el Diente Marino.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Escama Dragón",
+      "nameEn": "Dragon Scale",
+      "pokemmoEffect": "Puede utilizarse directamente desde la bolsa para evolucionar a Seadra o activarse mediante intercambio; se consume al evolucionar.",
+      "officialEffect": "En Gen II-V, Seadra debe ser intercambiado mientras lleva equipada la Escama Dragón.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Disco Extraño",
+      "nameEn": "Dubious Disc",
+      "pokemmoEffect": "Puede usarse desde la bolsa para evolucionar a Porygon2 o mediante intercambio con el objeto equipado; se consume al evolucionar.",
+      "officialEffect": "En Gen IV-V, Porygon2 evoluciona únicamente al ser intercambiado mientras lleva equipado el Disco Extraño.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Electrizador",
+      "nameEn": "Electirizer",
+      "pokemmoEffect": "Puede usarse directamente desde la bolsa para evolucionar a Electabuzz o mediante intercambio con el objeto equipado; se consume al evolucionar.",
+      "officialEffect": "En Gen IV-V, Electabuzz evoluciona al ser intercambiado mientras lleva equipado el Electrizador.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Roca del Rey",
+      "nameEn": "King's Rock",
+      "pokemmoEffect": "Además de conservar su función como objeto equipado en combate, puede utilizarse directamente desde la bolsa para las evoluciones correspondientes de Poliwhirl y Slowpoke, sin necesidad de intercambio.",
+      "officialEffect": "En Gen II-V, las evoluciones correspondientes requieren intercambiar al Pokémon mientras lleva equipada la Roca del Rey.",
+      "differenceType": "método evolutivo directo añadido; el efecto de combate no es la diferencia",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Magmatizador",
+      "nameEn": "Magmarizer",
+      "pokemmoEffect": "Puede usarse directamente desde la bolsa para evolucionar a Magmar o mediante intercambio con el objeto equipado; se consume al evolucionar.",
+      "officialEffect": "En Gen IV-V, Magmar debe ser intercambiado mientras lleva equipado el Magmatizador.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Revestimiento Metálico",
+      "nameEn": "Metal Coat",
+      "pokemmoEffect": "Puede utilizarse desde la bolsa para evolucionar directamente a Onix o Scyther, aunque el intercambio con el objeto equipado continúa siendo válido.",
+      "officialEffect": "En Gen II-V, Onix y Scyther deben intercambiarse mientras llevan equipado el Revestimiento Metálico.",
+      "differenceType": "método evolutivo directo añadido; su efecto equipado sobre movimientos de tipo Acero no es la diferencia",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Protector",
+      "nameEn": "Protector",
+      "pokemmoEffect": "Puede usarse directamente desde la bolsa para evolucionar a Rhydon o mediante intercambio; se consume con la evolución.",
+      "officialEffect": "En Gen IV-V, Rhydon evoluciona únicamente al ser intercambiado mientras lleva equipado el Protector.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Tela Terrible",
+      "nameEn": "Reaper Cloth",
+      "pokemmoEffect": "Puede usarse directamente desde la bolsa para evolucionar a Dusclops o mediante intercambio; se consume con la evolución.",
+      "officialEffect": "En Gen IV-V, Dusclops debe ser intercambiado mientras lleva equipada la Tela Terrible.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Mejora",
+      "nameEn": "Up-Grade",
+      "pokemmoEffect": "Puede utilizarse directamente desde la bolsa para evolucionar a Porygon o mediante intercambio con el objeto equipado; se consume al evolucionar.",
+      "officialEffect": "En Gen II-V, Porygon evoluciona únicamente al ser intercambiado mientras lleva equipada la Mejora.",
+      "differenceType": "uso directo desde la bolsa frente a intercambio obligatorio",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Evolution_Item",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Acopio Ball",
+      "nameEn": "Repeat Ball",
+      "pokemmoEffect": "Comienza con un multiplicador de captura de x1,0 y aumenta en x0,1 por cada captura consecutiva de la misma especie, incluso si se utiliza otra clase de Ball, hasta un máximo de x2,5. La cadena se reinicia al capturar una especie diferente.",
+      "officialEffect": "En Gen III-V aplica directamente un multiplicador de x3 si la especie ya está registrada como capturada en la Pokédex; de lo contrario utiliza x1.",
+      "differenceType": "bonificación acumulativa por cadena de capturas frente a comprobación binaria de especie ya capturada",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Repeat_Ball",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Cebo Ball",
+      "nameEn": "Lure Ball",
+      "pokemmoEffect": "Aplica un multiplicador de captura de x4 a los encuentros producidos con una caña de pescar, incluidos encuentros especiales de pesca.",
+      "officialEffect": "En Oro, Plata, Cristal, HeartGold y SoulSilver aplica x3 a los Pokémon pescados y x1 en los demás casos.",
+      "differenceType": "multiplicador x4 frente a x3 en las apariciones oficiales de Gen II-IV",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Lure_Ball",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Amor Ball",
+      "nameEn": "Love Ball",
+      "pokemmoEffect": "Aplica x8 si el Pokémon salvaje pertenece a la misma línea evolutiva que el Pokémon activo y es del género opuesto; no funciona contra especies sin género.",
+      "officialEffect": "En HGSS exige exactamente la misma especie y género opuesto para aplicar x8. En Oro, Plata y Cristal existe además un error por el que la bonificación se aplica a la misma especie y el mismo género.",
+      "differenceType": "acepta toda la línea evolutiva en lugar de exigir la misma especie y no reproduce el error de Gen II",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Love_Ball",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Gloria Ball",
+      "nameEn": "Cherish Ball",
+      "pokemmoEffect": "Puede comprarse en la tienda de regalos, intercambiarse y utilizarse realmente para capturar Pokémon; su principal atractivo es una animación cosmética especial.",
+      "officialEffect": "Desde Gen IV, los Pokémon de evento suelen distribuirse dentro de una Gloria Ball, pero la Ball no puede obtenerse legítimamente como objeto ni utilizarse normalmente para capturar.",
+      "differenceType": "Ball utilizable y comerciable frente a contenedor exclusivo de distribuciones de evento",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Cherish_Ball",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Amuleto Iris",
+      "nameEn": "Shiny Charm (+10%)",
+      "pokemmoEffect": "Es un consumible de la tienda de regalos que aumenta durante una hora la probabilidad de encontrar un Pokémon variocolor en un 10%; cuesta 100 Reward Points y puede acumularse con otras bonificaciones.",
+      "officialEffect": "En Blanco 2 y Negro 2 es un objeto clave permanente que aumenta las probabilidades de obtener Pokémon variocolor y no se consume ni tiene duración temporal.",
+      "differenceType": "consumible temporal porcentual frente a objeto clave permanente",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Shiny_Charm_%28%2B10%25%29",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Píldora de Habilidad",
+      "nameEn": "Ability Pill",
+      "pokemmoEffect": "Cambia entre las dos habilidades estándar disponibles para un Pokémon y se consume al utilizarse.",
+      "officialEffect": "No existe un objeto con esta función en Gen I-V. Su equivalente oficial, la Cápsula Habilidad, fue introducido en Gen VI.",
+      "differenceType": "función de generaciones posteriores incorporada a PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Ability_Pill",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Parche Habilidad de Fuego, Planta o Agua",
+      "nameEn": "Ability Patch (Fire, Grass or Water)",
+      "pokemmoEffect": "Existe en tres variantes elementales y se utiliza específicamente sobre Pokémon iniciales compatibles para desbloquear su habilidad oculta; se consume al utilizarse.",
+      "officialEffect": "No existe en Gen I-V. El Parche Habilidad oficial fue introducido en Gen VIII y no está dividido en variantes elementales ni restringido exclusivamente a Pokémon iniciales.",
+      "differenceType": "objeto exclusivo anterior a su debut oficial, dividido por tipo y restringido a iniciales",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Ability_Patch",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Equipo de Asalto",
+      "nameEn": "Assault Gear",
+      "pokemmoEffect": "Aumenta un 50% la Defensa Especial del portador, pero le impide utilizar movimientos de estado salvo Me First.",
+      "officialEffect": "No existe en Gen I-V. Su equivalente mecánico oficial, Assault Vest, fue introducido en Gen VI con el mismo aumento de Defensa Especial y la misma restricción general de movimientos.",
+      "differenceType": "objeto y mecánica de Gen VI disponibles dentro de un entorno basado en Gen I-V",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Assault_Gear",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Manto Encubierto",
+      "nameEn": "Covert Mantle",
+      "pokemmoEffect": "Protege al portador de los efectos secundarios de los movimientos dañinos del rival y se compra en la tienda de Puntos de Batalla.",
+      "officialEffect": "No existe en Gen I-V. El equivalente oficial, Covert Cloak, fue introducido en Gen IX y bloquea los efectos adicionales de movimientos dañinos.",
+      "differenceType": "objeto con mecánica de Gen IX añadido a PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Covert_Mantle",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Enlace de Entrenamiento",
+      "nameEn": "Training Link",
+      "pokemmoEffect": "Duplica los EV obtenidos por el portador, pero impide que reciba experiencia. Solo puede intercambiarse entre personajes pertenecientes a la misma cuenta.",
+      "officialEffect": "No existe un objeto equivalente en los juegos oficiales de Gen I-V que combine duplicación de EV, bloqueo de experiencia y restricciones vinculadas a una cuenta MMO.",
+      "differenceType": "objeto de entrenamiento exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Training_Link",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Reamplificador de Experiencia",
+      "nameEn": "Exp. Reamplifier",
+      "pokemmoEffect": "Distribuye experiencia y EV entre todos los Pokémon sanos aunque no participen en el combate; reparte el 25% de la experiencia entre los activos y el 75% entre el resto del equipo apto.",
+      "officialEffect": "Entre Gen II y Gen V, Repartir Experiencia es un objeto equipado que comparte una parte de la experiencia entre los participantes y los portadores concretos del objeto, no una función global para todo el equipo.",
+      "differenceType": "distribución global de experiencia y EV frente a reparto limitado al portador",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Exp._Reamplifier",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Ocarinas de movimientos",
+      "nameEn": "Move Ocarinas",
+      "pokemmoEffect": "Permiten utilizar fuera de combate movimientos de terreno como Corte, Vuelo, Surf, Fuerza, Destello, Teletransporte o Golpe Roca sin que ningún Pokémon del equipo necesite conocer el movimiento correspondiente. Las variantes de la tienda cuestan 200 Reward Points cada una.",
+      "officialEffect": "En Gen I-V no existe un objeto equivalente: para ejecutar estas acciones es necesario que un Pokémon conozca la MO o movimiento de campo correspondiente.",
+      "differenceType": "sustitución mediante objeto de los movimientos de campo que normalmente debe conocer un Pokémon",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Move_Ocarina",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Señuelo, Superseñuelo y Señuelo Experto",
+      "nameEn": "Lure, Super Lure and Expert Lure",
+      "pokemmoEffect": "Son consumibles por pasos que aumentan un 10% la frecuencia de encuentros, pueden producir grupos más grandes y Pokémon ligeramente más fuertes y ofrecen un 5% de probabilidad de especies exclusivas de señuelo. Duran respectivamente 100, 200 y 250 pasos.",
+      "officialEffect": "No existe una clase equivalente de objetos en los juegos principales de Gen I-V.",
+      "differenceType": "sistema de encuentros exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Lure",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Señuelos prémium",
+      "nameEn": "Premium Lures",
+      "pokemmoEffect": "Aumentan un 25% la frecuencia de encuentros, favorecen niveles y grupos mayores, ofrecen un 10% de probabilidad de especies exclusivas de señuelo y añaden un 25% de probabilidad de que un variocolor encontrado sea Secret Shiny. Duran entre 200 y 400 pasos según la variante.",
+      "officialEffect": "No existe un objeto equivalente en Gen I-V que altere simultáneamente encuentros, tamaño de grupos, especies exclusivas y la variante Secret Shiny.",
+      "differenceType": "sistema prémium y de Secret Shiny exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Lure",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Señuelo Legendario",
+      "nameEn": "Legendary Lure",
+      "pokemmoEffect": "Aumenta un 15% los encuentros, añade un 30% de probabilidad de encontrar un legendario errante aún no capturado, puede elevar los niveles hasta dos por encima del máximo normal, aumentar el tamaño de los encuentros y ofrece un 8% de probabilidad de especies exclusivas de señuelo.",
+      "officialEffect": "No existe un objeto equivalente en los juegos oficiales de Gen I-V que incremente específicamente la aparición de legendarios errantes.",
+      "differenceType": "objeto exclusivo para modificar encuentros de legendarios y tablas de aparición",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Lure",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Tiques de Estado Donador",
+      "nameEn": "Donator Status Tickets",
+      "pokemmoEffect": "Se consumen para activar durante 7, 15 o 30 días un estado de cuenta con un 25% más de experiencia en combate, un 10% más de probabilidad de variocolor, eclosión de huevos un 10% más rápida y un 5% más de dinero de entrenadores. El tiempo continúa mientras el jugador está desconectado.",
+      "officialEffect": "No existe un sistema equivalente de suscripción temporal mediante objetos consumibles en los juegos principales de Gen I-V.",
+      "differenceType": "bonificación temporal vinculada a la cuenta y propia de un MMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Donator_Status",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Amuleto de EXP +50%",
+      "nameEn": "EXP Charm (+50%)",
+      "pokemmoEffect": "Se consume para aumentar durante una hora un 50% la experiencia obtenida por el usuario y un 10% la de los integrantes de su Link.",
+      "officialEffect": "No existe en Gen I-V un consumible temporal que aumente globalmente la experiencia del jugador y comparta una bonificación con otros jugadores conectados.",
+      "differenceType": "potenciador temporal multijugador exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/EXP_Charm_%28%2B50%25%29",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Amuleto de EXP +100%",
+      "nameEn": "EXP Charm (+100%)",
+      "pokemmoEffect": "Se consume para duplicar durante una hora la experiencia obtenida por el usuario y conceder un 10% adicional a los integrantes de su Link.",
+      "officialEffect": "No existe un objeto equivalente en Gen I-V con duración, multiplicador global y bonificación compartida entre jugadores.",
+      "differenceType": "potenciador temporal multijugador exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/EXP_Charm_%28%2B100%25%29",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Amuleto de Puntos de Batalla +100%",
+      "nameEn": "Battle Points Charm (+100%)",
+      "pokemmoEffect": "Se consume para duplicar durante una hora los Puntos de Batalla obtenidos en PvE y PvP; los integrantes del Link reciben una bonificación del 10%.",
+      "officialEffect": "No existe en Gen I-V un consumible que multiplique temporalmente los PB y comparta parte de la bonificación con otros jugadores.",
+      "differenceType": "potenciador temporal de moneda competitiva exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Battle_Points_Charm_%28%2B100%25%29",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Amuleto Imán de Objetos +25%",
+      "nameEn": "Item Magnet Charm (+25%)",
+      "pokemmoEffect": "Se consume para aumentar durante una hora un 25% la obtención de objetos tras los combates y mediante Recogida, y también eleva la probabilidad de que los Pokémon salvajes lleven objetos.",
+      "officialEffect": "No existe en Gen I-V un objeto consumible que aplique una bonificación temporal global a las tablas de objetos, Recogida y objetos equipados de Pokémon salvajes.",
+      "differenceType": "potenciador temporal de botín exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Item_Magnet_Charm_%28%2B25%25%29",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Amuleto Imán de Objetos +50%",
+      "nameEn": "Item Magnet Charm (+50%)",
+      "pokemmoEffect": "Se consume para aumentar durante una hora un 50% la frecuencia de obtención de objetos del usuario y un 10% la de los integrantes de su Link.",
+      "officialEffect": "No existe un objeto equivalente en Gen I-V con una bonificación global de botín compartida entre jugadores.",
+      "differenceType": "potenciador temporal y multijugador de botín exclusivo de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Item_Magnet_Charm_%28%2B50%25%29",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Unidad de Expansión del PC",
+      "nameEn": "PC Expansion Drive",
+      "pokemmoEffect": "Se consume para añadir una caja nueva al PC con capacidad para 60 Pokémon. La capacidad puede ampliarse varias veces.",
+      "officialEffect": "No existe un objeto equivalente en Gen I-V para comprar y consumir ampliaciones permanentes del almacenamiento del PC.",
+      "differenceType": "ampliación permanente de almacenamiento propia de la economía MMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/PC_Expansion_Drive",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Unidad de Expansión de Cajas de Combate",
+      "nameEn": "Battle Box Expansion Drive",
+      "pokemmoEffect": "Se consume para añadir tres cajas de combate adicionales, cada una con capacidad para un equipo de seis Pokémon.",
+      "officialEffect": "No existe un objeto equivalente en los juegos oficiales de Gen I-V para ampliar mediante consumibles el número de equipos competitivos registrados.",
+      "differenceType": "expansión permanente de equipos guardados exclusiva de PokeMMO",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Battle_Box_Expansion_Drive",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Cúmulo de Gemas Misteriosas",
+      "nameEn": "Mysterious Gem Cluster",
+      "pokemmoEffect": "Se combina y consume junto con determinados objetos potenciadores de tipo para producir diez Gemas del tipo correspondiente. Las Gemas conservan un aumento del 50% de un solo uso y, reuniendo 40 del mismo tipo, pueden cambiar permanentemente el tipo de Poder Oculto de un Pokémon.",
+      "officialEffect": "En Gen V las Gemas son objetos equipados de un solo uso que aumentan un 50% el primer movimiento dañino de su tipo. No existe el Cúmulo, la fabricación de diez Gemas ni el uso de 40 Gemas para modificar Poder Oculto.",
+      "differenceType": "sistema exclusivo de fabricación y modificación de Poder Oculto",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Mysterious_gem_cluster",
+      "confidence": "media"
+    },
+    {
+      "nameEs": "Vitaminas estándar: Más PS, Proteína, Hierro, Calcio, Zinc y Carburante",
+      "nameEn": "HP Up, Protein, Iron, Calcium, Zinc and Carbos",
+      "pokemmoEffect": "Cada vitamina añade 10 EV a su estadística correspondiente y cuesta 3.650 PokéYen, con un precio de venta de 1.825.",
+      "officialEffect": "En Gen III-V también añaden 10 EV, pero dejan de funcionar cuando esa estadística ya tiene 100 EV o más y su precio normal es de 9.800 PokéDólares.",
+      "differenceType": "precio notablemente inferior; la wiki de PokeMMO no documenta en esta página el límite oficial de 100 EV",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Vitamin",
+      "confidence": "alta para el precio; media para la posible diferencia de límite"
+    },
+    {
+      "nameEs": "Supervitaminas: Super Más PS, Super Proteína, Super Hierro, Super Calcio, Super Zinc y Super Carburante",
+      "nameEn": "Super HP Up, Super Protein, Super Iron, Super Calcium, Super Zinc and Super Carbos",
+      "pokemmoEffect": "Cada variante añade 28 EV a su estadística correspondiente, cuesta 3.650 PokéYen y se vende por 1.825.",
+      "officialEffect": "Estas variantes Super no existen en los juegos principales de Gen I-V; las vitaminas disponibles añaden 10 EV por uso.",
+      "differenceType": "categoría exclusiva que concede 28 EV por uso",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Vitamin",
+      "confidence": "alta"
+    },
+    {
+      "nameEs": "Hipervitaminas: Hiper Más PS, Hiper Proteína, Hiper Hierro, Hiper Calcio, Hiper Zinc e Hiper Carburante",
+      "nameEn": "Hyper HP Up, Hyper Protein, Hyper Iron, Hyper Calcium, Hyper Zinc and Hyper Carbos",
+      "pokemmoEffect": "Cada variante añade 50 EV a su estadística correspondiente, cuesta 3.650 PokéYen y se vende por 1.825.",
+      "officialEffect": "Estas variantes Hyper no existen en los juegos principales de Gen I-V; las vitaminas oficiales disponibles añaden 10 EV por uso.",
+      "differenceType": "categoría exclusiva que concede 50 EV por uso",
+      "sourceUrl": "https://pokemmo.shoutwiki.com/wiki/Vitamin",
+      "confidence": "alta"
+    }
+  ]
+}

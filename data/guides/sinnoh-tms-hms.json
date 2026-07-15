@@ -1,0 +1,612 @@
+{
+  "region": "sinnoh",
+  "title": "Sinnoh - TMs y HMs (objetos de historia)",
+  "source": "Guia seviichamp.blogspot.com (https://seviichamp.blogspot.com/2019/10/guia-pokemmo-detonado-sinnoh-tms-hms.html), datos originales de pokemondb.net sobre Pokemon Platinum. Localizaciones traducidas del portugues al espanol el 2026-07-06. IMPORTANTE: refleja el juego original, no PokeMMO especificamente - la propia guia original avisa de que algunos objetos pueden haberse movido, sustituido o eliminado en PokeMMO.",
+  "verified": false,
+  "tms": [
+    {
+      "tm": 1,
+      "name": "Focus Punch",
+      "type": "FIGHTING",
+      "power": "150",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Oreburgh Gate (B1F, oeste)",
+        "(habilidad Pickup, 1% de probabilidad en nivel 71-90)"
+      ]
+    },
+    {
+      "tm": 2,
+      "name": "Dragon Claw",
+      "type": "DRAGON",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Mt. Coronet (cueva mas arriba del todo - necesita Rock Climb)"
+      ]
+    },
+    {
+      "tm": 3,
+      "name": "Water Pulse",
+      "type": "WATER",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Ravaged Path (noreste - necesita Surf e Rock Smash)"
+      ]
+    },
+    {
+      "tm": 4,
+      "name": "Calm Mind",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Battle Park (48 BP)"
+      ]
+    },
+    {
+      "tm": 5,
+      "name": "Roar",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Route 213 (noroeste - necesita Rock Climb)"
+      ]
+    },
+    {
+      "tm": 6,
+      "name": "Toxic",
+      "type": "POISON",
+      "power": "—",
+      "accuracy": "90",
+      "pp": "10",
+      "locations": [
+        "Route 212 (sureste)",
+        "Battle Park (32 BP)"
+      ]
+    },
+    {
+      "tm": 7,
+      "name": "Hail",
+      "type": "ICE",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Route 217 (no meio - na neve)"
+      ]
+    },
+    {
+      "tm": 8,
+      "name": "Bulk Up",
+      "type": "FIGHTING",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Battle Park (48 BP)"
+      ]
+    },
+    {
+      "tm": 9,
+      "name": "Bullet Seed",
+      "type": "GRASS",
+      "power": "25",
+      "accuracy": "100",
+      "pp": "30",
+      "locations": [
+        "Route 204 (noroeste)"
+      ]
+    },
+    {
+      "tm": 10,
+      "name": "Hidden Power",
+      "type": "NORMAL",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Veilstone City (Game Corner - 6,000 Coins)"
+      ]
+    },
+    {
+      "tm": 11,
+      "name": "Sunny Day",
+      "type": "FIRE",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "5",
+      "locations": [
+        "Route 212 (oeste - necesita Cut o Surf)"
+      ]
+    },
+    {
+      "tm": 12,
+      "name": "Taunt",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Route 211 (sur - necesita Rock Smash)"
+      ]
+    },
+    {
+      "tm": 13,
+      "name": "Ice Beam",
+      "type": "ICE",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Route 216 (noreste)",
+        "Veilstone City (Game Corner - 10,000 Coins)"
+      ]
+    },
+    {
+      "tm": 14,
+      "name": "Blizzard",
+      "type": "ICE",
+      "power": "110",
+      "accuracy": "70",
+      "pp": "5",
+      "locations": [
+        "Lake Acuity (noreste)",
+        "Veilstone City (Department Store - $5,500)"
+      ]
+    },
+    {
+      "tm": 15,
+      "name": "Hyper Beam",
+      "type": "NORMAL",
+      "power": "150",
+      "accuracy": "90",
+      "pp": "5",
+      "locations": [
+        "Veilstone City (Department Store - $7,500)"
+      ]
+    },
+    {
+      "tm": 16,
+      "name": "Light Screen",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "30",
+      "locations": [
+        "Veilstone City (Department Store - $2,000)"
+      ]
+    },
+    {
+      "tm": 17,
+      "name": "Protect",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Veilstone City (Department Store - $2,000)"
+      ]
+    },
+    {
+      "tm": 18,
+      "name": "Rain Dance",
+      "type": "WATER",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "5",
+      "locations": [
+        "Route 223 (oeste)"
+      ]
+    },
+    {
+      "tm": 19,
+      "name": "Giga Drain",
+      "type": "GRASS",
+      "power": "75",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Route 209 (sureste - necesita Surf)"
+      ]
+    },
+    {
+      "tm": 20,
+      "name": "Safeguard",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "25",
+      "locations": [
+        "Veilstone City (Department Store - $2,000)"
+      ]
+    },
+    {
+      "tm": 21,
+      "name": "Frustration",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Galactic Warehouse (3F)",
+        "Veilstone City (Game Corner - 8,000 Coins)"
+      ]
+    },
+    {
+      "tm": 22,
+      "name": "Solar Beam",
+      "type": "GRASS",
+      "power": "120",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Veilstone City (Department Store - $3,000)"
+      ]
+    },
+    {
+      "tm": 23,
+      "name": "Iron Tail",
+      "type": "STEEL",
+      "power": "100",
+      "accuracy": "75",
+      "pp": "15",
+      "locations": [
+        "Iron Island (B2F este)"
+      ]
+    },
+    {
+      "tm": 24,
+      "name": "Thunderbolt",
+      "type": "ELECTRIC",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Valley Windworks (noreste)",
+        "Veilstone City (Game Corner - 10,000 Coins)"
+      ]
+    },
+    {
+      "tm": 25,
+      "name": "Thunder",
+      "type": "ELECTRIC",
+      "power": "110",
+      "accuracy": "70",
+      "pp": "10",
+      "locations": [
+        "Lake Valor (sureste)",
+        "Veilstone City (Department Store - $5,500)"
+      ]
+    },
+    {
+      "tm": 26,
+      "name": "Earthquake",
+      "type": "GROUND",
+      "power": "100",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Wayward Cave (entrada secreta debajo de Cycling Road - necesita Cut, Strength y Bicycle)",
+        "Battle Park (80 BP)",
+        "(habilidad Pickup, 1% de probabilidad en nivel 91-100)"
+      ]
+    },
+    {
+      "tm": 27,
+      "name": "Return",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Lost Tower (4F)",
+        "Veilstone City (Game Corner - 8,000 Coins)"
+      ]
+    },
+    {
+      "tm": 28,
+      "name": "Dig",
+      "type": "GROUND",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Maniac Tunnel (este)"
+      ]
+    },
+    {
+      "tm": 29,
+      "name": "Psychic",
+      "type": "PSYCHIC",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Route 211 (noreste - necesita Rock Smash e Rock Climb)",
+        "Veilstone City (Game Corner - 10,000 Coins)"
+      ]
+    },
+    {
+      "tm": 30,
+      "name": "Shadow Ball",
+      "type": "GHOST",
+      "power": "80",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Route 210 (suroeste)",
+        "Battle Park (64 BP)"
+      ]
+    },
+    {
+      "tm": 31,
+      "name": "Brick Break",
+      "type": "FIGHTING",
+      "power": "75",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Oreburgh Gate (B1F, noroeste - necesita Rock Smash e Surf)",
+        "Battle Park (40 BP)"
+      ]
+    },
+    {
+      "tm": 32,
+      "name": "Double Team",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "15",
+      "locations": [
+        "Wayward Cave (1F, suroeste - necesita Cut e Rock Smash)",
+        "Veilstone City (Game Corner - 4,000 Coins)"
+      ]
+    },
+    {
+      "tm": 33,
+      "name": "Reflect",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "20",
+      "locations": [
+        "Veilstone City (Department Store - $2,000)"
+      ]
+    },
+    {
+      "tm": 34,
+      "name": "Shock Wave",
+      "type": "ELECTRIC",
+      "power": "60",
+      "accuracy": "∞",
+      "pp": "20",
+      "locations": [
+        "Route 215 (sureste)"
+      ]
+    },
+    {
+      "tm": 35,
+      "name": "Flamethrower",
+      "type": "FIRE",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Fuego Ironworks (sur)",
+        "Veilstone City (Game Corner - 10,000 Coins)"
+      ]
+    },
+    {
+      "tm": 36,
+      "name": "Sludge Bomb",
+      "type": "POISON",
+      "power": "90",
+      "accuracy": "100",
+      "pp": "10",
+      "locations": [
+        "Galactic Warehouse (B1F, noreste)",
+        "Battle Park (80 BP)"
+      ]
+    },
+    {
+      "tm": 37,
+      "name": "Sandstorm",
+      "type": "ROCK",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Route 228 (centro)"
+      ]
+    },
+    {
+      "tm": 38,
+      "name": "Fire Blast",
+      "type": "FIRE",
+      "power": "110",
+      "accuracy": "85",
+      "pp": "5",
+      "locations": [
+        "Lake Verity (suroeste)",
+        "Veilstone City (Department Store - $5,500)"
+      ]
+    },
+    {
+      "tm": 39,
+      "name": "Rock Tomb",
+      "type": "ROCK",
+      "power": "60",
+      "accuracy": "95",
+      "pp": "15",
+      "locations": [
+        "Ravaged Path (suroeste)"
+      ]
+    },
+    {
+      "tm": 40,
+      "name": "Aerial Ace",
+      "type": "FLYING",
+      "power": "60",
+      "accuracy": "∞",
+      "pp": "20",
+      "locations": [
+        "Route 213 (oeste - necesita Rock Smash)",
+        "Battle Park (40 BP)"
+      ]
+    },
+    {
+      "tm": 41,
+      "name": "Torment",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Victory Road (1F, suroeste - necesita Rock Climb)"
+      ]
+    },
+    {
+      "tm": 42,
+      "name": "Facade",
+      "type": "NORMAL",
+      "power": "70",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Survival Area (casa mas al sur)"
+      ]
+    },
+    {
+      "tm": 43,
+      "name": "Secret Power",
+      "type": "NORMAL",
+      "power": "70",
+      "accuracy": "100",
+      "pp": "20",
+      "locations": [
+        "Amity Square (sur)"
+      ]
+    },
+    {
+      "tm": 44,
+      "name": "Rest",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Veilstone City (Game Corner - 6,000 Coins)",
+        "(habilidad Pickup, 1% de probabilidad en nivel 51-70)"
+      ]
+    },
+    {
+      "tm": 45,
+      "name": "Attract",
+      "type": "NORMAL",
+      "power": "—",
+      "accuracy": "100",
+      "pp": "15",
+      "locations": [
+        "Amity Square (norte)",
+        "Battle Park (32 BP)"
+      ]
+    },
+    {
+      "tm": 46,
+      "name": "Thief",
+      "type": "DARK",
+      "power": "60",
+      "accuracy": "100",
+      "pp": "25",
+      "locations": [
+        "Eterna City (noreste - necesita Cut)"
+      ]
+    },
+    {
+      "tm": 47,
+      "name": "Steel Wing",
+      "type": "STEEL",
+      "power": "70",
+      "accuracy": "90",
+      "pp": "25",
+      "locations": [
+        "Route 209 (sordeste - necesita Cut)"
+      ]
+    },
+    {
+      "tm": 48,
+      "name": "Skill Swap",
+      "type": "PSYCHIC",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Canalave City (casa mas al sureste)"
+      ]
+    },
+    {
+      "tm": 49,
+      "name": "Snatch",
+      "type": "DARK",
+      "power": "—",
+      "accuracy": "—",
+      "pp": "10",
+      "locations": [
+        "Galactic Warehouse (1F, sureste)"
+      ]
+    },
+    {
+      "tm": 50,
+      "name": "Overheat",
+      "type": "FIRE",
+      "power": "130",
+      "accuracy": "90",
+      "pp": "5",
+      "locations": [
+        "Stark Mountain (interior, suroeste)"
+      ]
+    }
+  ],
+  "hms": [
+    {
+      "name": "Cut",
+      "location": "Eterna City (de Cynthia)"
+    },
+    {
+      "name": "Fly",
+      "location": "Veilstone City (entrada de la Team Galactic Warehouse)"
+    },
+    {
+      "name": "Surf",
+      "location": "Celestic Town (de la abuela de Cynthia, en el santuario de la ciudad)"
+    },
+    {
+      "name": "Strength",
+      "location": "Iron Island (de Riley)"
+    },
+    {
+      "name": "Defog",
+      "location": "Solaceon Ruins (en la sala mas al fondo)"
+    },
+    {
+      "name": "Rock Smash",
+      "location": "Oreburgh Gate (del excursionista)"
+    },
+    {
+      "name": "Waterfall",
+      "location": "Sunyshore City (de Jasmine tras derrotar a Volkner)"
+    },
+    {
+      "name": "Rock Climb",
+      "location": "Route 217 (al norte de la casa del Hiker)"
+    }
+  ]
+}

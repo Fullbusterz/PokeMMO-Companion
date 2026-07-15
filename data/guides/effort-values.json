@@ -1,0 +1,29 @@
+{
+  "topic": "effort-values",
+  "title": "Effort Values (EVs) - conceptos basicos",
+  "source": "seviichamp.blogspot.com (https://seviichamp.blogspot.com/2017/06/pokemmo-guide-pokemon-effort-values-evs_26.html), creditos a pokemondb.net/ev. Extraido el 2026-07-05.",
+  "sections": [
+    {
+      "heading": null,
+      "paragraphs": [
+        "Al combatir, ademas de ganar puntos de experiencia los Pokemon tambien obtienen Effort Values (EVs), valores ocultos que se asignan a cada estadistica (HP, Ataque, etc). Cada Pokemon contra el que combates otorga EVs en una o mas estadisticas, normalmente relacionadas con su estadistica mas fuerte (p.ej. Geodude da un EV de Defensa, Gengar da tres EVs de Ataque Especial).",
+        "Los huevos recien nacidos y los Pokemon capturados en estado salvaje - sin importar el nivel - no tienen EVs y actuan como una hoja en blanco para el entrenamiento. Cualquier Pokemon que haya ganado experiencia combatiendo ya habra ganado algunos EVs.",
+        "Cada 4 EVs obtenidos en una estadistica equivalen a un punto mas en esa estadistica al llegar al nivel 100. Un Pokemon puede ganar 510 EVs en total, pero solo 255 en una sola estadistica - como 4 EVs equivalen a 1 punto, maximizar una estadistica solo requiere 252 EVs (63 puntos), los ultimos 3 se desperdician."
+      ]
+    },
+    {
+      "heading": "Objetos que aumentan EVs",
+      "paragraphs": [
+        "Las vitaminas (compradas en la tienda departamental de cada juego - Veilstone/Lilycove/Golenrod/Celadon) dan 10 EVs en la estadistica correspondiente. No se ven afectadas por los demas objetos.",
+        "La Macho Brace reduce la velocidad del Pokemon en combate mientras la lleva puesta, pero duplica los EVs ganados.",
+        "La Exp. Share permite ganar EVs sin combatir directamente - el Pokemon gana los mismos EVs base que el Pokemon que si combatio."
+      ]
+    },
+    {
+      "heading": "Bayas que reducen EVs",
+      "paragraphs": [
+        "Existen bayas que reducen los EVs de un Pokemon, utiles si te equivocaste al contar o quieres cambiar la distribucion. Si tienes mas de 100 EVs en una estadistica, la primera baya los reduce a 100; las siguientes los bajan de 10 en 10. Para eliminar todos los EVs de una estadistica hacen falta 11 bayas."
+      ]
+    }
+  ]
+}

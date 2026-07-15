@@ -1,0 +1,91 @@
+{
+  "topic": "smeargle-sketch",
+  "title": "Guia de Sketch de Smeargle",
+  "source": "seviichamp.blogspot.com (https://seviichamp.blogspot.com/2017/07/comp-guide-sketch-guide_15.html), creditos al foro de PokeMMO. Extraido el 2026-07-05.",
+  "intro": "Sketch es un movimiento que copia el ultimo movimiento usado por el otro Pokemon, lo que permite a Smeargle aprender cualquier movimiento del juego (excepto Struggle). Sin embargo no funciona en PVP, asi que hacen falta otros metodos para ponerle movimientos a Smeargle.",
+  "methods": [
+    {
+      "name": "Metodo 1 (combate doble con NPC)",
+      "steps": [
+        "Consigue un Pokemon con el movimiento que quieres, con mas velocidad que tu Smeargle.",
+        "Entra en un combate doble contra un entrenador NPC.",
+        "Haz que el Pokemon A use el movimiento.",
+        "Haz que Smeargle use Sketch apuntando a ese Pokemon."
+      ]
+    },
+    {
+      "name": "Metodo 2 (Smeargle salvaje en Artisan Cave)",
+      "steps": [
+        "Consigue un Pokemon con el movimiento que quieres que aprenda.",
+        "Ve a Artisan Cave.",
+        "Usa ese movimiento sobre el Smeargle salvaje (debes ganar el empate de velocidad).",
+        "Una vez el Smeargle salvaje ha hecho Sketch del movimiento...",
+        "Cambia a tu propio Smeargle para copiarselo con Sketch, o captura al Smeargle salvaje (conservara el movimiento aprendido)."
+      ],
+      "note": "Si el movimiento que quieres es de dano, usa un Pokemon de nivel bajo/debil para no matar al Smeargle salvaje sin querer. Alternativamente, un Ditto salvaje puede transformarse en un Pokemon con el movimiento deseado y hacerle Sketch a el."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Para que quiero un Smeargle si tiene stats base tan malas?",
+      "answer": "Utilidad. Personalmente uso Payday/False Swipe/Spore/Thief (o Covet). Dragon Rage tambien es viable para debilitar Pokemon fantasma inmunes a False Swipe y poder capturarlos."
+    },
+    {
+      "question": "Que pasa si me equivoco de movimiento y hago Sketch de uno que no queria?",
+      "answer": "Puedes usar el reeducador de movimientos para volver a enseñar Sketch sobre el movimiento equivocado."
+    },
+    {
+      "question": "Covet o Thief?",
+      "answer": "Covet tiene 40 PP y es de tipo Normal. Thief tiene 10 PP y es de tipo Siniestro. Covet no puede golpear a tipo Fantasma, Thief si. Thief es (ligeramente) mas facil de conseguir. En general Covet es mejor, ya que el unico Pokemon fantasma con objeto equipado actualmente implementado es Haunter, y tiene muchos mas PP que Thief."
+    }
+  ],
+  "warning": "Un Smeargle salvaje con Covet o Thief PUEDE robarte objetos - ten cuidado.",
+  "pokemonWithKeyMoves": [
+    {
+      "move": "Spore",
+      "pokemon": [
+        "Parasect",
+        "Paras"
+      ]
+    },
+    {
+      "move": "False Swipe",
+      "pokemon": [
+        "Cubone",
+        "Marowak",
+        "Scyther"
+      ]
+    },
+    {
+      "move": "Thief",
+      "pokemon": [
+        "Cualquiera que lo aprenda por TM",
+        "Poochyena/Mightyena salvajes lo aprenden por nivel"
+      ]
+    },
+    {
+      "move": "Payday",
+      "pokemon": [
+        "Persian",
+        "Meowth"
+      ]
+    },
+    {
+      "move": "Covet",
+      "pokemon": [
+        "Snorlax (nivel 45)",
+        "Slakoth (22)",
+        "Slaking (23)",
+        "Linoone (24)"
+      ]
+    },
+    {
+      "move": "Dragon Rage",
+      "pokemon": [
+        "Dratini",
+        "Gyarados",
+        "Charmander"
+      ]
+    }
+  ]
+}

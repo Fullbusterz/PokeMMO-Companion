@@ -1,0 +1,674 @@
+{
+  "region": "johto",
+  "title": "Johto - guia completa (objetos por zona)",
+  "source": "Guia de farmeo seviichamp.blogspot.com (https://seviichamp.blogspot.com/2022/12/pokemmo-farm-guide-walkthrough-johto.html), escrita por CommanderBlue (nota: escrita antes del lanzamiento de Johto en PokeMMO, puede haber diferencias). Extraida el 2026-07-06.",
+  "note": "A diferencia de las otras 4 regiones, esta guia de Johto (fuente: CommanderBlue, seviichamp.blogspot.com) esta escrita como prosa narrativa en primera persona, no instrucciones mecanicas. Reproducir esa prosa habria sido demasiado parecido a copiar la obra del autor, asi que en su lugar se extrajeron los hechos (objetos, ruta, eventos clave) y se redactaron desde cero en formato mecanico, igual que las otras 4 regiones (2026-07-11). Los objetos por zona (nombre + numero de TM/HM) siguen viniendo de una lista de objetos conocidos de Gen 2, no del texto — no se distingue cuales son ocultos, todos llevan hidden:false por defecto. Cobertura de objetos parcial: la prosa original puede mencionar objetos que el extractor original no detecto.",
+  "steps": [
+    {
+      "order": 1,
+      "location": "NEW BARK, THE BEGINNING OF THE JOURNEY",
+      "steps": [
+        "Choose to play as a boy or a girl.",
+        "Go downstairs and talk to your mom.",
+        "Leave the house and enter Prof. Elm's lab.",
+        "Pick your starter: Chikorita, Cyndaquil or Totodile.",
+        "Get 5 Potions from Elm's assistant on your way out.",
+        "Go home and talk to your mom to receive the PokéGear.",
+        "Exit New Bark to the west and head for Cherrygrove, fighting wild Pokémon in the grass along the way."
+      ],
+      "items": [
+        {
+          "name": "PokéGear",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Elige jugar como chico o como chica.",
+        "Baja las escaleras y habla con tu madre.",
+        "Sal de casa y entra en el laboratorio del Prof. Elm.",
+        "Elige tu inicial: Chikorita, Cyndaquil o Totodile.",
+        "Consigue 5 Pociones del ayudante de Elm al salir.",
+        "Vuelve a casa y habla con tu madre para recibir la PokéGear.",
+        "Sal de New Bark hacia el oeste y dirígete a Cherrygrove, luchando contra Pokémon salvajes por el camino."
+      ]
+    },
+    {
+      "order": 2,
+      "location": "CHERRYGROVE AND MR. POKÉMON",
+      "steps": [
+        "Talk to the old man at the city entrance for a tour of Cherrygrove — he gives you the Running Shoes.",
+        "Heal at the Pokémon Center, then head north onto Route 30.",
+        "The old man shows up again and gives you a town map for your PokéGear.",
+        "Find a house with an apricorn tree; talk to the man inside for the Apricorn Box.",
+        "Continue north to find Mr. Pokémon — he gives you the Mystery Egg to deliver to Prof. Elm, and Prof. Oak gives you the Johto Dex here too.",
+        "Head back toward New Bark; your rival challenges you to a battle just before you arrive.",
+        "Deliver the Mystery Egg to Prof. Elm, then talk to your mom before leaving again.",
+        "Leaving town, Ethan/Lyra teaches you how to catch Pokémon and gives you 5 Poké Balls."
+      ],
+      "items": [
+        {
+          "name": "Apricorn Box",
+          "hidden": false
+        },
+        {
+          "name": "Mystery Egg",
+          "hidden": false
+        },
+        {
+          "name": "Running Shoes",
+          "hidden": false
+        },
+        {
+          "name": "PokéGear",
+          "hidden": false
+        },
+        {
+          "name": "TM70",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Habla con el anciano de la entrada de la ciudad para que te enseñe Cherrygrove — te da las Zapatillas Deportivas.",
+        "Cura a tus Pokémon en el centro y ve al norte, a la Ruta 30.",
+        "El anciano vuelve a aparecer y te da un mapa de la ciudad para tu PokéGear.",
+        "Encuentra una casa con un árbol de bellotas; habla con el hombre de dentro para conseguir la Caja Bonguri.",
+        "Sigue al norte hasta encontrar al Sr. Pokémon — te da el Huevo Misterioso para el Prof. Elm, y el Prof. Oak también te da aquí la Pokédex de Johto.",
+        "Vuelve hacia New Bark; tu rival te reta a un combate justo antes de llegar.",
+        "Entrega el Huevo Misterioso al Prof. Elm y habla con tu madre antes de volver a salir.",
+        "Al salir del pueblo, Ethan/Lyra te enseña a capturar Pokémon y te da 5 Poké Balls."
+      ]
+    },
+    {
+      "order": 3,
+      "location": "VIOLET AND THE SPROUT TOWER",
+      "steps": [
+        "On the way, defeat the two trainers blocking the path and continue north into Violet City.",
+        "Ethan/Lyra meets you here and gives you the Vs. Recorder.",
+        "Heal at the Pokémon Center.",
+        "Exit south and talk to the man near the rolling tree for HM06 (Rock Smash) — you can't use it yet.",
+        "Head to the Sprout Tower, north of the city.",
+        "Fight the monks inside; defeat the elder monk at the top to get TM70 (Flash).",
+        "Challenge the Gym and defeat Falkner for the Zephyr Badge and TM51 (Roost).",
+        "After the gym, go to the PokéMart to pick up the egg from Elm's assistant — it later hatches into a Togepi.",
+        "Exit south onto Route 32 and fight the trainers there.",
+        "At the Pokémon Center, get the Old Rod from the fisherman and 2 Lure Balls from the man next to him.",
+        "Continue through the cave onto Route 33, heading toward Azalea Town."
+      ],
+      "items": [
+        {
+          "name": "Vs. Recorder",
+          "hidden": false
+        },
+        {
+          "name": "Lure Balls",
+          "hidden": false
+        },
+        {
+          "name": "Old Rod",
+          "hidden": false
+        },
+        {
+          "name": "HM6",
+          "hidden": false
+        },
+        {
+          "name": "TM70",
+          "hidden": false
+        },
+        {
+          "name": "TM51",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Por el camino, derrota a los dos entrenadores que bloquean el paso y sigue al norte hacia Violet City.",
+        "Ethan/Lyra te encuentra aquí y te da la Cámara Lucha.",
+        "Cura a tus Pokémon en el centro.",
+        "Sal por el sur y habla con el hombre junto al árbol que se balancea para conseguir la MO06 (Golpe Roca) — todavía no puedes usarla.",
+        "Dirígete a Sprout Tower, al norte de la ciudad.",
+        "Lucha contra los monjes del interior; derrota al monje mayor en lo alto para conseguir la MT70 (Destello).",
+        "Reta al gimnasio y derrota a Falkner para conseguir la Medalla Alcón y la MT51 (Reposo).",
+        "Tras el gimnasio, ve a la tienda Pokémon a recoger el huevo del ayudante de Elm — más adelante eclosiona en un Togepi.",
+        "Sal por el sur a la Ruta 32 y lucha contra los entrenadores.",
+        "En el centro Pokémon, consigue la Caña Vieja del pescador y 2 Cebo Ball del hombre de al lado.",
+        "Continúa por la cueva hasta la Ruta 33, en dirección a Azalea Town."
+      ]
+    },
+    {
+      "order": 4,
+      "location": "AZALEA AND KURT'S HOUSE",
+      "steps": [
+        "Heal at the Pokémon Center.",
+        "Go to Kurt's house — he leaves to check on the Slowpoke Well.",
+        "Head to the well, defeat the Team Rocket grunts and the Rocket Executive cutting the Slowpoke tails.",
+        "Return to Kurt's house — he gives you a Fast Ball.",
+        "Give Kurt an apricorn; come back the next day for a Poké Ball he crafts from it.",
+        "Challenge the Gym: climb the giant Spinarak web, pulling levers to redirect it until you reach Bugsy.",
+        "Defeat Bugsy for the Hive Badge and TM89 (U-Turn).",
+        "Leave the city to the west — your rival challenges you again, now with a 3-Pokémon team."
+      ],
+      "items": [
+        {
+          "name": "Fast Ball",
+          "hidden": false
+        },
+        {
+          "name": "TM89",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Cura a tus Pokémon en el centro.",
+        "Ve a casa de Kurt — se marcha a revisar el Pozo Slowpoke.",
+        "Dirígete al pozo y derrota a los miembros del Team Rocket y al Ejecutivo Rocket que cortan las colas de los Slowpoke.",
+        "Vuelve a casa de Kurt — te da una Rapid Ball.",
+        "Dale una bellota a Kurt; vuelve al día siguiente a por la Poké Ball que fabrica con ella.",
+        "Reta al gimnasio: sube por la telaraña gigante de Spinarak, tirando de las palancas para redirigirla hasta llegar a Bugsy.",
+        "Derrota a Bugsy para conseguir la Medalla Colmena y la MT89 (Ataque Rápido).",
+        "Sal de la ciudad hacia el oeste — tu rival te reta de nuevo, ahora con un equipo de 3 Pokémon."
+      ]
+    },
+    {
+      "order": 5,
+      "location": "ILEX FOREST, HUNT FOR FARFETCH'D",
+      "steps": [
+        "Enter Ilex Forest and find the lumberjack — he asks you to catch 2 wild Farfetch'd by sneaking up on them from behind.",
+        "Bring both Farfetch'd back to him; his boss rewards you with HM01 (Cut).",
+        "Go back to Azalea and enter the house next to the Gym to get a Charcoal from the lumberjack.",
+        "Return to the forest, teach Cut to a Pokémon and cut through the tree blocking the path.",
+        "Find a man headbutting trees — he teaches Headbutt to one of your Pokémon.",
+        "Backtrack to the start of Route 32 and cut a tree there for TM05 (Roar).",
+        "Head north through the forest and help a lost Kimono Girl find her way out.",
+        "Reach Route 34, fight the trainers, and find the Day Care house.",
+        "Continue north into Goldenrod City."
+      ],
+      "items": [
+        {
+          "name": "Leaf Stone",
+          "hidden": false
+        },
+        {
+          "name": "Charcoal",
+          "hidden": false
+        },
+        {
+          "name": "HM1",
+          "hidden": false
+        },
+        {
+          "name": "TM5",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en Ilex Forest y busca al leñador — te pide que atrapes a 2 Farfetch'd salvajes acercándote por detrás.",
+        "Llévale los dos Farfetch'd; su jefe te recompensa con la MO01 (Corte).",
+        "Vuelve a Azalea y entra en la casa junto al gimnasio para conseguir un Carbón del leñador.",
+        "Vuelve al bosque, enseña Corte a un Pokémon y corta el árbol que bloquea el paso.",
+        "Encuentra a un hombre golpeando árboles con la cabeza — te enseña el movimiento Cabezazo para uno de tus Pokémon.",
+        "Retrocede hasta el inicio de la Ruta 32 y corta el árbol de allí para conseguir la MT05 (Rugido).",
+        "Ve al norte por el bosque y ayuda a una Chica Kimono perdida a encontrar la salida.",
+        "Llega a la Ruta 34, lucha contra los entrenadores y encuentra la casa de la Guardería.",
+        "Continúa al norte hacia Goldenrod City."
+      ]
+    },
+    {
+      "order": 6,
+      "location": "GOLDENROD, THE GREAT CITY OF JOHTO",
+      "steps": [
+        "Visit the Goldenrod Department Store — each floor sells different items, and the top floor has Soda Pop, Fresh Water and Lemonade.",
+        "Trade your Drowzee for a Machop on the 5th floor if you want.",
+        "Go to the Bike Shop behind the store for a free Bicycle.",
+        "Visit the underground tunnel entrance — Ethan/Lyra gives you the Fashion Case.",
+        "Exit the tunnel south to the Game Corner and talk to Mr. Game for the Coin Case.",
+        "Go to the Radio Tower and answer the 5-question quiz (Yes, Yes, No, Yes, No) to unlock the Radio Card.",
+        "Challenge the Gym and defeat Whitney for the Plain Badge and TM45 (Attract).",
+        "Visit the flower shop next to the Gym for the Squirt Bottle.",
+        "Talk to the guard at the north exit — deliver his Spearow mail to the man on Route 31 for TM44 (Rest), then come back for an HP Up.",
+        "Head north on Route 35 toward the National Park."
+      ],
+      "items": [
+        {
+          "name": "Fashion Case",
+          "hidden": false
+        },
+        {
+          "name": "Radio Card",
+          "hidden": false
+        },
+        {
+          "name": "Blue Card",
+          "hidden": false
+        },
+        {
+          "name": "Coin Case",
+          "hidden": false
+        },
+        {
+          "name": "Rare Candy",
+          "hidden": false
+        },
+        {
+          "name": "Full Restore",
+          "hidden": false
+        },
+        {
+          "name": "Super Potion",
+          "hidden": false
+        },
+        {
+          "name": "Potion",
+          "hidden": false
+        },
+        {
+          "name": "HP Up",
+          "hidden": false
+        },
+        {
+          "name": "Nugget",
+          "hidden": false
+        },
+        {
+          "name": "Pokegear",
+          "hidden": false
+        },
+        {
+          "name": "TM27",
+          "hidden": false
+        },
+        {
+          "name": "TM21",
+          "hidden": false
+        },
+        {
+          "name": "TM45",
+          "hidden": false
+        },
+        {
+          "name": "TM44",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Visita los grandes almacenes de Goldenrod — cada planta vende algo distinto, y la de arriba tiene Refresco, Agua Fresca y Limonada.",
+        "Cambia tu Drowzee por un Machop en la 5ª planta si quieres.",
+        "Ve a la tienda de bicicletas detrás de los almacenes para conseguir una Bici gratis.",
+        "Visita la entrada del túnel subterráneo — Ethan/Lyra te da la Caja Corazón.",
+        "Sal del túnel por el sur hacia el Game Corner y habla con el Sr. Game para conseguir el Monedero.",
+        "Ve a la Radio Tower y responde el cuestionario de 5 preguntas (Sí, Sí, No, Sí, No) para desbloquear la Tarjeta Radio.",
+        "Reta al gimnasio y derrota a Whitney para conseguir la Medalla Llanura y la MT45 (Atracción).",
+        "Visita la floristería junto al gimnasio para conseguir la Regadera.",
+        "Habla con el guardia de la salida norte — llévale su correo de Spearow al hombre de la Ruta 31 a cambio de la MT44 (Descanso), y vuelve luego a por un Más PS.",
+        "Ve al norte por la Ruta 35 hacia el National Park."
+      ]
+    },
+    {
+      "order": 7,
+      "location": "NATIONAL PARK, POKÉATHLON & SUDOWOODO",
+      "steps": [
+        "Enter the Pokéathlon dome and talk to Magnus to learn about the mini-games.",
+        "Get the Apriblender from the man outside to start making Aprijuice.",
+        "Enter the National Park — on contest days you can join the Bug Catching Contest for a shot at a Sun Stone, Ever Stone or Sitrus Berry.",
+        "On regular days, fight the trainers inside and pick up TM28 (Dig).",
+        "Continue right onto Route 36.",
+        "Water the strange bush with the Squirt Bottle to reveal and battle a wild Sudowoodo blocking the path.",
+        "Once Sudowoodo is gone, head north — fighting trainers along the way — into Ecruteak City."
+      ],
+      "items": [
+        {
+          "name": "Moomoo Milk",
+          "hidden": false
+        },
+        {
+          "name": "Heart Scale",
+          "hidden": false
+        },
+        {
+          "name": "Rare Candy",
+          "hidden": false
+        },
+        {
+          "name": "PP Up",
+          "hidden": false
+        },
+        {
+          "name": "Fire Stone",
+          "hidden": false
+        },
+        {
+          "name": "Sun Stone",
+          "hidden": false
+        },
+        {
+          "name": "Nugget",
+          "hidden": false
+        },
+        {
+          "name": "TM28",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Entra en la cúpula del Pokéathlon y habla con Magnus para conocer los minijuegos.",
+        "Consigue la Apribatidora del hombre de fuera para empezar a preparar Aprizumo.",
+        "Entra en el National Park — en días de concurso puedes apuntarte a la caza de insectos por una Piedra Solar, una Piedra Eterna o una Baya Zidra.",
+        "En días normales, lucha contra los entrenadores de dentro y recoge la MT28 (Excavar).",
+        "Sigue hacia la derecha hasta la Ruta 36.",
+        "Riega el arbusto extraño con la Regadera para revelar y combatir contra un Sudowoodo salvaje que bloquea el camino.",
+        "Una vez fuera del camino, ve al norte —luchando contra entrenadores por el camino— hasta Ecruteak City."
+      ]
+    },
+    {
+      "order": 8,
+      "location": "ECRUTEAK AND THE BURNT TOWER",
+      "steps": [
+        "At the Pokémon Center, meet Bill — visit his house in Goldenrod later for a free Eevee.",
+        "Back in Ecruteak, enter the house left of the Pokémon Center for the Dowsing Machine.",
+        "Use it to find a hidden Rare Candy near the pond north of the city.",
+        "Go to the Dance Theater above the Pokémon Center; defeat the Rocket harassing the Kimono Girls for HM03 (Surf).",
+        "Head to the Burnt Tower — your rival battles you near the stairs down.",
+        "Go down and witness Raikou, Entei and Suicune before all three scatter.",
+        "Challenge the Gym — cross the walkway without falling and defeat Morty for the Fog Badge and TM30 (Shadow Ball)."
+      ],
+      "items": [
+        {
+          "name": "Rare Candy",
+          "hidden": false
+        },
+        {
+          "name": "PokéGear",
+          "hidden": false
+        },
+        {
+          "name": "HM3",
+          "hidden": false
+        },
+        {
+          "name": "TM30",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "En el centro Pokémon conoces a Bill — visita su casa en Goldenrod más adelante para conseguir un Eevee gratis.",
+        "De vuelta en Ecruteak, entra en la casa a la izquierda del centro Pokémon para conseguir el Zahorí.",
+        "Úsalo para encontrar un Caramelo Raro oculto cerca del estanque al norte de la ciudad.",
+        "Ve al Teatro de Danza sobre el centro Pokémon; derrota al Rocket que acosa a las Chicas Kimono para conseguir la MO03 (Surf).",
+        "Dirígete a Burnt Tower — tu rival te reta cerca de las escaleras que bajan.",
+        "Baja y presencia la aparición de Raikou, Entei y Suicune antes de que los tres huyan.",
+        "Reta al gimnasio — cruza la pasarela sin caerte y derrota a Morty para conseguir la Medalla Niebla y la MT30 (Bola Sombra)."
+      ]
+    },
+    {
+      "order": 9,
+      "location": "EXPLORING JOHTO WITH SURF AND STRENGTH",
+      "steps": [
+        "Exit Ecruteak east — a man gives you HM04 (Strength) near the entrance to Mt. Mortar, an optional cave you can skip for now.",
+        "Use Surf and Strength to revisit earlier areas for hidden items — New Bark (Rare Candy via Surf), Cherrygrove, Violet, Azalea's Slowpoke Well, south of Goldenrod (fight 3 girls for an item), near the National Park entrance, and inside Burnt Tower.",
+        "Head toward Route 38/39 and find the Miltank farm — feed the sick Miltank Oran Berries to heal her and receive the Seal Case.",
+        "Continue to Olivine City — visit the fisherman for the Good Rod.",
+        "Gym Leader Jasmine is at the lighthouse tending to her sick Ampharos, so head there instead of the Gym.",
+        "Fight the trainers up the lighthouse stairs; Jasmine explains she needs medicine from Cianwood.",
+        "Surf south from Olivine across the sea toward Cianwood, fighting trainers along the way."
+      ],
+      "items": [
+        {
+          "name": "Good Rod",
+          "hidden": false
+        },
+        {
+          "name": "Moomoo Milk",
+          "hidden": false
+        },
+        {
+          "name": "Rare Candy",
+          "hidden": false
+        },
+        {
+          "name": "Thunder Stone",
+          "hidden": false
+        },
+        {
+          "name": "PokéGear",
+          "hidden": false
+        },
+        {
+          "name": "HM4",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Sal de Ecruteak por el este — un hombre te da la MO04 (Fuerza) cerca de la entrada a Mt. Mortar, una cueva opcional que puedes dejar para más adelante.",
+        "Usa Surf y Fuerza para revisar zonas anteriores en busca de objetos ocultos — New Bark (Caramelo Raro usando Surf), Cherrygrove, Violet, el Pozo Slowpoke de Azalea, al sur de Goldenrod (lucha contra 3 chicas por un objeto), cerca de la entrada del National Park, y dentro de Burnt Tower.",
+        "Dirígete a la Ruta 38/39 y busca la granja de Miltank — dale Bayas Aranja al Miltank enfermo hasta curarlo y consigue el Estuche de Sellos.",
+        "Continúa hacia Olivine City — visita al pescador para conseguir la Caña Buena.",
+        "La líder de gimnasio Jasmine está en el faro cuidando de su Ampharos enfermo, así que ve allí en vez de al gimnasio.",
+        "Lucha contra los entrenadores subiendo las escaleras del faro; Jasmine te explica que necesita medicina de Cianwood.",
+        "Nada hacia el sur desde Olivine cruzando el mar hacia Cianwood, luchando contra entrenadores por el camino."
+      ]
+    },
+    {
+      "order": 10,
+      "location": "CIANWOOD, THE ISOLATED ISLAND OF JOHTO",
+      "steps": [
+        "Heal at the Pokémon Center.",
+        "Head north — Suicune briefly appears, then Eusine challenges you to a battle.",
+        "Visit the Cianwood Pharmacy and explain Jasmine's situation to get the SecretPotion.",
+        "Optionally take in an abandoned Shuckle from the trainer in the house next door.",
+        "Challenge the Gym — defeat all the trainers to reach Chuck, who is meditating under a waterfall.",
+        "Defeat Chuck for the Storm Badge and TM01 (Focus Punch).",
+        "Chuck's wife gives you HM02 (Fly) on your way out.",
+        "Fly back to Olivine to deliver the medicine."
+      ],
+      "items": [
+        {
+          "name": "TM1",
+          "hidden": false
+        },
+        {
+          "name": "HM2",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Cura a tus Pokémon en el centro.",
+        "Ve al norte — Suicune aparece brevemente y después Eusine te reta a un combate.",
+        "Visita la Farmacia de Cianwood y explica la situación de Jasmine para conseguir la Poción Secreta.",
+        "Opcionalmente, hazte cargo de un Shuckle abandonado en la casa de al lado.",
+        "Reta al gimnasio — derrota a todos los entrenadores hasta llegar a Chuck, que medita bajo una cascada.",
+        "Derrota a Chuck para conseguir la Medalla Tormenta y la MT01 (Puño Certero).",
+        "La esposa de Chuck te da la MO02 (Vuelo) al salir.",
+        "Vuela de vuelta a Olivine para entregar la medicina."
+      ]
+    },
+    {
+      "order": 11,
+      "location": "OLIVINE, BACK TO THE LIGHTHOUSE",
+      "steps": [
+        "Take the elevator to the top of the lighthouse and give Jasmine the SecretPotion.",
+        "Jasmine thanks you and heads back to her Gym.",
+        "The Safari Zone also opens up via the cave west of Cianwood if you want to visit — a good optional training spot.",
+        "Challenge Jasmine at her Gym — this one has no puzzle, just battle her directly.",
+        "Defeat Jasmine for the Mineral Badge and TM23 (Iron Tail).",
+        "Head back to Ecruteak and exit east toward Mahogany — cut the bush along the way for a brief glimpse of Suicune."
+      ],
+      "items": [
+        {
+          "name": "Iron",
+          "hidden": false
+        },
+        {
+          "name": "Water Stone",
+          "hidden": false
+        },
+        {
+          "name": "TM23",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Sube en ascensor a lo alto del faro y dale a Jasmine la Poción Secreta.",
+        "Jasmine te lo agradece y vuelve a su gimnasio.",
+        "La Zona Safari también se abre por la cueva al oeste de Cianwood si quieres visitarla — un buen sitio opcional para entrenar.",
+        "Reta a Jasmine en su gimnasio — este no tiene puzle, se combate directamente.",
+        "Derrota a Jasmine para conseguir la Medalla Mineral y la MT23 (Cola Férrea).",
+        "Vuelve a Ecruteak y sal por el este hacia Mahogany — corta el arbusto del camino para ver brevemente a Suicune."
+      ]
+    },
+    {
+      "order": 12,
+      "location": "MAHOGANY AND THE LAKE OF RAGE",
+      "steps": [
+        "Heal at the Pokémon Center; optionally buy a Rage Candy Bar from the vendor here.",
+        "Head north to the Lake of Rage through the small house (avoid the shortcut route outside — it's a Rocket trap that costs you money).",
+        "At the lake, battle and catch the shiny Red Gyarados to get the Red Scale.",
+        "Trade the Red Scale to Mr. Pokémon on Route 30 for an Exp. Share.",
+        "Back in Mahogany, enter the house with the antenna tree and follow Lance down into the secret Team Rocket base.",
+        "Fight through the Rocket grunts and scientist on each floor; find both passwords (Slowpoke Tail, Raticate Tail) to open the locked gate.",
+        "Confront Petrel, then follow his Murkrow to the next gate; fight the Rocket Executive and grunt alongside Lance.",
+        "Defeat the 3 Electrodes powering the machine — Lance rewards you with HM05 (Whirlpool).",
+        "Challenge the Gym — push the ice block and slide across the floor to reach Pryce.",
+        "Defeat Pryce for the Glacier Badge and TM07 (Hail).",
+        "Exit north into the house that used to be the Rocket hideout to find TM36 (Sludge Bomb).",
+        "Fly to Goldenrod, now overrun by Rockets occupying the Radio Tower.",
+        "Sneak in disguised as a Rocket grunt, then get exposed by your rival at the tower entrance.",
+        "Fight through the tower and defeat the disguised Petrel again for the Basement Key.",
+        "Head underground, defeat your rival (now with a Sneasel), then hit the wall buttons in order: Red, Green, Blue.",
+        "Get the Card Key from the real Radio Director.",
+        "Head back up, use the Card Key, and defeat Ariana and Archer at the top of the tower.",
+        "Receive the Rainbow Wing (HeartGold) or Silver Wing (SoulSilver) as thanks."
+      ],
+      "items": [
+        {
+          "name": "Card Key",
+          "hidden": false
+        },
+        {
+          "name": "PokéGear",
+          "hidden": false
+        },
+        {
+          "name": "HM5",
+          "hidden": false
+        },
+        {
+          "name": "TM7",
+          "hidden": false
+        },
+        {
+          "name": "TM36",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Cura a tus Pokémon en el centro; opcionalmente cómprale un Caramelo Furia al vendedor de aquí.",
+        "Ve al norte hacia Lake of Rage pasando por la casita (evita el atajo de fuera — es una trampa de los Rocket que te cuesta dinero).",
+        "En el lago, combate y captura al Gyarados rojo shiny para conseguir la Escama Roja.",
+        "Cambia la Escama Roja al Sr. Pokémon de la Ruta 30 por un Repartir Exp.",
+        "De vuelta en Mahogany, entra en la casa con el árbol de la antena y sigue a Lance hasta la base secreta del Team Rocket.",
+        "Lucha contra los Rocket y la científica en cada planta; consigue las dos contraseñas (Slowpoke Tail, Raticate Tail) para abrir la puerta cerrada.",
+        "Enfréntate a Petrel y luego sigue a su Murkrow hasta la siguiente puerta; lucha junto a Lance contra el Ejecutivo Rocket y su compañero.",
+        "Derrota a los 3 Electrode que alimentan la máquina — Lance te recompensa con la MO05 (Torbellino).",
+        "Reta al gimnasio — empuja el bloque de hielo y desliza por el suelo hasta llegar a Pryce.",
+        "Derrota a Pryce para conseguir la Medalla Glaciar y la MT07 (Granizo).",
+        "Sal por el norte hacia la casa que antes era el escondite Rocket para conseguir la MT36 (Bomba Lodo).",
+        "Vuela a Goldenrod, ahora invadida por los Rocket que ocupan la Radio Tower.",
+        "Cuélate disfrazado de miembro del Rocket, hasta que tu rival te delate en la entrada de la torre.",
+        "Abre paso por la torre y derrota de nuevo a Petrel disfrazado para conseguir la Llave del Sótano.",
+        "Baja al subsuelo, derrota a tu rival (ahora con un Sneasel) y pulsa los botones de la pared en orden: Rojo, Verde, Azul.",
+        "Consigue la Llave Magnética del verdadero director de la radio.",
+        "Vuelve arriba, usa la Llave Magnética y derrota a Ariana y Archer en lo alto de la torre.",
+        "Recibe el Ala Arcoíris (HeartGold) o el Ala Plateada (SoulSilver) como agradecimiento."
+      ]
+    },
+    {
+      "order": 13,
+      "location": "FROM ICEPATH TO BLACKTHORN",
+      "steps": [
+        "Fly to Mahogany — the east exit is now open.",
+        "Surf to explore a small area, then continue into the Ice Path cave.",
+        "Grab HM07 (Waterfall) on the first floor.",
+        "Push the ice blocks into the holes to clear a path, and rescue the last Kimono Girl trapped on the ice.",
+        "Heal at Blackthorn City's Pokémon Center.",
+        "Visit the move tutors' house (Move Deleter, Move Relearner for a Heart Scale, the Draco Meteor tutor, and the elemental move tutor).",
+        "Challenge the Gym — steer the lava platforms to reach Clair.",
+        "Defeating Clair doesn't award the badge — she sends you to the Dragon's Den to prove yourself first.",
+        "Surf and use Whirlpool to reach the Dragon's Den temple, then answer the elder's questions correctly.",
+        "Clair finally hands over the Rising Badge and TM59 (Dragon Pulse).",
+        "Return to the elder for a Dratini holding the move ExtremeSpeed.",
+        "Explore the routes south of Blackthorn for trainers and items before heading back north."
+      ],
+      "items": [
+        {
+          "name": "Heart Scale",
+          "hidden": false
+        },
+        {
+          "name": "Master Ball",
+          "hidden": false
+        },
+        {
+          "name": "HM7",
+          "hidden": false
+        },
+        {
+          "name": "TM59",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "Vuela a Mahogany — la salida este ya está abierta.",
+        "Nada para explorar una pequeña zona y luego entra en la cueva de Ice Path.",
+        "Recoge la MO07 (Cascada) en la primera planta.",
+        "Empuja los bloques de hielo hacia los agujeros para abrir camino, y rescata a la última Chica Kimono atrapada en el hielo.",
+        "Cura a tus Pokémon en el centro de Blackthorn City.",
+        "Visita la casa de los tutores de movimientos (el que borra movimientos, el que los recuerda a cambio de una Escama Corazón, el tutor de Meteoro Dragón y el de movimientos elementales).",
+        "Reta al gimnasio — dirige las plataformas de lava hasta llegar a Clair.",
+        "Derrotar a Clair no te da la medalla — te manda antes al Antro Dragón para demostrar tu valía.",
+        "Nada y usa Torbellino para llegar al templo del Antro Dragón, y responde bien a las preguntas del anciano.",
+        "Clair finalmente te entrega la Medalla Alzada y la MT59 (Pulso Dragón).",
+        "Vuelve con el anciano a por un Dratini que lleva el movimiento Velocidad Extrema.",
+        "Explora las rutas al sur de Blackthorn en busca de entrenadores y objetos antes de volver al norte."
+      ]
+    },
+    {
+      "order": 14,
+      "location": "ON THE ROAD TO THE POKÉMON LEAGUE",
+      "steps": [
+        "Back in New Bark, your mom stops you from leaving — go see Prof. Elm instead.",
+        "Elm gives you the Master Ball.",
+        "Fly to Ecruteak and enter the Dance Theater to battle all 5 Kimono Girls back-to-back — their Eeveelutions, all Level 38. Hold an Amulet Coin for extra money.",
+        "Defeat them all to receive the Clear Bell (HeartGold) or Tidal Bell (SoulSilver).",
+        "Go face your version's legendary guardian — the Bell Tower (HeartGold) or the Whirl Islands (SoulSilver) — before the path east of New Bark opens.",
+        "Head to New Bark and surf east; talk to the man confirming you have reached Kanto.",
+        "Continue east, fighting trainers, using Waterfall and Whirlpool to reach hidden items.",
+        "Enter Victory Road from the north and fight through the wild Pokémon (no trainers here) until your rival stops you at the exit.",
+        "Defeat your rival to reach the Indigo Plateau.",
+        "Heal up and challenge the Elite Four back-to-back: Will (Psychic), Koga (Bug/Poison), Bruno (Fighting/Rock) and Karen (Dark).",
+        "Finish with Lance and his Dragon-type team for the title of Champion."
+      ],
+      "items": [
+        {
+          "name": "PokéGear",
+          "hidden": false
+        },
+        {
+          "name": "HM7",
+          "hidden": false
+        }
+      ],
+      "stepsEs": [
+        "De vuelta en New Bark, tu madre te impide salir — ve a ver al Prof. Elm.",
+        "Elm te da la Master Ball.",
+        "Vuela a Ecruteak y entra en el Teatro de Danza para combatir contra las 5 Chicas Kimono seguidas — sus Eeveelutions, todas a nivel 38. Lleva una Moneda Amuleto para ganar más dinero.",
+        "Derrótalas a todas para recibir la Campana Clara (HeartGold) o la Campana Marea (SoulSilver).",
+        "Ve a enfrentarte al guardián legendario de tu versión —Bell Tower (HeartGold) o las Whirl Islands (SoulSilver)— antes de que se abra el camino al este de New Bark.",
+        "Ve a New Bark y nada hacia el este; habla con el hombre que confirma que has llegado a Kanto.",
+        "Sigue hacia el este, luchando contra entrenadores, usando Cascada y Torbellino para llegar a objetos ocultos.",
+        "Entra en Victory Road por el norte y lucha contra los Pokémon salvajes (aquí no hay entrenadores) hasta que tu rival te pare en la salida.",
+        "Derrota a tu rival para llegar a la Meseta Añil.",
+        "Cura a tu equipo y reta al Alto Mando seguido: Will (Psíquico), Koga (Bicho/Veneno), Bruno (Lucha/Roca) y Karen (Siniestro).",
+        "Termina contra Lance y su equipo de tipo Dragón para conseguir el título de Campeón."
+      ]
+    }
+  ]
+}
