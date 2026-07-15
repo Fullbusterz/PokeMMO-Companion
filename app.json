@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.fullbusterz.pokemmocompanion"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,6 +33,12 @@
     "experiments": {
       "typedRoutes": true,
       "baseUrl": "/PokeMMO-Companion"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "48008be0-c364-406a-9994-a898bede796c"
+      }
     }
   }
 }
