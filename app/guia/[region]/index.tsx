@@ -270,14 +270,28 @@ function LocationCard({
         className="absolute"
         style={{ left: 23, top: 0, bottom: 0, borderLeftWidth: 2, borderLeftColor: colors.gold.DEFAULT, borderStyle: 'dashed', opacity: 0.3 }}
       />
-      <PressScale
-        haptic="select"
-        scaleTo={0.99}
-        onPress={onToggle}
+      {/* Only this outer View carries the card's chrome (border/background) —
+          it is a plain View, never a Pressable, so a tap landing anywhere in
+          the expanded body below has no collapse handler to bubble up to.
+          The header PressScale nested inside is the ONLY thing that toggles
+          expand/collapse; the expanded body sits as a sibling after it,
+          entirely outside that Pressable's subtree.
+
+          This is a structural fix, not another stopPropagation patch: on
+          real touch input in react-native-web, a bare `<Text onPress>` deep
+          inside the card (the highlighted item word) lost the responder to
+          the ancestor PressScale/Pressable that wrapped the *entire* card
+          before this change — stopPropagation() on the Text's own onPress
+          fired too late to stop the parent's touch responder from having
+          already claimed the gesture, so the card collapsed instead of (or
+          in addition to) opening the image. With the body no longer nested
+          inside any collapse-toggling Pressable, there is no ancestor
+          onPress left to race against. */}
+      <View
         className={`overflow-hidden rounded-xl border bg-ink-800 ${isBookmarked ? 'border-gold' : 'border-gold/25'}`}
         style={isBookmarked ? { borderWidth: 1.5 } : undefined}
       >
-        <View className="flex-row items-center gap-2 p-3">
+        <PressScale haptic="select" scaleTo={0.99} onPress={onToggle} className="flex-row items-center gap-2 p-3">
           <View className="h-6 w-6 items-center justify-center rounded-full bg-pokeRed">
             <Text className="text-[11px] font-bold text-white">{step.order}</Text>
           </View>
@@ -293,8 +307,11 @@ function LocationCard({
             haptic="select"
             scaleTo={0.85}
             onPress={(e) => {
-              // Otherwise the tap bubbles up to the card's own onToggle and
+              // Otherwise the tap bubbles up to the header's own onToggle and
               // expands/collapses it at the same time as (un)bookmarking.
+              // Still needed here: this button IS nested inside the header
+              // PressScale (by design — it lives in the header row), unlike
+              // the expanded body which no longer has any such ancestor.
               e.stopPropagation();
               onToggleBookmark();
             }}
@@ -305,7 +322,7 @@ function LocationCard({
             <Ionicons name={isBookmarked ? 'bookmark' : 'bookmark-outline'} size={18} color={isBookmarked ? colors.gold.DEFAULT : colors.ink[400]} />
           </PressScale>
           <Ionicons name={expanded ? 'chevron-up' : 'chevron-down'} size={16} color={colors.ink[400]} />
-        </View>
+        </PressScale>
 
         {expanded && (
           <View className="border-t border-gold/20 p-3 pt-2">
@@ -313,10 +330,7 @@ function LocationCard({
               <PressScale
                 haptic="select"
                 scaleTo={0.98}
-                onPress={(e) => {
-                  e.stopPropagation();
-                  onPressImage({ direct: locationImage.imageUrl, fallback: locationImage.wikiPageUrl });
-                }}
+                onPress={() => onPressImage({ direct: locationImage.imageUrl, fallback: locationImage.wikiPageUrl })}
                 className="mb-3 overflow-hidden rounded-lg border border-gold/25"
               >
                 <Image source={{ uri: locationImage.imageUrl }} className="h-32 w-full" resizeMode="cover" />
@@ -330,7 +344,7 @@ function LocationCard({
             </View>
           </View>
         )}
-      </PressScale>
+      </View>
     </Animated.View>
   );
 }
