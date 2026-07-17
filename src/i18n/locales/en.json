@@ -459,6 +459,7 @@
     "importErrorGeneric": "Couldn't restore the backup."
   },
   "guide": {
+    "regionScreenTitle": "%{region} — full guide (items & route)",
     "title": "Guide",
     "subtitle": "Items, TMs and tips by region, built from the PokeMMO community's guides",
     "regionsTitle": "Guides by region",

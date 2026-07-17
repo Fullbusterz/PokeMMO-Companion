@@ -2,7 +2,7 @@
   "expo": {
     "name": "PokeMMO Companion",
     "slug": "pokemmo-companion",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "scheme": "pokemmocompanion",
     "icon": "./assets/icon.png",
@@ -17,7 +17,8 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.fullbusterz.pokemmocompanion"
+      "package": "com.fullbusterz.pokemmocompanion",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png",

@@ -51,7 +51,7 @@ export default function GuideHub() {
                   className={`text-base ${region.available ? 'text-ink-100' : 'text-ink-400'}`}
                   style={{ fontFamily: displayFont.regular }}
                 >
-                  {region.nameEs}
+                  {locale === 'es' ? region.nameEs : region.nameEn}
                 </Text>
                 {bookmarkedStep ? (
                   <View className="mt-1 flex-row items-center gap-1">

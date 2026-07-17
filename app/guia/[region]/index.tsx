@@ -12,6 +12,7 @@ import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
 import { getItemSearchName, prettifyItemName } from '@/lib/guideItemNames';
 import {
+  GUIDE_REGIONS,
   getLocationImage,
   getTmsHmsGuide,
   getWalkthroughGuide,
@@ -418,9 +419,15 @@ export default function RegionGuide() {
 
   const searching = query.trim().length > 0;
 
+  // The JSON `guide.title` is a Spanish-only string from the source data —
+  // the on-screen title is built from i18n + the locale-aware region name
+  // instead, so EN mode doesn't show a Spanish header.
+  const regionMeta = GUIDE_REGIONS.find((r) => r.id === region);
+  const regionName = regionMeta ? (locale === 'es' ? regionMeta.nameEs : regionMeta.nameEn) : guide.title;
+
   return (
     <Screen scroll={false}>
-      <Header title={guide.title} backHref="/guia" />
+      <Header title={t('guide.regionScreenTitle', { region: regionName })} backHref="/guia" />
 
       {tmsHms && (
         <Link href={`/guia/${regionId}/tms`} asChild>

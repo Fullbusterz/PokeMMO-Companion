@@ -459,6 +459,7 @@
     "importErrorGeneric": "No se pudo restaurar la copia de seguridad."
   },
   "guide": {
+    "regionScreenTitle": "%{region} — guía completa (objetos y ruta)",
     "title": "Guía",
     "subtitle": "Objetos, TMs y consejos por región, a partir de las guías de la comunidad de PokeMMO",
     "regionsTitle": "Guías por región",
