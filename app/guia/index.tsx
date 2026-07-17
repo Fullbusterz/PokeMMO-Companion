@@ -31,12 +31,12 @@ export default function GuideHub() {
           const bookmarkOrder = bookmarks[region.id];
           const bookmarkedStep =
             bookmarkOrder != null ? getWalkthroughGuide(region.id)?.steps.find((s) => s.order === bookmarkOrder) : null;
+          // Link asChild must wrap the PRESSABLE itself (same shape as the
+          // home cards): on web a click on any inner node bubbles up the DOM,
+          // but on native an onPress injected into a plain (Animated.)View is
+          // simply ignored — with the Link outside the Animated.View, region
+          // cards did nothing on Android.
           const card = (
-            <Animated.View
-              key={region.id}
-              entering={nativeOnly(FadeInDown.delay(index * 50).duration(240))}
-              style={{ width: '48%' }}
-            >
               <PressScale
                 disabled={!region.available}
                 haptic={region.available ? 'select' : undefined}
@@ -66,14 +66,21 @@ export default function GuideHub() {
                   </Text>
                 )}
               </PressScale>
-            </Animated.View>
           );
-          return region.available ? (
-            <Link key={region.id} href={`/guia/${region.id}`} asChild>
-              {card}
-            </Link>
-          ) : (
-            card
+          return (
+            <Animated.View
+              key={region.id}
+              entering={nativeOnly(FadeInDown.delay(index * 50).duration(240))}
+              style={{ width: '48%' }}
+            >
+              {region.available ? (
+                <Link href={`/guia/${region.id}`} asChild>
+                  {card}
+                </Link>
+              ) : (
+                card
+              )}
+            </Animated.View>
           );
         })}
       </View>
