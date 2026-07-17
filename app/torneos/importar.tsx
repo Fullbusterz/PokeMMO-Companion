@@ -9,6 +9,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
+import { isNative } from '@/lib/animation';
 import { Button } from '@/components/Button';
 import { Header } from '@/components/Header';
 import { Screen } from '@/components/Screen';
@@ -57,7 +58,10 @@ export default function ImportTournament() {
         multiline
         numberOfLines={6}
         textAlignVertical="top"
-        style={shakeStyle}
+        // useAnimatedStyle + className loses the className styles on native
+        // (see CLAUDE.md 2026-07-17) — native drops the shake, keeps the box
+        // styled; web keeps the animated path.
+        style={isNative ? undefined : shakeStyle}
         className="mb-5 min-h-32 rounded-xl border border-ink-600 bg-ink-800 px-4 py-3 text-base text-ink-100"
       />
 

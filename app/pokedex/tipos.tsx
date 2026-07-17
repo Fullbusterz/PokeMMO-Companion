@@ -63,7 +63,10 @@ function TypeToggle({ type, isSelected, onPress }: { type: PokeType; isSelected:
       scaleTo={0.94}
       onPress={onPress}
       className="rounded-full px-3 py-1.5"
-      style={isNative ? animatedStyle : webStyle}
+      // Static style on BOTH platforms now: PressScale renders a plain
+      // Pressable on native (see its 2026-07-17 note), so the animated color
+      // style has nowhere to run there — and web always used the static path.
+      style={webStyle}
     >
       <Text className="text-xs font-semibold uppercase tracking-wide" style={{ color: isSelected ? colors.ink[900] : color }}>
         {t(`types.${type}`)}

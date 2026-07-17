@@ -51,6 +51,13 @@ function LiveDot({ className }: { className: string }) {
   }, [opacity]);
 
   const animatedStyle = useAnimatedStyle(() => ({ opacity: opacity.value }));
+  // useAnimatedStyle + className loses the className styles on native
+  // (reanimated>=4.1.1 + nativewind regression, see CLAUDE.md 2026-07-17) —
+  // native renders a static solid dot instead of the pulse, same visual
+  // fallback the web side already settled on.
+  if (isNative) {
+    return <View className={`h-1.5 w-1.5 rounded-full ${className}`} />;
+  }
   return <Animated.View style={animatedStyle} className={`h-1.5 w-1.5 rounded-full ${className}`} />;
 }
 

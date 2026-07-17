@@ -410,14 +410,32 @@ function AnimatedStatBar({ value, max, index }: { value: number; max: number; in
   }, [index, progress]);
 
   const animatedStyle = useAnimatedStyle(() => ({ width: `${progress.value * targetPct}%` }));
+
+  const fill = (
+    <LinearGradient
+      colors={[colors.pokeRed[400], colors.pokeRed.DEFAULT]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 0 }}
+      style={{ flex: 1 }}
+    />
+  );
+
+  // useAnimatedStyle + className on the same element loses the className
+  // styles on native (reanimated>=4.1.1 + nativewind regression, see the
+  // 2026-07-17 CLAUDE.md entry) — the bar rendered with no fill at all in the
+  // release APK. Native gets a static, pre-filled plain View instead (loses
+  // only the grow-in effect); web keeps the animated path, which it already
+  // renders pre-filled anyway (see the shared-value note above).
+  if (isNative) {
+    return (
+      <View style={{ width: `${targetPct}%` }} className="h-full overflow-hidden rounded-full">
+        {fill}
+      </View>
+    );
+  }
   return (
     <Animated.View style={animatedStyle} className="h-full overflow-hidden rounded-full">
-      <LinearGradient
-        colors={[colors.pokeRed[400], colors.pokeRed.DEFAULT]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={{ flex: 1 }}
-      />
+      {fill}
     </Animated.View>
   );
 }

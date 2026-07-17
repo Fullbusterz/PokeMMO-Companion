@@ -58,7 +58,10 @@ function FormatOption({
       scaleTo={0.97}
       onPress={onPress}
       className="flex-1 rounded-xl border p-3"
-      style={isNative ? animatedStyle : webStyle}
+      // Static style on BOTH platforms now: PressScale renders a plain
+      // Pressable on native (see its 2026-07-17 note), so the animated color
+      // style has nowhere to run there — and web always used the static path.
+      style={webStyle}
     >
       <Text className={`text-center font-semibold ${isSelected ? 'text-pokeRed' : 'text-ink-300'}`}>{label}</Text>
     </PressScale>

@@ -8,6 +8,7 @@ import Animated, {
   type AnimatedStyle,
 } from 'react-native-reanimated';
 
+import { isNative } from '@/lib/animation';
 import { selectHaptic, tapHaptic } from '@/lib/haptics';
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
@@ -45,6 +46,30 @@ export function PressScale({
 }: PressScaleProps) {
   const scale = useSharedValue(1);
   const animatedStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }] }));
+
+  // reanimated >=4.1.1 + nativewind 4.x drops className-derived styles on
+  // Animated-wrapped components ON NATIVE (upstream regression, see the
+  // 2026-07-17 entry in CLAUDE.md) — every PressScale surface rendered
+  // unstyled in the release APK. Until upstream fixes it, native renders a
+  // plain Pressable: no press-scale animation, but haptics and (crucially)
+  // Tailwind styles work. Web keeps the animated path, which is unaffected.
+  if (isNative) {
+    return (
+      <Pressable
+        {...pressableProps}
+        onPress={(e) => {
+          if (haptic === 'tap') tapHaptic();
+          else if (haptic === 'select') selectHaptic();
+          onPress?.(e);
+        }}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        style={style as PressableProps['style']}
+      >
+        {children}
+      </Pressable>
+    );
+  }
 
   return (
     <AnimatedPressable
