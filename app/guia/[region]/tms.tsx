@@ -8,9 +8,12 @@ import { TypeBadge } from '@/components/TypeBadge';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
 import { getTmsHmsGuide, type HmEntry, type RegionId, type TmEntry } from '@/lib/guides';
+import { localizedMoveName } from '@/lib/pokedex';
 import type { PokeType } from '@/lib/typeChart';
+import { useLocaleStore } from '@/store/localeStore';
 
 function TmRow({ tm, index }: { tm: TmEntry; index: number }) {
+  const locale = useLocaleStore((s) => s.locale);
   return (
     <Animated.View
       entering={nativeOnly(FadeInDown.delay(Math.min(index, 12) * 25).duration(220))}
@@ -20,7 +23,7 @@ function TmRow({ tm, index }: { tm: TmEntry; index: number }) {
         <View className="rounded bg-ink-700 px-1.5 py-0.5">
           <Text className="text-xs font-bold text-ink-300">TM{String(tm.tm).padStart(2, '0')}</Text>
         </View>
-        <Text className="flex-1 text-base font-semibold text-ink-100">{tm.name}</Text>
+        <Text className="flex-1 text-base font-semibold text-ink-100">{localizedMoveName(tm.name, locale)}</Text>
         <TypeBadge type={tm.type.toLowerCase() as PokeType} />
       </View>
       <View className="mt-2 flex-row gap-4">
@@ -46,12 +49,13 @@ function TmRow({ tm, index }: { tm: TmEntry; index: number }) {
 }
 
 function HmRow({ hm, index }: { hm: HmEntry; index: number }) {
+  const locale = useLocaleStore((s) => s.locale);
   return (
     <Animated.View
       entering={nativeOnly(FadeInDown.delay(Math.min(index, 12) * 25).duration(220))}
       className="mb-2 rounded-xl border border-ink-600 bg-ink-800 p-3"
     >
-      <Text className="text-base font-semibold text-ink-100">{hm.name}</Text>
+      <Text className="text-base font-semibold text-ink-100">{localizedMoveName(hm.name, locale)}</Text>
       <Text className="mt-1 text-sm text-ink-300">📍 {hm.location}</Text>
     </Animated.View>
   );
