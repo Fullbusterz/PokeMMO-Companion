@@ -5,7 +5,7 @@
   "start_url": "/PokeMMO-Companion/",
   "scope": "/PokeMMO-Companion/",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "any",
   "theme_color": "#0B1A1F",
   "background_color": "#010207",
   "lang": "es",
