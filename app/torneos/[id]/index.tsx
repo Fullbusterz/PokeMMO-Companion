@@ -10,6 +10,7 @@ import { Card } from '@/components/Card';
 import { Header } from '@/components/Header';
 import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
+import { SwissTournamentView } from '@/components/SwissTournamentView';
 import { VsDivider } from '@/components/VsDivider';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
@@ -280,6 +281,10 @@ export default function TournamentDetail() {
   const format = tournament?.format ?? 'single';
   const isDouble = format === 'double';
   const isLeague = format === 'league';
+  // Swiss owns its whole body (roster, pairings, standings, reports, share
+  // link) in one component — its rounds are generated on demand rather than
+  // laid out up front, so none of the bracket/league machinery below applies.
+  const isSwiss = format === 'swiss';
 
   const nameById = useMemo(() => {
     const map = new Map<string, string>();
@@ -302,12 +307,12 @@ export default function TournamentDetail() {
   // League matches render through their own section further down instead.
   const winnersMatches = useMemo(
     () =>
-      isLeague
+      isLeague || isSwiss
         ? []
         : isDouble
           ? (tournament?.matches ?? []).filter((m) => m.bracket === 'winners')
           : (tournament?.matches ?? []),
-    [tournament?.matches, isDouble, isLeague]
+    [tournament?.matches, isDouble, isLeague, isSwiss]
   );
   const losersMatches = useMemo(
     () => (isDouble ? (tournament?.matches ?? []).filter((m) => m.bracket === 'losers') : []),
@@ -324,13 +329,16 @@ export default function TournamentDetail() {
   const losersTotalRounds = useMemo(() => getTotalRounds(losersMatches), [losersMatches]);
 
   const championId = useMemo(() => {
+    // Swiss renders its own winner banner (its standings live in the swiss
+    // view, with Swiss tiebreaks rather than the league's).
+    if (isSwiss) return null;
     // League has no elimination final — "champion" is just whoever tops the
     // table once every matchday is decided, so it stays null until then.
     if (isLeague) return tournament?.status === 'finished' ? (standings[0]?.participantId ?? null) : null;
     if (isDouble) return finalMatch?.winnerId ?? null;
     const final = winnersMatches.find((m) => m.round === winnersTotalRounds);
     return final?.winnerId ?? null;
-  }, [isLeague, isDouble, finalMatch, winnersMatches, winnersTotalRounds, tournament?.status, standings]);
+  }, [isLeague, isDouble, isSwiss, finalMatch, winnersMatches, winnersTotalRounds, tournament?.status, standings]);
 
   // Draw position (not a skill ranking — the draw is random). Only the
   // winners bracket's round 1 structurally holds every participant exactly
@@ -435,10 +443,14 @@ export default function TournamentDetail() {
         {isSharingImage ? t('bracket.sharingImage') : t('bracket.shareImageButton')}
       </Button>
 
-      {!championId && <Text className="mb-4 text-sm text-ink-400">{t('bracket.tapToSetWinner')}</Text>}
+      {!championId && !isSwiss && (
+        <Text className="mb-4 text-sm text-ink-400">{t('bracket.tapToSetWinner')}</Text>
+      )}
 
       <View ref={bracketRef} collapsable={false} className="bg-ink-900">
-        {championId && (
+        {isSwiss && <SwissTournamentView tournament={tournament} />}
+
+        {!isSwiss && championId && (
           <Animated.View
             entering={nativeOnly(ZoomIn.duration(380).springify().damping(12))}
             className="mb-5 rounded-xl border border-type-electric/30 bg-type-electric/10 p-4 shadow-md shadow-type-electric/30"

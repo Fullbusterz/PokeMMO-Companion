@@ -27,10 +27,11 @@ function statusLabel(status: Tournament['status']): string {
 function formatLabel(format: TournamentFormat): string {
   if (format === 'double') return t('newTournament.formatDouble');
   if (format === 'league') return t('newTournament.formatLeague');
+  if (format === 'swiss') return t('newTournament.formatSwiss');
   return t('newTournament.formatSingle');
 }
 
-const FORMAT_FILTERS: (TournamentFormat | 'all')[] = ['all', 'single', 'double', 'league'];
+const FORMAT_FILTERS: (TournamentFormat | 'all')[] = ['all', 'swiss', 'single', 'double', 'league'];
 const STATUS_FILTERS: (TournamentStatus | 'all')[] = ['all', 'setup', 'in_progress', 'finished'];
 
 function FilterChip({ label, isSelected, onPress }: { label: string; isSelected: boolean; onPress: () => void }) {
@@ -118,6 +119,15 @@ export default function TournamentsList() {
           </Button>
         </Link>
       </View>
+
+      {/* Joining an online tournament is a different thing from importing a
+          code: the link belongs to someone else's event, which this device
+          follows live rather than owning a copy of. */}
+      <Link href="/torneos/unirse" asChild>
+        <Button variant="secondary" className="mb-4">
+          {t('online.joinTitle')}
+        </Button>
+      </Link>
 
       {tournaments.length > 0 && (
         <View className="mb-4 gap-2">

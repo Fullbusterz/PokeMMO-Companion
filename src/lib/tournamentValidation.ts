@@ -6,13 +6,33 @@
 import { isFinished } from './bracket';
 import { isDoubleElimFinished } from './doubleElimBracket';
 import { isLeagueFinished } from './leagueFormat';
-import type { BracketSection, Match, Participant, Tournament, TournamentFormat } from '@/types/tournament';
+import { isSwissFinished } from './swissFormat';
+import type {
+  BracketSection,
+  Match,
+  Participant,
+  SwissConfig,
+  Tournament,
+  TournamentFormat,
+} from '@/types/tournament';
 
 export const VALID_BRACKET_SECTIONS: BracketSection[] = ['winners', 'losers', 'final'];
 
-export function statusFor(matches: Tournament['matches'], format: TournamentFormat): Tournament['status'] {
+export const DEFAULT_SWISS_CONFIG: SwissConfig = { totalRounds: 5, bestOf: 1 };
+
+export function statusFor(
+  matches: Tournament['matches'],
+  format: TournamentFormat,
+  swiss?: SwissConfig
+): Tournament['status'] {
   const finished =
-    format === 'double' ? isDoubleElimFinished(matches) : format === 'league' ? isLeagueFinished(matches) : isFinished(matches);
+    format === 'double'
+      ? isDoubleElimFinished(matches)
+      : format === 'league'
+        ? isLeagueFinished(matches)
+        : format === 'swiss'
+          ? isSwissFinished(matches, swiss ?? DEFAULT_SWISS_CONFIG)
+          : isFinished(matches);
   if (finished) return 'finished';
   // Bye wins are auto-resolved at creation time, before any human plays
   // anything, so they must not count as "the organizer started playing".
@@ -34,7 +54,14 @@ export function parseImportedTournament(data: unknown): Tournament | null {
   if (typeof raw.name !== 'string') return null;
   if (typeof raw.createdAt !== 'string') return null;
   if (!Array.isArray(raw.participants) || !Array.isArray(raw.matches)) return null;
-  const format: TournamentFormat = raw.format === 'double' ? 'double' : raw.format === 'league' ? 'league' : 'single';
+  const format: TournamentFormat =
+    raw.format === 'double'
+      ? 'double'
+      : raw.format === 'league'
+        ? 'league'
+        : raw.format === 'swiss'
+          ? 'swiss'
+          : 'single';
 
   const participants: Participant[] = [];
   const participantIds = new Set<string>();
@@ -51,10 +78,24 @@ export function parseImportedTournament(data: unknown): Tournament | null {
     participantIds.add((p as Participant).id);
     participants.push({ id: (p as Participant).id, name: (p as Participant).name });
   }
-  if (participants.length < 2) return null;
+  // Every bracket/league format is corrupt without at least two players — but
+  // a Swiss tournament legitimately starts EMPTY and fills up as people sign
+  // themselves up through the share link, so it must survive the round trip
+  // with an empty roster.
+  if (format !== 'swiss' && participants.length < 2) return null;
 
   function isValidPlayerRef(value: unknown): value is string | null {
     return value === null || (typeof value === 'string' && participantIds.has(value));
+  }
+
+  // A malformed score is dropped rather than failing the import: `winnerId`
+  // is the authoritative result, the score is only the Bo3 detail on top.
+  function parseScore(value: unknown): { p1: number; p2: number } | undefined {
+    if (typeof value !== 'object' || value === null) return undefined;
+    const raw = value as Record<string, unknown>;
+    if (typeof raw.p1 !== 'number' || typeof raw.p2 !== 'number') return undefined;
+    if (!Number.isInteger(raw.p1) || !Number.isInteger(raw.p2) || raw.p1 < 0 || raw.p2 < 0) return undefined;
+    return { p1: raw.p1, p2: raw.p2 };
   }
 
   const matches: Match[] = [];
@@ -86,9 +127,12 @@ export function parseImportedTournament(data: unknown): Tournament | null {
       winnerId: match.winnerId as string | null,
       isBye: match.isBye === true,
       bracket: match.bracket as BracketSection | undefined,
+      score: parseScore(match.score),
     });
   }
-  if (matches.length === 0) return null;
+  // Same reasoning: Swiss has no matches at all until round 1 is paired, which
+  // is exactly the window in which the link gets shared around.
+  if (format !== 'swiss' && matches.length === 0) return null;
 
   // Purely cosmetic (organizer-entered matchday labels), so a malformed
   // entry is just dropped rather than failing the whole import over it.
@@ -100,6 +144,21 @@ export function parseImportedTournament(data: unknown): Tournament | null {
     }
   }
 
+  // Swiss can't fall back to a default here the way matchdayDates can: the
+  // round count decides when the event ends, so a swiss tournament arriving
+  // without a usable config is rejected outright.
+  let swiss: SwissConfig | undefined;
+  if (format === 'swiss') {
+    const rawSwiss = raw.swiss as Record<string, unknown> | undefined;
+    if (typeof rawSwiss !== 'object' || rawSwiss === null) return null;
+    const { totalRounds, bestOf } = rawSwiss;
+    if (typeof totalRounds !== 'number' || !Number.isInteger(totalRounds) || totalRounds < 1 || totalRounds > 32) {
+      return null;
+    }
+    if (bestOf !== 1 && bestOf !== 3) return null;
+    swiss = { totalRounds, bestOf };
+  }
+
   return {
     id: raw.id,
     name: raw.name,
@@ -108,11 +167,12 @@ export function parseImportedTournament(data: unknown): Tournament | null {
     matches,
     // Never trust the imported status verbatim — always recompute so a
     // hand-edited or stale code can't show a misleading state.
-    status: statusFor(matches, format),
+    status: statusFor(matches, format, swiss),
     // Undo history doesn't travel across devices — the importing device can
     // only undo decisions it makes itself after this point.
     history: [],
     format,
     matchdayDates,
+    swiss,
   };
 }

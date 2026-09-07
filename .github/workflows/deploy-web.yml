@@ -32,6 +32,16 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Export static web build
+        # EXPO_PUBLIC_* values are inlined into the bundle here, so the online
+        # tournament feature is only available if these repo variables exist.
+        # They are deliberately repo *variables*, not secrets: the anon key is
+        # public by design (every table is behind RLS, see supabase/schema.sql)
+        # and secrets would be masked in logs for no benefit. If they are unset
+        # the build still succeeds and the app falls back to local-only
+        # tournaments.
+        env:
+          EXPO_PUBLIC_SUPABASE_URL: ${{ vars.EXPO_PUBLIC_SUPABASE_URL }}
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ vars.EXPO_PUBLIC_SUPABASE_ANON_KEY }}
         run: npx expo export -p web
 
       - name: SPA fallback for GitHub Pages (404.html = index.html)

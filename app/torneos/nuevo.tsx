@@ -20,6 +20,10 @@ import { t } from '@/i18n';
 import { isNative, nativeOnly } from '@/lib/animation';
 import { isValidDoubleElimSize } from '@/lib/doubleElimBracket';
 import { successHaptic } from '@/lib/haptics';
+import { createOnlineTournament, generateOrganizerSecret } from '@/lib/onlineTournament';
+import { isOnlineConfigured } from '@/lib/supabase';
+import { maxRounds, recommendedRounds } from '@/lib/swissFormat';
+import { DEFAULT_SWISS_CONFIG } from '@/lib/tournamentValidation';
 import colors from '@/theme/colors';
 import { useTournamentStore } from '@/store/tournamentStore';
 import type { TournamentFormat } from '@/types/tournament';
@@ -70,10 +74,24 @@ function FormatOption({
 
 export default function NewTournament() {
   const createTournament = useTournamentStore((s) => s.createTournament);
+  const setOnlineLink = useTournamentStore((s) => s.setOnlineLink);
   const [name, setName] = useState('');
   const [participantDraft, setParticipantDraft] = useState('');
   const [participants, setParticipants] = useState<string[]>([]);
   const [format, setFormat] = useState<TournamentFormat>('single');
+  const [rounds, setRounds] = useState(DEFAULT_SWISS_CONFIG.totalRounds);
+  const [bestOf, setBestOf] = useState<1 | 3>(DEFAULT_SWISS_CONFIG.bestOf);
+  const [online, setOnline] = useState(true);
+  const [isPublishing, setIsPublishing] = useState(false);
+
+  // The recommendation follows the field size, but only until the organizer
+  // sets a number themselves — overwriting their choice as players are added
+  // would be infuriating.
+  const [roundsTouched, setRoundsTouched] = useState(false);
+  const recommended = recommendedRounds(Math.max(participants.length, 2));
+  useEffect(() => {
+    if (!roundsTouched) setRounds(Math.max(recommended, DEFAULT_SWISS_CONFIG.totalRounds));
+  }, [recommended, roundsTouched]);
 
   function addParticipant() {
     const trimmed = participantDraft.trim();
@@ -91,12 +109,15 @@ export default function NewTournament() {
     setParticipants((prev) => prev.filter((_, i) => i !== index));
   }
 
-  function handleCreate() {
+  async function handleCreate() {
     if (!name.trim()) {
       Alert.alert(t('newTournament.nameRequiredError'));
       return;
     }
-    if (participants.length < 2) {
+    // Swiss is the one format that can start with an empty roster: players
+    // sign themselves up through the share link, and round 1 isn't paired
+    // until the organizer says so.
+    if (participants.length < 2 && !(format === 'swiss' && online)) {
       Alert.alert(t('newTournament.minParticipantsError'));
       return;
     }
@@ -104,8 +125,30 @@ export default function NewTournament() {
       Alert.alert(t('newTournament.doubleElimSizeError'));
       return;
     }
-    const tournament = createTournament(name, participants, format);
+
+    const tournament = createTournament(
+      name,
+      participants,
+      format,
+      format === 'swiss' ? { totalRounds: rounds, bestOf } : undefined
+    );
     successHaptic();
+
+    if (format === 'swiss' && online && isOnlineConfigured()) {
+      setIsPublishing(true);
+      try {
+        const secret = generateOrganizerSecret();
+        const { code } = await createOnlineTournament(tournament, secret);
+        setOnlineLink(tournament.id, { code, secret, syncedAt: new Date().toISOString() });
+      } catch {
+        // The tournament exists locally either way — publishing is a second
+        // step the organizer can retry from its own screen.
+        Alert.alert(t('newTournament.onlineError'));
+      } finally {
+        setIsPublishing(false);
+      }
+    }
+
     router.replace(`/torneos/${tournament.id}`);
   }
 
@@ -123,21 +166,31 @@ export default function NewTournament() {
       />
 
       <Text className="mb-1 font-medium text-ink-300">{t('newTournament.formatLabel')}</Text>
+      {/* Two rows of two: four options side by side squeeze the labels into
+          two-line wraps on a phone. */}
+      <View className="mb-2 flex-row gap-2">
+        <FormatOption
+          isSelected={format === 'swiss'}
+          onPress={() => setFormat('swiss')}
+          label={t('newTournament.formatSwiss')}
+        />
+        <FormatOption
+          isSelected={format === 'league'}
+          onPress={() => setFormat('league')}
+          label={t('newTournament.formatLeague')}
+        />
+      </View>
       <View className="mb-5 flex-row gap-2">
-        {(['single', 'double', 'league'] as const).map((option) => (
-          <FormatOption
-            key={option}
-            isSelected={format === option}
-            onPress={() => setFormat(option)}
-            label={
-              option === 'single'
-                ? t('newTournament.formatSingle')
-                : option === 'double'
-                  ? t('newTournament.formatDouble')
-                  : t('newTournament.formatLeague')
-            }
-          />
-        ))}
+        <FormatOption
+          isSelected={format === 'single'}
+          onPress={() => setFormat('single')}
+          label={t('newTournament.formatSingle')}
+        />
+        <FormatOption
+          isSelected={format === 'double'}
+          onPress={() => setFormat('double')}
+          label={t('newTournament.formatDouble')}
+        />
       </View>
       {format === 'double' && (
         <Animated.Text entering={nativeOnly(FadeInDown.duration(200))} className="mb-5 text-xs text-ink-400">
@@ -148,6 +201,84 @@ export default function NewTournament() {
         <Animated.Text entering={nativeOnly(FadeInDown.duration(200))} className="mb-5 text-xs text-ink-400">
           {t('newTournament.formatLeagueHint')}
         </Animated.Text>
+      )}
+
+      {format === 'swiss' && (
+        <Animated.View entering={nativeOnly(FadeInDown.duration(200))} className="mb-5">
+          <Text className="mb-3 text-xs text-ink-400">{t('newTournament.formatSwissHint')}</Text>
+
+          <Text className="mb-1 font-medium text-ink-300">{t('newTournament.roundsLabel')}</Text>
+          <View className="mb-1 flex-row gap-2">
+            {[3, 4, 5, 6, 7].map((value) => (
+              <PressScale
+                key={value}
+                haptic="select"
+                scaleTo={0.97}
+                disabled={value > maxRounds(Math.max(participants.length, 8))}
+                onPress={() => {
+                  setRoundsTouched(true);
+                  setRounds(value);
+                }}
+                className={`flex-1 rounded-xl border py-3 ${
+                  rounds === value ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
+                }`}
+              >
+                <Text
+                  className={`text-center font-semibold ${rounds === value ? 'text-pokeRed' : 'text-ink-300'}`}
+                >
+                  {value}
+                </Text>
+              </PressScale>
+            ))}
+          </View>
+          {/* The recommendation is only meaningful once there's a field to
+              size it against — with an empty roster (online sign-ups) it
+              would read "for 2 players we recommend 1". */}
+          {participants.length >= 2 && (
+            <Text className="mb-4 text-xs text-ink-400">
+              {t('newTournament.roundsHint', { count: participants.length, recommended })}
+            </Text>
+          )}
+
+          <Text className="mb-1 font-medium text-ink-300">{t('newTournament.bestOfLabel')}</Text>
+          <View className="mb-1 flex-row gap-2">
+            <FormatOption
+              isSelected={bestOf === 1}
+              onPress={() => setBestOf(1)}
+              label={t('newTournament.bestOfOne')}
+            />
+            <FormatOption
+              isSelected={bestOf === 3}
+              onPress={() => setBestOf(3)}
+              label={t('newTournament.bestOfThree')}
+            />
+          </View>
+          <Text className="mb-4 text-xs text-ink-400">
+            {bestOf === 1 ? t('newTournament.bestOfOneHint') : t('newTournament.bestOfThreeHint')}
+          </Text>
+
+          <PressScale
+            haptic="select"
+            scaleTo={0.98}
+            disabled={!isOnlineConfigured()}
+            onPress={() => setOnline((value) => !value)}
+            className={`flex-row items-center gap-3 rounded-xl border p-3 ${
+              online && isOnlineConfigured() ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
+            }`}
+          >
+            <View
+              className={`h-5 w-5 items-center justify-center rounded border ${
+                online && isOnlineConfigured() ? 'border-pokeRed bg-pokeRed' : 'border-ink-500'
+              }`}
+            >
+              {online && isOnlineConfigured() && <Text className="text-xs font-bold text-white">✓</Text>}
+            </View>
+            <Text className="flex-1 font-semibold text-ink-100">{t('newTournament.onlineLabel')}</Text>
+          </PressScale>
+          <Text className="mt-2 text-xs text-ink-400">
+            {isOnlineConfigured() ? t('newTournament.onlineHint') : t('newTournament.onlineUnavailable')}
+          </Text>
+        </Animated.View>
       )}
 
       <Text className="mb-1 font-medium text-ink-300">{t('newTournament.participantsLabel')}</Text>
@@ -190,8 +321,8 @@ export default function NewTournament() {
         </Animated.View>
       ))}
 
-      <Button onPress={handleCreate} className="mt-6">
-        {t('newTournament.create')}
+      <Button onPress={() => void handleCreate()} disabled={isPublishing} className="mt-6">
+        {isPublishing ? t('newTournament.creatingOnline') : t('newTournament.create')}
       </Button>
     </Screen>
   );

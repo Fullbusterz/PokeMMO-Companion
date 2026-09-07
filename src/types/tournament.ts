@@ -20,10 +20,23 @@ export type Match = {
   // "decided by a bye" apart from "decided by an actual match".
   isBye: boolean;
   bracket?: BracketSection;
+  // Swiss only, and only for Bo3: games won by each side (2-0 / 2-1). Bo1
+  // matches leave it undefined — `winnerId` already says everything.
+  score?: MatchScore;
 };
 
+export type MatchScore = { p1: number; p2: number };
+
 export type TournamentStatus = 'setup' | 'in_progress' | 'finished';
-export type TournamentFormat = 'single' | 'double' | 'league';
+export type TournamentFormat = 'single' | 'double' | 'league' | 'swiss';
+
+export type SwissConfig = {
+  // What the organizer chose at creation (5 by default). Can be raised
+  // mid-event — the "add a 6th round" case — so it's config, not a
+  // derived property of the match list.
+  totalRounds: number;
+  bestOf: 1 | 3;
+};
 
 export type Tournament = {
   id: string;
@@ -41,4 +54,18 @@ export type Tournament = {
   // number as string key). Purely informational — the app has no
   // notifications/reminders, so this is never read for scheduling logic.
   matchdayDates?: Record<string, string>;
+  // Swiss only. Absent on every other format.
+  swiss?: SwissConfig;
+  // Set once the tournament has been published to Supabase. `secret` is the
+  // organizer key — it stays on the organizer's device and is what authorises
+  // writes; it is deliberately NOT part of the share link.
+  online?: OnlineLink;
+};
+
+export type OnlineLink = {
+  // Public id used in the share link (/torneos/unirse/<code>).
+  code: string;
+  secret: string;
+  // Server timestamp of the last push, to spot a stale local copy.
+  syncedAt: string | null;
 };
