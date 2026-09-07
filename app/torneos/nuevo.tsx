@@ -20,6 +20,7 @@ import { t } from '@/i18n';
 import { isNative, nativeOnly } from '@/lib/animation';
 import { isValidDoubleElimSize } from '@/lib/doubleElimBracket';
 import { successHaptic } from '@/lib/haptics';
+import { DEFAULT_STARTING_CHIPS } from '@/lib/betting';
 import { createOnlineTournament, generateOrganizerSecret } from '@/lib/onlineTournament';
 import { isOnlineConfigured } from '@/lib/supabase';
 import { maxRounds, recommendedRounds } from '@/lib/swissFormat';
@@ -75,6 +76,7 @@ function FormatOption({
 export default function NewTournament() {
   const createTournament = useTournamentStore((s) => s.createTournament);
   const setOnlineLink = useTournamentStore((s) => s.setOnlineLink);
+  const setTournamentBetting = useTournamentStore((s) => s.setTournamentBetting);
   const [name, setName] = useState('');
   const [participantDraft, setParticipantDraft] = useState('');
   const [participants, setParticipants] = useState<string[]>([]);
@@ -82,6 +84,7 @@ export default function NewTournament() {
   const [rounds, setRounds] = useState(DEFAULT_SWISS_CONFIG.totalRounds);
   const [bestOf, setBestOf] = useState<1 | 3>(DEFAULT_SWISS_CONFIG.bestOf);
   const [online, setOnline] = useState(true);
+  const [betting, setBetting] = useState(true);
   const [isPublishing, setIsPublishing] = useState(false);
 
   // The recommendation follows the field size, but only until the organizer
@@ -132,6 +135,12 @@ export default function NewTournament() {
       format,
       format === 'swiss' ? { totalRounds: rounds, bestOf } : undefined
     );
+
+    // Betting only makes sense on a published tournament: the bets live in the
+    // database, keyed to the join code.
+    if (format === 'swiss' && online && betting && isOnlineConfigured()) {
+      setTournamentBetting(tournament.id, { enabled: true, startingChips: DEFAULT_STARTING_CHIPS });
+    }
     successHaptic();
 
     if (format === 'swiss' && online && isOnlineConfigured()) {
@@ -278,6 +287,31 @@ export default function NewTournament() {
           <Text className="mt-2 text-xs text-ink-400">
             {isOnlineConfigured() ? t('newTournament.onlineHint') : t('newTournament.onlineUnavailable')}
           </Text>
+
+          {online && isOnlineConfigured() && (
+            <>
+              <PressScale
+                haptic="select"
+                scaleTo={0.98}
+                onPress={() => setBetting((value) => !value)}
+                className={`mt-3 flex-row items-center gap-3 rounded-xl border p-3 ${
+                  betting ? 'border-gold bg-gold/10' : 'border-ink-600'
+                }`}
+              >
+                <View
+                  className={`h-5 w-5 items-center justify-center rounded border ${
+                    betting ? 'border-gold bg-gold' : 'border-ink-500'
+                  }`}
+                >
+                  {betting && <Text className="text-xs font-bold text-ink-900">✓</Text>}
+                </View>
+                <Text className="flex-1 font-semibold text-ink-100">{t('betting.enableLabel')}</Text>
+              </PressScale>
+              <Text className="mt-2 text-xs text-ink-400">
+                {t('betting.enableHint', { chips: DEFAULT_STARTING_CHIPS })}
+              </Text>
+            </>
+          )}
         </Animated.View>
       )}
 

@@ -8,6 +8,7 @@ import { isDoubleElimFinished } from './doubleElimBracket';
 import { isLeagueFinished } from './leagueFormat';
 import { isSwissFinished } from './swissFormat';
 import type {
+  BettingConfig,
   BracketSection,
   Match,
   Participant,
@@ -159,6 +160,24 @@ export function parseImportedTournament(data: unknown): Tournament | null {
     swiss = { totalRounds, bestOf };
   }
 
+  // Betting config is dropped rather than fatal if malformed: the tournament
+  // itself is still perfectly playable without the side game, so a bad value
+  // should cost the betting, not the event.
+  let betting: BettingConfig | undefined;
+  const rawBetting = raw.betting as Record<string, unknown> | undefined;
+  if (typeof rawBetting === 'object' && rawBetting !== null) {
+    const { enabled, startingChips } = rawBetting;
+    if (
+      typeof enabled === 'boolean' &&
+      typeof startingChips === 'number' &&
+      Number.isInteger(startingChips) &&
+      startingChips >= 1 &&
+      startingChips <= 1000000
+    ) {
+      betting = { enabled, startingChips };
+    }
+  }
+
   return {
     id: raw.id,
     name: raw.name,
@@ -174,5 +193,6 @@ export function parseImportedTournament(data: unknown): Tournament | null {
     format,
     matchdayDates,
     swiss,
+    betting,
   };
 }

@@ -30,6 +30,14 @@ export type MatchScore = { p1: number; p2: number };
 export type TournamentStatus = 'setup' | 'in_progress' | 'finished';
 export type TournamentFormat = 'single' | 'double' | 'league' | 'swiss';
 
+// Betting is opt-in per tournament and only exists on an online one — the
+// bets themselves live in the database, not in this document. Chips have no
+// value: they are not money, not PokeYen, and not convertible into anything.
+export type BettingConfig = {
+  enabled: boolean;
+  startingChips: number;
+};
+
 export type SwissConfig = {
   // What the organizer chose at creation (5 by default). Can be raised
   // mid-event — the "add a 6th round" case — so it's config, not a
@@ -56,6 +64,8 @@ export type Tournament = {
   matchdayDates?: Record<string, string>;
   // Swiss only. Absent on every other format.
   swiss?: SwissConfig;
+  // Absent (or disabled) means no betting game on this tournament.
+  betting?: BettingConfig;
   // Set once the tournament has been published to Supabase. `secret` is the
   // organizer key — it stays on the organizer's device and is what authorises
   // writes; it is deliberately NOT part of the share link.

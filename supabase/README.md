@@ -26,10 +26,15 @@ link, apuntarse solos y reportarte sus resultados.
 1. En el proyecto, menú lateral → **SQL Editor** → **New query**.
 2. Pega el contenido entero de [`schema.sql`](./schema.sql) y pulsa **Run**.
 3. Debe terminar con "Success. No rows returned".
+4. Repite con [`betting.sql`](./betting.sql), que añade la identidad de
+   espectador/participante y las apuestas con fichas. Los dos ficheros son
+   idempotentes: se pueden volver a ejecutar sin romper nada.
 
-Esto crea tres tablas (`tournaments`, `tournament_reports`, `tournament_signups`),
-activa RLS en las tres y define las tres funciones que son el único camino de
-escritura del organizador.
+Esto crea cinco tablas (`tournaments`, `tournament_reports`,
+`tournament_signups`, `tournament_viewers`, `tournament_bets`), activa RLS en
+todas y define las funciones que son el único camino de escritura: las del
+organizador (protegidas por su secreto) y las del jugador/espectador
+(protegidas por el suyo).
 
 ## 3. Copiar las dos claves a la app
 
@@ -76,9 +81,19 @@ No hay cuentas de usuario. En su lugar:
   no hay política de UPDATE ni de DELETE para nadie.
 - El documento del torneo solo se reescribe a través de `push_tournament()`,
   que comprueba el hash del secreto antes de tocar nada.
+- Quien entra por el link se registra como **viewer** con su propio secreto (el
+  mismo patrón). A partir de ahí, reportar un resultado exige demostrar que
+  eres uno de los dos jugadores de ESE combate, y apostar exige que el combate
+  siga abierto y que no sea el tuyo.
 - Por tanto, lo peor que puede hacer alguien que trastee con las peticiones de
-  red es mandarte un reporte falso... que tú tienes que confirmar para que
-  cuente. Los resultados nunca se aplican solos.
+  red es mandarte un reporte falso de su propio combate... que tú tienes que
+  confirmar para que cuente. Los resultados nunca se aplican solos.
+
+**Sobre las apuestas:** las fichas no valen nada — no son dinero, ni PokéYen,
+ni convertibles en nada. Es un juego de aciertos con marcador. El reparto es
+mutuo (el bote se divide entre los que acertaron) y se calcula en el cliente a
+partir de filas públicas, así que no hay saldo almacenado que se pueda
+corromper ni liquidación que se pueda perder.
 
 Todo lo que llega del servidor se vuelve a validar en el cliente con el mismo
 parser que usa la importación por código (`parseImportedTournament`), así que

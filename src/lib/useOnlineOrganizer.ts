@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   actionableReports,
   createOnlineTournament,
+  documentFingerprint,
   fetchOnlineTournament,
   generateOrganizerSecret,
   mergeSignups,
@@ -54,7 +55,7 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
       const newSecret = generateOrganizerSecret();
       const { code: newCode } = await createOnlineTournament(tournament, newSecret);
       setOnlineLink(tournament.id, { code: newCode, secret: newSecret, syncedAt: new Date().toISOString() });
-      lastPushedRef.current = JSON.stringify(tournament.matches) + JSON.stringify(tournament.participants);
+      lastPushedRef.current = documentFingerprint(tournament);
       setStatus('synced');
       return { ok: true, code: newCode };
     } catch {
@@ -128,7 +129,7 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
         for (const name of newNames) addSwissParticipant(local.id, name);
 
         // Push if the document moved since the last successful write.
-        const fingerprint = JSON.stringify(local.matches) + JSON.stringify(local.participants);
+        const fingerprint = documentFingerprint(local);
         const lockHeldSince = pushStartedAtRef.current;
         const isLocked = lockHeldSince !== null && Date.now() - lockHeldSince < PUSH_LOCK_STALE_MS;
         if (fingerprint !== lastPushedRef.current && !isLocked) {
@@ -137,8 +138,7 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
             const toPush = useTournamentStore.getState().tournaments.find((t) => t.id === local.id);
             if (toPush) {
               await pushOnlineTournament(code, secret, toPush);
-              lastPushedRef.current =
-                JSON.stringify(toPush.matches) + JSON.stringify(toPush.participants);
+              lastPushedRef.current = documentFingerprint(toPush);
             }
           } finally {
             pushStartedAtRef.current = null;

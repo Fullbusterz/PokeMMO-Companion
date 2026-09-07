@@ -81,6 +81,8 @@ export type OnlineSnapshot = {
   updatedAt: string;
   reports: ReportRow[];
   signups: SignupRow[];
+  viewers: ViewerRow[];
+  bets: BetRow[];
 };
 
 // Everything the server sends is re-validated through the same parser the
@@ -129,12 +131,27 @@ export async function fetchOnlineTournament(code: string): Promise<OnlineSnapsho
   const tournament = parseRow(row);
   if (!tournament) return null;
 
-  const [reports, signups] = await Promise.all([
+  // One round trip's worth of everything the screens need. They are separate
+  // tables rather than one document precisely because players can append to
+  // them without being able to rewrite the tournament.
+  const [reports, signups, viewers, bets] = await Promise.all([
     selectRows<ReportRow>('tournament_reports', `code=eq.${code}&select=*&order=created_at.asc`),
     selectRows<SignupRow>('tournament_signups', `code=eq.${code}&select=*&order=created_at.asc`),
+    fetchViewers(code),
+    fetchBets(code),
   ]);
 
-  return { tournament, updatedAt: row.updated_at, reports, signups };
+  return { tournament, updatedAt: row.updated_at, reports, signups, viewers, bets };
+}
+
+// The fingerprint the organizer's poll compares against to decide whether
+// anything needs pushing. It has to be taken over the WHOLE document that gets
+// sent, not a couple of interesting fields: an earlier version hashed only
+// matches + participants, which meant raising the round count (the "add a 6th
+// round" button) or switching betting on changed nothing it could see, so the
+// players' screens kept showing the old configuration and a finished event.
+export function documentFingerprint(tournament: Tournament): string {
+  return JSON.stringify(stripLocalOnlyFields(tournament));
 }
 
 export async function pushOnlineTournament(
@@ -148,19 +165,6 @@ export async function pushOnlineTournament(
     p_secret: secret,
     p_data: stripLocalOnlyFields(tournament),
     p_consume_reports: consumeReportIds,
-  });
-}
-
-export async function submitOnlineReport(
-  code: string,
-  report: { matchId: string; reportedBy: string; winnerId: string; score?: MatchScore }
-): Promise<void> {
-  await insertRow('tournament_reports', {
-    code,
-    match_id: report.matchId,
-    reported_by: report.reportedBy,
-    winner_id: report.winnerId,
-    score: report.score ?? null,
   });
 }
 
@@ -204,5 +208,99 @@ export function actionableReports(tournament: Tournament, reports: ReportRow[]):
     if (!match || match.isBye || match.winnerId) return false;
     const players = [match.player1Id, match.player2Id];
     return players.includes(report.reported_by) && players.includes(report.winner_id);
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Viewers (identity) and betting
+// ---------------------------------------------------------------------------
+//
+// A viewer is "this device, as this person". The secret is generated here,
+// stored on the device, and sent with every action; the server keeps only its
+// hash. Same shape as the organizer credential — see the note at the top.
+
+export type ViewerRow = {
+  id: string;
+  code: string;
+  name: string;
+  participant_id: string | null;
+  created_at: string;
+};
+
+export type BetRow = {
+  id: string;
+  code: string;
+  viewer_id: string;
+  match_id: string;
+  pick: string;
+  amount: number;
+  created_at: string;
+};
+
+/** What a device keeps locally to prove it is a given viewer. */
+export type ViewerIdentity = {
+  viewerId: string;
+  secret: string;
+  name: string;
+  participantId: string | null;
+};
+
+export function generateViewerSecret(): string {
+  return generateOrganizerSecret();
+}
+
+export async function joinAsViewer(
+  code: string,
+  name: string,
+  participantId: string | null
+): Promise<ViewerIdentity> {
+  const secret = generateViewerSecret();
+  const viewerId = await callRpc<string>('join_tournament', {
+    p_code: code,
+    p_secret: secret,
+    p_name: name.trim(),
+    p_participant_id: participantId,
+  });
+  return { viewerId, secret, name: name.trim(), participantId };
+}
+
+export function fetchViewers(code: string): Promise<ViewerRow[]> {
+  return selectRows<ViewerRow>('tournament_viewers', `code=eq.${code}&select=*&order=created_at.asc`);
+}
+
+export function fetchBets(code: string): Promise<BetRow[]> {
+  return selectRows<BetRow>('tournament_bets', `code=eq.${code}&select=*&order=created_at.asc`);
+}
+
+// Replaces the old open-insert report path: the server now checks that the
+// caller is who they claim and that the match is theirs, so a report can no
+// longer be filed in someone else's name.
+export async function submitReportAsViewer(
+  code: string,
+  identity: ViewerIdentity,
+  report: { matchId: string; winnerId: string; score?: MatchScore }
+): Promise<void> {
+  await callRpc<string>('submit_report', {
+    p_code: code,
+    p_viewer_id: identity.viewerId,
+    p_secret: identity.secret,
+    p_match_id: report.matchId,
+    p_winner_id: report.winnerId,
+    p_score: report.score ?? null,
+  });
+}
+
+export async function placeBet(
+  code: string,
+  identity: ViewerIdentity,
+  bet: { matchId: string; pick: string; amount: number }
+): Promise<void> {
+  await callRpc<string>('place_bet', {
+    p_code: code,
+    p_viewer_id: identity.viewerId,
+    p_secret: identity.secret,
+    p_match_id: bet.matchId,
+    p_pick: bet.pick,
+    p_amount: bet.amount,
   });
 }

@@ -15,7 +15,7 @@ import {
 import { decodeFromCode, encodeToCode } from '@/lib/exportCode';
 import { generateId } from '@/lib/id';
 import { DEFAULT_SWISS_CONFIG, parseImportedTournament, statusFor } from '@/lib/tournamentValidation';
-import type { MatchScore, OnlineLink, SwissConfig, Tournament, TournamentFormat } from '@/types/tournament';
+import type { BettingConfig, MatchScore, OnlineLink, SwissConfig, Tournament, TournamentFormat } from '@/types/tournament';
 
 type TournamentStore = {
   tournaments: Tournament[];
@@ -38,6 +38,7 @@ type TournamentStore = {
   addSwissParticipant: (tournamentId: string, name: string) => boolean;
   removeSwissParticipant: (tournamentId: string, participantId: string) => void;
   setOnlineLink: (tournamentId: string, online: OnlineLink | undefined) => void;
+  setTournamentBetting: (tournamentId: string, betting: BettingConfig | undefined) => void;
   replaceTournament: (tournament: Tournament) => void;
 };
 
@@ -233,6 +234,14 @@ export const useTournamentStore = create<TournamentStore>()(
             if (getTotalSwissRounds(t.matches) > 0) return t;
             return { ...t, participants: t.participants.filter((p) => p.id !== participantId) };
           }),
+        }));
+      },
+
+      // Betting is part of the tournament document, so switching it changes
+      // what every player's device reads on the next poll.
+      setTournamentBetting: (tournamentId, betting) => {
+        set((state) => ({
+          tournaments: state.tournaments.map((t) => (t.id === tournamentId ? { ...t, betting } : t)),
         }));
       },
 
