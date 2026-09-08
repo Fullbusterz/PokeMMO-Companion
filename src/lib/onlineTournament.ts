@@ -269,6 +269,26 @@ export async function joinAsViewer(
   return { viewerId, secret, name: name.trim(), participantId };
 }
 
+/**
+ * Upgrades an existing viewer to a roster slot. Used when someone who entered
+ * the link before round 1 (as a nameless-yet sign-up) finally appears on the
+ * roster: they keep the identity, chips and picture they already had instead
+ * of getting a second row.
+ */
+export async function claimParticipantSlot(
+  code: string,
+  identity: ViewerIdentity,
+  participantId: string
+): Promise<ViewerIdentity> {
+  await callRpc<null>('claim_participant_slot', {
+    p_code: code,
+    p_viewer_id: identity.viewerId,
+    p_secret: identity.secret,
+    p_participant_id: participantId,
+  });
+  return { ...identity, participantId };
+}
+
 export function fetchViewers(code: string): Promise<ViewerRow[]> {
   return selectRows<ViewerRow>('tournament_viewers', `code=eq.${code}&select=*&order=created_at.asc`);
 }

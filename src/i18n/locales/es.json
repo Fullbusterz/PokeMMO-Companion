@@ -659,7 +659,11 @@
     "joinError": "No se pudo entrar. Inténtalo otra vez.",
     "youAre": "Eres {{name}}",
     "youAreSpectator": "Eres {{name}} (espectador)",
-    "leaveIdentity": "No soy yo"
+    "leaveIdentity": "No soy yo",
+    "joinedByLink": "Ya ha entrado",
+    "notJoinedYet": "Aún no ha entrado",
+    "shareRolesHint": "Cada uno elige si entra como jugador o como espectador, y puede ponerse una foto.",
+    "waitingSlot": "Ya estás dentro. El organizador te añadirá a la lista en breve."
   },
   "betting": {
     "title": "Apuestas",

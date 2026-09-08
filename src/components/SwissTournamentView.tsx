@@ -2,6 +2,7 @@ import * as Clipboard from 'expo-clipboard';
 import { useMemo, useState } from 'react';
 import { Share, Text, TextInput, View } from 'react-native';
 
+import { Avatar } from '@/components/Avatar';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
@@ -20,7 +21,7 @@ import {
   roundHasRepeatedPairing,
 } from '@/lib/swissFormat';
 import { useOnlineOrganizer } from '@/lib/useOnlineOrganizer';
-import { transition } from '@/lib/webMotion';
+import { surfaceTransition, transition } from '@/lib/webMotion';
 import { useTournamentStore } from '@/store/tournamentStore';
 import colors from '@/theme/colors';
 import type { Tournament } from '@/types/tournament';
@@ -36,6 +37,11 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
   // The organizer sees the same faces on the match cards as everyone else.
   // Keyed by roster slot, so only people who claimed one appear.
   const avatarByViewer = useAvatars(online.code, online.viewers);
+  const viewerByParticipant = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const row of online.viewers) if (row.participant_id) map.set(row.participant_id, row.id);
+    return map;
+  }, [online.viewers]);
   const avatarByParticipant = useMemo(() => {
     const map = new Map<string, string>();
     for (const row of online.viewers) {
@@ -211,16 +217,44 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
           {tournament.participants.length === 0 && (
             <Text className="mb-2 text-sm italic text-ink-400">{t('swiss.waitingPlayers')}</Text>
           )}
-          {tournament.participants.map((p) => (
-            <View key={p.id} className="mb-2 flex-row items-center justify-between rounded-lg bg-ink-800 px-4 py-3">
-              <Text className="flex-1 text-ink-100" numberOfLines={1}>
-                {p.name}
-              </Text>
-              <PressScale haptic="tap" onPress={() => removeSwissParticipant(tournament.id, p.id)} className="px-2 py-1">
-                <Text className="text-sm font-semibold text-pokeRed">{t('common.delete')}</Text>
-              </PressScale>
-            </View>
-          ))}
+          {/* Each row now says whether that person has actually opened the
+              link, which during sign-up is the thing the organizer keeps
+              asking out loud. Their photo replaces the initial once they set
+              one, so the roster is also where the faces first show up. */}
+          {tournament.participants.map((p) => {
+            const joined = online.isPublished && viewerByParticipant.has(p.id);
+            return (
+              <View
+                key={p.id}
+                className="mb-2 flex-row items-center gap-3 rounded-lg border border-ink-700 bg-ink-800 px-3 py-2.5"
+                style={surfaceTransition()}
+              >
+                <Avatar
+                  name={p.name}
+                  uri={avatarByParticipant.get(p.id)}
+                  size={32}
+                  tone={joined ? 'gold' : 'neutral'}
+                />
+                <View className="flex-1">
+                  <Text className="text-ink-100" numberOfLines={1}>
+                    {p.name}
+                  </Text>
+                  {online.isPublished && (
+                    <Text className={`text-[11px] ${joined ? 'text-status-progress' : 'text-ink-400'}`}>
+                      {joined ? t('online.joinedByLink') : t('online.notJoinedYet')}
+                    </Text>
+                  )}
+                </View>
+                <PressScale
+                  haptic="tap"
+                  onPress={() => removeSwissParticipant(tournament.id, p.id)}
+                  className="px-2 py-1"
+                >
+                  <Text className="text-sm font-semibold text-pokeRed">{t('common.delete')}</Text>
+                </PressScale>
+              </View>
+            );
+          })}
           <View className="mt-1 flex-row gap-2">
             <TextInput
               value={participantDraft}
@@ -340,14 +374,18 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
             {publishError && <Text className="mt-2 text-sm text-pokeRed">{t('online.pushError')}</Text>}
           </View>
         ) : (
-          <Card skipEntrance className="px-3 py-3">
-            <Text className="mb-1 text-xs font-semibold uppercase tracking-wide text-ink-400">
+          <Card skipEntrance className="border border-gold/40 px-3 py-3">
+            <Text className="mb-1 text-xs font-semibold uppercase tracking-wide text-gold">
               {t('online.shareTitle')}
             </Text>
-            <Text selectable className="mb-2 font-mono text-xs text-ink-100">
+            <Text
+              selectable
+              className="mb-2 rounded-lg bg-ink-900/60 px-2 py-2 font-mono text-xs text-ink-100"
+            >
               {joinUrl(online.code ?? '')}
             </Text>
-            <Text className="mb-3 text-xs text-ink-400">{t('online.shareHint')}</Text>
+            <Text className="mb-1 text-xs text-ink-400">{t('online.shareHint')}</Text>
+            <Text className="mb-3 text-xs text-ink-400">{t('online.shareRolesHint')}</Text>
             <View className="flex-row gap-2">
               <Button variant="secondary" className="flex-1" onPress={() => void handleCopyLink()}>
                 {linkCopied ? t('online.linkCopied') : t('online.copyLink')}

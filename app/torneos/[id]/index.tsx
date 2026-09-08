@@ -426,43 +426,6 @@ export default function TournamentDetail() {
         <Header title={tournament.name} backHref="/torneos" onEdit={startEditingName} />
       )}
 
-      {/* Utility actions, deliberately compact and on one row: these are
-          things you reach for occasionally, and as full-width stacked slabs
-          they were the loudest thing on a screen whose subject is the
-          tournament itself. */}
-      <View className="mb-6 flex-row flex-wrap gap-2">
-        <Link href={`/torneos/${tournament.id}/export`} asChild>
-          <PressScale haptic="tap" scaleTo={0.97} className="flex-1 rounded-lg border border-gold/30 px-3 py-2">
-            <Text className="text-center text-xs font-semibold text-ink-300" numberOfLines={1}>
-              {t('exportImport.exportTitle')}
-            </Text>
-          </PressScale>
-        </Link>
-        <PressScale
-          haptic="tap"
-          scaleTo={0.97}
-          disabled={isSharingImage}
-          onPress={shareAsImage}
-          className="flex-1 rounded-lg border border-gold/30 px-3 py-2"
-        >
-          <Text className="text-center text-xs font-semibold text-ink-300" numberOfLines={1}>
-            {isSharingImage ? t('bracket.sharingImage') : t('bracket.shareImageButton')}
-          </Text>
-        </PressScale>
-        {tournament.history.length > 0 && (
-          <PressScale
-            haptic="tap"
-            scaleTo={0.97}
-            onPress={() => undoLastMatch(tournamentId)}
-            className="flex-1 rounded-lg border border-gold/30 px-3 py-2"
-          >
-            <Text className="text-center text-xs font-semibold text-ink-300" numberOfLines={1}>
-              {t('bracket.undoButton')}
-            </Text>
-          </PressScale>
-        )}
-      </View>
-
       {!championId && !isSwiss && (
         <Text className="mb-4 text-sm text-ink-400">{t('bracket.tapToSetWinner')}</Text>
       )}
@@ -539,6 +502,44 @@ export default function TournamentDetail() {
               />
             )}
           </>
+        )}
+      </View>
+
+      {/* Utility actions, compact, on one row, and BELOW the tournament:
+          they are reached for occasionally, and sitting above the event they
+          were the first thing the eye landed on — on a freshly created
+          tournament they were literally the only thing above the fold apart
+          from the title. */}
+      <View className="mb-6 flex-row flex-wrap gap-2">
+        <Link href={`/torneos/${tournament.id}/export`} asChild>
+          <PressScale haptic="tap" scaleTo={0.97} className="flex-1 rounded-lg border border-gold/30 px-3 py-2">
+            <Text className="text-center text-xs font-semibold text-ink-300" numberOfLines={1}>
+              {t('exportImport.exportTitle')}
+            </Text>
+          </PressScale>
+        </Link>
+        <PressScale
+          haptic="tap"
+          scaleTo={0.97}
+          disabled={isSharingImage}
+          onPress={shareAsImage}
+          className="flex-1 rounded-lg border border-gold/30 px-3 py-2"
+        >
+          <Text className="text-center text-xs font-semibold text-ink-300" numberOfLines={1}>
+            {isSharingImage ? t('bracket.sharingImage') : t('bracket.shareImageButton')}
+          </Text>
+        </PressScale>
+        {tournament.history.length > 0 && (
+          <PressScale
+            haptic="tap"
+            scaleTo={0.97}
+            onPress={() => undoLastMatch(tournamentId)}
+            className="flex-1 rounded-lg border border-gold/30 px-3 py-2"
+          >
+            <Text className="text-center text-xs font-semibold text-ink-300" numberOfLines={1}>
+              {t('bracket.undoButton')}
+            </Text>
+          </PressScale>
         )}
       </View>
     </Screen>

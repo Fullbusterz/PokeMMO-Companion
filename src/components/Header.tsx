@@ -41,26 +41,16 @@ export function Header({
   backHref?: string;
   onEdit?: () => void;
 }) {
-  return (
-    <View className="mb-4 flex-row items-center border-b border-gold/40 pb-4">
-      {showBack && (
-        <PressScale
-          haptic="select"
-          scaleTo={0.9}
-          onPress={() => handleBack(backHref)}
-          className="mr-3 flex-row items-center gap-0.5 py-1"
-          hitSlop={12}
-        >
-          <Ionicons name="chevron-back" size={18} color={colors.pokeRed.DEFAULT} />
-          <Text className="text-pokeRed text-base font-semibold">{t('common.back')}</Text>
-        </PressScale>
-      )}
-      <Text className="flex-1 text-2xl text-ink-100" style={{ fontFamily: displayFont.regular }}>
-        {title}
-      </Text>
-      <View className="ml-2">
-        <LanguageToggle />
-      </View>
+  // Two rows when there is a back link, one when there is not. On a phone the
+  // title, the back link, the language toggle and the edit pencil were fighting
+  // over the same line, so a long tournament name shoved the controls off the
+  // edge; on a laptop the serif title sat jammed against "Volver" instead of
+  // lining up with the column of content below it. Giving the title its own
+  // full-width row fixes both, and it reads as a page title rather than as one
+  // more control in a toolbar.
+  const controls = (
+    <View className="flex-row items-center">
+      <LanguageToggle />
       {onEdit && (
         <PressScale
           haptic="select"
@@ -74,6 +64,38 @@ export function Header({
           <Ionicons name="pencil" size={16} color={colors.ink[400]} />
         </PressScale>
       )}
+    </View>
+  );
+
+  if (!showBack) {
+    return (
+      <View className="mb-4 flex-row items-center border-b border-gold/40 pb-4">
+        <Text className="flex-1 text-2xl text-ink-100" style={{ fontFamily: displayFont.regular }}>
+          {title}
+        </Text>
+        <View className="ml-2">{controls}</View>
+      </View>
+    );
+  }
+
+  return (
+    <View className="mb-4 border-b border-gold/40 pb-4">
+      <View className="mb-1.5 flex-row items-center justify-between">
+        <PressScale
+          haptic="select"
+          scaleTo={0.9}
+          onPress={() => handleBack(backHref)}
+          className="-ml-1 flex-row items-center gap-0.5 py-1 pr-2"
+          hitSlop={12}
+        >
+          <Ionicons name="chevron-back" size={18} color={colors.pokeRed.DEFAULT} />
+          <Text className="text-pokeRed text-base font-semibold">{t('common.back')}</Text>
+        </PressScale>
+        {controls}
+      </View>
+      <Text className="text-2xl text-ink-100" style={{ fontFamily: displayFont.regular }}>
+        {title}
+      </Text>
     </View>
   );
 }

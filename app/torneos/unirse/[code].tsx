@@ -1,7 +1,9 @@
+import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Text, TextInput, View } from 'react-native';
 
+import { Avatar } from '@/components/Avatar';
 import { AvatarEditor } from '@/components/AvatarEditor';
 import { BettingPanel } from '@/components/BettingPanel';
 import { Button } from '@/components/Button';
@@ -16,6 +18,7 @@ import { DEFAULT_STARTING_CHIPS, type Bet, type Viewer } from '@/lib/betting';
 import { successHaptic } from '@/lib/haptics';
 import {
   fetchOnlineTournament,
+  claimParticipantSlot,
   joinAsViewer,
   normalizeJoinCode,
   placeBet,
@@ -27,6 +30,7 @@ import {
   type ViewerRow,
 } from '@/lib/onlineTournament';
 import { useAvatars } from '@/lib/useAvatars';
+import { surfaceTransition } from '@/lib/webMotion';
 import { isOnlineConfigured, ONLINE_POLL_MS, SupabaseError } from '@/lib/supabase';
 import {
   clearViewerIdentity,
@@ -103,10 +107,13 @@ export default function JoinTournament() {
     return () => clearInterval(interval);
   }, [refresh]);
 
+  // `keepPending` is set while someone is registered but still waiting for the
+  // organizer to put them on the roster: they have an identity (so they can
+  // set a picture and bet) but their slot claim is still outstanding.
   const storeIdentity = useCallback(
-    async (next: ViewerIdentity) => {
+    async (next: ViewerIdentity, keepPending = false) => {
       setIdentity(next);
-      setPendingName(null);
+      if (!keepPending) setPendingName(null);
       await saveViewerIdentity(code, next);
     },
     [code]
@@ -116,16 +123,21 @@ export default function JoinTournament() {
   // yet on the roster. As soon as the organizer's device folds them in, claim
   // the slot automatically so they never have to come back and do it by hand.
   useEffect(() => {
-    if (identity || !pendingName || !tournament) return;
+    if (!pendingName || !tournament) return;
+    if (identity?.participantId) return;
     const slot = tournament.participants.find(
       (p) => p.name.trim().toLowerCase() === pendingName.trim().toLowerCase()
     );
     if (!slot) return;
     const claimed = viewerRows.some((v) => v.participant_id === slot.id);
     if (claimed) return;
-    joinAsViewer(code, slot.name, slot.id)
-      .then((next) => void storeIdentity(next))
-      .catch(() => undefined);
+    // Two shapes of the same step: an identity already exists (the normal path
+    // now) so the slot is attached to it, or there is none yet (an older
+    // device that signed up before this existed) so one is created.
+    const promise = identity
+      ? claimParticipantSlot(code, identity, slot.id)
+      : joinAsViewer(code, slot.name, slot.id);
+    promise.then((next) => void storeIdentity(next)).catch(() => undefined);
   }, [identity, pendingName, tournament, viewerRows, code, storeIdentity]);
 
   const nameById = useMemo(() => {
@@ -208,6 +220,13 @@ export default function JoinTournament() {
           setJoinState('taken');
           return;
         }
+        // Register as a viewer in the same breath, with no slot yet. Waiting
+        // for the organizer used to mean having no identity at all — and so no
+        // profile picture and no betting — during exactly the stretch when
+        // everyone is sitting around with the link open. The slot is attached
+        // to this same row later, by the effect below.
+        const provisional = await joinAsViewer(code, name, null);
+        await storeIdentity(provisional, true);
         setPendingName(name);
         await savePendingSignupName(code, name);
         setJoinState('idle');
@@ -309,33 +328,54 @@ export default function JoinTournament() {
             </Text>
           ) : (
             <>
-              <Text className="mb-2 font-semibold text-ink-100">{t('online.howDoYouEnter')}</Text>
-              <View className="mb-2 flex-row gap-2">
-                {(['player', 'spectator'] as const).map((option) => (
-                  <PressScale
-                    key={option}
-                    haptic="select"
-                    scaleTo={0.97}
-                    onPress={() => {
-                      setMode(option);
-                      setSlotDraft(null);
-                      setJoinState('idle');
-                    }}
-                    className={`flex-1 rounded-xl border p-3 ${
-                      mode === option ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
-                    }`}
-                  >
-                    <Text
-                      className={`text-center font-semibold ${mode === option ? 'text-pokeRed' : 'text-ink-300'}`}
+              <Text className="mb-3 text-base font-semibold text-ink-100">{t('online.howDoYouEnter')}</Text>
+              {/* The two choices carry their own explanation instead of one
+                  shared line that changed underneath them: this is the first
+                  thing anyone opening the link sees, and "which one am I?"
+                  should be answerable without tapping either to find out. */}
+              <View className="mb-3 gap-2">
+                {(['player', 'spectator'] as const).map((option) => {
+                  const selected = mode === option;
+                  return (
+                    <PressScale
+                      key={option}
+                      haptic="select"
+                      scaleTo={0.98}
+                      onPress={() => {
+                        setMode(option);
+                        setSlotDraft(null);
+                        setJoinState('idle');
+                      }}
+                      className={`flex-row items-center gap-3 rounded-xl border p-3 ${
+                        selected ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
+                      }`}
+                      style={surfaceTransition()}
                     >
-                      {option === 'player' ? t('online.enterAsPlayer') : t('online.enterAsSpectator')}
-                    </Text>
-                  </PressScale>
-                ))}
+                      <View
+                        className={`h-9 w-9 items-center justify-center rounded-full border ${
+                          selected ? 'border-pokeRed/60 bg-pokeRed/20' : 'border-ink-600 bg-ink-800'
+                        }`}
+                      >
+                        <Ionicons
+                          name={option === 'player' ? 'game-controller' : 'eye'}
+                          size={17}
+                          color={selected ? colors.pokeRed.DEFAULT : colors.ink[400]}
+                        />
+                      </View>
+                      <View className="flex-1">
+                        <Text className={`font-semibold ${selected ? 'text-pokeRed' : 'text-ink-100'}`}>
+                          {option === 'player' ? t('online.enterAsPlayer') : t('online.enterAsSpectator')}
+                        </Text>
+                        <Text className="mt-0.5 text-xs text-ink-400">
+                          {option === 'player'
+                            ? t('online.enterAsPlayerHint')
+                            : t('online.enterAsSpectatorHint')}
+                        </Text>
+                      </View>
+                    </PressScale>
+                  );
+                })}
               </View>
-              <Text className="mb-3 text-xs text-ink-400">
-                {mode === 'player' ? t('online.enterAsPlayerHint') : t('online.enterAsSpectatorHint')}
-              </Text>
 
               {/* Once the draw exists you can only claim a slot, not invent
                   one — the roster is what the pairings were computed from. */}
@@ -393,7 +433,10 @@ export default function JoinTournament() {
         <Card skipEntrance className="mb-4 px-3 py-3">
           <View className="flex-row items-center justify-between">
             <Text className="flex-1 text-sm text-ink-300" numberOfLines={1}>
-              {identity.participantId
+              {/* Someone waiting for the organizer to add them is a player who
+                  has not been given their slot yet, not a spectator — calling
+                  them one is the first thing they would read and disbelieve. */}
+              {identity.participantId || pendingName
                 ? t('online.youAre', { name: identity.name })
                 : t('online.youAreSpectator', { name: identity.name })}
             </Text>
@@ -401,6 +444,9 @@ export default function JoinTournament() {
               <Text className="text-xs font-semibold text-ink-400">{t('online.leaveIdentity')}</Text>
             </PressScale>
           </View>
+          {pendingName && !identity.participantId && (
+            <Text className="mt-2 text-xs text-status-finished">{t('online.waitingSlot')}</Text>
+          )}
           <View className="mt-3">
             <AvatarEditor
               code={code}
@@ -528,8 +574,21 @@ export default function JoinTournament() {
             {t('swiss.roster', { count: tournament.participants.length })}
           </Text>
           {tournament.participants.map((p) => (
-            <View key={p.id} className="mb-2 rounded-lg bg-ink-800 px-4 py-3">
-              <Text className="text-ink-100">{p.name}</Text>
+            <View
+              key={p.id}
+              className={`mb-2 flex-row items-center gap-3 rounded-lg border px-3 py-2.5 ${
+                p.id === identity?.participantId ? 'border-pokeRed/50 bg-pokeRed/10' : 'border-ink-700 bg-ink-800'
+              }`}
+            >
+              <Avatar
+                name={p.name}
+                uri={avatarByParticipant.get(p.id)}
+                size={30}
+                tone={p.id === identity?.participantId ? 'winner' : 'neutral'}
+              />
+              <Text className="flex-1 text-ink-100" numberOfLines={1}>
+                {p.name}
+              </Text>
             </View>
           ))}
           {tournament.participants.length === 0 && (

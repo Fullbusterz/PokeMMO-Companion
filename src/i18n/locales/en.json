@@ -659,7 +659,11 @@
     "joinError": "Couldn't join. Try again.",
     "youAre": "You are {{name}}",
     "youAreSpectator": "You are {{name}} (spectator)",
-    "leaveIdentity": "Not me"
+    "leaveIdentity": "Not me",
+    "joinedByLink": "Already in",
+    "notJoinedYet": "Not in yet",
+    "shareRolesHint": "Each person picks whether to join as a player or a spectator, and can add a photo.",
+    "waitingSlot": "You are in. The organizer will add you to the roster shortly."
   },
   "betting": {
     "title": "Betting",
