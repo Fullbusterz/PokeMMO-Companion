@@ -8,6 +8,7 @@ import { StatusBar } from 'expo-status-bar';
 import * as SystemUI from 'expo-system-ui';
 import { View } from 'react-native';
 
+import { AvatarViewerProvider } from '@/components/AvatarViewer';
 import { OracleButton } from '@/components/OracleButton';
 import { useLocaleStore } from '@/store/localeStore';
 import colors from '@/theme/colors';
@@ -37,8 +38,12 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
         <StatusBar style="light" />
-        <Stack key={locale} screenOptions={{ headerShown: false, animation: 'slide_from_right' }} />
-        <OracleButton />
+        {/* The avatar lightbox lives at the root so any screen can open it
+            without owning a modal of its own. */}
+        <AvatarViewerProvider>
+          <Stack key={locale} screenOptions={{ headerShown: false, animation: 'slide_from_right' }} />
+          <OracleButton />
+        </AvatarViewerProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

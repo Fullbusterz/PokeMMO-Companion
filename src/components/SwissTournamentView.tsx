@@ -235,6 +235,7 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
                   uri={avatarByParticipant.get(p.id)}
                   size={32}
                   tone={joined ? 'gold' : 'neutral'}
+                  viewable
                 />
                 <View className="flex-1">
                   <Text className="text-ink-100" numberOfLines={1}>

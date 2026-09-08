@@ -4,6 +4,7 @@ import { Text, View } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { Header } from '@/components/Header';
+import { Enter } from '@/components/Enter';
 import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
@@ -68,9 +69,9 @@ export default function GuideHub() {
               </PressScale>
           );
           return (
-            <Animated.View
+            <Enter
               key={region.id}
-              entering={nativeOnly(FadeInDown.delay(index * 50).duration(240))}
+              delay={index * 50}
               style={{ width: '48%' }}
             >
               {region.available ? (
@@ -80,7 +81,7 @@ export default function GuideHub() {
               ) : (
                 card
               )}
-            </Animated.View>
+            </Enter>
           );
         })}
       </View>
@@ -90,11 +91,7 @@ export default function GuideHub() {
       </Text>
       <View>
         {REFERENCE_TOPICS.map((topic, index) => (
-          <Animated.View
-            key={topic.id}
-            entering={nativeOnly(FadeInDown.delay(index * 40).duration(240))}
-            className="relative mb-2"
-          >
+          <Enter key={topic.id} delay={index * 40} className="relative mb-2">
             <View
               className="absolute"
               style={{ left: 23, top: 0, bottom: 0, borderLeftWidth: 2, borderLeftColor: colors.gold.DEFAULT, borderStyle: 'dashed', opacity: 0.3 }}
@@ -114,7 +111,7 @@ export default function GuideHub() {
                 <Ionicons name="chevron-forward" size={16} color={colors.ink[400]} />
               </PressScale>
             </Link>
-          </Animated.View>
+          </Enter>
         ))}
       </View>
     </Screen>

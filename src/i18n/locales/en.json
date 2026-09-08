@@ -718,6 +718,8 @@
     "error": "Could not save the photo.",
     "tooBig": "That image is too large. Try another one.",
     "unavailable": "Uploading a photo works from the web link. Not in this installed build yet.",
-    "hint": "Everyone sees your photo next to your name."
+    "hint": "Everyone sees your photo next to your name.",
+    "tapToClose": "Tap to close",
+    "viewOf": "View %{name}'s photo"
   }
 }

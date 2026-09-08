@@ -356,6 +356,7 @@ export function BettingPanel({
                   uri={avatarByViewer?.get(standing.viewerId)}
                   size={24}
                   tone={index === 0 ? 'gold' : 'neutral'}
+                  viewable
                 />
               </View>
               <Text

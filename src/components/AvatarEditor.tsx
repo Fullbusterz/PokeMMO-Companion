@@ -56,7 +56,7 @@ export function AvatarEditor({
   return (
     <View>
       <View className="flex-row items-center gap-3">
-        <Avatar name={identity.name} uri={currentUri} size={44} tone="gold" />
+        <Avatar name={identity.name} uri={currentUri} size={44} tone="gold" viewable />
         <View className="flex-1 flex-row flex-wrap gap-2">
           <PressScale
             haptic="tap"

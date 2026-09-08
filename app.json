@@ -2,7 +2,7 @@
   "expo": {
     "name": "PokeMMO Companion",
     "slug": "pokemmo-companion",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "orientation": "default",
     "scheme": "pokemmocompanion",
     "icon": "./assets/icon.png",
@@ -18,7 +18,7 @@
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.fullbusterz.pokemmocompanion",
-      "versionCode": 3
+      "versionCode": 4
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -30,7 +30,13 @@
       "expo-status-bar",
       "expo-localization",
       "expo-sharing",
-      "expo-font"
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app usa tus fotos para que puedas ponerte una foto de perfil en un torneo."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

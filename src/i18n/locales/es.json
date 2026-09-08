@@ -718,6 +718,8 @@
     "error": "No se pudo guardar la foto.",
     "tooBig": "Esa imagen es demasiado grande. Prueba con otra.",
     "unavailable": "Subir foto está disponible desde el enlace web. En esta versión instalada aún no.",
-    "hint": "Tu foto la ven los demás junto a tu nombre."
+    "hint": "Tu foto la ven los demás junto a tu nombre.",
+    "tapToClose": "Toca para cerrar",
+    "viewOf": "Ver la foto de %{name}"
   }
 }

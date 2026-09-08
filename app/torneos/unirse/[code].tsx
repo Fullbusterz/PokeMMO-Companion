@@ -586,6 +586,7 @@ export default function JoinTournament() {
                 uri={avatarByParticipant.get(p.id)}
                 size={30}
                 tone={p.id === identity?.participantId ? 'winner' : 'neutral'}
+                viewable
               />
               <Text className="flex-1 text-ink-100" numberOfLines={1}>
                 {p.name}

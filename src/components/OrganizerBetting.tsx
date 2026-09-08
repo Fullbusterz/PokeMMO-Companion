@@ -142,6 +142,7 @@ export function OrganizerBetting({
                   uri={avatarByViewer.get(standing.viewerId)}
                   size={24}
                   tone={index === 0 ? 'gold' : 'neutral'}
+                  viewable
                 />
               </View>
               <Text className="flex-1 text-sm text-ink-100" numberOfLines={1}>
