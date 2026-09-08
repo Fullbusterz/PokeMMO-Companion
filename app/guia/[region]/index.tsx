@@ -18,6 +18,7 @@ import {
   getWalkthroughGuide,
   gyazoDirectImageUrl,
   localizedLocationName,
+  localizedLocationsInText,
   type GuideStep,
   type RegionId,
 } from '@/lib/guides';
@@ -340,7 +341,18 @@ function LocationCard({
             <ItemsRow items={step.items} locale={locale} />
             <View className="gap-1.5">
               {linesToShow.map((line, i) => (
-                <View key={i}>{renderLineWithItemHighlights(line, itemQueues, onPressImage)}</View>
+                <View key={i}>
+                  {/* Place names are translated BEFORE highlighting so the
+                      highlighter works on exactly the string the reader sees.
+                      Safe in that order: item names and place names share no
+                      entries (checked across all 543 item slugs), so a
+                      substitution can neither create nor destroy a match. */}
+                  {renderLineWithItemHighlights(
+                    showTranslation ? localizedLocationsInText(line, 'es') : line,
+                    itemQueues,
+                    onPressImage
+                  )}
+                </View>
               ))}
             </View>
           </View>

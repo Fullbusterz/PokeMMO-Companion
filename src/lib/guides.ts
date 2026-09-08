@@ -44,6 +44,63 @@ export function localizedLocationName(location: string, locale: 'es' | 'en'): st
 // shortest-match pass would rewrite the wrong half of the string.
 const LOCATION_KEYS_BY_LENGTH = Object.keys(LOCATION_NAMES_ES_INDEX).sort((a, b) => b.length - a.length);
 
+// Place names inside running prose. The walkthrough text was translated to
+// Spanish but its place names were deliberately left in English back in
+// July, when the rule was "PokeMMO never localizes them in-game". Ferran has
+// since asked for them translated everywhere, so this is the third and last
+// place that needed it — and the trickiest, because unlike the other two the
+// name sits inside a sentence rather than at a known position.
+//
+// Two things make it safe:
+//  * longest key first, so "Route 4" can never rewrite the "Route 4" inside
+//    "Route 44";
+//  * boundaries checked by hand against a Latin-1-inclusive letter class
+//    instead of \b. JS's \b is ASCII-only and never fires next to an accented
+//    letter — the same trap that once stopped "Éter" from ever matching in the
+//    item highlighter a few lines below.
+// Keys are matched with flexible separators so the dictionary's "MT.MOON"
+// still finds "Mt. Moon" in the text.
+const LOCATION_PROSE_PATTERN = new RegExp(
+  `(${Object.keys(LOCATION_NAMES_ES_INDEX)
+    .sort((a, b) => b.length - a.length)
+    .map((key) =>
+      key
+        .split(' ')
+        .map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+        .join('[.\\s]+')
+    )
+    .join('|')})`,
+  'gi'
+);
+const PROSE_LETTER = /[a-zA-ZÀ-ÿ0-9]/;
+
+/**
+ * Replaces every English place name found inside a line of prose with its
+ * Spanish name. Display-only: the stored text is never modified, so item
+ * highlighting and image lookups keep working off the original strings.
+ */
+export function localizedLocationsInText(text: string, locale: 'es' | 'en'): string {
+  if (locale === 'en') return text;
+  LOCATION_PROSE_PATTERN.lastIndex = 0;
+  let result = '';
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = LOCATION_PROSE_PATTERN.exec(text)) !== null) {
+    const before = text[match.index - 1];
+    const after = text[match.index + match[0].length];
+    if ((before && PROSE_LETTER.test(before)) || (after && PROSE_LETTER.test(after))) continue;
+
+    const spanish = LOCATION_NAMES_ES_INDEX[normalizeLocationKey(match[0])];
+    if (!spanish) continue;
+
+    result += text.slice(lastIndex, match.index) + spanish;
+    lastIndex = match.index + match[0].length;
+  }
+
+  return lastIndex === 0 ? text : result + text.slice(lastIndex);
+}
+
 /**
  * Translates the place name at the START of a longer phrase, leaving the rest
  * alone: "Cerulean City (Gimnasio - derrota a Misty)" becomes "Ciudad Celeste

@@ -361,7 +361,7 @@
         "Ve al noroeste y recoge una Piedra Lunar mientras evitas a los 2 entrenadores.",
         "Baja las escaleras. Recoge un Seta Grande oculto en una roca.",
         "Ve al este y baja las escaleras. Ve al norte y recoge un Revivir.",
-        "Ve al sureste y evita al entrenador del Team Rocket. Sigue el camino y lucha contra un entrenador del Team Rocket.",
+        "Ve al sureste y evita al entrenador del Equipo Rocket. Sigue el camino y lucha contra un entrenador del Equipo Rocket.",
         "Recoge una Piedra Lunar oculta en una roca.",
         "Ve al norte y lucha contra un entrenador. Recoge un Fósil Domo o un Fósil Hélix.",
         "Solo puedes elegir uno. Ve al oeste para recoger un Antídoto. Sube las escaleras y recoge una Miniseta oculto en una roca.",
@@ -541,7 +541,7 @@
         "Evita al primer entrenador y habla con la líder del gimnasio desde su lado derecho para esquivar al segundo. Vence a la líder y consigue la MT-Hidropulso.",
         "Sal del gimnasio y entra en la casa del norte.",
         "Entra por la puerta del norte.",
-        "Vence al entrenador del Team Rocket para conseguir la MT-Excavar. Ve al sur hacia Route 5.",
+        "Vence al entrenador del Equipo Rocket para conseguir la MT-Excavar. Ve al sur hacia Route 5.",
         "Entra en la casa pequeña del sureste.",
         "Si quieres puedes intercambiar tu Nidoran macho por un Nidoran hembra hablando con la chica. Ahora baja las escaleras."
       ]
@@ -1308,7 +1308,7 @@
       "items": [],
       "stepsEs": [
         "Entra en la casa grande roja al suroeste del Centro Pokémon.",
-        "Ve al norte y lucha contra el entrenador del Team Rocket.",
+        "Ve al norte y lucha contra el entrenador del Equipo Rocket.",
         "Haz clic en el póster y baja las escaleras."
       ]
     },
@@ -1436,7 +1436,7 @@
         "Camina 3 pasos hacia el oeste. Camina 2 pasos hacia el sur.",
         "Camina 2 pasos hacia el este.",
         "Evita al entrenador y ve al este para recoger la Mejora. Baja las escaleras.",
-        "Recoge un Éter y ve al norte para recoger la MT-Robo. Lucha contra el entrenador del Team Rocket y consigue la Llave Ascensor.",
+        "Recoge un Éter y ve al norte para recoger la MT-Robo. Lucha contra el entrenador del Equipo Rocket y consigue la Llave Ascensor.",
         "Ve al sureste y sube las escaleras. Ve al norte y pisa la flecha que apunta al norte.",
         "Pisa la flecha que apunta al norte. Ve al noreste y sube las escaleras.",
         "Evita al entrenador y pisa la primera flecha que veas.",
@@ -1450,10 +1450,10 @@
         "Pisa la flecha que apunta al este.",
         "Ve al este y sube las escaleras. Ve al noroeste y recoge una Hiperpoción mientras evitas a los entrenadores. Ve al sureste y baja las escaleras.",
         "Entra en el ascensor y ve a la planta B4F.",
-        "Sal del ascensor y ve al oeste para recoger un Calcio. Ve al norte y lucha contra los 2 entrenadores del Team Rocket.",
+        "Sal del ascensor y ve al oeste para recoger un Calcio. Ve al norte y lucha contra los 2 entrenadores del Equipo Rocket.",
         "Ve al norte y recoge una Malla Ball oculta.",
         "También recoge una Nido Ball oculta.",
-        "Vence al jefe de Team Rocket. Recoge un Scope Silph y sal del edificio."
+        "Vence al jefe de Equipo Rocket. Recoge un Scope Silph y sal del edificio."
       ]
     },
     {
@@ -1583,7 +1583,7 @@
         "Ve al sur y recoge una Precisión X.",
         "Ve al norte y evita al primer entrenador. Ve al norte y lucha contra los 2 entrenadores siguientes.",
         "Sigue el camino y consigue un Caramelo Raro.",
-        "Vence a Marowak cerca de las escaleras y sube. Ve al norte y lucha contra los 3 entrenadores del Team Rocket.",
+        "Vence a Marowak cerca de las escaleras y sube. Ve al norte y lucha contra los 3 entrenadores del Equipo Rocket.",
         "Habla con el anciano."
       ]
     },
@@ -2165,25 +2165,25 @@
         "Ve al sur y recoge un Zinc mientras evitas al entrenador. Ve al noroeste y baja las escaleras.",
         "Ve al sureste y recoge un Más PS oculto en el árbol.",
         "Ve al oeste y evita al científico.",
-        "Lucha contra el miembro del Team Rocket. Recoge un Carburante y un Caramelo Raro.",
+        "Lucha contra el miembro del Equipo Rocket. Recoge un Carburante y un Caramelo Raro.",
         "También recoge una Super Ball.",
         "Ve al norte y entra en el ascensor.",
-        "Ve a la quinta planta y sal del ascensor. Ve al este y lucha contra el entrenador del Team Rocket.",
+        "Ve a la quinta planta y sal del ascensor. Ve al este y lucha contra el entrenador del Equipo Rocket.",
         "Ve hacia el oeste hasta el final mientras evitas al científico.",
-        "Ve al sur y lucha contra el entrenador del Team Rocket. Entra en el portal y entra en el portal de nuevo.",
+        "Ve al sur y lucha contra el entrenador del Equipo Rocket. Entra en el portal y entra en el portal de nuevo.",
         "Ve al este y recoge una Llave Magnética.",
         "Ve al oeste y entra en el portal. Ve al norte y entra en el ascensor mientras evitas al científico.",
-        "Ve a la octava planta y sal del ascensor. Evita al entrenador del Team Rocket y ve al sureste para recoger un Hierro.",
+        "Ve a la octava planta y sal del ascensor. Evita al entrenador del Equipo Rocket y ve al sureste para recoger un Hierro.",
         "También recoge una Pepita oculta en un árbol. Ve al noreste y baja las escaleras mientras evitas a los entrenadores. Ve al sureste y recoge la MT-Cerca.",
         "También recoge un Zinc oculto en un árbol.",
-        "Evita a los entrenadores del Team Rocket y ve al suroeste. Recoge un Calcio y evita al científico.",
+        "Evita a los entrenadores del Equipo Rocket y ve al suroeste. Recoge un Calcio y evita al científico.",
         "Ve al noreste.",
-        "Evita al miembro del Team Rocket y baja las escaleras.",
+        "Evita al miembro del Equipo Rocket y baja las escaleras.",
         "Ve al oeste y recoge un Carburante oculto en un árbol. Ve al suroeste y recoge un Más PS mientras evitas al entrenador.",
         "También recoge un Especial X.",
         "Ve al noreste y entra en el ascensor. Ve a la cuarta planta y sal del ascensor.",
-        "Ve al sureste y recoge la MT-Tormento. Recoge un Hierro oculto en un árbol mientras evitas al entrenador del Team Rocket.",
-        "Ve al noroeste para luchar contra un científico mientras evitas al entrenador del Team Rocket. Ve al suroeste y recoge una Cuerda Huida.",
+        "Ve al sureste y recoge la MT-Tormento. Recoge un Hierro oculto en un árbol mientras evitas al entrenador del Equipo Rocket.",
+        "Ve al noroeste para luchar contra un científico mientras evitas al entrenador del Equipo Rocket. Ve al suroeste y recoge una Cuerda Huida.",
         "También recoge una Cura Total.",
         "Recoge un Revivir Máximo y entra en el portal del suroeste. Ve al norte y entra en el ascensor.",
         "Ve a la quinta planta y sal del ascensor. Ve al este para recoger un Más PP oculto en un árbol.",
@@ -2193,7 +2193,7 @@
         "Vence a tu rival y habla con el chico para conseguir a Lapras.",
         "Entra en el portal del sureste. Ve al sur y lucha contra el entrenador.",
         "Ve al este y recoge un Revivir oculto en un árbol.",
-        "Ve al norte y vence al jefe de Team Rocket. Ve al norte y habla con el anciano para conseguir una Master Ball.",
+        "Ve al norte y vence al jefe de Equipo Rocket. Ve al norte y habla con el anciano para conseguir una Master Ball.",
         "Ve al noroeste y entra en el portal.",
         "Entra en el portal del noreste. Ve al norte y entra en el ascensor.",
         "Ve a la novena planta y sal del ascensor. Ve al suroeste y recoge una Hiperpoción oculta cerca de las cajas amarillas. Ve al noroeste y recoge un Calcio oculto en un árbol.",
@@ -3289,7 +3289,7 @@
       ],
       "stepsEs": [
         "Habla con el montañero y di que sí para conseguir la MT-Explosión.",
-        "Ve al este y lucha contra los 2 miembros del Team Rocket. Entra en la cueva.",
+        "Ve al este y lucha contra los 2 miembros del Equipo Rocket. Entra en la cueva.",
         "Ve al noroeste y baja las escaleras.",
         "Ve al norte y baja las escaleras. Empuja la primera roca 2 veces hacia el este.",
         "Empuja la segunda roca 1 vez hacia el este.",
@@ -3411,7 +3411,7 @@
         "Deslízate hacia el sur y deslízate hacia el oeste. Recoge un Restaurar Todo y sube las escaleras.",
         "Recoge una MO07-Cascada y entra por la puerta del suroeste.",
         "Sube la cascada y ve al noroeste. Baja las escaleras y entra por la puerta.",
-        "Ve al norte y lucha contra el entrenador del Team Rocket.",
+        "Ve al norte y lucha contra el entrenador del Equipo Rocket.",
         "Ve al sur y entra por la puerta.",
         "Ve al sur y entra por la puerta. Ve al sureste y entra por la puerta.",
         "Entra en la casa roja al suroeste del Centro Pokémon y habla con el chico para ir a Six Island. Ve al norte y entra por la puerta."
@@ -3513,7 +3513,7 @@
       ],
       "stepsEs": [
         "Haz Surf hacia el norte hasta que veas a un nadador, mientras evitas a todos los entrenadores.",
-        "Evita al chico nadador y ve al noroeste. Recoge una Malla Ball oculta y evita al entrenador del Team Rocket.",
+        "Evita al chico nadador y ve al noroeste. Recoge una Malla Ball oculta y evita al entrenador del Equipo Rocket.",
         "Vuelve al chico nadador y ve al noreste. Recoge un Trozo Estrella oculto en el suelo y ve al norte para luchar contra un pescador.",
         "Recoge un Más PP y vuela a Six Island. Ve al este hacia Water Path."
       ]
@@ -3736,7 +3736,7 @@
       ],
       "stepsEs": [
         "Corta el árbol y consigue una Hiperpoción.",
-        "Ve al sureste y evita a los 2 entrenadores del Team Rocket.",
+        "Ve al sureste y evita a los 2 entrenadores del Equipo Rocket.",
         "Haz Surf hacia el este hasta Memorial Pillar."
       ]
     },
@@ -3784,7 +3784,7 @@
         "Ve al sur y haz Surf hacia el sur mientras evitas a un entrenador.",
         "Colócate a la derecha del chico de pelo amarillo. Haz clic en la estatua y di que sí para dejar una Limonada y conseguir la MT-Relevo.",
         "Recoge un Hierro y recoge una Perla oculta.",
-        "Vuelve al segundo miembro del Team Rocket."
+        "Vuelve al segundo miembro del Equipo Rocket."
       ]
     },
     {
@@ -3803,7 +3803,7 @@
       ],
       "stepsEs": [
         "Ve al suroeste y haz Surf hacia el noroeste para conseguir un Más PP.",
-        "Ve a luchar contra el miembro del Team Rocket.",
+        "Ve a luchar contra el miembro del Equipo Rocket.",
         "Haz clic en la puerta y entra en la casa."
       ]
     },
@@ -3868,10 +3868,10 @@
         "Pisa la flecha que apunta al sur. Corre hacia el noroeste y consigue una Perla.",
         "Pisa la flecha que apunta al norte.",
         "Recoge la Hiperpoción y evita al entrenador. Pisa la flecha situada más al oeste que apunta al sur.",
-        "Camina hacia el norte y pisa la flecha central que apunta al oeste mientras evitas al entrenador del Team Rocket. Recoge una Malla Ball oculta en una caja amarilla.",
+        "Camina hacia el norte y pisa la flecha central que apunta al oeste mientras evitas al entrenador del Equipo Rocket. Recoge una Malla Ball oculta en una caja amarilla.",
         "Corre hacia el noreste y consigue la MT-Púas Tóxicas.",
-        "Pisa la flecha situada más al este que apunta al sur. Vence al entrenador del Team Rocket y pisa la flecha que apunta al este.",
-        "Evita a la entrenadora y ve al norte para luchar contra el siguiente entrenador del Team Rocket. Ve al norte y vence al científico para conseguir un Zafiro.",
+        "Pisa la flecha situada más al este que apunta al sur. Vence al entrenador del Equipo Rocket y pisa la flecha que apunta al este.",
+        "Evita a la entrenadora y ve al norte para luchar contra el siguiente entrenador del Equipo Rocket. Ve al norte y vence al científico para conseguir un Zafiro.",
         "Recoge una Nido Ball oculta en una caja amarilla.",
         "Sal de la casa y vuela a One Island. Entra en el Centro Pokémon y habla con el chico del este.",
         "Sal de la casa y entra en la casa roja al sur del Centro Pokémon. Habla con el chico para ir a Seven Island.",

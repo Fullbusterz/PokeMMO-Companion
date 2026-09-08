@@ -209,7 +209,7 @@
       "stepsEs": [
         "Ve al oeste hasta el final y evita al cazabichos.",
         "Ve al norte y recoge un Antiparalizador.",
-        "Sigue el camino para luchar contra un miembro del Team Aqua. Recibirás una Super Ball.",
+        "Sigue el camino para luchar contra un miembro del Equipo Aqua. Recibirás una Super Ball.",
         "Sigue el camino y recoge una Poké Ball oculta cerca del cazabichos mientras evitas a ese entrenador. Ve al norte y recoge una Baya Aranja.",
         "Ve al norte hacia Route 104."
       ]
@@ -357,7 +357,7 @@
       ],
       "stepsEs": [
         "Ve al norte y recoge una Poké Ball.",
-        "Ve al este y lucha contra el miembro del Team Aqua.",
+        "Ve al este y lucha contra el miembro del Equipo Aqua.",
         "Recibirás las Piezas Devon.",
         "Sal de la cueva."
       ]
@@ -701,8 +701,8 @@
       "stepsEs": [
         "Ve al norte hasta que veas a una anciana y entra en la casa situada a su derecha.",
         "Habla con el chico del noroeste y sal de la casa. Entra en la casa al este de la Tienda Pokémon.",
-        "Habla con el primer miembro del Team Aqua que veas para conseguir la MT-Ladrón.",
-        "Sube las escaleras. Habla con el chico para luchar contra los 2 miembros del Team Aqua.",
+        "Habla con el primer miembro del Equipo Aqua que veas para conseguir la MT-Ladrón.",
+        "Sube las escaleras. Habla con el chico para luchar contra los 2 miembros del Equipo Aqua.",
         "Sal de la casa y entra en la Tienda Pokémon.",
         "Compra una Carta Puerto y sal de la casa. Avanza unos pasos hacia el sur y habla con la chica de pelo marrón para conseguir un Tarro de Polvos. Si avanzas unos pasos al suroeste y hablas con la chica de pelo verde, podrás conseguir la Cinta Esfuerzo si tu primer Pokémon tiene 510 EV. Entra en la casa al oeste de la Tienda Pokémon y habla con el chico del sureste.",
         "Di que sí para conseguir la MT-Contoneo.",
@@ -1090,8 +1090,8 @@
         }
       ],
       "stepsEs": [
-        "Ve al noroeste hasta el final y lucha contra los 3 entrenadores del Team Magma.",
-        "Habla con el jefe de Team Magma y véncelo. Haz clic en la máquina y di que sí para conseguir un Meteorito.",
+        "Ve al noroeste hasta el final y lucha contra los 3 entrenadores del Equipo Magma.",
+        "Habla con el jefe de Equipo Magma y véncelo. Haz clic en la máquina y di que sí para conseguir un Meteorito.",
         "Ve hacia el sur hasta el final para llegar a Jagged Pass."
       ]
     },
@@ -1122,7 +1122,7 @@
       ],
       "stepsEs": [
         "Evita al montañero y salta hacia el oeste para recoger una Cura Total oculta en la hierba.",
-        "Salta 2 veces hacia el sur y evita a la entrenadora. Evita al entrenador del Team Magma y salta hacia el sur para luchar solo contra el entrenador de la bicicleta.",
+        "Salta 2 veces hacia el sur y evita a la entrenadora. Evita al entrenador del Equipo Magma y salta hacia el sur para luchar solo contra el entrenador de la bicicleta.",
         "Salta hacia el este y recoge un Cinturón Negro. Salta hacia el sur 1 vez y salta hacia el oeste 1 vez para conseguir una Super Ball oculta.",
         "Ve al sur hacia Route 112 mientras evitas a la chica. Ve al oeste hacia Lavaridge Town."
       ]
@@ -2179,7 +2179,7 @@
         "Déjate caer por el agujero y entra por la puerta del oeste. Sigue el camino y consigue la MT-Cambia Defensa.",
         "Sigue el camino y consigue una Hiperpoción. Ve al oeste y recoge una Baya Zanama oculta en una tumba.",
         "Ve al noroeste y recoge una Super Ball oculta en una tumba. Ve al noreste hacia la siguiente zona.",
-        "Ve al norte para luchar contra el miembro del Team Aqua y ve al oeste para recoger una Superpoción oculta en una tumba. Vuelve al miembro del Team Aqua y ve al norte para luchar contra los 3 miembros del Team Aqua.",
+        "Ve al norte para luchar contra el miembro del Equipo Aqua y ve al oeste para recoger una Superpoción oculta en una tumba. Vuelve al miembro del Equipo Aqua y ve al norte para luchar contra los 3 miembros del Equipo Aqua.",
         "Ve al norte y habla con la chica para conseguir un Emblema Magma. Ve al este y recoge un Caramelo Raro oculto en la hierba.",
         "Ve al sur hacia la siguiente zona.",
         "Ve al sur hasta el final y entra por la puerta. Ve al sureste y entra por la puerta.",
@@ -2352,11 +2352,11 @@
         "Recoge unos PP Máximos e ignora al entrenador.",
         "Entra por la puerta. Ve al sur y lucha contra un entrenador.",
         "Ve al oeste y recoge una Pepita.",
-        "Entra por la puerta y sigue el camino para luchar contra los 4 miembros del Team Magma. Ve al oeste y recoge un Revivir.",
-        "Sigue el camino y habla con el jefe de Team Magma.",
+        "Entra por la puerta y sigue el camino para luchar contra los 4 miembros del Equipo Magma. Ve al oeste y recoge un Revivir.",
+        "Sigue el camino y habla con el jefe de Equipo Magma.",
         "Véncelo y entra por la puerta. Recoge la Cuerda Huida y sal de la cueva.",
         "Vuela a Slateport City.",
-        "Habla con el chico con gafas al noreste del Centro Pokémon. Habla con el jefe de Team Aqua.",
+        "Habla con el chico con gafas al noreste del Centro Pokémon. Habla con el jefe de Equipo Aqua.",
         "Sal de la casa y vuela a Lilycove City. Ve al noreste desde el Centro Pokémon hasta que veas un chico con sombrero marrón. Salta 2 veces hacia el sur y baja las escaleras.",
         "Haz Surf hacia el noreste y entra en la cueva."
       ]
@@ -2424,7 +2424,7 @@
         "Evita a un entrenador y entra en el portal del suroeste.",
         "Recoge una Nido Ball y entra en el portal. Entra en el portal del noreste y entra por la puerta.",
         "Evita a un entrenador y entra por la puerta del noreste. Lucha contra los 2 entrenadores y entra en el portal.",
-        "Habla con el miembro del Team Aqua y véncelo.",
+        "Habla con el miembro del Equipo Aqua y véncelo.",
         "Entra en el portal del sureste. Entra por la puerta y sal de la cueva.",
         "Haz Surf hacia el este hasta Route 124. Vence solo al nadador mientras evitas a la nadadora. Haz Surf hacia el este hasta Mossdeep City mientras evitas a todos los entrenadores.",
         "Ve al suroeste de Mossdeep City. Haz Surf hacia el oeste hasta Route 124 y lucha contra una triatleta.",
@@ -2840,7 +2840,7 @@
         "Empuja la roca hacia el este.",
         "Entra por la puerta. Ve al este y recoge la MT-Meteorobola.",
         "Ve al sur y sigue el camino.",
-        "Colócate delante del Pokémon legendario. Lucha contra el jefe de Team Aqua."
+        "Colócate delante del Pokémon legendario. Lucha contra el jefe de Equipo Aqua."
       ]
     },
     {
@@ -3130,8 +3130,8 @@
       "stepsEs": [
         "Entra en el Centro Pokémon y habla con la chica de pelo marrón.",
         "Di que sí para conseguir la MT-Doble Filo.",
-        "Sal de la casa. Habla con el jefe de Team Aqua.",
-        "También habla con el jefe de Team Magma.",
+        "Sal de la casa. Habla con el jefe de Equipo Aqua.",
+        "También habla con el jefe de Equipo Magma.",
         "Habla con Wallace y recibirás la MO-Cascada.",
         "Entra en el gimnasio. Pisa la primera casilla de hielo.",
         "Da 1 paso al oeste.",
