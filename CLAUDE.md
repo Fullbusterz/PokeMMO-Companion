@@ -54,6 +54,8 @@ Repo en GitHub: [github.com/Fullbusterz/PokeMMO-Companion](https://github.com/Fu
 
 **[MISMA SESIÓN — PASE VISUAL: atractivo, responsive y con movimiento en web]** Ferran pidió centrarse en el apartado visual. Se trabajó MIRANDO la app (capturas en el Chrome real de Ferran vía claude-in-chrome; el panel interno está oculto y no compone frames) y midiendo el layout con JS, no a ciegas.
 
+⚠️ **[ACTUALIZADO — diagnóstico completo y parche, con su parte no verificada]** Ver el bloque siguiente ("Crash del bundler: causa raíz y parche") antes de leer esto.
+
 ⚠️ **HALLAZGO DE ENTORNO IMPORTANTE — el dev server se cae solo al tocar estilos, y no es culpa del código.** Metro muere con:
 ```
 TypeError: Cannot read properties of undefined (reading 'addedFiles')
@@ -62,6 +64,19 @@ TypeError: Cannot read properties of undefined (reading 'addedFiles')
   at ChildProcess (nativewind/dist/metro/tailwind/v3/index.js:51)
 ```
 El watcher de Tailwind de NativeWind emite un evento de cambio que este Metro no sabe manejar, y **se lleva el bundler entero cada vez que aparece una clase Tailwind NUEVA** (no presente aún en el CSS compilado). Pasó 4 veces seguidas, siempre justo después de una edición de estilos. **Método a seguir al hacer UI en este repo: agrupar TODOS los cambios de estilo y reiniciar el servidor UNA vez al final, en vez del ciclo editar→mirar.** No perder tiempo diagnosticando el código: si el server muere tras tocar clases, es esto.
+
+**[MISMA SESIÓN — CRASH DEL BUNDLER: CAUSA RAÍZ, PARCHE, Y QUÉ QUEDA SIN VERIFICAR]**
+
+**Causa raíz, leída en el código de ambos lados (no deducida):** es un desajuste de API entre versiones de Metro.
+- `metro@0.84.4` → `DependencyGraph._onHasteChange({ changes, rootDir })` y acto seguido hace `[...changes.addedFiles, ...changes.modifiedFiles, ...changes.removedFiles]`.
+- `react-native-css-interop@0.2.1` (la que arrastra nativewind 4.2.1) emite el dialecto viejo: `haste.emit("change", { eventsQueue: [...] })`, sin `changes`.
+Resultado: `changes` llega `undefined` → `Cannot read properties of undefined (reading 'addedFiles')` → **muere el proceso entero del bundler**. Un solo punto de emisión (`dist/metro/index.js:179`) y un solo consumidor, así que el arreglo es quirúrgico.
+
+**Parche aplicado** (`patches/react-native-css-interop+0.2.1.patch`, vía `patch-package` con `postinstall`): el `emit` ahora manda TAMBIÉN `rootDir` + `changes:{addedFiles:[],modifiedFiles:[],removedFiles:[]}`. Las listas van vacías a propósito: en Metro solo sirven para invalidar la caché de paquetes de las rutas cambiadas, y esto es un módulo VIRTUAL que no está en ningún paquete; lo que importa es que `_onHasteChange` llegue hasta el final, limpie la caché de resolución y emita `"change"`. Es aditivo: si Metro ignora los campos nuevos no cambia nada, y si los lee (0.84.4 los lee) el crash es imposible.
+
+**⚠️ LO QUE NO SE PUDO VERIFICAR, dicho claro:** tras aplicar el parche **no se ha logrado volver a reproducir el crash**, pero tampoco SIN el parche. Se hizo el experimento de control completo (revertir el parche en `node_modules`, reiniciar con cachés de Metro/Expo borradas, reintroducir una clase Tailwind nueva) y el servidor **también sobrevivió**. Motivo: en esta sesión el watcher de Tailwind **dejó de recompilar del todo** — el CSS servido se queda congelado byte a byte (29571) y una clase nueva (`opacity-70`, comprobado que no estaba) no aparece ni recargando. Sin recompilación no hay `emit`, y sin `emit` no hay crash ni con parche ni sin él. Así que el parche es **correcto por inspección pero no probado en vivo**; queda puesto porque no puede empeorar nada.
+
+**Consecuencia práctica para trabajar (esto sí es seguro):** las clases Tailwind nuevas NO entran en caliente en este entorno — hace falta **reiniciar el dev server** para verlas. Es el mismo coste que ya se estaba pagando durante toda la sesión visual. Método recomendado: agrupar los cambios de estilo y reiniciar una vez al final.
 
 1. **`Screen` ahora acota el contenido a 760px centrados** (`CONTENT_MAX_WIDTH`). Es el arreglo de mayor impacto de toda la pasada y llega a TODAS las pantallas de golpe porque todas renderizan por ahí. La app se diseñó phone-first y nunca se acotó: en un portátil (que es como se usa la PWA en una mesa) la clasificación tenía el nombre pegado a la izquierda, los números a la derecha y un metro de navy vacío en medio, y las fichas de combate eran barras de mil píxeles con dos nombres.
 2. **`src/lib/webMotion.ts` — movimiento REAL en web por fin.** Reanimated está muerto en web en este proyecto (ver `animation.ts`), así que cada animación estaba envuelta en `nativeOnly()` y **la PWA, que es la build que usa todo el mundo, no tenía ninguna**. react-native-web sí mapea `transitionProperty`/`transitionDuration`/`transitionTimingFunction` a CSS: `transition([props], ms)` y `surfaceTransition()` devuelven ese estilo en web y `undefined` en nativo (donde ya trabajan PressScale/Reanimated). Verificado en vivo: **27 elementos con transición CSS real**, curva `cubic-bezier(0.2,0.8,0.2,1)`. NO viola la regla de `useAnimatedStyle` + `className` — esto es `style` plano, no Reanimated.

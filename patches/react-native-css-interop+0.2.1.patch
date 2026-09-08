@@ -1,0 +1,37 @@
+diff --git a/node_modules/react-native-css-interop/dist/metro/index.js b/node_modules/react-native-css-interop/dist/metro/index.js
+index c91ba6a..7e9629b 100644
+--- a/node_modules/react-native-css-interop/dist/metro/index.js
++++ b/node_modules/react-native-css-interop/dist/metro/index.js
+@@ -177,6 +177,7 @@ async function startCSSProcessor(filePath, platform, isDev, { input, getCSSForPl
+                 : getNativeJS((0, css_to_rn_1.cssToReactNativeRuntime)(css, options), debug)));
+             debug(`virtualStyles.emit ${platform}`);
+             haste.emit("change", {
++                // Metro <= 0.82 read this shape.
+                 eventsQueue: [
+                     {
+                         filePath,
+@@ -188,6 +189,24 @@ async function startCSSProcessor(filePath, platform, isDev, { input, getCSSForPl
+                         type: "change",
+                     },
+                 ],
++                // Metro >= 0.83 (0.84.4 here) reads `changes`/`rootDir` instead:
++                // DependencyGraph._onHasteChange destructures
++                // `{ changes, rootDir }` and immediately spreads
++                // changes.addedFiles, so the old-only payload above made it
++                // throw "Cannot read properties of undefined (reading
++                // 'addedFiles')" and take the whole bundler down with it.
++                // The lists are left empty on purpose: their only use in Metro
++                // is invalidating the package cache for the changed paths, and
++                // this is a VIRTUAL module that is not in any package. What
++                // matters is that _onHasteChange still runs, clearing the
++                // resolution cache and emitting "change" so the new CSS is
++                // picked up.
++                rootDir: process.cwd(),
++                changes: {
++                    addedFiles: [],
++                    modifiedFiles: [],
++                    removedFiles: [],
++                },
+             });
+         }).then((css) => {
+             debug(`virtualStyles.initial ${platform}`);
