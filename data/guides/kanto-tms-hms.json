@@ -57,7 +57,7 @@
       "pp": "20",
       "locations": [
         "Route 4 (noreste)",
-        "Celadon City (Department Store - $1,000)"
+        "Celadon City (Centro Comercial - $1,000)"
       ]
     },
     {
@@ -112,7 +112,7 @@
       "accuracy": "100",
       "pp": "15",
       "locations": [
-        "(Pickup ability, 5% chance)"
+        "(Habilidad Pickup, 5% de probabilidad)"
       ]
     },
     {
@@ -145,7 +145,7 @@
       "accuracy": "100",
       "pp": "10",
       "locations": [
-        "Celadon City (Game Corner - 4,000 Coins)"
+        "Celadon City (Sala de Juegos - 4,000 Coins)"
       ]
     },
     {
@@ -167,7 +167,7 @@
       "accuracy": "90",
       "pp": "5",
       "locations": [
-        "Celadon City (Department Store - $7,500)"
+        "Celadon City (Centro Comercial - $7,500)"
       ]
     },
     {
@@ -178,7 +178,7 @@
       "accuracy": "—",
       "pp": "30",
       "locations": [
-        "Celadon City (Department Store cobertura - dale una Fresh Water a la chica)"
+        "Celadon City (Centro Comercial cobertura - dale una Fresh Water a la chica)"
       ]
     },
     {
@@ -222,7 +222,7 @@
       "accuracy": "—",
       "pp": "25",
       "locations": [
-        "Celadon City (Department Store cobertura - dale una Soda Pop a la chica)"
+        "Celadon City (Centro Comercial cobertura - dale una Soda Pop a la chica)"
       ]
     },
     {
@@ -255,7 +255,7 @@
       "accuracy": "75",
       "pp": "15",
       "locations": [
-        "Celadon City (Game Corner - 3,500 Coins)"
+        "Celadon City (Sala de Juegos - 3,500 Coins)"
       ]
     },
     {
@@ -266,7 +266,7 @@
       "accuracy": "100",
       "pp": "15",
       "locations": [
-        "Celadon City (Game Corner - 4,000 Coins)"
+        "Celadon City (Sala de Juegos - 4,000 Coins)"
       ]
     },
     {
@@ -311,7 +311,7 @@
       "pp": "10",
       "locations": [
         "Cerulean City (derrota a Team Rocket Grunt)",
-        "Celadon City (Department Store - $2,000)"
+        "Celadon City (Centro Comercial - $2,000)"
       ]
     },
     {
@@ -333,7 +333,7 @@
       "accuracy": "100",
       "pp": "15",
       "locations": [
-        "Celadon City (Game Corner - 4,500 Coins)"
+        "Celadon City (Sala de Juegos - 4,500 Coins)"
       ]
     },
     {
@@ -345,7 +345,7 @@
       "pp": "15",
       "locations": [
         "SS Anne (1F)",
-        "Celadon City (Department Store - $3,000)"
+        "Celadon City (Centro Comercial - $3,000)"
       ]
     },
     {
@@ -367,8 +367,8 @@
       "accuracy": "—",
       "pp": "20",
       "locations": [
-        "Celadon City (Department Store - $1,000)",
-        "Celadon City (Department Store cobertura - dale una Lemonade a la chica)"
+        "Celadon City (Centro Comercial - $1,000)",
+        "Celadon City (Centro Comercial cobertura - dale una Lemonade a la chica)"
       ]
     },
     {
@@ -390,7 +390,7 @@
       "accuracy": "100",
       "pp": "15",
       "locations": [
-        "Celadon City (Game Corner - 4,000 Coins)"
+        "Celadon City (Sala de Juegos - 4,000 Coins)"
       ]
     },
     {
@@ -479,7 +479,7 @@
       "pp": "20",
       "locations": [
         "Route 25 (noroeste)",
-        "Celadon City (Department Store - $3,000)"
+        "Celadon City (Centro Comercial - $3,000)"
       ]
     },
     {
@@ -502,7 +502,7 @@
       "pp": "15",
       "locations": [
         "Route 24 (noroeste)",
-        "Celadon City (Department Store - $3,000)"
+        "Celadon City (Centro Comercial - $3,000)"
       ]
     },
     {

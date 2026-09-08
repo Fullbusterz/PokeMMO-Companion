@@ -13,6 +13,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
+import { localizedLocationName } from '@/lib/guides';
 import { Header } from '@/components/Header';
 import { PokemonSprite } from '@/components/PokemonSprite';
 import { PressScale } from '@/components/PressScale';
@@ -94,7 +95,7 @@ function LocationRow({ entry }: { entry: LocationEntry }) {
   return (
     <View className="flex-row items-center gap-2 py-1">
       <View className="flex-1">
-        <Text className="text-sm text-ink-100">{entry.location}</Text>
+        <Text className="text-sm text-ink-100">{localizedLocationName(entry.location, locale)}</Text>
         {timeLabel.length > 0 && <Text className="text-[11px] text-ink-400">{timeLabel}</Text>}
       </View>
       <Text className="text-xs text-ink-400">

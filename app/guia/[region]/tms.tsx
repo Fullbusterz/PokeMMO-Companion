@@ -7,7 +7,7 @@ import { Screen } from '@/components/Screen';
 import { TypeBadge } from '@/components/TypeBadge';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
-import { getTmsHmsGuide, type HmEntry, type RegionId, type TmEntry } from '@/lib/guides';
+import { getTmsHmsGuide, localizedLocationPhrase, type HmEntry, type RegionId, type TmEntry } from '@/lib/guides';
 import { localizedMoveName } from '@/lib/pokedex';
 import type { PokeType } from '@/lib/typeChart';
 import { useLocaleStore } from '@/store/localeStore';
@@ -40,7 +40,7 @@ function TmRow({ tm, index }: { tm: TmEntry; index: number }) {
       <View className="mt-2 gap-0.5">
         {tm.locations.map((loc, i) => (
           <Text key={i} className="text-sm text-ink-300">
-            📍 {loc}
+            📍 {localizedLocationPhrase(loc, locale)}
           </Text>
         ))}
       </View>
@@ -56,7 +56,7 @@ function HmRow({ hm, index }: { hm: HmEntry; index: number }) {
       className="mb-2 rounded-xl border border-ink-600 bg-ink-800 p-3"
     >
       <Text className="text-base font-semibold text-ink-100">{localizedMoveName(hm.name, locale)}</Text>
-      <Text className="mt-1 text-sm text-ink-300">📍 {hm.location}</Text>
+      <Text className="mt-1 text-sm text-ink-300">📍 {localizedLocationPhrase(hm.location, locale)}</Text>
     </Animated.View>
   );
 }

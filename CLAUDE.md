@@ -65,6 +65,26 @@ TypeError: Cannot read properties of undefined (reading 'addedFiles')
 ```
 El watcher de Tailwind de NativeWind emite un evento de cambio que este Metro no sabe manejar, y **se lleva el bundler entero cada vez que aparece una clase Tailwind NUEVA** (no presente aún en el CSS compilado). Pasó 4 veces seguidas, siempre justo después de una edición de estilos. **Método a seguir al hacer UI en este repo: agrupar TODOS los cambios de estilo y reiniciar el servidor UNA vez al final, en vez del ciclo editar→mirar.** No perder tiempo diagnosticando el código: si el server muere tras tocar clases, es esto.
 
+**[MISMA SESIÓN — NOMBRES DE LUGAR EN INGLÉS DENTRO DE LA APP EN ESPAÑOL. Reportado por un usuario de Ferran: "arregla las cosas básicas primero".]** Queja justa y correcta. Existían DOS fugas, ninguna en la Guía (que sí estaba traducida desde 2026-07-11):
+
+1. **Pokédex → sección "Ubicación"** pintaba `entry.location` en crudo: "Route 1", "Viridian Forest", "Power Plant" en medio de una ficha por lo demás en español. Lo mismo en la respuesta del Oráculo a "¿dónde encuentro a X?".
+2. **Tablas de MT/MO** estaban a MEDIAS: el descriptor traducido del portugués pero el lugar en inglés — "Cerulean City (Gimnasio - derrota a Misty)", "Route 4 (noreste)". Además quedaba un resto sin traducir: "(Pickup ability, 5% chance)".
+
+**Causa del punto 1, que no era solo "faltaba llamar a la función":** `localizedLocationName` hacía búsqueda EXACTA, y las claves del diccionario están en el formato de las guías ("MT.MOON", "PALLET TOWN") mientras `locations.json` usa capitalización normal ("Mt. Moon"). Enchufarla sin más habría fallado también en las 182 ya existentes. Ahora el índice se construye con **clave normalizada** (mayúsculas, puntos/apóstrofos/espacios plegados), así que un solo diccionario sirve a los dos formatos. Comprobado que no hay colisiones con traducción distinta.
+
+**Ampliación del diccionario: 271 → 343 entradas.** Fuentes, en este orden:
+- **PokéAPI** (`location_names.csv`, `local_language_id=7`): resolvió solo 12 de 76 — confirmado que para ubicaciones es floja, tal como ya decía este archivo. Johto directamente **no tiene filas en español** (solo en, fr, de).
+- **Bulbapedia**, sección "In other languages", vía su API (`action=parse&prop=wikitext`): 41 nombres. **Se prefiere siempre "European Spanish"**, que Bulbapedia distingue de la latinoamericana y difieren (Pueblo Azalea vs Pueblo Azálea). El extractor cubre los DOS formatos que usa la wiki (tabla manual y plantilla `{{langtable|es_eu=...}}`), script en el scratchpad (`fetchLocationNames.mjs`).
+- **Rutas generadas mecánicamente** ("Route N" → "Ruta N", 31): patrón confirmado por la propia PokéAPI (Route 101 → Ruta 101), no inventado.
+
+**4 descartadas a propósito** (se quedan en inglés en vez de mostrar un nombre falso, regla de oro del proyecto): `Five Island` (la fila de Bulbapedia es un eslogan, "Isla que marca el paso del tiempo"), `Trial Chamber` (resolvía a "Calle Victoria", que es otro lugar), `Mt. Silver Cave` (la página redirige a Mt. Silver y se perdería el matiz de cueva), `Honey Tree` (sin fila de español). **Cobertura final: 254/258 ubicaciones únicas (98%).**
+
+**Punto 2 — `localizedLocationPhrase(phrase, locale)`**, nueva en `guides.ts`: traduce SOLO el nombre de lugar del PRINCIPIO de una frase y deja el resto intacto ("Cerulean City (Gimnasio…)" → "Ciudad Celeste (Gimnasio…)"). Las claves se prueban de más larga a más corta, si no "Route 4" reescribiría "Route 44" — verificado explícitamente con ese caso y con Cerulean City/Cerulean Cave. Se traduce solo el prefijo a propósito: sustituir en cualquier posición acabaría reescribiendo una palabra de la parte descriptiva, y **un nombre de lugar equivocado es peor que uno sin traducir**. 188/208 cadenas traducidas.
+
+**Términos de instalación** (`Department Store` ×27, `Game Corner` ×19) arreglados EN LOS DATOS, derivados de compuestos confirmados en Bulbapedia: "Celadon Department Store" → "Centro Comercial de Ciudad Azulona" ⇒ Centro Comercial; "Celadon Game Corner" → "Sala de Juegos Rocket" ⇒ Sala de Juegos. `Cycling Road`, `Secret House`, `Warden` (5 apariciones en total) no los documenta Bulbapedia con fila en español y se quedan como están.
+
+**Verificado en pantalla:** ficha de Pikachu → "Ruta 1 / Bosque Verde / Central de Energía" (antes Route 1 / Viridian Forest / Power Plant); tabla de MTs de Kanto → "Silph S.A. / Calle Victoria / Ciudad Celeste / Ciudad Azafrán / Ruta 4 / Ciudad Azulona", con **cero restos en inglés** en la pantalla; y la Guía sigue igual que antes (no hubo regresión por el cambio de búsqueda exacta a normalizada).
+
 **[MISMA SESIÓN — EL ORGANIZADOR YA VE Y JUEGA A LAS APUESTAS + BUG DE LATENCIA ENCONTRADO DE CAMINO]** Cerrada la limitación conocida: el organizador era el único de la mesa que no veía las apuestas, porque las fichas viven en la base de datos por *viewer* y su pantalla se alimenta del store local.
 
 1. **`src/lib/viewerIdentity.ts`** — la credencial de dispositivo ("soy esta persona en este torneo") se extrajo a un módulo compartido por la pantalla del link y la del organizador. Efecto útil: si el organizador ya entró por su propio link en ese móvil, se le reconoce en vez de crearle una segunda fila de viewer.

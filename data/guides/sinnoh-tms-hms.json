@@ -113,7 +113,7 @@
       "accuracy": "100",
       "pp": "15",
       "locations": [
-        "Veilstone City (Game Corner - 6,000 Coins)"
+        "Veilstone City (Sala de Juegos - 6,000 Coins)"
       ]
     },
     {
@@ -147,7 +147,7 @@
       "pp": "10",
       "locations": [
         "Route 216 (noreste)",
-        "Veilstone City (Game Corner - 10,000 Coins)"
+        "Veilstone City (Sala de Juegos - 10,000 Coins)"
       ]
     },
     {
@@ -159,7 +159,7 @@
       "pp": "5",
       "locations": [
         "Lake Acuity (noreste)",
-        "Veilstone City (Department Store - $5,500)"
+        "Veilstone City (Centro Comercial - $5,500)"
       ]
     },
     {
@@ -170,7 +170,7 @@
       "accuracy": "90",
       "pp": "5",
       "locations": [
-        "Veilstone City (Department Store - $7,500)"
+        "Veilstone City (Centro Comercial - $7,500)"
       ]
     },
     {
@@ -181,7 +181,7 @@
       "accuracy": "—",
       "pp": "30",
       "locations": [
-        "Veilstone City (Department Store - $2,000)"
+        "Veilstone City (Centro Comercial - $2,000)"
       ]
     },
     {
@@ -192,7 +192,7 @@
       "accuracy": "—",
       "pp": "10",
       "locations": [
-        "Veilstone City (Department Store - $2,000)"
+        "Veilstone City (Centro Comercial - $2,000)"
       ]
     },
     {
@@ -225,7 +225,7 @@
       "accuracy": "—",
       "pp": "25",
       "locations": [
-        "Veilstone City (Department Store - $2,000)"
+        "Veilstone City (Centro Comercial - $2,000)"
       ]
     },
     {
@@ -237,7 +237,7 @@
       "pp": "20",
       "locations": [
         "Galactic Warehouse (3F)",
-        "Veilstone City (Game Corner - 8,000 Coins)"
+        "Veilstone City (Sala de Juegos - 8,000 Coins)"
       ]
     },
     {
@@ -248,7 +248,7 @@
       "accuracy": "100",
       "pp": "10",
       "locations": [
-        "Veilstone City (Department Store - $3,000)"
+        "Veilstone City (Centro Comercial - $3,000)"
       ]
     },
     {
@@ -271,7 +271,7 @@
       "pp": "15",
       "locations": [
         "Valley Windworks (noreste)",
-        "Veilstone City (Game Corner - 10,000 Coins)"
+        "Veilstone City (Sala de Juegos - 10,000 Coins)"
       ]
     },
     {
@@ -283,7 +283,7 @@
       "pp": "10",
       "locations": [
         "Lake Valor (sureste)",
-        "Veilstone City (Department Store - $5,500)"
+        "Veilstone City (Centro Comercial - $5,500)"
       ]
     },
     {
@@ -308,7 +308,7 @@
       "pp": "20",
       "locations": [
         "Lost Tower (4F)",
-        "Veilstone City (Game Corner - 8,000 Coins)"
+        "Veilstone City (Sala de Juegos - 8,000 Coins)"
       ]
     },
     {
@@ -331,7 +331,7 @@
       "pp": "10",
       "locations": [
         "Route 211 (noreste - necesita Rock Smash e Rock Climb)",
-        "Veilstone City (Game Corner - 10,000 Coins)"
+        "Veilstone City (Sala de Juegos - 10,000 Coins)"
       ]
     },
     {
@@ -367,7 +367,7 @@
       "pp": "15",
       "locations": [
         "Wayward Cave (1F, suroeste - necesita Cut e Rock Smash)",
-        "Veilstone City (Game Corner - 4,000 Coins)"
+        "Veilstone City (Sala de Juegos - 4,000 Coins)"
       ]
     },
     {
@@ -378,7 +378,7 @@
       "accuracy": "—",
       "pp": "20",
       "locations": [
-        "Veilstone City (Department Store - $2,000)"
+        "Veilstone City (Centro Comercial - $2,000)"
       ]
     },
     {
@@ -401,7 +401,7 @@
       "pp": "15",
       "locations": [
         "Fuego Ironworks (sur)",
-        "Veilstone City (Game Corner - 10,000 Coins)"
+        "Veilstone City (Sala de Juegos - 10,000 Coins)"
       ]
     },
     {
@@ -436,7 +436,7 @@
       "pp": "5",
       "locations": [
         "Lake Verity (suroeste)",
-        "Veilstone City (Department Store - $5,500)"
+        "Veilstone City (Centro Comercial - $5,500)"
       ]
     },
     {
@@ -503,7 +503,7 @@
       "accuracy": "—",
       "pp": "10",
       "locations": [
-        "Veilstone City (Game Corner - 6,000 Coins)",
+        "Veilstone City (Sala de Juegos - 6,000 Coins)",
         "(habilidad Pickup, 1% de probabilidad en nivel 51-70)"
       ]
     },

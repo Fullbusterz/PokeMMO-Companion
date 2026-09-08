@@ -8,9 +8,67 @@ import locationNamesEs from '../../data/reference/location-names-es.json';
 // change). Display-only: the underlying `location` string is never touched,
 // so image matching / search / everything else keeps keying off English.
 const LOCATION_NAMES_ES = locationNamesEs as Record<string, string>;
+
+// The same place is written differently depending on where the string came
+// from: the walkthrough guides shout it ("MT.MOON", "PALLET TOWN") while the
+// wild-encounter dataset title-cases it ("Mt. Moon", "Pallet Town"). An exact
+// lookup only ever matched the first kind, which is why the Pokédex still
+// showed English names while the Guide didn't. Indexing on a normalised key
+// (case, dots, apostrophes and runs of spaces folded away) makes one
+// dictionary serve both.
+function normalizeLocationKey(location: string): string {
+  return location
+    .toUpperCase()
+    .replace(/[.']/g, ' ')
+    .replace(/’/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+const LOCATION_NAMES_ES_INDEX: Record<string, string> = Object.fromEntries(
+  Object.entries(LOCATION_NAMES_ES).map(([key, value]) => [normalizeLocationKey(key), value])
+);
+
+/**
+ * Display-only. The underlying `location` string is never touched, so image
+ * matching, search and every other lookup keep keying off the English name.
+ * Anything without a translation falls through unchanged rather than being
+ * guessed at.
+ */
 export function localizedLocationName(location: string, locale: 'es' | 'en'): string {
   if (locale === 'en') return location;
-  return LOCATION_NAMES_ES[location] ?? location;
+  return LOCATION_NAMES_ES_INDEX[normalizeLocationKey(location)] ?? location;
+}
+
+// Keys sorted longest-first so "Route 44" is matched before "Route 4" — a
+// shortest-match pass would rewrite the wrong half of the string.
+const LOCATION_KEYS_BY_LENGTH = Object.keys(LOCATION_NAMES_ES_INDEX).sort((a, b) => b.length - a.length);
+
+/**
+ * Translates the place name at the START of a longer phrase, leaving the rest
+ * alone: "Cerulean City (Gimnasio - derrota a Misty)" becomes "Ciudad Celeste
+ * (Gimnasio - derrota a Misty)". The TM/HM tables were translated from the
+ * Portuguese source but their place names were left in English, so they read
+ * half in each language.
+ *
+ * Only the leading name is touched. Substituting anywhere in the string would
+ * eventually rewrite a word inside the descriptive part, and a wrong place name
+ * is worse than an untranslated one.
+ */
+export function localizedLocationPhrase(phrase: string, locale: 'es' | 'en'): string {
+  if (locale === 'en') return phrase;
+  const normalized = normalizeLocationKey(phrase);
+  const key = LOCATION_KEYS_BY_LENGTH.find(
+    (candidate) => normalized === candidate || normalized.startsWith(candidate + ' ')
+  );
+  if (!key) return phrase;
+
+  // Walk the original string token by token until the normalised prefix is
+  // consumed, so the untouched remainder keeps its original spacing and case.
+  const keyWords = key.split(' ').length;
+  const words = phrase.trim().split(/\s+/);
+  const rest = words.slice(keyWords).join(' ');
+  return rest ? `${LOCATION_NAMES_ES_INDEX[key]} ${rest}` : LOCATION_NAMES_ES_INDEX[key];
 }
 
 export type GuideStep = {

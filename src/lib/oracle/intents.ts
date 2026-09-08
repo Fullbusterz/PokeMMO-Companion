@@ -1,7 +1,7 @@
 import { findAbility, findMove, findPokemon, findType, findTypes, normalize } from './entities';
 import { findItemLocations, type ItemLocation } from './items';
 import { t } from '@/i18n';
-import { getReferenceGuide, getTmsHmsGuide, type FindingEveryMoveGuide } from '@/lib/guides';
+import { getReferenceGuide, getTmsHmsGuide, localizedLocationName, type FindingEveryMoveGuide } from '@/lib/guides';
 import { getLearners, getRecommendedLearners } from '@/lib/moveLearners';
 import {
   getAbilityDescription,
@@ -37,7 +37,7 @@ function formatWildLocations(locations: LocationEntry[], locale: AppLocale): str
           ? ` (${l.timeOfDay.map((tod) => localizedEncounterValue('timeOfDay', tod, locale)).join('/')})`
           : '';
       return t('oracle.answers.wildLocationLine', {
-        location: l.location,
+        location: localizedLocationName(l.location, locale),
         locationType: localizedEncounterValue('locationType', l.locationType, locale),
         levels: l.levels,
         rate: localizedEncounterValue('rate', l.rate, locale),

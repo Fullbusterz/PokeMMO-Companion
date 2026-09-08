@@ -147,7 +147,7 @@
       "pp": "10",
       "locations": [
         "Abandoned Ship (Storage Room, necesita Dive/Surf)",
-        "Mauville City (Game Corner - 4,000 Coins)"
+        "Mauville City (Sala de Juegos - 4,000 Coins)"
       ]
     },
     {
@@ -158,7 +158,7 @@
       "accuracy": "70",
       "pp": "5",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $5,500)"
+        "Lilycove City (Lilycove Centro Comercial - $5,500)"
       ]
     },
     {
@@ -169,7 +169,7 @@
       "accuracy": "90",
       "pp": "5",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $7,500)"
+        "Lilycove City (Lilycove Centro Comercial - $7,500)"
       ]
     },
     {
@@ -180,7 +180,7 @@
       "accuracy": "—",
       "pp": "30",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $3,000)"
+        "Lilycove City (Lilycove Centro Comercial - $3,000)"
       ]
     },
     {
@@ -191,7 +191,7 @@
       "accuracy": "—",
       "pp": "10",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $3,000)"
+        "Lilycove City (Lilycove Centro Comercial - $3,000)"
       ]
     },
     {
@@ -224,7 +224,7 @@
       "accuracy": "—",
       "pp": "25",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $3,000)"
+        "Lilycove City (Lilycove Centro Comercial - $3,000)"
       ]
     },
     {
@@ -269,7 +269,7 @@
       "pp": "15",
       "locations": [
         "Mauville City (del Wattson tras apagar el generador)",
-        "Mauville City (Mauville Game Corner - 4,000 Coins)"
+        "Mauville City (Mauville Sala de Juegos - 4,000 Coins)"
       ]
     },
     {
@@ -280,7 +280,7 @@
       "accuracy": "70",
       "pp": "10",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $5,500)"
+        "Lilycove City (Lilycove Centro Comercial - $5,500)"
       ]
     },
     {
@@ -327,7 +327,7 @@
       "pp": "10",
       "locations": [
         "Victory Road (B1F, noreste)",
-        "Mauville City (Game Corner - 3,500 Coins)"
+        "Mauville City (Sala de Juegos - 3,500 Coins)"
       ]
     },
     {
@@ -360,7 +360,7 @@
       "accuracy": "—",
       "pp": "15",
       "locations": [
-        "Mauville City (Mauville Game Corner - 1,500 Coins)"
+        "Mauville City (Mauville Sala de Juegos - 1,500 Coins)"
       ]
     },
     {
@@ -371,7 +371,7 @@
       "accuracy": "—",
       "pp": "20",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $3,000)"
+        "Lilycove City (Lilycove Centro Comercial - $3,000)"
       ]
     },
     {
@@ -393,7 +393,7 @@
       "accuracy": "100",
       "pp": "15",
       "locations": [
-        "Mauville City (Mauville Game Corner - 4,000 Coins)"
+        "Mauville City (Mauville Sala de Juegos - 4,000 Coins)"
       ]
     },
     {
@@ -426,7 +426,7 @@
       "accuracy": "85",
       "pp": "5",
       "locations": [
-        "Lilycove City (Lilycove Department Store - $5,500)"
+        "Lilycove City (Lilycove Centro Comercial - $5,500)"
       ]
     },
     {
