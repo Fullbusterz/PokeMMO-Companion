@@ -601,7 +601,8 @@
     "tiebreakNote": "Desempates: Buchholz (suma de puntos de tus rivales), luego enfrentamiento directo.",
     "roster": "Participantes ({{count}})",
     "waitingPlayers": "Esperando a que se apunten los jugadores…",
-    "minPlayers": "Necesitas al menos 2 jugadores para emparejar la primera ronda."
+    "minPlayers": "Necesitas al menos 2 jugadores para emparejar la primera ronda.",
+    "youLabel": "Tú"
   },
   "online": {
     "sectionTitle": "Torneo online",
@@ -688,6 +689,9 @@
     "explainer": "Fichas del torneo, sin ningún valor: es un juego de aciertos.",
     "enableLabel": "Apuestas con fichas",
     "enableHint": "Cada uno arranca con {{chips}} fichas y apuesta a los combates de los demás. Las fichas no valen nada, es solo un marcador de aciertos.",
-    "history": "Tus apuestas"
+    "history": "Tus apuestas",
+    "allIn": "Todo",
+    "atStakeLabel": "En juego",
+    "wouldReturnLabel": "Si aciertas"
   }
 }

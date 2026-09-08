@@ -18,6 +18,7 @@ import {
   roundHasRepeatedPairing,
 } from '@/lib/swissFormat';
 import { useOnlineOrganizer } from '@/lib/useOnlineOrganizer';
+import { transition } from '@/lib/webMotion';
 import { useTournamentStore } from '@/store/tournamentStore';
 import colors from '@/theme/colors';
 import type { Tournament } from '@/types/tournament';
@@ -127,20 +128,57 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
 
   return (
     <View>
-      <View className="mb-4 flex-row items-center justify-between">
-        <Text className="text-sm text-ink-300">
-          {t('swiss.roundOf', { current: Math.max(playedRounds, 1), total: config.totalRounds })} · Bo{config.bestOf}
-        </Text>
-        {online.isPublished && (
-          <Text className="text-xs text-ink-400">
-            {online.status === 'error'
-              ? t('online.syncError')
-              : online.status === 'synced' && online.lastSyncedAt
-                ? t('online.syncedAt', { time: new Date(online.lastSyncedAt).toLocaleTimeString() })
-                : t('online.syncing')}
-          </Text>
-        )}
-      </View>
+      {/* Status strip: where the event is, and whether the players are seeing
+          it. Both were loose lines of grey text before, which made the most
+          important state on the screen the least visible thing on it. */}
+      <Card skipEntrance className="mb-4 px-3 py-2.5">
+        <View className="flex-row items-center justify-between gap-3">
+          <View className="flex-row items-center gap-2">
+            <Text className="text-sm font-semibold text-ink-100">
+              {t('swiss.roundOf', { current: Math.max(playedRounds, 1), total: config.totalRounds })}
+            </Text>
+            <View className="rounded-full border border-ink-600 px-1.5 py-0.5">
+              <Text className="text-[10px] font-bold text-ink-300">Bo{config.bestOf}</Text>
+            </View>
+          </View>
+          {online.isPublished && (
+            <View className="flex-row items-center gap-1.5">
+              <View
+                className={`h-1.5 w-1.5 rounded-full ${
+                  online.status === 'error' ? 'bg-pokeRed' : online.status === 'synced' ? 'bg-status-progress' : 'bg-gold'
+                }`}
+                style={transition(['background-color'], 300)}
+              />
+              <Text className="text-[11px] text-ink-400">
+                {online.status === 'error'
+                  ? t('online.syncError')
+                  : online.status === 'synced' && online.lastSyncedAt
+                    ? t('online.syncedAt', { time: new Date(online.lastSyncedAt).toLocaleTimeString() })
+                    : t('online.syncing')}
+              </Text>
+            </View>
+          )}
+        </View>
+
+        {/* One pip per round: played, current, still to come. Reads the shape
+            of the whole event at a glance, which "Ronda 2 de 5" alone does
+            not. */}
+        <View className="mt-2.5 flex-row gap-1">
+          {Array.from({ length: config.totalRounds }, (_, i) => i + 1).map((round) => {
+            const isDone = round < playedRounds || (round === playedRounds && currentRoundComplete);
+            const isCurrent = round === playedRounds && !currentRoundComplete;
+            return (
+              <View
+                key={round}
+                className={`h-1 flex-1 rounded-full ${
+                  isDone ? 'bg-status-progress' : isCurrent ? 'bg-gold' : 'bg-ink-700'
+                }`}
+                style={transition(['background-color'], 300)}
+              />
+            );
+          })}
+        </View>
+      </Card>
 
       {championId && (
         <Card skipEntrance className="mb-4 border border-gold/40 bg-gold/10 px-3 py-3">

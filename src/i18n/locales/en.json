@@ -601,7 +601,8 @@
     "tiebreakNote": "Tiebreaks: Buchholz (sum of your opponents' points), then head-to-head.",
     "roster": "Players ({{count}})",
     "waitingPlayers": "Waiting for players to sign up…",
-    "minPlayers": "You need at least 2 players to pair the first round."
+    "minPlayers": "You need at least 2 players to pair the first round.",
+    "youLabel": "You"
   },
   "online": {
     "sectionTitle": "Online tournament",
@@ -688,6 +689,9 @@
     "explainer": "Tournament chips with no value of any kind — it's a prediction game.",
     "enableLabel": "Chip betting",
     "enableHint": "Everyone starts with {{chips}} chips and bets on other people's matches. Chips are worth nothing, they're just a scoreboard.",
-    "history": "Your bets"
+    "history": "Your bets",
+    "allIn": "All in",
+    "atStakeLabel": "At stake",
+    "wouldReturnLabel": "If it lands"
   }
 }
