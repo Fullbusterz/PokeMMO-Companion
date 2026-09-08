@@ -670,7 +670,10 @@
     "youInTournament": "You in this tournament",
     "organizerPhotoHint": "Join in as well to appear on the list with your photo (and bet, if betting is on).",
     "organizerJoin": "Join and add my photo",
-    "organizerPickSlot": "Pick your slot if you are playing, or enter a name if you only organize."
+    "organizerPickSlot": "Pick your slot if you are playing, or enter a name if you only organize.",
+    "organizerWhoAreYou": "Which one are you? Tap your name to add a photo and show up on the list.",
+    "organizerNotPlaying": "I'm not playing, just organizing",
+    "organizerConfirmSlot": "Join as %{name}"
   },
   "betting": {
     "title": "Betting",

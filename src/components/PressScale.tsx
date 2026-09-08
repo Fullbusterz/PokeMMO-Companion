@@ -1,29 +1,10 @@
-import type { ReactNode } from 'react';
-import { cssInterop } from 'nativewind';
+import { useState, type ReactNode } from 'react';
 import { Pressable, type PressableProps, type ViewStyle } from 'react-native';
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withSpring,
-  type AnimatedStyle,
-} from 'react-native-reanimated';
+import type { AnimatedStyle } from 'react-native-reanimated';
 
 import { isNative } from '@/lib/animation';
 import { selectHaptic, tapHaptic } from '@/lib/haptics';
-
-const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
-// Nativewind only auto-wires `className` -> `style` for components it
-// recognizes out of the box (View, Text, Pressable, Animated.View, ...) — a
-// freshly created Animated.createAnimatedComponent() result isn't one of
-// those, so without this it silently renders with zero Tailwind styles
-// applied (verified: every PressScale-based button rendered as an unstyled
-// box in the web preview until this was added).
-cssInterop(AnimatedPressable, { className: 'style' });
-
-// Snappy in, slightly slower out — reads as a deliberate press rather than a
-// toggle. Tuned by feel, not against a spec.
-const PRESS_IN_SPRING = { stiffness: 500, damping: 30 };
-const PRESS_OUT_SPRING = { stiffness: 300, damping: 20 };
+import { EASE } from '@/lib/webMotion';
 
 type PressScaleProps = Omit<PressableProps, 'style'> & {
   children: ReactNode;
@@ -33,7 +14,31 @@ type PressScaleProps = Omit<PressableProps, 'style'> & {
   style?: PressableProps['style'] | AnimatedStyle<ViewStyle>;
 };
 
-/** Shared press-feedback wrapper: every tappable surface in the app should compress slightly instead of just flipping color instantly. */
+/**
+ * Shared press-feedback wrapper: every tappable surface in the app compresses
+ * slightly instead of just flipping colour.
+ *
+ * Both platforms render a plain Pressable, for different reasons.
+ *
+ * NATIVE: reanimated >=4.1.1 + nativewind 4.x drops className-derived styles on
+ * Animated-wrapped components (upstream regression, see the 2026-07-17 entry in
+ * CLAUDE.md) — every PressScale surface rendered unstyled in the release APK.
+ * Correct beats animated, so native keeps its styles and loses the scale.
+ *
+ * WEB: reanimated's post-mount updates never reach the DOM in this project
+ * (see animation.ts), so the animated path here was dead code — the PWA, the
+ * build almost everybody actually uses, had no press feedback at all. A plain
+ * state change plus a CSS transition does reach the DOM, and it is cheaper:
+ * pressing in is quick, releasing eases back, which is what makes a tap feel
+ * answered rather than merely registered.
+ */
+// react-native-web waits 50ms before reporting a press start (its
+// DEFAULT_PRESS_DELAY_MS, meant to stop things flashing while you scroll). For
+// a press scale that is the wrong trade: the feedback should be under the
+// finger immediately, and a scroll cancels the press anyway. The prop is
+// react-native-web's own, so it is not in the react-native typings.
+const NO_PRESS_DELAY = { delayPressIn: 0 } as unknown as PressableProps;
+
 export function PressScale({
   children,
   scaleTo = 0.97,
@@ -44,24 +49,20 @@ export function PressScale({
   onPress,
   ...pressableProps
 }: PressScaleProps) {
-  const scale = useSharedValue(1);
-  const animatedStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }] }));
+  const [pressed, setPressed] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
-  // reanimated >=4.1.1 + nativewind 4.x drops className-derived styles on
-  // Animated-wrapped components ON NATIVE (upstream regression, see the
-  // 2026-07-17 entry in CLAUDE.md) — every PressScale surface rendered
-  // unstyled in the release APK. Until upstream fixes it, native renders a
-  // plain Pressable: no press-scale animation, but haptics and (crucially)
-  // Tailwind styles work. Web keeps the animated path, which is unaffected.
+  const handlePress: PressableProps['onPress'] = (event) => {
+    if (haptic === 'tap') tapHaptic();
+    else if (haptic === 'select') selectHaptic();
+    onPress?.(event);
+  };
+
   if (isNative) {
     return (
       <Pressable
         {...pressableProps}
-        onPress={(e) => {
-          if (haptic === 'tap') tapHaptic();
-          else if (haptic === 'select') selectHaptic();
-          onPress?.(e);
-        }}
+        onPress={handlePress}
         onPressIn={onPressIn}
         onPressOut={onPressOut}
         style={style as PressableProps['style']}
@@ -71,25 +72,43 @@ export function PressScale({
     );
   }
 
+  const idle = pressableProps.disabled;
+  const motion: ViewStyle = {
+    // Press wins over hover: a card that is being clicked should compress, not
+    // sit lifted. Hover is a one-pixel rise — enough to answer the cursor on a
+    // laptop, small enough that a list does not appear to wobble.
+    transform: [
+      { scale: pressed && !idle ? scaleTo : 1 },
+      { translateY: !pressed && hovered && !idle ? -1 : 0 },
+    ],
+    // Faster in than out: the compression should feel instant under the
+    // finger, the release should settle.
+    transitionProperty: 'transform',
+    transitionDuration: pressed ? '90ms' : '220ms',
+    transitionTimingFunction: EASE,
+  } as ViewStyle;
+
   return (
-    <AnimatedPressable
+    <Pressable
       {...pressableProps}
-      onPressIn={(e) => {
-        scale.value = withSpring(scaleTo, PRESS_IN_SPRING);
-        onPressIn?.(e);
+      {...NO_PRESS_DELAY}
+      onPressIn={(event) => {
+        setPressed(true);
+        onPressIn?.(event);
       }}
-      onPressOut={(e) => {
-        scale.value = withSpring(1, PRESS_OUT_SPRING);
-        onPressOut?.(e);
+      onPressOut={(event) => {
+        setPressed(false);
+        onPressOut?.(event);
       }}
-      onPress={(e) => {
-        if (haptic === 'tap') tapHaptic();
-        else if (haptic === 'select') selectHaptic();
-        onPress?.(e);
+      onHoverIn={() => setHovered(true)}
+      onHoverOut={() => {
+        setHovered(false);
+        setPressed(false);
       }}
-      style={[animatedStyle, style]}
+      onPress={handlePress}
+      style={[motion, style] as PressableProps['style']}
     >
       {children}
-    </AnimatedPressable>
+    </Pressable>
   );
 }

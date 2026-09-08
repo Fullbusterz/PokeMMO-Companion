@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, Text, TextInput, View } from 'react-native';
+import { Text, TextInput, View } from 'react-native';
 
 import { Avatar } from '@/components/Avatar';
 import { AvatarEditor } from '@/components/AvatarEditor';
@@ -11,6 +11,7 @@ import { Card } from '@/components/Card';
 import { Header } from '@/components/Header';
 import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
+import { TournamentSkeleton } from '@/components/Skeleton';
 import { SwissRound } from '@/components/SwissRound';
 import { SwissStandings } from '@/components/SwissStandings';
 import { t } from '@/i18n';
@@ -289,7 +290,7 @@ export default function JoinTournament() {
     return (
       <Screen>
         <Header title={t('online.joinTitle')} backHref="/torneos" />
-        <ActivityIndicator color={colors.pokeRed.DEFAULT} />
+        <TournamentSkeleton />
       </Screen>
     );
   }

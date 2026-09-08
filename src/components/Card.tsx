@@ -2,7 +2,8 @@ import type { ReactNode } from 'react';
 import { type ViewProps } from 'react-native';
 import Animated, { FadeInDown, type AnimatedProps } from 'react-native-reanimated';
 
-import { nativeOnly } from '@/lib/animation';
+import { Appear } from '@/components/Appear';
+import { isNative, nativeOnly } from '@/lib/animation';
 
 type CardProps = AnimatedProps<ViewProps> & {
   children: ReactNode;
@@ -21,6 +22,16 @@ export function Card({ children, className, index, skipEntrance, ...viewProps }:
       <Animated.View {...viewProps} className={baseClassName}>
         {children}
       </Animated.View>
+    );
+  }
+
+  // Web gets the same staggered entrance the native build has had all along,
+  // via CSS rather than reanimated (see Appear).
+  if (!isNative) {
+    return (
+      <Appear delay={(index ?? 0) * 55} className={baseClassName} {...(viewProps as object)}>
+        {children}
+      </Appear>
     );
   }
   return (

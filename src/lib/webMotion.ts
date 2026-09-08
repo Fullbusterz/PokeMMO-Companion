@@ -15,6 +15,16 @@ import { isNative } from './animation';
 /** Curve used across the app: quick out, gentle settle. */
 export const EASE = 'cubic-bezier(0.2, 0.8, 0.2, 1)';
 
+// Someone who has asked their system to reduce motion has asked every app on
+// it, including this one. Read once (the setting rarely changes mid-session)
+// and treated as "no transitions at all" rather than "shorter ones", because
+// the point of the setting is movement, not speed.
+export const prefersReducedMotion =
+  !isNative &&
+  typeof window !== 'undefined' &&
+  typeof window.matchMedia === 'function' &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 export type TransitionStyle = Record<string, string | number> | undefined;
 
 /**
@@ -24,7 +34,7 @@ export type TransitionStyle = Record<string, string | number> | undefined;
  *   style={transition(['background-color', 'border-color'])}
  */
 export function transition(properties: string[], durationMs = 180): TransitionStyle {
-  if (isNative) return undefined;
+  if (isNative || prefersReducedMotion) return undefined;
   return {
     transitionProperty: properties.join(', '),
     transitionDuration: `${durationMs}ms`,

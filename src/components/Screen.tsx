@@ -1,11 +1,12 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import type { ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { cssInterop } from 'nativewind';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ScrollView, View } from 'react-native';
 import Animated, { FadeIn } from 'react-native-reanimated';
 
-import { nativeOnly } from '@/lib/animation';
+import { isNative, nativeOnly } from '@/lib/animation';
+import { EASE, prefersReducedMotion } from '@/lib/webMotion';
 import colors from '@/theme/colors';
 
 const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
@@ -22,8 +23,35 @@ cssInterop(AnimatedScrollView, { className: 'style', contentContainerClassName: 
 // every screen at once because they all render through here.
 const CONTENT_MAX_WIDTH = 760;
 
+// Every screen fades and rises very slightly on arrival. On native that is
+// reanimated's FadeIn; on web reanimated's post-mount updates never reach the
+// DOM (see animation.ts), so it is a mounted-then-flipped style with a CSS
+// transition — the same trick as Appear, applied here so it reaches all ~20
+// screens at once instead of asking each to opt in. Deliberately quick and
+// small: this is the difference between a screen that arrives and one that is
+// abruptly just there, not an effect anyone should notice.
+function useScreenEntrance() {
+  const skip = isNative || prefersReducedMotion;
+  const [shown, setShown] = useState(skip);
+  useEffect(() => {
+    if (skip) return;
+    const timer = setTimeout(() => setShown(true), 16);
+    return () => clearTimeout(timer);
+  }, [skip]);
+
+  if (skip) return undefined;
+  return {
+    opacity: shown ? 1 : 0,
+    transform: [{ translateY: shown ? 0 : 6 }],
+    transitionProperty: 'opacity, transform',
+    transitionDuration: '260ms',
+    transitionTimingFunction: EASE,
+  } as const;
+}
+
 export function Screen({ children, scroll = true }: { children: ReactNode; scroll?: boolean }) {
   const Container = scroll ? AnimatedScrollView : Animated.View;
+  const entrance = useScreenEntrance();
   return (
     // The gradient is the outermost flex:1 element (not an absolute-fill
     // sibling) — an absolutely-positioned layer inside SafeAreaView broke
@@ -42,7 +70,7 @@ export function Screen({ children, scroll = true }: { children: ReactNode; scrol
               height. */}
           <View
             className={`w-full self-center ${scroll ? '' : 'flex-1'}`}
-            style={{ maxWidth: CONTENT_MAX_WIDTH }}
+            style={[{ maxWidth: CONTENT_MAX_WIDTH }, entrance]}
           >
             {children}
           </View>

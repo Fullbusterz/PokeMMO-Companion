@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Text, TextInput, View } from 'react-native';
 
+import { Avatar } from '@/components/Avatar';
 import { AvatarEditor } from '@/components/AvatarEditor';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
@@ -101,43 +102,54 @@ export function OrganizerIdentity({
       <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
         {t('online.youInTournament')}
       </Text>
-      {!open ? (
-        <>
-          <Text className="mb-2 text-xs text-ink-400">{t('online.organizerPhotoHint')}</Text>
-          <PressScale
-            haptic="tap"
-            scaleTo={0.98}
-            onPress={() => setOpen(true)}
-            className="rounded-lg border border-gold/40 px-3 py-2.5"
-            style={surfaceTransition()}
-          >
-            <Text className="text-center text-sm font-semibold text-gold">
-              {t('online.organizerJoin')}
-            </Text>
-          </PressScale>
-        </>
-      ) : (
-        <>
-          <Text className="mb-2 text-xs text-ink-400">{t('online.organizerPickSlot')}</Text>
-          {freeSlots.length > 0 && (
-            <View className="mb-3 flex-row flex-wrap gap-2">
-              {freeSlots.map((p) => (
-                <PressScale
-                  key={p.id}
-                  haptic="select"
-                  scaleTo={0.97}
-                  onPress={() => setSlotDraft((current) => (current === p.id ? null : p.id))}
-                  className={`rounded-lg border px-3 py-2 ${
-                    slotDraft === p.id ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
-                  }`}
-                  style={surfaceTransition()}
-                >
-                  <Text className="text-sm text-ink-100">{p.name}</Text>
-                </PressScale>
-              ))}
-            </View>
-          )}
+      {/* The roster is shown straight away instead of behind a button. The
+          organizer IS usually one of the names on that list, and hiding the
+          question behind "join in" made it read as something for other people:
+          the roster said "Respiros — not in yet" while Respiros was the person
+          holding the phone. One tap on your own name is the whole flow. */}
+      <Text className="mb-2 text-xs text-ink-400">
+        {freeSlots.length > 0 ? t('online.organizerWhoAreYou') : t('online.organizerPhotoHint')}
+      </Text>
 
+      {freeSlots.length > 0 && (
+        <View className="mb-3 flex-row flex-wrap gap-2">
+          {freeSlots.map((p) => (
+            <PressScale
+              key={p.id}
+              haptic="select"
+              scaleTo={0.97}
+              onPress={() => {
+                setSlotDraft((current) => (current === p.id ? null : p.id));
+                setOpen(true);
+              }}
+              className={`flex-row items-center gap-2 rounded-lg border px-3 py-2 ${
+                slotDraft === p.id ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
+              }`}
+              style={surfaceTransition()}
+            >
+              <Avatar name={p.name} size={22} tone={slotDraft === p.id ? 'winner' : 'neutral'} />
+              <Text className={`text-sm ${slotDraft === p.id ? 'font-semibold text-pokeRed' : 'text-ink-100'}`}>
+                {p.name}
+              </Text>
+            </PressScale>
+          ))}
+        </View>
+      )}
+
+      {!slotDraft && !open && (
+        <PressScale
+          haptic="tap"
+          scaleTo={0.98}
+          onPress={() => setOpen(true)}
+          className="rounded-lg border border-ink-600 px-3 py-2.5"
+          style={surfaceTransition()}
+        >
+          <Text className="text-center text-sm text-ink-300">{t('online.organizerNotPlaying')}</Text>
+        </PressScale>
+      )}
+
+      {(open || slotDraft) && (
+        <>
           {!slotDraft && (
             <TextInput
               value={nameDraft}
@@ -146,6 +158,7 @@ export function OrganizerIdentity({
               placeholderTextColor={colors.ink[400]}
               onSubmitEditing={() => void handleJoin()}
               returnKeyType="done"
+              autoFocus
               className="mb-3 rounded-xl border border-ink-600 bg-ink-800 px-4 py-3 text-base text-ink-100"
             />
           )}
@@ -156,9 +169,16 @@ export function OrganizerIdentity({
               disabled={state === 'sending' || (!slotDraft && !nameDraft.trim())}
               onPress={() => void handleJoin()}
             >
-              {t('online.enterButton')}
+              {slotDraft ? t('online.organizerConfirmSlot', { name: nameById.get(slotDraft) ?? '' }) : t('online.enterButton')}
             </Button>
-            <Button variant="secondary" className="flex-1" onPress={() => setOpen(false)}>
+            <Button
+              variant="secondary"
+              className="flex-1"
+              onPress={() => {
+                setOpen(false);
+                setSlotDraft(null);
+              }}
+            >
               {t('common.cancel')}
             </Button>
           </View>

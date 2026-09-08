@@ -670,7 +670,10 @@
     "youInTournament": "Tú en el torneo",
     "organizerPhotoHint": "Entra tú también para salir en la lista con tu foto (y apostar, si están activadas).",
     "organizerJoin": "Entrar y ponerme foto",
-    "organizerPickSlot": "Elige tu plaza si juegas, o pon un nombre si solo organizas."
+    "organizerPickSlot": "Elige tu plaza si juegas, o pon un nombre si solo organizas.",
+    "organizerWhoAreYou": "¿Cuál eres tú? Toca tu nombre para ponerte foto y salir en la lista.",
+    "organizerNotPlaying": "No juego, solo organizo",
+    "organizerConfirmSlot": "Entrar como %{name}"
   },
   "betting": {
     "title": "Apuestas",

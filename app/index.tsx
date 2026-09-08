@@ -2,14 +2,13 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Link, type Href } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
-import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
 
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { PokemonSprite } from '@/components/PokemonSprite';
+import { Enter } from '@/components/Enter';
 import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
-import { nativeOnly } from '@/lib/animation';
 import { getPokemonById } from '@/lib/pokedex';
 import { surfaceTransition } from '@/lib/webMotion';
 import { useShinyStore } from '@/store/shinyStore';
@@ -27,7 +26,7 @@ function ShinyWidget() {
   if (!pokemon) return null;
 
   return (
-    <Animated.View entering={nativeOnly(FadeInDown.delay(40).duration(320))} className="mb-4">
+    <Enter delay={40} className="mb-4">
       <Link href="/shinies" asChild>
         <PressScale
           scaleTo={0.98}
@@ -50,7 +49,7 @@ function ShinyWidget() {
       >
         <Ionicons name="add" size={18} color="white" />
       </PressScale>
-    </Animated.View>
+    </Enter>
   );
 }
 
@@ -90,10 +89,7 @@ function Waypoint({
   index: number;
 }) {
   return (
-    <Animated.View
-      entering={nativeOnly(FadeInDown.delay(80 + index * 80).duration(320).springify().damping(18))}
-      className="relative mb-3 pl-5"
-    >
+    <Enter delay={60 + index * 55} className="relative mb-3 pl-5">
       <View
         className="absolute rounded-full bg-pokeRed"
         style={{ left: 1, top: 22, width: 9, height: 9 }}
@@ -118,17 +114,14 @@ function Waypoint({
           <Ionicons name="chevron-forward" size={16} color={colors.ink[400]} />
         </PressScale>
       </Link>
-    </Animated.View>
+    </Enter>
   );
 }
 
 export default function Home() {
   return (
     <Screen>
-      <Animated.View
-        entering={nativeOnly(FadeInUp.duration(320))}
-        className="mb-6 mt-2 flex-row items-center justify-between gap-2"
-      >
+      <Enter className="mb-6 mt-2 flex-row items-center justify-between gap-2">
         {/* The title block has to be allowed to shrink. Without flex-1 the
             serif title claimed its full intrinsic width and pushed the
             language toggle clean off the screen: measured at 390px wide, the
@@ -153,7 +146,7 @@ export default function Home() {
         <View className="shrink-0">
           <LanguageToggle />
         </View>
-      </Animated.View>
+      </Enter>
 
       <ShinyWidget />
 
@@ -163,10 +156,7 @@ export default function Home() {
           style={{ left: 6, top: 8, bottom: 30, borderLeftWidth: 2, borderLeftColor: colors.gold.DEFAULT, borderStyle: 'dashed', opacity: 0.35 }}
         />
 
-        <Animated.View
-          entering={nativeOnly(FadeInDown.delay(80).duration(320).springify().damping(18))}
-          className="relative mb-3 pl-5"
-        >
+        <Enter delay={60} className="relative mb-3 pl-5">
           <View className="absolute rounded-full bg-pokeRed" style={{ left: 1, top: 22, width: 9, height: 9 }} />
           <Link href="/torneos" asChild>
             <PressScale
@@ -191,7 +181,7 @@ export default function Home() {
               </View>
             </PressScale>
           </Link>
-        </Animated.View>
+        </Enter>
 
         <Waypoint href="/pokedex" icon="book" iconColor={colors.type.grass} title={t('home.pokedexCard')} subtitle={t('home.pokedexCardSubtitle')} index={1} />
         <Waypoint href="/guia" icon="map" iconColor={colors.type.electric} title={t('home.guideCard')} subtitle={t('home.guideCardSubtitle')} index={2} />
