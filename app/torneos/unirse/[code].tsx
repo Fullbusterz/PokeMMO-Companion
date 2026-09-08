@@ -16,11 +16,13 @@ import { SwissRound } from '@/components/SwissRound';
 import { SwissStandings } from '@/components/SwissStandings';
 import { t } from '@/i18n';
 import { DEFAULT_STARTING_CHIPS, type Bet, type Viewer } from '@/lib/betting';
+import { confirmDestructive } from '@/lib/confirmDialog';
 import { successHaptic } from '@/lib/haptics';
 import {
   fetchOnlineTournament,
   claimParticipantSlot,
   joinAsViewer,
+  leaveTournament,
   normalizeJoinCode,
   placeBet,
   submitOnlineSignup,
@@ -301,8 +303,33 @@ export default function JoinTournament() {
   }
 
   async function forgetIdentity() {
+    if (!identity) return;
+    // Confirm first when there is something to lose: the server row carries the
+    // chips and the photo, and freeing the slot deletes it.
+    const warn = bettingOn
+      ? t('online.leaveIdentityConfirmBetting', { name: identity.name })
+      : t('online.leaveIdentityConfirm', { name: identity.name });
+    const ok = await confirmDestructive({
+      title: t('online.leaveIdentity'),
+      message: warn,
+      confirmLabel: t('online.leaveIdentityAction'),
+      cancelLabel: t('common.cancel'),
+    });
+    if (!ok) return;
+
+    // Release the slot server-side FIRST — clearing only the local credential
+    // is what left slots locked forever, with the app then telling the same
+    // person that every player was taken.
+    try {
+      await leaveTournament(code, identity);
+    } catch {
+      // Offline, or the row is already gone: the local credential still goes,
+      // which is what the person asked for.
+    }
     setIdentity(null);
+    setPendingName(null);
     await clearViewerIdentity(code);
+    void refresh();
   }
 
   if (loadState === 'loading' || !identityLoaded) {

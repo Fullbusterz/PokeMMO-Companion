@@ -656,7 +656,7 @@
     "yourNamePlaceholder": "Your name",
     "pickYourSlot": "Pick yourself from the list",
     "slotTaken": "Taken",
-    "noSlotsLeft": "Every player is already claimed. You can join as a spectator.",
+    "noSlotsLeft": "Every slot is claimed from another device. Whoever holds one can release it with “Not me”, and then it is yours to take. In the meantime you can join as a spectator.",
     "enterButton": "Enter",
     "waitingForOrganizer": "Signed up as {{name}}. Waiting for the organizer to add you…",
     "nameTaken": "That name is already taken in this tournament.",
@@ -677,7 +677,10 @@
     "organizerConfirmSlot": "Join as %{name}",
     "connectionLost": "No connection to the server. What you see may be out of date; it keeps retrying.",
     "yourTurnTitle": "⚔️ vs %{name}",
-    "reportsPendingTitle": "(%{count}) %{name}"
+    "reportsPendingTitle": "(%{count}) %{name}",
+    "leaveIdentityConfirm": "You will stop being %{name} and that slot will be free for another device. Sure?",
+    "leaveIdentityConfirmBetting": "You will stop being %{name} and the slot will be free. You will lose your chips and your photo for this tournament. Sure?",
+    "leaveIdentityAction": "Release the slot"
   },
   "betting": {
     "title": "Betting",

@@ -7,10 +7,11 @@ import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
 import { t } from '@/i18n';
+import { confirmDestructive } from '@/lib/confirmDialog';
 import { successHaptic } from '@/lib/haptics';
-import { joinAsViewer, type ViewerIdentity, type ViewerRow } from '@/lib/onlineTournament';
+import { joinAsViewer, leaveTournament, type ViewerIdentity, type ViewerRow } from '@/lib/onlineTournament';
 import { useAvatars } from '@/lib/useAvatars';
-import { loadViewerIdentity, saveViewerIdentity } from '@/lib/viewerIdentity';
+import { clearViewerIdentity, loadViewerIdentity, saveViewerIdentity } from '@/lib/viewerIdentity';
 import { surfaceTransition } from '@/lib/webMotion';
 import colors from '@/theme/colors';
 import type { Participant } from '@/types/tournament';
@@ -80,13 +81,45 @@ export function OrganizerIdentity({
 
   if (!loaded) return null;
 
+  async function handleLeave() {
+    if (!identity) return;
+    const ok = await confirmDestructive({
+      title: t('online.leaveIdentity'),
+      message: t('online.leaveIdentityConfirm', { name: identity.name }),
+      confirmLabel: t('online.leaveIdentityAction'),
+      cancelLabel: t('common.cancel'),
+    });
+    if (!ok) return;
+    try {
+      await leaveTournament(code, identity);
+    } catch {
+      // Already gone, or offline — clearing locally is still what was asked.
+    }
+    await clearViewerIdentity(code);
+    setIdentity(null);
+    setSlotDraft(null);
+    setOpen(false);
+    onChanged();
+  }
+
   if (isRegistered && identity) {
     return (
       <Card skipEntrance className="mb-3 px-3 py-3">
         <Text className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">
           {t('online.youInTournament')}
         </Text>
-        <Text className="mb-2 text-sm text-ink-100">{identity.name}</Text>
+        {/* Releasing the slot matters most here: the organizer usually claims
+            their own name from the laptop, and without this their phone could
+            never be that player — the join screen would tell them every slot
+            was taken. */}
+        <View className="mb-2 flex-row items-center justify-between gap-2">
+          <Text className="flex-1 text-sm text-ink-100" numberOfLines={1}>
+            {identity.name}
+          </Text>
+          <PressScale haptic="tap" onPress={() => void handleLeave()} className="px-2 py-1">
+            <Text className="text-xs font-semibold text-ink-400">{t('online.leaveIdentity')}</Text>
+          </PressScale>
+        </View>
         <AvatarEditor
           code={code}
           identity={identity}

@@ -412,6 +412,24 @@ export async function fetchAvatars(code: string, viewerIds: string[]): Promise<A
   );
 }
 
+/**
+ * Gives up this device's place in the tournament, freeing the roster slot for
+ * whoever claims it next — including the same person on a different phone.
+ *
+ * Without this, "not me" only forgot the local credential while the server row
+ * (and therefore the claim on that slot) lived on forever: the slot could never
+ * be taken again, by anybody, on any device. Deleting the row takes that
+ * viewer's bets and picture with it, so the caller warns first when there is
+ * betting in play.
+ */
+export async function leaveTournament(code: string, identity: ViewerIdentity): Promise<void> {
+  await callRpc<null>('leave_tournament', {
+    p_code: code,
+    p_viewer_id: identity.viewerId,
+    p_secret: identity.secret,
+  });
+}
+
 /** Sets your own picture; returns the new version. */
 export function setViewerAvatar(
   code: string,

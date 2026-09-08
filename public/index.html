@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- viewport-fit=cover is what makes env(safe-area-inset-*) report real
+         numbers, which is where react-native-safe-area-context gets the padding
+         that keeps content out from under a notch or the status bar. Without it
+         the insets are all zero and SafeAreaView pads nothing. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    />
     <title>%WEB_TITLE%</title>
     <link rel="manifest" href="/PokeMMO-Companion/manifest.json" />
     <meta name="theme-color" content="#0B1A1F" />
@@ -28,6 +35,37 @@
         height: 100%;
         flex: 1;
       }
+
+      /* Reported from a real phone: the top of the app was cut off, with the
+         header nowhere to be seen.
+         `height: 100%` resolves against the LARGE viewport on mobile Chrome —
+         the size the page would have if the address bar were hidden. So the app
+         is laid out taller than what you can actually see, and when the address
+         bar shows or retracts the visible window ends up offset inside it. The
+         body cannot scroll (by design, the ScrollView does that), so there is
+         no way to bring the missing part back.
+         The dynamic viewport unit is exactly "what is visible right now", and
+         --app-height is the same thing for browsers too old to have it. */
+      :root {
+        --app-height: 100%;
+      }
+      html,
+      body,
+      #root {
+        height: var(--app-height);
+      }
+      @supports (height: 100dvh) {
+        html,
+        body,
+        #root {
+          height: 100dvh;
+        }
+      }
+      /* No rubber-banding either: an overscroll bounce on a page that cannot
+         scroll just shifts everything and looks like the same bug. */
+      body {
+        overscroll-behavior: none;
+      }
     </style>
   </head>
 
@@ -39,6 +77,20 @@
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
     <script>
+      // Fallback for browsers without dynamic viewport units: keep --app-height
+      // pinned to the visible height. visualViewport is the one that accounts
+      // for the address bar and the on-screen keyboard.
+      (function () {
+        var setAppHeight = function () {
+          var h = (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+          if (h) document.documentElement.style.setProperty('--app-height', h + 'px');
+        };
+        setAppHeight();
+        window.addEventListener('resize', setAppHeight);
+        window.addEventListener('orientationchange', setAppHeight);
+        if (window.visualViewport) window.visualViewport.addEventListener('resize', setAppHeight);
+      })();
+
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
           navigator.serviceWorker

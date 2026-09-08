@@ -656,7 +656,7 @@
     "yourNamePlaceholder": "Tu nombre",
     "pickYourSlot": "Elígete de la lista",
     "slotTaken": "Ya ocupado",
-    "noSlotsLeft": "Todos los jugadores están ya cogidos. Puedes entrar como espectador.",
+    "noSlotsLeft": "Todas las plazas están cogidas desde otro dispositivo. Quien la tenga puede soltarla con “No soy yo”, y entonces podrás cogerla tú. Mientras tanto puedes entrar como espectador.",
     "enterButton": "Entrar",
     "waitingForOrganizer": "Apuntado como {{name}}. Esperando a que el organizador te añada…",
     "nameTaken": "Ese nombre ya está cogido en este torneo.",
@@ -677,7 +677,10 @@
     "organizerConfirmSlot": "Entrar como %{name}",
     "connectionLost": "Sin conexión con el servidor. Lo que ves puede estar desactualizado; se reintenta solo.",
     "yourTurnTitle": "⚔️ vs %{name}",
-    "reportsPendingTitle": "(%{count}) %{name}"
+    "reportsPendingTitle": "(%{count}) %{name}",
+    "leaveIdentityConfirm": "Dejarás de ser %{name} y esa plaza quedará libre para otro dispositivo. ¿Seguro?",
+    "leaveIdentityConfirmBetting": "Dejarás de ser %{name} y la plaza quedará libre. Perderás tus fichas y tu foto de este torneo. ¿Seguro?",
+    "leaveIdentityAction": "Soltar la plaza"
   },
   "betting": {
     "title": "Apuestas",
