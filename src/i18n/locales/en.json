@@ -692,6 +692,9 @@
     "history": "Your bets",
     "allIn": "All in",
     "atStakeLabel": "At stake",
-    "wouldReturnLabel": "If it lands"
+    "wouldReturnLabel": "If it lands",
+    "nobodyBettingYet": "Nobody has joined the betting yet.",
+    "joinAsOrganizer": "Join the betting myself",
+    "joinAsOrganizerHint": "Pick yourself from the list if you're playing, or enter a name to bet as a spectator."
   }
 }

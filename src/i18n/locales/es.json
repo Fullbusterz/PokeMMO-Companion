@@ -692,6 +692,9 @@
     "history": "Tus apuestas",
     "allIn": "Todo",
     "atStakeLabel": "En juego",
-    "wouldReturnLabel": "Si aciertas"
+    "wouldReturnLabel": "Si aciertas",
+    "nobodyBettingYet": "Todavía no ha entrado nadie a las apuestas.",
+    "joinAsOrganizer": "Entrar yo también a las apuestas",
+    "joinAsOrganizerHint": "Elígete de la lista si juegas, o ponte un nombre para apostar como espectador."
   }
 }

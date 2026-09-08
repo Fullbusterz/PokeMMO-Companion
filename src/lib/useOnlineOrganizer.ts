@@ -8,7 +8,9 @@ import {
   generateOrganizerSecret,
   mergeSignups,
   pushOnlineTournament,
+  type BetRow,
   type ReportRow,
+  type ViewerRow,
 } from './onlineTournament';
 import { isOnlineConfigured, ONLINE_POLL_MS } from './supabase';
 import { useTournamentStore } from '@/store/tournamentStore';
@@ -30,6 +32,11 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
 
   const [status, setStatus] = useState<OnlineStatus>('offline');
   const [reports, setReports] = useState<ReportRow[]>([]);
+  // The betting side of the event. Already part of every snapshot; the
+  // organizer's screen just never surfaced it, so the only way to see the chip
+  // standings was to open your own share link on another device.
+  const [viewers, setViewers] = useState<ViewerRow[]>([]);
+  const [bets, setBets] = useState<BetRow[]>([]);
   const [lastSyncedAt, setLastSyncedAt] = useState<string | null>(null);
 
   const online = tournament?.online;
@@ -105,6 +112,60 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
     [tournament, code, secret]
   );
 
+  // Lets a screen pull immediately after an action of its own (placing a bet,
+  // joining the betting) instead of waiting out the poll interval.
+  const refreshNow = useCallback(async () => {
+    if (!code) return;
+    try {
+      const snapshot = await fetchOnlineTournament(code);
+      if (!snapshot) return;
+      setViewers(snapshot.viewers);
+      setBets(snapshot.bets);
+      setLastSyncedAt(snapshot.updatedAt);
+    } catch {
+      setStatus('error');
+    }
+  }, [code]);
+
+  // Push as soon as the document actually changes, instead of waiting for the
+  // next poll. Pairing a round is the moment everyone is staring at their
+  // phone, and until the push lands the players cannot see the new round and
+  // nobody can bet on it — place_bet correctly refuses a match the server has
+  // never heard of. Watching the fingerprint rather than calling a pushNow()
+  // at each call site means every mutation path is covered automatically,
+  // including ones added later.
+  const fingerprint = tournament && code ? documentFingerprint(tournament) : null;
+  useEffect(() => {
+    if (!code || !secret || !fingerprint) return;
+    if (fingerprint === lastPushedRef.current) return;
+    let cancelled = false;
+
+    // Small debounce so a burst of edits (confirming four reports in a row)
+    // becomes one write rather than four.
+    const timer = setTimeout(async () => {
+      const lockHeldSince = pushStartedAtRef.current;
+      if (lockHeldSince !== null && Date.now() - lockHeldSince < PUSH_LOCK_STALE_MS) return;
+      pushStartedAtRef.current = Date.now();
+      try {
+        const toPush = useTournamentStore.getState().tournaments.find((t) => t.id === tournament?.id);
+        if (toPush) {
+          await pushOnlineTournament(code, secret, toPush);
+          lastPushedRef.current = documentFingerprint(toPush);
+          if (!cancelled) setStatus('synced');
+        }
+      } catch {
+        if (!cancelled) setStatus('error');
+      } finally {
+        pushStartedAtRef.current = null;
+      }
+    }, 400);
+
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [fingerprint, code, secret, tournament?.id]);
+
   // Poll + reconcile.
   useEffect(() => {
     if (!code || !secret || !tournament || !isOnlineConfigured()) return;
@@ -120,6 +181,8 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
         if (!local) return;
 
         setReports(actionableReports(local, snapshot.reports));
+        setViewers(snapshot.viewers);
+        setBets(snapshot.bets);
         setLastSyncedAt(snapshot.updatedAt);
 
         // Fold in anyone who signed up since the last poll. Only possible
@@ -170,7 +233,10 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
     code,
     status,
     reports,
+    viewers,
+    bets,
     lastSyncedAt,
+    refresh: refreshNow,
     publish,
     confirmReport,
     rejectReport,

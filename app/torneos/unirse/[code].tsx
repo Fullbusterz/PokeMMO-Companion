@@ -1,4 +1,3 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Text, TextInput, View } from 'react-native';
@@ -27,17 +26,16 @@ import {
   type ViewerRow,
 } from '@/lib/onlineTournament';
 import { isOnlineConfigured, ONLINE_POLL_MS, SupabaseError } from '@/lib/supabase';
+import {
+  clearViewerIdentity,
+  loadPendingSignupName,
+  loadViewerIdentity,
+  savePendingSignupName,
+  saveViewerIdentity,
+} from '@/lib/viewerIdentity';
 import { computeSwissStandings, getTotalSwissRounds, matchesOfRound } from '@/lib/swissFormat';
 import colors from '@/theme/colors';
 import type { Match, MatchScore, Tournament } from '@/types/tournament';
-
-// The device's credential for this tournament. It is what proves "I am Ana"
-// when reporting a result or placing a bet, so unlike the old name-only
-// preference it must survive a reload — losing it means losing your chips.
-const identityKey = (code: string) => `pokemmo-join-identity-v2:${code}`;
-// Set while waiting for the organizer to fold a sign-up into the roster; once
-// the name appears there, the device upgrades itself to a full player viewer.
-const pendingKey = (code: string) => `pokemmo-join-pending:${code}`;
 
 type EntryMode = 'player' | 'spectator';
 
@@ -66,18 +64,11 @@ export default function JoinTournament() {
 
   useEffect(() => {
     if (!code) return;
-    Promise.all([AsyncStorage.getItem(identityKey(code)), AsyncStorage.getItem(pendingKey(code))])
+    Promise.all([loadViewerIdentity(code), loadPendingSignupName(code)])
       .then(([stored, pending]) => {
-        if (stored) {
-          try {
-            setIdentity(JSON.parse(stored) as ViewerIdentity);
-          } catch {
-            // Corrupted entry: fall through and let them join again.
-          }
-        }
+        if (stored) setIdentity(stored);
         if (pending) setPendingName(pending);
       })
-      .catch(() => undefined)
       .finally(() => setIdentityLoaded(true));
   }, [code]);
 
@@ -114,8 +105,7 @@ export default function JoinTournament() {
     async (next: ViewerIdentity) => {
       setIdentity(next);
       setPendingName(null);
-      await AsyncStorage.setItem(identityKey(code), JSON.stringify(next)).catch(() => undefined);
-      await AsyncStorage.removeItem(pendingKey(code)).catch(() => undefined);
+      await saveViewerIdentity(code, next);
     },
     [code]
   );
@@ -205,7 +195,7 @@ export default function JoinTournament() {
           return;
         }
         setPendingName(name);
-        await AsyncStorage.setItem(pendingKey(code), name).catch(() => undefined);
+        await savePendingSignupName(code, name);
         setJoinState('idle');
         successHaptic();
         void refresh();
@@ -259,7 +249,7 @@ export default function JoinTournament() {
 
   async function forgetIdentity() {
     setIdentity(null);
-    await AsyncStorage.removeItem(identityKey(code)).catch(() => undefined);
+    await clearViewerIdentity(code);
   }
 
   if (loadState === 'loading' || !identityLoaded) {

@@ -6,6 +6,7 @@ import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
 import { SwissRound, type ResultPick } from '@/components/SwissRound';
+import { OrganizerBetting } from '@/components/OrganizerBetting';
 import { SwissStandings } from '@/components/SwissStandings';
 import { t } from '@/i18n';
 import { successHaptic } from '@/lib/haptics';
@@ -292,6 +293,22 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
         <Button variant="secondary" className="mb-6" onPress={handleAddRound}>
           {t('swiss.addRound')}
         </Button>
+      )}
+
+      {/* Betting, for the one person at the table who couldn't see it. Only
+          once the event is published and has a round on the table — before
+          that there is nothing to bet on. */}
+      {tournament.betting?.enabled && online.isPublished && online.code && playedRounds > 0 && (
+        <OrganizerBetting
+          code={online.code}
+          matches={tournament.matches}
+          participants={tournament.participants}
+          viewerRows={online.viewers}
+          betRows={online.bets}
+          startingChips={tournament.betting.startingChips}
+          nameById={nameById}
+          onChanged={() => void online.refresh()}
+        />
       )}
 
       {/* Online section last: it's set up once and then only consulted to
