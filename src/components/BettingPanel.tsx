@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Text, View } from 'react-native';
 
+import { Avatar } from '@/components/Avatar';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
@@ -221,6 +222,7 @@ export function BettingPanel({
   onPlace,
   isPlacing,
   error,
+  avatarByViewer,
 }: {
   matches: Match[];
   viewer: Viewer;
@@ -231,6 +233,8 @@ export function BettingPanel({
   onPlace: (matchId: string, pick: string, amount: number) => void;
   isPlacing: boolean;
   error: boolean;
+  /** Viewer id -> picture, for the people who uploaded one. */
+  avatarByViewer?: Map<string, string>;
 }) {
   const standings = useMemo(
     () => chipStandings(viewers, bets, matches, startingChips),
@@ -346,6 +350,14 @@ export function BettingPanel({
               <Text className={`w-5 text-xs font-bold ${index === 0 ? 'text-gold' : 'text-ink-400'}`}>
                 {index + 1}
               </Text>
+              <View className="mr-2">
+                <Avatar
+                  name={viewerNameById.get(standing.viewerId) ?? '?'}
+                  uri={avatarByViewer?.get(standing.viewerId)}
+                  size={24}
+                  tone={index === 0 ? 'gold' : 'neutral'}
+                />
+              </View>
               <Text
                 className={`flex-1 text-sm ${isMe ? 'font-bold text-pokeRed' : 'text-ink-100'}`}
                 numberOfLines={1}

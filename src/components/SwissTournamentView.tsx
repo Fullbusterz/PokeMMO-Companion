@@ -10,6 +10,7 @@ import { OrganizerBetting } from '@/components/OrganizerBetting';
 import { SwissStandings } from '@/components/SwissStandings';
 import { t } from '@/i18n';
 import { successHaptic } from '@/lib/haptics';
+import { useAvatars } from '@/lib/useAvatars';
 import { joinUrl } from '@/lib/onlineTournament';
 import {
   computeSwissStandings,
@@ -32,6 +33,17 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
   const removeSwissParticipant = useTournamentStore((s) => s.removeSwissParticipant);
 
   const online = useOnlineOrganizer(tournament);
+  // The organizer sees the same faces on the match cards as everyone else.
+  // Keyed by roster slot, so only people who claimed one appear.
+  const avatarByViewer = useAvatars(online.code, online.viewers);
+  const avatarByParticipant = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const row of online.viewers) {
+      const image = row.participant_id ? avatarByViewer.get(row.id) : undefined;
+      if (row.participant_id && image) map.set(row.participant_id, image);
+    }
+    return map;
+  }, [online.viewers, avatarByViewer]);
   const [participantDraft, setParticipantDraft] = useState('');
   const [rosterError, setRosterError] = useState<string | null>(null);
   const [linkCopied, setLinkCopied] = useState(false);
@@ -285,6 +297,7 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
             onPick={handlePick}
             canEdit={round === playedRounds}
             pendingLabelByMatchId={pendingLabelByMatchId}
+            avatarByParticipant={avatarByParticipant}
           />
         </View>
       ))}

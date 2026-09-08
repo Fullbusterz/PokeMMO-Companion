@@ -696,5 +696,15 @@
     "nobodyBettingYet": "Nobody has joined the betting yet.",
     "joinAsOrganizer": "Join the betting myself",
     "joinAsOrganizerHint": "Pick yourself from the list if you're playing, or enter a name to bet as a spectator."
+  },
+  "avatar": {
+    "add": "Add photo",
+    "change": "Change photo",
+    "remove": "Remove",
+    "working": "Uploading…",
+    "error": "Could not save the photo.",
+    "tooBig": "That image is too large. Try another one.",
+    "unavailable": "Uploading a photo works from the web link. Not in this installed build yet.",
+    "hint": "Everyone sees your photo next to your name."
   }
 }

@@ -2,6 +2,7 @@ import { useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Text, TextInput, View } from 'react-native';
 
+import { AvatarEditor } from '@/components/AvatarEditor';
 import { BettingPanel } from '@/components/BettingPanel';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
@@ -25,6 +26,7 @@ import {
   type ViewerIdentity,
   type ViewerRow,
 } from '@/lib/onlineTournament';
+import { useAvatars } from '@/lib/useAvatars';
 import { isOnlineConfigured, ONLINE_POLL_MS, SupabaseError } from '@/lib/supabase';
 import {
   clearViewerIdentity,
@@ -141,6 +143,18 @@ export default function JoinTournament() {
     () => viewerRows.map((v) => ({ id: v.id, name: v.name, participantId: v.participant_id })),
     [viewerRows]
   );
+  const avatarByViewer = useAvatars(code, viewerRows);
+  // The match cards are keyed by roster slot, not by viewer, so the pictures
+  // have to be re-keyed through whoever claimed each slot. Spectators simply
+  // never appear in this map.
+  const avatarByParticipant = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const row of viewerRows) {
+      const image = row.participant_id ? avatarByViewer.get(row.id) : undefined;
+      if (row.participant_id && image) map.set(row.participant_id, image);
+    }
+    return map;
+  }, [viewerRows, avatarByViewer]);
   const bets: Bet[] = useMemo(
     () =>
       betRows.map((b) => ({
@@ -376,16 +390,27 @@ export default function JoinTournament() {
       )}
 
       {identity && (
-        <View className="mb-4 flex-row items-center justify-between">
-          <Text className="flex-1 text-sm text-ink-300" numberOfLines={1}>
-            {identity.participantId
-              ? t('online.youAre', { name: identity.name })
-              : t('online.youAreSpectator', { name: identity.name })}
-          </Text>
-          <PressScale haptic="tap" onPress={() => void forgetIdentity()} className="px-2 py-1">
-            <Text className="text-xs font-semibold text-ink-400">{t('online.leaveIdentity')}</Text>
-          </PressScale>
-        </View>
+        <Card skipEntrance className="mb-4 px-3 py-3">
+          <View className="flex-row items-center justify-between">
+            <Text className="flex-1 text-sm text-ink-300" numberOfLines={1}>
+              {identity.participantId
+                ? t('online.youAre', { name: identity.name })
+                : t('online.youAreSpectator', { name: identity.name })}
+            </Text>
+            <PressScale haptic="tap" onPress={() => void forgetIdentity()} className="px-2 py-1">
+              <Text className="text-xs font-semibold text-ink-400">{t('online.leaveIdentity')}</Text>
+            </PressScale>
+          </View>
+          <View className="mt-3">
+            <AvatarEditor
+              code={code}
+              identity={identity}
+              currentUri={avatarByViewer.get(identity.viewerId)}
+              onChanged={() => void refresh()}
+            />
+            <Text className="mt-2 text-xs text-ink-400">{t('avatar.hint')}</Text>
+          </View>
+        </Card>
       )}
 
       {/* Your own match: the only one you can report on. */}
@@ -474,6 +499,7 @@ export default function JoinTournament() {
           bets={bets}
           startingChips={startingChips}
           nameById={nameById}
+          avatarByViewer={avatarByViewer}
           onPlace={(matchId, pick, amount) => void handlePlaceBet(matchId, pick, amount)}
           isPlacing={betState === 'sending'}
           error={betState === 'error'}
@@ -492,6 +518,7 @@ export default function JoinTournament() {
           nameById={nameById}
           bestOf={config.bestOf}
           highlightId={identity?.participantId ?? null}
+          avatarByParticipant={avatarByParticipant}
         />
       )}
 

@@ -225,6 +225,11 @@ export type ViewerRow = {
   name: string;
   participant_id: string | null;
   created_at: string;
+  // Bumped every time this person changes their picture. Optional because a
+  // build talking to a database where avatars.sql has not been run yet simply
+  // gets rows without the column — which reads as "nobody has a picture"
+  // rather than as an error.
+  avatar_version?: number | null;
 };
 
 export type BetRow = {
@@ -302,5 +307,54 @@ export async function placeBet(
     p_match_id: bet.matchId,
     p_pick: bet.pick,
     p_amount: bet.amount,
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Profile pictures
+// ---------------------------------------------------------------------------
+//
+// Images live in their own table on purpose. The snapshot every device pulls
+// every 6 seconds already carries one row per viewer; putting the picture in
+// there would re-download everybody's face ten times a minute. Instead the
+// viewer row carries a version number, and a device fetches an image once and
+// keeps it until that number moves.
+
+export type AvatarRow = {
+  viewer_id: string;
+  image: string;
+  version: number;
+};
+
+/** Fetches the pictures of specific viewers. Returns [] for an empty request. */
+export async function fetchAvatars(code: string, viewerIds: string[]): Promise<AvatarRow[]> {
+  if (viewerIds.length === 0) return [];
+  const list = viewerIds.join(',');
+  return selectRows<AvatarRow>(
+    'tournament_avatars',
+    `code=eq.${code}&viewer_id=in.(${list})&select=viewer_id,image,version`
+  );
+}
+
+/** Sets your own picture; returns the new version. */
+export function setViewerAvatar(
+  code: string,
+  identity: ViewerIdentity,
+  image: string
+): Promise<number> {
+  return callRpc<number>('set_viewer_avatar', {
+    p_code: code,
+    p_viewer_id: identity.viewerId,
+    p_secret: identity.secret,
+    p_image: image,
+  });
+}
+
+/** Removes your own picture; returns the version everyone should now see. */
+export function clearViewerAvatar(code: string, identity: ViewerIdentity): Promise<number> {
+  return callRpc<number>('clear_viewer_avatar', {
+    p_code: code,
+    p_viewer_id: identity.viewerId,
+    p_secret: identity.secret,
   });
 }

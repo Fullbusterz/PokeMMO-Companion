@@ -1,6 +1,7 @@
 import { memo, useState } from 'react';
 import { Text, View } from 'react-native';
 
+import { Avatar } from '@/components/Avatar';
 import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
 import { t } from '@/i18n';
@@ -8,32 +9,6 @@ import { surfaceTransition, transition } from '@/lib/webMotion';
 import type { Match, MatchScore } from '@/types/tournament';
 
 export type ResultPick = (matchId: string, winnerId: string, score?: MatchScore) => void;
-
-// A name alone left a lot of empty panel, and an empty panel reads as
-// unfinished rather than spacious. An initial disc costs nothing, fills the
-// space with something that belongs to the player, and gives the eye an anchor
-// when scanning a round for your own name.
-function Initial({ name, tone }: { name: string; tone: 'winner' | 'loser' | 'neutral' }) {
-  return (
-    <View
-      className={`h-7 w-7 items-center justify-center rounded-full border ${
-        tone === 'winner'
-          ? 'border-pokeRed/60 bg-pokeRed/20'
-          : tone === 'loser'
-            ? 'border-ink-700 bg-transparent'
-            : 'border-ink-600 bg-ink-800'
-      }`}
-    >
-      <Text
-        className={`text-xs font-bold ${
-          tone === 'winner' ? 'text-pokeRed' : tone === 'loser' ? 'text-ink-400' : 'text-ink-300'
-        }`}
-      >
-        {name.trim().charAt(0).toUpperCase() || '?'}
-      </Text>
-    </View>
-  );
-}
 
 // Two players facing each other across a VS, rather than the stacked full-width
 // rows this used to be. Stacked rows read as a list of names — on a wide window
@@ -50,6 +25,7 @@ const SwissMatchCard = memo(function SwissMatchCard({
   canEdit,
   highlightId,
   pendingLabel,
+  avatarByParticipant,
 }: {
   match: Match;
   index: number;
@@ -59,6 +35,7 @@ const SwissMatchCard = memo(function SwissMatchCard({
   canEdit: boolean;
   highlightId?: string | null;
   pendingLabel?: string;
+  avatarByParticipant?: Map<string, string>;
 }) {
   const [pendingWinnerId, setPendingWinnerId] = useState<string | null>(null);
 
@@ -122,7 +99,11 @@ const SwissMatchCard = memo(function SwissMatchCard({
         style={surfaceTransition()}
       >
         <View className={`flex-row items-center gap-2 ${align === 'right' ? 'flex-row-reverse' : ''}`}>
-          <Initial name={name ?? '?'} tone={isWinner ? 'winner' : isLoser ? 'loser' : 'neutral'} />
+          <Avatar
+            name={name ?? '?'}
+            uri={playerId ? avatarByParticipant?.get(playerId) : null}
+            tone={isWinner ? 'winner' : isLoser ? 'loser' : 'neutral'}
+          />
           <Text
             className={`flex-1 text-base ${align === 'right' ? 'text-right' : ''} ${
               isWinner ? 'font-bold text-pokeRed' : isLoser ? 'text-ink-400' : 'font-semibold text-ink-100'
@@ -199,6 +180,7 @@ export function SwissRound({
   canEdit = false,
   highlightId,
   pendingLabelByMatchId,
+  avatarByParticipant,
 }: {
   round: number;
   totalRounds: number;
@@ -209,6 +191,8 @@ export function SwissRound({
   canEdit?: boolean;
   highlightId?: string | null;
   pendingLabelByMatchId?: Map<string, string>;
+  /** Roster slot id -> picture, for the people who uploaded one. */
+  avatarByParticipant?: Map<string, string>;
 }) {
   const playable = matches.filter((m) => !m.isBye);
   const decided = playable.filter((m) => m.winnerId).length;
@@ -246,6 +230,7 @@ export function SwissRound({
           canEdit={canEdit}
           highlightId={highlightId}
           pendingLabel={pendingLabelByMatchId?.get(match.id)}
+          avatarByParticipant={avatarByParticipant}
         />
       ))}
     </View>

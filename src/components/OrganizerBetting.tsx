@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Text, TextInput, View } from 'react-native';
 
+import { Avatar } from '@/components/Avatar';
 import { BettingPanel } from '@/components/BettingPanel';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
@@ -9,6 +10,7 @@ import { t } from '@/i18n';
 import { chipStandings, type Bet, type Viewer } from '@/lib/betting';
 import { successHaptic } from '@/lib/haptics';
 import { joinAsViewer, placeBet, type BetRow, type ViewerIdentity, type ViewerRow } from '@/lib/onlineTournament';
+import { useAvatars } from '@/lib/useAvatars';
 import { loadViewerIdentity, saveViewerIdentity } from '@/lib/viewerIdentity';
 import { surfaceTransition, transition } from '@/lib/webMotion';
 import colors from '@/theme/colors';
@@ -76,6 +78,7 @@ export function OrganizerBetting({
     [viewers, bets, matches, startingChips]
   );
   const viewerNameById = useMemo(() => new Map(viewers.map((v) => [v.id, v.name])), [viewers]);
+  const avatarByViewer = useAvatars(code, viewerRows);
   const claimedSlots = useMemo(
     () => new Set(viewerRows.map((v) => v.participant_id).filter(Boolean) as string[]),
     [viewerRows]
@@ -129,6 +132,7 @@ export function OrganizerBetting({
         bets={bets}
         startingChips={startingChips}
         nameById={nameById}
+        avatarByViewer={avatarByViewer}
         onPlace={(matchId, pick, amount) => void handlePlaceBet(matchId, pick, amount)}
         isPlacing={betState === 'sending'}
         error={betState === 'error'}
@@ -160,6 +164,14 @@ export function OrganizerBetting({
               <Text className={`w-5 text-xs font-bold ${index === 0 ? 'text-gold' : 'text-ink-400'}`}>
                 {index + 1}
               </Text>
+              <View className="mr-2">
+                <Avatar
+                  name={viewerNameById.get(standing.viewerId) ?? '?'}
+                  uri={avatarByViewer.get(standing.viewerId)}
+                  size={24}
+                  tone={index === 0 ? 'gold' : 'neutral'}
+                />
+              </View>
               <Text className="flex-1 text-sm text-ink-100" numberOfLines={1}>
                 {viewerNameById.get(standing.viewerId) ?? '?'}
               </Text>
