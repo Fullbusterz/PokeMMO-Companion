@@ -211,6 +211,62 @@ export function actionableReports(tournament: Tournament, reports: ReportRow[]):
   });
 }
 
+/** A result both players reported the same way, ready to apply without asking. */
+export type AgreedResult = {
+  matchId: string;
+  winnerId: string;
+  score?: MatchScore;
+  /** Both report rows, to be consumed in the same push that applies the result. */
+  reportIds: string[];
+};
+
+/**
+ * Finds the matches where BOTH players have reported and they agree.
+ *
+ * Confirming every result by hand is the organizer's whole job during an
+ * event, and most of it is rubber-stamping two people who already agree about
+ * who won. When they agree there is nothing to arbitrate, so the result is
+ * applied on its own; when they do not, it still goes to the organizer exactly
+ * as before.
+ *
+ * Deliberately strict about what counts as agreement:
+ *  * both reports must come from the two players of that match, and not twice
+ *    from the same person (re-reporting replaces your own row server-side, but
+ *    this does not rely on that);
+ *  * the winner must match;
+ *  * in Bo3, the SCORE must match too. Same winner with different games is a
+ *    disagreement about the detail that feeds the tiebreakers, and guessing
+ *    which one is right is exactly the judgement call the organizer is for.
+ */
+export function agreedReports(tournament: Tournament, reports: ReportRow[]): AgreedResult[] {
+  const byMatch = new Map<string, ReportRow[]>();
+  for (const report of actionableReports(tournament, reports)) {
+    const list = byMatch.get(report.match_id);
+    if (list) list.push(report);
+    else byMatch.set(report.match_id, [report]);
+  }
+
+  const agreed: AgreedResult[] = [];
+  for (const [matchId, rows] of byMatch) {
+    const reporters = new Set(rows.map((r) => r.reported_by));
+    if (reporters.size < 2) continue;
+
+    const winners = new Set(rows.map((r) => r.winner_id));
+    if (winners.size !== 1) continue;
+
+    const scores = new Set(rows.map((r) => (r.score ? `${r.score.p1}-${r.score.p2}` : 'none')));
+    if (scores.size !== 1) continue;
+
+    agreed.push({
+      matchId,
+      winnerId: rows[0].winner_id,
+      score: rows[0].score ?? undefined,
+      reportIds: rows.map((r) => r.id),
+    });
+  }
+  return agreed;
+}
+
 // ---------------------------------------------------------------------------
 // Viewers (identity) and betting
 // ---------------------------------------------------------------------------

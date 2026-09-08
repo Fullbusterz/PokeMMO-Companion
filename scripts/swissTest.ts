@@ -16,6 +16,7 @@ import {
   setSwissResult,
   WIN_POINTS,
 } from '../src/lib/swissFormat';
+import { agreedReports } from '../src/lib/onlineTournament';
 import { parseImportedTournament } from '../src/lib/tournamentValidation';
 import type { Match, Participant } from '../src/types/tournament';
 
@@ -257,6 +258,93 @@ check(!isValidScore({ p1: 1.5, p2: 2 }, 3), 'fractional games are not valid');
     parseImportedTournament({ ...fresh, swiss: undefined }) === null,
     'a Swiss tournament with no config must be rejected'
   );
+  console.log('  done');
+}
+
+// ---------------------------------------------------------------------------
+// Auto-confirmation: a result both players reported the same way needs no
+// organizer. The rules that keep that safe get tested rather than trusted.
+{
+  console.log('\nAuto-confirmation of agreed reports');
+
+  const tournament = {
+    id: 'auto1',
+    name: 'Auto',
+    createdAt: new Date().toISOString(),
+    participants: [
+      { id: 'a', name: 'Ana' },
+      { id: 'b', name: 'Bea' },
+      { id: 'c', name: 'Cesc' },
+    ],
+    matches: [
+      { id: 'm1', round: 1, slot: 0, player1Id: 'a', player2Id: 'b', winnerId: null, isBye: false },
+      { id: 'm2', round: 1, slot: 1, player1Id: 'c', player2Id: null, winnerId: 'c', isBye: true },
+    ],
+    status: 'in_progress' as const,
+    history: [],
+    format: 'swiss' as const,
+    swiss: { totalRounds: 3, bestOf: 1 as const },
+  };
+
+  const report = (
+    id: string,
+    reportedBy: string,
+    winnerId: string,
+    score?: { p1: number; p2: number }
+  ) => ({
+    id,
+    code: 'X',
+    match_id: 'm1',
+    reported_by: reportedBy,
+    winner_id: winnerId,
+    score: score ?? null,
+    created_at: new Date().toISOString(),
+  });
+
+  check(
+    agreedReports(tournament, [report('r1', 'a', 'b')]).length === 0,
+    'one player alone is not agreement'
+  );
+  check(
+    agreedReports(tournament, [report('r1', 'a', 'b'), report('r2', 'a', 'b')]).length === 0,
+    'the same player twice is not agreement'
+  );
+  check(
+    agreedReports(tournament, [report('r1', 'a', 'b'), report('r2', 'b', 'a')]).length === 0,
+    'two players naming different winners is not agreement'
+  );
+
+  const both = agreedReports(tournament, [report('r1', 'a', 'b'), report('r2', 'b', 'b')]);
+  check(both.length === 1 && both[0].winnerId === 'b', 'both players naming the same winner agrees');
+  check(
+    both.length === 1 && both[0].reportIds.length === 2,
+    'agreement consumes both report rows, not just one'
+  );
+
+  check(
+    agreedReports(tournament, [
+      report('r1', 'a', 'b', { p1: 0, p2: 2 }),
+      report('r2', 'b', 'b', { p1: 1, p2: 2 }),
+    ]).length === 0,
+    'same winner but different Bo3 score is left to the organizer'
+  );
+  check(
+    agreedReports(tournament, [
+      report('r1', 'a', 'b', { p1: 0, p2: 2 }),
+      report('r2', 'b', 'b', { p1: 0, p2: 2 }),
+    ]).length === 1,
+    'same winner and same score agrees'
+  );
+
+  const decided = {
+    ...tournament,
+    matches: tournament.matches.map((m) => (m.id === 'm1' ? { ...m, winnerId: 'a' } : m)),
+  };
+  check(
+    agreedReports(decided, [report('r1', 'a', 'b'), report('r2', 'b', 'b')]).length === 0,
+    'a match the organizer already decided is never re-applied'
+  );
+
   console.log('  done');
 }
 

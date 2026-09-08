@@ -31,6 +31,7 @@ import {
   type ViewerRow,
 } from '@/lib/onlineTournament';
 import { useAvatars } from '@/lib/useAvatars';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 import { surfaceTransition } from '@/lib/webMotion';
 import { isOnlineConfigured, ONLINE_POLL_MS, SupabaseError } from '@/lib/supabase';
 import {
@@ -55,6 +56,12 @@ export default function JoinTournament() {
   const [viewerRows, setViewerRows] = useState<ViewerRow[]>([]);
   const [betRows, setBetRows] = useState<BetRow[]>([]);
   const [loadState, setLoadState] = useState<'loading' | 'ready' | 'notFound' | 'error'>('loading');
+  // A dropped poll deliberately leaves the last snapshot on screen, which is
+  // right — but until now it did so in total silence, so at a venue with bad
+  // wifi a player could sit reading a stale round believing it was live. The
+  // organizer's screen has had a sync indicator all along; this is the same
+  // honesty for everyone else.
+  const [connectionLost, setConnectionLost] = useState(false);
 
   const [identity, setIdentity] = useState<ViewerIdentity | null>(null);
   const [identityLoaded, setIdentityLoaded] = useState(false);
@@ -95,10 +102,12 @@ export default function JoinTournament() {
       setViewerRows(snapshot.viewers);
       setBetRows(snapshot.bets);
       setLoadState('ready');
+      setConnectionLost(false);
     } catch {
       // Keep whatever is already on screen: a dropped poll shouldn't blank out
       // the standings someone is reading.
       setLoadState((current) => (current === 'loading' ? 'error' : current));
+      setConnectionLost(true);
     }
   }, [code]);
 
@@ -198,6 +207,16 @@ export default function JoinTournament() {
       (m) => m.player1Id === identity.participantId || m.player2Id === identity.participantId
     );
   }, [currentRoundMatches, identity?.participantId]);
+
+  // The tab says whose match is on as soon as the organizer pairs the round —
+  // the one way this app can reach someone who is not looking at it, without
+  // breaking its own rule against notifications.
+  const opponentName = useMemo(() => {
+    if (!myMatch || myMatch.isBye || myMatch.winnerId || !identity?.participantId) return null;
+    const rivalId = myMatch.player1Id === identity.participantId ? myMatch.player2Id : myMatch.player1Id;
+    return rivalId ? (nameById.get(rivalId) ?? null) : null;
+  }, [myMatch, identity?.participantId, nameById]);
+  useDocumentTitle(opponentName ? t('online.yourTurnTitle', { name: opponentName }) : null);
 
   const myPendingReport = useMemo(
     () => (myMatch ? reports.find((r) => r.match_id === myMatch.id) : undefined),
@@ -319,6 +338,13 @@ export default function JoinTournament() {
       <Text className="mb-4 text-sm text-ink-300">
         {t('swiss.roundOf', { current: Math.max(playedRounds, 1), total: config.totalRounds })} · Bo{config.bestOf}
       </Text>
+
+      {connectionLost && (
+        <View className="mb-4 flex-row items-center gap-2 rounded-lg border border-gold/50 px-3 py-2">
+          <Ionicons name="cloud-offline-outline" size={16} color={colors.gold.DEFAULT} />
+          <Text className="flex-1 text-xs text-gold">{t('online.connectionLost')}</Text>
+        </View>
+      )}
 
       {/* Entry: who are you, and are you playing or watching? */}
       {!identity && (

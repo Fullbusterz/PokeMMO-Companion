@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 
 import {
   actionableReports,
+  agreedReports,
   createOnlineTournament,
   documentFingerprint,
   fetchOnlineTournament,
@@ -180,10 +181,37 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
         const local = useTournamentStore.getState().tournaments.find((t) => t.id === tournament?.id);
         if (!local) return;
 
-        setReports(actionableReports(local, snapshot.reports));
+        // Results both players reported the same way need no arbitration, so
+        // they are applied here rather than queued for the organizer to
+        // rubber-stamp. Anything they disagree about still goes to the list
+        // below, untouched.
+        const agreed = agreedReports(local, snapshot.reports);
+        const autoIds = new Set(agreed.flatMap((a) => a.reportIds));
+        setReports(actionableReports(local, snapshot.reports).filter((r) => !autoIds.has(r.id)));
         setViewers(snapshot.viewers);
         setBets(snapshot.bets);
         setLastSyncedAt(snapshot.updatedAt);
+
+        if (agreed.length > 0) {
+          for (const result of agreed) {
+            setMatchWinner(local.id, result.matchId, result.winnerId, result.score);
+          }
+          const lockedSince = pushStartedAtRef.current;
+          const busy = lockedSince !== null && Date.now() - lockedSince < PUSH_LOCK_STALE_MS;
+          if (!busy) {
+            pushStartedAtRef.current = Date.now();
+            try {
+              // Read back out of the store: `local` is the pre-confirmation copy.
+              const applied = useTournamentStore.getState().tournaments.find((t) => t.id === local.id);
+              if (applied) {
+                await pushOnlineTournament(code, secret, applied, [...autoIds]);
+                lastPushedRef.current = documentFingerprint(applied);
+              }
+            } finally {
+              pushStartedAtRef.current = null;
+            }
+          }
+        }
 
         // Fold in anyone who signed up since the last poll. Only possible
         // before round 1 — addSwissParticipant enforces that itself, so a
@@ -225,7 +253,7 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
     // every local edit, which would tear down and restart the timer each
     // time. The tick always reads the freshest copy from the store instead.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [code, secret, tournament?.id, addSwissParticipant]);
+  }, [code, secret, tournament?.id, addSwissParticipant, setMatchWinner]);
 
   return {
     isConfigured: isOnlineConfigured(),

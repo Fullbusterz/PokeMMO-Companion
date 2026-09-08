@@ -605,7 +605,8 @@
     "roster": "Participantes ({{count}})",
     "waitingPlayers": "Esperando a que se apunten los jugadores…",
     "minPlayers": "Necesitas al menos 2 jugadores para emparejar la primera ronda.",
-    "youLabel": "Tú"
+    "youLabel": "Tú",
+    "autoConfirmHint": "Si los dos jugadores reportan lo mismo, se confirma solo. Aquí solo llega lo que no cuadra."
   },
   "online": {
     "sectionTitle": "Torneo online",
@@ -673,7 +674,10 @@
     "organizerPickSlot": "Elige tu plaza si juegas, o pon un nombre si solo organizas.",
     "organizerWhoAreYou": "¿Cuál eres tú? Toca tu nombre para ponerte foto y salir en la lista.",
     "organizerNotPlaying": "No juego, solo organizo",
-    "organizerConfirmSlot": "Entrar como %{name}"
+    "organizerConfirmSlot": "Entrar como %{name}",
+    "connectionLost": "Sin conexión con el servidor. Lo que ves puede estar desactualizado; se reintenta solo.",
+    "yourTurnTitle": "⚔️ vs %{name}",
+    "reportsPendingTitle": "(%{count}) %{name}"
   },
   "betting": {
     "title": "Apuestas",

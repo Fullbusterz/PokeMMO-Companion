@@ -13,6 +13,7 @@ import { SwissStandings } from '@/components/SwissStandings';
 import { t } from '@/i18n';
 import { successHaptic } from '@/lib/haptics';
 import { useAvatars } from '@/lib/useAvatars';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 import { joinUrl } from '@/lib/onlineTournament';
 import {
   computeSwissStandings,
@@ -43,6 +44,13 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
     for (const row of online.viewers) if (row.participant_id) map.set(row.participant_id, row.id);
     return map;
   }, [online.viewers]);
+  // Same idea on the organizer's side: with the tab in the background, the
+  // count of results waiting for them is the thing worth surfacing.
+  useDocumentTitle(
+    online.reports.length > 0
+      ? t('online.reportsPendingTitle', { count: online.reports.length, name: tournament.name })
+      : null
+  );
   const avatarByParticipant = useMemo(() => {
     const map = new Map<string, string>();
     for (const row of online.viewers) {
@@ -281,9 +289,11 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
 
       {online.reports.length > 0 && (
         <View className="mb-6">
-          <Text className="mb-2 text-sm font-semibold uppercase tracking-wide text-gold">
+          <Text className="mb-1 text-sm font-semibold uppercase tracking-wide text-gold">
             {t('swiss.pendingReports')}
           </Text>
+          {/* Says why this list is short: most results never reach it. */}
+          <Text className="mb-2 text-xs text-ink-400">{t('swiss.autoConfirmHint')}</Text>
           {online.reports.map((report) => (
             <Card key={report.id} skipEntrance className="mb-2 px-3 py-3">
               <Text className="mb-2 text-sm text-ink-100">

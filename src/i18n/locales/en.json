@@ -605,7 +605,8 @@
     "roster": "Players ({{count}})",
     "waitingPlayers": "Waiting for players to sign up…",
     "minPlayers": "You need at least 2 players to pair the first round.",
-    "youLabel": "You"
+    "youLabel": "You",
+    "autoConfirmHint": "When both players report the same result it is confirmed automatically. Only disagreements land here."
   },
   "online": {
     "sectionTitle": "Online tournament",
@@ -673,7 +674,10 @@
     "organizerPickSlot": "Pick your slot if you are playing, or enter a name if you only organize.",
     "organizerWhoAreYou": "Which one are you? Tap your name to add a photo and show up on the list.",
     "organizerNotPlaying": "I'm not playing, just organizing",
-    "organizerConfirmSlot": "Join as %{name}"
+    "organizerConfirmSlot": "Join as %{name}",
+    "connectionLost": "No connection to the server. What you see may be out of date; it keeps retrying.",
+    "yourTurnTitle": "⚔️ vs %{name}",
+    "reportsPendingTitle": "(%{count}) %{name}"
   },
   "betting": {
     "title": "Betting",
