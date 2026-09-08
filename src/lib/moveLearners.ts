@@ -1,4 +1,3 @@
-import moveLearnersData from '../../data/reference/move-learners.json';
 import { getMoveData, getPokemonById, getTier } from '@/lib/pokedex';
 import type { PokeType } from '@/lib/typeChart';
 import type { PokemonEntry, PvpTier } from '@/types/pokemon';
@@ -6,16 +5,21 @@ import type { PokemonEntry, PvpTier } from '@/types/pokemon';
 // Reverse index of movesets.json (move name -> which dex ids learn it, by
 // any method: level/TM/egg/tutor), generated once by a scratch Node script
 // (not checked into the repo) that scans the 5 regions' movesets.json files.
-// ~464KB uncompressed — under the ~600KB threshold this project uses to
-// decide between eager import and the loadRegionMovesets()-style lazy
-// require() (see src/lib/pokedex.ts), so this stays a plain top-level import.
+// ~464KB uncompressed, and only ever needed when someone opens a move's card
+// and asks who learns it — so it is loaded on first use rather than parsed at
+// startup by every screen that happens to pull this module in.
 // Regenerate by re-running that script if movesets.json ever changes.
-const MOVE_LEARNERS = moveLearnersData as Record<string, number[]>;
+let moveLearnersCache: Record<string, number[]> | null = null;
+
+function moveLearners(): Record<string, number[]> {
+  moveLearnersCache ??= require('../../data/reference/move-learners.json') as Record<string, number[]>;
+  return moveLearnersCache;
+}
 
 // Every Pokemon that learns `moveName` by any method, across all 5 regions.
 // Sorted by dex id (ascending) — this is a plain lookup, not a ranking.
 export function getLearners(moveName: string): PokemonEntry[] {
-  const ids = MOVE_LEARNERS[moveName];
+  const ids = moveLearners()[moveName];
   if (!ids) return [];
   return ids.map((id) => getPokemonById(id)).filter((p): p is PokemonEntry => Boolean(p));
 }

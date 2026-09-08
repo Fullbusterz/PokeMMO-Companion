@@ -62,7 +62,8 @@
       "moveLearnersStab": "STAB",
       "moveLearnersAtk": "Ataque %{value}",
       "moveLearnersSpA": "At. esp. %{value}"
-    }
+    },
+    "thinking": "Pensando…"
   },
   "home": {
     "title": "PokeMMO Companion",
@@ -357,7 +358,9 @@
     "caughtAccessibilityOn": "Capturado. Toca para desmarcar.",
     "caughtAccessibilityOff": "No capturado. Toca para marcar como capturado.",
     "caughtProgressRegion": "{{caught}}/{{total}} capturados en esta región",
-    "caughtProgressTotal": "{{caught}}/{{total}} capturados"
+    "caughtProgressTotal": "{{caught}}/{{total}} capturados",
+    "filtersButton": "Filtros",
+    "clearFilters": "Limpiar"
   },
   "tournaments": {
     "title": "Torneos",
@@ -663,7 +666,11 @@
     "joinedByLink": "Ya ha entrado",
     "notJoinedYet": "Aún no ha entrado",
     "shareRolesHint": "Cada uno elige si entra como jugador o como espectador, y puede ponerse una foto.",
-    "waitingSlot": "Ya estás dentro. El organizador te añadirá a la lista en breve."
+    "waitingSlot": "Ya estás dentro. El organizador te añadirá a la lista en breve.",
+    "youInTournament": "Tú en el torneo",
+    "organizerPhotoHint": "Entra tú también para salir en la lista con tu foto (y apostar, si están activadas).",
+    "organizerJoin": "Entrar y ponerme foto",
+    "organizerPickSlot": "Elige tu plaza si juegas, o pon un nombre si solo organizas."
   },
   "betting": {
     "title": "Apuestas",
@@ -698,8 +705,7 @@
     "atStakeLabel": "En juego",
     "wouldReturnLabel": "Si aciertas",
     "nobodyBettingYet": "Todavía no ha entrado nadie a las apuestas.",
-    "joinAsOrganizer": "Entrar yo también a las apuestas",
-    "joinAsOrganizerHint": "Elígete de la lista si juegas, o ponte un nombre para apostar como espectador."
+    "joinFromIdentityCard": "Para apostar, entra tú también desde “Tú en el torneo”, más arriba."
   },
   "avatar": {
     "add": "Añadir foto",

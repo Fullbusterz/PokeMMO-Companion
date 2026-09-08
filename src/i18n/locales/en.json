@@ -62,7 +62,8 @@
       "moveLearnersStab": "STAB",
       "moveLearnersAtk": "Attack %{value}",
       "moveLearnersSpA": "Sp. Atk %{value}"
-    }
+    },
+    "thinking": "Thinking…"
   },
   "home": {
     "title": "PokeMMO Companion",
@@ -357,7 +358,9 @@
     "caughtAccessibilityOn": "Caught. Tap to unmark.",
     "caughtAccessibilityOff": "Not caught. Tap to mark as caught.",
     "caughtProgressRegion": "{{caught}}/{{total}} caught in this region",
-    "caughtProgressTotal": "{{caught}}/{{total}} caught"
+    "caughtProgressTotal": "{{caught}}/{{total}} caught",
+    "filtersButton": "Filters",
+    "clearFilters": "Clear"
   },
   "tournaments": {
     "title": "Tournaments",
@@ -663,7 +666,11 @@
     "joinedByLink": "Already in",
     "notJoinedYet": "Not in yet",
     "shareRolesHint": "Each person picks whether to join as a player or a spectator, and can add a photo.",
-    "waitingSlot": "You are in. The organizer will add you to the roster shortly."
+    "waitingSlot": "You are in. The organizer will add you to the roster shortly.",
+    "youInTournament": "You in this tournament",
+    "organizerPhotoHint": "Join in as well to appear on the list with your photo (and bet, if betting is on).",
+    "organizerJoin": "Join and add my photo",
+    "organizerPickSlot": "Pick your slot if you are playing, or enter a name if you only organize."
   },
   "betting": {
     "title": "Betting",
@@ -698,8 +705,7 @@
     "atStakeLabel": "At stake",
     "wouldReturnLabel": "If it lands",
     "nobodyBettingYet": "Nobody has joined the betting yet.",
-    "joinAsOrganizer": "Join the betting myself",
-    "joinAsOrganizerHint": "Pick yourself from the list if you're playing, or enter a name to bet as a spectator."
+    "joinFromIdentityCard": "To bet, join in from “You in this tournament” above."
   },
   "avatar": {
     "add": "Add photo",

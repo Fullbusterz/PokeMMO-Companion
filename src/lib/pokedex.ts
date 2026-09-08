@@ -1,18 +1,3 @@
-import hoennAbilities from '../../data/hoenn/abilities.json';
-import hoennPokemon from '../../data/hoenn/pokemon.json';
-import johtoAbilities from '../../data/johto/abilities.json';
-import johtoPokemon from '../../data/johto/pokemon.json';
-import kantoAbilities from '../../data/kanto/abilities.json';
-import kantoPokemon from '../../data/kanto/pokemon.json';
-import sinnohAbilities from '../../data/sinnoh/abilities.json';
-import sinnohPokemon from '../../data/sinnoh/pokemon.json';
-import teseliaAbilities from '../../data/teselia/abilities.json';
-import teseliaPokemon from '../../data/teselia/pokemon.json';
-import abilityDescriptionsData from '../../data/reference/ability-descriptions.json';
-import abilityNamesEs from '../../data/reference/ability-names-es.json';
-import moveNamesEs from '../../data/reference/move-names-es.json';
-import moveData from '../../data/reference/moves.json';
-import tiersData from '../../data/tiers/pokemmo_tiers.json';
 import { t } from '@/i18n';
 import { computeRole, type CombatRole } from '@/lib/role';
 import type { PokeType } from '@/lib/typeChart';
@@ -28,19 +13,99 @@ import type {
   TierEntry,
 } from '@/types/pokemon';
 
+
 // All 5 PokeMMO regions — evolution lookups need the full combined list
 // since plenty of chains cross region boundaries (e.g. Crobat/Johto evolves
 // from Golbat/Kanto, Raichu/Kanto's pre-evolution Pichu/Johto only resolves
 // once both are loaded). Teselia (Gen 5) is the last region and, unlike
 // Sinnoh, doesn't add any new evolutions for older-region Pokemon — verified
 // programmatically when this region was built.
-export const ALL_POKEMON = [
-  ...(kantoPokemon as PokemonEntry[]),
-  ...(johtoPokemon as PokemonEntry[]),
-  ...(hoennPokemon as PokemonEntry[]),
-  ...(sinnohPokemon as PokemonEntry[]),
-  ...(teseliaPokemon as PokemonEntry[]),
-];
+// Everything this module serves is built on first use, never at import time.
+// That matters because expo-router builds its route table by requiring every
+// route file up front: importing pokedex.ts from one screen effectively
+// imports it on every screen, so a player opening the tournament link on their
+// phone was parsing 0.84 MB of Pokedex JSON they never look at.
+//
+// The tables are indexes rather than arrays to scan, too. searchPokemon()
+// filtering by tier called getTier() — a linear scan of 649 rows — once per
+// Pokemon, so one tap on a filter chip cost ~420,000 string comparisons.
+type PokedexTables = {
+  all: PokemonEntry[];
+  byId: Map<number, PokemonEntry>;
+  byEnglishName: Map<string, PokemonEntry>;
+  evolvesInto: Map<string, PokemonEntry[]>;
+  abilities: AbilityEntry[];
+  abilityByPokemon: Map<string, AbilityEntry>;
+  moveByName: Map<string, MoveEntry>;
+  abilityDescriptionByName: Map<string, AbilityDescriptionEntry>;
+  tierByPokemon: Map<string, TierEntry>;
+  moveNamesEs: Record<string, string>;
+  abilityNamesEs: Record<string, string>;
+};
+
+let tables: PokedexTables | null = null;
+
+function buildTables(): PokedexTables {
+  const all: PokemonEntry[] = [
+    ...(require('../../data/kanto/pokemon.json') as PokemonEntry[]),
+    ...(require('../../data/johto/pokemon.json') as PokemonEntry[]),
+    ...(require('../../data/hoenn/pokemon.json') as PokemonEntry[]),
+    ...(require('../../data/sinnoh/pokemon.json') as PokemonEntry[]),
+    ...(require('../../data/teselia/pokemon.json') as PokemonEntry[]),
+  ];
+  // Placeholder stub entries (pokemon: "_example_do_not_use") from regions that
+  // were never scraped fall out of the lookups on their own: no real Pokemon
+  // name ever matches that key.
+  const abilities: AbilityEntry[] = [
+    ...(require('../../data/kanto/abilities.json') as AbilityEntry[]),
+    ...(require('../../data/johto/abilities.json') as AbilityEntry[]),
+    ...(require('../../data/hoenn/abilities.json') as AbilityEntry[]),
+    ...(require('../../data/sinnoh/abilities.json') as AbilityEntry[]),
+    ...(require('../../data/teselia/abilities.json') as AbilityEntry[]),
+  ];
+
+  const byId = new Map<number, PokemonEntry>();
+  const byEnglishName = new Map<string, PokemonEntry>();
+  const evolvesInto = new Map<string, PokemonEntry[]>();
+  for (const pokemon of all) {
+    byId.set(pokemon.id, pokemon);
+    byEnglishName.set(pokemon.name.en.toLowerCase(), pokemon);
+    const from = pokemon.evolvesFrom?.toLowerCase();
+    if (from) {
+      const list = evolvesInto.get(from);
+      if (list) list.push(pokemon);
+      else evolvesInto.set(from, [pokemon]);
+    }
+  }
+
+  return {
+    all,
+    byId,
+    byEnglishName,
+    evolvesInto,
+    abilities,
+    abilityByPokemon: new Map(abilities.map((a) => [a.pokemon, a])),
+    moveByName: new Map((require('../../data/reference/moves.json') as MoveEntry[]).map((m) => [m.name, m])),
+    abilityDescriptionByName: new Map(
+      (require('../../data/reference/ability-descriptions.json') as AbilityDescriptionEntry[]).map((a) => [a.name, a])
+    ),
+    tierByPokemon: new Map(
+      (require('../../data/tiers/pokemmo_tiers.json') as TierEntry[]).map((entry) => [entry.pokemon, entry])
+    ),
+    moveNamesEs: require('../../data/reference/move-names-es.json') as Record<string, string>,
+    abilityNamesEs: require('../../data/reference/ability-names-es.json') as Record<string, string>,
+  };
+}
+
+function pokedex(): PokedexTables {
+  tables ??= buildTables();
+  return tables;
+}
+
+/** Every Pokemon of the five regions, in dex order. Parsed on first call. */
+export function allPokemon(): PokemonEntry[] {
+  return pokedex().all;
+}
 
 export type RegionFilter = 'kanto' | 'johto' | 'hoenn' | 'sinnoh' | 'teselia';
 
@@ -61,12 +126,11 @@ export function regionForId(id: number): RegionFilter {
 }
 
 export function getPokemonById(id: number): PokemonEntry | undefined {
-  return ALL_POKEMON.find((p) => p.id === id);
+  return pokedex().byId.get(id);
 }
 
 function getPokemonByEnglishName(englishName: string): PokemonEntry | undefined {
-  const normalized = englishName.toLowerCase();
-  return ALL_POKEMON.find((p) => p.name.en.toLowerCase() === normalized);
+  return pokedex().byEnglishName.get(englishName.toLowerCase());
 }
 
 export function getEvolvesFrom(pokemon: PokemonEntry): PokemonEntry | undefined {
@@ -75,15 +139,14 @@ export function getEvolvesFrom(pokemon: PokemonEntry): PokemonEntry | undefined 
 }
 
 export function getEvolvesInto(pokemon: PokemonEntry): PokemonEntry[] {
-  const normalized = pokemon.name.en.toLowerCase();
-  return ALL_POKEMON.filter((p) => p.evolvesFrom?.toLowerCase() === normalized);
+  return pokedex().evolvesInto.get(pokemon.name.en.toLowerCase()) ?? [];
 }
 
 export function searchPokemon(
   query: string,
   filters?: { region?: RegionFilter; type?: PokeType; tier?: PvpTier; role?: CombatRole }
 ): PokemonEntry[] {
-  let list = ALL_POKEMON;
+  let list = pokedex().all;
   if (filters?.region) list = list.filter((p) => regionForId(p.id) === filters.region);
   if (filters?.type) list = list.filter((p) => (p.types as PokeType[]).includes(filters.type!));
   if (filters?.tier) list = list.filter((p) => getTier(p)?.tier === filters.tier);
@@ -96,19 +159,8 @@ export function searchPokemon(
   );
 }
 
-// Placeholder stub entries (pokemon: "_example_do_not_use") from regions
-// that haven't been scraped yet fall out here automatically since no real
-// Pokemon name ever matches that key.
-const ALL_ABILITIES = [
-  ...(kantoAbilities as AbilityEntry[]),
-  ...(johtoAbilities as AbilityEntry[]),
-  ...(hoennAbilities as AbilityEntry[]),
-  ...(sinnohAbilities as AbilityEntry[]),
-  ...(teseliaAbilities as AbilityEntry[]),
-];
-
 export function getAbilities(pokemon: PokemonEntry): AbilityEntry | undefined {
-  return ALL_ABILITIES.find((a) => a.pokemon === pokemon.name.en.toLowerCase());
+  return pokedex().abilityByPokemon.get(pokemon.name.en.toLowerCase());
 }
 
 // Reverse lookup for the Oracle assistant ("which Pokemon have Levitate?") —
@@ -117,11 +169,11 @@ export function getAbilities(pokemon: PokemonEntry): AbilityEntry | undefined {
 export function getPokemonWithAbility(abilityName: string): PokemonEntry[] {
   const normalized = abilityName.toLowerCase();
   const matchingSlugs = new Set(
-    ALL_ABILITIES.filter(
+    pokedex().abilities.filter(
       (a) => a.abilities.some((ab) => ab.toLowerCase() === normalized) || a.hiddenAbility?.toLowerCase() === normalized
     ).map((a) => a.pokemon)
   );
-  return ALL_POKEMON.filter((p) => matchingSlugs.has(p.name.en.toLowerCase()));
+  return pokedex().all.filter((p) => matchingSlugs.has(p.name.en.toLowerCase()));
 }
 
 // movesets.json is ~1-1.3MB PER region (~5MB combined) — big enough that
@@ -212,15 +264,12 @@ export function getLocations(pokemon: PokemonEntry): LocationEntry[] {
 // to eagerly load like ALL_ABILITIES above, and unlike per-Pokemon data
 // there's exactly one region-agnostic file for each (a move works the same
 // regardless of which region's Pokemon knows it).
-const MOVE_DATA = moveData as MoveEntry[];
-const ABILITY_DESCRIPTIONS = abilityDescriptionsData as AbilityDescriptionEntry[];
-
 export function getMoveData(name: string): MoveEntry | undefined {
-  return MOVE_DATA.find((m) => m.name === name);
+  return pokedex().moveByName.get(name);
 }
 
 export function getAbilityDescription(name: string): AbilityDescriptionEntry | undefined {
-  return ABILITY_DESCRIPTIONS.find((a) => a.name === name);
+  return pokedex().abilityDescriptionByName.get(name);
 }
 
 // Move/ability data everywhere else (movesets.json, abilities.json,
@@ -232,17 +281,15 @@ export function getAbilityDescription(name: string): AbilityDescriptionEntry | u
 // CLAUDE.md). A couple of PokeMMO-exclusive abilities (e.g. Reactive Gas,
 // Snow Plow) don't exist in the official games and have no entry here, so
 // callers must fall back to the English name when the lookup misses.
-const MOVE_NAMES_ES = moveNamesEs as Record<string, string>;
-const ABILITY_NAMES_ES = abilityNamesEs as Record<string, string>;
 
 export function localizedMoveName(name: string, locale: 'es' | 'en'): string {
   if (locale === 'en') return name;
-  return MOVE_NAMES_ES[name] ?? name;
+  return pokedex().moveNamesEs[name] ?? name;
 }
 
 export function localizedAbilityName(name: string, locale: 'es' | 'en'): string {
   if (locale === 'en') return name;
-  return ABILITY_NAMES_ES[name] ?? name;
+  return pokedex().abilityNamesEs[name] ?? name;
 }
 
 // Wild-encounter fields (locations.json) come straight from the English wiki
@@ -305,8 +352,6 @@ export function localizedEncounterValue(kind: EncounterValueKind, raw: string, l
 // bans (Shaymin, Jirachi). Every entry carries `asOf` (the wiki tables' own
 // last-edit date) so the UI can show how fresh the data is — tiers are
 // recalculated live by usage, so this is a snapshot, never "current".
-const TIERS = tiersData as TierEntry[];
-
 export function getTier(pokemon: PokemonEntry): TierEntry | undefined {
-  return TIERS.find((t) => t.pokemon === pokemon.name.en.toLowerCase());
+  return pokedex().tierByPokemon.get(pokemon.name.en.toLowerCase());
 }

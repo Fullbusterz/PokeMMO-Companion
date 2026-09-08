@@ -7,7 +7,6 @@ import Animated, { FadeInDown, Layout } from 'react-native-reanimated';
 import { StatusBadge } from '@/components/Badge';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
-import { DeleteText } from '@/components/DeleteText';
 import { Header } from '@/components/Header';
 import { PressScale } from '@/components/PressScale';
 import { Screen } from '@/components/Screen';
@@ -72,18 +71,34 @@ const TournamentRow = memo(function TournamentRow({
     <Card index={index} layout={nativeOnly(Layout.springify().damping(18))} className="mb-3 flex-row items-center">
       <Link href={`/torneos/${tournament.id}`} asChild>
         <PressScale haptic="select" scaleTo={0.985} className="flex-1 p-4 active:bg-ink-700">
-          <View className="flex-row items-start justify-between">
-            <Text className="flex-1 text-base font-semibold text-ink-100">{tournament.name}</Text>
-            <StatusBadge status={tournament.status} label={statusLabel(tournament.status)} />
-          </View>
-          <Text className="mt-1 text-sm text-ink-400">
-            {t('tournaments.participantsCount', { count: tournament.participants.length })} · {formatLabel(tournament.format)}
+          {/* Name on its own line: sharing it with the status badge meant a
+              two-word tournament name broke in half while the badge kept a
+              third of the row to itself. */}
+          <Text className="text-base font-semibold text-ink-100" numberOfLines={1}>
+            {tournament.name}
           </Text>
+          <View className="mt-1.5 flex-row items-center gap-2">
+            <StatusBadge status={tournament.status} label={statusLabel(tournament.status)} />
+            <Text className="flex-1 text-sm text-ink-400" numberOfLines={1}>
+              {t('tournaments.participantsCount', { count: tournament.participants.length })} ·{' '}
+              {formatLabel(tournament.format)}
+            </Text>
+          </View>
         </PressScale>
       </Link>
-      <DeleteText onPress={confirmDelete} className="px-4 py-4">
-        {t('common.delete')}
-      </DeleteText>
+      {/* An icon rather than the word: "Eliminar" took a third of the row and
+          truncated the line that actually says what the tournament is. */}
+      <PressScale
+        haptic="tap"
+        scaleTo={0.9}
+        onPress={confirmDelete}
+        hitSlop={10}
+        className="px-3 py-4"
+        accessibilityRole="button"
+        accessibilityLabel={t('common.delete')}
+      >
+        <Ionicons name="trash-outline" size={18} color={colors.pokeRed.DEFAULT} />
+      </PressScale>
     </Card>
   );
 });

@@ -13,9 +13,10 @@ import { TypeBadge } from '@/components/TypeBadge';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
 import { POKEDEX_REGIONS, searchPokemon, type RegionFilter } from '@/lib/pokedex';
+import { surfaceTransition } from '@/lib/webMotion';
 import { ALL_ROLES, type CombatRole } from '@/lib/role';
 import { ALL_TYPES, type PokeType } from '@/lib/typeChart';
-import { countCaughtByRegion, regionTotal, TOTAL_POKEMON, useCaughtStore } from '@/store/caughtStore';
+import { countCaughtByRegion, regionTotal, totalPokemon, useCaughtStore } from '@/store/caughtStore';
 import { useLocaleStore } from '@/store/localeStore';
 import colors from '@/theme/colors';
 import type { PokemonEntry, PvpTier } from '@/types/pokemon';
@@ -112,6 +113,7 @@ export default function PokedexList() {
   const [tier, setTier] = useState<PvpTier | null>(null);
   const [role, setRole] = useState<CombatRole | null>(null);
   const [caughtFilter, setCaughtFilter] = useState<CaughtFilter>('all');
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const results = useMemo(
     () =>
       searchPokemon(query, {
@@ -132,8 +134,18 @@ export default function PokedexList() {
       const byRegion = countCaughtByRegion(caughtIds);
       return t('pokedex.caughtProgressRegion', { caught: byRegion[region], total: regionTotal(region) });
     }
-    return t('pokedex.caughtProgressTotal', { caught: caughtIds.length, total: TOTAL_POKEMON });
+    return t('pokedex.caughtProgressTotal', { caught: caughtIds.length, total: totalPokemon() });
   }, [region, caughtIds, locale]);
+
+  const activeFilterCount =
+    (type ? 1 : 0) + (tier ? 1 : 0) + (role ? 1 : 0) + (caughtFilter !== 'all' ? 1 : 0);
+
+  function clearFilters() {
+    setType(null);
+    setTier(null);
+    setRole(null);
+    setCaughtFilter('all');
+  }
 
   return (
     <Screen scroll={false}>
@@ -170,74 +182,115 @@ export default function PokedexList() {
         ))}
       </ScrollView>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        className="mb-2 -mx-4 h-9 shrink-0 grow-0 px-4"
-        contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
-      >
-        <FilterChip label={t('pokedex.filterAllTypes')} selected={type === null} onPress={() => setType(null)} />
-        {ALL_TYPES.map((tp) => (
-          <FilterChip
-            key={tp}
-            label={t(`types.${tp}`)}
-            selected={type === tp}
-            onPress={() => setType(type === tp ? null : tp)}
-            activeColor={colors.type[tp]}
+      {/* Region stays out in the open; the rest fold away. Five stacked rows
+          of chips pushed the actual Pokemon below the fold on a phone — you
+          had to scroll past the filters to reach the thing being filtered. The
+          button carries a count so a filter left on is never invisible. */}
+      <View className="mb-3 flex-row items-center gap-2">
+        <PressScale
+          haptic="select"
+          scaleTo={0.97}
+          onPress={() => setFiltersOpen((open) => !open)}
+          className={`flex-row items-center gap-1.5 rounded-full border px-3 py-1.5 ${
+            activeFilterCount > 0 ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
+          }`}
+          style={surfaceTransition()}
+        >
+          <Ionicons
+            name="options-outline"
+            size={14}
+            color={activeFilterCount > 0 ? colors.pokeRed.DEFAULT : colors.ink[400]}
           />
-        ))}
-      </ScrollView>
+          <Text className={`text-sm ${activeFilterCount > 0 ? 'font-semibold text-pokeRed' : 'text-ink-300'}`}>
+            {activeFilterCount > 0
+              ? `${t('pokedex.filtersButton')} (${activeFilterCount})`
+              : t('pokedex.filtersButton')}
+          </Text>
+          <Ionicons
+            name={filtersOpen ? 'chevron-up' : 'chevron-down'}
+            size={14}
+            color={activeFilterCount > 0 ? colors.pokeRed.DEFAULT : colors.ink[400]}
+          />
+        </PressScale>
+        {activeFilterCount > 0 && (
+          <PressScale haptic="tap" scaleTo={0.97} onPress={clearFilters} className="px-2 py-1.5">
+            <Text className="text-sm text-ink-400">{t('pokedex.clearFilters')}</Text>
+          </PressScale>
+        )}
+      </View>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        className="mb-3 -mx-4 h-9 shrink-0 grow-0 px-4"
-        contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
-      >
-        <FilterChip label={t('pokedex.filterAllTiers')} selected={tier === null} onPress={() => setTier(null)} />
-        {ALL_TIERS.map((tr) => (
-          <FilterChip
-            key={tr}
-            label={t(TIER_LABEL_KEYS[tr])}
-            selected={tier === tr}
-            onPress={() => setTier(tier === tr ? null : tr)}
-          />
-        ))}
-      </ScrollView>
+      {filtersOpen && (
+        <>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          className="mb-2 -mx-4 h-9 shrink-0 grow-0 px-4"
+          contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
+        >
+          <FilterChip label={t('pokedex.filterAllTypes')} selected={type === null} onPress={() => setType(null)} />
+          {ALL_TYPES.map((tp) => (
+            <FilterChip
+              key={tp}
+              label={t(`types.${tp}`)}
+              selected={type === tp}
+              onPress={() => setType(type === tp ? null : tp)}
+              activeColor={colors.type[tp]}
+            />
+          ))}
+        </ScrollView>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        className="mb-2 -mx-4 h-9 shrink-0 grow-0 px-4"
-        contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
-      >
-        <FilterChip label={t('pokedex.filterAllRoles')} selected={role === null} onPress={() => setRole(null)} />
-        {ALL_ROLES.map((r) => (
-          <FilterChip
-            key={r}
-            label={t(ROLE_LABEL_KEYS[r])}
-            selected={role === r}
-            onPress={() => setRole(role === r ? null : r)}
-          />
-        ))}
-      </ScrollView>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          className="mb-3 -mx-4 h-9 shrink-0 grow-0 px-4"
+          contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
+        >
+          <FilterChip label={t('pokedex.filterAllTiers')} selected={tier === null} onPress={() => setTier(null)} />
+          {ALL_TIERS.map((tr) => (
+            <FilterChip
+              key={tr}
+              label={t(TIER_LABEL_KEYS[tr])}
+              selected={tier === tr}
+              onPress={() => setTier(tier === tr ? null : tr)}
+            />
+          ))}
+        </ScrollView>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        className="mb-2 -mx-4 h-9 shrink-0 grow-0 px-4"
-        contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
-      >
-        {(['all', 'caught', 'missing'] as CaughtFilter[]).map((cf) => (
-          <FilterChip
-            key={cf}
-            label={t(CAUGHT_FILTER_LABEL_KEYS[cf])}
-            selected={caughtFilter === cf}
-            onPress={() => setCaughtFilter(cf)}
-            activeColor={colors.gold.DEFAULT}
-          />
-        ))}
-      </ScrollView>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          className="mb-2 -mx-4 h-9 shrink-0 grow-0 px-4"
+          contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
+        >
+          <FilterChip label={t('pokedex.filterAllRoles')} selected={role === null} onPress={() => setRole(null)} />
+          {ALL_ROLES.map((r) => (
+            <FilterChip
+              key={r}
+              label={t(ROLE_LABEL_KEYS[r])}
+              selected={role === r}
+              onPress={() => setRole(role === r ? null : r)}
+            />
+          ))}
+        </ScrollView>
+
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          className="mb-2 -mx-4 h-9 shrink-0 grow-0 px-4"
+          contentContainerStyle={{ flexDirection: 'row', alignItems: 'center' }}
+        >
+          {(['all', 'caught', 'missing'] as CaughtFilter[]).map((cf) => (
+            <FilterChip
+              key={cf}
+              label={t(CAUGHT_FILTER_LABEL_KEYS[cf])}
+              selected={caughtFilter === cf}
+              onPress={() => setCaughtFilter(cf)}
+              activeColor={colors.gold.DEFAULT}
+            />
+          ))}
+        </ScrollView>
+        </>
+      )}
 
       <Text className="mb-2 text-center text-xs text-ink-400">{progressLabel}</Text>
 

@@ -1,4 +1,4 @@
-import { ALL_POKEMON, getMoveData, getMoveset, getTier } from '@/lib/pokedex';
+import { allPokemon, getMoveData, getMoveset, getTier } from '@/lib/pokedex';
 import { ALL_TYPES, getMultiplier, type PokeType } from '@/lib/typeChart';
 import type { PokemonEntry, PvpTier } from '@/types/pokemon';
 
@@ -59,7 +59,7 @@ export function suggestCandidates(
   const weakTypes = weaknesses.map((w) => w.type);
 
   const scored: TeamCandidate[] = [];
-  for (const p of ALL_POKEMON) {
+  for (const p of allPokemon()) {
     if (excludeIds.has(p.id)) continue;
     const tier = getTier(p)?.tier ?? null;
     if (!isLegalInFormat(tier, format)) continue;

@@ -3,7 +3,7 @@ import abilityNamesEsData from '../../../data/reference/ability-names-es.json';
 import moveNames from '../../../data/reference/move-names.json';
 import moveNamesEsData from '../../../data/reference/move-names-es.json';
 import { t } from '@/i18n';
-import { ALL_POKEMON } from '@/lib/pokedex';
+import { allPokemon } from '@/lib/pokedex';
 import { ALL_TYPES, type PokeType } from '@/lib/typeChart';
 import type { AbilityDescriptionEntry, PokemonEntry } from '@/types/pokemon';
 
@@ -44,7 +44,7 @@ function buildIndex<T>(pairs: [string, T][]): IndexEntry<T>[] {
 
 // --- Pokemon ---
 const POKEMON_INDEX = buildIndex<PokemonEntry>(
-  ALL_POKEMON.flatMap((p) => [
+  allPokemon().flatMap((p) => [
     [p.name.es, p] as [string, PokemonEntry],
     [p.name.en, p] as [string, PokemonEntry],
   ])

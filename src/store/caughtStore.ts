@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
-import { ALL_POKEMON, POKEDEX_REGIONS, regionForId, type RegionFilter } from '@/lib/pokedex';
+import { allPokemon, POKEDEX_REGIONS, regionForId, type RegionFilter } from '@/lib/pokedex';
 
 // Personal Pokedex "caught" log — purely a player's own manual record (there's
 // no way for this app to see what's happening inside the PokeMMO client, same
@@ -50,16 +50,26 @@ export function isCaught(id: number): boolean {
 }
 
 // Per-region dex size, derived from the real Pokemon list (never hardcoded)
-// so it can't silently drift if a region's roster is ever revised.
-const REGION_TOTALS: Record<RegionFilter, number> = Object.fromEntries(
-  POKEDEX_REGIONS.map((r) => [r.id, ALL_POKEMON.filter((p) => regionForId(p.id) === r.id).length])
-) as Record<RegionFilter, number>;
+// so it can't silently drift if a region's roster is ever revised. Computed on
+// first use rather than at import: this store is pulled in by screens that
+// never show a dex count, and building it eagerly would parse the whole
+// Pokedex just to learn that Kanto has 151 entries.
+let regionTotals: Record<RegionFilter, number> | null = null;
 
-export function regionTotal(region: RegionFilter): number {
-  return REGION_TOTALS[region];
+function totals(): Record<RegionFilter, number> {
+  regionTotals ??= Object.fromEntries(
+    POKEDEX_REGIONS.map((r) => [r.id, allPokemon().filter((p) => regionForId(p.id) === r.id).length])
+  ) as Record<RegionFilter, number>;
+  return regionTotals;
 }
 
-export const TOTAL_POKEMON = ALL_POKEMON.length;
+export function regionTotal(region: RegionFilter): number {
+  return totals()[region];
+}
+
+export function totalPokemon(): number {
+  return allPokemon().length;
+}
 
 /**
  * Pure counting helper — how many of the given caught ids fall in each

@@ -8,6 +8,7 @@ import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
 import { SwissRound, type ResultPick } from '@/components/SwissRound';
 import { OrganizerBetting } from '@/components/OrganizerBetting';
+import { OrganizerIdentity } from '@/components/OrganizerIdentity';
 import { SwissStandings } from '@/components/SwissStandings';
 import { t } from '@/i18n';
 import { successHaptic } from '@/lib/haptics';
@@ -349,7 +350,6 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
         <OrganizerBetting
           code={online.code}
           matches={tournament.matches}
-          participants={tournament.participants}
           viewerRows={online.viewers}
           betRows={online.bets}
           startingChips={tournament.betting.startingChips}
@@ -401,6 +401,17 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
               {t('online.joinCode', { code: online.code })}
             </Text>
           </Card>
+        )}
+        {online.isPublished && online.code && (
+          <View className="mt-3">
+            <OrganizerIdentity
+              code={online.code}
+              participants={tournament.participants}
+              viewerRows={online.viewers}
+              nameById={nameById}
+              onChanged={() => void online.refresh()}
+            />
+          </View>
         )}
       </View>
     </View>

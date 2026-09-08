@@ -1,13 +1,32 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Image, Modal, ScrollView, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { PressScale } from '@/components/PressScale';
 import { t } from '@/i18n';
-import { answerQuery, type OracleAnswer } from '@/lib/oracle/intents';
+import type { OracleAnswer } from '@/lib/oracle/intents';
 import { useLocaleStore } from '@/store/localeStore';
 import colors from '@/theme/colors';
+
+// The oracle answers out of the whole Pokedex: five regions of pokemon.json
+// and abilities.json, moves.json, the tier table, the name dictionaries — a
+// couple of megabytes of JSON. This button is mounted in the root layout, so
+// importing that chain statically meant every screen in the app paid to parse
+// all of it at startup, including the tournament link a player opens at the
+// venue on a phone, which needs none of it. It is now pulled in the first time
+// somebody actually opens the oracle, and kept for the rest of the session.
+type OracleModule = typeof import('@/lib/oracle/intents');
+let oracleModule: OracleModule | null = null;
+let oraclePromise: Promise<OracleModule> | null = null;
+
+function loadOracle(): Promise<OracleModule> {
+  oraclePromise ??= import('@/lib/oracle/intents').then((mod) => {
+    oracleModule = mod;
+    return mod;
+  });
+  return oraclePromise;
+}
 
 const EXAMPLE_KEYS = ['oracle.example1', 'oracle.example2', 'oracle.example3', 'oracle.example4', 'oracle.example5'] as const;
 
@@ -16,9 +35,25 @@ function OracleModal({ visible, onClose }: { visible: boolean; onClose: () => vo
   const [query, setQuery] = useState('');
   const [answer, setAnswer] = useState<OracleAnswer | null>(null);
 
+  const [loading, setLoading] = useState(false);
+
+  // Start fetching as soon as the modal opens, so the wait overlaps with the
+  // person typing rather than landing after they press the button.
+  useEffect(() => {
+    if (visible && !oracleModule) void loadOracle();
+  }, [visible]);
+
   const runQuery = (text: string) => {
-    setAnswer(answerQuery(text, locale));
+    if (!text.trim()) return;
     setQuery('');
+    if (oracleModule) {
+      setAnswer(oracleModule.answerQuery(text, locale));
+      return;
+    }
+    setLoading(true);
+    loadOracle()
+      .then((mod) => setAnswer(mod.answerQuery(text, locale)))
+      .finally(() => setLoading(false));
   };
 
   const handleClose = () => {
@@ -72,7 +107,9 @@ function OracleModal({ visible, onClose }: { visible: boolean; onClose: () => vo
             className="mb-4 items-center rounded-xl bg-pokeRed py-2.5"
             accessibilityRole="button"
           >
-            <Text className="text-sm font-bold text-white">{t('oracle.ask')}</Text>
+            <Text className="text-sm font-bold text-white">
+              {loading ? t('oracle.thinking') : t('oracle.ask')}
+            </Text>
           </PressScale>
 
           <ScrollView>

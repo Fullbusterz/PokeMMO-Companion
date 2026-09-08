@@ -11,6 +11,7 @@ import { Screen } from '@/components/Screen';
 import { t } from '@/i18n';
 import { nativeOnly } from '@/lib/animation';
 import { getPokemonById } from '@/lib/pokedex';
+import { surfaceTransition } from '@/lib/webMotion';
 import { useShinyStore } from '@/store/shinyStore';
 import colors from '@/theme/colors';
 import { displayFont } from '@/theme/fonts';
@@ -57,7 +58,7 @@ function ShinyWidget() {
 function WaypointIcon({ name, color, tone = 'default' }: { name: keyof typeof Ionicons.glyphMap; color: string; tone?: 'default' | 'onDark' }) {
   return (
     <View
-      className="mb-2 h-9 w-9 items-center justify-center"
+      className="h-10 w-10 items-center justify-center"
       style={{
         transform: [{ rotate: '45deg' }],
         borderWidth: 1.5,
@@ -98,15 +99,23 @@ function Waypoint({
         style={{ left: 1, top: 22, width: 9, height: 9 }}
       />
       <Link href={href} asChild>
+        {/* Icon beside the text rather than above it. Stacked, each of the ten
+            destinations was a ~190px slab and the home screen took four
+            screenfuls to scroll; side by side they are about half that, and a
+            row reads as "a place you can go" rather than as a poster. */}
         <PressScale
           scaleTo={0.98}
-          className="rounded-2xl border border-gold/30 bg-ink-800 p-5 shadow-md shadow-black/30 active:bg-ink-700"
+          className="flex-row items-center gap-3.5 rounded-2xl border border-gold/30 bg-ink-800 p-4 shadow-md shadow-black/30 active:bg-ink-700"
+          style={surfaceTransition()}
         >
           <WaypointIcon name={icon} color={iconColor} />
-          <Text className="text-lg text-ink-100" style={{ fontFamily: displayFont.regular }}>
-            {title}
-          </Text>
-          <Text className="mt-1 text-ink-400">{subtitle}</Text>
+          <View className="flex-1">
+            <Text className="text-lg text-ink-100" style={{ fontFamily: displayFont.regular }}>
+              {title}
+            </Text>
+            <Text className="mt-0.5 text-sm text-ink-400">{subtitle}</Text>
+          </View>
+          <Ionicons name="chevron-forward" size={16} color={colors.ink[400]} />
         </PressScale>
       </Link>
     </Animated.View>
@@ -120,20 +129,30 @@ export default function Home() {
         entering={nativeOnly(FadeInUp.duration(320))}
         className="mb-6 mt-2 flex-row items-center justify-between gap-2"
       >
-        <View className="flex-row items-center gap-2">
+        {/* The title block has to be allowed to shrink. Without flex-1 the
+            serif title claimed its full intrinsic width and pushed the
+            language toggle clean off the screen: measured at 390px wide, the
+            toggle's right edge was at 444. */}
+        <View className="min-w-0 flex-1 flex-row items-center gap-2">
           <View
-            className="h-9 w-9 items-center justify-center"
+            className="h-9 w-9 shrink-0 items-center justify-center"
             style={{ transform: [{ rotate: '45deg' }], borderWidth: 1.5, borderColor: colors.gold.DEFAULT }}
           >
             <View style={{ transform: [{ rotate: '-45deg' }] }}>
               <Ionicons name="game-controller" size={18} color={colors.pokeRed.DEFAULT} />
             </View>
           </View>
-          <Text className="text-3xl text-ink-100" style={{ fontFamily: displayFont.regular }}>
+          <Text
+            className="flex-1 text-3xl text-ink-100"
+            style={{ fontFamily: displayFont.regular }}
+            numberOfLines={2}
+          >
             {t('home.title')}
           </Text>
         </View>
-        <LanguageToggle />
+        <View className="shrink-0">
+          <LanguageToggle />
+        </View>
       </Animated.View>
 
       <ShinyWidget />
@@ -160,11 +179,16 @@ export default function Home() {
                 end={{ x: 1, y: 1 }}
                 style={StyleSheet.absoluteFill}
               />
-              <WaypointIcon name="trophy" color="white" tone="onDark" />
-              <Text className="text-lg text-white" style={{ fontFamily: displayFont.regular }}>
-                {t('home.tournamentsCard')}
-              </Text>
-              <Text className="mt-1 text-white/80">{t('home.tournamentsCardSubtitle')}</Text>
+              <View className="flex-row items-center gap-3.5">
+                <WaypointIcon name="trophy" color="white" tone="onDark" />
+                <View className="flex-1">
+                  <Text className="text-lg text-white" style={{ fontFamily: displayFont.regular }}>
+                    {t('home.tournamentsCard')}
+                  </Text>
+                  <Text className="mt-0.5 text-sm text-white/80">{t('home.tournamentsCardSubtitle')}</Text>
+                </View>
+                <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.7)" />
+              </View>
             </PressScale>
           </Link>
         </Animated.View>
