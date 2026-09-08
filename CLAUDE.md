@@ -65,6 +65,23 @@ TypeError: Cannot read properties of undefined (reading 'addedFiles')
 ```
 El watcher de Tailwind de NativeWind emite un evento de cambio que este Metro no sabe manejar, y **se lleva el bundler entero cada vez que aparece una clase Tailwind NUEVA** (no presente aún en el CSS compilado). Pasó 4 veces seguidas, siempre justo después de una edición de estilos. **Método a seguir al hacer UI en este repo: agrupar TODOS los cambios de estilo y reiniciar el servidor UNA vez al final, en vez del ciclo editar→mirar.** No perder tiempo diagnosticando el código: si el server muere tras tocar clases, es esto.
 
+**[MISMA SESIÓN — ENSAYO GENERAL COMPLETO EN PRODUCCIÓN: 9 jugadores, 6 rondas, apuestas]** Con el torneo real de Ferran a la vuelta de la esquina, se hizo un simulacro entero **sobre la web desplegada** (no en local), porque los tres bugs serios de esta sesión aparecieron todos solo al ejecutar contra el servidor de verdad.
+
+**Montaje:** torneo creado desde la app en producción con la configuración exacta de Ferran (suizo, 5 rondas, Bo1, online, apuestas 100 fichas), publicado vacío; los 9 jugadores se apuntaron por el link vía API (como harían sus móviles) y **se fundieron solos en el roster del organizador**; los 9 se registraron como viewers reclamando su plaza. El organizador se condujo por la UI desplegada (emparejar / confirmar), los jugadores por las RPC públicas — o sea, los caminos de código reales por ambos lados. Script auxiliar del simulacro (no versionado, vive en el scratchpad): `rehearsal.mjs` con comandos `register|bet|report|state|chips`.
+
+**Resultado: las 6 rondas completas, 54 cruces, 54 apuestas, todo cuadrado.**
+- **Cero revanchas en 6 rondas** con 9 jugadores — el invariante difícil, y es el máximo que el motor promete para ese tamaño.
+- **Cero byes repetidos** — 6 byes repartidos entre 9 jugadores, todos distintos.
+- **Fichas conservadas: 900 = 9×100** en las 6 rondas, comprobado con una **reimplementación independiente** del reparto parimutuel dentro del script (no es la app dándose la razón a sí misma).
+- Clasificación final coherente: Sergi 15 pts (6PJ 5V-1D) por delante de Laura, también 15 pts pero con bye y solo 5 jugados — el empate lo rompe Buchholz exactamente como está documentado (el que descansa no suma rivales y queda ligeramente penalizado, a propósito).
+- **La 6ª ronda funciona**: "Añadir una ronda más" reabrió el evento (`finished` → `in_progress`, cabecera "Ronda 6 de 6"), emparejó sin revanchas y volvió a cerrar con campeón.
+
+**Falso positivo encontrado y corregido en el propio verificador (no en la app):** la primera pasada del comando `chips` dio "descuadre 770 vs 900" porque restaba las apuestas de la ronda abierta sin contarlas como "en juego". La conservación se mide sobre saldo + en juego (lo que la app llama `total`), no sobre el saldo libre. Corregido el script; la app siempre estuvo bien.
+
+**Nota de entorno repetida:** el sondeo del organizador va estrangulado a 1/minuto con la pestaña en segundo plano, así que durante el simulacro hubo que recargar para recoger los reportes. En uso real, con la pantalla delante, son los 6 s de siempre.
+
+**Sueltos:** quedan 4 torneos de prueba en el servidor (`BETTEST1`, `44WRW4X8`, `ZFYZWWZH`, `SPWVT37F`) — el editor SQL del panel de Supabase lleva toda la sesión sin responder. Se limpian con `delete from public.tournaments where code in ('BETTEST1','44WRW4X8','ZFYZWWZH','SPWVT37F');`.
+
 **[MISMA SESIÓN — CRASH DEL BUNDLER: CAUSA RAÍZ, PARCHE, Y QUÉ QUEDA SIN VERIFICAR]**
 
 **Causa raíz, leída en el código de ambos lados (no deducida):** es un desajuste de API entre versiones de Metro.
