@@ -680,7 +680,8 @@
     "reportsPendingTitle": "(%{count}) %{name}",
     "leaveIdentityConfirm": "You will stop being %{name} and that slot will be free for another device. Sure?",
     "leaveIdentityConfirmBetting": "You will stop being %{name} and the slot will be free. You will lose your chips and your photo for this tournament. Sure?",
-    "leaveIdentityAction": "Release the slot"
+    "leaveIdentityAction": "Release the slot",
+    "notOnTheList": "I'm not on the list, sign me up with another name"
   },
   "betting": {
     "title": "Betting",

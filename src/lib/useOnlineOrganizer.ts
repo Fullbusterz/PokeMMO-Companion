@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   actionableReports,
   agreedReports,
+  deleteOnlineSignup,
   createOnlineTournament,
   documentFingerprint,
   fetchOnlineTournament,
@@ -11,6 +12,7 @@ import {
   pushOnlineTournament,
   type BetRow,
   type ReportRow,
+  type SignupRow,
   type ViewerRow,
 } from './onlineTournament';
 import { isOnlineConfigured, ONLINE_POLL_MS } from './supabase';
@@ -30,6 +32,7 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
   const setOnlineLink = useTournamentStore((s) => s.setOnlineLink);
   const addSwissParticipant = useTournamentStore((s) => s.addSwissParticipant);
   const setMatchWinner = useTournamentStore((s) => s.setMatchWinner);
+  const removeSwissParticipant = useTournamentStore((s) => s.removeSwissParticipant);
 
   const [status, setStatus] = useState<OnlineStatus>('offline');
   const [reports, setReports] = useState<ReportRow[]>([]);
@@ -38,6 +41,10 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
   // standings was to open your own share link on another device.
   const [viewers, setViewers] = useState<ViewerRow[]>([]);
   const [bets, setBets] = useState<BetRow[]>([]);
+  // Kept so the organizer can actually remove somebody: a name lives in TWO
+  // places, the roster inside the document and the sign-up row that put it
+  // there, and deleting only the first one is undone by the very next poll.
+  const [signups, setSignups] = useState<SignupRow[]>([]);
   const [lastSyncedAt, setLastSyncedAt] = useState<string | null>(null);
 
   const online = tournament?.online;
@@ -190,6 +197,7 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
         setReports(actionableReports(local, snapshot.reports).filter((r) => !autoIds.has(r.id)));
         setViewers(snapshot.viewers);
         setBets(snapshot.bets);
+        setSignups(snapshot.signups);
         setLastSyncedAt(snapshot.updatedAt);
 
         if (agreed.length > 0) {
@@ -255,6 +263,35 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [code, secret, tournament?.id, addSwissParticipant, setMatchWinner]);
 
+  /**
+   * Removes someone from the roster for good.
+   *
+   * Reported live, mid-event: a player had signed up twice under two names and
+   * the organizer could not delete either. Removing a participant only edited
+   * the local document, while the sign-up row that created them stayed on the
+   * server — and mergeSignups, which runs on every poll precisely so late
+   * arrivals appear on their own, put the name straight back six seconds later.
+   * From the organizer's side the Delete button simply did nothing.
+   */
+  const removeParticipant = useCallback(
+    async (participantId: string) => {
+      if (!tournament) return;
+      const participant = tournament.participants.find((p) => p.id === participantId);
+      removeSwissParticipant(tournament.id, participantId);
+
+      if (!code || !secret || !participant) return;
+      const name = participant.name.trim().toLowerCase();
+      const rows = signups.filter((row) => row.name.trim().toLowerCase() === name);
+      try {
+        for (const row of rows) await deleteOnlineSignup(code, secret, row.id);
+        setSignups((current) => current.filter((row) => !rows.some((r) => r.id === row.id)));
+      } catch {
+        setStatus('error');
+      }
+    },
+    [tournament, code, secret, signups, removeSwissParticipant]
+  );
+
   return {
     isConfigured: isOnlineConfigured(),
     isPublished: Boolean(code),
@@ -266,6 +303,7 @@ export function useOnlineOrganizer(tournament: Tournament | undefined) {
     lastSyncedAt,
     refresh: refreshNow,
     publish,
+    removeParticipant,
     confirmReport,
     rejectReport,
   };

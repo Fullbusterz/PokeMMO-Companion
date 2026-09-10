@@ -72,6 +72,9 @@ export default function JoinTournament() {
   const [mode, setMode] = useState<EntryMode>('player');
   const [nameDraft, setNameDraft] = useState('');
   const [slotDraft, setSlotDraft] = useState<string | null>(null);
+  // Only relevant before the draw exists: someone whose name is not on the
+  // roster yet asks for the free-text field instead of the list.
+  const [wantsNewName, setWantsNewName] = useState(false);
   const [joinState, setJoinState] = useState<'idle' | 'sending' | 'taken' | 'error'>('idle');
 
   const [reportState, setReportState] = useState<'idle' | 'sending' | 'error'>('idle');
@@ -398,6 +401,7 @@ export default function JoinTournament() {
                       onPress={() => {
                         setMode(option);
                         setSlotDraft(null);
+                        setWantsNewName(false);
                         setJoinState('idle');
                       }}
                       className={`flex-row items-center gap-3 rounded-xl border p-3 ${
@@ -431,9 +435,17 @@ export default function JoinTournament() {
                 })}
               </View>
 
-              {/* Once the draw exists you can only claim a slot, not invent
-                  one — the roster is what the pairings were computed from. */}
-              {mode === 'player' && !signupsOpen && (
+              {/* The roster is offered whenever there is one — before the draw
+                  too, which there never used to be. Typing your name was the
+                  only option then, so a player already on the list who typed it
+                  slightly differently ("Mikijefe" for "Miki") became a SECOND
+                  participant while their own slot stayed unclaimed: the
+                  organizer saw a duplicate they could not delete, and two
+                  people marked as not having joined. Picking the name you are
+                  already down as cannot go wrong.
+                  Once the draw exists this is the only option, since the roster
+                  is what the pairings were computed from. */}
+              {mode === 'player' && (freeSlots.length > 0 || !signupsOpen) && !wantsNewName && (
                 <View className="mb-3">
                   <Text className="mb-2 text-xs text-ink-400">{t('online.pickYourSlot')}</Text>
                   {freeSlots.length === 0 ? (
@@ -445,20 +457,48 @@ export default function JoinTournament() {
                           key={p.id}
                           haptic="select"
                           scaleTo={0.97}
-                          onPress={() => setSlotDraft(p.id)}
-                          className={`rounded-lg border px-3 py-2 ${
+                          onPress={() => setSlotDraft((current) => (current === p.id ? null : p.id))}
+                          className={`flex-row items-center gap-2 rounded-lg border px-3 py-2 ${
                             slotDraft === p.id ? 'border-pokeRed bg-pokeRed/10' : 'border-ink-600'
                           }`}
+                          style={surfaceTransition()}
                         >
-                          <Text className="text-sm text-ink-100">{p.name}</Text>
+                          <Avatar
+                            name={p.name}
+                            uri={avatarByParticipant.get(p.id)}
+                            size={22}
+                            tone={slotDraft === p.id ? 'winner' : 'neutral'}
+                          />
+                          <Text
+                            className={`text-sm ${slotDraft === p.id ? 'font-semibold text-pokeRed' : 'text-ink-100'}`}
+                          >
+                            {p.name}
+                          </Text>
                         </PressScale>
                       ))}
                     </View>
                   )}
+
+                  {/* Before the draw, someone genuinely new can still add
+                      themselves — but they have to say so, instead of it being
+                      the default that quietly creates duplicates. */}
+                  {signupsOpen && (
+                    <PressScale
+                      haptic="tap"
+                      scaleTo={0.98}
+                      onPress={() => {
+                        setWantsNewName(true);
+                        setSlotDraft(null);
+                      }}
+                      className="mt-3 px-1 py-1"
+                    >
+                      <Text className="text-xs font-semibold text-gold">{t('online.notOnTheList')}</Text>
+                    </PressScale>
+                  )}
                 </View>
               )}
 
-              {(mode === 'spectator' || signupsOpen) && (
+              {(mode === 'spectator' || (signupsOpen && (wantsNewName || freeSlots.length === 0))) && (
                 <TextInput
                   value={nameDraft}
                   onChangeText={setNameDraft}
@@ -471,7 +511,11 @@ export default function JoinTournament() {
               )}
 
               <Button
-                disabled={joinState === 'sending' || (mode === 'player' && !signupsOpen && !slotDraft)}
+                disabled={
+                  joinState === 'sending' ||
+                  (mode === 'player' && !signupsOpen && !slotDraft) ||
+                  (mode === 'player' && signupsOpen && !slotDraft && !nameDraft.trim())
+                }
                 onPress={() => void handleJoin()}
               >
                 {t('online.enterButton')}

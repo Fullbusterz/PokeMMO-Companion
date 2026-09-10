@@ -680,7 +680,8 @@
     "reportsPendingTitle": "(%{count}) %{name}",
     "leaveIdentityConfirm": "Dejarás de ser %{name} y esa plaza quedará libre para otro dispositivo. ¿Seguro?",
     "leaveIdentityConfirmBetting": "Dejarás de ser %{name} y la plaza quedará libre. Perderás tus fichas y tu foto de este torneo. ¿Seguro?",
-    "leaveIdentityAction": "Soltar la plaza"
+    "leaveIdentityAction": "Soltar la plaza",
+    "notOnTheList": "No estoy en la lista, quiero apuntarme con otro nombre"
   },
   "betting": {
     "title": "Apuestas",

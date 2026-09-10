@@ -257,7 +257,7 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
                 </View>
                 <PressScale
                   haptic="tap"
-                  onPress={() => removeSwissParticipant(tournament.id, p.id)}
+                  onPress={() => void online.removeParticipant(p.id)}
                   className="px-2 py-1"
                 >
                   <Text className="text-sm font-semibold text-pokeRed">{t('common.delete')}</Text>
