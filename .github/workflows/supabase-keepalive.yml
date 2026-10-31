@@ -1,0 +1,52 @@
+name: Keep Supabase awake
+
+# Supabase pauses a Free project after ~7 days of low activity, and the online
+# tournaments only get traffic on tournament days. One tiny read every two days
+# keeps the project from going to sleep between events, so the share link works
+# the moment someone organizes the next one.
+#
+# It is a real database query (one row of `tournaments`), not just a hit on the
+# gateway, because Supabase's docs count "requests to the database" as activity.
+#
+# Caveat: GitHub itself disables scheduled workflows in a repo with no commits
+# for 60 days. If that happens, re-enable it from the Actions tab (or push
+# anything) — and if the project did get paused meanwhile, "Resume project" in
+# the Supabase dashboard brings it back with all its data.
+
+on:
+  schedule:
+    # Every 2 days at 06:17 UTC. Off the hour on purpose: GitHub delays or drops
+    # scheduled runs at :00 when its queue is busy.
+    - cron: '17 6 */2 * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Query one row from Supabase
+        # Same public repo variables the web deploy uses: the anon key is
+        # public by design, every table is behind RLS.
+        env:
+          SUPABASE_URL: ${{ vars.EXPO_PUBLIC_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.EXPO_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_ANON_KEY" ]; then
+            echo "::error::EXPO_PUBLIC_SUPABASE_URL / EXPO_PUBLIC_SUPABASE_ANON_KEY repo variables are not set"
+            exit 1
+          fi
+          # A failure here is the useful signal: it usually means the project
+          # was already paused and needs resuming from the dashboard.
+          status=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 --retry 2 --retry-delay 10 \
+            "$SUPABASE_URL/rest/v1/tournaments?select=code&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY")
+          echo "Supabase answered HTTP $status"
+          if [ "$status" != "200" ]; then
+            echo "::error::Supabase did not answer 200 (got $status). The project may be paused: resume it from the Supabase dashboard."
+            exit 1
+          fi
