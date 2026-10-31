@@ -23,6 +23,10 @@ export type Match = {
   // Swiss only, and only for Bo3: games won by each side (2-0 / 2-1). Bo1
   // matches leave it undefined — `winnerId` already says everything.
   score?: MatchScore;
+  // Swiss only: the organizer called it a draw (typically a match that never
+  // got played in time). `winnerId` stays null, so anything that predates
+  // draws reads the match as still open rather than as a win for someone.
+  draw?: boolean;
 };
 
 export type MatchScore = { p1: number; p2: number };

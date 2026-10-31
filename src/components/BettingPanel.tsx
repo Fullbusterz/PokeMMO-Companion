@@ -244,7 +244,7 @@ export function BettingPanel({
   const settled = useMemo(() => settleBets(bets, matches), [bets, matches]);
   const myBets = settled.filter((b) => b.viewerId === viewer.id);
   const viewerNameById = useMemo(() => new Map(viewers.map((v) => [v.id, v.name])), [viewers]);
-  const openMatches = matches.filter((m) => !m.isBye && !m.winnerId);
+  const openMatches = matches.filter((m) => !m.isBye && !m.winnerId && !m.draw);
 
   const balance = mine?.balance ?? startingChips;
   const net = (mine?.total ?? startingChips) - startingChips;

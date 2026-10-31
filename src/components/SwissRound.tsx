@@ -5,10 +5,12 @@ import { Avatar } from '@/components/Avatar';
 import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
 import { t } from '@/i18n';
+import { isDecided } from '@/lib/swissFormat';
 import { surfaceTransition, transition } from '@/lib/webMotion';
 import type { Match, MatchScore } from '@/types/tournament';
 
 export type ResultPick = (matchId: string, winnerId: string, score?: MatchScore) => void;
+export type DrawPick = (matchId: string) => void;
 
 // Two players facing each other across a VS, rather than the stacked full-width
 // rows this used to be. Stacked rows read as a list of names — on a wide window
@@ -22,6 +24,7 @@ const SwissMatchCard = memo(function SwissMatchCard({
   nameById,
   bestOf,
   onPick,
+  onDraw,
   canEdit,
   highlightId,
   pendingLabel,
@@ -32,6 +35,7 @@ const SwissMatchCard = memo(function SwissMatchCard({
   nameById: Map<string, string>;
   bestOf: 1 | 3;
   onPick?: ResultPick;
+  onDraw?: DrawPick;
   canEdit: boolean;
   highlightId?: string | null;
   pendingLabel?: string;
@@ -51,7 +55,8 @@ const SwissMatchCard = memo(function SwissMatchCard({
     );
   }
 
-  const decided = Boolean(match.winnerId);
+  const decided = isDecided(match);
+  const isDraw = match.draw === true;
 
   function handlePress(playerId: string) {
     if (!onPick || !canEdit) return;
@@ -75,7 +80,8 @@ const SwissMatchCard = memo(function SwissMatchCard({
   function renderSide(playerId: string | null, align: 'left' | 'right') {
     const name = playerId ? (nameById.get(playerId) ?? '?') : null;
     const isWinner = match.winnerId === playerId && playerId !== null;
-    const isLoser = decided && !isWinner && playerId !== null;
+    // In a draw nobody lost, so neither side gets the dimmed loser styling.
+    const isLoser = decided && !isDraw && !isWinner && playerId !== null;
     const isSelected = pendingWinnerId === playerId && playerId !== null;
     const isMe = highlightId === playerId && playerId !== null;
     const games = match.score ? (playerId === match.player1Id ? match.score.p1 : match.score.p2) : null;
@@ -160,6 +166,17 @@ const SwissMatchCard = memo(function SwissMatchCard({
         </View>
       )}
 
+      {isDraw && <Text className="mt-2 text-center text-xs text-ink-300">{t('swiss.drawResult')}</Text>}
+
+      {/* Deliberately quiet: the normal way to close a match is tapping the
+          winner. This is for the one that never got played in time, and the
+          Undo button reopens it if it was tapped by mistake. */}
+      {onDraw && canEdit && !decided && !pendingWinnerId && (
+        <PressScale haptic="tap" onPress={() => onDraw(match.id)} className="mt-2 items-center py-1">
+          <Text className="text-xs font-semibold text-ink-400">{t('swiss.declareDraw')}</Text>
+        </PressScale>
+      )}
+
       {pendingLabel && !decided && (
         <View className="mt-2 flex-row items-center gap-1.5 rounded-lg bg-gold/10 px-2 py-1.5">
           <View className="h-1.5 w-1.5 rounded-full bg-gold" />
@@ -177,6 +194,7 @@ export function SwissRound({
   nameById,
   bestOf,
   onPick,
+  onDraw,
   canEdit = false,
   highlightId,
   pendingLabelByMatchId,
@@ -188,6 +206,8 @@ export function SwissRound({
   nameById: Map<string, string>;
   bestOf: 1 | 3;
   onPick?: ResultPick;
+  /** Organizer only: close an unplayed match as a draw. */
+  onDraw?: DrawPick;
   canEdit?: boolean;
   highlightId?: string | null;
   pendingLabelByMatchId?: Map<string, string>;
@@ -195,7 +215,7 @@ export function SwissRound({
   avatarByParticipant?: Map<string, string>;
 }) {
   const playable = matches.filter((m) => !m.isBye);
-  const decided = playable.filter((m) => m.winnerId).length;
+  const decided = playable.filter(isDecided).length;
   const missing = playable.length - decided;
 
   return (
@@ -227,6 +247,7 @@ export function SwissRound({
           nameById={nameById}
           bestOf={bestOf}
           onPick={onPick}
+          onDraw={onDraw}
           canEdit={canEdit}
           highlightId={highlightId}
           pendingLabel={pendingLabelByMatchId?.get(match.id)}

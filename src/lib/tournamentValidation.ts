@@ -37,7 +37,7 @@ export function statusFor(
   if (finished) return 'finished';
   // Bye wins are auto-resolved at creation time, before any human plays
   // anything, so they must not count as "the organizer started playing".
-  const anyPlayed = matches.some((m) => m.winnerId && !m.isBye);
+  const anyPlayed = matches.some((m) => (m.winnerId || m.draw) && !m.isBye);
   return anyPlayed ? 'in_progress' : 'setup';
 }
 
@@ -129,6 +129,13 @@ export function parseImportedTournament(data: unknown): Tournament | null {
       isBye: match.isBye === true,
       bracket: match.bracket as BracketSection | undefined,
       score: parseScore(match.score),
+      // A draw only means something on an open pairing of two real players;
+      // anywhere else (a bye, a match that also names a winner) the flag is
+      // dropped and `winnerId` stays the authoritative result.
+      draw:
+        match.draw === true && match.winnerId === null && match.isBye !== true && Boolean(match.player1Id && match.player2Id)
+          ? true
+          : undefined,
     });
   }
   // Same reasoning: Swiss has no matches at all until round 1 is paired, which

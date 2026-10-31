@@ -13,10 +13,14 @@ import {
   isValidScore,
   maxRounds,
   recommendedRounds,
+  setSwissDraw,
   setSwissResult,
+  undoSwissResult,
+  DRAW_POINTS,
   WIN_POINTS,
 } from '../src/lib/swissFormat';
-import { agreedReports } from '../src/lib/onlineTournament';
+import { settleBets } from '../src/lib/betting';
+import { actionableReports, agreedReports } from '../src/lib/onlineTournament';
 import { parseImportedTournament } from '../src/lib/tournamentValidation';
 import type { Match, Participant } from '../src/types/tournament';
 
@@ -343,6 +347,173 @@ check(!isValidScore({ p1: 1.5, p2: 2 }, 3), 'fractional games are not valid');
   check(
     agreedReports(decided, [report('r1', 'a', 'b'), report('r2', 'b', 'b')]).length === 0,
     'a match the organizer already decided is never re-applied'
+  );
+
+  console.log('  done');
+}
+
+// ---------------------------------------------------------------------------
+// Draws: the organizer closing an unplayed match with a point each. Added
+// mid-event, so what matters is that it slots into everything that reads a
+// result — standings, the next pairing, betting, reports, the sync parser —
+// without any of them mistaking it for a win or for a match still open.
+{
+  console.log('\nDraws');
+
+  // Random events with ~15% of matches drawn: the pairing invariants that
+  // hold without draws must still hold with odd point totals in play.
+  let drawnEvents = 0;
+  for (const players of [9, 10, 11]) {
+    for (let run = 0; run < 300; run++) {
+      const participants = makePlayers(players);
+      let matches: Match[] = [];
+      const seen = new Set<string>();
+      let expectedPoints = 0;
+      let draws = 0;
+      for (let round = 1; round <= 5; round++) {
+        const { matches: roundMatches, hadToRepeatPairing } = generateSwissRound(participants, matches, round);
+        check(!hadToRepeatPairing, `${players}p with draws, round ${round}: forced a rematch`);
+        const appearances = new Map<string, number>();
+        for (const m of roundMatches) {
+          for (const id of [m.player1Id, m.player2Id]) if (id) appearances.set(id, (appearances.get(id) ?? 0) + 1);
+          if (m.isBye || !m.player1Id || !m.player2Id) continue;
+          const key = pairKey(m.player1Id, m.player2Id);
+          check(!seen.has(key), `${players}p with draws, round ${round}: rematch ${key}`);
+          seen.add(key);
+        }
+        check(
+          participants.every((p) => appearances.get(p.id) === 1),
+          `${players}p with draws, round ${round}: someone missing or doubled`
+        );
+        matches = [...matches, ...roundMatches];
+        for (const m of roundMatches) {
+          if (m.isBye) {
+            expectedPoints += WIN_POINTS;
+          } else if (Math.random() < 0.15) {
+            matches = setSwissDraw(matches, m.id);
+            expectedPoints += 2 * DRAW_POINTS;
+            draws += 1;
+          } else {
+            matches = setSwissResult(matches, m.id, Math.random() < 0.5 ? m.player1Id! : m.player2Id!);
+            expectedPoints += WIN_POINTS;
+          }
+        }
+        check(isRoundComplete(matches, round), `${players}p with draws, round ${round}: a drawn round must count as complete`);
+      }
+      if (draws > 0) drawnEvents += 1;
+      const standings = computeSwissStandings(matches, participants);
+      const total = standings.reduce((sum, s) => sum + s.points, 0);
+      check(total === expectedPoints, `${players}p with draws: points ${total} != expected ${expectedPoints}`);
+      check(
+        standings.every((s) => s.wins + s.draws + s.losses === s.played),
+        `${players}p with draws: W+D+L must equal played`
+      );
+      check(isSwissFinished(matches, { totalRounds: 5, bestOf: 1 }), `${players}p with draws: event must finish`);
+    }
+  }
+  check(drawnEvents > 800, 'the random runs must actually have exercised draws');
+
+  // The real case that prompted this: 10 players, round 2, one match never
+  // played. Same roster and same round-2 pairings as Ferran's event; round 1
+  // is a plausible reconstruction, not the exact history.
+  const ten = ['Respiros', 'Sayan', 'Joseba', 'Hailthor', 'Fandanguillo', '1Miki', 'Orveta', 'Derrickachu', 'Charlyzard', 'Caneteh'].map(
+    (name, i) => ({ id: `p${i}`, name })
+  );
+  const [res, say, jos, hai, fan, mik, orv, der, cha, can] = ten.map((p) => p.id);
+  const m = (id: string, round: number, slot: number, a: string, b: string, w: string | null): Match => ({
+    id,
+    round,
+    slot,
+    player1Id: a,
+    player2Id: b,
+    winnerId: w,
+    isBye: false,
+  });
+  let real: Match[] = [
+    m('r1-m0', 1, 0, res, orv, res),
+    m('r1-m1', 1, 1, say, der, say),
+    m('r1-m2', 1, 2, jos, cha, jos),
+    m('r1-m3', 1, 3, hai, can, hai),
+    m('r1-m4', 1, 4, fan, mik, mik),
+    m('r2-m0', 2, 0, res, hai, res),
+    m('r2-m1', 2, 1, say, mik, say),
+    m('r2-m2', 2, 2, jos, orv, jos),
+    m('r2-m3', 2, 3, cha, can, null),
+    m('r2-m4', 2, 4, fan, der, fan),
+  ];
+  check(!isRoundComplete(real, 2), 'round 2 is open before the draw');
+  real = setSwissDraw(real, 'r2-m3');
+  check(isRoundComplete(real, 2), 'the draw completes round 2');
+  const after = computeSwissStandings(real, ten);
+  const pts = new Map(after.map((s) => [s.participantId, s]));
+  check(pts.get(cha)?.points === 1 && pts.get(can)?.points === 1, 'each drawn player gets exactly 1 point');
+  check(pts.get(cha)?.played === 2 && pts.get(can)?.draws === 1, 'a draw counts as a played match');
+  check(pts.get(res)?.points === 6, 'the draw does not touch anyone else');
+  const next = generateSwissRound(ten, real, 3);
+  check(!next.hadToRepeatPairing, 'round 3 pairs without rematches after the draw');
+  check(
+    !next.matches.some((x) => pairKey(x.player1Id ?? '', x.player2Id ?? '') === pairKey(cha, can)),
+    'the drawn pair counts as having met and is not paired again'
+  );
+
+  // Guards: a draw can't overwrite a result, and a result can't overwrite a
+  // draw without an undo first — the store relies on both.
+  const won = setSwissResult(real, 'r2-m0', res);
+  check(setSwissDraw(won, 'r2-m0').find((x) => x.id === 'r2-m0')?.draw !== true, 'a decided match cannot be drawn');
+  const reopened = undoSwissResult(real, 'r2-m3');
+  const reopenedMatch = reopened.find((x) => x.id === 'r2-m3');
+  check(!reopenedMatch?.draw && reopenedMatch?.winnerId === null, 'undo reopens a drawn match');
+  check(!isRoundComplete(reopened, 2), 'undoing the draw reopens the round');
+
+  // Betting: nobody's pick won a draw, so every stake comes back.
+  const settled = settleBets(
+    [
+      { id: 'b1', viewerId: 'v1', matchId: 'r2-m3', pick: cha, amount: 20 },
+      { id: 'b2', viewerId: 'v2', matchId: 'r2-m3', pick: can, amount: 7 },
+    ],
+    real
+  );
+  check(
+    settled.every((b) => b.outcome === 'refunded' && b.returned === b.amount),
+    'bets on a drawn match are refunded in full'
+  );
+
+  // Reports: a late report on a drawn match must neither show up for the
+  // organizer nor auto-apply as a win.
+  const docWithDraw = {
+    id: 'draw1',
+    name: 'Draw',
+    createdAt: new Date().toISOString(),
+    participants: ten,
+    matches: real,
+    status: 'in_progress' as const,
+    history: [],
+    format: 'swiss' as const,
+    swiss: { totalRounds: 5, bestOf: 1 as const },
+  };
+  const late = (id: string, by: string) => ({
+    id,
+    code: 'X',
+    match_id: 'r2-m3',
+    reported_by: by,
+    winner_id: cha,
+    score: null,
+    created_at: new Date().toISOString(),
+  });
+  check(actionableReports(docWithDraw, [late('l1', cha)]).length === 0, 'a report on a drawn match is dropped');
+  check(agreedReports(docWithDraw, [late('l1', cha), late('l2', can)]).length === 0, 'agreeing late reports never undo a draw');
+
+  // Sync: the flag has to survive the server round trip, and nothing that
+  // isn't a genuine open pairing may carry it.
+  const parsedDraw = parseImportedTournament(JSON.parse(JSON.stringify(docWithDraw)));
+  check(parsedDraw?.matches.find((x) => x.id === 'r2-m3')?.draw === true, 'the draw survives the round trip');
+  const tampered = {
+    ...docWithDraw,
+    matches: real.map((x) => (x.id === 'r2-m0' ? { ...x, draw: true } : x)),
+  };
+  check(
+    parseImportedTournament(tampered)?.matches.find((x) => x.id === 'r2-m0')?.draw === undefined,
+    'a draw flag on a match that also has a winner is dropped'
   );
 
   console.log('  done');

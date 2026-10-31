@@ -104,6 +104,13 @@ export function settleBets(bets: Bet[], matches: Match[]): SettledBet[] {
     const matchBets = bets.filter((b) => b.matchId === matchId);
     const match = matchById.get(matchId);
 
+    // Drawn: nobody's pick won, so it settles like "nobody backed the
+    // winner" below — every stake goes back.
+    if (match?.draw) {
+      for (const bet of matchBets) settled.push({ ...bet, outcome: 'refunded', returned: bet.amount });
+      continue;
+    }
+
     // A match that no longer exists (the round was re-paired) or hasn't been
     // decided yet: the stake is still on the table, not lost.
     if (!match || !match.winnerId) {
@@ -212,7 +219,9 @@ export function betEligibility(
   balance: number
 ): BetEligibility {
   if (match.isBye) return { canBet: false, reason: 'bye' };
-  if (match.winnerId) return { canBet: false, reason: 'closed' };
+  // Draws are closed here even though place_bet() on the server only looks at
+  // winnerId; a bet that slips through that way is refunded by settleBets.
+  if (match.winnerId || match.draw) return { canBet: false, reason: 'closed' };
   if (
     viewer.participantId &&
     (match.player1Id === viewer.participantId || match.player2Id === viewer.participantId)

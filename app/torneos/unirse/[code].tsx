@@ -217,7 +217,7 @@ export default function JoinTournament() {
   // the one way this app can reach someone who is not looking at it, without
   // breaking its own rule against notifications.
   const opponentName = useMemo(() => {
-    if (!myMatch || myMatch.isBye || myMatch.winnerId || !identity?.participantId) return null;
+    if (!myMatch || myMatch.isBye || myMatch.winnerId || myMatch.draw || !identity?.participantId) return null;
     const rivalId = myMatch.player1Id === identity.participantId ? myMatch.player2Id : myMatch.player1Id;
     return rivalId ? (nameById.get(rivalId) ?? null) : null;
   }, [myMatch, identity?.participantId, nameById]);
@@ -569,6 +569,8 @@ export default function JoinTournament() {
             <Text className="text-sm text-status-finished">
               {t('online.resultConfirmed', { winner: nameById.get(myMatch.winnerId) ?? '?' })}
             </Text>
+          ) : myMatch.draw ? (
+            <Text className="text-sm text-status-finished">{t('online.resultDraw')}</Text>
           ) : myPendingReport ? (
             <Text className="text-sm text-gold">
               {t('online.reportPending', { winner: nameById.get(myPendingReport.winner_id) ?? '?' })}

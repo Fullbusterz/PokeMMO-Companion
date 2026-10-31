@@ -7,12 +7,14 @@ import type { Match, Participant, SwissConfig } from '@/types/tournament';
 // round is fully decided.
 
 export const WIN_POINTS = 3;
+export const DRAW_POINTS = 1;
 export const LOSS_POINTS = 0;
 
 export type SwissStanding = {
   participantId: string;
   played: number;
   wins: number;
+  draws: number;
   losses: number;
   byes: number;
   points: number;
@@ -33,6 +35,7 @@ function emptyStanding(participantId: string): SwissStanding {
     participantId,
     played: 0,
     wins: 0,
+    draws: 0,
     losses: 0,
     byes: 0,
     points: 0,
@@ -43,10 +46,10 @@ function emptyStanding(participantId: string): SwissStanding {
   };
 }
 
-// A match counts as decided once it has a winner, or once it's a bye (byes
-// are awarded at pairing time and never played).
+// A match counts as decided once it has a winner, once it's a bye (byes are
+// awarded at pairing time and never played), or once it was called a draw.
 export function isDecided(match: Match): boolean {
-  return match.isBye || match.winnerId !== null;
+  return match.isBye || match.winnerId !== null || match.draw === true;
 }
 
 export function getTotalSwissRounds(matches: Match[]): number {
@@ -99,7 +102,7 @@ export function computeSwissStandings(matches: Match[], participants: Participan
     }
 
     const { player1Id, player2Id, winnerId, score } = match;
-    if (!player1Id || !player2Id || !winnerId) continue;
+    if (!player1Id || !player2Id) continue;
     const s1 = byId.get(player1Id);
     const s2 = byId.get(player2Id);
     if (!s1 || !s2) continue;
@@ -108,6 +111,17 @@ export function computeSwissStandings(matches: Match[], participants: Participan
     s2.played += 1;
     s1.opponentIds.push(player2Id);
     s2.opponentIds.push(player1Id);
+
+    // A draw is a real pairing (both now count as having met, which keeps
+    // them from being re-paired and feeds each other's Buchholz) worth one
+    // point each, with no games either way.
+    if (!winnerId) {
+      s1.draws += 1;
+      s2.draws += 1;
+      s1.points += DRAW_POINTS;
+      s2.points += DRAW_POINTS;
+      continue;
+    }
 
     // Bo1 matches carry no score; treat them as a 1-0 so game tiebreaks stay
     // meaningful (and comparable) in a tournament that mixes neither.
@@ -323,14 +337,25 @@ export function setSwissResult(
   return matches.map((m) => {
     if (m.id !== matchId || m.isBye) return m;
     if (winnerId !== m.player1Id && winnerId !== m.player2Id) return m;
-    return { ...m, winnerId, score };
+    return { ...m, winnerId, score, draw: undefined };
+  });
+}
+
+// For a match that never got played: the organizer closes it with a point
+// each instead of holding up the next round. Only a real pairing that is
+// still open can be drawn — a bye has nobody to draw with, and a decided
+// match has to be undone first, so a stray tap can't overwrite a result.
+export function setSwissDraw(matches: Match[], matchId: string): Match[] {
+  return matches.map((m) => {
+    if (m.id !== matchId || m.isBye || !m.player1Id || !m.player2Id || isDecided(m)) return m;
+    return { ...m, winnerId: null, score: undefined, draw: true };
   });
 }
 
 export function undoSwissResult(matches: Match[], matchId: string): Match[] {
   const match = matches.find((m) => m.id === matchId);
-  if (!match || !match.winnerId || match.isBye) return matches;
-  return matches.map((m) => (m.id === matchId ? { ...m, winnerId: null, score: undefined } : m));
+  if (!match || match.isBye || !isDecided(match)) return matches;
+  return matches.map((m) => (m.id === matchId ? { ...m, winnerId: null, score: undefined, draw: undefined } : m));
 }
 
 // The tournament is over once the configured number of rounds has been played

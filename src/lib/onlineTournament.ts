@@ -201,11 +201,12 @@ export function mergeSignups(tournament: Tournament, signups: SignupRow[]): stri
 
 // A report is only actionable if its match is still open and both ids still
 // belong to that match — a stale report (organizer already entered the result,
-// or the round was regenerated) is dropped instead of shown.
+// called it a draw, or the round was regenerated) is dropped instead of shown.
+// The server can't drop it for us: submit_report() only looks at winnerId.
 export function actionableReports(tournament: Tournament, reports: ReportRow[]): ReportRow[] {
   return reports.filter((report) => {
     const match = tournament.matches.find((m) => m.id === report.match_id);
-    if (!match || match.isBye || match.winnerId) return false;
+    if (!match || match.isBye || match.winnerId || match.draw) return false;
     const players = [match.player1Id, match.player2Id];
     return players.includes(report.reported_by) && players.includes(report.winner_id);
   });

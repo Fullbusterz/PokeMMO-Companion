@@ -58,6 +58,9 @@ export function SwissStandings({
 }) {
   const { width } = useWindowDimensions();
   const isNarrow = width < NARROW_BREAKPOINT;
+  // Draws are the exception (an unplayed match closed by the organizer), so
+  // the column only exists once there is one to count.
+  const showDraws = standings.some((s) => s.draws > 0);
 
   return (
     <View className="mb-6">
@@ -68,6 +71,9 @@ export function SwissStandings({
           </Text>
           <Text className="w-8 text-center text-[11px] font-semibold text-ink-400">{t('swiss.played')}</Text>
           <Text className="w-8 text-center text-[11px] font-semibold text-ink-400">{t('swiss.wins')}</Text>
+          {showDraws && (
+            <Text className="w-8 text-center text-[11px] font-semibold text-ink-400">{t('swiss.draws')}</Text>
+          )}
           <Text className="w-8 text-center text-[11px] font-semibold text-ink-400">{t('swiss.losses')}</Text>
           {!isNarrow && (
             <Text className="w-10 text-center text-[11px] font-semibold text-ink-400">{t('swiss.buchholz')}</Text>
@@ -100,6 +106,7 @@ export function SwissStandings({
               </View>
               <Text className="w-8 text-center text-sm text-ink-300">{s.played}</Text>
               <Text className="w-8 text-center text-sm text-ink-300">{s.wins}</Text>
+              {showDraws && <Text className="w-8 text-center text-sm text-ink-300">{s.draws}</Text>}
               <Text className="w-8 text-center text-sm text-ink-300">{s.losses}</Text>
               {!isNarrow && <Text className="w-10 text-center text-sm text-ink-400">{s.buchholz}</Text>}
               <Text className="w-10 text-right text-base font-bold text-ink-100">{s.points}</Text>

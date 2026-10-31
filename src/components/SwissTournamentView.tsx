@@ -6,7 +6,7 @@ import { Avatar } from '@/components/Avatar';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { PressScale } from '@/components/PressScale';
-import { SwissRound, type ResultPick } from '@/components/SwissRound';
+import { SwissRound, type DrawPick, type ResultPick } from '@/components/SwissRound';
 import { OrganizerBetting } from '@/components/OrganizerBetting';
 import { OrganizerIdentity } from '@/components/OrganizerIdentity';
 import { SwissStandings } from '@/components/SwissStandings';
@@ -30,6 +30,7 @@ import type { Tournament } from '@/types/tournament';
 
 export function SwissTournamentView({ tournament }: { tournament: Tournament }) {
   const setMatchWinner = useTournamentStore((s) => s.setMatchWinner);
+  const setMatchDraw = useTournamentStore((s) => s.setMatchDraw);
   const startNextSwissRound = useTournamentStore((s) => s.startNextSwissRound);
   const setSwissTotalRounds = useTournamentStore((s) => s.setSwissTotalRounds);
   const addSwissParticipant = useTournamentStore((s) => s.addSwissParticipant);
@@ -110,6 +111,11 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
 
   const handlePick: ResultPick = (matchId, winnerId, score) => {
     setMatchWinner(tournament.id, matchId, winnerId, score);
+    successHaptic();
+  };
+
+  const handleDraw: DrawPick = (matchId) => {
+    setMatchDraw(tournament.id, matchId);
     successHaptic();
   };
 
@@ -341,6 +347,7 @@ export function SwissTournamentView({ tournament }: { tournament: Tournament }) 
             nameById={nameById}
             bestOf={config.bestOf}
             onPick={handlePick}
+            onDraw={handleDraw}
             canEdit={round === playedRounds}
             pendingLabelByMatchId={pendingLabelByMatchId}
             avatarByParticipant={avatarByParticipant}

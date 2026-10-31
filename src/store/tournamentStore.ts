@@ -8,7 +8,9 @@ import { generateLeagueMatches, setLeagueWinner, undoLeagueWinner } from '@/lib/
 import {
   generateSwissRound,
   getTotalSwissRounds,
+  isDecided,
   isRoundComplete,
+  setSwissDraw,
   setSwissResult,
   undoSwissResult,
 } from '@/lib/swissFormat';
@@ -27,6 +29,8 @@ type TournamentStore = {
   ) => Tournament;
   renameTournament: (tournamentId: string, name: string) => void;
   setMatchWinner: (tournamentId: string, matchId: string, winnerId: string, score?: MatchScore) => void;
+  // Swiss only.
+  setMatchDraw: (tournamentId: string, matchId: string) => void;
   undoLastMatch: (tournamentId: string) => void;
   setMatchdayDate: (tournamentId: string, round: number, date: string) => void;
   deleteTournament: (tournamentId: string) => void;
@@ -95,6 +99,12 @@ export const useTournamentStore = create<TournamentStore>()(
         set((state) => ({
           tournaments: state.tournaments.map((t) => {
             if (t.id !== tournamentId) return t;
+            // A drawn Swiss match is closed: a late report (or a stray tap)
+            // must not quietly turn it into a win. Undo it first.
+            if (t.format === 'swiss') {
+              const target = t.matches.find((m) => m.id === matchId);
+              if (target?.draw) return t;
+            }
             const matches =
               t.format === 'double'
                 ? setDoubleElimWinner(t.matches, matchId, winnerId)
@@ -103,6 +113,26 @@ export const useTournamentStore = create<TournamentStore>()(
                   : t.format === 'swiss'
                     ? setSwissResult(t.matches, matchId, winnerId, score)
                     : setSingleElimWinner(t.matches, matchId, winnerId);
+            return {
+              ...t,
+              matches,
+              status: statusFor(matches, t.format, t.swiss),
+              history: [...t.history, matchId],
+            };
+          }),
+        }));
+      },
+
+      // Goes through `history` like any other result, so the same Undo button
+      // reopens it if it was tapped by mistake.
+      setMatchDraw: (tournamentId, matchId) => {
+        set((state) => ({
+          tournaments: state.tournaments.map((t) => {
+            if (t.id !== tournamentId || t.format !== 'swiss') return t;
+            const before = t.matches.find((m) => m.id === matchId);
+            if (!before || isDecided(before)) return t;
+            const matches = setSwissDraw(t.matches, matchId);
+            if (!matches.find((m) => m.id === matchId)?.draw) return t;
             return {
               ...t,
               matches,
